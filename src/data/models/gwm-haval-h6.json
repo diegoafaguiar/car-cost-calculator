@@ -1,0 +1,67 @@
+{
+  "id": "gwm-haval-h6",
+  "researchedAt": "2026-10",
+  "displayName": "GWM Haval H6 HEV",
+  "summary": "SUV médio híbrido convencional (sem recarga externa) da GWM, hoje fabricado em Iracemápolis (SP). Desde a linha 2027 (jun/2026) toda a gama H6 é flex; as versões híbridas convencionais são HEV ONE e HEV2, com motor 1.5 turbo flex + motor elétrico e bateria de 1,6 kWh, 248 cv combinados.",
+  "generation": "3ª geração global do H6; no Brasil desde 2022/2023 (importado). Reestilização 'nova família H6' em nov/2025 (linha 2026) e nacionalização com motor flex em jun/2026 (linha 2027).",
+  "timeline": [
+    { "modelYear": "2023", "change": "Estreia no Brasil como H6 HEV (importado da China, gasolina)." },
+    { "modelYear": "2025", "change": "Linha 2025 com câmera e logo GWM na traseira; versão de entrada HEV ONE." },
+    { "modelYear": "2026", "change": "Nova família H6 (18/nov/2025): versão HEV passa a se chamar HEV2 (R$ 223 mil no lançamento, R$ 224 mil após reajuste de mar/2026), nova grade 'Estética Galática', 243 cv." },
+    { "modelYear": "2027", "change": "Produção nacional e motor 1.5 turbo flex em toda a linha (jun/2026); HEV ONE volta por R$ 199.900; HEV2 Flex R$ 225 mil; nova transmissão DHT de 2 marchas; 248 cv e 535 Nm." }
+  ],
+  "highlights": [
+    "248 cv e 535 Nm combinados (etanol ou gasolina), 0-100 km/h em 7,6 s (HEV ONE/HEV2 Flex)",
+    "Consumo Inmetro na gasolina de 15,8 km/l (cidade) e 13,0 km/l (estrada), contra 14,7/11,4 da versão anterior (segundo JK Carros)",
+    "Porta-malas de 560 L (1.445 L com bancos rebatidos)",
+    "Garantia de 5 anos sem limite de km e 8 anos para o sistema híbrido",
+    "Primeiro H6 flex, fabricado no Brasil"
+  ],
+  "watchOuts": [
+    "Consumo com etanol bem inferior: cerca de 10,2 km/l na cidade (JK Carros), número a confirmar no PBEV",
+    "A HEV ONE abre mão do teto solar panorâmico e da tampa traseira elétrica",
+    "Preços mudaram várias vezes em 2025-2026; descontos fortes para PCD (HEV2 a ~R$ 168 mil em loja de Santos) indicam margem de negociação e pressão sobre a revenda",
+    "Não há nota Latin NCAP; não encontrei recalls relevantes no Brasil"
+  ],
+  "specs": {
+    "version": "HEV2 Flex (linha 2027)",
+    "engine": "1.5 turbo flex 4 cil. + motor elétrico, híbrido convencional (bateria 1,6 kWh)",
+    "powerCv": "248 (combinada, E/G)",
+    "torqueKgfm": "54,6 (535 Nm combinado)",
+    "transmission": "DHT de 2 marchas",
+    "trunkL": 560,
+    "lengthMm": 4683,
+    "wheelbaseMm": 2738,
+    "safety": null,
+    "warranty": "5 anos sem limite de km; 8 anos para o sistema híbrido"
+  },
+  "inmetro": { "version": "HEV2 Flex 2027", "cityGas": 15.8, "roadGas": 13.0, "cityEth": 10.2, "roadEth": null, "cityKmKWh": null, "roadKmKWh": null, "year": "PBEV 2026 (linha 2027), via imprensa", "source": "https://jkcarros.com.br/?p=37195" },
+  "price0km": { "version": "HEV2 Flex", "price": 225000, "date": "jun/2026", "source": "https://canalve.com.br/gwm-lanca-linha-2027-haval-h6-motorizacao-flex/" },
+  "versionsAndPrices": [
+    { "version": "HEV ONE Flex", "price": 199900, "date": "jun/2026", "source": "https://www.vrum.com.br/mercado/2026/06/7432229-haval-h6-one-volta-a-linha-e-estreia-por-menos-de-rs-200-mil.html" },
+    { "version": "HEV2 Flex", "price": 225000, "date": "jun/2026", "source": "https://canalve.com.br/gwm-lanca-linha-2027-haval-h6-motorizacao-flex/" },
+    { "version": "HEV2 (linha 2026, gasolina)", "price": 224000, "date": "mar/2026", "source": "https://www.vrum.com.br/mercado/2026/03/7374259-gwm-haval-h6-2026-recebe-reajuste-veja-tabela-de-precos.html" }
+  ],
+  "launchModelYearBR": 2023,
+  "catalogCheck": "A versão 'HEV' não existe mais com esse nome: hoje há HEV ONE (R$ 199.900) e HEV2 (R$ 225.000), ambas flex, linha 2027. O HEV híbrido convencional NÃO foi descontinuado. Preço de R$ 229.000 está desatualizado: usar R$ 225.000 (HEV2 Flex, jun/2026). Consumo gasolina 14,4/13,1 está desatualizado: PBEV atual 15,8 cidade / 13,0 estrada (JK Carros); etanol cidade ~10,2 km/l. Porta-malas de 560 L está correto. 'Desde 2023' está ok (modelo 2023).",
+  "wikipedia": { "lang": "en", "title": "Haval H6" },
+  "officialUrl": "https://www.gwmmotors.com.br/pt/modelos/haval-h6-hev-one/specification",
+  "sources": [
+    { "label": "Canal VE – linha 2027 do Haval H6 flex (versões e preços)", "url": "https://canalve.com.br/gwm-lanca-linha-2027-haval-h6-motorizacao-flex/" },
+    { "label": "JK Carros – HEV2 Flex 2027: 248 cv e consumo", "url": "https://jkcarros.com.br/?p=37195" },
+    { "label": "Vrum – Haval H6 One volta por menos de R$ 200 mil", "url": "https://www.vrum.com.br/mercado/2026/06/7432229-haval-h6-one-volta-a-linha-e-estreia-por-menos-de-rs-200-mil.html" },
+    { "label": "Vrum – reajuste Haval H6 2026", "url": "https://www.vrum.com.br/mercado/2026/03/7374259-gwm-haval-h6-2026-recebe-reajuste-veja-tabela-de-precos.html" },
+    { "label": "Olhar Digital – nova família Haval H6 (nov/2025)", "url": "https://olhardigital.com.br/2025/11/18/carros-e-tecnologia/gwm-nova-familia-haval-h6-chega-ao-brasil-com-preco-inicial-de-r-223-mil/" },
+    { "label": "Vrum – H6 2027 estreia com motor flex", "url": "https://www.vrum.com.br/noticias/2026/06/7437566-gwm-haval-h6-2027-estreia-com-motor-flex-em-todas-as-versoes.html" },
+    { "label": "GWM Media Center – H6 híbrido plug-in flex nacional", "url": "https://www.gwmmotors.com.br/pt/media-center/news/2026/gwm-haval-h6-se-torna-o-primeiro-hibrido-plug-in-flex-fabricado-no-brasil-e-fortalece-o-pioneirismo-da-marca-em-eletrificacao" },
+    { "label": "Autoo – descontos PCD Haval H6", "url": "https://www.autoo.com.br/gwm-haval-h6-tem-descontos-de-quase-r-60-mil-para-pcd-veja-precos/" },
+    { "label": "GWM – ficha HEV ONE", "url": "https://www.gwmmotors.com.br/pt/modelos/haval-h6-hev-one/specification" }
+  ],
+  "unverified": [
+    "inmetro.roadEth (não encontrado)",
+    "inmetro.cityEth 10,2 km/l: veio de uma única fonte (JK Carros); outra fonte atribui 25,8/21 km/l no etanol, mas esses números parecem ser do PHEV19",
+    "Consumo 15,8/13,0 confirmado só pela imprensa, não direto na tabela PBEV",
+    "Comprimento e entre-eixos (4.683/2.738 mm) vieram de resumo de busca sobre a HEV ONE",
+    "safety: sem teste Latin NCAP encontrado"
+  ]
+}

@@ -59,6 +59,8 @@ export interface CatalogModel {
   consumptionHistory?: { untilModelYear: number; consumption: Consumption }[]
   /** Campos do catálogo que são estimativas sem fonte (exibidos como aviso). */
   estimated?: string[]
+  /** Data do preço 0 km confirmado na pesquisa (quando bate com a ficha). */
+  priceRef?: string
   /** Ficha pesquisada compartilhada com outra versão do mesmo modelo. */
   infoId?: string
   /** Primeiro ano-modelo vendido no Brasil (seminovos anteriores não existem). */
@@ -139,6 +141,8 @@ export interface Assumptions {
   ethanolPrice: number
   dieselPrice: number
   kwhPrice: number
+  /** Fração dos km rodada no modo elétrico pelos híbridos plug-in (depende de recarregar em casa). */
+  phevElectricShare: number
   /** Rendimento líquido anual do dinheiro parado (custo de oportunidade). */
   investReturnYear: number
   inflationYear: number
@@ -185,7 +189,7 @@ export interface Preferences {
   rankBy: 'real' | 'ajustado'
 }
 
-export type PriceSource = 'fipe' | 'estimado' | 'manual'
+export type PriceSource = 'fipe' | 'pesquisa' | 'estimado' | 'manual'
 
 export interface Scenario {
   id: string

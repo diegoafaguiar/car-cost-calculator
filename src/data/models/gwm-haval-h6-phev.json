@@ -1,0 +1,67 @@
+{
+  "id": "gwm-haval-h6-phev",
+  "researchedAt": "2026-10",
+  "displayName": "GWM Haval H6 PHEV",
+  "summary": "Versões híbridas plug-in do SUV médio Haval H6, fabricado em Iracemápolis (SP) e flex desde a linha 2027 (jun/2026). PHEV19: bateria de 19 kWh, 326 cv, tração dianteira. PHEV35 e GT (carroceria cupê): bateria de 35 kWh, 1.5 turbo flex + dois motores elétricos, 393 cv e tração integral Hi4.",
+  "generation": "3ª geração global; plug-in no Brasil desde 2023 (então 'PHEV', com bateria de 34 kWh, depois PHEV34). Virou PHEV35 em 2025, foi reestilizado em nov/2025 e ficou flex com produção nacional em jun/2026 (linha 2027).",
+  "timeline": [
+    { "modelYear": "2023", "change": "Estreia do H6 PHEV (34 kWh, AWD) e do H6 GT." },
+    { "modelYear": "2024", "change": "Chega o PHEV19 (bateria de 19 kWh, um motor a menos, preço menor)." },
+    { "modelYear": "2026", "change": "Nova família H6 (nov/2025): PHEV19 R$ 248 mil, PHEV35 R$ 288 mil, GT R$ 325 mil; PHEV35 com 119 km de autonomia elétrica (Inmetro). Reajuste em mar/2026: R$ 249 mil, R$ 289 mil e R$ 326 mil." },
+    { "modelYear": "2027", "change": "Flex e nacional (jun/2026). PHEV35/GT com DHT de 4 marchas e 126 km de autonomia (Inmetro); PHEV19 com DHT de 2 marchas e 77 km. Preços: PHEV19 R$ 250 mil, PHEV35 R$ 290 mil, GT R$ 326 mil." }
+  ],
+  "highlights": [
+    "PHEV35: 393 cv e 642 Nm (65,5 kgfm), 0-100 km/h em 4,8 s, tração integral",
+    "Bateria de 35 kWh com 126 km de autonomia elétrica (Inmetro) e até 180 km (WLTP)",
+    "Recarga DC de até cerca de 60 kW (30-40 min para 80%, segundo a imprensa)",
+    "Primeiro híbrido plug-in flex fabricado no Brasil",
+    "Porta-malas de 560 L; garantia de 5 anos sem limite de km e 8 anos para o sistema híbrido"
+  ],
+  "watchOuts": [
+    "Fora do modo elétrico o consumo é alto: cerca de 10,7 km/l na estrada com gasolina e 7,4 km/l com etanol (PHEV35 Flex)",
+    "Números de consumo divulgados variam muito conforme a métrica (o ciclo ponderado do PBEV dá 30,7 km/l na cidade); confira qual está sendo comparado",
+    "Preço alto (R$ 290 mil) e descontos frequentes indicam depreciação relevante",
+    "Sem nota Latin NCAP"
+  ],
+  "specs": {
+    "version": "PHEV35 Flex (linha 2027)",
+    "engine": "1.5 turbo flex 4 cil. (150 cv) + 2 motores elétricos, híbrido plug-in, bateria 35 kWh",
+    "powerCv": "393 (combinada, E/G)",
+    "torqueKgfm": "65,5 (642 Nm combinado)",
+    "transmission": "DHT de 4 marchas, tração integral Hi4",
+    "trunkL": 560,
+    "lengthMm": 4683,
+    "wheelbaseMm": 2738,
+    "safety": null,
+    "warranty": "5 anos sem limite de km; 8 anos para o sistema híbrido/bateria"
+  },
+  "inmetro": { "version": "PHEV35 Flex 2027", "cityGas": 30.7, "roadGas": 10.7, "cityEth": null, "roadEth": 7.4, "cityKmKWh": null, "roadKmKWh": null, "year": "PBEV 2026 (linha 2027), via imprensa; métricas possivelmente mistas", "source": "https://jkcarros.com.br/?p=37199" },
+  "price0km": { "version": "PHEV35 Flex", "price": 290000, "date": "jun/2026", "source": "https://canalve.com.br/gwm-lanca-linha-2027-haval-h6-motorizacao-flex/" },
+  "versionsAndPrices": [
+    { "version": "PHEV19 Flex", "price": 250000, "date": "jun/2026", "source": "https://canalve.com.br/gwm-lanca-linha-2027-haval-h6-motorizacao-flex/" },
+    { "version": "PHEV35 Flex", "price": 290000, "date": "jun/2026", "source": "https://canalve.com.br/gwm-lanca-linha-2027-haval-h6-motorizacao-flex/" },
+    { "version": "GT PHEV35 Flex", "price": 326000, "date": "jun/2026", "source": "https://canalve.com.br/gwm-lanca-linha-2027-haval-h6-motorizacao-flex/" }
+  ],
+  "launchModelYearBR": 2023,
+  "catalogCheck": "'PHEV34' não existe mais: hoje as versões são PHEV19, PHEV35 e GT (PHEV35), todas flex, linha 2027. O preço de R$ 249.000 do catálogo é o do PHEV19 linha 2026 (mar/2026), não o do PHEV35. Atuais: PHEV19 R$ 250.000, PHEV35 R$ 290.000, GT R$ 326.000. Consumo 14,0/12,8 não bate com nenhuma fonte: PHEV35 2026 a gasolina fazia ~12,0/10,9 no modo combustão (fichacompleta), e o PHEV35 Flex 2027 faz 10,7 km/l na estrada (G) e 7,4 (E). Não encontrei km/kWh; o 5,2/4,5 do catálogo fica sem confirmação. Autonomia elétrica: 126 km Inmetro (PHEV35/GT), 77 km (PHEV19). Bateria: 35 kWh (PHEV35/GT) ou 19 kWh (PHEV19). Porta-malas de 560 L ok; 'desde 2023' ok.",
+  "wikipedia": { "lang": "en", "title": "Haval H6" },
+  "officialUrl": "https://www.gwmmotors.com.br/pt/modelos/haval-h6-phev-35",
+  "sources": [
+    { "label": "Canal VE – linha 2027 do Haval H6 flex", "url": "https://canalve.com.br/gwm-lanca-linha-2027-haval-h6-motorizacao-flex/" },
+    { "label": "JK Carros – PHEV35 2027: 393 cv, 126 km elétricos", "url": "https://jkcarros.com.br/?p=37199" },
+    { "label": "Verificar Auto – PHEV35 2027 com 126 km de autonomia", "url": "https://verificarauto.com.br/haval-h6-phev35-2027/" },
+    { "label": "Garagem360 – H6 2027 faz até 37,7 km/l", "url": "https://garagem360.com.br/?p=314045" },
+    { "label": "Vrum – H6 2027 estreia com motor flex", "url": "https://www.vrum.com.br/noticias/2026/06/7437566-gwm-haval-h6-2027-estreia-com-motor-flex-em-todas-as-versoes.html" },
+    { "label": "Olhar Digital – nova família Haval H6 (nov/2025)", "url": "https://olhardigital.com.br/2025/11/18/carros-e-tecnologia/gwm-nova-familia-haval-h6-chega-ao-brasil-com-preco-inicial-de-r-223-mil/" },
+    { "label": "Vrum – reajuste H6 2026", "url": "https://www.vrum.com.br/mercado/2026/03/7374259-gwm-haval-h6-2026-recebe-reajuste-veja-tabela-de-precos.html" },
+    { "label": "Ficha Completa – comparativo H6 2026", "url": "https://www.fichacompleta.com.br/carros/comparativo/haval-h6-1-5-phev19-2026-vs-haval-h6-1-5-phev35-2026-vs-haval-h6-gt-1-5-phev-2026" },
+    { "label": "GWM – página PHEV35", "url": "https://www.gwmmotors.com.br/pt/modelos/haval-h6-phev-35" }
+  ],
+  "unverified": [
+    "inmetro.cityKmKWh / roadKmKWh: não encontrados (catálogo 5,2/4,5 sem confirmação)",
+    "inmetro.cityGas 30,7 (ponderado com o modo elétrico) e roadGas 10,7 (aparentemente só combustão) podem ser de métricas diferentes; confirmar na tabela PBEV",
+    "inmetro.cityEth não encontrado",
+    "Dimensões (4.683/2.738 mm) assumidas iguais às do H6 HEV; o GT cupê pode ser diferente",
+    "safety: sem teste Latin NCAP encontrado"
+  ]
+}

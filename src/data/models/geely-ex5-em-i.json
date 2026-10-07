@@ -1,0 +1,88 @@
+{
+  "catalogSeed": {
+    "brand": "Geely",
+    "model": "EX5 EM-i",
+    "version": "Pro",
+    "category": "suv-medio",
+    "powertrain": "hibrido-plugin",
+    "seats": 5,
+    "trunkL": 428,
+    "refPriceNew": 199990,
+    "consumption": { "cityKmL": 14.8, "roadKmL": 13.1, "cityKmLEthanol": null, "roadKmLEthanol": null, "cityKmKWh": null, "roadKmKWh": null },
+    "evShareNote": "Plug-in: Pro/Max com bateria de 18,4 kWh e 65 km elétricos (Inmetro); Ultra com 29,8 kWh e 112 km. km/l acima é com bateria descarregada. Importado a gasolina; versão nacional flex em produção desde set/2026.",
+    "fipeBrand": "GEELY",
+    "fipeInclude": ["EX5", "EM-I"],
+    "since": 2026
+  },
+  "id": "geely-ex5-em-i",
+  "researchedAt": "2026-10",
+  "displayName": "Geely EX5 EM-i",
+  "summary": "SUV médio híbrido plug-in da Geely (vendido na China como Galaxy Starship 7 EM-i), lançado no Brasil em abr/2026 em parceria com a Renault. Motor 1.5 aspirado a gasolina e motor elétrico, com 262 cv e 38,7 kgfm combinados. Versões Pro, Max (bateria de 18,4 kWh, 65 km elétricos) e Ultra (29,8 kWh, 112 km). Produção nacional em São José dos Pinhais (PR) desde set/2026.",
+  "generation": "1ª geração (Galaxy Starship 7 EM-i, China out/2024); lançada no Brasil em abr/2026, importada; produção nacional iniciada em set/2026.",
+  "timeline": [
+    { "modelYear": "2026", "change": "Lançamento em abr/2026: preços promocionais Pro R$ 189.990, Max R$ 209.990, Ultra R$ 234.990; tabela cheia R$ 199.990 / 219.990 / 244.990." },
+    { "modelYear": "2026", "change": "Vendas abaixo do esperado; Geely mantém preços promocionais (até o fim de junho, segundo o Canaltech)." },
+    { "modelYear": "2027", "change": "Set/2026: início da produção no Complexo Ayrton Senna (PR); versão nacional terá motor 1.5 flex, com vendas entre o fim de 2026 e o início de 2027." }
+  ],
+  "highlights": [
+    "Maior autonomia elétrica do segmento na versão Ultra: 112 km (bateria de 29,8 kWh); autonomia combinada declarada de cerca de 1.300 km.",
+    "262 cv e 38,7 kgfm combinados; 0 a 100 km/h em 7,8 s (segundo a imprensa).",
+    "Maior que o Haval H6: 4,74 m de comprimento e 2,75 m de entre-eixos.",
+    "Porta-malas de 428 L (VDA), 2.065 L com o banco rebatido.",
+    "Pro já traz multimídia de 15,4\", painel de 10,2\", 6 airbags e ADAS.",
+    "Garantia: 6 anos/150 mil km (veículo) e 8 anos/150 mil km (bateria), segundo o manual de garantia."
+  ],
+  "watchOuts": [
+    "Unidades importadas são só a gasolina; a versão nacional flex ainda não foi lançada.",
+    "Porta-malas de 428 L é menor que o de rivais como o Song Pro (530 L) e o Jaecoo 7 (500 L).",
+    "Pro e Max têm bateria menor (65 km elétricos); a autonomia de 112 km é só da Ultra.",
+    "Vendas fracas no início e preços promocionais longos podem pesar na revenda; marca recém-chegada.",
+    "Números de consumo divergem entre fontes (14,8/13,1 x 14,6/13,3 km/l) e de potência (217 cv x 262 cv).",
+    "Sem teste Latin NCAP encontrado."
+  ],
+  "specs": {
+    "version": "EX5 EM-i (importado, linha 2026)",
+    "engine": "1.5 aspirado gasolina 4 cil. (cerca de 100 cv) + motor elétrico dianteiro de 218 cv, híbrido plug-in EM-i",
+    "powerCv": "262 (combinada)",
+    "torqueKgfm": "38,7 (combinado)",
+    "transmission": "DHT (transmissão híbrida dedicada)",
+    "trunkL": 428,
+    "lengthMm": 4740,
+    "wheelbaseMm": 2750,
+    "safety": null,
+    "warranty": "6 anos ou 150 mil km (veículo); 8 anos ou 150 mil km (bateria de tração), segundo o manual de garantia"
+  },
+  "inmetro": { "version": "EX5 EM-i (bateria descarregada)", "cityGas": 14.8, "roadGas": 13.1, "cityEth": null, "roadEth": null, "cityKmKWh": null, "roadKmKWh": null, "year": "PBEV 2026 (conforme imprensa); autonomia elétrica 65 km (Pro/Max) e 112 km (Ultra)", "source": "https://www.autoo.com.br/geely-ex5-em-i-veja-preco-pecas-consumo-e-equipamentos-do-rival-do-song-plus/" },
+  "price0km": { "version": "Pro", "price": 199990, "date": "abr/2026 (tabela cheia; promoção R$ 189.990)", "source": "https://autopapo.com.br/noticia/geely-ex5-em-i-super-hibrido189-mil/" },
+  "versionsAndPrices": [
+    { "version": "Pro", "price": 199990, "date": "abr/2026 (promo R$ 189.990)", "source": "https://autopapo.com.br/noticia/geely-ex5-em-i-super-hibrido189-mil/" },
+    { "version": "Max", "price": 219990, "date": "abr/2026 (promo R$ 209.990)", "source": "https://autopapo.com.br/noticia/geely-ex5-em-i-super-hibrido189-mil/" },
+    { "version": "Ultra", "price": 244990, "date": "abr/2026 (promo R$ 234.990)", "source": "https://autopapo.com.br/noticia/geely-ex5-em-i-super-hibrido189-mil/" }
+  ],
+  "launchModelYearBR": 2026,
+  "catalogCheck": "Modelo ainda não está no catálogo. Sugere-se cadastrar a Pro por R$ 199.990 (tabela cheia; a promoção de R$ 189.990 foi mantida pelo menos até jun/2026). FIPE set/2026: EX5 EM-i PRO 2026 = R$ 179.138 (código 088007-8). Atenção: a FIPE também lista o EX5 elétrico; filtre pelo termo 'EM-I'.",
+  "wikipedia": { "lang": "en", "title": "Geely Galaxy Starship 7" },
+  "officialUrl": null,
+  "sources": [
+    { "label": "AutoPapo — lançamento e preços", "url": "https://autopapo.com.br/noticia/geely-ex5-em-i-super-hibrido189-mil/" },
+    { "label": "Canaltech — preços promocionais mantidos", "url": "https://canaltech.com.br/carros/geely-mantem-precos-do-ex5-em-i-no-chao-e-suv-sai-mais-barato-que-t-cross/" },
+    { "label": "Canal VE — a partir de R$ 199 mil", "url": "https://canalve.com.br/geely-ex5-i-chega-ao-brasil-partir-r-199-mil/" },
+    { "label": "Autoo — preço, consumo e equipamentos", "url": "https://www.autoo.com.br/geely-ex5-em-i-veja-preco-pecas-consumo-e-equipamentos-do-rival-do-song-plus/" },
+    { "label": "Vrum — avaliação EX5 EM-i Ultra", "url": "https://www.vrum.com.br/colunistas/fernando-calmon/2026/07/7454297-geely-ex5-emi-ultra-destaque-para-espaco-interno.html" },
+    { "label": "Garagem360 — 112 km elétricos", "url": "https://garagem360.com.br/?p=316348" },
+    { "label": "AutoPapo — produção nacional em setembro", "url": "https://autopapo.com.br/curta/geely-inicia-fabricacao-nacional-em-setembro-com-ex5-e-ex2-no-cronograma/" },
+    { "label": "Itatiaia — nacional com motor flex", "url": "https://www.itatiaia.com.br/auto/geely-ex5-comeca-a-ser-fabricado-no-brasil-com-motor-hibrido-flex/" },
+    { "label": "Manual de garantia Geely EX5 EM-i", "url": "https://static.autoforce.com/plugins/files/clientes/geely-brasil/produtos/ws/manual-de-garantia-geely-ex5-em-i.pdf" },
+    { "label": "Ficha técnica Geely EX5 (PDF)", "url": "https://static.autoforce.com/plugins/files/clientes/geely-brasil/produtos/ws/ficha-tecnica-geely-ex5.pdf" },
+    { "label": "Tabela Carros — FIPE EX5 EM-i Pro", "url": "https://tabelacarros.com/carros/geely/EX5-EM-I-PRO/2026-Hibrido" },
+    { "label": "Canaltech — híbridos mais vendidos set/2026", "url": "https://canaltech.com.br/carros/hibridos-mais-vendidos-de-setembro-gwm-lidera-mas-dominio-e-da-byd/" }
+  ],
+  "unverified": [
+    "Preço vigente em out/2026 (se a promoção de R$ 189.990 continua).",
+    "Consumo Inmetro: 14,8/13,1 x 14,6/13,3 km/l entre fontes; versão a que se refere.",
+    "Potência: 262 cv/38,7 kgfm (maioria) x 217 cv/26,7 kgfm (uma fonte).",
+    "Garantia: os números vêm de um resumo de busca sobre o manual; não foi possível abrir o PDF e confirmar se valem para o EM-i ou para o EX5 elétrico.",
+    "Consumo elétrico km/kWh e dados da versão nacional flex.",
+    "officialUrl não vista nos resultados."
+  ]
+}

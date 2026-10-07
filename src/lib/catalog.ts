@@ -1,3 +1,4 @@
+import { MODEL_INFO } from './modelInfo'
 import type { CatalogModel, Category, Powertrain, SubscriptionPlan } from './types'
 
 /**
@@ -42,6 +43,9 @@ const BRAND_DEPRECIATION: Record<string, number> = {
   'Citroën': 1.15,
   BYD: 1.3,
   GWM: 1.25,
+  Omoda: 1.25,
+  Jaecoo: 1.25,
+  Geely: 1.25,
 }
 
 const flex = (city: number, road: number, cityE: number, roadE: number) => ({
@@ -86,6 +90,7 @@ const seeds: Seed[] = [
   { id: 'nissan-kicks', since: 2026, brand: 'Nissan', model: 'Kicks', version: 'Advance 1.0T', category: 'suv-compacto', powertrain: 'flex', seats: 5, trunkL: 470, refPriceNew: 169990, consumption: flex(11.7, 14.3, 8.3, 9.9), fipe: { brand: 'nissan', include: ['kicks', 'advance'], exclude: ['play'] } },
   { id: 'jeep-renegade', brand: 'Jeep', model: 'Renegade', version: 'Longitude MHEV', category: 'suv-compacto', powertrain: 'flex', seats: 5, trunkL: 320, refPriceNew: 158690, consumption: flex(11.9, 11.8, 8.3, 8.6), consumptionHistory: [{ untilModelYear: 2026, consumption: flex(11.0, 12.8, 7.7, 9.1) }], fipe: { brand: 'jeep', include: ['renegade', 'longitude'] } },
   { id: 'honda-hrv', since: 2023, brand: 'Honda', model: 'HR-V', version: 'EXL 1.5', category: 'suv-compacto', powertrain: 'flex', seats: 5, trunkL: 354, refPriceNew: 174300, consumption: flex(12.5, 13.9, 8.8, 9.9), fipe: { brand: 'honda', include: ['hr-v', 'exl'] } },
+  { id: 'omoda-5-hev', since: 2026, brand: 'Omoda', model: '5 HEV', version: 'Luxury 1.5 TGDI HEV', category: 'suv-compacto', powertrain: 'hibrido', seats: 5, trunkL: 378, refPriceNew: 159990, consumption: { cityKmL: 15.1, roadKmL: 13.2 }, maintenanceBase: 2200, fipe: { brand: 'omoda', include: ['5', 'hev|hibrido'], exclude: ['e5', '7'] } },
   { id: 'toyota-yaris-cross-hybrid', since: 2026, brand: 'Toyota', model: 'Yaris Cross', version: 'XRX Hybrid', category: 'suv-compacto', powertrain: 'hibrido', seats: 5, trunkL: 391, refPriceNew: 189990, consumption: flex(17.9, 15.3, 13.2, 10.7), maintenanceBase: 2100, fipe: { brand: 'toyota', include: ['yaris', 'cross', 'hybrid|hibrido'] } },
   { id: 'byd-yuan-pro', since: 2025, brand: 'BYD', model: 'Yuan Pro', version: 'GS', category: 'suv-compacto', powertrain: 'eletrico', seats: 5, trunkL: 265, refPriceNew: 182990, consumption: { cityKmL: 0, roadKmL: 0, cityKmKWh: 7.06, roadKmKWh: 7.06 }, insuranceRate: 0.048, maintenanceBase: 1000, fipe: { brand: 'byd', include: ['yuan', 'pro'] } },
 
@@ -97,14 +102,16 @@ const seeds: Seed[] = [
   { id: 'honda-zrv', since: 2023, brand: 'Honda', model: 'ZR-V', version: 'Touring 2.0', category: 'suv-medio', powertrain: 'gasolina', seats: 5, trunkL: 380, refPriceNew: 214900, consumption: { cityKmL: 10.6, roadKmL: 12.9 }, fipe: { brand: 'honda', include: ['zr-v'] } },
   { id: 'byd-yuan-plus', since: 2023, brand: 'BYD', model: 'Yuan Plus', version: 'EV', category: 'suv-medio', powertrain: 'eletrico', seats: 5, trunkL: 490, refPriceNew: 269990, consumption: { cityKmL: 0, roadKmL: 0, cityKmKWh: 6.21, roadKmKWh: 6.21 }, insuranceRate: 0.048, maintenanceBase: 1100, fipe: { brand: 'byd', include: ['yuan', 'plus'] } },
   { id: 'jeep-compass', brand: 'Jeep', model: 'Compass', version: 'Longitude T270', category: 'suv-medio', powertrain: 'flex', seats: 5, trunkL: 410, refPriceNew: 199890, consumption: flex(10.1, 12.1, 7.3, 8.6), fipe: { brand: 'jeep', include: ['compass', 'longitude'], exclude: ['diesel', '4x4', 'hybrid'] } },
-  { id: 'byd-song-pro', since: 2025, brand: 'BYD', model: 'Song Pro', version: 'GS (plug-in)', category: 'suv-medio', powertrain: 'hibrido-plugin', seats: 5, trunkL: 530, refPriceNew: 199990, consumption: { cityKmL: 15.9, roadKmL: 13.5, cityKmLEthanol: 11.7, roadKmLEthanol: 10.5, cityKmKWh: 3.9, roadKmKWh: 3.9 }, evShare: 0.6, insuranceRate: 0.046, maintenanceBase: 1800, estimated: ['consumo elétrico (3,9 km/kWh = 72 km de autonomia ÷ 18,3 kWh; o PBEV só publica valor combinado)', 'fração rodada no modo elétrico (60%)'], fipe: { brand: 'byd', include: ['song', 'pro'] } },
-  { id: 'gwm-haval-h6', since: 2023, brand: 'GWM', model: 'Haval H6', version: 'HEV', category: 'suv-medio', powertrain: 'hibrido', seats: 5, trunkL: 560, refPriceNew: 229000, consumption: { cityKmL: 14.4, roadKmL: 13.1 }, insuranceRate: 0.042, maintenanceBase: 2600, fipe: { brand: 'gwm', include: ['h6', 'hev'], exclude: ['phev'] } },
-  { id: 'gwm-haval-h6-phev', since: 2023, brand: 'GWM', model: 'Haval H6', version: 'PHEV34', category: 'suv-medio', powertrain: 'hibrido-plugin', seats: 5, trunkL: 560, refPriceNew: 249000, consumption: { cityKmL: 14.0, roadKmL: 12.8, cityKmKWh: 5.2, roadKmKWh: 4.5 }, evShare: 0.7, insuranceRate: 0.042, maintenanceBase: 2400, fipe: { brand: 'gwm', include: ['h6', 'phev34|phev'] } },
+  { id: 'byd-song-pro', since: 2025, brand: 'BYD', model: 'Song Pro', version: 'GS (plug-in)', category: 'suv-medio', powertrain: 'hibrido-plugin', seats: 5, trunkL: 530, refPriceNew: 199990, consumption: { cityKmL: 15.9, roadKmL: 13.5, cityKmLEthanol: 11.7, roadKmLEthanol: 10.5, cityKmKWh: 3.9, roadKmKWh: 3.9 }, evShare: 0.6, insuranceRate: 0.046, maintenanceBase: 1800, estimated: ['consumo elétrico (3,9 km/kWh = 72 km de autonomia ÷ 18,3 kWh; o PBEV só publica valor combinado)'], fipe: { brand: 'byd', include: ['song', 'pro'] } },
+  { id: 'jaecoo-7-phev', since: 2026, brand: 'Jaecoo', model: '7 PHEV', version: 'Elite 1.5 TGDI PHEV', category: 'suv-medio', powertrain: 'hibrido-plugin', seats: 5, trunkL: 500, refPriceNew: 189990, consumption: { cityKmL: 15.1, roadKmL: 13.5, cityKmKWh: 4.3, roadKmKWh: 4.3 }, insuranceRate: 0.045, maintenanceBase: 2000, estimated: ['consumo elétrico (4,3 km/kWh = 79 km ÷ 18,3 kWh)'], fipe: { brand: 'jaecoo', include: ['7'], exclude: ['5', '8'] } },
+  { id: 'geely-ex5-em-i', since: 2026, brand: 'Geely', model: 'EX5 EM-i', version: 'Pro', category: 'suv-medio', powertrain: 'hibrido-plugin', seats: 5, trunkL: 428, refPriceNew: 199990, consumption: { cityKmL: 14.8, roadKmL: 13.1, cityKmKWh: 3.5, roadKmKWh: 3.5 }, insuranceRate: 0.045, maintenanceBase: 2000, estimated: ['consumo elétrico (3,5 km/kWh = 65 km ÷ 18,4 kWh)', 'preço pode ser o promocional (R$ 189.990) na concessionária'], fipe: { brand: 'geely', include: ['ex5', 'em-i'] } },
+  { id: 'gwm-haval-h6', since: 2023, brand: 'GWM', model: 'Haval H6', version: 'HEV2 Flex', category: 'suv-medio', powertrain: 'hibrido', seats: 5, trunkL: 560, refPriceNew: 225000, consumption: { cityKmL: 15.8, roadKmL: 13.0 }, insuranceRate: 0.042, maintenanceBase: 2600, estimated: ['consumo com etanol não considerado (só o urbano, 10,2 km/l, foi encontrado)'], fipe: { brand: 'gwm', include: ['h6', 'hev|hev2'], exclude: ['phev', 'phev19', 'phev35', 'gt'] } },
+  { id: 'gwm-haval-h6-phev', since: 2023, brand: 'GWM', model: 'Haval H6', version: 'PHEV35 Flex', category: 'suv-medio', powertrain: 'hibrido-plugin', seats: 5, trunkL: 560, refPriceNew: 290000, consumption: { cityKmL: 10.7, roadKmL: 10.7, cityKmKWh: 3.6, roadKmKWh: 3.6 }, insuranceRate: 0.042, maintenanceBase: 2400, estimated: ['consumo elétrico (3,6 km/kWh = 126 km ÷ 35 kWh)', 'consumo a gasolina na cidade (usado o da estrada, 10,7 km/l; o urbano publicado mistura uso elétrico)'], fipe: { brand: 'gwm', include: ['h6', 'phev35|phev'], exclude: ['gt'] } },
 
   // SUV grande
-  { id: 'byd-song-plus', since: 2023, brand: 'BYD', model: 'Song Plus', version: 'DM-i (plug-in)', category: 'suv-grande', powertrain: 'hibrido-plugin', seats: 5, trunkL: 574, refPriceNew: 249990, consumption: { cityKmL: 14.9, roadKmL: 12.1, cityKmKWh: 5.5, roadKmKWh: 4.8 }, evShare: 0.7, insuranceRate: 0.045, maintenanceBase: 1900, estimated: ['consumo elétrico (5,5/4,8 km/kWh, sem fonte)', 'fração rodada no modo elétrico (70%)'], fipe: { brand: 'byd', include: ['song', 'plus'] } },
+  { id: 'byd-song-plus', since: 2023, brand: 'BYD', model: 'Song Plus', version: 'DM-i (plug-in)', category: 'suv-grande', powertrain: 'hibrido-plugin', seats: 5, trunkL: 574, refPriceNew: 249990, consumption: { cityKmL: 14.9, roadKmL: 12.1, cityKmKWh: 5.5, roadKmKWh: 4.8 }, evShare: 0.7, insuranceRate: 0.045, maintenanceBase: 1900, estimated: ['consumo elétrico (5,5/4,8 km/kWh, sem fonte)'], fipe: { brand: 'byd', include: ['song', 'plus'] } },
   { id: 'byd-sealion-7', since: 2025, brand: 'BYD', model: 'Sealion 7', version: 'EV', category: 'suv-grande', powertrain: 'eletrico', seats: 5, trunkL: 520, refPriceNew: 299990, consumption: { cityKmL: 0, roadKmL: 0, cityKmKWh: 5.4, roadKmKWh: 4.6 }, insuranceRate: 0.047, maintenanceBase: 1300, fipe: { brand: 'byd', include: ['sealion'] } },
-  { id: 'toyota-rav4-hybrid', brand: 'Toyota', model: 'RAV4', version: 'SX Hybrid', category: 'suv-grande', powertrain: 'hibrido', seats: 5, trunkL: 580, refPriceNew: 329990, consumption: { cityKmL: 15.9, roadKmL: 14.7 }, maintenanceBase: 3000, fipe: { brand: 'toyota', include: ['rav4', 'hybrid|hibrido'] } },
+  { id: 'toyota-rav4-hybrid', since: 2026, brand: 'Toyota', model: 'RAV4', version: 'SX Hybrid', category: 'suv-grande', powertrain: 'hibrido', seats: 5, trunkL: 456, refPriceNew: 349290, consumption: { cityKmL: 15.3, roadKmL: 14.1 }, maintenanceBase: 3000, fipe: { brand: 'toyota', include: ['rav4', 'hybrid|hibrido'] } },
   { id: 'jeep-commander', since: 2022, brand: 'Jeep', model: 'Commander', version: 'Overland 1.3T', category: 'suv-grande', powertrain: 'flex', seats: 7, trunkL: 233, refPriceNew: 259990, consumption: flex(9.4, 11.1, 6.5, 7.8), fipe: { brand: 'jeep', include: ['commander', 'overland'], exclude: ['diesel', '4x4'] } },
 
   // Picape
@@ -117,7 +124,15 @@ export const CATALOG: CatalogModel[] = seeds.map((s) => ({
   insuranceRate: s.insuranceRate ?? INSURANCE_BY_CATEGORY[s.category],
   maintenanceBase: s.maintenanceBase ?? MAINTENANCE_BY_CATEGORY[s.category],
   depreciationFactor: s.depreciationFactor ?? BRAND_DEPRECIATION[s.brand] ?? 1,
+  priceRef: priceRefFor(s),
 }))
+
+function priceRefFor(s: Seed): string | undefined {
+  const info = MODEL_INFO[s.infoId ?? s.id]
+  if (!info) return undefined
+  const match = [info.price0km, ...info.versionsAndPrices].find((v) => v.price === s.refPriceNew)
+  return match ? (match.date ?? info.researchedAt) : undefined
+}
 
 export const CATEGORY_LABEL: Record<Category, string> = {
   'hatch-compacto': 'Hatch compacto',

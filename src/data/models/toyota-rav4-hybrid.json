@@ -1,0 +1,64 @@
+{
+  "id": "toyota-rav4-hybrid",
+  "researchedAt": "2026-10",
+  "displayName": "Toyota RAV4 Hybrid",
+  "summary": "SUV médio híbrido convencional (full HEV) importado do Japão, em nova geração lançada no Brasil em abr/2026. Duas versões, S e SX, ambas com 2.5 a gasolina, quinta geração do sistema híbrido Toyota, e-CVT e tração integral elétrica (motor traseiro), 239 cv combinados. Uma versão plug-in é esperada, mas ainda não confirmada para venda.",
+  "generation": "6ª geração, lançada no Brasil em 14/abr/2026 (pré-venda em maio/2026).",
+  "timeline": [
+    { "modelYear": "2019-2025", "change": "5ª geração híbrida no Brasil (2.5 + elétricos, 222 cv), versões S/SX/SX Connect." },
+    { "modelYear": "2026", "change": "Nova geração: visual 'Hammerhead', 5ª geração do sistema híbrido com 239 cv, AWD elétrico, rodas de 20\" de série, Toyota Safety Sense, nova arquitetura eletrônica com atualização remota. Versões S (R$ 317.190) e SX (R$ 349.290)." }
+  ],
+  "highlights": [
+    "239 cv combinados com tração integral elétrica (motor traseiro de 54 cv e 12,3 kgfm)",
+    "Consumo Inmetro de 15,3 km/l na cidade e 14,1 km/l na estrada (gasolina), nota A no PBEV",
+    "SX: tampa traseira elétrica com sensor e função 'Walk Away', bancos com ventilação, aquecimento e memória",
+    "Garantia de 8 anos ou 160 mil km para os componentes híbridos (segundo a imprensa)"
+  ],
+  "watchOuts": [
+    "Porta-malas menor que o da geração anterior: 514 L (S) e 456 L (SX), contra 580 L antes",
+    "Preço bem acima dos rivais chineses híbridos (até ~R$ 100 mil a mais, segundo a imprensa)",
+    "Somente gasolina (não é flex)",
+    "Sem nota Latin NCAP para a nova geração"
+  ],
+  "specs": {
+    "version": "SX",
+    "engine": "2.5 a gasolina 4 cil. + motores elétricos (full hybrid, 5ª geração)",
+    "powerCv": "239 (combinada)",
+    "torqueKgfm": null,
+    "transmission": "e-CVT, tração integral elétrica",
+    "trunkL": 456,
+    "lengthMm": null,
+    "wheelbaseMm": 2690,
+    "safety": null,
+    "warranty": "Sistema híbrido: 8 anos ou 160 mil km (imprensa); garantia geral não confirmada para a nova geração"
+  },
+  "inmetro": { "version": "RAV4 2026 (S/SX)", "cityGas": 15.3, "roadGas": 14.1, "cityEth": null, "roadEth": null, "cityKmKWh": null, "roadKmKWh": null, "year": "PBEV 2026", "source": "https://conexaoto.com.br/2026/04/20/suv-mais-vendido-do-mundo-estreia-no-brasil-com-precos-definidos" },
+  "price0km": { "version": "SX", "price": 349290, "date": "abr/2026", "source": "https://www.vrum.com.br/bom-negocio/2026/04/7397402-toyota-lanca-novo-rav4-hibrido-no-brasil-veja-versoes-precos-e-mais.html" },
+  "versionsAndPrices": [
+    { "version": "S", "price": 317190, "date": "abr/2026", "source": "https://autopapo.com.br/noticia/toyota-rav4-2026-lacado-no-br/" },
+    { "version": "SX", "price": 349290, "date": "abr/2026", "source": "https://www.vrum.com.br/bom-negocio/2026/04/7397402-toyota-lanca-novo-rav4-hibrido-no-brasil-veja-versoes-precos-e-mais.html" }
+  ],
+  "launchModelYearBR": 2026,
+  "catalogCheck": "O catálogo usa dados da geração anterior. A nova geração tem só as versões S e SX: o nome 'SX Hybrid' equivale à SX atual. Preço R$ 329.990 → SX R$ 349.290 (ou S R$ 317.190), abr/2026. Consumo 15,9/14,7 → 15,3/14,1 km/l gasolina (PBEV 2026). Porta-malas 580 L → 456 L na SX e 514 L na S.",
+  "wikipedia": { "lang": "en", "title": "Toyota RAV4" },
+  "officialUrl": null,
+  "sources": [
+    { "label": "Toyota Comunica – press release de lançamento do RAV4 (abr/2026)", "url": "https://www.toyotacomunica.com.br/wp-content/uploads/2026/04/Press-Release-RAV4-Lancamento.pdf" },
+    { "label": "AutoPapo – novo RAV4 chega com duas versões", "url": "https://autopapo.com.br/noticia/toyota-rav4-2026-lacado-no-br/" },
+    { "label": "Vrum – Toyota lança novo RAV4 híbrido", "url": "https://www.vrum.com.br/bom-negocio/2026/04/7397402-toyota-lanca-novo-rav4-hibrido-no-brasil-veja-versoes-precos-e-mais.html" },
+    { "label": "Conexão TO – consumo e preços", "url": "https://conexaoto.com.br/2026/04/20/suv-mais-vendido-do-mundo-estreia-no-brasil-com-precos-definidos" },
+    { "label": "O Antagonista – porta-malas de 514 L", "url": "https://oantagonista.com.br/?p=2053987" },
+    { "label": "Mecânica Online – RAV4 Hybrid 2026 com 239 cv", "url": "https://mecanicaonline.com.br/2026/04/novo-toyota-rav4-hybrid-2026-estreia-no-brasil-com-239-cv-e-foco-em-eficiencia/" },
+    { "label": "Carro.blog.br – novo RAV4 mais potente", "url": "https://carro.blog.br/noticias/mercado-automotivo/novo-toyota-rav4-2026-chega-mais-potente-e-ate-r-30-mil-mais-barato-no-brasil.html" },
+    { "label": "Auto+ – avaliação RAV4 2026", "url": "https://www.automaistv.com.br/avaliacao/toyota-rav4-2026-muda-de-personalidade-mas-vale-o-que-cobra-impressoes/" }
+  ],
+  "unverified": [
+    "officialUrl (página oficial da Toyota Brasil não apareceu nos resultados)",
+    "torqueKgfm combinado da nova geração",
+    "lengthMm: fontes citam 4.595 a 4.618 mm",
+    "Garantia geral da nova geração (8 anos/160 mil km para o sistema híbrido veio de fonte que pode ser da geração anterior)",
+    "Preços após abr/2026 (sem reajuste encontrado; a FIPE de set/2026 mostra transações abaixo do preço de tabela)",
+    "Lançamento do RAV4 plug-in no Brasil (só especulação, ~R$ 400 mil)",
+    "safety: sem nota Latin NCAP"
+  ]
+}

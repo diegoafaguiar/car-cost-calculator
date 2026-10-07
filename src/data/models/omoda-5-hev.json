@@ -1,0 +1,85 @@
+{
+  "catalogSeed": {
+    "brand": "Omoda",
+    "model": "5 HEV",
+    "version": "Luxury 1.5 TGDI HEV DHT",
+    "category": "suv-compacto",
+    "powertrain": "hibrido",
+    "seats": 5,
+    "trunkL": 378,
+    "refPriceNew": 159990,
+    "consumption": { "cityKmL": 15.1, "roadKmL": 13.2, "cityKmLEthanol": null, "roadKmLEthanol": null, "cityKmKWh": null, "roadKmKWh": null },
+    "evShareNote": "Híbrido pleno (não recarrega na tomada); bateria de 1,83 kWh, só gasolina.",
+    "fipeBrand": "OMODA",
+    "fipeInclude": ["5 ", "1.5 TB FWD"],
+    "since": 2026
+  },
+  "id": "omoda-5-hev",
+  "researchedAt": "2026-10",
+  "displayName": "Omoda 5 HEV",
+  "summary": "SUV compacto híbrido pleno (HEV) da Omoda & Jaecoo (grupo Chery), importado da China. Motor 1.5 turbo a gasolina (135 cv) e motor elétrico de 204 cv, com potência combinada de 224 cv e 30,1 kgfm, transmissão híbrida dedicada (DHT). Duas versões: Luxury e Prestige. Foi o 2º híbrido mais vendido do Brasil em set/2026.",
+  "generation": "1ª geração (Omoda 5/C5, apresentada em 2021); versão HEV lançada no Brasil em out/2025 (linha 2026).",
+  "timeline": [
+    { "modelYear": "2026", "change": "Lançamento oficial em 29/out/2025: Luxury R$ 159.990 (pré-venda) e Prestige R$ 184.990; primeiro lote esgotado na pré-venda." },
+    { "modelYear": "2026", "change": "Luxury chegou a R$ 164.990 e voltou a R$ 159.990 em jul/2026 (corte de R$ 5 mil); Prestige mantida em R$ 184.990." },
+    { "modelYear": "2027", "change": "Linha 2027 já à venda (Webmotors e FIPE listam 2027); mudanças da linha não confirmadas." }
+  ],
+  "highlights": [
+    "224 cv e 30,1 kgfm combinados — potência alta para o preço de SUV compacto.",
+    "Inmetro: 15,1 km/l na cidade e 13,2 km/l na estrada (gasolina); autonomia declarada acima de 1.000 km.",
+    "Luxury já traz rodas de 18\", teto solar, ar digital de duas zonas, câmeras 360° e 7 airbags.",
+    "Prestige: bancos ventilados e aquecidos e som Sony.",
+    "Garantia de 7 anos; 5 estrelas no Euro NCAP (Omoda 5 a combustão, 2023).",
+    "Volume: 3.615 emplacamentos em set/2026, 2º híbrido mais vendido."
+  ],
+  "watchOuts": [
+    "Só gasolina (não é flex) e não é plug-in.",
+    "Porta-malas pequeno: 378 L (VDA) segundo uma fonte, 372 L segundo outra.",
+    "Marca nova no Brasil (estreou em abr/2025): rede e valor de revenda ainda sem histórico.",
+    "Recalls do Omoda 5 em outros mercados: solda do eixo traseiro (Malásia/Indonésia, 2024) e conexão do tubo de freio (Austrália); não foi encontrado recall no Brasil.",
+    "Reclamação no Reclame Aqui de proprietário do 5 HEV com freio de estacionamento travado, alertas no painel e perda de aceleração.",
+    "Cortes e oscilação de preço (R$ 164.990 → R$ 159.990) pressionam a revenda."
+  ],
+  "specs": {
+    "version": "Omoda 5 HEV Luxury/Prestige (linha 2026)",
+    "engine": "1.5 turbo gasolina 4 cil. (135 cv) + motor elétrico de 204 cv, híbrido pleno; bateria de 1,83 kWh",
+    "powerCv": "224 (combinada)",
+    "torqueKgfm": "30,1 (combinado)",
+    "transmission": "DHT (transmissão híbrida dedicada)",
+    "trunkL": 378,
+    "lengthMm": 4400,
+    "wheelbaseMm": 2630,
+    "safety": "Sem teste Latin NCAP; Euro NCAP 5 estrelas (Omoda 5 a combustão, 2023)",
+    "warranty": "7 anos (veículo); garantia específica da bateria não confirmada para o Omoda 5 (a marca dá 8 anos de bateria ao Jaecoo 5, que usa o mesmo conjunto)"
+  },
+  "inmetro": { "version": "Omoda 5 HEV", "cityGas": 15.1, "roadGas": 13.2, "cityEth": null, "roadEth": null, "cityKmKWh": null, "roadKmKWh": null, "year": "PBEV 2026 (conforme imprensa)", "source": "https://motorshow.com.br/omoda-5-hev-precos-motor-equipamentos" },
+  "price0km": { "version": "Luxury", "price": 159990, "date": "jul/2026", "source": "https://www.encontracarros.com.br/category/omoda/" },
+  "versionsAndPrices": [
+    { "version": "Luxury", "price": 159990, "date": "jul/2026", "source": "https://www.encontracarros.com.br/category/omoda/" },
+    { "version": "Prestige", "price": 184990, "date": "jul/2026", "source": "https://www.encontracarros.com.br/category/omoda/" }
+  ],
+  "launchModelYearBR": 2026,
+  "catalogCheck": "Modelo ainda não está no catálogo. Sugere-se cadastrar a versão Luxury (R$ 159.990, jul/2026). FIPE (set/2026): 5 Prestige 1.5 TB FWD 2027 = R$ 177.006 (código 302003-7); Luxury = código 302002-9.",
+  "wikipedia": { "lang": "en", "title": "Omoda C5" },
+  "officialUrl": null,
+  "sources": [
+    { "label": "Mecânica Online — preços de lançamento", "url": "https://mecanicaonline.com.br/2025/10/omoda-5-hev-precos-de-lancamento-confirmados-em-r-159-990-e-r-184-990-para-duas-versoes/" },
+    { "label": "Vrum — lançamento out/2025", "url": "https://www.vrum.com.br/noticias/2025/10/7261263-omoda-5-hev-chega-ao-brasil-por-menos-de-rs-170-mil-e-mira-rivais-hibridos.html" },
+    { "label": "Encontracarros — corte de preço jul/2026", "url": "https://www.encontracarros.com.br/category/omoda/" },
+    { "label": "Motorshow — preços, motor, equipamentos", "url": "https://motorshow.com.br/omoda-5-hev-precos-motor-equipamentos" },
+    { "label": "Tabela Carros — dimensões e consumo", "url": "https://tabelacarros.com/post/omoda-5-hev-potencia-economia-e-preco-de-compacto" },
+    { "label": "Tabela FIPE Prestige 2027", "url": "https://www.tabelafipebrasil.com/carros/OMODA/5-PRESTIGE-15-TB-FWD/2027-Hibrido" },
+    { "label": "Canaltech — híbridos mais vendidos set/2026", "url": "https://canaltech.com.br/carros/hibridos-mais-vendidos-de-setembro-gwm-lidera-mas-dominio-e-da-byd/" },
+    { "label": "CarGuide PH — Euro NCAP 5 estrelas", "url": "https://carguide.ph/2023/07/2024-omoda-5-suv-scores-5-star-euro.html" },
+    { "label": "Reclame Aqui — reclamação Omoda 5 HEV", "url": "https://www.reclameaqui.com.br/omoda-jaecoo-brasil1/problema-omoda-5-hev_PFnbrYFYwVkZMd0n/" },
+    { "label": "Free Malaysia Today — recall eixo traseiro", "url": "https://www.freemalaysiatoday.com/category/nation/2024/05/03/rtd-issues-immediate-recall-of-600-omoda-5-chery-suvs" }
+  ],
+  "unverified": [
+    "Porta-malas: 378 L x 372 L entre fontes.",
+    "Ano do PBEV dos números Inmetro (15,1/13,2).",
+    "Mudanças da linha 2027.",
+    "Garantia específica da bateria do Omoda 5 HEV.",
+    "officialUrl: página oficial não vista nos resultados.",
+    "Potência do motor a combustão (135 cv) citada pela imprensa; ficha oficial não consultada."
+  ]
+}

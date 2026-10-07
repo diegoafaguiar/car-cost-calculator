@@ -81,7 +81,8 @@ export function energyCostPerKm(
 
   if (powertrain === 'eletrico') return kwh * a.kwhPrice
   if (powertrain === 'hibrido-plugin') {
-    return evShare * kwh * a.kwhPrice + (1 - evShare) * combustion()
+    const share = a.phevElectricShare ?? evShare
+    return share * kwh * a.kwhPrice + (1 - share) * combustion()
   }
   return combustion()
 }
@@ -375,15 +376,29 @@ export interface PriceEntry {
 
 export const priceKey = (modelId: string, age: number) => `${modelId}:${age}`
 
+/**
+ * Valores FIPE já verificados (fonte citada), usados até a consulta ao vivo.
+ * Chave: "<modelo>@<ano-modelo>".
+ */
+export const KNOWN_FIPE: Record<string, PriceEntry> = {
+  // Corolla Cross XRX 1.8 Híbrido 2022, código 002204-7 (tabelafipebrasil.com, set/2026).
+  'toyota-corolla-cross-hybrid@2022': { price: 139427, source: 'fipe', reference: 'setembro de 2026' },
+}
+
 export function priceFor(
   model: CatalogModel,
   age: number,
   prices: Record<string, PriceEntry>,
+  year?: number,
 ): PriceEntry {
-  const hit = prices[priceKey(model.id, age)]
+  const known = year !== undefined ? KNOWN_FIPE[`${model.id}@${year - age}`] : undefined
+  const hit = prices[priceKey(model.id, age)] ?? known
   if (hit && hit.price > 0) return hit
   const newHit = prices[priceKey(model.id, 0)]
   const base = newHit && newHit.price > 0 ? newHit.price : model.refPriceNew
+  if (age === 0 && !(newHit && newHit.price > 0) && model.priceRef) {
+    return { price: base, source: 'pesquisa', reference: model.priceRef }
+  }
   return {
     price: age === 0 ? base : estimateUsedPrice(base, age, model.depreciationFactor),
     source: 'estimado',
@@ -430,7 +445,7 @@ export function buildScenarios(opts: {
   for (const m of catalog) {
     const insuranceRate = m.insuranceRate * a.insuranceFactor
     for (const ageOpt of [0, ...usedAges.filter((age) => year - age >= (m.since ?? 0))]) {
-      const p = priceFor(m, ageOpt, prices)
+      const p = priceFor(m, ageOpt, prices, year)
       const used = ageOpt > 0
       list.push({
         id: `${used ? 'used' : 'new'}:${m.id}:${ageOpt}`,

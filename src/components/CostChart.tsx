@@ -40,7 +40,8 @@ export function CostChart({ series }: { series: Series[] }) {
   const months = series[0]?.values.length ? series[0].values.length - 1 : 60
   const { ticks, y, x } = useMemo(() => {
     const all = series.flatMap((s) => s.values)
-    const min = Math.min(0, ...all)
+    const lowest = Math.min(0, ...all)
+    const min = lowest > -1 ? 0 : lowest
     const max = Math.max(1, ...all)
     const ticks = niceTicks(min, max)
     const lo = ticks[0]

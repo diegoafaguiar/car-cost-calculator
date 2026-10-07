@@ -130,8 +130,8 @@ export function RankingTable({ rows, horizon, sort, onSort, compare, colors, onT
                       <Badge tone={KIND_TONE[s.kind]}>{KIND_LABEL[s.kind]}</Badge>
                       <Badge>{POWERTRAIN_LABEL[s.powertrain]}</Badge>
                       {s.kind !== 'subscription' && (
-                        <Badge tone={s.priceSource === 'fipe' ? 'good' : 'neutral'}>
-                          {s.priceSource === 'fipe' ? 'FIPE' : s.priceSource === 'manual' ? 'Manual' : 'Estimado'}
+                        <Badge tone={s.priceSource === 'fipe' || s.priceSource === 'pesquisa' ? 'good' : 'neutral'}>
+                          {{ fipe: 'FIPE', pesquisa: 'Preço pesquisado', manual: 'Manual', estimado: 'Estimado' }[s.priceSource]}
                         </Badge>
                       )}
                     </span>

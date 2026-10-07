@@ -23,6 +23,7 @@ export function AssumptionsForm({ a, onChange, prefs, onPrefs, token, onToken }:
           <NumberField label="Gasolina" prefix="R$" suffix="/l" step={0.01} value={a.gasolinePrice} onChange={(v) => set('gasolinePrice', v)} />
           <NumberField label="Etanol" prefix="R$" suffix="/l" step={0.01} value={a.ethanolPrice} onChange={(v) => set('ethanolPrice', v)} hint={`Paridade: ${((a.ethanolPrice / a.gasolinePrice) * 100).toFixed(0)}%`} />
           <NumberField label="Diesel" prefix="R$" suffix="/l" step={0.01} value={a.dieselPrice} onChange={(v) => set('dieselPrice', v)} />
+          <NumberField label="Plug-in no modo elétrico" suffix="% dos km" scale={100} value={a.phevElectricShare} onChange={(v) => set('phevElectricShare', Math.min(1, Math.max(0, v)))} hint="Depende de recarregar todo dia" />
           <NumberField label="Energia (recarga)" prefix="R$" suffix="/kWh" step={0.01} value={a.kwhPrice} onChange={(v) => set('kwhPrice', v)} hint="Tarifa residencial" />
         </div>
       </Collapsible>

@@ -42,7 +42,7 @@ export function ModelPage({ modelId, results, ranked, keep, horizon, onHorizon, 
   const rankOf = (r: ScenarioResult) => ranked.findIndex((x) => x.scenario.id === r.scenario.id) + 1
   const best = [...options].sort((x, y) => x.horizons[horizon].total - y.horizons[horizon].total)[0]
   const leader = ranked.find((r) => r.scenario.kind !== 'keep')
-  const anyEstimated = options.some((o) => o.scenario.priceSource !== 'fipe')
+  const anyEstimated = options.some((o) => o.scenario.priceSource === 'estimado')
 
   return (
     <div className="space-y-6">
@@ -148,7 +148,7 @@ export function ModelPage({ modelId, results, ranked, keep, horizon, onHorizon, 
                     </td>
                     <td className="px-3 py-2 text-right tabular whitespace-nowrap">
                       {money(o.scenario.price)}
-                      <span className="block text-xs text-muted">{o.scenario.priceSource === 'fipe' ? 'FIPE' : 'estimado'}</span>
+                      <span className="block text-xs text-muted">{{ fipe: 'FIPE', pesquisa: 'pesquisa', manual: 'manual', estimado: 'estimado' }[o.scenario.priceSource]}</span>
                     </td>
                     <td className="px-3 py-2 text-right tabular">{o.upfrontCash > 0 ? money(o.upfrontCash) : '—'}</td>
                     <td className="px-3 py-2 text-right tabular whitespace-nowrap">
@@ -210,6 +210,9 @@ export function ModelPage({ modelId, results, ranked, keep, horizon, onHorizon, 
           <Fact k="Seguro" v={`${((model.insuranceRate * a.insuranceFactor) * 100).toFixed(1)}% do valor por ano`} src="estimativa" note="Média por categoria × fator do seu perfil. Não é cotação — peça uma à sua corretora." />
           <Fact k="Manutenção" v={`${money(model.maintenanceBase)}/ano com o carro novo, +${(a.maintenanceGrowth * 100).toFixed(0)}% por ano de idade`} src="estimativa" note="Média por categoria; confira o preço das revisões na concessionária." />
           <Fact k="Depreciação" v={`curva de mercado × ${model.depreciationFactor.toLocaleString('pt-BR')} (fator da marca/motorização)`} src="estimativa" note="Histórico de revenda varia; use o histórico FIPE do modelo para conferir." />
+          {model.powertrain === 'hibrido-plugin' && (
+            <Fact k="Uso elétrico" v={`${Math.round(a.phevElectricShare * 100)}% dos km no modo elétrico`} src="sua premissa" note="Ajuste em Premissas → Uso e energia conforme sua rotina de recarga." />
+          )}
           {model.estimated?.map((e) => <Fact key={e} k="Outros" v={e} src="estimativa" />)}
         </dl>
       </Card>

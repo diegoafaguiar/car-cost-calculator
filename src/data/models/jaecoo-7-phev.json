@@ -1,0 +1,88 @@
+{
+  "catalogSeed": {
+    "brand": "Jaecoo",
+    "model": "7 PHEV",
+    "version": "Elite 1.5 TGDI PHEV DHT",
+    "category": "suv-medio",
+    "powertrain": "hibrido-plugin",
+    "seats": 5,
+    "trunkL": 500,
+    "refPriceNew": 189990,
+    "consumption": { "cityKmL": 15.1, "roadKmL": 13.5, "cityKmLEthanol": null, "roadKmLEthanol": null, "cityKmKWh": null, "roadKmKWh": null },
+    "evShareNote": "Plug-in com bateria LFP de 18,3 kWh e 79 km de autonomia elétrica (Inmetro); km/l acima é com bateria descarregada (modo híbrido). Só gasolina.",
+    "fipeBrand": "JAECOO",
+    "fipeInclude": ["7 ", "1.5 TB"],
+    "since": 2026
+  },
+  "id": "jaecoo-7-phev",
+  "researchedAt": "2026-10",
+  "displayName": "Jaecoo 7 PHEV",
+  "summary": "SUV médio híbrido plug-in da Omoda & Jaecoo (grupo Chery), importado da China, com visual inspirado em utilitários off-road. Sistema SHS: motor 1.5 turbo a gasolina (135 cv, 20,4 kgfm) e motor elétrico de 204 cv; potência combinada oficial de 279 cv. Bateria LFP de 18,3 kWh, 79 km elétricos (Inmetro). Versões Elite, Luxury e Prestige.",
+  "generation": "1ª geração (J7); lançada no Brasil em 15/abr/2025 nas versões Luxury e Prestige; linha 2027 em jul/2026.",
+  "timeline": [
+    { "modelYear": "2026", "change": "Estreia em abr/2025: Luxury R$ 229.900 e Prestige R$ 249.900." },
+    { "modelYear": "2026", "change": "Reajuste: Luxury R$ 234.990 (+R$ 5 mil) e Prestige R$ 256.990 (+R$ 7 mil)." },
+    { "modelYear": "2026", "change": "Mai/2026: nova versão de entrada Elite em pré-venda por R$ 179.990, mesmo conjunto mecânico." },
+    { "modelYear": "2027", "change": "Jul/2026: linha 2027 com Elite R$ 189.990, Luxury R$ 234.900 (promo R$ 224.900 até 15/jul) e Prestige R$ 256.900; Luxury ganha porta-malas elétrico, câmera 360° com 'carro transparente', teto panorâmico e bancos ventilados." }
+  ],
+  "highlights": [
+    "Autonomia elétrica de 79 km (Inmetro) e autonomia combinada declarada de 1.200 km.",
+    "Inmetro: 15,1 km/l cidade / 13,5 km/l estrada no modo híbrido; teste da Revista Carro fez 21,7 km/l em 400 km de estrada.",
+    "Porta-malas de 500 L; 4,50 m de comprimento e 2,67 m de entre-eixos.",
+    "5 estrelas no Euro NCAP.",
+    "Prestige: head-up display, som Sony e pacote ADAS completo.",
+    "Volume: 2.613 emplacamentos em set/2026 (4º híbrido mais vendido)."
+  ],
+  "watchOuts": [
+    "Só gasolina (não é flex).",
+    "Potência divulgada de forma conflitante: 279 cv (dado oficial citado pela imprensa) x 339 cv (soma simples dos motores, citada em outras matérias).",
+    "Recall na China (jan/2026, 1.108 unidades de Tiggo 7 e J7) por chicote da ECU que pode desligar o motor; sem recall no Brasil até a pesquisa.",
+    "Reclamações no Reclame Aqui: perda de potência na estrada (Prestige) e oxidação de componentes de freio.",
+    "Preços mudaram várias vezes (R$ 179.990 → 189.990 na Elite; promoções e reajustes nas outras), o que pressiona a revenda.",
+    "Marca nova no Brasil (abr/2025): rede e valor de revenda ainda sem histórico."
+  ],
+  "specs": {
+    "version": "Jaecoo 7 PHEV (linha 2027, mesmo conjunto em todas as versões)",
+    "engine": "1.5 turbo gasolina com injeção direta (135 cv) + motor elétrico de 204 cv, híbrido plug-in SHS; bateria LFP de 18,3 kWh",
+    "powerCv": "279 (combinada)",
+    "torqueKgfm": "37,2 (combinado; outra fonte cita 52)",
+    "transmission": "DHT (transmissão híbrida dedicada)",
+    "trunkL": 500,
+    "lengthMm": 4500,
+    "wheelbaseMm": 2672,
+    "safety": "Sem teste Latin NCAP; Euro NCAP 5 estrelas",
+    "warranty": "7 anos (veículo) e 8 anos (bateria) é a política citada pela marca para Jaecoo 5 e 8; para o Jaecoo 7 não confirmado"
+  },
+  "inmetro": { "version": "Jaecoo 7 PHEV", "cityGas": 15.1, "roadGas": 13.5, "cityEth": null, "roadEth": null, "cityKmKWh": null, "roadKmKWh": null, "year": "PBEV 2026 (conforme imprensa); autonomia elétrica 79 km; 37 km/l-e", "source": "https://www.cnnbrasil.com.br/auto/jaecoo-7-saiba-o-consumo-na-rodovia-e-quanto-ele-roda-com-um-tanque/" },
+  "price0km": { "version": "Elite", "price": 189990, "date": "jul/2026", "source": "https://www.vrum.com.br/mercado/2026/07/7454426-jaecoo-7-2027-estreia-novas-versoes-e-parte-de-rs-189.html" },
+  "versionsAndPrices": [
+    { "version": "Elite", "price": 189990, "date": "jul/2026", "source": "https://www.vrum.com.br/mercado/2026/07/7454426-jaecoo-7-2027-estreia-novas-versoes-e-parte-de-rs-189.html" },
+    { "version": "Luxury", "price": 234900, "date": "jul/2026 (após promoção)", "source": "https://www.vrum.com.br/mercado/2026/07/7454426-jaecoo-7-2027-estreia-novas-versoes-e-parte-de-rs-189.html" },
+    { "version": "Prestige", "price": 256900, "date": "jul/2026", "source": "https://www.vrum.com.br/mercado/2026/07/7454426-jaecoo-7-2027-estreia-novas-versoes-e-parte-de-rs-189.html" }
+  ],
+  "launchModelYearBR": 2026,
+  "catalogCheck": "Modelo ainda não está no catálogo. Sugere-se cadastrar a Elite (R$ 189.990, jul/2026). FIPE set/2026: Elite 2027 R$ 181.492; Luxury 2026 R$ 196.358; Prestige 2026 R$ 216.213. Garagem360 noticiou cortes promocionais de R$ 10 mil em Luxury (R$ 224.990) e Prestige (R$ 246.990) em jul/2026.",
+  "wikipedia": { "lang": "en", "title": "Jaecoo J7" },
+  "officialUrl": null,
+  "sources": [
+    { "label": "Vrum — Jaecoo 7 2027 versões e preços", "url": "https://www.vrum.com.br/mercado/2026/07/7454426-jaecoo-7-2027-estreia-novas-versoes-e-parte-de-rs-189.html" },
+    { "label": "Autodata — desconto na linha 2027", "url": "https://www.autodata.com.br/noticias/2026/07/02/jaecoo-7-tem-desconto-de-r-10-mil-no-lancamento-da-linha-2027/107694/" },
+    { "label": "Car.blog.br — Elite R$ 179.990", "url": "https://www.car.blog.br/2026/05/jaecoo-7-elite-chega-por-r-179990-e.html" },
+    { "label": "Canal VE — lançamento abr/2025", "url": "https://canalve.com.br/omoda-e5-custa-r-209-mil-no-brasil-e-jaecoo-7-r-229-mil/" },
+    { "label": "Automais — reajuste de até R$ 7 mil", "url": "https://www.automaistv.com.br/vendas-e-precos/jaecoo-7-sofre-aumento-de-ate-r-7-mil-e-passa-dos-r-250-mil/" },
+    { "label": "CNN Brasil — consumo Inmetro e autonomia", "url": "https://www.cnnbrasil.com.br/auto/jaecoo-7-saiba-o-consumo-na-rodovia-e-quanto-ele-roda-com-um-tanque/" },
+    { "label": "Revista Carro — teste de consumo real", "url": "https://revistacarro.com.br/jaecoo-7-teste-de-consumo-real-em-viagem-do-suv-medio-com-motor-hibrido/" },
+    { "label": "Revista Carro — Euro NCAP 5 estrelas", "url": "https://revistacarro.com.br/jaecoo-7-phev-recebe-cinco-estrelas-no-euro-ncap/" },
+    { "label": "Garagem360 — recall na China", "url": "https://garagem360.com.br/?p=301681" },
+    { "label": "Litoralcar — FIPE Jaecoo 7", "url": "https://www.litoralcar.com.br/tabela-fipe/jaecoo/7" },
+    { "label": "Canaltech — híbridos mais vendidos set/2026", "url": "https://canaltech.com.br/carros/hibridos-mais-vendidos-de-setembro-gwm-lidera-mas-dominio-e-da-byd/" }
+  ],
+  "unverified": [
+    "Potência combinada (279 x 339 cv) e torque (37,2 x 52 kgfm).",
+    "Garantia específica do Jaecoo 7.",
+    "Preço exato vigente em out/2026 da Luxury/Prestige (promoções de jul/2026).",
+    "Consumo elétrico em km/kWh (Inmetro) não encontrado.",
+    "Ano-modelo de estreia (2025 ou 2026) — FIPE lista Luxury/Prestige 2026.",
+    "officialUrl não vista nos resultados."
+  ]
+}

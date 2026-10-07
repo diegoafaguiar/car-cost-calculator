@@ -35,6 +35,8 @@ export const DEFAULT_ASSUMPTIONS: Assumptions = {
   ethanolPrice: 4.29,
   dieselPrice: 6.09,
   kwhPrice: 0.95,
+  // Com recarga em casa e ~34 km/dia na cidade, a maior parte cabe na autonomia elétrica (57–126 km).
+  phevElectricShare: 0.7,
   // Faixa informada pelo usuário: 8–10% a.a. líquido.
   investReturnYear: 0.09,
   inflationYear: 0.045,
