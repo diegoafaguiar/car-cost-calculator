@@ -3,7 +3,7 @@ import { CATALOG, CATEGORY_LABEL, POWERTRAIN_LABEL } from '../lib/catalog'
 import { money, money2, months, number } from '../lib/format'
 import { MODEL_INFO, type ModelInfo } from '../lib/modelInfo'
 import { energyCostPerKm } from '../lib/tco'
-import type { Assumptions, CurrentCar, Horizon, ScenarioResult } from '../lib/types'
+import type { Assumptions, Consumption, CurrentCar, Horizon, ScenarioResult } from '../lib/types'
 import { HORIZONS } from '../lib/types'
 import { BreakdownBars } from './BreakdownBars'
 import { Badge, Card, Segmented } from './ui'
@@ -191,6 +191,27 @@ export function ModelPage({ modelId, results, ranked, keep, horizon, onHorizon, 
             </div>
           </div>
         )}
+      </Card>
+
+      <Card title="Como este carro entra no cálculo" subtitle="Transparência: o que vem de fonte e o que é estimativa">
+        <dl className="divide-y divide-line text-sm">
+          <Fact
+            k="Preço 0 km"
+            v={`${money(model.refPriceNew)} (${model.version})`}
+            src={info?.price0km.source ? <SourceLink href={info.price0km.source} label={`pesquisa, ${info.price0km.date ?? info.researchedAt}`} /> : 'estimativa do catálogo'}
+            note="Substituído pelo valor FIPE ao clicar em “Atualizar preços FIPE”."
+          />
+          <Fact
+            k="Consumo"
+            v={consumptionText(model.consumption)}
+            src={info?.inmetro.source ? <SourceLink href={info.inmetro.source} label={`INMETRO/PBEV ${info.inmetro.year ?? ''}`} /> : 'estimativa do catálogo'}
+            note={model.consumptionHistory?.length ? `Seminovos até ${model.consumptionHistory[0].untilModelYear} usam ${consumptionText(model.consumptionHistory[0].consumption)}.` : undefined}
+          />
+          <Fact k="Seguro" v={`${((model.insuranceRate * a.insuranceFactor) * 100).toFixed(1)}% do valor por ano`} src="estimativa" note="Média por categoria × fator do seu perfil. Não é cotação — peça uma à sua corretora." />
+          <Fact k="Manutenção" v={`${money(model.maintenanceBase)}/ano com o carro novo, +${(a.maintenanceGrowth * 100).toFixed(0)}% por ano de idade`} src="estimativa" note="Média por categoria; confira o preço das revisões na concessionária." />
+          <Fact k="Depreciação" v={`curva de mercado × ${model.depreciationFactor.toLocaleString('pt-BR')} (fator da marca/motorização)`} src="estimativa" note="Histórico de revenda varia; use o histórico FIPE do modelo para conferir." />
+          {model.estimated?.map((e) => <Fact key={e} k="Outros" v={e} src="estimativa" />)}
+        </dl>
       </Card>
 
       <SpecComparison
@@ -404,5 +425,34 @@ function SpecComparison({
         </table>
       </div>
     </Card>
+  )
+}
+
+function consumptionText(c: Consumption) {
+  const parts: string[] = []
+  if (c.cityKmL) parts.push(`G ${number(c.cityKmL)}/${number(c.roadKmL)} km/l`)
+  if (c.cityKmLEthanol) parts.push(`E ${number(c.cityKmLEthanol)}/${number(c.roadKmLEthanol ?? 0)} km/l`)
+  if (c.cityKmKWh) parts.push(`${number(c.cityKmKWh)}/${number(c.roadKmKWh ?? 0)} km/kWh`)
+  return `${parts.join(' · ')} (cidade/estrada)`
+}
+
+function SourceLink({ href, label }: { href: string; label: string }) {
+  return (
+    <a href={href} target="_blank" rel="noreferrer" className="text-accent underline">
+      {label}
+    </a>
+  )
+}
+
+function Fact({ k, v, src, note }: { k: string; v: ReactNode; src: ReactNode; note?: string }) {
+  return (
+    <div className="grid gap-1 py-2 sm:grid-cols-[10rem_1fr_auto] sm:gap-4">
+      <dt className="text-ink-2">{k}</dt>
+      <dd>
+        {v}
+        {note && <span className="block text-xs text-muted">{note}</span>}
+      </dd>
+      <dd className="text-xs sm:text-right">{src === 'estimativa' ? <Badge tone="warn">estimativa</Badge> : src}</dd>
+    </div>
   )
 }

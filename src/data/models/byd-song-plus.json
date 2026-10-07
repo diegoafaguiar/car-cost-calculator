@@ -1,0 +1,87 @@
+{
+  "id": "byd-song-plus",
+  "researchedAt": "2026-10",
+  "displayName": "BYD Song Plus",
+  "summary": "SUV médio híbrido plug-in (DM-i) importado da China, primeiro PHEV da BYD no Brasil. Conjunto 1.5 a gasolina (105 cv) que funciona majoritariamente como gerador + motor elétrico de 204 cv, total combinado de 235 cv. Linha 2026 tem duas versões: Song Plus (bateria 18,3 kWh) e Song Plus Premium (bateria 26,6 kWh e recarga DC).",
+  "generation": "Song Plus DM-i (geração atual), pré-venda no Brasil em set/2022 com entregas até jan/2023; facelift da linha 2026 apresentado em 28/mai/2025.",
+  "timeline": [
+    { "modelYear": "2023", "change": "Lançamento no Brasil (pré-venda 15/set/2022) por R$ 269.990; 1.5 de 110 cv + elétrico de 179 cv, 235 cv combinados; primeiro lote de 200 unidades esgotou em 7 dias." },
+    { "modelYear": "2025", "change": "Atualização com autonomia elétrica maior (imprensa relata salto de 28 km para 68 km no padrão Inmetro) e consumo a gasolina pior que a linha anterior, segundo AutoPapo." },
+    { "modelYear": "2026", "change": "Facelift (mai/2025): visual da família Ocean (parecido com o Seal), head-up display, chave NFC/app; mecânica mantida (1.5 de 105 cv + elétrico de 204 cv = 235 cv). Nova versão Premium com bateria Blade de 26,6 kWh (autonomia Inmetro de 52 para 87 km) e recarga DC de 18 kW (~90 min para 100%). Preços: R$ 249.990 (Song Plus) e R$ 299.800 (Premium)." }
+  ],
+  "highlights": [
+    "235 cv combinados com uso prioritário do motor elétrico",
+    "Porta-malas de 574 L",
+    "Versão Premium com 87 km de autonomia elétrica (Inmetro) e recarga DC",
+    "Garantia de 6 anos do veículo e 8 anos da bateria sem limite de km"
+  ],
+  "watchOuts": [
+    "Desvalorização: FIPE do Song Plus 2026 em set/2026 era R$ 218.462 (preço de tabela R$ 249.990), queda de 5,2% em 12 meses",
+    "Consumo a gasolina com bateria descarregada cai bastante em estrada (Inmetro modo híbrido 14,9 cidade / 12,1 estrada, segundo guias de compra)",
+    "Versão de entrada não tem recarga rápida DC (só a Premium foi destacada com DC de 18 kW)",
+    "Não foi encontrado teste Latin NCAP do modelo vendido no Brasil"
+  ],
+  "specs": {
+    "version": "Song Plus (entrada, linha 2026)",
+    "engine": "1.5 aspirado a gasolina (ciclo Atkinson) + motor elétrico; híbrido plug-in DM-i",
+    "powerCv": "235 combinados (105 do 1.5 + 204 do elétrico)",
+    "torqueKgfm": null,
+    "transmission": "e-CVT (transmissão do sistema DM-i, sem marchas)",
+    "trunkL": 574,
+    "lengthMm": null,
+    "wheelbaseMm": 2765,
+    "safety": null,
+    "warranty": "6 anos para o veículo e 8 anos para a bateria, sem limite de quilometragem"
+  },
+  "inmetro": {
+    "version": "Song Plus 2026 (bateria 18,3 kWh)",
+    "cityGas": 14.9,
+    "roadGas": 12.1,
+    "cityEth": null,
+    "roadEth": null,
+    "cityKmKWh": null,
+    "roadKmKWh": null,
+    "year": "PBEV 2025/2026 (valores publicados por guias de compra; tabela PBEV não consultada diretamente)",
+    "source": "https://www.mercadolivre.com.br/blog/mo-consumo-byd-song-plus-2026-consumo-autonomia-e-desempenho-por-versao"
+  },
+  "electric": {
+    "batteryKWh": "18,3 (Song Plus) / 26,6 (Premium)",
+    "rangeInmetroKm": "52 (Song Plus) / 87 (Premium)",
+    "rangeNedcKm": "100 (Song Plus) / 135 (Premium)",
+    "note": "Há divergência entre fontes para a versão de entrada: imprensa de lançamento cita 52 km Inmetro; guias do Mercado Livre e Chaves na Mão citam 63 km e 68 km. Consumo elétrico em km/kWh não foi encontrado; não foi possível fazer a conversão do PBEV (se o PBEV der MJ/km, km/kWh = 3,6 ÷ MJ/km)."
+  },
+  "price0km": { "version": "Song Plus (linha 2026)", "price": 249990, "date": "mai/2025 (lançamento da linha 2026; ainda citado como preço oficial em 2026)", "source": "https://www.opovo.com.br/noticias/veiculos/2025/05/28/novo-byd-song-plus-e-lancado-por-rs-2499-mil-com-visual-renovado-e-mesma-motorizacao.html" },
+  "versionsAndPrices": [
+    { "version": "Song Plus", "price": 249990, "date": "mai/2025", "source": "https://www.nsctotal.com.br/?p=7526335" },
+    { "version": "Song Plus Premium", "price": 299800, "date": "mai/2025", "source": "https://www.nsctotal.com.br/?p=7526335" }
+  ],
+  "launchModelYearBR": 2023,
+  "catalogCheck": "Preço do catálogo (R$ 239.990) está desatualizado: o preço oficial da linha 2026 é R$ 249.990 (Song Plus) e R$ 299.800 (Premium); R$ 239.990 aparece só em anúncios de revenda. Consumo a gasolina do catálogo (15,0/14,0) não confere com o Inmetro citado pela imprensa (14,9 cidade / 12,1 estrada); a estrada está otimista. Elétrico 5,5/4,8 km/kWh não foi verificado (fonte não encontrada). Porta-malas de 574 L confere. 'Desde 2023' confere (ano-modelo de estreia; pré-venda em set/2022). O nome 'Song Plus DM-i' segue válido; a versão equivalente de entrada chama-se apenas 'Song Plus', e acima dela está a 'Song Plus Premium'.",
+  "wikipedia": { "lang": "en", "title": "BYD Song Plus" },
+  "officialUrl": "https://www.byd.com/br/noticias-byd-brasil/novo-byd-song-plus-chega-ao-brasil-com-design-global.html",
+  "sources": [
+    { "label": "NSC Total – BYD renova Song Plus para a linha 2026", "url": "https://www.nsctotal.com.br/?p=7526335" },
+    { "label": "O Povo – Novo BYD Song Plus é lançado por R$ 249,9 mil", "url": "https://www.opovo.com.br/noticias/veiculos/2025/05/28/novo-byd-song-plus-e-lancado-por-rs-2499-mil-com-visual-renovado-e-mesma-motorizacao.html" },
+    { "label": "O Povo – BYD Song Plus 2026: cara nova e motor conhecido", "url": "https://www.opovo.com.br/noticias/veiculos/2025/06/05/byd-song-plus-2026-cara-nova-e-motor-conhecido.html" },
+    { "label": "Autoo – Novo BYD Song Plus 2026 estreia no Brasil", "url": "https://www.autoo.com.br/novo-byd-song-plus-2026-estreia-no-brasil-com-mais-autonomia-head-up-display-e-visual-atualizado/" },
+    { "label": "Estado de Minas – Song Plus Premium: autonomia de 52 para 87 km", "url": "https://www.em.com.br/emfoco/2025/06/10/byd-song-plus-premium-recebe-atualizacao-e-uma-bateria-poderosa-autonomia-eletrica-sobe-de-52-km-para-87-km/" },
+    { "label": "AutoPapo – Song Plus 2025: autonomia aumentou, porém passou a beber mais", "url": "https://autopapo.com.br/noticia/byd-song-plus-2025-consumo-autonomia/" },
+    { "label": "Mercado Livre – consumo e autonomia do Song Plus 2026", "url": "https://www.mercadolivre.com.br/blog/mo-consumo-byd-song-plus-2026-consumo-autonomia-e-desempenho-por-versao" },
+    { "label": "Chaves na Mão – Song Plus 2026 consumo e bateria", "url": "https://www.chavesnamao.com.br/blog/carros/byd-song-plus-2026-consumo-preco-bateria/" },
+    { "label": "Tabela FIPE Brasil – Song Plus 1.5 2026 (set/2026)", "url": "https://www.tabelafipebrasil.com/carros/BYD/SONG-PLUS-15-16V-AUT-HIBRIDO/2026" },
+    { "label": "Motor Show – pré-venda do Song Plus DM-i (2022)", "url": "https://motorshow.com.br/byd-inicia-a-pre-venda-do-novo-suv-hibrido-para-o-brasil-song-plus-dm-i" },
+    { "label": "Vrum – BYD lança Song Plus DM-i", "url": "https://www.vrum.com.br/mercado/byd-lanca-song-plus-dm-i/" },
+    { "label": "Autocosmos Chile – ficha técnica Song Plus DM-i (entre-eixos, porta-malas)", "url": "https://www.autocosmos.cl/catalogo/2025/byd/song-plus-dm-i/gl/180390" },
+    { "label": "BYD Brasil – Novo Song Plus chega ao Brasil", "url": "https://www.byd.com/br/noticias-byd-brasil/novo-byd-song-plus-chega-ao-brasil-com-design-global.html" }
+  ],
+  "unverified": [
+    "Consumo elétrico em km/kWh (cidade/estrada) do PBEV: não encontrado; conversão não realizada",
+    "Autonomia elétrica Inmetro da versão de entrada: 52 km (imprensa de lançamento) vs 63/68 km (guias de compra)",
+    "Consumo a gasolina Inmetro 14,9/12,1 veio de guias de compra, não da tabela PBEV",
+    "Torque combinado e comprimento (mm) da versão brasileira",
+    "Entre-eixos 2.765 mm e porta-malas 574 L vêm de ficha chilena",
+    "Nota de segurança (Latin NCAP não encontrado)",
+    "Se houve mudança de preço de tabela ao longo de 2026 ou linha 2027 (busca não confirmou)",
+    "Páginas não abertas diretamente: WebFetch falhou (DNS) em todos os domínios; dados vêm de resumos do WebSearch"
+  ]
+}

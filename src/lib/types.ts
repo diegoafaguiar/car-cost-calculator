@@ -55,6 +55,10 @@ export interface CatalogModel {
   maintenanceBase: number
   /** Multiplicador da curva de depreciação (1 = média de mercado). */
   depreciationFactor: number
+  /** Consumo de anos-modelo anteriores, quando diferente do atual (ex.: antes de um facelift). */
+  consumptionHistory?: { untilModelYear: number; consumption: Consumption }[]
+  /** Campos do catálogo que são estimativas sem fonte (exibidos como aviso). */
+  estimated?: string[]
   /** Primeiro ano-modelo vendido no Brasil (seminovos anteriores não existem). */
   since?: number
   /** Fração rodada no modo elétrico (só híbridos plug-in). */

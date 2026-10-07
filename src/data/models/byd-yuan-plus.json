@@ -1,0 +1,143 @@
+{
+  "id": "byd-yuan-plus",
+  "researchedAt": "2026-10",
+  "displayName": "BYD Yuan Plus",
+  "summary": "SUV compacto-médio 100% elétrico (chamado Atto 3 em outros mercados), importado da China. Foi vendido de 2022 a início de 2026 em versão única de tração dianteira (204 cv, bateria Blade 60,5 kWh, 294 km PBEV). Desde abr/2026 (linha 2027) é vendido apenas como Yuan Plus AWD: dois motores, 449 cv, bateria de 74,88 kWh e 378 km de autonomia PBEV, por R$ 269.990.",
+  "generation": "1ª geração (Atto 3), lançada no Brasil no fim de 2022 (ano-modelo 2023); reestilização com tração integral (Yuan Plus AWD, linha 2027) lançada em abr/2026.",
+  "timeline": [
+    {
+      "modelYear": "2023",
+      "change": "Lançamento no Brasil por R$ 269.990: motor dianteiro de 204 cv/31,6 kgfm, bateria Blade LFP de 60,5 kWh, 294 km PBEV."
+    },
+    {
+      "modelYear": "2024",
+      "change": "Preço reduzido para R$ 229.800/229.990 (corte de R$ 40 mil); em jul/2024 subiu para R$ 235.800 após aumento do imposto de importação de elétricos."
+    },
+    {
+      "modelYear": "2026",
+      "change": "Linha 2026 sem mudanças mecânicas, apenas novas cores; preço mantido (~R$ 235.800-235.990)."
+    },
+    {
+      "modelYear": "2027",
+      "change": "Abr/2026: vira Yuan Plus AWD — dois motores (449 cv, 560 Nm), 0-100 km/h em 3,9 s, bateria de 74,88 kWh, 378 km PBEV, recarga DC até 205 kW, porta-malas de 490 L + frunk de 101 L, para-choques/lanternas/rodas 18\" novos, câmbio na coluna; preço R$ 269.990. A versão de tração dianteira deixou de ser oferecida."
+    }
+  ],
+  "highlights": [
+    "Yuan Plus AWD 2027: 449 cv e 560 Nm, 0-100 km/h em 3,9 s (Motor Show/AutoPapo, abr/2026).",
+    "Autonomia PBEV de 378 km na AWD (era 294 km na versão dianteira).",
+    "Recarga DC até 205 kW: 20-80% em cerca de 20 min (AWD).",
+    "Consumo PBEV de 0,58 MJ/km na AWD (≈ 6,2 km/kWh).",
+    "Bateria Blade LFP com 8 anos de garantia sem limite de km."
+  ],
+  "watchOuts": [
+    "Preço subiu de ~R$ 235,8 mil (FWD) para R$ 269.990 (AWD) — a Motor Show chamou a renovação de tentativa de reação após vendas fracas ('após flopar').",
+    "AWD pesa 2.520 kg; IPVA/seguro altos para o valor (JK Carros estima IPVA de R$ 10,8 mil mesmo para PCD em alguns estados).",
+    "Depreciação: histórico de cortes de preço de até R$ 40 mil pela própria BYD (2024) derrubou o valor dos usados; anúncios de Yuan Plus 2023/2024 com ~28 mil km aparecem por R$ 162-170 mil (Webmotors, 2026), contra R$ 269.990 do lançamento.",
+    "Sem teste Latin NCAP (o Atto 3 tem 5 estrelas no Euro NCAP 2022, não aplicável diretamente)."
+  ],
+  "specs": {
+    "version": "Yuan Plus AWD (linha 2027)",
+    "engine": "2 motores elétricos (dianteiro + traseiro), tração integral",
+    "powerCv": "449",
+    "torqueKgfm": "57,1",
+    "transmission": "redução fixa (1 marcha)",
+    "trunkL": 490,
+    "lengthMm": 4455,
+    "wheelbaseMm": 2720,
+    "safety": null,
+    "warranty": "6 anos sem limite de km para o veículo (elétricos/híbridos BYD no Brasil, desde mai/2024, inclusive para carros já entregues) e 8 anos sem limite de km para a bateria Blade (fonte: Olhar Digital/Canal VE, mai/2024)."
+  },
+  "inmetro": {
+    "version": "Yuan Plus AWD 2027 (0,58 MJ/km; 378 km). Versão FWD anterior: 18 kWh/100 km ≈ 0,648 MJ/km ≈ 5,56 km/kWh, 294 km",
+    "cityGas": null,
+    "roadGas": null,
+    "cityEth": null,
+    "roadEth": null,
+    "cityKmKWh": 6.21,
+    "roadKmKWh": 6.21,
+    "year": "PBEV 2026",
+    "source": "https://canalve.com.br/ficha-tecnica/byd/tudo-sobre-yuan-plus-2027/",
+    "note": "Conversão: km/kWh = 3,6 ÷ MJ/km → 3,6/0,58 = 6,21 km/kWh. É o valor combinado PBEV; não foram encontrados valores separados cidade/estrada, por isso o mesmo número foi repetido nos dois campos."
+  },
+  "price0km": {
+    "version": "Yuan Plus AWD 2027",
+    "price": 269990,
+    "date": "abr/2026",
+    "source": "https://motorshow.com.br/byd-yuan-plus-2027-449-cv"
+  },
+  "versionsAndPrices": [
+    {
+      "version": "Yuan Plus AWD 2027 (única atual)",
+      "price": 269990,
+      "date": "abr/2026",
+      "source": "https://www.autorealidade.com.br/2026/04/byd-yuan-plus-agora-e-awd-com-449-cv-e.html"
+    },
+    {
+      "version": "Yuan Plus FWD 204 cv (descontinuada; linha 2026)",
+      "price": 235800,
+      "date": "jul/2024 (mantido na linha 2026)",
+      "source": "https://garagem360.com.br/?p=253384"
+    }
+  ],
+  "launchModelYearBR": 2023,
+  "catalogCheck": "Preço R$ 229.990 está desatualizado: era o preço promocional de 2024 da versão FWD (que subiu para R$ 235.800 em jul/2024). Hoje só existe o Yuan Plus AWD 2027 por R$ 269.990 (abr/2026). Consumo 6,3/5,4 km/kWh não confere: PBEV da AWD é 0,58 MJ/km ≈ 6,2 km/kWh combinado (a FWD era ~5,6 km/kWh). Porta-malas 440 L era o da FWD; AWD tem 490 L + frunk de 101 L. Ano-modelo de lançamento 2023 está correto. O catálogo não tem nome de versão; a equivalente atual é 'Yuan Plus AWD'.",
+  "wikipedia": {
+    "lang": "en",
+    "title": "BYD Atto 3"
+  },
+  "officialUrl": null,
+  "sources": [
+    {
+      "label": "Motor Show – Yuan Plus 2027 ganha 449 cv",
+      "url": "https://motorshow.com.br/byd-yuan-plus-2027-449-cv"
+    },
+    {
+      "label": "AutoRealidade – Yuan Plus AWD R$ 269.990",
+      "url": "https://www.autorealidade.com.br/2026/04/byd-yuan-plus-agora-e-awd-com-449-cv-e.html"
+    },
+    {
+      "label": "AutoPapo – BYD renova Yuan Plus com tração integral",
+      "url": "https://autopapo.com.br/noticia/byd-renova-yuan-plus-com-tracao-integral-e-desempenho-aprimorado/"
+    },
+    {
+      "label": "Canal VE – ficha técnica Yuan Plus 2027 (0,58 MJ/km, 490 L)",
+      "url": "https://canalve.com.br/ficha-tecnica/byd/tudo-sobre-yuan-plus-2027/"
+    },
+    {
+      "label": "Webmotors – Yuan Plus 2027 fica mais potente",
+      "url": "https://www.webmotors.com.br/wm1/noticias/byd-yuan-plus-2027-fica-bem-mais-potente"
+    },
+    {
+      "label": "JK Carros – IPVA/TCO Yuan Plus AWD",
+      "url": "https://jkcarros.com.br/byd-yuan-plus-awd-2027-pcd-preco-tco/"
+    },
+    {
+      "label": "Garagem360 – reajuste jul/2024 (R$ 229.800 → 235.800)",
+      "url": "https://garagem360.com.br/?p=253384"
+    },
+    {
+      "label": "Canal VE – desconto de R$ 40 mil Yuan Plus",
+      "url": "https://canalve.com.br/byd-da-desconto-de-r-40-mil-para-o-yuan-plus-e-o-song-plus/"
+    },
+    {
+      "label": "Motor Show – lançamento Yuan Plus R$ 269.990 (dimensões)",
+      "url": "https://motorshow.com.br/byd-confirma-o-lancamento-do-suv-eletrico-yuan-plus-por-r-269-990"
+    },
+    {
+      "label": "Garagem360 – Yuan Plus 2024 (18 kWh/100 km, 294 km)",
+      "url": "https://garagem360.com.br/byd-yuan-plus-2024"
+    },
+    {
+      "label": "Olhar Digital – BYD aumenta garantia no Brasil",
+      "url": "https://olhardigital.com.br/2024/05/08/carros-e-tecnologia/byd-aumenta-garantia-para-carros-eletricos-e-hibridos-no-brasil/"
+    }
+  ],
+  "unverified": [
+    "consumo PBEV separado cidade/estrada (só achado o combinado em MJ/km)",
+    "dimensões da AWD (4.455/2.720 mm vêm de ficha agregada; iguais às da FWD)",
+    "se a garantia da AWD segue exatamente 6 anos/8 anos bateria (política geral da BYD Brasil)",
+    "nota Latin NCAP (não testado)",
+    "URL oficial (byd.com inacessível nesta pesquisa)",
+    "preço exato da FWD na linha 2026 (R$ 235.800 vs R$ 235.990 em fontes diferentes)"
+  ]
+}

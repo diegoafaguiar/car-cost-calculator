@@ -441,7 +441,8 @@ export function buildScenarios(opts: {
         category: m.category,
         powertrain: m.powertrain,
         seats: m.seats,
-        consumption: m.consumption,
+        consumption:
+          m.consumptionHistory?.find((h) => year - ageOpt <= h.untilModelYear)?.consumption ?? m.consumption,
         evShare: m.evShare,
         price: p.price,
         priceSource: p.source,

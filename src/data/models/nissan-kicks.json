@@ -1,0 +1,87 @@
+{
+  "id": "nissan-kicks",
+  "researchedAt": "2026-10",
+  "displayName": "Nissan Kicks",
+  "summary": "SUV compacto produzido em Resende (RJ), 2ª geração na plataforma CMF-B. Todas as versões (Sense, Advance, Exclusive, Platinum) usam o 1.0 turbo flex de 3 cilindros com injeção direta (125 cv E / 120 cv G) e câmbio automatizado de dupla embreagem banhada a óleo de 6 marchas. A geração anterior (1.6 aspirado com CVT) continua à venda como Kicks Play, mais barato.",
+  "generation": "2ª geração, lançada no Brasil em jun/2025 (lojas a partir de 3/jul/2025), como ano-modelo 2026.",
+  "timeline": [
+    { "modelYear": "2022", "change": "1ª geração (facelift de 2021): 1.6 16V flex aspirado com câmbio CVT; versões Sense, Advance, Exclusive." },
+    { "modelYear": "2026", "change": "Nova geração (jun/2025): plataforma CMF-B, 1.0 turbo flex de 125 cv com DCT de 6 marchas no lugar do 1.6/CVT; cresce 55 mm no comprimento e 35 mm no entre-eixos; porta-malas de 470 L; 6 airbags, frenagem automática e ACC desde a Sense. Preços de lançamento: Sense R$ 164.990 (R$ 159.990 promocional), Advance R$ 175.990, Exclusive R$ 182.490, Platinum R$ 199.000. A geração anterior passa a se chamar Kicks Play. Reajustes em out/2025 (Advance R$ 177.990) e jan/2026 (Advance R$ 179.990)." },
+    { "modelYear": "2027", "change": "Linha 2027 (ago/2026), nos 10 anos do Kicks: sem mudanças mecânicas, cortes de até R$ 10 mil. Sense R$ 159.990, Advance R$ 169.990, Exclusive R$ 179.990, Platinum R$ 189.990." }
+  ],
+  "highlights": [
+    "Porta-malas de 470 L, o maior do segmento segundo a imprensa (38 L a mais que a geração anterior)",
+    "Latin NCAP 5 estrelas (2025): 90,32% adulto, 91,84% criança, 75,60% pedestre, 85,17% assistências",
+    "Frenagem automática de emergência, controle de cruzeiro adaptativo e 6 airbags de série em todas as versões",
+    "Entre-eixos de 2.655 mm e 4.365 mm de comprimento, entre os maiores do segmento B-SUV",
+    "Preços da linha 2027 até R$ 10 mil menores que os da linha 2026"
+  ],
+  "watchOuts": [
+    "Relatos de falhas precoces do câmbio de dupla embreagem (compartilhado com o Renault Kardian), inclusive com poucos dias ou 349 km de uso, segundo o Carro.Blog.Br",
+    "Recall 26V023000 nos EUA (Kicks 2026): batentes de porta mal soldados podem quebrar; não confirmado se afeta o Kicks brasileiro",
+    "O teste Latin NCAP de 5 estrelas foi feito com o Kicks produzido no México; não está claro se vale para o modelo de Resende",
+    "Desempenho do 1.0 turbo considerado apenas correto (CNN: 'agrada, mas não surpreende')",
+    "Depreciação: FIPE da Advance 2026 em torno de R$ 153 mil contra tabela de R$ 175.990 a R$ 179.990, e o corte de preço da linha 2027 pressiona os usados"
+  ],
+  "specs": {
+    "version": "Advance 1.0 turbo (linha 2026/2027)",
+    "engine": "1.0 turbo flex 3 cil. 12V, injeção direta",
+    "powerCv": "125 (E) / 120 (G)",
+    "torqueKgfm": "22,4 (E) / 20,4 (G)",
+    "transmission": "automatizado de dupla embreagem banhada a óleo, 6 marchas",
+    "trunkL": 470,
+    "lengthMm": 4365,
+    "wheelbaseMm": 2655,
+    "safety": "Latin NCAP 5 estrelas (2025, unidade feita no México)",
+    "warranty": null
+  },
+  "inmetro": {
+    "version": "Kicks 1.0 turbo DCT 2026",
+    "cityGas": 11.7,
+    "roadGas": 14.3,
+    "cityEth": 8.3,
+    "roadEth": 9.9,
+    "cityKmKWh": null,
+    "roadKmKWh": null,
+    "year": "PBEV 2025/2026 (valores publicados pela imprensa; tabela PBEV não consultada diretamente)",
+    "source": "https://consultadeplaca.net/blog/ficha-tecnica-kicks"
+  },
+  "price0km": { "version": "Advance 1.0 turbo (linha 2027)", "price": 169990, "date": "ago/2026", "source": "https://brazil.nissannews.com/pt-BR/releases/nissan-celebra-10-anos-do-lancamento-do-primeiro-kicks-e-reduz-o-preco-da-linha-2027-em-ate-r-10-mil" },
+  "versionsAndPrices": [
+    { "version": "Sense 1.0 turbo (2027)", "price": 159990, "date": "ago/2026", "source": "https://brazil.nissannews.com/pt-BR/releases/nissan-celebra-10-anos-do-lancamento-do-primeiro-kicks-e-reduz-o-preco-da-linha-2027-em-ate-r-10-mil" },
+    { "version": "Advance 1.0 turbo (2027)", "price": 169990, "date": "ago/2026", "source": "https://brazil.nissannews.com/pt-BR/releases/nissan-celebra-10-anos-do-lancamento-do-primeiro-kicks-e-reduz-o-preco-da-linha-2027-em-ate-r-10-mil" },
+    { "version": "Exclusive 1.0 turbo (2027)", "price": 179990, "date": "ago/2026", "source": "https://www.autoshow.com.br/noticias/2026/08/05/aos-dez-anos-nissan-kicks-chega-a-linha-2027-e-fica-mais-barato.html" },
+    { "version": "Platinum 1.0 turbo (2027)", "price": 189990, "date": "ago/2026", "source": "https://www.autoshow.com.br/noticias/2026/08/05/aos-dez-anos-nissan-kicks-chega-a-linha-2027-e-fica-mais-barato.html" },
+    { "version": "Advance 1.0 turbo (2026, lançamento)", "price": 175990, "date": "jun/2025", "source": "https://motorshow.com.br/nissan-kicks-chega-as-lojas-a-partir-de-r-160-mil-veja-versoes-itens-e-opcionais" }
+  ],
+  "launchModelYearBR": 2026,
+  "catalogCheck": "A versão 'Advance 1.0T' existe. Preço do catálogo (R$ 159.990) está errado para a Advance: esse é o preço da Sense 2027; a Advance custa R$ 169.990 na linha 2027 (ago/2026; antes R$ 179.990 em 2026). INMETRO do catálogo diverge do publicado pela imprensa: gasolina 11,7/14,3 (catálogo 12,0/14,0) e etanol 8,3/9,9 (catálogo 8,4/9,8); uma fonte cita 7,8 no etanol urbano. Porta-malas 470 L confere. 'Desde 2025' confere para o ano-calendário (lançada em jun/2025), mas o ano-modelo de estreia é 2026.",
+  "wikipedia": { "lang": "en", "title": "Nissan Kicks" },
+  "officialUrl": "https://www.nissan.com.br/veiculos/modelos/novo-kicks.html",
+  "sources": [
+    { "label": "Nissan News Brasil – linha 2027 até R$ 10 mil mais barata", "url": "https://brazil.nissannews.com/pt-BR/releases/nissan-celebra-10-anos-do-lancamento-do-primeiro-kicks-e-reduz-o-preco-da-linha-2027-em-ate-r-10-mil" },
+    { "label": "Auto Show – Aos dez anos, Kicks chega à linha 2027 e fica mais barato", "url": "https://www.autoshow.com.br/noticias/2026/08/05/aos-dez-anos-nissan-kicks-chega-a-linha-2027-e-fica-mais-barato.html" },
+    { "label": "Motor Show – Kicks 2027 estreia até R$ 10 mil mais barato", "url": "https://motorshow.com.br/nissan-kicks-2027-estreia-r-10-mil-mais-barato" },
+    { "label": "Motor Show – Kicks chega às lojas a partir de R$ 160 mil", "url": "https://motorshow.com.br/nissan-kicks-chega-as-lojas-a-partir-de-r-160-mil-veja-versoes-itens-e-opcionais" },
+    { "label": "DGABC – Novo Kicks chega às lojas no início de julho", "url": "https://www.dgabc.com.br/Noticia/4240923/novo-kicks-chega-as-lojas-no-inicio-de-julho" },
+    { "label": "Mix Vale – reajuste de out/2025", "url": "https://www.mixvale.com.br/2025/11/07/nissan-kicks-2026-tem-reajuste-de-precos-em-outubro-e-inicia-em-r-166-990-no-brasil/" },
+    { "label": "Mundo do Automóvel para PCD – Kicks para CNPJ em julho de 2026 (Advance R$ 179.990 público)", "url": "https://mundodoautomovelparapcd.com.br/nissan-kicks-para-cnpj-em-junho-de-2026-2/" },
+    { "label": "Consulta de Placa – ficha técnica Kicks 2026", "url": "https://consultadeplaca.net/blog/ficha-tecnica-kicks" },
+    { "label": "Portal In – Novo Kicks chega com cinco versões (motor, consumo, porta-malas)", "url": "https://www.portalin.com.br/road-in/novo-kicks-chega-super-mudado-e-com-cinco-versoes/" },
+    { "label": "Garagem360 – ficha técnica do Kicks 2026 (dimensões)", "url": "https://garagem360.com.br/ficha-tecnica-do-nissan-kicks-2026-guia-completo-de-precos-versoes-e-consumo/" },
+    { "label": "Carzin – Kicks 2026 5 estrelas no Latin NCAP", "url": "https://carzin.com.br/seguranca/nissan-kicks-2026-consegue-5-estrelas-teste-latin-ncap.html" },
+    { "label": "Carro.Blog.Br – problemas no câmbio do Kicks 2026 e Kardian", "url": "https://carro.blog.br/problemas/problemas-no-cambio-do-nissan-kicks-2026-e-renault-kardian-preocupam-donos-de-suvs.html?tipo=amp" },
+    { "label": "ClearVin – recalls Kicks 2026 (EUA)", "url": "https://www.clearvin.com/car-recalls/nissan/kicks/2026/" },
+    { "label": "CNN Brasil – teste do novo Kicks 2026", "url": "https://www.cnnbrasil.com.br/auto/cnn-testa-o-novo-kicks-2026-motor-turbo-agrada-mas-nao-surpreende/" },
+    { "label": "Webmotors – FIPE Kicks 2026 Advance", "url": "https://www.webmotors.com.br/tabela-fipe/carros/nissan/kicks/2026/10-turbo-flex-advance-dct" }
+  ],
+  "unverified": [
+    "Garantia de fábrica no Brasil (só achei 3 anos para o México)",
+    "Inmetro 11,7/14,3 e 8,3/9,9 não conferido na tabela PBEV oficial; etanol urbano tem divergência (8,3 vs 7,8)",
+    "Se o Latin NCAP (unidade mexicana) se aplica ao Kicks feito em Resende",
+    "Se o recall norte-americano 26V023000 tem equivalente no Brasil",
+    "Preço vigente exatamente em out/2026 (último oficial: ago/2026)",
+    "Torque 22,4 kgfm: há fontes com 22,5",
+    "Páginas não abertas diretamente: WebFetch falhou (DNS) em todos os domínios; dados vêm de resumos do WebSearch"
+  ]
+}

@@ -1,0 +1,77 @@
+{
+  "id": "vw-tcross",
+  "researchedAt": "2026-10",
+  "displayName": "Volkswagen T-Cross",
+  "summary": "SUV compacto da VW na plataforma MQB A0, um dos mais vendidos do Brasil. As versões Sense, Urban, 200 TSI e Comfortline usam o 1.0 200 TSI flex de 3 cilindros (116/128 cv, 20,4 kgfm). Na linha 2027 essas versões passam a ter câmbio automático Aisin AQ300 de 8 marchas. Highline e Extreme usam o 1.4 250 TSI de 150 cv e 25,5 kgfm com câmbio de 6 marchas.",
+  "generation": "1ª geração (lançada no Brasil em 2019). Facelift na linha 2025, que chegou às lojas em jun/2024. Câmbio de 8 marchas na linha 2027 (jul-ago/2026).",
+  "timeline": [
+    { "modelYear": "2022", "change": "Versões 200 TSI MT (R$ 104.190), 200 TSI AT (R$ 112.790), Comfortline 200 TSI AT e Highline 250 TSI AT. INMETRO do 200 TSI MT: 11,2/13,2 G e 7,7/9,4 E." },
+    { "modelYear": "2024", "change": "Linha Sense, 200 TSI, The Town (série especial), Comfortline e Highline 250 TSI. INMETRO do 1.0 AT: 12,0/14,4 G e 8,3/10,0 E." },
+    { "modelYear": "2025", "change": "Facelift (jun/2024): para-choque e grade novos, faróis full LED e lanternas interligadas em LED em todas as versões, painel digital em toda a linha, acabamento emborrachado e VW Play com tela maior suspensa. Frenagem autônoma com detecção de pedestres em todas as versões (Latin NCAP 5 estrelas)." },
+    { "modelYear": "2026", "change": "Estreia a versão Extreme 250 TSI (abr/2025, topo de linha). Linha Sense, 200 TSI, Comfortline, Highline e Extreme." },
+    { "modelYear": "2027", "change": "Lançado em jul-ago/2026. O câmbio AQ300 de 8 marchas substitui o de 6 nas versões 1.0 (Sense, Urban, 200 TSI e Comfortline), com consumo até 7% menor. Nova versão Urban (Sense com câmera de ré e rodas de liga 17\"). Na 200 TSI entram câmera de ré, acesso sem chave, partida por botão e sensor dianteiro." }
+  ],
+  "highlights": [
+    "Latin NCAP 5 estrelas (modelo 2025): 92,31% adulto, 89,80% criança, 65,62% pedestre e 84,96% assistências",
+    "Banco traseiro corrediço: porta-malas de 373 a 420 L (VDA)",
+    "Entre-eixos de 2.651 mm, um dos maiores do segmento",
+    "Linha 2027 com câmbio de 8 marchas: a Sense faz 12,9/14,9 G e 8,9/10,4 E"
+  ],
+  "watchOuts": [
+    "Recall do freio de estacionamento (jul/2026) para os anos-modelo 2025-2026",
+    "Recall de software do painel de instrumentos para os anos-modelo 2022 a 2026 (mai/2026)",
+    "Recall da mangueira de ventilação do filtro de carvão ativado para unidades 2025 feitas entre abr e jun/2024",
+    "Seminovos 2022/2024 têm visual antigo e câmbio de 6 marchas, e o 2022 ainda pode ser manual. O 0 km 2027 tem câmbio de 8 marchas e consumo melhor",
+    "O preço da 200 TSI variou bastante em 2026: foi a R$ 163.820, caiu R$ 10 mil em jul/2026 e ficou em R$ 152.890 na linha 2027"
+  ],
+  "specs": {
+    "version": "200 TSI 2027",
+    "engine": "1.0 turbo flex 3 cil. (200 TSI)",
+    "powerCv": "128 (E) / 116 (G)",
+    "torqueKgfm": "20,4",
+    "transmission": "automático de 8 marchas (Aisin AQ300). Na linha 2026: 6 marchas",
+    "trunkL": 373,
+    "lengthMm": 4218,
+    "wheelbaseMm": 2651,
+    "safety": "Latin NCAP 5 estrelas (modelo 2025, teste de 2024/2025)",
+    "warranty": "3 anos (padrão VW Brasil, não confirmado especificamente para o T-Cross)"
+  },
+  "inmetro": { "version": "200 TSI 2026 (câmbio de 6 marchas)", "cityGas": 11.9, "roadGas": 14.1, "cityEth": 8.1, "roadEth": 9.8, "cityKmKWh": null, "roadKmKWh": null, "year": "PBEV 2026 (conforme imprensa)", "source": "https://www.webmotors.com.br/volkswagen/t-cross/2026/1-0-200-tsi-total-flex-automatico/387130" },
+  "price0km": { "version": "200 TSI 2027", "price": 152890, "date": "ago/2026", "source": "https://autopapo.com.br/noticia/t-cross-2027-estreia-cambio-de-oito-marchas-e-pacote-urban/" },
+  "versionsAndPrices": [
+    { "version": "Sense 200 TSI 2027", "price": 119990, "date": "ago/2026", "source": "https://www.folhape.com.br/colunistas/fmotors/volkswagen-t-cross-2027-estreia-versao-urban-e-cambio-de-8-marchas-por-r-119990/58889/" },
+    { "version": "Urban 200 TSI 2027", "price": 126990, "date": "ago/2026", "source": "https://autopapo.com.br/noticia/t-cross-2027-estreia-cambio-de-oito-marchas-e-pacote-urban/" },
+    { "version": "200 TSI 2027", "price": 152890, "date": "ago/2026", "source": "https://autopapo.com.br/noticia/t-cross-2027-estreia-cambio-de-oito-marchas-e-pacote-urban/" },
+    { "version": "Comfortline 200 TSI 2027", "price": 173790, "date": "ago/2026", "source": "https://autopapo.com.br/noticia/t-cross-2027-estreia-cambio-de-oito-marchas-e-pacote-urban/" },
+    { "version": "Highline 250 TSI 2027", "price": 186290, "date": "ago/2026", "source": "https://autopapo.com.br/noticia/t-cross-2027-estreia-cambio-de-oito-marchas-e-pacote-urban/" },
+    { "version": "Extreme 250 TSI 2027", "price": 194590, "date": "ago/2026", "source": "https://autopapo.com.br/noticia/t-cross-2027-estreia-cambio-de-oito-marchas-e-pacote-urban/" }
+  ],
+  "launchModelYearBR": 2020,
+  "catalogCheck": "O nome '200 TSI' ainda existe como versão intermediária. Preço errado: o catálogo traz R$ 149.990, mas o 200 TSI 2027 custa R$ 152.890 (ago/2026). O 200 TSI 2026 chegou a R$ 163.820 e caiu para R$ 153.820 em jul/2026. Porta-malas: os 420 L do catálogo são o máximo, com o banco traseiro todo à frente (VDA). Na posição normal são 373 L. INMETRO desatualizado: o catálogo traz 11,4/13,3 G e 7,9/9,3 E, mas o 200 TSI 2026 (6 marchas) faz 11,9/14,1 G e 8,1/9,8 E. No 2027 (8 marchas) a Sense faz 12,9/14,9 G e 8,9/10,4 E, e a Comfortline 12,5/14,3 G e 8,7/10,2 E. O valor exato do 200 TSI 2027 não foi confirmado. O valor do catálogo fica perto do 200 TSI manual de 2022 (11,2/13,2 G e 7,7/9,4 E). O ano de lançamento no Brasil (ano-modelo 2020) não estava no catálogo.",
+  "wikipedia": { "lang": "en", "title": "Volkswagen T-Cross" },
+  "officialUrl": "https://www.vw.com.br/pt/carros/t-cross.html",
+  "sources": [
+    { "label": "AutoPapo: T-Cross 2027 estreia câmbio de oito marchas e pacote Urban", "url": "https://autopapo.com.br/noticia/t-cross-2027-estreia-cambio-de-oito-marchas-e-pacote-urban/" },
+    { "label": "Folha PE / FMotors: T-Cross 2027 Urban e câmbio de 8 marchas", "url": "https://www.folhape.com.br/colunistas/fmotors/volkswagen-t-cross-2027-estreia-versao-urban-e-cambio-de-8-marchas-por-r-119990/58889/" },
+    { "label": "Auto+ TV: quanto baixou o consumo do T-Cross com 8 marchas", "url": "https://www.automaistv.com.br/novidades/o-quanto-baixou-o-consumo-do-volkswagen-t-cross-com-cambio-de-8-marchas/" },
+    { "label": "Grupo Sentinela: T-Cross 2027 com novo câmbio, consumo", "url": "https://www.gruposentinela.com.br/volkswagen-t-cross-2027-com-novo-cambio-esta-mais-economico-veja-numeros/" },
+    { "label": "Webmotors: T-Cross 200 TSI 2026, ficha técnica", "url": "https://www.webmotors.com.br/volkswagen/t-cross/2026/1-0-200-tsi-total-flex-automatico/387130" },
+    { "label": "Guia do Carro: VW reduz preços do T-Cross em jul/2026", "url": "https://guiadocarro.net.br/volkswagen-reduz-precos-t-cross-suv-julho-2026/" },
+    { "label": "CNN Brasil: T-Cross 2025 chega com novo visual", "url": "https://www.cnnbrasil.com.br/auto/t-cross-2025-chega-com-novo-visual-veja-precos-e-especificacoes/" },
+    { "label": "Mix Vale: T-Cross Extreme 2026 (abr/2025)", "url": "https://www.mixvale.com.br/2025/04/16/volkswagen-revela-t-cross-extreme-2026-por-r-188-990-com-pintura-fosca-inedita/" },
+    { "label": "Correio de Minas: T-Cross 2026, porta-malas de 373 a 420 L (VDA)", "url": "https://correiodeminas.com.br/2025/11/20/volkswagen-t-cross-2026-revela-versoes-e-precos-suv-parte-de-r-119-990-com-motor-1-0-turbo-de-128-cv-e-porta-malas-de-ate-469-litros/" },
+    { "label": "Motor Agora: T-Cross 2024, consumo e preços", "url": "https://www.motoragora.com.br/vw-t-cross-2024/" },
+    { "label": "Garagem360: T-Cross 2022/2024, ficha técnica", "url": "https://garagem360.com.br/vw-t-cross-2022" },
+    { "label": "Motor Show: T-Cross 5 estrelas no Latin NCAP", "url": "https://motorshow.com.br/volkswagen-t%e2%80%91cross-recebe-5-estrelas-em-seguranca-no-latin-ncap-assista/" },
+    { "label": "O Antagonista: recall T-Cross 2025", "url": "https://oantagonista.com.br/ladooa/carros/volkswagen-anuncia-recall-em-modelos-t-cross-2025/" },
+    { "label": "Vrum: recall de 150 mil carros jul/2026", "url": "https://www.vrum.com.br/noticias/2026/07/7465479-volkswagen-convoca-recall-de-150-mil-carros-no-brasil-veja-modelos-afetados.html" },
+    { "label": "Olhar Digital: recall de 118 mil VW (painel), mai/2026", "url": "https://olhardigital.com.br/2026/05/04/carros-e-tecnologia/volkswagen-faz-recall-de-118-mil-veiculos-no-brasil/" }
+  ],
+  "unverified": [
+    "INMETRO específico da versão 200 TSI 2027 (8 marchas). Só há números da Sense e da Comfortline",
+    "Ano de lançamento no Brasil: ano-modelo 2020 (2019), de memória, sem fonte encontrada nesta busca",
+    "Garantia específica do T-Cross",
+    "Ano exato do teste Latin NCAP (citado como modelo 2025)",
+    "Nenhuma página pôde ser aberta (WebFetch falhou por DNS). Todos os dados vêm dos resumos do WebSearch, e o limite de buscas acabou"
+  ]
+}

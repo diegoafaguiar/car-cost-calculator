@@ -1,0 +1,149 @@
+{
+  "id": "byd-song-pro",
+  "researchedAt": "2026-10",
+  "displayName": "BYD Song Pro",
+  "summary": "SUV médio híbrido plug-in (DM-i) da BYD, versões GL e GS (diferem na bateria). Desde ago/2026 (linha 2027) é produzido em Camaçari (BA) e é flex: motor 1.5 Atkinson flex de 98 cv como gerador/apoio + motor elétrico, potência combinada de 218 cv (GL) / 219 cv (GS). Bateria Blade de 13,1 kWh (GL, 57 km elétricos PBEV) ou 18,3 kWh (GS, 72 km).",
+  "generation": "1ª geração DM-i, lançada no Brasil em jul/2024 (ano-modelo 2025), importada; reestilização flex nacional (DM-i 5.0, linha 2027) em ago/2026.",
+  "timeline": [
+    {
+      "modelYear": "2025",
+      "change": "Lançamento em 10/jul/2024: GL R$ 189.800 e GS R$ 199.800, 1.5 a gasolina, bateria 18,3 kWh (GS); PBEV 68 km elétricos (GS)."
+    },
+    {
+      "modelYear": "2026",
+      "change": "Produção iniciada em Camaçari; GL R$ 189.990 e GS R$ 199.990."
+    },
+    {
+      "modelYear": "2027",
+      "change": "Ago/2026: vira flex (DM-i 5.0, eficiência térmica 46,06%), visual renovado, porta-malas 530 L (+10 L), GL cai para R$ 176.990 (-R$ 13 mil) e GS mantém R$ 199.990; autonomia elétrica PBEV 57 km (GL) / 72 km (GS)."
+    }
+  ],
+  "highlights": [
+    "Flex desde a linha 2027 (ago/2026), fabricado na Bahia.",
+    "PBEV: 0,53 MJ/km (GL) e 0,55 MJ/km (GS) — o SUV médio mais eficiente à venda, segundo a imprensa.",
+    "Gasolina (GS): 15,9 km/l cidade / 13,5 km/l estrada; etanol 11,7 / 10,5 km/l (Inmetro).",
+    "Autonomia elétrica PBEV de 72 km (GS) e 57 km (GL); total de até 1.105 km com gasolina (NEDC, GS).",
+    "Porta-malas de 530 L (VDA); 4,74 m de comprimento e 2,71 m de entre-eixos."
+  ],
+  "watchOuts": [
+    "Motor a combustão de apenas 98 cv; avaliações citam potência comedida quando a bateria está baixa (Portal IN).",
+    "Economia máxima depende de recarregar com frequência; sem recarga o consumo é de híbrido comum.",
+    "Linha 2025/2026 era só a gasolina; usados dessas linhas não são flex.",
+    "Corte de R$ 13 mil no preço da GL em ago/2026 pressiona o valor de revenda das unidades 2025/2026.",
+    "Sem teste Latin NCAP encontrado."
+  ],
+  "specs": {
+    "version": "Song Pro GS flex (linha 2027)",
+    "engine": "1.5 Atkinson flex 4 cil. (98 cv) + motor elétrico dianteiro, híbrido plug-in DM-i 5.0",
+    "powerCv": "219 (combinada; GL 218)",
+    "torqueKgfm": "30,6 (combinado, 300 Nm)",
+    "transmission": "E-CVT/EHS (híbrido série-paralelo, sem câmbio convencional)",
+    "trunkL": 530,
+    "lengthMm": 4740,
+    "wheelbaseMm": 2710,
+    "safety": null,
+    "warranty": "6 anos ou 200.000 km para o veículo e 8 anos para a bateria Blade (imprensa sobre a linha 2027); política BYD Brasil de mai/2024 para híbridos: 6 anos e bateria 8 anos sem limite de km."
+  },
+  "inmetro": {
+    "version": "Song Pro GS flex 2027 (GL: gasolina 16,0/13,9; etanol 12,1/10,7 km/l)",
+    "cityGas": 15.9,
+    "roadGas": 13.5,
+    "cityEth": 11.7,
+    "roadEth": 10.5,
+    "cityKmKWh": null,
+    "roadKmKWh": null,
+    "year": "PBEV 2026",
+    "source": "https://gurudoscarros.com.br/2026/08/16/byd-song-pro-flex-ficou-mais-eficiente-inmetro-revela-consumo-e-autonomia/",
+    "note": "O PBEV publica para plug-in o consumo energético combinado em MJ/km (0,55 GS / 0,53 GL), que mistura combustível e eletricidade — não é eficiência elétrica pura, por isso km/kWh ficou null. Estimativa grosseira (não oficial): 72 km ÷ 18,3 kWh nominais ≈ 3,9 km/kWh (GS); 57 ÷ 13,1 ≈ 4,4 km/kWh (GL) — subestima por usar capacidade bruta."
+  },
+  "price0km": {
+    "version": "GS (linha 2027)",
+    "price": 199990,
+    "date": "ago/2026",
+    "source": "https://motorshow.com.br/byd-song-pro-2027-vira-hibrido-plug-in-flex"
+  },
+  "versionsAndPrices": [
+    {
+      "version": "GL flex 2027",
+      "price": 176990,
+      "date": "ago/2026",
+      "source": "https://www.webmotors.com.br/wm1/carros/lancamentos/novo-byd-song-pro-flex-estreia-por-r-176990/"
+    },
+    {
+      "version": "GS flex 2027",
+      "price": 199990,
+      "date": "ago/2026",
+      "source": "https://arevista.com.br/mercados/byd-song-pro-2027-estreia-hibrido-flex-ganha-novo-visual-e-mantem-preco-de-ate-r-1999-mil/"
+    },
+    {
+      "version": "GL 2026 (gasolina, anterior)",
+      "price": 189990,
+      "date": "2025-2026",
+      "source": "https://www.vrum.com.br/bom-negocio/2026/09/7493049-byd-king-song-pro-e-yuan-plus-confira-os-precos-da-linha-2026.html"
+    }
+  ],
+  "launchModelYearBR": 2025,
+  "catalogCheck": "A versão 'GS' existe, mas custa R$ 199.990 (não R$ 189.990 — esse era o preço da GL 2026; a GL 2027 flex custa R$ 176.990). Consumo a gasolina no catálogo (15,0/14,0) difere do Inmetro da GS flex 2027: 15,9 cidade / 13,5 estrada km/l; com etanol 11,7/10,5 km/l. É flex desde a linha 2027 (ago/2026). Os valores elétricos 5,8/5,0 km/kWh não foram confirmados por fonte (PBEV só dá MJ/km combinado). Porta-malas 520 L era o das linhas 2025/2026; agora 530 L. 'Desde 2024' = lançamento em jul/2024, ano-modelo 2025.",
+  "wikipedia": {
+    "lang": "en",
+    "title": "BYD Song Pro"
+  },
+  "officialUrl": "https://www.byd.com/material/__CN/byd-site/br/product/songpro-flex/Novo Song Pro DM-i Flex Ago 2026 - Ficha Técnica.pdf",
+  "sources": [
+    {
+      "label": "Motor Show – Song Pro 2027 vira plug-in flex por R$ 176.990",
+      "url": "https://motorshow.com.br/byd-song-pro-2027-vira-hibrido-plug-in-flex"
+    },
+    {
+      "label": "Webmotors – novo Song Pro flex R$ 176.990",
+      "url": "https://www.webmotors.com.br/wm1/carros/lancamentos/novo-byd-song-pro-flex-estreia-por-r-176990/"
+    },
+    {
+      "label": "A Revista – Song Pro 2027 mantém preço de até R$ 199,9 mil",
+      "url": "https://arevista.com.br/mercados/byd-song-pro-2027-estreia-hibrido-flex-ganha-novo-visual-e-mantem-preco-de-ate-r-1999-mil/"
+    },
+    {
+      "label": "Guru dos Carros – consumo oficial Inmetro Song Pro flex",
+      "url": "https://gurudoscarros.com.br/2026/08/16/byd-song-pro-flex-ficou-mais-eficiente-inmetro-revela-consumo-e-autonomia/"
+    },
+    {
+      "label": "AUTOO – Song Pro flex 2027 preços/consumo/garantia",
+      "url": "https://www.autoo.com.br/byd-song-pro-flex-2027-veja-precos-pecas-consumo-e-equipamentos-do-suv/"
+    },
+    {
+      "label": "O Povo – autonomia até 1.105 km",
+      "url": "https://www.opovo.com.br/noticias/veiculos/2026/08/04/byd-lanca-novo-song-pro-flex-com-autonomia-de-ate-1-105-km-veja-o-que-mudou.html"
+    },
+    {
+      "label": "Band – dimensões e porta-malas 530 L",
+      "url": "https://www.band.com.br/bandmotor/noticias/novo-byd-song-pro-2027-ganha-visual-renovado-sem-subir-de-preco-202608052206"
+    },
+    {
+      "label": "BYD – ficha técnica oficial Song Pro DM-i Flex (PDF)",
+      "url": "https://www.byd.com/material/__CN/byd-site/br/product/songpro-flex/Novo Song Pro DM-i Flex Ago 2026 - Ficha Técnica.pdf"
+    },
+    {
+      "label": "Vrum – preços linha 2026",
+      "url": "https://www.vrum.com.br/bom-negocio/2026/09/7493049-byd-king-song-pro-e-yuan-plus-confira-os-precos-da-linha-2026.html"
+    },
+    {
+      "label": "Motor Agora – Song Pro 2025 a partir de R$ 189.800",
+      "url": "https://www.motoragora.com.br/?p=158175"
+    },
+    {
+      "label": "Diário de Pernambuco – lançamento jul/2024",
+      "url": "https://www.diariodepernambuco.com.br/noticia/auto/2024/07/byd-song-pro-dm-i-chega-ao-brasil-saiba-preco-e-primeiras-impressoes.html"
+    },
+    {
+      "label": "Portal IN – avaliação GS flex",
+      "url": "https://www.portalin.com.br/road-in/in-road-dirigiu-o-byd-song-pro-gs-flex-bom-acabamento-e-potencia-comedida/"
+    }
+  ],
+  "unverified": [
+    "eficiência elétrica em km/kWh (PBEV não publica separado para PHEV)",
+    "tipo exato da transmissão como descrita pela BYD",
+    "garantia: divergência 'sem limite de km' (política 2024) vs '200.000 km' (imprensa 2027)",
+    "nota Latin NCAP",
+    "ficha técnica oficial PDF não pôde ser aberta (fetch bloqueado); dados vêm da imprensa"
+  ]
+}

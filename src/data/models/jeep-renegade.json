@@ -1,0 +1,76 @@
+{
+  "id": "jeep-renegade",
+  "researchedAt": "2026-10",
+  "displayName": "Jeep Renegade",
+  "summary": "SUV compacto da Jeep produzido em Goiana (PE) e vendido no Brasil desde 2015. Usa o motor 1.3 turbo flex T270 (176 cv desde 2025). Na linha 2027 (mar/2026) passou por reestilização e estreou o sistema híbrido leve MHEV de 48V nas versões Longitude e Sahara. Altitude (4x2, sem MHEV) é a versão de entrada e Willys 4x4 (câmbio de 9 marchas) é a topo.",
+  "generation": "1ª geração (lançada no Brasil em 2015), com facelift e motor T270 na linha 2022 (fev/2022) e nova reestilização, com MHEV 48V, na linha 2027 (mar/2026).",
+  "timeline": [
+    { "modelYear": "2022", "change": "Facelift e fim dos motores 1.8 E.torQ flex e 2.0 diesel. Toda a linha passa ao 1.3 T270 turbo flex (185 cv E / 180 cv G, 27,5 kgfm), com câmbio de 6 marchas no 4x2 e de 9 marchas no 4x4. Versões: Sport, Longitude, Limited, Série S 4x4 e Trailhawk 4x4." },
+    { "modelYear": "2023", "change": "Recall da bomba de alta pressão do T270 (risco de incêndio) nas unidades 2022/2023, chassis NK463265 a PK512286. Latin NCAP reavalia o modelo e dá 1 estrela." },
+    { "modelYear": "2025", "change": "Proconve L8: o T270 cai para 176 cv e mantém 27,5 kgfm. Novas versões, como Altitude, Sahara e Willys." },
+    { "modelYear": "2026", "change": "Reposicionamento com cortes de até R$ 15 mil: Sport R$ 118.290, Altitude R$ 142.990, Longitude R$ 156.990, Sahara R$ 169.990, Willys R$ 182.990. A Longitude ganha chave presencial e partida remota." },
+    { "modelYear": "2027", "change": "Reestilização (mar/2026): novo visual, interior renovado, multimídia de 10,1\" e painel digital em toda a linha. Estreia do MHEV 48V (motor elétrico de +15 cv e +6,5 kgfm) em Longitude e Sahara, com cerca de 7% menos consumo urbano. A Sport sai de linha. Preços: Altitude R$ 129.990, Longitude MHEV R$ 158.690, Sahara MHEV R$ 175.990, Willys R$ 189.490." }
+  ],
+  "highlights": [
+    "Motor 1.3 turbo de 176 cv e 27,5 kgfm, o mais forte do trio",
+    "Linha 2027 com MHEV 48V em Longitude e Sahara: INMETRO de 11,9/11,8 km/l (G) e 8,3/8,6 km/l (E)",
+    "Versão 4x4 (Willys) com câmbio de 9 marchas, rara no segmento",
+    "Avaliações elogiam a dirigibilidade (Motor Show)"
+  ],
+  "watchOuts": [
+    "Latin NCAP 2023: 1 estrela. A Global NCAP criticou a Stellantis por continuar divulgando o resultado de 5 estrelas de 2015",
+    "Recall do T270 (2022/2023): parafuso da bomba de alta pressão podia quebrar e vazar combustível, com risco de incêndio. Confira o atendimento no seminovo",
+    "Porta-malas pequeno: 320 L, menor que os de Tracker (393 L) e Creta (422 L)",
+    "Consumo mais alto que o dos rivais 1.0 turbo nas versões sem MHEV",
+    "Potência caiu de 185 cv (2022–2024) para 176 cv (2025 em diante)",
+    "Desconto forte e frequente no 0 km (ex.: Altitude 2027 por R$ 124.990 em set/2026) pressiona o preço dos seminovos"
+  ],
+  "specs": {
+    "version": "Longitude MHEV 1.3 T270 (2027)",
+    "engine": "1.3 turbo flex 4 cil. T270 + sistema híbrido leve 48V",
+    "powerCv": "176 (E/G) + 15 do motor elétrico",
+    "torqueKgfm": "27,5 (+6,5 do motor elétrico)",
+    "transmission": "automático de 6 marchas",
+    "trunkL": 320,
+    "lengthMm": 4268,
+    "wheelbaseMm": 2570,
+    "safety": "Latin NCAP 1 estrela (2023)",
+    "warranty": null
+  },
+  "inmetro": { "version": "Longitude MHEV 1.3 T270 (linha 2027)", "cityGas": 11.9, "roadGas": 11.8, "cityEth": 8.3, "roadEth": 8.6, "cityKmKWh": null, "roadKmKWh": null, "year": "PBEV 2026", "source": "https://motorshow.com.br/avaliacao-jeep-renegade-mhev-2027" },
+  "price0km": { "version": "Longitude MHEV (2027)", "price": 158690, "date": "mar–set/2026", "source": "https://www.autoshow.com.br/noticias/2026/03/30/jeep-renegade-2027-novidades-versoes-e-precos.html" },
+  "versionsAndPrices": [
+    { "version": "Altitude 1.3T 4x2 (2027)", "price": 129990, "date": "mar/2026 (promoção de R$ 124.990 até 01/10/2026)", "source": "https://motorshow.com.br/jeep-renegade-mhev-2027-em-promocao-por-r-124-990" },
+    { "version": "Longitude MHEV 1.3T (2027)", "price": 158690, "date": "mar/2026", "source": "https://www.autoshow.com.br/noticias/2026/03/30/jeep-renegade-2027-novidades-versoes-e-precos.html" },
+    { "version": "Sahara MHEV 1.3T (2027)", "price": 175990, "date": "mar/2026", "source": "https://www.autoshow.com.br/noticias/2026/03/30/jeep-renegade-2027-novidades-versoes-e-precos.html" },
+    { "version": "Willys 1.3T 4x4 (2027)", "price": 189490, "date": "mar/2026", "source": "https://www.autoshow.com.br/noticias/2026/03/30/jeep-renegade-2027-novidades-versoes-e-precos.html" },
+    { "version": "Longitude 1.3T (2026, sem MHEV)", "price": 156990, "date": "2025", "source": "https://www.bemparana.com.br/carros/renegade-apresenta-novidades-e-fica-ainda-mais-competitivo-na-linha-2026/" }
+  ],
+  "launchModelYearBR": 2015,
+  "catalogCheck": "A versão 'Longitude 1.3T' ainda existe, mas na linha 2027 virou 'Longitude MHEV' (híbrido leve). Porta-malas de 320 L está correto. Preço: o catálogo traz R$ 145.990, mas a Longitude MHEV 2027 custa R$ 158.690 e a Longitude 2026 (sem MHEV) custava R$ 156.990. INMETRO: os valores do catálogo (10,6/12,2 G e 7,2/8,5 E) não batem com nenhuma fonte encontrada. Longitude 4x2 2022/2025: 11,0/12,8 (G) e 7,7/9,1 (E). Linha 2026: 11,1/12,4 (G) e 7,8/8,9 (E). Longitude MHEV 2027: 11,9/11,8 (G) e 8,3/8,6 (E).",
+  "wikipedia": { "lang": "en", "title": "Jeep Renegade" },
+  "officialUrl": "https://www.jeep.com.br/renegade.html",
+  "sources": [
+    { "label": "Auto Show – Renegade 2027 novidades, versões e preços (30/03/2026)", "url": "https://www.autoshow.com.br/noticias/2026/03/30/jeep-renegade-2027-novidades-versoes-e-precos.html" },
+    { "label": "CNN Brasil – Renegade 2027 híbrido 48V", "url": "https://www.cnnbrasil.com.br/auto/jeep-renegade-chega-na-linha-2027-hibrido-48v-e-ate-r-18-mil-mais-barato/" },
+    { "label": "Motor Show – Renegade 2027 lançamento", "url": "https://motorshow.com.br/jeep-renegade-2027-lancamento" },
+    { "label": "Motor Show – avaliação Renegade MHEV 2027", "url": "https://motorshow.com.br/avaliacao-jeep-renegade-mhev-2027" },
+    { "label": "Motor Show – Altitude 2027 por R$ 124.990", "url": "https://motorshow.com.br/jeep-renegade-mhev-2027-em-promocao-por-r-124-990" },
+    { "label": "Portal N10 – Longitude MHEV 2027 ficha técnica", "url": "https://portaln10.com.br/fipecarros/jeep-renegade-longitude-mhev-2027-preco-ficha-tecnica-e-equipamentos/" },
+    { "label": "Bem Paraná – Renegade linha 2026", "url": "https://www.bemparana.com.br/carros/renegade-apresenta-novidades-e-fica-ainda-mais-competitivo-na-linha-2026/" },
+    { "label": "Garagem360 – ficha técnica Renegade 2026", "url": "https://garagem360.com.br/?p=294180" },
+    { "label": "AutoPapo – Renegade 2022 com motor 1.3 turbo", "url": "https://autopapo.com.br/noticia/jeep-renegade-2022-motor-1-3-turbo-precos-consumo-fotos-video/" },
+    { "label": "Olhar Digital – Renegade 2022 com T270 (fev/2022)", "url": "https://olhardigital.com.br/2022/02/10/carros-e-tecnologia/jeep-apresenta-novo-renegade-com-motor-t270-do-compass-e-design-repaginado/" },
+    { "label": "Global NCAP – Renegade 1 estrela (2023)", "url": "https://www.globalncap.org/news/vw-taigun-achieves-five-stars-while-stellantis-misleads-consumers-with-one-star-jeep-renegade" },
+    { "label": "AutoPapo – recall T270 (bomba de alta pressão)", "url": "https://autopapo.com.br/noticia/recall-jeep-renegade-compass-commander/" },
+    { "label": "Super Rádio Tupi – Renegade 2025 ajustes no motor", "url": "https://www.tupi.fm/?p=1917250" }
+  ],
+  "unverified": [
+    "specs.warranty: a garantia de fábrica não foi confirmada",
+    "officialUrl: o endereço não foi aberto, porque o WebFetch falhou",
+    "Ano-modelo de estreia das versões Altitude/Sahara/Willys (atribuído a 2025 sem confirmação)",
+    "Preço vigente em out/2026: a última referência é de set/2026; houve menção a 'R$ 158.700' e a promoções",
+    "Origem dos valores INMETRO do catálogo (10,6/12,2/7,2/8,5)",
+    "Data exata da reavaliação Latin NCAP 2023 (relatada pela Global NCAP)"
+  ]
+}

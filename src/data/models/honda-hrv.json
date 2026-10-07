@@ -1,0 +1,163 @@
+{
+  "id": "honda-hrv",
+  "researchedAt": "2026-10",
+  "displayName": "Honda HR-V",
+  "summary": "SUV compacto premium fabricado em Sumaré/Itirapina (SP). As versões EX e EXL usam 1.5 aspirado flex de 126 cv; Advance e Touring usam 1.5 turbo flex de 177 cv; todas com câmbio CVT e Honda Sensing de série. A linha atual é a 2027 (jun/2026), só com reajuste de preços; a Honda prevê versão híbrida flex e:HEV a partir de 2028.",
+  "generation": "3ª geração, apresentada no Brasil em jul/2022 (ano-modelo 2023): vendas do aspirado em ago/2022 e do turbo em out/2022. Reestilização na linha 2026 (jul/2025).",
+  "timeline": [
+    {
+      "modelYear": "2022",
+      "change": "Último ano da 2ª geração (1.8 aspirado e 1.5 turbo)."
+    },
+    {
+      "modelYear": "2023",
+      "change": "Nova geração: 1.5 DI aspirado de 126 cv (EX, EXL) e 1.5 turbo de 177 cv (Advance, Touring), CVT e Honda Sensing em todas."
+    },
+    {
+      "modelYear": "2025",
+      "change": "Motor turbo mais econômico (13,1 km/l contra 12,6 km/l na gasolina). Preço da EXL: R$ 163.700."
+    },
+    {
+      "modelYear": "2026",
+      "change": "Reestilização (jul/2025): nova grade preto piano, para-choques novos, lanternas fumê com barra de LED, multimídia flutuante, novo console, painel TFT de 7\" em todas as versões, rodas aro 18 nas Advance/Touring e setas dinâmicas na Touring. Mecânica inalterada. EXL a R$ 170.900. Unidades fabricadas a partir de 01/01/2026 têm garantia total de 6 anos."
+    },
+    {
+      "modelYear": "2027",
+      "change": "Lançada no fim de jun/2026, sem mudanças de visual, mecânica ou equipamentos; reajuste de R$ 3,2 mil a 4,1 mil (EXL a R$ 174.300)."
+    }
+  ],
+  "highlights": [
+    "Honda Sensing (ACC, frenagem automática e outros) de série",
+    "Garantia total de 6 anos sem limite de km, transferível, para carros fabricados a partir de jan/2026",
+    "Boa revenda (a Honda divulga que o HR-V foi reconhecido três vezes como o automóvel de maior valor de revenda)",
+    "Motor aspirado com consumo de até 13,9 km/l na estrada com gasolina"
+  ],
+  "watchOuts": [
+    "Porta-malas pequeno (354 L)",
+    "O 1.5 aspirado de 126 cv é modesto para o porte",
+    "Preço sobe todo ano sem novidades (linha 2027)",
+    "Recalls: sangria do sistema de freio (gás nos pistões das pinças traseiras) e bomba de combustível (lote que inclui HR-V Touring); conferir pelo chassi",
+    "Carros fabricados antes de 2026 têm só 3 anos de garantia",
+    "Revisões encarecem a partir de cerca de 40 mil km/4 anos"
+  ],
+  "specs": {
+    "version": "EXL 1.5 (linha 2027)",
+    "engine": "1.5 16V DI i-VTEC aspirado flex 4 cil.",
+    "powerCv": "126 (E) / 126 (G)",
+    "torqueKgfm": "15,8 (E) / 15,5 (G)",
+    "transmission": "automático CVT (7 marchas simuladas, com borboletas)",
+    "trunkL": 354,
+    "lengthMm": 4330,
+    "wheelbaseMm": 2610,
+    "safety": null,
+    "warranty": "6 anos sem limite de km, transferível, para unidades fabricadas a partir de 01/01/2026; antes disso, 3 anos"
+  },
+  "inmetro": {
+    "version": "HR-V EX/EXL 1.5 aspirado CVT (linha 2027)",
+    "cityGas": 12.5,
+    "roadGas": 13.9,
+    "cityEth": 8.8,
+    "roadEth": 9.9,
+    "cityKmKWh": null,
+    "roadKmKWh": null,
+    "year": "PBEV 2026 (ano não confirmado; outra fonte da linha 2026 cita 12,7 e 9,8)",
+    "source": "https://arevista.com.br/mercados/honda-hr-v-exl-2027-custa-r-1743-mil-faz-ate-139-km-l-e-traz-acc-de-serie/"
+  },
+  "price0km": {
+    "version": "EXL 1.5 (linha 2027)",
+    "price": 174300,
+    "date": "jun/2026",
+    "source": "https://www.autoo.com.br/honda-hr-v-2027-veja-precos-versoes-consumo-e-equipamentos-do-suv/"
+  },
+  "versionsAndPrices": [
+    {
+      "version": "EX 1.5",
+      "price": 166400,
+      "date": "jun/2026",
+      "source": "https://www.autoo.com.br/honda-hr-v-2027-veja-precos-versoes-consumo-e-equipamentos-do-suv/"
+    },
+    {
+      "version": "EXL 1.5",
+      "price": 174300,
+      "date": "jun/2026",
+      "source": "https://www.autoo.com.br/honda-hr-v-2027-veja-precos-versoes-consumo-e-equipamentos-do-suv/"
+    },
+    {
+      "version": "Advance 1.5 Turbo",
+      "price": 203300,
+      "date": "jun/2026",
+      "source": "https://www.autoo.com.br/honda-hr-v-2027-veja-precos-versoes-consumo-e-equipamentos-do-suv/"
+    },
+    {
+      "version": "Touring 1.5 Turbo",
+      "price": 214000,
+      "date": "jun/2026",
+      "source": "https://www.autoo.com.br/honda-hr-v-2027-veja-precos-versoes-consumo-e-equipamentos-do-suv/"
+    }
+  ],
+  "launchModelYearBR": 2023,
+  "catalogCheck": "Versão 'EXL 1.5': existe. Porta-malas de 354 L: correto. 'Desde 2023': correto como ano-modelo (lançado em jul/ago de 2022). Preço errado: R$ 169.990 não corresponde à EXL atual, que custa R$ 174.300 na linha 2027 (era R$ 170.900 na linha 2026). INMETRO errado: o certo é 12,5 cidade/13,9 estrada na gasolina e 8,8/9,9 no etanol; o catálogo usa 11,6/13,5 e 8,1/9,4.",
+  "wikipedia": {
+    "lang": "en",
+    "title": "Honda HR-V (third generation)"
+  },
+  "officialUrl": null,
+  "sources": [
+    {
+      "label": "AUTOO – HR-V 2027 preços e consumo",
+      "url": "https://www.autoo.com.br/honda-hr-v-2027-veja-precos-versoes-consumo-e-equipamentos-do-suv/"
+    },
+    {
+      "label": "A Revista – HR-V EXL 2027",
+      "url": "https://arevista.com.br/mercados/honda-hr-v-exl-2027-custa-r-1743-mil-faz-ate-139-km-l-e-traz-acc-de-serie/"
+    },
+    {
+      "label": "Auto+ TV – HR-V 2027 começa a ser vendido",
+      "url": "https://www.automaistv.com.br/novidades/honda-hr-v-2027-comeca-a-ser-vendido-no-brasil/"
+    },
+    {
+      "label": "Vrum – HR-V 2026 muda pouco e fica mais caro",
+      "url": "https://www.vrum.com.br/noticias/2025/07/7199986-honda-hr-v-2026-muda-pouco-e-fica-mais-caro-veja-novidades-e-precos.html"
+    },
+    {
+      "label": "CNN Brasil – HR-V 2026 ganha novo visual",
+      "url": "https://www.cnnbrasil.com.br/auto/festival-interlagos-honda-hr-v-e-civic-2026-ganham-novo-visual-confira/"
+    },
+    {
+      "label": "AUTOO – HR-V 2025 preços",
+      "url": "https://www.autoo.com.br/honda-hr-v-2025-precos-versoes-e-equipamentos-do-suv-prestes-a-mudar/"
+    },
+    {
+      "label": "AutoPapo – Honda garantia de 6 anos",
+      "url": "https://autopapo.com.br/curta/honda-lanca-garantia-de-seis-anos-sem-limite-de-quilometragem-no-brasil/"
+    },
+    {
+      "label": "Vrum – garantia de 6 anos",
+      "url": "https://www.vrum.com.br/noticias/2025/11/7298908-honda-vai-oferecer-garantia-de-6-anos-para-todos-seus-veiculos.html"
+    },
+    {
+      "label": "Wikipedia – Honda HR-V (third generation)",
+      "url": "https://en.wikipedia.org/wiki/Honda_HR-V_(third_generation)"
+    },
+    {
+      "label": "Busca FIPE – ficha técnica HR-V",
+      "url": "https://buscafipe.com/guia/honda-hrv/"
+    },
+    {
+      "label": "Diário do Comércio – recall de freio",
+      "url": "https://diariodocomercio.com.br/?p=11452"
+    },
+    {
+      "label": "Honda – valor de revenda",
+      "url": "https://saladeimprensa.honda.com.br/releases/pela-terceira-vez-honda-hr-v-foi-reconhecido-como-o-automovel-com-maior-valor-de-revenda"
+    }
+  ],
+  "unverified": [
+    "Nota Latin NCAP da 3ª geração (só foram encontrados resultados da geração de 2015)",
+    "URL oficial do modelo em honda.com.br (busca esgotada)",
+    "Comprimento e entre-eixos (4.330/2.610 mm) de fonte agregadora, não oficial",
+    "Divergência do INMETRO entre fontes (12,5 x 12,7 na cidade com gasolina; 9,9 x 9,8 na estrada com etanol)",
+    "Datas e anos-modelo exatos dos recalls de freio e de bomba de combustível",
+    "Nenhuma página foi aberta diretamente (WebFetch bloqueado); dados tirados de resumos do WebSearch"
+  ]
+}

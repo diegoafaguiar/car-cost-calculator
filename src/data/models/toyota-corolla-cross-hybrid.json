@@ -1,0 +1,184 @@
+{
+  "id": "toyota-corolla-cross-hybrid",
+  "researchedAt": "2026-10",
+  "displayName": "Toyota Corolla Cross",
+  "summary": "SUV médio fabricado em Sorocaba (SP), com versões 2.0 Dynamic Force flex (até 175 cv) e híbridas flex 1.8 (sistema combinado de 122 cv). Na linha 2027 (out/2026) há duas híbridas: XRV Hybrid (entrada, R$ 213.990) e XRX Hybrid Premium (topo, R$ 223.790).",
+  "generation": "1ª geração, lançada no Brasil em mar/2021; reestilização (facelift) na linha 2025, lançada em 2024; linha atual 2027 desde jun/2026.",
+  "timeline": [
+    {
+      "modelYear": "2022",
+      "change": "Ano do carro do usuário. Híbridas XRV Hybrid e XRX Hybrid; o pacote Toyota Safety Sense vinha só nas híbridas."
+    },
+    {
+      "modelYear": "2023",
+      "change": "Toyota Safety Sense passa a ser de série em todas as versões; som JBL nas versões mais caras; painel TFT colorido de 7\" nas XRE e XRV Hybrid."
+    },
+    {
+      "modelYear": "2024",
+      "change": "Nenhuma mudança visual, mecânica ou de equipamentos."
+    },
+    {
+      "modelYear": "2025",
+      "change": "Primeira grande reestilização: nova grade colmeia, novos faróis (com seta sequencial nas XRX, GR-Sport e XRX Hybrid), lanternas redesenhadas, novas rodas aro 18 e painel digital de 12,3\" a partir da XRE. O conjunto híbrido não mudou."
+    },
+    {
+      "modelYear": "2026",
+      "change": "Lançada no início de 2025. Multimídia Toyota Play 2.0 de 10\" com CarPlay/Android Auto sem fio, USB-C e câmeras 360° (XRX, GR-Sport e XRX Hybrid Premium). XRV Hybrid e GR-Sport Dualtone saem de linha, deixando só uma híbrida (XRX Hybrid Premium, R$ 215.990). O programa Toyota 10 é ampliado."
+    },
+    {
+      "modelYear": "2027",
+      "change": "Desde jun/2026. GR-Sport ganha visual próprio, a XR sai de linha, console central redesenhado e TPMS em todas as versões; XRX Hybrid Premium a R$ 223.790. Em out/2026 a XRV Hybrid volta como híbrida de entrada (R$ 213.990, equipamentos da XRE)."
+    }
+  ],
+  "highlights": [
+    "Híbrido flex (aceita etanol), sem necessidade de tomada",
+    "Porta-malas de 440 L, também na versão híbrida",
+    "Garantia de 5 anos sem limite de km (pessoa física), sistema híbrido coberto por 8 anos/200 mil km e programa Toyota 10 (até 10 anos) com revisões na rede",
+    "Toyota Safety Sense de série (ACC, pré-colisão, permanência em faixa)"
+  ],
+  "watchOuts": [
+    "Recall de semieixos dianteiros para unidades fabricadas entre 24/01/2023 e 25/11/2024, incluindo as híbridas (a de 2022 do usuário provavelmente fica fora, pois a fabricação começa em jan/2023; vale conferir pelo chassi)",
+    "Garantias estendidas e do sistema híbrido exigem TODAS as revisões na rede Toyota no prazo; há reclamações no Reclame Aqui sobre recusa de cobertura da bateria híbrida",
+    "Concorrência chinesa (BYD, GWM) pressiona preços e descontos, o que pode afetar a revenda",
+    "Desempenho modesto do híbrido (122 cv combinados)"
+  ],
+  "specs": {
+    "version": "XRX Hybrid (mesmo conjunto da XRV Hybrid)",
+    "engine": "1.8 VVT-i 16V flex ciclo Atkinson + 2 motores elétricos (bateria de 1,3 kWh segundo a imprensa)",
+    "powerCv": "101 (E) / 98 (G) no motor a combustão; 72 cv no elétrico; 122 cv combinados",
+    "torqueKgfm": "14,5 (combustão); 16,6 (elétrico)",
+    "transmission": "Hybrid Transaxle (CVT/e-CVT), tração dianteira",
+    "trunkL": 440,
+    "lengthMm": 4460,
+    "wheelbaseMm": 2640,
+    "safety": null,
+    "warranty": "5 anos sem limite de km para pessoa física (100 mil km para uso comercial); componentes híbridos (bateria, ECUs e inversor) com mais 36 meses: 8 anos/200 mil km. Toyota 10: renovação de 12 meses/10 mil km por revisão na rede até 10 anos/200 mil km, válido para veículos fabricados a partir de 2020. Segundo concessionária, a garantia acompanha o carro na revenda se as revisões estiverem em dia."
+  },
+  "inmetro": {
+    "version": "Corolla Cross XRX Hybrid / XRV Hybrid 1.8 aut.",
+    "cityGas": 17.8,
+    "roadGas": 14.7,
+    "cityEth": 11.8,
+    "roadEth": 9.7,
+    "cityKmKWh": null,
+    "roadKmKWh": null,
+    "year": "Valores da página oficial toyota.com.br (o trecho visto cita PBEV 2022; o ano não foi confirmado)",
+    "source": "https://www.toyota.com.br/modelos/corolla-cross-hybrid"
+  },
+  "price0km": {
+    "version": "XRX Hybrid Premium (linha 2027)",
+    "price": 223790,
+    "date": "jun/2026",
+    "source": "https://www.vrum.com.br/mercado/2026/06/7442235-toyota-corolla-cross-2027-perde-versao-xr-e-gr-sport-estreia-novo-visual.html"
+  },
+  "versionsAndPrices": [
+    {
+      "version": "XRE 2.0 (2027)",
+      "price": 194790,
+      "date": "jun/2026",
+      "source": "https://www.vrum.com.br/mercado/2026/06/7442235-toyota-corolla-cross-2027-perde-versao-xr-e-gr-sport-estreia-novo-visual.html"
+    },
+    {
+      "version": "XRX 2.0 (2027)",
+      "price": 211790,
+      "date": "jun/2026",
+      "source": "https://www.vrum.com.br/mercado/2026/06/7442235-toyota-corolla-cross-2027-perde-versao-xr-e-gr-sport-estreia-novo-visual.html"
+    },
+    {
+      "version": "GR-Sport 2.0 (2027)",
+      "price": 218490,
+      "date": "jun/2026",
+      "source": "https://www.vrum.com.br/mercado/2026/06/7442235-toyota-corolla-cross-2027-perde-versao-xr-e-gr-sport-estreia-novo-visual.html"
+    },
+    {
+      "version": "XRV Hybrid (2027)",
+      "price": 213990,
+      "date": "out/2026",
+      "source": "https://autoentusiastas.com.br/2026/10/toyota-corolla-cross-ganha-a-opcao-a-xrv-hybrid-preco-r-213-990/"
+    },
+    {
+      "version": "XRX Hybrid Premium (2027)",
+      "price": 223790,
+      "date": "jun/2026",
+      "source": "https://www.band.com.br/bandmotor/noticias/toyota-corolla-cross-2027-ganha-novo-visual-na-versao-gr-sport-202607040822"
+    }
+  ],
+  "launchModelYearBR": 2021,
+  "catalogCheck": "Porta-malas de 440 L: confirmado. Preço de R$ 214.990: não bate com nenhuma versão atual. A XRX Hybrid virou 'XRX Hybrid Premium' e custa R$ 223.790 (linha 2027, jun/2026); um texto de out/2026 (Perfil) cita R$ 226.190, valor não confirmado. O mais próximo do catálogo é a nova XRV Hybrid, a R$ 213.990. INMETRO: a página oficial da Toyota mostra 17,8/14,7 km/l na gasolina e 11,8/9,7 no etanol (XRX/XRV Hybrid). O catálogo usa 17,7/14,6 e 12,5/10,1; 17,7 e 12,5 aparecem na imprensa como valores urbanos, mas as fontes divergem. A XRV Hybrid 2027 tem 16,6/14,0 na gasolina e 11,6/9,9 no etanol, segundo a imprensa. O nome 'XRX Hybrid' segue como 'XRX Hybrid Premium'. Para o carro de 2022 do usuário: a garantia de fábrica de 5 anos vai até cerca de 2027 (conta da nota ao 1º dono); a do sistema híbrido vai até cerca de 2030 (8 anos/200 mil km), desde que as revisões tenham sido feitas na rede; o Toyota 10 vale para fabricados a partir de 2020. Revisões (dado da XRV Hybrid 2027, AutoPapo): 1ª por R$ 788 e da 2ª à 6ª por R$ 1.199 cada.",
+  "wikipedia": {
+    "lang": "en",
+    "title": "Toyota Corolla Cross"
+  },
+  "officialUrl": "https://www.toyota.com.br/modelos/corolla-cross-hybrid",
+  "sources": [
+    {
+      "label": "Toyota Comunica – Novo Corolla Cross 2025",
+      "url": "https://www.toyotacomunica.com.br/toyota-do-brasil-lanca-novo-corolla-cross-2025-com-novidades-em-design-tecnologia-e-sofisticacao/"
+    },
+    {
+      "label": "Ficha técnica Corolla Cross 2025 (Toyota)",
+      "url": "https://www.toyotacomunica.com.br/wp-content/uploads/2024/04/Corolla-Cross-2025_Ficha-Tecnica.pdf"
+    },
+    {
+      "label": "Toyota Comunica – Corolla Cross linha 2026 e Toyota 10",
+      "url": "https://www.toyotacomunica.com.br/corolla-cross-tem-novidades-na-linha-2026-e-marca-expansao-do-programa-toyota-10-para-todo-portfolio-de-veiculos/"
+    },
+    {
+      "label": "Toyota Comunica – Corolla Cross linha 2027",
+      "url": "https://www.toyotacomunica.com.br/toyota-corolla-cross-e-atualizado-para-linha-2027-e-versao-gr-sport-do-suv-traz-novo-visual/"
+    },
+    {
+      "label": "CNN Brasil – Corolla Cross 2026 novidades e preços",
+      "url": "https://www.cnnbrasil.com.br/auto/toyota-corolla-cross-2026-novidades-precos/"
+    },
+    {
+      "label": "Vrum – Corolla Cross 2027 perde XR",
+      "url": "https://www.vrum.com.br/mercado/2026/06/7442235-toyota-corolla-cross-2027-perde-versao-xr-e-gr-sport-estreia-novo-visual.html"
+    },
+    {
+      "label": "AutoPapo – XRV Hybrid R$ 213.990",
+      "url": "https://autopapo.com.br/curta/toyota-corolla-cross-ganha-versao-hibrida-xrv-por-r-213-990/"
+    },
+    {
+      "label": "Autoentusiastas – XRV Hybrid",
+      "url": "https://autoentusiastas.com.br/2026/10/toyota-corolla-cross-ganha-a-opcao-a-xrv-hybrid-preco-r-213-990/"
+    },
+    {
+      "label": "Toyota – Corolla Cross Hybrid (oficial)",
+      "url": "https://www.toyota.com.br/modelos/corolla-cross-hybrid"
+    },
+    {
+      "label": "Toyota – Termos Toyota 10",
+      "url": "https://www.toyota.com.br/meu-toyota/servicos/garantia/termos-e-condicoes"
+    },
+    {
+      "label": "Toyoserra – garantia do sistema híbrido",
+      "url": "https://www.toyoserra.com.br/blog/conheca-a-garantia-toyota"
+    },
+    {
+      "label": "Revista AutoMOTIVO – TSS de série na linha 2023",
+      "url": "https://revistaautomotivo.com.br/corolla-cross-e-corolla-2023-passam-a-ter-toyota-safety-sense-de-serie/"
+    },
+    {
+      "label": "AutoPapo – Corolla Cross 2024 sem mudanças",
+      "url": "https://autopapo.com.br/noticia/toyota-corolla-cross-2024/"
+    },
+    {
+      "label": "Vrum – recall de semieixos 2023-2024",
+      "url": "https://www.vrum.com.br/noticias/2025/03/7087159-toyota-anuncia-recall-para-corolla-cross-fabricados-entre-2023-e-2024.html"
+    },
+    {
+      "label": "Reclame Aqui – garantia da bateria híbrida",
+      "url": "https://www.reclameaqui.com.br/toyota/bateria-hybrida-garantia_WCdPJMSUcOnHtvi7/"
+    }
+  ],
+  "unverified": [
+    "Ano exato do PBEV dos valores da página oficial (17,8/14,7/11,8/9,7) e divergência com 17,7/12,5 citados pela imprensa",
+    "Preço da XRX Hybrid Premium em out/2026 (R$ 223.790 em jun/2026 x R$ 226.190 citado pela Perfil)",
+    "Nota Latin NCAP: o Corolla Cross não aparece testado nas buscas (os resultados encontrados são do Corolla sedã)",
+    "Transferência da garantia ao 2º dono: a confirmação veio de concessionária e de resumo de busca, não do texto oficial dos termos",
+    "Custo das revisões do híbrido 2022 (o valor citado é da XRV Hybrid 2027)",
+    "Mês exato do lançamento da linha 2025 (facelift); a ficha técnica oficial foi publicada em abr/2024",
+    "Nenhuma página foi aberta diretamente (WebFetch bloqueado); dados tirados de resumos do WebSearch"
+  ]
+}

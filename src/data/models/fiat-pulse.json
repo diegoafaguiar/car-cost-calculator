@@ -1,0 +1,72 @@
+{
+  "id": "fiat-pulse",
+  "researchedAt": "2026-10",
+  "displayName": "Fiat Pulse",
+  "summary": "SUV compacto de entrada da Fiat, feito em Betim (MG) sobre a base do Argo. As versões Drive usam o 1.3 Firefly aspirado flex (98/107 cv) com câmbio manual de 5 marchas ou CVT. A Audace usa o 1.0 turbo T200 com sistema híbrido leve de 12V (MHEV) e a Abarth usa o 1.3 turbo T270. Na linha 2027 saíram a Drive T200 e a Impetus, e entrou a série especial BlackMotion.",
+  "generation": "1ª geração, lançada em 19/out/2021 como ano-modelo 2022. Reestilizada na linha 2026 (mai/2025), com atualização da linha 2027 em ago/2026.",
+  "timeline": [
+    { "modelYear": "2022", "change": "Lançamento (out/2021) nas versões Drive 1.3 MT, Drive 1.3 CVT, Drive 1.0 turbo, Audace 1.0 turbo e Impetus 1.0 turbo." },
+    { "modelYear": "2023", "change": "Sai a Drive 1.0 turbo, a Audace perde itens e todos os preços sobem (Drive MT R$ 98.990, Drive CVT R$ 105.990)." },
+    { "modelYear": "2025", "change": "Linha chega em meados de 2024 sem mudanças. Em nov/2024 a Audace e a Impetus passam a usar o T200 Hybrid (1.0 turbo com MHEV 12V e BSG no lugar do alternador e do motor de partida, com CVT)." },
+    { "modelYear": "2026", "change": "Reestilização (mai/2025): para-choque no estilo do Abarth e do Fastback, grade com filetes verticais, rodas novas e teto solar panorâmico na Impetus. Voltam a Drive 1.3 MT e uma versão turbo sem hibridização (Drive T200 AT)." },
+    { "modelYear": "2027", "change": "Chega em 18/ago/2026. Saem a Drive T200 e a Impetus. Entra a série especial BlackMotion (sobre a Drive 1.3 AT). A linha fica com Drive 1.3 MT, Drive 1.3 AT, BlackMotion, Audace T200 MHEV e Abarth T270." }
+  ],
+  "highlights": [
+    "Entre os SUVs mais baratos do país: a Drive 1.3 MT 2027 sai por R$ 104.990",
+    "Na Drive 1.3 CVT, o INMETRO mede 12,9/14,3 km/l com gasolina e 9,2/10,4 km/l com etanol (cidade/estrada)",
+    "Porta-malas de 370 L",
+    "Série com 4 airbags, ESC, multimídia de 8,5\" com CarPlay e Android Auto sem fio e faróis de LED (Drive)"
+  ],
+  "watchOuts": [
+    "Latin NCAP: apenas 2 estrelas (dez/2023). Pontos fracos: proteção lateral da cabeça, proteção infantil (55,88%) e pouca oferta de ADAS",
+    "O 1.3 aspirado é fraco (98/107 cv e 13,2/13,7 kgfm) para um SUV",
+    "Recalls nos anos-modelo 2022/2023: tubulação de combustível que pode degradar (sobretudo com etanol, com risco de vazamento e de o motor desligar) e risco de incêndio. Confira o chassi de um seminovo",
+    "A linha mudou muito entre 2022 e 2027 (versões que entraram e saíram, chegada do híbrido leve, reestilização 2026). Um seminovo 2022/2024 tem visual antigo e não tem a opção MHEV"
+  ],
+  "specs": {
+    "version": "Drive 1.3 AT (CVT) 2026/2027",
+    "engine": "1.3 Firefly 8V aspirado flex, 4 cil. (1.332 cm³)",
+    "powerCv": "107 (E) / 98 (G)",
+    "torqueKgfm": "13,7 (E) / 13,2 (G)",
+    "transmission": "automático CVT com 7 marchas simuladas",
+    "trunkL": 370,
+    "lengthMm": 4099,
+    "wheelbaseMm": 2532,
+    "safety": "Latin NCAP 2 estrelas (2023)",
+    "warranty": "3 anos (dado de fonte secundária, não confirmado no site oficial)"
+  },
+  "inmetro": { "version": "Drive 1.3 AT (CVT)", "cityGas": 12.9, "roadGas": 14.3, "cityEth": 9.2, "roadEth": 10.4, "cityKmKWh": null, "roadKmKWh": null, "year": "PBEV 2026 (conforme imprensa)", "source": "https://garagem360.com.br/?p=316706" },
+  "price0km": { "version": "Drive 1.3 AT (CVT) 2027", "price": 116990, "date": "ago/2026", "source": "https://www.terra.com.br/mobilidade/carros/fiat-pulse-2027-tem-novas-versoes-e-parte-de-r-104990,eee1395596f4ca000d8e706d3f41a106oct1x7qi.html" },
+  "versionsAndPrices": [
+    { "version": "Drive 1.3 MT 2027", "price": 104990, "date": "ago/2026", "source": "https://www.terra.com.br/mobilidade/carros/fiat-pulse-2027-tem-novas-versoes-e-parte-de-r-104990,eee1395596f4ca000d8e706d3f41a106oct1x7qi.html" },
+    { "version": "Drive 1.3 AT (CVT) 2027", "price": 116990, "date": "ago/2026", "source": "https://www.terra.com.br/mobilidade/carros/fiat-pulse-2027-tem-novas-versoes-e-parte-de-r-104990,eee1395596f4ca000d8e706d3f41a106oct1x7qi.html" },
+    { "version": "BlackMotion 1.3 AT 2027 (série especial)", "price": 120480, "date": "ago/2026", "source": "https://www.media.stellantis.com/br-pt/fiat/press/fiat-pulse-chega-a-linha-2027-com-serie-especial-blackmotion" },
+    { "version": "Audace T200 MHEV 2027", "price": 137990, "date": "ago/2026", "source": "https://www.autossegredos.com.br/marcas/fiat-marcas/fiat-pulse-blackmotion-linha-2027-preco/" },
+    { "version": "Abarth T270 2027", "price": 163490, "date": "ago/2026", "source": "https://www.terra.com.br/mobilidade/carros/fiat-pulse-2027-tem-novas-versoes-e-parte-de-r-104990,eee1395596f4ca000d8e706d3f41a106oct1x7qi.html" }
+  ],
+  "launchModelYearBR": 2022,
+  "catalogCheck": "Ano de lançamento 2022 e porta-malas de 370 L: corretos. O nome 'Drive 1.3' ainda existe, mas em duas versões: Drive 1.3 MT (R$ 104.990) e Drive 1.3 AT/CVT (R$ 116.990), ambas da linha 2027 (ago/2026). O preço do catálogo (R$ 112.990) está desatualizado. Ele fica perto do preço da Drive CVT na linha 2026 (R$ 111.990 a R$ 113.990 entre 2025 e 2026). Use R$ 116.990 se o catálogo se refere à CVT. INMETRO: o catálogo (12,1/13,6 G e 8,4/9,5 E) não bate com os números atuais da Drive 1.3 CVT, que são 12,9/14,3 G e 9,2/10,4 E (garagem360). Também não bate com o valor do 1.3 da linha 2022 publicado na imprensa (12,4/14,5 G e 8,9/10,5 E). Não encontrei a fonte do valor do catálogo. O INMETRO da Drive 1.3 MT 2027 não foi confirmado.",
+  "wikipedia": { "lang": "en", "title": "Fiat Pulse" },
+  "officialUrl": null,
+  "sources": [
+    { "label": "Stellantis Media: Pulse chega à linha 2027 com série BlackMotion", "url": "https://www.media.stellantis.com/br-pt/fiat/press/fiat-pulse-chega-a-linha-2027-com-serie-especial-blackmotion" },
+    { "label": "Terra: Pulse 2027 tem novas versões e parte de R$ 104.990", "url": "https://www.terra.com.br/mobilidade/carros/fiat-pulse-2027-tem-novas-versoes-e-parte-de-r-104990,eee1395596f4ca000d8e706d3f41a106oct1x7qi.html" },
+    { "label": "Autos Segredos: Pulse BlackMotion linha 2027", "url": "https://www.autossegredos.com.br/marcas/fiat-marcas/fiat-pulse-blackmotion-linha-2027-preco/" },
+    { "label": "Garagem360: Pulse 1.3 CVT, consumo INMETRO", "url": "https://garagem360.com.br/?p=316706" },
+    { "label": "Vrum: Pulse 2026 ganha novo visual", "url": "https://www.vrum.com.br/noticias/2025/05/7150802-fiat-pulse-2026-ganha-novo-visual-mais-uma-versao-e-teto-solar.html" },
+    { "label": "Olhar Digital: Pulse 2026, preços (nov/2025)", "url": "https://olhardigital.com.br/2025/05/28/carros-e-tecnologia/fiat-responde-ao-vw-tera-veja-precos-e-versoes-do-pulse-2026/" },
+    { "label": "Olhar Digital: Pulse e Fastback ganham versões híbridas (nov/2024)", "url": "https://olhardigital.com.br/2024/11/06/carros-e-tecnologia/fiat-pulse-e-fastback-ganham-versoes-hibridas-veja/" },
+    { "label": "Garagem360: Pulse 2023 perde a Drive 1.0", "url": "https://garagem360.com.br/fiat-pulse-2023-mais-caro-versao-drive-turbo-itens-precos" },
+    { "label": "Autoo: Pulse vai mal no Latin NCAP (2 estrelas)", "url": "https://www.autoo.com.br/fiat-pulse-vai-mal-em-teste-de-colisao-e-fica-com-duas-estrelas/" },
+    { "label": "Diário do Nordeste: lançamento do Pulse 2022", "url": "https://diariodonordeste.verdesmares.com.br/ultima-hora/automovel/fiat-pulse-2022-e-lancado-confira-precos-itens-e-versoes-do-novo-suv-1.3149953" },
+    { "label": "Vrum: recall Fiat, tubulação de combustível", "url": "https://www.vrum.com.br/noticias/recall-fiat-tubulacao-combustivel/" },
+    { "label": "Ficha técnica Pulse Drive 1.3 AT MY27 (PDF)", "url": "https://carroscomcamanzi.com.br/wp-content/uploads/2026/08/fichatecnicapulsedrive13flexautomaticomy27-6a84abde972a5.pdf" }
+  ],
+  "unverified": [
+    "INMETRO da Drive 1.3 MT 2027 e o ano exato da PBEV do valor da CVT",
+    "Garantia de fábrica no Brasil (3 anos citado só por fonte secundária)",
+    "officialUrl (fiat.com.br não pôde ser acessado)",
+    "Detalhes dos recalls de 2024 a 2026",
+    "Nenhuma página pôde ser aberta (WebFetch falhou por DNS). Todos os dados vêm dos resumos do WebSearch"
+  ]
+}

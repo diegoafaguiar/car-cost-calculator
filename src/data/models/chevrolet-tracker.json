@@ -1,0 +1,78 @@
+{
+  "id": "chevrolet-tracker",
+  "researchedAt": "2026-10",
+  "displayName": "Chevrolet Tracker",
+  "summary": "SUV compacto da Chevrolet produzido no Brasil (São Caetano do Sul) e na Argentina. Linha atual (2027) tem cinco versões: Turbo AT, LT e LTZ com motor 1.0 turbo flex de 3 cilindros (115 cv) e Premier e RS com 1.2 turbo flex (até 141 cv), sempre com câmbio automático de 6 marchas.",
+  "generation": "2ª geração no Brasil, vendida desde 2020 (ano-modelo 2020/2021); reestilizada (facelift) em jul/2025 como linha 2026; linha 2027 apresentada em mai/2026.",
+  "timeline": [
+    { "modelYear": "2022", "change": "Mesma geração lançada em 2020: 1.0 turbo (116 cv; 16,3 kgfm G / 16,8 kgfm E) e 1.2 turbo (132/133 cv) com injeção indireta. Unidades fabricadas de out/2019 a abr/2022 entraram em recall por risco de incêndio no pré-tensionador do cinto." },
+  { "modelYear": "2024", "change": "Chega a versão RS (1.2 turbo, visual escurecido, rodas 17\" pretas); projeção de celular e carregador sem fio." },
+    { "modelYear": "2025", "change": "Motores ganham injeção direta (Proconve L8): 1.0 turbo vai a 117 cv (G) / 121 cv (E) e 18,3/18,9 kgfm; 1.2 turbo vai a 139/141 cv e 22,4/22,9 kgfm. Consumo até 9% menor." },
+    { "modelYear": "2026", "change": "Facelift (jul/2025): nova dianteira com faróis em dois andares no estilo Montana/Spin, grade colmeia, novas lanternas; interior com multimídia de 11\" e painel digital de 8\". O 1.0 turbo cai para 115 cv (18,3/18,9 kgfm) para ficar na faixa de IPI até 115 cv. Lançado a R$ 119.900–190.590; em out/2025 a Chevrolet cortou até R$ 14.600 (LT de R$ 154.090 para R$ 142.490)." },
+    { "modelYear": "2027", "change": "Apresentada em mai/2026: start-stop nas versões 1.0 turbo (até +0,5 km/l na cidade, segundo a GM), frenagem automática de emergência e assistente de permanência em faixa a partir da LT, alerta de colisão que detecta pedestres e ciclistas, 8 anos de OnStar Basics. Preços: Turbo AT R$ 119.990 a RS R$ 180.790." }
+  ],
+  "highlights": [
+    "Latin NCAP: 5 estrelas (91,07% adulto, 91,84% criança, 54,14% pedestre, 83,18% assistências)",
+    "Porta-malas de 393 L",
+    "Consumo INMETRO do 1.0 turbo 2026: 11,5/13,8 km/l (G) e 8,1/9,9 km/l (E) cidade/estrada",
+    "Linha 2027 traz AEB, permanência em faixa e start-stop a partir da LT/1.0"
+  ],
+  "watchOuts": [
+    "Recall de 2022 (cerca de 80 mil unidades no Brasil, fabricadas de 25/10/2019 a 05/04/2022): faísca do pré-tensionador podia incendiar o isolante acústico do carpete perto da coluna B. Confira se o seminovo 2020–2022 fez o reparo",
+    "Recall de braço de controle dianteiro da suspensão (3.474 unidades, modelo 2019/2020)",
+    "Potência do 1.0 oscilou entre os anos: 116 cv (até 2024), 117/121 cv (2025), 115 cv (2026–2027). Na comparação seminovo × 0 km, o 2025 é o 1.0 mais potente",
+    "Preços de tabela mudam muito: houve corte de até R$ 14.600 três meses após o lançamento da linha 2026 e a linha 2027 voltou a subir (LT R$ 146.990)",
+    "Seminovos 2022/2024 não têm frenagem automática de emergência na LT (o item chega à LT na linha 2027)"
+  ],
+  "specs": {
+    "version": "LT 1.0 Turbo AT (2026/2027)",
+    "engine": "1.0 turbo flex 3 cil., injeção direta",
+    "powerCv": "115 (E/G)",
+    "torqueKgfm": "18,9 (E) / 18,3 (G)",
+    "transmission": "automático de 6 marchas",
+    "trunkL": 393,
+    "lengthMm": 4304,
+    "wheelbaseMm": 2570,
+    "safety": "Latin NCAP 5 estrelas (resultado publicado em 2022, com alerta de incêndio no teste de impacto lateral em poste, depois corrigido por recall)",
+    "warranty": null
+  },
+  "inmetro": { "version": "Tracker 1.0 Turbo AT (linha 2026)", "cityGas": 11.5, "roadGas": 13.8, "cityEth": 8.1, "roadEth": 9.9, "cityKmKWh": null, "roadKmKWh": null, "year": "PBEV 2025 (linha 2026, divulgado em jul–out/2025)", "source": "https://garagem360.com.br/?p=286645" },
+  "price0km": { "version": "LT 1.0 Turbo AT (linha 2027)", "price": 146990, "date": "mai–set/2026", "source": "https://atarde.com.br/autos/chevrolet-tracker-2027-veja-o-que-mudou-versoes-e-precos-no-brasil-1391510" },
+  "versionsAndPrices": [
+    { "version": "Turbo AT 1.0 (2027)", "price": 119990, "date": "mai/2026", "source": "https://www.autossegredos.com.br/marcas/chevrolet-marcas/chevrolet-tracker-2027-veja-precos-versoes-motor-e-itens-de-serie/" },
+    { "version": "LT 1.0 Turbo (2027)", "price": 146990, "date": "mai/2026", "source": "https://www.autossegredos.com.br/marcas/chevrolet-marcas/chevrolet-tracker-2027-veja-precos-versoes-motor-e-itens-de-serie/" },
+    { "version": "LTZ 1.0 Turbo (2027)", "price": 162890, "date": "mai/2026", "source": "https://www.autossegredos.com.br/marcas/chevrolet-marcas/chevrolet-tracker-2027-veja-precos-versoes-motor-e-itens-de-serie/" },
+    { "version": "Premier 1.2 Turbo (2027)", "price": 179790, "date": "mai/2026", "source": "https://www.autossegredos.com.br/marcas/chevrolet-marcas/chevrolet-tracker-2027-veja-precos-versoes-motor-e-itens-de-serie/" },
+    { "version": "RS 1.2 Turbo (2027)", "price": 180790, "date": "mai/2026", "source": "https://www.autossegredos.com.br/marcas/chevrolet-marcas/chevrolet-tracker-2027-veja-precos-versoes-motor-e-itens-de-serie/" },
+    { "version": "LT 1.0 Turbo (2026, após corte)", "price": 142490, "date": "out/2025", "source": "https://www.car.blog.br/2025/10/chevrolet-tracker-2026-preco-reduzido.html" }
+  ],
+  "launchModelYearBR": 2020,
+  "catalogCheck": "O nome 'LT 1.0 Turbo' continua existindo na linha 2027. Porta-malas de 393 L está correto. Preço: o catálogo traz R$ 139.990, mas a LT 2027 custa R$ 146.990 (mai–set/2026). A LT 2026 custava R$ 142.490 após o corte de out/2025 (antes, R$ 154.090). INMETRO: gasolina 11,5/13,8 está correto para o 1.0 2026; etanol está errado, o correto é 8,1/9,9 km/l, não 8,0/9,6 (garagem360/autoo, linha 2026). Os números da linha 2027 com start-stop não foram encontrados.",
+  "wikipedia": { "lang": "en", "title": "Chevrolet Tracker (2019)" },
+  "officialUrl": "https://www.chevrolet.com.br/suvs/tracker",
+  "sources": [
+    { "label": "Autos Segredos – Tracker 2027 preços e versões", "url": "https://www.autossegredos.com.br/marcas/chevrolet-marcas/chevrolet-tracker-2027-veja-precos-versoes-motor-e-itens-de-serie/" },
+    { "label": "A Tarde – Tracker 2027 o que mudou", "url": "https://atarde.com.br/autos/chevrolet-tracker-2027-veja-o-que-mudou-versoes-e-precos-no-brasil-1391510" },
+    { "label": "Autodata – Tracker 2027 melhora pacote de segurança (19/05/2026)", "url": "https://www.autodata.com.br/noticias/2026/05/19/chevrolet-tracker-melhora-pacote-de-seguranca-na-linha-2027/103756/" },
+    { "label": "Vrum – Tracker 2027 recebe novos itens (mai/2026)", "url": "https://www.vrum.com.br/mercado/2026/05/7422010-chevrolet-tracker-2027-recebe-novos-itens-de-seguranca-e-conforto.html" },
+    { "label": "Car.blog.br – Tracker 2026 preço reduzido (out/2025)", "url": "https://www.car.blog.br/2025/10/chevrolet-tracker-2026-preco-reduzido.html" },
+    { "label": "Vrum – Chevrolet tira potência do Tracker 2026 (jul/2025)", "url": "https://www.vrum.com.br/noticias/2025/07/7201084-para-manter-preco-chevrolet-tira-potencia-do-tracker-2026.html" },
+    { "label": "Garagem360 – Tracker 2026 consumo revelado", "url": "https://garagem360.com.br/?p=286645" },
+    { "label": "Autoo – Tracker 2026 preços, consumo e equipamentos", "url": "https://www.autoo.com.br/chevrolet-tracker-2026-precos-consumo-e-equipamentos-do-suv/" },
+    { "label": "Vrum – Tracker e Montana 2025 ganham potência (dez/2024)", "url": "https://www.vrum.com.br/noticias/2024/12/7013177-chevrolet-tracker-e-montana-ganham-potencia-e-ficam-mais-economicos-entenda.html" },
+    { "label": "GM Authority – Tracker RS 2024 estreia no Brasil", "url": "https://gmauthority.com/blog/2023/04/new-2024-chevy-tracker-rs-officially-debuts-in-brazil/" },
+    { "label": "AutoPapo – Tracker 5 estrelas no Latin NCAP com risco de incêndio", "url": "https://autopapo.com.br/curta/chevrolet-tracker-latin-ncap/" },
+    { "label": "Autoblog UY – Latin NCAP Fase XIII (nov/2022)", "url": "https://www.autoblog.com.uy/2022/11/latin-ncap-fase-xiii-chevrolet-tracker.html" },
+    { "label": "GM Authority – recall de 80 mil Tracker (abr/2022)", "url": "https://gmauthority.com/blog/2022/04/gm-recalls-more-than-80000-chevy-tracker-units-in-south-america/" },
+    { "label": "Garagem360 – ficha técnica Tracker Turbo AT 2026", "url": "https://garagem360.com.br/?p=309433" }
+  ],
+  "unverified": [
+    "specs.warranty: a garantia de fábrica não foi confirmada",
+    "Consumo INMETRO da linha 2027 com start-stop",
+    "Potência exata do 1.0 2026: as fontes citam 115 cv e 115,5 cv; algumas citam ainda 116/121 cv por engano",
+    "Comprimento e entre-eixos (4.304 / 2.570 mm) vêm de ficha técnica da imprensa, não do site oficial",
+    "Ano exato da publicação do Latin NCAP: evidência de nov/2022",
+    "officialUrl: não foi possível abrir a página para confirmar",
+    "Preços atuais de out/2026: o último dado confirmado é de set/2026"
+  ]
+}

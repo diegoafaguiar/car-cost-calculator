@@ -1,0 +1,88 @@
+{
+  "id": "jeep-compass",
+  "researchedAt": "2026-10",
+  "displayName": "Jeep Compass",
+  "summary": "SUV médio nacional (Goiana-PE), líder histórico do segmento. Sport, Longitude e Série S usam o 1.3 turbo flex T270 (176 cv, 27,5 kgfm) com câmbio automático de 6 marchas e tração dianteira; a Blackhawk usa o 2.0 turbo Hurricane a gasolina (272 cv) com câmbio de 9 marchas e tração 4x4. A linha 2027 deve estrear com sistema híbrido leve de 48 V nas versões T270.",
+  "generation": "2ª geração (lançada no Brasil em 2016), com facelift do ano-modelo 2022 (estreia do motor T270). A nova geração (projeto J4U, plataforma STLA Medium) é esperada no Brasil só em 2027.",
+  "timeline": [
+    { "modelYear": "2022", "change": "Facelift: faróis full LED, grade e para-choques novos, interior todo redesenhado com nova multimídia (Android Auto/CarPlay sem fio); 1.3 turbo T270 (185 cv E / 180 cv G, 27,5 kgfm) substitui o 2.0 Tigershark aspirado." },
+    { "modelYear": "2025", "change": "Proconve L8: T270 cai para 176 cv; fim do 2.0 turbodiesel; 2.0 turbo Hurricane (272 cv, 9 marchas, 4x4) nas versões Overland e Blackhawk; preços subiram até R$ 12 mil." },
+    { "modelYear": "2026", "change": "Linha lançada em ago/2025 com cortes de até R$ 20 mil e saída das versões Limited e Overland; gama fica Sport, Longitude, Série S e Blackhawk. Longitude ganha carregador por indução de série; Série S ganha ajuste elétrico do banco do passageiro e porta-malas elétrico com sensor. Em jan/2026 preços subiram de R$ 3.500 a R$ 5.400 (Longitude R$ 199.890). Ao longo de 2026, bônus fortes (Sport a R$ 137.990 em promoção até 02/out/2026)." },
+    { "modelYear": "2027", "change": "Anunciado pela imprensa: sistema híbrido leve de 48 V (motor elétrico de 15,5 cv / 6,6 kgfm) junto ao T270 nas versões Sport, Longitude e Série S; Blackhawk segue com o 2.0. Lançamento previsto para o 2º semestre de 2026; preços oficiais não confirmados até a pesquisa." }
+  ],
+  "highlights": [
+    "1.3 turbo flex de 176 cv e 27,5 kgfm com câmbio automático de 6 marchas convencional",
+    "Longitude tem pacote ADAS nível 2, multimídia de 10,1\" e painel digital de 10,25\"",
+    "Grandes descontos de mercado em 2026 (bônus de R$ 27 mil a R$ 37 mil em campanhas)",
+    "Tanque de 55 L: autonomia Inmetro estimada de até 665 km com gasolina"
+  ],
+  "watchOuts": [
+    "Consumo alto para o segmento (Inmetro Longitude 2026: 10,1/12,1 km/l gasolina e 7,3/8,6 km/l etanol)",
+    "Porta-malas de 410 L, menor que rivais como Kicks (470 L) e Song Plus (574 L)",
+    "Projeto antigo: nova geração (STLA Medium, híbrida) prevista para 2027 deve depreciar a atual; linha 2027 MHEV iminente",
+    "Recalls históricos (airbag; 4xe 2022-2023 com conector do cabo de recarga com risco de incêndio; console central com material incorreto)",
+    "Sem teste Latin NCAP do Compass nacional (tem 5 estrelas no Euro NCAP, protocolo europeu)",
+    "Preço público pouco representativo: grande diferença entre tabela e preço de transação em 2026"
+  ],
+  "specs": {
+    "version": "Longitude T270 (linha 2026)",
+    "engine": "1.3 turbo flex 4 cil. (T270, injeção direta, MultiAir)",
+    "powerCv": "176 (E/G)",
+    "torqueKgfm": "27,5",
+    "transmission": "automático de 6 marchas, tração dianteira",
+    "trunkL": 410,
+    "lengthMm": 4404,
+    "wheelbaseMm": 2636,
+    "safety": null,
+    "warranty": "3 anos (fonte regional; não confirmado no site da Jeep Brasil)"
+  },
+  "inmetro": {
+    "version": "Longitude 1.3 T270 2026",
+    "cityGas": 10.1,
+    "roadGas": 12.1,
+    "cityEth": 7.3,
+    "roadEth": 8.6,
+    "cityKmKWh": null,
+    "roadKmKWh": null,
+    "year": "PBEV 2025/2026 (valores publicados pelo Carro.Blog.Br para a linha 2026)",
+    "source": "https://carro.blog.br/jeep-compass-longitude-1-3-2026-preco-ficha-tecnica-consumo-equipamentos-e-fotos-suv-flex-com-176-cv-entrega-conforto-urbano-e-autonomia-rodoviaria.html"
+  },
+  "price0km": { "version": "Longitude 1.3 T270 AT6 (2026)", "price": 199890, "date": "jan/2026", "source": "https://www.automaistv.com.br/vendas-e-precos/jeep-compass-sofre-aumento-e-passa-dos-r-274-mil/" },
+  "versionsAndPrices": [
+    { "version": "Sport 1.3 T270 AT6", "price": 174990, "date": "jan/2026", "source": "https://www.automaistv.com.br/vendas-e-precos/jeep-compass-sofre-aumento-e-passa-dos-r-274-mil/" },
+    { "version": "Longitude 1.3 T270 AT6", "price": 199890, "date": "jan/2026", "source": "https://www.automaistv.com.br/vendas-e-precos/jeep-compass-sofre-aumento-e-passa-dos-r-274-mil/" },
+    { "version": "Série S 1.3 T270 AT6", "price": 229890, "date": "jan/2026", "source": "https://www.automaistv.com.br/vendas-e-precos/jeep-compass-sofre-aumento-e-passa-dos-r-274-mil/" },
+    { "version": "Blackhawk 2.0 turbo AT9 4x4", "price": 274290, "date": "jan/2026", "source": "https://www.automaistv.com.br/vendas-e-precos/jeep-compass-sofre-aumento-e-passa-dos-r-274-mil/" },
+    { "version": "Sport (oferta promocional, estoque limitado)", "price": 137990, "date": "set/2026 (válida até 02/out/2026)", "source": "https://garagem360.com.br/?p=320612" }
+  ],
+  "launchModelYearBR": 2017,
+  "catalogCheck": "Versão 'Longitude 1.3T' ainda existe (Longitude T270). Preço do catálogo (R$ 194.990) não confere: na linha 2026 lançada em ago/2025 era R$ 192.990 e, após reajuste de jan/2026, R$ 199.890. INMETRO do catálogo diverge da linha 2026: gasolina 10,1/12,1 (catálogo 10,1/11,9) e etanol 7,3/8,6 (catálogo 7,0/8,3). Porta-malas 410 L confere. Não existe nova geração à venda no Brasil em out/2026: a linha 2027 da geração atual deve chegar com híbrido leve 48 V (Sport/Longitude/Série S) e a nova geração STLA Medium é esperada para 2027.",
+  "wikipedia": { "lang": "en", "title": "Jeep Compass" },
+  "officialUrl": null,
+  "sources": [
+    { "label": "Autodata – Jeep reduz em até R$ 20 mil os preços da linha 2026", "url": "https://www.autodata.com.br/noticias/2025/08/01/jeep-reduz-em-ate-r-20-mil-os-precos-da-linha-2026-do-compass/91734/" },
+    { "label": "Mobiauto – Compass chega à linha 2026 e perde duas versões", "url": "https://www.mobiauto.com.br/revista/jeep-compass-chega-a-linha-2026-e-perde-duas-versoes-veja-precos/8926" },
+    { "label": "Auto+ TV – Compass 2026 chega R$ 20 mil mais barato e perde versões", "url": "https://www.automaistv.com.br/novidades/jeep-compass-2026-chega-r-20-mil-mais-barato-e-perde-versoes/" },
+    { "label": "Auto+ TV – Jeep Compass sofre aumento e passa dos R$ 274 mil (jan/2026)", "url": "https://www.automaistv.com.br/vendas-e-precos/jeep-compass-sofre-aumento-e-passa-dos-r-274-mil/" },
+    { "label": "Garagem360 – Compass Sport cai R$ 37 mil, vai a R$ 137.990", "url": "https://garagem360.com.br/?p=320612" },
+    { "label": "Vrum – Jeep Compass fica R$ 27 mil mais barato (jul/2026)", "url": "https://www.vrum.com.br/bom-negocio/2026/07/7470960-jeep-compass-fica-rs-27-mil-mais-barato-e-passa-a-custar-menos-que-rs-150-mil.html" },
+    { "label": "Carro.Blog.Br – Compass Longitude 1.3 2026 ficha técnica e consumo", "url": "https://carro.blog.br/jeep-compass-longitude-1-3-2026-preco-ficha-tecnica-consumo-equipamentos-e-fotos-suv-flex-com-176-cv-entrega-conforto-urbano-e-autonomia-rodoviaria.html" },
+    { "label": "Motor Show – Sem alarde, Jeep deixa Compass 2025 menos potente", "url": "https://motorshow.com.br/sem-alarde-jeep-deixa-compass-2025-menos-potente-e-ate-r-12-mil-mais-caro" },
+    { "label": "Vrum – Jeep encerra era do Compass turbodiesel", "url": "https://www.vrum.com.br/noticias/2025/02/7061123-jeep-encerra-era-do-compass-turbodiesel-no-brasil-entenda-o-motivo.html" },
+    { "label": "Vrum – Jeep lança o Compass 2022 com novo motor T270", "url": "https://www.vrum.com.br/noticias/jeep-lanca-o-compass-2022-com-mudancas-no-visual-e-novo-motor-t270/" },
+    { "label": "AutoPapo – Compass 2027 estreia em breve com híbrido leve", "url": "https://autopapo.com.br/curta/jeep-compass-2027-estreia-em-breve-com-novo-sistema-hibrido-leve-veja-o-consumo-estimado/" },
+    { "label": "Autos Segredos – Compass 2027 terá híbrido leve em três versões", "url": "https://www.autossegredos.com.br/segredos/jeep-compass-2027-tera-sistema-hibrido-leve-em-tres-versoes/" },
+    { "label": "Vrum – Nova geração do Compass só em 2027", "url": "https://www.vrum.com.br/aceleradas/2025/02/7059518-nova-geracao-do-jeep-compass-sera-lancada-no-brasil-apenas-em-2027.html" },
+    { "label": "AutoPapo – Compass nota máxima no Euro NCAP", "url": "https://autopapo.com.br/noticia/jeep-compass-nota-maxima-seguranca-euroncap/" },
+    { "label": "Mecânica Online – recall Compass/Commander/Rampage", "url": "https://mecanicaonline.com.br/2024/09/recall-para-jeep-compass-commander-e-ram-rampage/" }
+  ],
+  "unverified": [
+    "Preço de tabela vigente em out/2026 (último preço oficial encontrado é de jan/2026; pode ter mudado)",
+    "Data e preços oficiais da linha 2027 MHEV",
+    "Garantia de fábrica no Brasil (3 anos veio de fonte não brasileira)",
+    "Comprimento 4.404 mm e entre-eixos 2.636 mm (fontes de catálogo estrangeiras)",
+    "Inmetro 10,1/12,1 e 7,3/8,6 não conferido diretamente na tabela PBEV",
+    "officialUrl: página oficial do Compass não apareceu nos resultados (WebFetch falhou em todos os domínios por DNS)",
+    "Ano-modelo de estreia no Brasil (2017) é conhecimento geral, sem fonte aberta nesta pesquisa"
+  ]
+}

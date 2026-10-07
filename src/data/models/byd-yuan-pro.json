@@ -1,0 +1,132 @@
+{
+  "id": "byd-yuan-pro",
+  "researchedAt": "2026-10",
+  "displayName": "BYD Yuan Pro",
+  "summary": "SUV compacto 100% elétrico de entrada da BYD no Brasil, importado da China, vendido em versão única GS. Motor dianteiro de 177 cv/290 Nm, bateria Blade LFP de 45,1 kWh e 250 km de autonomia PBEV, com foco em uso urbano.",
+  "generation": "Yuan Pro (reestilização de 2021 do BYD Yuan EV), lançado no Brasil em set/2024 (ano-modelo 2025).",
+  "timeline": [
+    {
+      "modelYear": "2025",
+      "change": "Lançamento em 5/set/2024 por R$ 182.800, versão única, 177 cv, 45,1 kWh, 250 km PBEV."
+    },
+    {
+      "modelYear": "2026",
+      "change": "Sem alterações; mantém versão única GS."
+    },
+    {
+      "modelYear": "2027",
+      "change": "Linha 2027 no Brasil anunciada a R$ 182.990 (preço FIPE 0 km/anúncios); na China ganhou versão com bateria de 51,13 kWh e câmbio na coluna, não confirmada no Brasil."
+    }
+  ],
+  "highlights": [
+    "Consumo PBEV de 0,51 MJ/km (≈ 7,1 km/kWh), entre os carros mais eficientes do Brasil.",
+    "177 cv e 29,6 kgfm; 0-100 km/h em 7,9 s.",
+    "Um dos elétricos que menos desvalorizam, segundo rankings de 2026 (cerca de 6%).",
+    "Garantia de 6 anos para o veículo e 8 anos para a bateria, sem limite de km."
+  ],
+  "watchOuts": [
+    "Porta-malas pequeno: 265 L (1.210 L com bancos rebatidos), bem abaixo de Creta/T-Cross/Tracker.",
+    "Autonomia PBEV de apenas 250 km; avaliação da Revista Carro: 'feito para quem roda na cidade e não viaja para longe'.",
+    "Sem teste Latin NCAP encontrado."
+  ],
+  "specs": {
+    "version": "GS (única)",
+    "engine": "motor elétrico dianteiro síncrono, bateria Blade LFP 45,1 kWh",
+    "powerCv": "177",
+    "torqueKgfm": "29,6",
+    "transmission": "redução fixa (1 marcha)",
+    "trunkL": 265,
+    "lengthMm": 4310,
+    "wheelbaseMm": 2620,
+    "safety": null,
+    "warranty": "6 anos sem limite de km para o veículo (elétricos/híbridos BYD no Brasil, desde mai/2024, inclusive para carros já entregues) e 8 anos sem limite de km para a bateria Blade (fonte: Olhar Digital/Canal VE, mai/2024)."
+  },
+  "inmetro": {
+    "version": "Yuan Pro GS",
+    "cityGas": null,
+    "roadGas": null,
+    "cityEth": null,
+    "roadEth": null,
+    "cityKmKWh": 7.06,
+    "roadKmKWh": 7.06,
+    "year": "PBEV 2025 (homologação mantida na linha 2026)",
+    "source": "https://canaltech.com.br/carros/byd-yuan-pro-suv-eletrico-de-entrada-chega-ao-brasil-por-r-182800/",
+    "note": "Conversão: km/kWh = 3,6 ÷ MJ/km → 3,6/0,51 = 7,06 km/kWh (combinado PBEV). Valores separados cidade/estrada não encontrados; repetido nos dois campos. Fontes divergem no km/l-equivalente (35,7 vs 56 km/le)."
+  },
+  "price0km": {
+    "version": "GS",
+    "price": 182990,
+    "date": "ago/2026 (FIPE 0 km/anúncios 2026-2027)",
+    "source": "https://tabelacarros.com/carros/byd/YUAN-PRO--ELETRICO-/2026-Eletrico"
+  },
+  "versionsAndPrices": [
+    {
+      "version": "GS (lançamento)",
+      "price": 182800,
+      "date": "set/2024",
+      "source": "https://canaltech.com.br/carros/byd-yuan-pro-suv-eletrico-de-entrada-chega-ao-brasil-por-r-182800/"
+    },
+    {
+      "version": "GS 2026",
+      "price": 182990,
+      "date": "2026",
+      "source": "https://www.mercadolivre.com.br/blog/mo-byd-yuan-pro-2026-preco-autonomia"
+    }
+  ],
+  "launchModelYearBR": 2025,
+  "catalogCheck": "Preço R$ 182.800 é o de lançamento (set/2024); referência atual 2026 é R$ 182.990 (diferença pequena, sem tabela oficial da BYD confirmada). Porta-malas está ERRADO: 265 L, não 380 L. Consumo 6,9/5,9 km/kWh não confere com PBEV: 0,51 MJ/km ≈ 7,1 km/kWh combinado. Ano 2025 está correto (lançado set/2024). Versão atual: GS (única). Blogs que citam versões GL/GS/GSR a R$ 179,8-219,8 mil não são confiáveis/sem confirmação.",
+  "wikipedia": {
+    "lang": "en",
+    "title": "BYD Yuan"
+  },
+  "officialUrl": null,
+  "sources": [
+    {
+      "label": "Canaltech – Yuan Pro chega por R$ 182.800",
+      "url": "https://canaltech.com.br/carros/byd-yuan-pro-suv-eletrico-de-entrada-chega-ao-brasil-por-r-182800/"
+    },
+    {
+      "label": "Canal VE – Yuan Pro apresentado por R$ 182.800",
+      "url": "https://canalve.com.br/byd-yuan-pro-e-apresentado-no-brasil-com-o-preco-de-r-182-800/"
+    },
+    {
+      "label": "CNEVPost – BYD launches Yuan Pro in Brazil",
+      "url": "https://cnevpost.com/2024/09/11/byd-launches-yuan-pro-brazil/"
+    },
+    {
+      "label": "Vrum – Yuan Pro como alternativa a T-Cross/Tracker/Creta (porta-malas 265 L)",
+      "url": "https://www.vrum.com.br/noticias/2024/09/6935641-byd-lanca-yuan-pro-como-alternativa-eletrica-a-t-cross-tracker-e-creta.html"
+    },
+    {
+      "label": "Revista Carro – teste Yuan Pro",
+      "url": "https://revistacarro.com.br/teste-byd-yuan-pro-e-feito-para-quem-roda-na-cidade-e-nao-viaja-para-longe/"
+    },
+    {
+      "label": "Mercado Livre blog – Yuan Pro 2026 R$ 182.990, versão única GS",
+      "url": "https://www.mercadolivre.com.br/blog/mo-byd-yuan-pro-2026-preco-autonomia"
+    },
+    {
+      "label": "Tabela Carros – FIPE Yuan Pro 2026",
+      "url": "https://tabelacarros.com/carros/byd/YUAN-PRO--ELETRICO-/2026-Eletrico"
+    },
+    {
+      "label": "Encontracarros – Yuan Pro 2027 na China",
+      "url": "https://www.encontracarros.com.br/byd-yuan-pro-2027"
+    },
+    {
+      "label": "SpaceMoney – ranking de depreciação de elétricos 2026",
+      "url": "https://www.spacemoney.com.br/tecnologia/carros-eletricos-depreciacao-2026/"
+    },
+    {
+      "label": "Olhar Digital – BYD aumenta garantia no Brasil",
+      "url": "https://olhardigital.com.br/2024/05/08/carros-e-tecnologia/byd-aumenta-garantia-para-carros-eletricos-e-hibridos-no-brasil/"
+    }
+  ],
+  "unverified": [
+    "preço oficial atual na tabela BYD (R$ 182.990 vem de FIPE/anúncios/blog)",
+    "consumo PBEV separado cidade/estrada",
+    "percentual de depreciação de 6% (ranking agregado, metodologia não verificada)",
+    "nota Latin NCAP",
+    "URL oficial (byd.com inacessível nesta pesquisa)"
+  ]
+}

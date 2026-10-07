@@ -1,0 +1,75 @@
+{
+  "id": "vw-nivus",
+  "researchedAt": "2026-10",
+  "displayName": "Volkswagen Nivus",
+  "summary": "SUV cupê compacto da VW, feito em São Bernardo do Campo (SP) na plataforma MQB A0 (a mesma de Polo e Virtus). As versões Sense, Comfortline e Highline usam o 1.0 200 TSI flex de 3 cilindros (116/128 cv, 20,4 kgfm) com câmbio automático de 6 marchas. A GTS usa o 1.4 250 TSI de 150 cv e 25,5 kgfm.",
+  "generation": "1ª geração (lançada em 2020 como ano-modelo 2021). Facelift na linha 2025, que chegou às lojas em 23/nov/2024.",
+  "timeline": [
+    { "modelYear": "2021", "change": "Lançamento nas versões Comfortline 200 TSI e Highline 200 TSI. INMETRO da Comfortline: 10,7/13,2 G e 7,7/9,4 E." },
+    { "modelYear": "2023", "change": "Segue com duas versões (Comfortline R$ 121.670 e Highline R$ 138.390). Recall do airbag do passageiro para unidades feitas entre mai/2022 e nov/2024." },
+    { "modelYear": "2024", "change": "Acabamento interno melhor (vinil na Highline), mas perde os sensores de toque nas maçanetas da chave presencial. Comfortline a R$ 129.190." },
+    { "modelYear": "2025", "change": "Facelift (nov/2024): faróis mais finos, grade nova, lanternas redesenhadas, multimídia VW Play Connect de 10,1\" e bancos novos. Pacote Outfit na Highline. GTS anunciada para o 2º semestre de 2025." },
+    { "modelYear": "2026", "change": "Volta a versão de entrada Sense e estreia a GTS 250 TSI. Linha: Sense, Comfortline, Highline e GTS. INMETRO da Comfortline: 12,4/14,8 G e 8,6/10,3 E." },
+    { "modelYear": "2027", "change": "Já à venda em 2026 com as mesmas 4 versões e a mesma mecânica (câmbio de 6 marchas). O câmbio AQ300 de 8 marchas do T-Cross 2027 ainda não chegou ao Nivus e é esperado para a próxima linha." }
+  ],
+  "highlights": [
+    "Latin NCAP 5 estrelas: 92% adulto, 92% criança, 49% pedestre e 85% assistências",
+    "Porta-malas de 415 L",
+    "Motor 1.0 TSI de 116/128 cv e 20,4 kgfm. Faz 0-100 km/h em 10,0 s (E)",
+    "A Sense já traz frenagem autônoma de emergência e iluminação full LED"
+  ],
+  "watchOuts": [
+    "Recall do airbag do passageiro (componente possivelmente errado) para unidades feitas entre mai/2022 e nov/2024",
+    "Recall de software do painel de instrumentos (mai/2026) para Polo, Virtus, Nivus, T-Cross e Tera dos anos-modelo 2021 a 2026",
+    "Recall do freio de estacionamento (jul/2026) para veículos feitos em 2025-2026",
+    "Preço subiu muito: a Comfortline foi de R$ 121.670 (2023) para R$ 158.290 (set/2026)",
+    "Um seminovo 2022/2024 tem visual antigo, multimídia menor e consumo INMETRO pior que o 2026"
+  ],
+  "specs": {
+    "version": "Comfortline 200 TSI 2026/2027",
+    "engine": "1.0 turbo flex 3 cil. (200 TSI)",
+    "powerCv": "128 (E) / 116 (G)",
+    "torqueKgfm": "20,4",
+    "transmission": "automático de 6 marchas",
+    "trunkL": 415,
+    "lengthMm": 4266,
+    "wheelbaseMm": 2566,
+    "safety": "Latin NCAP 5 estrelas (ano do teste não confirmado; provavelmente 2022)",
+    "warranty": "3 anos sem limite de km (fonte secundária)"
+  },
+  "inmetro": { "version": "Comfortline 200 TSI 2026", "cityGas": 12.4, "roadGas": 14.8, "cityEth": 8.6, "roadEth": 10.3, "cityKmKWh": null, "roadKmKWh": null, "year": "PBEV 2026 (conforme imprensa)", "source": "https://www.autoetecnica.com.br/teste-volkswagen-nivus-200-tsi-comfortline-2026/" },
+  "price0km": { "version": "Comfortline 200 TSI 2027", "price": 158290, "date": "set/2026", "source": "https://mundodoautomovelparapcd.com.br/volkswagen-nivus-para-pcd-em-setembro-de-2026/" },
+  "versionsAndPrices": [
+    { "version": "Sense 200 TSI", "price": 119990, "date": "2026", "source": "https://falandodecarros.com/nivus-2027-vai-de-r-119-990-a-r-193-290-veja-o-que-muda-da-sense-a-gts/" },
+    { "version": "Comfortline 200 TSI", "price": 158290, "date": "set/2026", "source": "https://mundodoautomovelparapcd.com.br/volkswagen-nivus-para-pcd-em-setembro-de-2026/" },
+    { "version": "Highline 200 TSI", "price": 173290, "date": "2026", "source": "https://falandodecarros.com/nivus-2027-vai-de-r-119-990-a-r-193-290-veja-o-que-muda-da-sense-a-gts/" },
+    { "version": "GTS 250 TSI", "price": 193290, "date": "2026", "source": "https://falandodecarros.com/nivus-2027-vai-de-r-119-990-a-r-193-290-veja-o-que-muda-da-sense-a-gts/" }
+  ],
+  "launchModelYearBR": 2021,
+  "catalogCheck": "Ano de lançamento (2021) e porta-malas (415 L) estão corretos. O nome 'Comfortline TSI' equivale à atual 'Comfortline 200 TSI', que ainda existe. Preço errado: o catálogo traz R$ 134.990, mas o preço público da Comfortline 200 TSI em set/2026 é R$ 158.290. Os R$ 134.990 estão próximos do preço de lançamento do facelift (a partir de R$ 136.990 em nov/2024). INMETRO desatualizado: o catálogo traz 11,8/14,0 G e 8,2/9,8 E, mas a Comfortline 2026 faz 12,4/14,8 G e 8,6/10,3 E. Para um seminovo 2021/2022 vale 10,7/13,2 G e 7,7/9,4 E. A linha atual tem 4 versões: Sense, Comfortline, Highline e GTS.",
+  "wikipedia": { "lang": "pt", "title": "Volkswagen Nivus" },
+  "officialUrl": null,
+  "sources": [
+    { "label": "Vrum: VW revela Nivus 2025 e anuncia GTS", "url": "https://www.vrum.com.br/noticias/2024/10/6964728-volkswagen-revela-nivus-2025-e-anuncia-versao-gts-veja-precos-e-quando-chega.html" },
+    { "label": "Garagem360: Nivus 2026, preços e versões", "url": "https://garagem360.com.br/?p=284446" },
+    { "label": "Falando de Carros: Nivus 2027 de R$ 119.990 a R$ 193.290", "url": "https://falandodecarros.com/nivus-2027-vai-de-r-119-990-a-r-193-290-veja-o-que-muda-da-sense-a-gts/" },
+    { "label": "Mundo do Automóvel para PCD: Nivus em set/2026 (preço público)", "url": "https://mundodoautomovelparapcd.com.br/volkswagen-nivus-para-pcd-em-setembro-de-2026/" },
+    { "label": "Auto e Técnica: teste Nivus Comfortline 2026", "url": "https://www.autoetecnica.com.br/teste-volkswagen-nivus-200-tsi-comfortline-2026/" },
+    { "label": "Guia do Carro: Nivus, Virtus e Tukan terão câmbio de 8 marchas", "url": "https://guiadocarro.net.br/volkswagen-nivus-virtus-e-tukan-terao-novo-cambio-automatico-de-8-marchas-do-t-cross" },
+    { "label": "Garagem360: Nivus 2024, mudanças", "url": "https://garagem360.com.br/vw-nivus-2024-ja-esta-disponivel-e-tem-mudanca-nos-itens-e-nos-precos" },
+    { "label": "Garagem360: Nivus 2023", "url": "https://garagem360.com.br/?p=183910" },
+    { "label": "Autoo: recall de airbag do Nivus", "url": "https://www.autoo.com.br/volkswagen-faz-recall-de-nivus-virtus-e-saveiro-por-possivel-falha-em-airbags/" },
+    { "label": "Vrum: recall VW mai/2026 (painel)", "url": "https://www.vrum.com.br/noticias/2026/05/7412493-vw-emite-recall-para-nivus-tera-polo-virtus-e-t-cross.html" },
+    { "label": "Vrum: recall de 150 mil carros jul/2026 (freio de estacionamento)", "url": "https://www.vrum.com.br/noticias/2026/07/7465479-volkswagen-convoca-recall-de-150-mil-carros-no-brasil-veja-modelos-afetados.html" },
+    { "label": "Zapay: Nivus 5 estrelas no Latin NCAP", "url": "https://blog.usezapay.com.br/?p=15323" },
+    { "label": "Wikipédia: Volkswagen Nivus", "url": "https://pt.wikipedia.org/wiki/Volkswagen_Nivus" }
+  ],
+  "unverified": [
+    "Ano do teste Latin NCAP do Nivus",
+    "INMETRO específico da linha 2027 (assumido igual ao 2026 porque a mecânica é a mesma)",
+    "Data exata do lançamento da GTS e da volta da Sense",
+    "Garantia (fonte secundária)",
+    "officialUrl (vw.com.br não pôde ser acessado)",
+    "Nenhuma página pôde ser aberta (WebFetch falhou por DNS). Todos os dados vêm dos resumos do WebSearch, e o limite de buscas acabou"
+  ]
+}

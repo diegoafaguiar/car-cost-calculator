@@ -1,0 +1,139 @@
+{
+  "id": "toyota-yaris-cross-hybrid",
+  "researchedAt": "2026-10",
+  "displayName": "Toyota Yaris Cross",
+  "summary": "SUV compacto (B-SUV) fabricado em Sorocaba (SP), apresentado no Salão do Automóvel de nov/2025, com entregas a partir de fev/2026. Tem versões a combustão 1.5 flex de 122 cv (XR, XRE, XRX) e híbridas flex 1.5 de 111 cv combinados (XRE Hybrid, XRX Hybrid). É o primeiro SUV compacto híbrido flex do Brasil.",
+  "generation": "1ª geração no Brasil (projeto asiático de 2023); lançamento em nov/2025, ano-modelo 2026.",
+  "timeline": [
+    {
+      "modelYear": "2026",
+      "change": "Lançamento (pré-venda em nov/2025, entregas a partir de fev/2026) com XRE, XRE Hybrid, XRX e XRX Hybrid. Versão de entrada XR (só a combustão, R$ 149.990) anunciada em jan/2026, com chegada entre fev e abr/2026. A Toyota manteve os preços de pré-venda."
+    }
+  ],
+  "highlights": [
+    "Híbrido flex (aceita etanol)",
+    "INMETRO do híbrido: 17,9 km/l na cidade com gasolina",
+    "Seis airbags e controles de tração e estabilidade de série",
+    "Garantia de 5 anos + Toyota 10 (até 10 anos); sistema híbrido com 8 anos/200 mil km"
+  ],
+  "watchOuts": [
+    "Latin NCAP: 2 estrelas (adulto 77%, criança 69%) na unidade feita na Tailândia, com menos equipamentos que a nacional; o modelo brasileiro não foi testado",
+    "Desempenho fraco (0–100 km/h em cerca de 11 s), plásticos duros e pouco espaço atrás para pessoas altas",
+    "Porta-malas do híbrido menor (391 L) que o da versão a combustão (400 L)",
+    "Tanque pequeno (36 L)",
+    "Muitos descontos no varejo: XRX Hybrid anunciado por R$ 169.990 à vista em set/2026, o que tende a pressionar a revenda"
+  ],
+  "specs": {
+    "version": "XRX Hybrid",
+    "engine": "1.5 16V flex ciclo Atkinson (91 cv/12,3 kgfm) + motores elétricos (80 cv/14,4 kgfm); bateria de íons de lítio de 0,76 kWh",
+    "powerCv": "111 combinados (no etanol)",
+    "torqueKgfm": "12,3 (combustão); 14,4 (elétrico)",
+    "transmission": "Hybrid Transaxle (CVT), tração dianteira",
+    "trunkL": 391,
+    "lengthMm": 4310,
+    "wheelbaseMm": 2620,
+    "safety": "Latin NCAP: 2 estrelas (unidade feita na Tailândia; ano do teste não confirmado)",
+    "warranty": "Programa Toyota 10 (5 anos de fábrica, extensível até 10 anos com revisões na rede); sistema híbrido com 8 anos ou 200 mil km"
+  },
+  "inmetro": {
+    "version": "Yaris Cross XRE/XRX Hybrid",
+    "cityGas": 17.9,
+    "roadGas": 15.3,
+    "cityEth": 13.2,
+    "roadEth": 10.7,
+    "cityKmKWh": null,
+    "roadKmKWh": null,
+    "year": "PBEV 2026 (ano não confirmado na fonte)",
+    "source": "https://www.itatiaia.com.br/auto/toyota-yaris-cross-veja-os-precos-equipamentos-e-consumo-das-versoes/"
+  },
+  "price0km": {
+    "version": "XRX Hybrid",
+    "price": 189990,
+    "date": "set/2026 (mantido desde a pré-venda de nov/2025)",
+    "source": "https://www.cnnbrasil.com.br/auto/toyota-yaris-cross-xr-2026-b-suv-ganha-versao-mais-barata/"
+  },
+  "versionsAndPrices": [
+    {
+      "version": "XR (1.5 flex)",
+      "price": 149990,
+      "date": "jan/2026",
+      "source": "https://www.otempo.com.br/autotempo/2026/1/16/toyota-yaris-cross-xr-preco-equipamentos-e-data-de-estreia-da-nova-versao"
+    },
+    {
+      "version": "XRE (1.5 flex)",
+      "price": 161390,
+      "date": "nov/2025",
+      "source": "https://www.vrum.com.br/noticias/2025/11/7296227-toyota-yaris-cross-estreia-por-rs-161-mil-hibrido-parte-de-rs-172-mil.html"
+    },
+    {
+      "version": "XRE Hybrid",
+      "price": 172390,
+      "date": "nov/2025",
+      "source": "https://www.vrum.com.br/noticias/2025/11/7296227-toyota-yaris-cross-estreia-por-rs-161-mil-hibrido-parte-de-rs-172-mil.html"
+    },
+    {
+      "version": "XRX (1.5 flex)",
+      "price": 178990,
+      "date": "nov/2025",
+      "source": "https://www.vrum.com.br/noticias/2025/11/7296227-toyota-yaris-cross-estreia-por-rs-161-mil-hibrido-parte-de-rs-172-mil.html"
+    },
+    {
+      "version": "XRX Hybrid",
+      "price": 189990,
+      "date": "nov/2025",
+      "source": "https://www.vrum.com.br/noticias/2025/11/7296227-toyota-yaris-cross-estreia-por-rs-161-mil-hibrido-parte-de-rs-172-mil.html"
+    }
+  ],
+  "launchModelYearBR": 2026,
+  "catalogCheck": "Nome da versão 'XRX Hybrid': correto. Ano-modelo de lançamento 2026: correto. É flex: sim, todas as versões (inclusive as híbridas). Preço errado: R$ 179.990 é o valor aproximado da XRX a combustão (R$ 178.990); a XRX Hybrid custa R$ 189.990 de tabela (há ofertas de R$ 169.990 à vista em set/2026). INMETRO quase certo: 17,9/15,3 na gasolina e 13,2/10,7 no etanol, contra 18,0/15,4 e 12,6/10,6 do catálogo. Porta-malas errado: o híbrido tem 391 L; os 400 L são da versão a combustão.",
+  "wikipedia": {
+    "lang": "en",
+    "title": "Toyota Yaris Cross"
+  },
+  "officialUrl": null,
+  "sources": [
+    {
+      "label": "Vrum – Yaris Cross estreia por R$ 161 mil",
+      "url": "https://www.vrum.com.br/noticias/2025/11/7296227-toyota-yaris-cross-estreia-por-rs-161-mil-hibrido-parte-de-rs-172-mil.html"
+    },
+    {
+      "label": "CNN Brasil – Yaris Cross XR",
+      "url": "https://www.cnnbrasil.com.br/auto/toyota-yaris-cross-xr-2026-b-suv-ganha-versao-mais-barata/"
+    },
+    {
+      "label": "O Tempo – Yaris Cross XR",
+      "url": "https://www.otempo.com.br/autotempo/2026/1/16/toyota-yaris-cross-xr-preco-equipamentos-e-data-de-estreia-da-nova-versao"
+    },
+    {
+      "label": "Itatiaia – preços, equipamentos e consumo",
+      "url": "https://www.itatiaia.com.br/auto/toyota-yaris-cross-veja-os-precos-equipamentos-e-consumo-das-versoes/"
+    },
+    {
+      "label": "Revista HG – ficha técnica do híbrido",
+      "url": "https://revistahg.com.br/2026/08/29/toyota-yaris-cross-hybrid-consumo-motor-e-ficha-tecnica/"
+    },
+    {
+      "label": "Motor Show – lançamento",
+      "url": "https://motorshow.com.br/toyota-yaris-cross-lancamento"
+    },
+    {
+      "label": "AutoPapo – 2 estrelas no Latin NCAP",
+      "url": "https://autopapo.com.br/noticia/yaris-cross-latin-ncap/"
+    },
+    {
+      "label": "AutoPapo – 5 pontos negativos",
+      "url": "https://autopapo.com.br/noticia/pontos-negativos-toyota-yaris-cross/"
+    },
+    {
+      "label": "Terra – XRX Hybrid R$ 20 mil mais barato em oferta",
+      "url": "https://www.terra.com.br/mobilidade/carros/toyota-yaris-cross-hibrido-fica-r-20-mil-mais-barato-em-oferta,3a11a6a8c1d175950a469115e2bfd975r4cjzfxz.html"
+    }
+  ],
+  "unverified": [
+    "URL oficial do modelo no site da Toyota (busca esgotada antes de confirmar)",
+    "Ano do teste Latin NCAP e se ele vale para a unidade nacional",
+    "Ano do PBEV dos valores de consumo",
+    "Custo das revisões",
+    "Nenhuma página foi aberta diretamente (WebFetch bloqueado); dados tirados de resumos do WebSearch"
+  ]
+}

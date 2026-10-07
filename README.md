@@ -15,6 +15,13 @@ comparando o custo total de propriedade (TCO) em **1, 3 e 5 anos** com preços d
 - **Ranking** por horizonte (curto/médio/longo), com ordenação por qualquer coluna, filtros (tipo, categoria,
   motorização, preço, custo mensal, lugares, busca, "só o que economiza"), economia vs. manter e mês de break-even.
 - **Gráfico** de custo acumulado mês a mês para até 5 opções, além da composição do custo por item.
+- **Fichas dos modelos** (`#/carro/<id>`): resumo, o que mudou entre anos-modelo, destaques, pontos de atenção,
+  versões e preços, ficha técnica lado a lado com o seu carro, foto (Wikimedia Commons) e análise comparativa
+  calculada com as suas premissas. Cada ficha lista as fontes, a data da pesquisa e o que não pôde ser confirmado.
+  As fichas ficam em `src/data/models/*.json`.
+- **Financiamento por montadora/modelo**: regras com taxa, prazo e entrada (ex.: taxa zero), aplicadas a 0 km,
+  seminovos ou ambos. No modo automático, financia quando a taxa é menor que o rendimento do dinheiro.
+- **Transparência**: cada ficha mostra o que é dado com fonte e o que é estimativa (seguro, manutenção, depreciação).
 - Tudo fica salvo no `localStorage` do navegador. Não há backend.
 
 ## Metodologia

@@ -1,0 +1,75 @@
+{
+  "id": "hyundai-creta",
+  "researchedAt": "2026-10",
+  "displayName": "Hyundai Creta",
+  "summary": "SUV compacto da Hyundai produzido em Piracicaba (SP), líder de vendas no varejo brasileiro de 2023 a 2025. Linha 2027 tem seis versões: Action, Comfort, Limited e Platinum com 1.0 TGDi turbo flex (115 cv, 17,5 kgfm, câmbio automático de 6 marchas) e Ultimate e N Line com 1.6 TGDi turbo, que na linha 2027 virou flex.",
+  "generation": "2ª geração no Brasil desde o ano-modelo 2022 (dado do catálogo, sem fonte nesta pesquisa). Reestilização com visual angular, telas de 10,25\" e motor 1.6 turbo prometida pela imprensa para out/2024–2025. Linha 2027 apresentada em 2026.",
+  "timeline": [
+    { "modelYear": "2022", "change": "2ª geração com visual polêmico; 1.0 turbo de 120 cv e 2.0 aspirado flex (166 cv) na Ultimate (sem fonte nesta pesquisa)." },
+    { "modelYear": "2025/2026", "change": "Reestilização com visual mais angular, faróis retos, DRL ligado pela grade, lanterna horizontal em barra e duas telas de 10,25\" (multimídia e painel). O 1.6 TGDi turbo (177 cv, 27 kgfm, do Tucson) substitui o 2.0 aspirado nas versões de topo. Linha 2026: Comfort R$ 151.290, Limited R$ 167.290, Platinum R$ 182.890, N Line R$ 193.190, Ultimate 1.6 R$ 199.590. A Comfort Safety caiu de R$ 154.990 para R$ 139.990 em promoção." },
+    { "modelYear": "2027", "change": "O 1.0 turbo cai de 120 para 115 cv (torque mantido em 17,5 kgfm) para pagar a alíquota básica de IPI do programa Mover. O 1.6 turbo passa a ser flex e a N Line vira topo de linha. A versão Action volta como entrada. Preços: Action R$ 119.990, Comfort R$ 156.590, Limited R$ 173.390, Platinum R$ 188.990, Ultimate R$ 201.590, N Line R$ 206.990." }
+  ],
+  "highlights": [
+    "Porta-malas de 422 L, o maior do trio (dado do catálogo; não reconfirmado)",
+    "INMETRO do 1.0 turbo 2027: 12,0/12,7 km/l (G) e 8,4/9,0 km/l (E), o melhor consumo urbano do trio",
+    "Líder de vendas no varejo de 2023 a 2025, com boa liquidez de revenda",
+    "Opção de 1.6 turbo (agora flex) nas versões de topo"
+  ],
+  "watchOuts": [
+    "O 1.0 turbo perdeu 5 cv na linha 2027 (115 cv contra 120 cv dos seminovos 2022–2026)",
+    "Seminovos 2022–2024 (pré-reestilização) têm o design dianteiro polêmico e telas menores. A Ultimate pré-facelift usa 2.0 aspirado, não turbo",
+    "Preço de tabela subiu na linha 2027 (Comfort de R$ 151.290 para R$ 156.590), mas há promoções fortes, como Comfort Safety a R$ 139.990",
+    "Latin NCAP do Creta brasileiro e recalls não foram verificados nesta pesquisa"
+  ],
+  "specs": {
+    "version": "Comfort 1.0 TGDi AT (2027)",
+    "engine": "1.0 turbo flex 3 cil., injeção direta",
+    "powerCv": "115 (E/G)",
+    "torqueKgfm": "17,5",
+    "transmission": "automático de 6 marchas",
+    "trunkL": 422,
+    "lengthMm": null,
+    "wheelbaseMm": null,
+    "safety": null,
+    "warranty": null
+  },
+  "inmetro": { "version": "Creta 1.0 TGDi (linha 2027)", "cityGas": 12.0, "roadGas": 12.7, "cityEth": 8.4, "roadEth": 9.0, "cityKmKWh": null, "roadKmKWh": null, "year": "PBEV 2026", "source": "https://oantagonista.com.br/ladooa/carros/creta-2027-o-que-muda-no-bolso-entre-o-1-0-turbo-mais-eficiente-e-o-1-6-turbo-mais-forte/" },
+  "price0km": { "version": "Comfort 1.0 TGDi AT (2027)", "price": 156590, "date": "2026", "source": "https://www.cnnbrasil.com.br/auto/hyundai-creta-2027-vira-flex-e-perde-potencia-mas-passa-de-r-200-mil/" },
+  "versionsAndPrices": [
+    { "version": "Action 1.0 TGDi (2027)", "price": 119990, "date": "2026", "source": "https://www.cnnbrasil.com.br/auto/hyundai-creta-2027-vira-flex-e-perde-potencia-mas-passa-de-r-200-mil/" },
+    { "version": "Comfort 1.0 TGDi (2027)", "price": 156590, "date": "2026", "source": "https://www.cnnbrasil.com.br/auto/hyundai-creta-2027-vira-flex-e-perde-potencia-mas-passa-de-r-200-mil/" },
+    { "version": "Limited 1.0 TGDi (2027)", "price": 173390, "date": "2026", "source": "https://www.cnnbrasil.com.br/auto/hyundai-creta-2027-vira-flex-e-perde-potencia-mas-passa-de-r-200-mil/" },
+    { "version": "Platinum 1.0 TGDi (2027)", "price": 188990, "date": "2026", "source": "https://www.cnnbrasil.com.br/auto/hyundai-creta-2027-vira-flex-e-perde-potencia-mas-passa-de-r-200-mil/" },
+    { "version": "Ultimate 1.6 TGDi flex (2027)", "price": 201590, "date": "2026", "source": "https://www.cnnbrasil.com.br/auto/hyundai-creta-2027-vira-flex-e-perde-potencia-mas-passa-de-r-200-mil/" },
+    { "version": "N Line 1.6 TGDi flex (2027)", "price": 206990, "date": "2026", "source": "https://www.cnnbrasil.com.br/auto/hyundai-creta-2027-vira-flex-e-perde-potencia-mas-passa-de-r-200-mil/" },
+    { "version": "Comfort 1.0 TGDi (2026)", "price": 151290, "date": "2025", "source": "https://garagem360.com.br/?p=287496" },
+    { "version": "Comfort Safety 1.0 TGDi (2026, promoção)", "price": 139990, "date": "2026", "source": "https://garagem360.com.br/?p=303455" }
+  ],
+  "launchModelYearBR": 2017,
+  "catalogCheck": "A versão 'Comfort 1.0T' ainda existe (Comfort 1.0 TGDi). Preço: o catálogo traz R$ 149.990, mas a Comfort 2027 custa R$ 156.590 e a Comfort 2026 custava R$ 151.290. A Comfort Safety 2026 está em promoção a R$ 139.990. INMETRO: os valores do catálogo (11,4/13,4 G e 8,0/9,3 E) não batem com a linha 2027, que tem 12,0/12,7 (G) e 8,4/9,0 (E) segundo O Antagonista. Os valores das linhas 2025/2026 não foram confirmados. Porta-malas de 422 L e 2ª geração desde 2022 não foram reconfirmados. Potência atual do 1.0: 115 cv (era 120 cv até a linha 2026).",
+  "wikipedia": { "lang": "en", "title": "Hyundai Creta" },
+  "officialUrl": "https://www.hyundai.com.br/veiculos/novo-hyundai-creta.html",
+  "sources": [
+    { "label": "CNN Brasil – Creta 2027 vira flex e perde potência", "url": "https://www.cnnbrasil.com.br/auto/hyundai-creta-2027-vira-flex-e-perde-potencia-mas-passa-de-r-200-mil/" },
+    { "label": "A Tarde – Creta 2027 grande mudança no motor", "url": "https://atarde.com.br/autos/hyundai-creta-2027-recebe-grande-mudanca-no-motor-e-mais-veja-precos-1402395" },
+    { "label": "O Antagonista – Creta 2027 1.0 x 1.6 consumo", "url": "https://oantagonista.com.br/ladooa/carros/creta-2027-o-que-muda-no-bolso-entre-o-1-0-turbo-mais-eficiente-e-o-1-6-turbo-mais-forte/" },
+    { "label": "Itatiaia – Creta Action volta na linha 2027", "url": "https://www.itatiaia.com.br/auto/hyundai-creta-action-volta-na-linha-2027-menos-potente-abaixo-de-r-120-mil/" },
+    { "label": "Garagem360 – Creta 2026 preços e versões", "url": "https://garagem360.com.br/?p=287496" },
+    { "label": "Garagem360 – Creta 2026 corte de R$ 15 mil", "url": "https://garagem360.com.br/?p=303455" },
+    { "label": "Mecânica Online – Creta 2025 brasileiro terá visual do indiano (set/2024)", "url": "https://mecanicaonline.com.br/2024/09/hyundai-creta-2025-brasileiro-tera-o-mesmo-visual-do-vendido-na-india/" },
+    { "label": "Autoo – 10 fatos sobre o novo Creta (2025)", "url": "https://www.autoo.com.br/chega-em-2025-10-fatos-surpreendentes-sobre-o-novo-hyundai-creta/" },
+    { "label": "Hyundai Brasil – Novo Creta (site oficial)", "url": "https://www.hyundai.com.br/veiculos/novo-hyundai-creta.html" }
+  ],
+  "unverified": [
+    "generation: 2ª geração desde 2022 e data exata da reestilização (out/2024 como 2025 ou 2025 como 2026) não foram confirmadas",
+    "launchModelYearBR 2017 (1ª geração) sem fonte nesta pesquisa",
+    "timeline 2022: specs da época (1.0 de 120 cv, 2.0 aspirado) sem fonte direta",
+    "specs.trunkL 422 L (valor do catálogo, não reconfirmado)",
+    "specs.lengthMm e specs.wheelbaseMm",
+    "specs.safety (Latin NCAP do Creta brasileiro)",
+    "specs.warranty",
+    "Consumo INMETRO das linhas 2025/2026 do 1.0 turbo",
+    "Data exata da tabela de preços 2027 (mês de 2026)",
+    "Recalls e defeitos crônicos"
+  ]
+}
