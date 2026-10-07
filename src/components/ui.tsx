@@ -66,7 +66,7 @@ const inputCls =
 export function Label({ label, hint, children }: { label: string; hint?: string; children: ReactNode }) {
   return (
     <label className="block min-w-0">
-      <span className="mb-1 block text-xs font-medium text-ink-2">{label}</span>
+      {label && <span className="mb-1 block text-xs font-medium text-ink-2">{label}</span>}
       {children}
       {hint && <span className="mt-1 block text-xs text-muted">{hint}</span>}
     </label>
@@ -113,7 +113,8 @@ export function NumberField({
         <input
           type="number"
           inputMode="decimal"
-          className={`${inputCls} ${prefix ? 'pl-8' : ''} ${suffix ? 'pr-12' : ''}`}
+          className={`${inputCls} ${suffix ? 'pr-12' : ''}`}
+          style={prefix ? { paddingLeft: `${0.9 + prefix.length * 0.42}rem` } : undefined}
           value={text}
           step={step}
           min={min}

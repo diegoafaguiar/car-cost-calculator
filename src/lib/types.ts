@@ -147,7 +147,10 @@ export interface Assumptions {
   investReturnYear: number
   inflationYear: number
   ipvaRate: number
+  /** Híbrido convencional (HEV). */
   ipvaRateHybrid: number
+  /** Híbrido plug-in (PHEV). */
+  ipvaRatePHEV: number
   ipvaRateEV: number
   licensingFee: number
   financeRateMonth: number
@@ -180,6 +183,7 @@ export interface Preferences {
   maxPrice: number
   maxMonthly: number
   minSeats: number
+  minPrice: number
   search: string
   /** Marcas a mostrar; vazio = todas. */
   brands: string[]
@@ -189,6 +193,22 @@ export interface Preferences {
    */
   powertrainValue: Partial<Record<Powertrain, number>>
   rankBy: 'real' | 'ajustado'
+}
+
+/** Carro adicionado pelo usuário a partir da FIPE (fora do catálogo). */
+export interface CustomCar {
+  id: string
+  brand: string
+  model: string
+  version: string
+  modelYear: number
+  category: Category
+  powertrain: Powertrain
+  seats: number
+  consumption: Consumption
+  price: number
+  priceSource: 'fipe' | 'manual'
+  fipeReference?: string
 }
 
 export type PriceSource = 'fipe' | 'pesquisa' | 'estimado' | 'manual'
@@ -216,6 +236,8 @@ export interface Scenario {
   /** Depreciação anual fixa (sobrepõe a curva padrão, usado no carro atual). */
   fixedDepreciation?: number
   plan?: SubscriptionPlan
+  /** Adicionado pelo usuário (sem ficha pesquisada). */
+  custom?: boolean
 }
 
 export type CostKey =

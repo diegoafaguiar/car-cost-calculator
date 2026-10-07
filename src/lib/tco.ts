@@ -1,4 +1,11 @@
-import { CATALOG, CATEGORY_LABEL, POWERTRAIN_LABEL, SUBSCRIPTION_REPRESENTATIVE } from './catalog'
+import {
+  CATALOG,
+  CATEGORY_LABEL,
+  INSURANCE_BY_CATEGORY,
+  MAINTENANCE_BY_CATEGORY,
+  POWERTRAIN_LABEL,
+  SUBSCRIPTION_REPRESENTATIVE,
+} from './catalog'
 import type {
   Assumptions,
   Breakdown,
@@ -6,6 +13,7 @@ import type {
   Consumption,
   CostKey,
   CurrentCar,
+  CustomCar,
   FinanceRule,
   Horizon,
   HorizonResult,
@@ -140,7 +148,8 @@ export function pmt(principal: number, rate: number, n: number): number {
 
 function ipvaRateFor(p: Powertrain, a: Assumptions) {
   if (p === 'eletrico') return a.ipvaRateEV
-  if (p === 'hibrido' || p === 'hibrido-plugin') return a.ipvaRateHybrid
+  if (p === 'hibrido-plugin') return a.ipvaRatePHEV ?? a.ipvaRateHybrid
+  if (p === 'hibrido') return a.ipvaRateHybrid
   return a.ipvaRate
 }
 
@@ -416,6 +425,7 @@ export function buildScenarios(opts: {
   prices: Record<string, PriceEntry>
   year: number
   catalog?: CatalogModel[]
+  customCars?: CustomCar[]
 }): Scenario[] {
   const { car, assumptions: a, usedAges, prices, year } = opts
   const catalog = opts.catalog ?? CATALOG
@@ -469,6 +479,29 @@ export function buildScenarios(opts: {
         depreciationFactor: m.depreciationFactor,
       })
     }
+  }
+
+  for (const c of opts.customCars ?? []) {
+    const ageOpt = Math.max(0, year - c.modelYear)
+    list.push({
+      id: `custom:${c.id}`,
+      kind: ageOpt === 0 ? 'new' : 'used',
+      label: `${c.brand} ${c.model}`,
+      detail: `${c.version} · ${ageOpt === 0 ? '0 km' : `${c.modelYear} (seminovo)`} · adicionado por você`,
+      brand: c.brand,
+      category: c.category,
+      powertrain: c.powertrain,
+      seats: c.seats,
+      consumption: c.consumption,
+      price: c.price,
+      priceSource: c.priceSource,
+      fipeReference: c.fipeReference,
+      ageAtStart: ageOpt,
+      insuranceRate: INSURANCE_BY_CATEGORY[c.category] * a.insuranceFactor,
+      maintenanceBase: MAINTENANCE_BY_CATEGORY[c.category],
+      depreciationFactor: 1,
+      custom: true,
+    })
   }
 
   for (const plan of a.subscriptionPlans) {

@@ -9,7 +9,7 @@ import type { CatalogModel, Category, Powertrain, SubscriptionPlan } from './typ
 type Seed = Omit<CatalogModel, 'insuranceRate' | 'maintenanceBase' | 'depreciationFactor'> &
   Partial<Pick<CatalogModel, 'insuranceRate' | 'maintenanceBase' | 'depreciationFactor'>>
 
-const INSURANCE_BY_CATEGORY: Record<Category, number> = {
+export const INSURANCE_BY_CATEGORY: Record<Category, number> = {
   'hatch-compacto': 0.045,
   hatch: 0.042,
   sedan: 0.04,
@@ -19,7 +19,7 @@ const INSURANCE_BY_CATEGORY: Record<Category, number> = {
   picape: 0.045,
 }
 
-const MAINTENANCE_BY_CATEGORY: Record<Category, number> = {
+export const MAINTENANCE_BY_CATEGORY: Record<Category, number> = {
   'hatch-compacto': 1400,
   hatch: 1700,
   sedan: 2100,
@@ -190,13 +190,23 @@ export const CATEGORY_ORDER: Category[] = [
   'picape',
 ]
 
-/** Categorias comparáveis ("uma acima ou uma abaixo") a partir da categoria do seu carro. */
-export const CATEGORY_NEIGHBORS: Record<Category, Category[]> = {
-  'hatch-compacto': ['hatch-compacto', 'hatch'],
-  hatch: ['hatch-compacto', 'hatch', 'sedan', 'suv-compacto'],
-  sedan: ['hatch', 'sedan', 'suv-compacto', 'suv-medio'],
-  'suv-compacto': ['sedan', 'suv-compacto', 'suv-medio'],
-  'suv-medio': ['suv-compacto', 'suv-medio', 'suv-grande'],
-  'suv-grande': ['suv-medio', 'suv-grande'],
-  picape: ['picape'],
+/** Categoria imediatamente abaixo e acima da sua, em porte e preço. */
+export const CATEGORY_BELOW: Record<Category, Category[]> = {
+  'hatch-compacto': [],
+  hatch: ['hatch-compacto'],
+  sedan: ['hatch'],
+  'suv-compacto': ['hatch', 'sedan'],
+  'suv-medio': ['suv-compacto'],
+  'suv-grande': ['suv-medio'],
+  picape: [],
+}
+
+export const CATEGORY_ABOVE: Record<Category, Category[]> = {
+  'hatch-compacto': ['hatch'],
+  hatch: ['sedan', 'suv-compacto'],
+  sedan: ['suv-medio'],
+  'suv-compacto': ['suv-medio'],
+  'suv-medio': ['suv-grande'],
+  'suv-grande': [],
+  picape: [],
 }

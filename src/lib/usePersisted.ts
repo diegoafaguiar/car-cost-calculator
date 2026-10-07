@@ -1,13 +1,14 @@
 import { useEffect, useState } from 'react'
 
 /** Estado salvo no localStorage do navegador (mescla com o padrão para campos novos). */
-export function usePersisted<T>(key: string, initial: T) {
+export function usePersisted<T>(key: string, initial: T, migrate?: (stored: Record<string, unknown>) => Record<string, unknown>) {
   const [value, setValue] = useState<T>(() => {
     try {
       const raw = localStorage.getItem(key)
       if (!raw) return initial
-      const parsed = JSON.parse(raw) as T
+      let parsed = JSON.parse(raw) as T
       if (initial && typeof initial === 'object' && !Array.isArray(initial)) {
+        if (migrate) parsed = migrate(parsed as Record<string, unknown>) as T
         return { ...initial, ...parsed }
       }
       return parsed

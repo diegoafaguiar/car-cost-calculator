@@ -1,6 +1,7 @@
 import { useEffect, useMemo, useRef, useState } from 'react'
 import { BreakdownBars } from './components/BreakdownBars'
 import { CarHero } from './components/CarHero'
+import { CustomCarDialog } from './components/CustomCarDialog'
 import { CostChart, type Series } from './components/CostChart'
 import { DetailDrawer } from './components/DetailDrawer'
 import { FilterBar } from './components/FilterBar'
@@ -14,7 +15,7 @@ import { DEFAULT_ASSUMPTIONS, DEFAULT_CAR, DEFAULT_PREFERENCES } from './lib/def
 import { FipeError, resolveCatalogPrice, setFipeToken, type FipeOverride } from './lib/fipe'
 import { money, normalize } from './lib/format'
 import { buildScenarios, currentCarValue, priceKey, runAll, type PriceEntry } from './lib/tco'
-import type { Horizon, ScenarioResult } from './lib/types'
+import type { CustomCar, Horizon, ScenarioResult } from './lib/types'
 import { usePersisted } from './lib/usePersisted'
 
 const YEAR = new Date().getFullYear()
@@ -73,12 +74,19 @@ export default function App() {
   const route = useHashRoute()
   const modelRoute = route.match(/^#\/carro\/([\w-]+)/)?.[1]
   const [car, setCar] = usePersisted('ccc:car', DEFAULT_CAR)
-  const [assumptions, setAssumptions] = usePersisted('ccc:assumptions', DEFAULT_ASSUMPTIONS)
+  const [assumptions, setAssumptions] = usePersisted('ccc:assumptions', DEFAULT_ASSUMPTIONS, (s) =>
+    // Versões anteriores tinham uma única alíquota para híbridos (1,5%): separa HEV e plug-in.
+    s.ipvaRatePHEV === undefined
+      ? { ...s, ipvaRatePHEV: s.ipvaRateHybrid ?? DEFAULT_ASSUMPTIONS.ipvaRatePHEV, ipvaRateHybrid: s.ipvaRateHybrid === 0.015 ? 0.04 : s.ipvaRateHybrid }
+      : s,
+  )
   const [prefs, setPrefs] = usePersisted('ccc:prefs', DEFAULT_PREFERENCES)
   const [prices, setPrices] = usePersisted<Record<string, PriceEntry>>('ccc:prices', {})
   const [overrides, setOverrides] = usePersisted<Record<string, FipeOverride>>('ccc:overrides', {})
   const [token, setToken] = usePersisted('ccc:fipeToken', '')
   const [compare, setCompare] = usePersisted<string[]>('ccc:compare', [])
+  const [customCars, setCustomCars] = usePersisted<CustomCar[]>('ccc:customCars', [])
+  const [adding, setAdding] = useState<string | null>(null)
   const [onlySavings, setOnlySavings] = useState(false)
   const [sort, setSort] = useState<{ key: SortKey; dir: 1 | -1 }>({ key: 'rank', dir: 1 })
   const [openId, setOpenId] = useState<string | null>(null)
@@ -89,9 +97,9 @@ export default function App() {
   useEffect(() => setFipeToken(token), [token])
 
   const results = useMemo(() => {
-    const scenarios = buildScenarios({ car, assumptions, usedAges: prefs.usedAges, prices, year: YEAR })
+    const scenarios = buildScenarios({ car, assumptions, usedAges: prefs.usedAges, prices, year: YEAR, customCars })
     return runAll(scenarios, { assumptions, car, startMonth: START_MONTH, year: YEAR }, prefs.powertrainValue)
-  }, [car, assumptions, prefs.usedAges, prefs.powertrainValue, prices])
+  }, [car, assumptions, prefs.usedAges, prefs.powertrainValue, prices, customCars])
 
   const keep = results.find((r) => r.scenario.kind === 'keep')
   const horizon = prefs.rankHorizon
@@ -106,6 +114,7 @@ export default function App() {
       if (!prefs.powertrains.includes(s.powertrain)) return false
       if (prefs.brands?.length && s.kind !== 'subscription' && !prefs.brands.includes(s.brand ?? '')) return false
       if (prefs.maxPrice > 0 && s.price > prefs.maxPrice) return false
+      if (prefs.minPrice > 0 && s.kind !== 'subscription' && s.price < prefs.minPrice) return false
       if (prefs.maxMonthly > 0 && r.horizons[horizon].monthly > prefs.maxMonthly) return false
       if (prefs.minSeats > 0 && (s.seats ?? 5) < prefs.minSeats) return false
       if (onlySavings && r.horizons[horizon].savingsVsKeep <= 0) return false
@@ -285,6 +294,7 @@ export default function App() {
               onlySavings={onlySavings}
               onOnlySavings={setOnlySavings}
               resultCount={ranked.length}
+              onAddCustom={(q) => setAdding(q)}
             />
 
             <TopModels ranked={ranked} horizon={horizon} />
@@ -312,6 +322,7 @@ export default function App() {
                   <span className="text-xs text-muted">
                     {fetching ? `Consultando FIPE ${fetchState.done}/${fetchState.total}…` : `${fipeCount} preços FIPE ao vivo`}
                   </span>
+                  <Button onClick={() => setAdding('')}>+ Adicionar carro</Button>
                   <Button variant="primary" onClick={refreshPrices} disabled={fetching}>
                     Atualizar preços FIPE
                   </Button>
@@ -346,6 +357,16 @@ export default function App() {
           recomendação financeira.
         </footer>
       </div>
+
+      {adding !== null && (
+        <CustomCarDialog
+          year={YEAR}
+          cars={customCars}
+          onChange={setCustomCars}
+          onClose={() => setAdding(null)}
+          initialSearch={adding}
+        />
+      )}
 
       {settings && (
         <SettingsDrawer

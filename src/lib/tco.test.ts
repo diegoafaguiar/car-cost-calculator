@@ -91,6 +91,28 @@ describe('simulate', () => {
     )
   })
 
+  it('separa IPVA de híbrido convencional e plug-in', () => {
+    const ra = { ...a, ipvaRateHybrid: 0.04, ipvaRatePHEV: 0.015 }
+    const list = buildScenarios({ car, assumptions: ra, usedAges: [], prices: {}, year: 2026 })
+    const jan = { ...ctx, assumptions: ra, startMonth: 0 }
+    const hev = list.find((s) => s.id === 'new:toyota-corolla-hybrid:0')!
+    const phev = list.find((s) => s.id === 'new:byd-king:0')!
+    expect(simulate(hev, jan).horizons[1].breakdown.taxes).toBeCloseTo(hev.price * 0.04 + ra.licensingFee)
+    expect(simulate(phev, jan).horizons[1].breakdown.taxes).toBeCloseTo(phev.price * 0.015 + ra.licensingFee)
+  })
+
+  it('inclui carros adicionados pelo usuário', () => {
+    const custom = {
+      id: 'x', brand: 'Kia', model: 'Niro', version: 'HEV', modelYear: 2024, category: 'suv-compacto' as const,
+      powertrain: 'hibrido' as const, seats: 5, consumption: { cityKmL: 17, roadKmL: 15 }, price: 150000, priceSource: 'manual' as const,
+    }
+    const list = buildScenarios({ car, assumptions: a, usedAges: [], prices: {}, year: 2026, customCars: [custom] })
+    const s = list.find((x) => x.id === 'custom:x')!
+    expect(s.kind).toBe('used')
+    expect(s.ageAtStart).toBe(2)
+    expect(s.custom).toBe(true)
+  })
+
   it('aplica desconto por quilometragem alta no carro atual', () => {
     const high = { ...car, odometerKm: 6 * 12000 + 30000 }
     expect(mileagePenalty(high, a, 2026)).toBeCloseTo(0.03)

@@ -22,6 +22,9 @@ comparando o custo total de propriedade (TCO) em **1, 3 e 5 anos** com preços d
 - **Financiamento por montadora/modelo**: regras com taxa, prazo e entrada (ex.: taxa zero), aplicadas a 0 km,
   seminovos ou ambos. No modo automático, financia quando a taxa é menor que o rendimento do dinheiro.
 - **Transparência**: cada ficha mostra o que é dado com fonte e o que é estimativa (seguro, manutenção, depreciação).
+- **Filtros**: busca de carro com sugestões (abre a ficha), faixa de preço de/até, categoria do seu carro com
+  "uma abaixo" e "uma acima" independentes, motorização, tipo, marca e preferência por motorização.
+- **Carros fora do catálogo**: adicione qualquer carro pela FIPE informando categoria, motorização e consumo INMETRO.
 - Tudo fica salvo no `localStorage` do navegador. Não há backend.
 
 ## Metodologia

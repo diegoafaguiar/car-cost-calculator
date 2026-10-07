@@ -40,9 +40,11 @@ export const DEFAULT_ASSUMPTIONS: Assumptions = {
   // Faixa informada pelo usuário: 8–10% a.a. líquido.
   investReturnYear: 0.09,
   inflationYear: 0.045,
-  // Alíquotas do RJ em 2026.
+  // RJ 2026. O usuário pagou 4% no Corolla Cross Hybrid (HEV); a redução para 1,5% valeu só para o plug-in.
+  // Há fonte dizendo 1,5% para qualquer híbrido no RJ — confira o seu carnê.
   ipvaRate: 0.04,
-  ipvaRateHybrid: 0.015,
+  ipvaRateHybrid: 0.04,
+  ipvaRatePHEV: 0.015,
   ipvaRateEV: 0.005,
   licensingFee: 210,
   // Taxa "boa" de mercado (CET); promoções de montadora podem ser menores.
@@ -71,6 +73,7 @@ export const DEFAULT_PREFERENCES: Preferences = {
   maxPrice: 0,
   maxMonthly: 0,
   minSeats: 0,
+  minPrice: 0,
   // "Pequena inclinação" a híbridos: R$ 100/mês é um ponto de partida, ajuste ao seu gosto.
   powertrainValue: { hibrido: 100, 'hibrido-plugin': 100 },
   rankBy: 'ajustado',

@@ -59,7 +59,8 @@ export function AssumptionsForm({ a, onChange, prefs, onPrefs, token, onToken }:
           <NumberField label="Rendimento líquido" suffix="% a.a." scale={100} step={0.1} value={a.investReturnYear} onChange={(v) => set('investReturnYear', v)} hint="Custo de oportunidade" />
           <NumberField label="Inflação" suffix="% a.a." scale={100} step={0.1} value={a.inflationYear} onChange={(v) => set('inflationYear', v)} />
           <NumberField label="IPVA combustão" suffix="%" scale={100} step={0.1} value={a.ipvaRate} onChange={(v) => set('ipvaRate', v)} />
-          <NumberField label="IPVA híbridos" suffix="%" scale={100} step={0.1} value={a.ipvaRateHybrid} onChange={(v) => set('ipvaRateHybrid', v)} />
+          <NumberField label="IPVA híbrido (HEV)" suffix="%" scale={100} step={0.1} value={a.ipvaRateHybrid} onChange={(v) => set('ipvaRateHybrid', v)} hint="Ex.: Corolla Cross Hybrid" />
+          <NumberField label="IPVA híbrido plug-in" suffix="%" scale={100} step={0.1} value={a.ipvaRatePHEV} onChange={(v) => set('ipvaRatePHEV', v)} hint="Ex.: Song Pro, King" />
           <NumberField label="IPVA elétricos" suffix="%" scale={100} step={0.1} value={a.ipvaRateEV} onChange={(v) => set('ipvaRateEV', v)} hint="Isento em alguns estados" />
           <NumberField label="Licenciamento" prefix="R$" value={a.licensingFee} onChange={(v) => set('licensingFee', v)} />
           <NumberField label="Fator do seguro" suffix="×" step={0.05} value={a.insuranceFactor} onChange={(v) => set('insuranceFactor', v)} hint="Região/perfil vs. média nacional" />
