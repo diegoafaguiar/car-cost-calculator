@@ -159,6 +159,34 @@ export function currentCarValue(car: CurrentCar): number {
   return car.manualValue && car.manualValue > 0 ? car.manualValue : (car.fipeValue ?? 0)
 }
 
+export interface TradeIn {
+  /** Valor de mercado (FIPE ou informado). */
+  market: number
+  /** Ajuste por quilometragem em R$ (positivo = desconto). */
+  kmAdjust: number
+  /** Deságio de venda em R$. */
+  saleDiscount: number
+  /** Estimativa automática: mercado − km − deságio. */
+  auto: number
+  /** Valor usado no cálculo (proposta informada ou estimativa). */
+  value: number
+  manual: boolean
+}
+
+/**
+ * Quanto você recebe hoje pelo carro atual. Sem proposta informada, estima a partir do valor de mercado.
+ * O valor de mercado continua sendo a base da revenda futura de quem mantém o carro: a diferença entre
+ * os dois é o custo de vender ou trocar agora.
+ */
+export function tradeInFor(car: CurrentCar, a: Assumptions, year: number): TradeIn {
+  const market = currentCarValue(car)
+  const kmAdjust = market * mileagePenalty(car, a, year)
+  const saleDiscount = (market - kmAdjust) * a.saleDiscountPct
+  const auto = market - kmAdjust - saleDiscount
+  const manual = !!car.tradeInValue && car.tradeInValue > 0
+  return { market, kmAdjust, saleDiscount, auto, value: manual ? car.tradeInValue! : auto, manual }
+}
+
 /** Desconto (ou ágio, se negativo) no carro atual por rodar acima (abaixo) da média de 12 mil km/ano. */
 export function mileagePenalty(car: CurrentCar, a: Assumptions, year: number): number {
   if (!car.odometerKm) return 0
@@ -221,15 +249,15 @@ export function simulate(s: Scenario, ctx: SimContext): Omit<ScenarioResult, 'br
   const rmCost = a.includeOpportunity === false ? 0 : rm
   const sale = 1 - a.saleDiscountPct
   const kmMonth = a.kmPerYear / 12
-  const curValue = currentCarValue(car)
   const kmFactor = 1 - mileagePenalty(car, a, ctx.year)
-  const curSale = curValue * kmFactor * sale
+  const curSale = tradeInFor(car, a, ctx.year).value
 
   const w0 = curSale - car.loanBalance
   let cash = 0
   let loan: Loan = { balance: 0, payment: 0, remaining: 0 }
   let costBasis = 0
   let upfrontCash = 0
+  let changeBack = 0
   let financed = 0
   const terms = financeTermsFor(s, a)
 
@@ -255,6 +283,7 @@ export function simulate(s: Scenario, ctx: SimContext): Omit<ScenarioResult, 'br
       financed = paid - down
       cash -= down
       upfrontCash = Math.max(0, -cash)
+      changeBack = Math.max(0, cash)
       loan = {
         balance: financed,
         payment: pmt(financed, terms.rateMonth, terms.months),
@@ -380,10 +409,32 @@ export function simulate(s: Scenario, ctx: SimContext): Omit<ScenarioResult, 'br
     cumulative,
     horizons,
     upfrontCash,
+    changeBack,
     financed,
     installment: loan.rate !== undefined ? pmt(financed, terms.rateMonth, terms.months) : 0,
     finance: terms,
   }
+}
+
+/**
+ * Valor de troca do seu carro a partir do qual `option` empata com manter no horizonte `h`
+ * (null se não empata entre 0 e 2× o valor de mercado). Avaliação maior favorece a troca.
+ */
+export function breakEvenTradeIn(option: Scenario, keep: Scenario, ctx: SimContext, h: Horizon): number | null {
+  const gap = (v: number) => {
+    const c = { ...ctx, car: { ...ctx.car, tradeInValue: Math.max(1, v) } }
+    return simulate(option, c).horizons[h].total - simulate(keep, c).horizons[h].total
+  }
+  let lo = 1
+  let hi = Math.max(10000, currentCarValue(ctx.car) * 2)
+  if (gap(lo) <= 0) return 0
+  if (gap(hi) > 0) return null
+  for (let i = 0; i < 40 && hi - lo > 50; i++) {
+    const mid = (lo + hi) / 2
+    if (gap(mid) > 0) lo = mid
+    else hi = mid
+  }
+  return hi
 }
 
 /** Primeiro mês a partir do qual a opção fica (e permanece) mais barata que manter. */
@@ -507,6 +558,7 @@ export function buildScenarios(opts: {
     detail: `Manter · ${car.modelYear}`,
     category: car.category,
     powertrain: car.powertrain,
+    transmission: CATALOG.find((m) => m.id === car.catalogModelId)?.transmission,
     consumption: car.consumption,
     price: value,
     priceSource: car.manualValue ? 'manual' : car.fipeValue ? 'fipe' : 'manual',
@@ -533,6 +585,7 @@ export function buildScenarios(opts: {
         modelId: m.id,
         category: m.category,
         powertrain: m.powertrain,
+        transmission: m.transmission,
         seats: m.seats,
         consumption:
           m.consumptionHistory?.find((h) => year - ageOpt <= h.untilModelYear)?.consumption ?? m.consumption,
@@ -558,6 +611,7 @@ export function buildScenarios(opts: {
       brand: c.brand,
       category: c.category,
       powertrain: c.powertrain,
+      transmission: c.transmission,
       seats: c.seats,
       consumption: c.consumption,
       price: c.price,

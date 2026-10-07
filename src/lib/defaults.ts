@@ -85,6 +85,7 @@ export const DEFAULT_PREFERENCES: Preferences = {
   maxMonthly: 0,
   minSeats: 0,
   minPrice: 0,
+  transmissions: ['manual', 'automatico'],
   // Preferência do usuário: nada abaixo do ano-modelo 2022.
   minModelYear: 2022,
   maxModelYear: 0,

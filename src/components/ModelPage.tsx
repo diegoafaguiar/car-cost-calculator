@@ -180,7 +180,9 @@ export function ModelPage({ modelId, results, ranked, keep, horizon, onHorizon, 
                       {money(o.scenario.price)}
                       <span className="block text-xs text-muted">{{ fipe: 'FIPE', pesquisa: 'pesquisa', anuncios: 'anúncios', manual: 'manual', estimado: 'estimado' }[o.scenario.priceSource]}</span>
                     </td>
-                    <td className="px-3 py-2 text-right tabular">{o.upfrontCash > 0 ? money(o.upfrontCash) : '—'}</td>
+                    <td className="px-3 py-2 text-right tabular">
+                      {o.upfrontCash > 0 ? money(o.upfrontCash) : o.changeBack > 0 ? <span className="text-good">troco {money(o.changeBack)}</span> : '—'}
+                    </td>
                     <td className="px-3 py-2 text-right tabular whitespace-nowrap">
                       {o.installment > 0 ? `${money(o.installment)} × ${o.finance.months}` : '—'}
                     </td>

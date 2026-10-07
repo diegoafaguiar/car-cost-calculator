@@ -1,9 +1,11 @@
 import { describe, expect, it } from 'vitest'
 import { DEFAULT_ASSUMPTIONS, DEFAULT_CAR } from './defaults'
-import { matchesQuery } from './fipe'
+import { matchesQuery, transmissionFromFipeName } from './fipe'
+import { CATALOG } from './catalog'
 import { parseBrl } from './format'
 import {
   breakEven,
+  breakEvenTradeIn,
   buildScenarios,
   energyCostPerKm,
   groupByModel,
@@ -13,6 +15,7 @@ import {
   projectValue,
   runAll,
   simulate,
+  tradeInFor,
 } from './tco'
 import type { Assumptions, CurrentCar } from './types'
 
@@ -271,5 +274,63 @@ describe('anos-modelo', () => {
       }
     }
     expect(rows.some((r) => (r.others?.length ?? 0) > 0)).toBe(true)
+  })
+})
+
+describe('troca do carro atual', () => {
+  it('sem proposta, estima mercado − km − deságio; com proposta, usa o valor informado', () => {
+    const t = tradeInFor(car, a, 2026)
+    expect(t.manual).toBe(false)
+    expect(t.auto).toBeCloseTo(62000 * (1 - a.saleDiscountPct))
+    expect(t.value).toBe(t.auto)
+    const m = tradeInFor({ ...car, tradeInValue: 50000 }, a, 2026)
+    expect(m.manual).toBe(true)
+    expect(m.value).toBe(50000)
+    expect(m.auto).toBe(t.auto)
+  })
+
+  it('avaliação maior favorece a troca e não muda o custo de manter além do ponto de partida', () => {
+    const list = buildScenarios({ car, assumptions: a, usedAges: [2], prices: {}, year: 2026 })
+    const keepS = list.find((s) => s.kind === 'keep')!
+    const alt = list.find((s) => s.kind === 'used')!
+    const at = (v: number) => {
+      const c = { ...ctx, car: { ...car, tradeInValue: v } }
+      return simulate(alt, c).horizons[3].total - simulate(keepS, c).horizons[3].total
+    }
+    expect(at(60000)).toBeLessThan(at(50000))
+  })
+
+  it('troco: o que sobra do valor do carro fica com você e não entra como custo', () => {
+    const rich = { ...car, tradeInValue: 200000 }
+    const c = { ...ctx, car: rich, assumptions: { ...a, paymentMode: 'avista' as const } }
+    const list = buildScenarios({ car: rich, assumptions: c.assumptions, usedAges: [2], prices: {}, year: 2026 })
+    const cheap = list.filter((s) => s.kind === 'used').sort((x, y) => x.price - y.price)[0]
+    const r = simulate(cheap, c)
+    const paid = cheap.priceSource === 'anuncios' ? cheap.price : cheap.price * (1 + a.usedPremiumPct)
+    expect(r.upfrontCash).toBe(0)
+    expect(r.changeBack).toBeCloseTo(200000 - paid)
+  })
+
+  it('breakEvenTradeIn encontra a avaliação em que a troca empata com manter', () => {
+    const list = buildScenarios({ car, assumptions: a, usedAges: [2], prices: {}, year: 2026 })
+    const keepS = list.find((s) => s.kind === 'keep')!
+    const alt = list.find((s) => s.kind === 'used')!
+    const v = breakEvenTradeIn(alt, keepS, ctx, 3)
+    if (v !== null && v > 0) {
+      const cc = { ...ctx, car: { ...car, tradeInValue: v } }
+      const gap = simulate(alt, cc).horizons[3].total - simulate(keepS, cc).horizons[3].total
+      expect(Math.abs(gap)).toBeLessThan(200)
+    }
+  })
+})
+
+describe('câmbio', () => {
+  it('todo modelo do catálogo tem câmbio', () => {
+    expect(CATALOG.every((m) => m.transmission === 'manual' || m.transmission === 'automatico')).toBe(true)
+  })
+  it('lê o câmbio do nome FIPE', () => {
+    expect(transmissionFromFipeName('ONIX SEDAN Plus LTZ 1.0 12V TB Flex Aut.')).toBe('automatico')
+    expect(transmissionFromFipeName('ONIX HATCH LT 1.0 12V Flex 5p Mec.')).toBe('manual')
+    expect(transmissionFromFipeName('COROLLA CROSS XRX 1.8 16V HYBRID')).toBeNull()
   })
 })

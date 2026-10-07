@@ -1,8 +1,8 @@
 import { useEffect, useRef, useState } from 'react'
-import { CATEGORY_LABEL, CATEGORY_ORDER, POWERTRAIN_LABEL } from '../lib/catalog'
-import { yearOf, ZERO_KM_YEAR } from '../lib/fipe'
+import { CATEGORY_LABEL, CATEGORY_ORDER, POWERTRAIN_LABEL, TRANSMISSION_LABEL } from '../lib/catalog'
+import { transmissionFromFipeName, yearOf, ZERO_KM_YEAR } from '../lib/fipe'
 import { money } from '../lib/format'
-import type { Category, Consumption, CustomCar, Powertrain } from '../lib/types'
+import type { Category, Consumption, CustomCar, Powertrain, Transmission } from '../lib/types'
 import { FipePicker } from './FipePicker'
 import { Button, NumberField, SelectField, TextField } from './ui'
 
@@ -30,6 +30,7 @@ export function CustomCarDialog({ year, cars, onChange, onClose, initialSearch }
   const [fipeReference, setFipeReference] = useState<string | undefined>()
   const [category, setCategory] = useState<Category>('suv-medio')
   const [powertrain, setPowertrain] = useState<Powertrain>('flex')
+  const [transmission, setTransmission] = useState<Transmission>('automatico')
   const [seats, setSeats] = useState(5)
   const [cons, setCons] = useState<Consumption>(EMPTY_CONS)
 
@@ -64,6 +65,7 @@ export function CustomCarDialog({ year, cars, onChange, onClose, initialSearch }
         modelYear,
         category,
         powertrain,
+        transmission,
         seats,
         consumption,
         price,
@@ -100,6 +102,8 @@ export function CustomCarDialog({ year, cars, onChange, onClose, initialSearch }
               setBrand(sel.brandName.replace(/^.*- /, ''))
               setModel(sel.modelName.split(' ')[0])
               setVersion(sel.modelName)
+              const t = transmissionFromFipeName(sel.modelName)
+              if (t) setTransmission(t)
               setModelYear(y === ZERO_KM_YEAR ? year : y)
               if (p?.price) {
                 setPrice(p.price)
@@ -127,8 +131,8 @@ export function CustomCarDialog({ year, cars, onChange, onClose, initialSearch }
         </section>
 
         <section className="space-y-3 rounded-xl border border-line p-4">
-          <h3 className="text-sm font-semibold">2. Categoria e motorização</h3>
-          <div className="grid gap-3 sm:grid-cols-3">
+          <h3 className="text-sm font-semibold">2. Categoria, motorização e câmbio</h3>
+          <div className="grid gap-3 sm:grid-cols-4">
             <SelectField<Category>
               label="Categoria"
               value={category}
@@ -140,6 +144,12 @@ export function CustomCarDialog({ year, cars, onChange, onClose, initialSearch }
               value={powertrain}
               options={(Object.keys(POWERTRAIN_LABEL) as Powertrain[]).map((p) => ({ value: p, label: POWERTRAIN_LABEL[p] }))}
               onChange={setPowertrain}
+            />
+            <SelectField<Transmission>
+              label="Câmbio"
+              value={transmission}
+              options={(Object.keys(TRANSMISSION_LABEL) as Transmission[]).map((t) => ({ value: t, label: TRANSMISSION_LABEL[t] }))}
+              onChange={setTransmission}
             />
             <NumberField label="Lugares" value={seats} onChange={(v) => setSeats(Math.round(v))} />
           </div>

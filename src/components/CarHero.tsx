@@ -2,6 +2,7 @@ import { CATALOG, CATEGORY_LABEL, POWERTRAIN_LABEL } from '../lib/catalog'
 import { money, money2, months } from '../lib/format'
 import { marketFor } from '../lib/market'
 import { MODEL_INFO } from '../lib/modelInfo'
+import type { TradeIn } from '../lib/tco'
 import type { CurrentCar, Horizon, ScenarioResult } from '../lib/types'
 import { HORIZONS } from '../lib/types'
 import { CostTooltip } from './CostTooltip'
@@ -23,6 +24,8 @@ interface Props {
   compare: string[]
   onToggleCompare: (id: string) => void
   usingPreference: boolean
+  tradeIn: TradeIn
+  onEditTrade: () => void
 }
 
 const TERM: Record<Horizon, string> = { 1: 'Curto prazo', 3: 'Médio prazo', 5: 'Longo prazo' }
@@ -137,8 +140,10 @@ export function CarHero(p: Props) {
             </Kpi>
             <Kpi label={`Total em ${yrs(horizon)}`}>{money(h.total)}</Kpi>
             <Kpi label="Por km">{money2(h.perKm)}</Kpi>
-            <Kpi label="Valor de mercado" sub={s.priceSource === 'fipe' ? `FIPE ${s.fipeReference ?? ''}` : 'informado'}>
-              {money(s.price)}
+            <Kpi label="Valor na troca" sub={p.tradeIn.manual ? 'proposta informada' : `estimado · mercado ${money(s.price)}`}>
+              <button type="button" onClick={p.onEditTrade} className="underline decoration-dotted underline-offset-4 hover:text-accent" title="Ajustar a avaliação do seu carro">
+                {money(p.tradeIn.value)}
+              </button>
             </Kpi>
           </dl>
           {market?.summary && market.summary.count > 0 && (

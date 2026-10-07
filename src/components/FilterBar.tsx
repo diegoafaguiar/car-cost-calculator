@@ -1,7 +1,7 @@
 import { useMemo, useState } from 'react'
-import { CATALOG, CATEGORY_ABOVE, CATEGORY_BELOW, CATEGORY_LABEL, CATEGORY_ORDER, POWERTRAIN_LABEL } from '../lib/catalog'
+import { CATALOG, CATEGORY_ABOVE, CATEGORY_BELOW, CATEGORY_LABEL, CATEGORY_ORDER, POWERTRAIN_LABEL, TRANSMISSION_LABEL } from '../lib/catalog'
 import { normalize } from '../lib/format'
-import type { Category, Powertrain, Preferences, ScenarioKind } from '../lib/types'
+import type { Category, Powertrain, Preferences, ScenarioKind, Transmission } from '../lib/types'
 import { KIND_LABEL } from './RankingTable'
 import { Chip, ChipGroup, NumberField, Segmented } from './ui'
 
@@ -15,12 +15,14 @@ interface Props {
   onOnlySavings: (v: boolean) => void
   resultCount: number
   onAddCustom: (query: string) => void
+  /** Volta os filtros ao padrão; ausente quando já estão no padrão. */
+  onReset?: () => void
 }
 
 const labels = (cats: Category[]) => cats.map((c) => CATEGORY_LABEL[c]).join(' e ')
 
 /** Filtros principais sempre à vista; os demais ficam em "Mais filtros". */
-export function FilterBar({ prefs, onPrefs, carCategory, onlySavings, onOnlySavings, resultCount, onAddCustom }: Props) {
+export function FilterBar({ prefs, onPrefs, carCategory, onlySavings, onOnlySavings, resultCount, onAddCustom, onReset }: Props) {
   const [open, setOpen] = useState(false)
   const [focused, setFocused] = useState(false)
   const set = (p: Partial<Preferences>) => onPrefs({ ...prefs, ...p })
@@ -169,12 +171,18 @@ export function FilterBar({ prefs, onPrefs, carCategory, onlySavings, onOnlySavi
         </div>
       </div>
 
-      <div className="mt-4 grid gap-4 border-t border-line pt-4 md:grid-cols-[1.4fr_1fr_auto] md:items-end">
+      <div className="mt-4 grid gap-4 border-t border-line pt-4 md:grid-cols-[1.4fr_auto_1fr] md:items-start xl:grid-cols-[1.4fr_auto_1fr_auto]">
         <ChipGroup<Powertrain>
           label="Motorização"
           options={(Object.keys(POWERTRAIN_LABEL) as Powertrain[]).map((k) => ({ value: k, label: POWERTRAIN_LABEL[k] }))}
           selected={prefs.powertrains}
           onChange={(v) => set({ powertrains: v })}
+        />
+        <ChipGroup<Transmission>
+          label="Câmbio"
+          options={(Object.keys(TRANSMISSION_LABEL) as Transmission[]).map((k) => ({ value: k, label: TRANSMISSION_LABEL[k] }))}
+          selected={prefs.transmissions ?? ['manual', 'automatico']}
+          onChange={(v) => set({ transmissions: v })}
         />
         <ChipGroup<ScenarioKind>
           label="Tipo de opção"
@@ -182,8 +190,13 @@ export function FilterBar({ prefs, onPrefs, carCategory, onlySavings, onOnlySavi
           selected={prefs.kinds}
           onChange={(v) => set({ kinds: v })}
         />
-        <div className="flex items-center gap-3 md:justify-end">
+        <div className="flex flex-wrap items-center gap-3 md:col-span-3 md:justify-end xl:col-span-1 xl:self-end">
           <span className="text-xs text-muted tabular">{resultCount} opções</span>
+          {onReset && (
+            <button type="button" onClick={onReset} className="text-xs font-medium text-accent hover:underline">
+              Limpar filtros
+            </button>
+          )}
           <button
             type="button"
             aria-expanded={open}

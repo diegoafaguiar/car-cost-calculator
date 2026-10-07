@@ -17,6 +17,8 @@ export interface ExportContext {
   compared: ScenarioResult[]
   horizon: Horizon
   includeOpportunity: boolean
+  /** Valor do seu carro usado na troca e se veio de proposta informada. */
+  tradeIn?: { value: number; manual: boolean }
   url: string
 }
 
@@ -33,7 +35,9 @@ function flat(r: ScenarioResult, rank: number, h: Horizon) {
     motorizacao: POWERTRAIN_LABEL[s.powertrain],
     preco: s.kind === 'subscription' ? null : Math.round(s.price),
     fontePreco: s.priceSource,
+    cambio: s.transmission ? (s.transmission === 'manual' ? 'Manual' : 'Automático') : null,
     parcela: r.installment > 0 ? Math.round(r.installment) : null,
+    troco: s.kind !== 'keep' && r.changeBack > 0 ? Math.round(r.changeBack) : null,
     prazo: r.installment > 0 ? r.finance.months : null,
     custoMes: Math.round(hr.monthly),
     total1: Math.round(r.horizons[1].total),
@@ -55,7 +59,9 @@ const HEADERS: [string, string][] = [
   ['motorizacao', 'Motorização'],
   ['preco', 'Preço (R$)'],
   ['fontePreco', 'Fonte do preço'],
+  ['cambio', 'Câmbio'],
   ['parcela', 'Parcela (R$)'],
+  ['troco', 'Troco (R$)'],
   ['prazo', 'Prazo (meses)'],
   ['custoMes', 'Custo por mês no horizonte (R$)'],
   ['total1', 'Custo total 1 ano (R$)'],
@@ -101,6 +107,7 @@ export async function toXLSX(ctx: ExportContext): Promise<Blob> {
     [hdr('Seu carro'), { value: `${ctx.car.label} · ${ctx.car.modelYear}` }],
     [hdr('Horizonte'), { value: yrs(ctx.horizon) }],
     [hdr('Custo de oportunidade'), { value: ctx.includeOpportunity ? 'incluído' : 'desligado' }],
+    [hdr(ctx.tradeIn?.manual ? 'Valor na troca (proposta, R$)' : 'Valor na troca (estimado, R$)'), num(ctx.tradeIn ? Math.round(ctx.tradeIn.value) : null)],
     [hdr('Manter: custo por mês (R$)'), num(keep ? Math.round(keep.horizons[ctx.horizon].monthly) : null)],
     [hdr('Manter: custo total (R$)'), num(keep ? Math.round(keep.horizons[ctx.horizon].total) : null)],
     [],
@@ -165,6 +172,7 @@ export function whatsappText(ctx: ExportContext): string {
   const lines: string[] = []
   lines.push(`🚗 *Custo de Carro* — análise em ${yrs(h)}`)
   lines.push(`Meu carro: ${ctx.car.label} ${ctx.car.modelYear}`)
+  if (ctx.tradeIn) lines.push(`Valor do meu carro na troca: ${money(ctx.tradeIn.value)} (${ctx.tradeIn.manual ? 'proposta' : 'estimativa'})`)
   if (keep) lines.push(`Manter custa *${money(keep.horizons[h].monthly)}/mês* (${money(keep.horizons[h].total)} no período)`)
   const best = ctx.ranked[0]
   if (best && keep) {
@@ -180,7 +188,7 @@ export function whatsappText(ctx: ExportContext): string {
     cmp.forEach((r, i) => {
       const v = r.horizons[h].savingsVsKeep
       lines.push(`${i + 1}. ${r.scenario.label} — ${r.scenario.detail}`)
-      lines.push(`   ${money(r.horizons[h].monthly)}/mês · ${v >= 0 ? '▲ economiza' : '▼ custa mais'} ${money(Math.abs(v))}`)
+      lines.push(`   ${money(r.horizons[h].monthly)}/mês · ${v >= 0 ? '▲ economiza' : '▼ custa mais'} ${money(Math.abs(v))}${r.changeBack > 0 ? ` · troco ${money(r.changeBack)}` : ''}`)
     })
   }
   lines.push('', `_Custos incluem depreciação, combustível, seguro, IPVA, manutenção${ctx.includeOpportunity ? ' e custo de oportunidade' : ''}._`)

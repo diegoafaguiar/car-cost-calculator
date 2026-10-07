@@ -12,13 +12,14 @@ import { ModelPage } from './components/ModelPage'
 import { KIND_LABEL, RankingTable, type SortKey } from './components/RankingTable'
 import { SettingsDrawer, type SettingsTab } from './components/SettingsDrawer'
 import { TopModels } from './components/TopModels'
+import { TradeInCard } from './components/TradeInCard'
 import { Button, Card } from './components/ui'
 import { CATALOG } from './lib/catalog'
 import { DEFAULT_ASSUMPTIONS, DEFAULT_CAR, DEFAULT_PREFERENCES } from './lib/defaults'
 import { FipeError, resolveCatalogPrice, setFipeToken, type FipeOverride } from './lib/fipe'
 import { money, normalize } from './lib/format'
-import { buildScenarios, currentCarValue, groupByModel, modelYearOf, priceKey, runAll, type PriceEntry } from './lib/tco'
-import type { CustomCar, Horizon, RankRow, ScenarioResult } from './lib/types'
+import { buildScenarios, currentCarValue, groupByModel, modelYearOf, tradeInFor, priceKey, runAll, type PriceEntry } from './lib/tco'
+import type { CustomCar, Horizon, Preferences, RankRow, ScenarioResult } from './lib/types'
 import { usePersisted } from './lib/usePersisted'
 
 const YEAR = new Date().getFullYear()
@@ -26,11 +27,24 @@ const START_MONTH = new Date().getMonth()
 const SERIES_COLORS = ['var(--s1)', 'var(--s2)', 'var(--s3)', 'var(--s4)', 'var(--s5)']
 const MAX_COMPARE = SERIES_COLORS.length
 
+/** Campos de preferência que são filtros (o botão "Limpar filtros" volta só estes ao padrão). */
+const FILTER_KEYS = [
+  'categories', 'powertrains', 'transmissions', 'kinds', 'maxPrice', 'minPrice', 'maxMonthly', 'minSeats',
+  'minModelYear', 'maxModelYear', 'groupByModel', 'search', 'brands',
+] as const satisfies readonly (keyof Preferences)[]
+const pickFilters = (p: Preferences) => Object.fromEntries(FILTER_KEYS.map((k) => [k, p[k]])) as Partial<Preferences>
+const filtersAreDefault = (p: Preferences) =>
+  FILTER_KEYS.every((k) => JSON.stringify(p[k]) === JSON.stringify(DEFAULT_PREFERENCES[k]))
+
 /**
  * Remove (uma vez) preços FIPE salvos com uma busca errada. O Onix Plus buscava a versão LT,
  * mais barata, embora o catálogo seja o LTZ; esses preços somem até a próxima atualização.
  */
-const STALE_PRICE_FIXES: { flag: string; modelIds: string[] }[] = [{ flag: 'ccc:fix:onix-plus-ltz', modelIds: ['chevrolet-onix-plus'] }]
+const STALE_PRICE_FIXES: { flag: string; modelIds: string[] }[] = [
+  { flag: 'ccc:fix:onix-plus-ltz', modelIds: ['chevrolet-onix-plus'] },
+  // 208: catálogo é o Style, a busca FIPE pegava o Active.
+  { flag: 'ccc:fix:208-style', modelIds: ['peugeot-208'] },
+]
 function dropStalePrices(stored: Record<string, unknown>) {
   const out = { ...stored }
   for (const fix of STALE_PRICE_FIXES) {
@@ -127,10 +141,11 @@ export default function App() {
 
   useEffect(() => setFipeToken(token), [token])
 
+  const simCtx = useMemo(() => ({ assumptions, car, startMonth: START_MONTH, year: YEAR }), [assumptions, car])
   const results = useMemo(() => {
     const scenarios = buildScenarios({ car, assumptions, usedAges: prefs.usedAges, prices, year: YEAR, customCars })
-    return runAll(scenarios, { assumptions, car, startMonth: START_MONTH, year: YEAR }, prefs.powertrainValue)
-  }, [car, assumptions, prefs.usedAges, prefs.powertrainValue, prices, customCars])
+    return runAll(scenarios, simCtx, prefs.powertrainValue)
+  }, [simCtx, car, assumptions, prefs.usedAges, prefs.powertrainValue, prices, customCars])
 
   const keep = results.find((r) => r.scenario.kind === 'keep')
   const horizon = prefs.rankHorizon
@@ -151,6 +166,7 @@ export default function App() {
       if (my !== null && prefs.maxModelYear > 0 && my > prefs.maxModelYear) return false
       if (prefs.maxMonthly > 0 && r.horizons[horizon].monthly > prefs.maxMonthly) return false
       if (prefs.minSeats > 0 && (s.seats ?? 5) < prefs.minSeats) return false
+      if (s.transmission && prefs.transmissions && !prefs.transmissions.includes(s.transmission)) return false
       if (onlySavings && r.horizons[horizon].savingsVsKeep <= 0) return false
       if (words.length) {
         const text = normalize(`${s.label} ${s.detail} ${KIND_LABEL[s.kind]}`)
@@ -208,6 +224,14 @@ export default function App() {
     setCompare((c) => (c.includes(id) ? c.filter((x) => x !== id) : c.length >= MAX_COMPARE ? c : [...c, id]))
   }
 
+  const resetFilters =
+    filtersAreDefault(prefs) && !onlySavings
+      ? undefined
+      : () => {
+          setPrefs({ ...prefs, ...pickFilters(DEFAULT_PREFERENCES) })
+          setOnlySavings(false)
+        }
+
   const onSort = (key: SortKey) =>
     setSort((s) => (s.key === key ? { key, dir: s.dir === 1 ? -1 : 1 } : { key, dir: key === 'savings' ? -1 : 1 }))
 
@@ -259,6 +283,7 @@ export default function App() {
     compared: compare.map((id) => results.find((r) => r.scenario.id === id)).filter((r): r is ScenarioResult => !!r),
     horizon,
     includeOpportunity: assumptions.includeOpportunity !== false,
+    tradeIn: tradeInFor(car, assumptions, YEAR),
     url: window.location.origin + window.location.pathname,
   })
 
@@ -347,7 +372,26 @@ export default function App() {
                 compare={compare}
                 onToggleCompare={toggleCompare}
                 usingPreference={prefs.rankBy === 'ajustado' && hasPreference}
+                tradeIn={tradeInFor(car, assumptions, YEAR)}
+                onEditTrade={() => document.getElementById('sec-trade')?.scrollIntoView({ behavior: 'smooth' })}
               />
+              </section>
+            )}
+
+            {keep && (
+              <section id="sec-trade" className="scroll-mt-32">
+                <ErrorBoundary area="Troca">
+                  <TradeInCard
+                    car={car}
+                    onCar={setCar}
+                    ctx={simCtx}
+                    keep={keep}
+                    best={ranked.find((r) => r.scenario.kind !== 'keep')}
+                    horizon={horizon}
+                    onEditCar={() => setSettings('car')}
+                    onEditAssumptions={() => setSettings('assumptions')}
+                  />
+                </ErrorBoundary>
               </section>
             )}
 
@@ -360,6 +404,7 @@ export default function App() {
               onOnlySavings={setOnlySavings}
               resultCount={ranked.length}
               onAddCustom={(q) => setAdding(q)}
+              onReset={resetFilters}
             />
             </section>
 
@@ -438,6 +483,7 @@ export default function App() {
                 onOpen={setOpenId}
                 showAdjusted={hasPreference}
                 keep={keep}
+                onResetFilters={resetFilters}
               />
             </Card>
             </section>
@@ -504,6 +550,7 @@ export default function App() {
 
 const SECTIONS = [
   ['sec-summary', 'Resumo'],
+  ['sec-trade', 'Troca'],
   ['sec-filters', 'Filtros'],
   ['sec-top', 'Top 10'],
   ['sec-compare', 'Comparar'],

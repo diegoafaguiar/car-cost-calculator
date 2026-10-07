@@ -59,6 +59,7 @@ export function DetailDrawer({ result, keep, a, initialHorizon, override, onOver
     )
   }
   if (result.upfrontCash > 0) facts.push(['Desembolso além do carro atual', money(result.upfrontCash)])
+  if (result.changeBack > 0 && s.kind !== 'keep') facts.push(['Troco (sobra do valor do seu carro)', money(result.changeBack)])
   if (s.plan) {
     facts.push(
       ['Mensalidade', money(s.plan.monthlyFee)],

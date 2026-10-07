@@ -37,6 +37,9 @@ export interface FipeQuery {
   exclude?: string[]
 }
 
+/** Câmbio, em dois grupos para filtrar: CVT, dupla embreagem, e-CVT e redução única de elétrico contam como automático. */
+export type Transmission = 'manual' | 'automatico'
+
 export interface CatalogModel {
   id: string
   brand: string
@@ -44,6 +47,7 @@ export interface CatalogModel {
   version: string
   category: Category
   powertrain: Powertrain
+  transmission: Transmission
   seats: number
   trunkL: number
   /** Preço de referência 0 km (R$), usado quando a FIPE não responde. */
@@ -119,6 +123,13 @@ export interface CurrentCar {
   revisions?: RevisionPlan | null
   /** Depreciação anual esperada (fração). */
   depreciationYear: number
+  /**
+   * Quanto você recebe hoje pelo carro na troca ou venda (proposta da loja ou valor que espera obter).
+   * Vazio ou 0 = estimativa automática (valor de mercado, ajuste por km e deságio de venda).
+   */
+  tradeInValue?: number
+  /** De onde veio o valor da troca, para lembrar o usuário (ex.: "Proposta concessionária Toyota"). */
+  tradeInNote?: string
   loanBalance: number
   loanPayment: number
   loanRemaining: number
@@ -199,6 +210,8 @@ export interface Preferences {
   maxMonthly: number
   minSeats: number
   minPrice: number
+  /** Câmbios a mostrar (assinaturas e carros adicionados sem câmbio informado não são filtrados). */
+  transmissions: Transmission[]
   /** Ano-modelo mínimo e máximo das opções (0 = sem limite). */
   minModelYear: number
   maxModelYear: number
@@ -224,6 +237,7 @@ export interface CustomCar {
   modelYear: number
   category: Category
   powertrain: Powertrain
+  transmission?: Transmission
   seats: number
   consumption: Consumption
   price: number
@@ -242,6 +256,7 @@ export interface Scenario {
   modelId?: string
   category: Category
   powertrain: Powertrain
+  transmission?: Transmission
   seats?: number
   consumption: Consumption
   evShare?: number
@@ -290,6 +305,8 @@ export interface ScenarioResult {
   cumulative: number[]
   horizons: Record<Horizon, HorizonResult>
   upfrontCash: number
+  /** Troco: o que sobra do valor do seu carro depois da entrada (fica aplicado no cálculo). */
+  changeBack: number
   financed: number
   installment: number
   /** Condição de financiamento usada (padrão ou regra específica). */

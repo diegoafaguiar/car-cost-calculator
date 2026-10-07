@@ -1,5 +1,5 @@
 import { normalize, parseBrl } from './format'
-import type { CatalogModel, FipeQuery } from './types'
+import type { CatalogModel, FipeQuery, Transmission } from './types'
 
 /** API pública da FIPE mantida pela Parallelum (https://fipe.parallelum.com.br). */
 const BASE = 'https://fipe.parallelum.com.br/api/v2/cars'
@@ -134,6 +134,14 @@ const words = (s: string) =>
     .split(/\s+/)
     .map((w) => w.replace(/^[(\[]+|[)\],]+$/g, '').replace(/\.$/, ''))
     .filter(Boolean)
+
+/** Câmbio pelo nome da versão na FIPE ("... Aut." / "... Mec."); null quando o nome não diz. */
+export function transmissionFromFipeName(name: string): Transmission | null {
+  const ws = new Set(words(name))
+  if (['aut', 'automatico', 'cvt', 'at', 'dct', 'edc', 'tiptronic'].some((w) => ws.has(w))) return 'automatico'
+  if (['mec', 'manual', 'mt'].some((w) => ws.has(w))) return 'manual'
+  return null
+}
 
 export function matchesQuery(name: string, q: FipeQuery): boolean {
   const ws = new Set(words(name))

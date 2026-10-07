@@ -1,5 +1,5 @@
 import { useMemo, useState, type ReactNode } from 'react'
-import { CATALOG, CATEGORY_LABEL, POWERTRAIN_LABEL } from '../lib/catalog'
+import { CATALOG, CATEGORY_LABEL, POWERTRAIN_LABEL, TRANSMISSION_LABEL } from '../lib/catalog'
 import { money, money2, months, normalize, number } from '../lib/format'
 import { MODEL_INFO, type ModelInfo } from '../lib/modelInfo'
 import { COST_KEYS, COST_LABEL, energyCostPerKm } from '../lib/tco'
@@ -282,6 +282,8 @@ export function Comparator({ keep, results, ranked, compare, colors, max, onTogg
                       : 'à vista',
               )}
               {numRow('Desembolso da reserva', (r) => (r.scenario.kind === 'keep' ? null : r.upfrontCash), money, 'none')}
+              {columns.some((r) => r.changeBack > 0) &&
+                numRow('Troco para você', (r) => (r.scenario.kind === 'keep' || r.scenario.plan ? null : r.changeBack), money, 'none')}
 
               <Group label={`Composição do custo (${horizon}a)`} span={columns.length} />
               {COST_KEYS.filter((k) => columns.some((r) => Math.abs(h(r).breakdown[k]) >= 1)).map((k) =>
@@ -294,6 +296,7 @@ export function Comparator({ keep, results, ranked, compare, colors, max, onTogg
               <Group label="Carro" span={columns.length} />
               {textRow('Categoria', (r) => CATEGORY_LABEL[r.scenario.category])}
               {textRow('Motorização', (r) => POWERTRAIN_LABEL[r.scenario.powertrain])}
+              {textRow('Câmbio', (r) => (r.scenario.transmission ? TRANSMISSION_LABEL[r.scenario.transmission] : '—'))}
               {numRow('Energia por km', (r) => energyCostPerKm(r.scenario.powertrain, r.scenario.consumption, a, r.scenario.evShare), money2)}
               {textRow('Motor', (r) => infoOf(r)?.specs.engine)}
               {textRow('Potência (cv)', (r) => infoOf(r)?.specs.powerCv)}

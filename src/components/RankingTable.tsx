@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import { CATEGORY_LABEL, POWERTRAIN_LABEL } from '../lib/catalog'
+import { CATEGORY_LABEL, POWERTRAIN_LABEL, TRANSMISSION_LABEL } from '../lib/catalog'
 import { money, money2, months } from '../lib/format'
 import type { Horizon, PriceSource, RankRow, ScenarioKind, ScenarioResult } from '../lib/types'
 import { CostTooltip } from './CostTooltip'
@@ -54,11 +54,12 @@ interface Props {
   onOpen: (id: string) => void
   showAdjusted?: boolean
   keep?: ScenarioResult
+  onResetFilters?: () => void
 }
 
 const PAGE = 20
 
-export function RankingTable({ rows, horizon, sort, onSort, compare, colors, onToggleCompare, onOpen, showAdjusted, keep }: Props) {
+export function RankingTable({ rows, horizon, sort, onSort, compare, colors, onToggleCompare, onOpen, showAdjusted, keep, onResetFilters }: Props) {
   const [limit, setLimit] = useState(PAGE)
   const [detailed, setDetailed] = useState(false)
 
@@ -157,6 +158,11 @@ export function RankingTable({ rows, horizon, sort, onSort, compare, colors, onT
               <tr>
                 <td colSpan={visible.length + 3} className="px-3 py-10 text-center text-sm text-muted">
                   Nenhuma opção com os filtros atuais.
+                  {onResetFilters && (
+                    <button type="button" onClick={onResetFilters} className="ml-2 font-medium text-accent hover:underline">
+                      Limpar filtros
+                    </button>
+                  )}
                 </td>
               </tr>
             )}
@@ -216,6 +222,7 @@ function OptionCell({ result: r }: { result: ScenarioResult }) {
         <Badge tone={KIND_TONE[s.kind]}>{KIND_LABEL[s.kind]}</Badge>
         <Badge>{CATEGORY_LABEL[s.category]}</Badge>
         <Badge>{POWERTRAIN_LABEL[s.powertrain]}</Badge>
+        {s.transmission && s.kind !== 'keep' && <Badge>{TRANSMISSION_LABEL[s.transmission]}</Badge>}
         {s.kind !== 'subscription' && s.kind !== 'keep' && (
           <Badge tone={s.priceSource === 'estimado' ? 'neutral' : 'good'}>{SOURCE_LABEL[s.priceSource]}</Badge>
         )}
@@ -285,7 +292,7 @@ function Cell({ k, r, horizon, keep }: { k: SortKey; r: ScenarioResult; horizon:
       return (
         <Two
           a={r.installment > 0 ? `${money(r.installment)} × ${r.finance.months}` : 'à vista'}
-          b={r.upfrontCash > 0 ? `+ ${money(r.upfrontCash)} da reserva` : 'só com o seu carro'}
+          b={r.upfrontCash > 0 ? `+ ${money(r.upfrontCash)} da reserva` : r.changeBack > 0 ? `sobra ${money(r.changeBack)} de troco` : 'só com o seu carro'}
         />
       )
     case 'monthly':
