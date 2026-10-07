@@ -11,8 +11,9 @@ export function TopModels({ ranked, horizon }: { ranked: ScenarioResult[]; horiz
   const top: ScenarioResult[] = []
   for (const r of ranked) {
     const id = r.scenario.modelId
-    if (!id || r.scenario.kind === 'subscription' || r.scenario.kind === 'keep' || seen.has(id)) continue
-    seen.add(id)
+    const family = CATALOG.find((m) => m.id === id)?.infoId ?? id
+    if (!id || !family || r.scenario.kind === 'subscription' || r.scenario.kind === 'keep' || seen.has(family)) continue
+    seen.add(family)
     top.push(r)
     if (top.length === 10) break
   }

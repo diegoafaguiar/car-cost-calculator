@@ -36,9 +36,12 @@ export function ModelPage({ modelId, results, ranked, keep, horizon, onHorizon, 
   }
   const info = MODEL_INFO[model.infoId ?? modelId]
   const mine = car.catalogModelId ? MODEL_INFO[car.catalogModelId] : undefined
+  // Todas as versões do catálogo que compartilham esta ficha (ex.: Song Pro GL e GS).
+  const family = new Set(CATALOG.filter((m) => (m.infoId ?? m.id) === (model.infoId ?? model.id)).map((m) => m.id))
+  const versionOf = (id?: string) => CATALOG.find((m) => m.id === id)?.version ?? ''
   const options = results
-    .filter((r) => r.scenario.modelId === modelId && (r.scenario.kind === 'new' || r.scenario.kind === 'used'))
-    .sort((x, y) => x.scenario.ageAtStart - y.scenario.ageAtStart)
+    .filter((r) => family.has(r.scenario.modelId ?? '') && (r.scenario.kind === 'new' || r.scenario.kind === 'used'))
+    .sort((x, y) => x.scenario.ageAtStart - y.scenario.ageAtStart || x.scenario.price - y.scenario.price)
   const rankOf = (r: ScenarioResult) => ranked.findIndex((x) => x.scenario.id === r.scenario.id) + 1
   const best = [...options].sort((x, y) => x.horizons[horizon].total - y.horizons[horizon].total)[0]
   const leader = ranked.find((r) => r.scenario.kind !== 'keep')
@@ -90,7 +93,7 @@ export function ModelPage({ modelId, results, ranked, keep, horizon, onHorizon, 
           )}
           {best && keep && (
             <p className="rounded-lg border border-line bg-surface-2/50 p-3 text-sm leading-relaxed">
-              <AutoAnalysis best={best} keep={keep} horizon={horizon} rank={rankOf(best)} total={ranked.length} leader={leader} />
+              <AutoAnalysis version={family.size > 1 ? versionOf(best.scenario.modelId) : ''} best={best} keep={keep} horizon={horizon} rank={rankOf(best)} total={ranked.length} leader={leader} />
             </p>
           )}
         </div>
@@ -144,7 +147,7 @@ export function ModelPage({ modelId, results, ranked, keep, horizon, onHorizon, 
                   <tr key={o.scenario.id} className="border-t border-line">
                     <td className="px-3 py-2">
                       <span className="font-medium">{o.scenario.ageAtStart === 0 ? '0 km' : `Seminovo ${o.scenario.detail.split(' · ').pop()?.replace(' (seminovo)', '')}`}</span>
-                      <span className="block text-xs text-ink-2">{model.version}</span>
+                      <span className="block text-xs text-ink-2">{versionOf(o.scenario.modelId)}</span>
                     </td>
                     <td className="px-3 py-2 text-right tabular whitespace-nowrap">
                       {money(o.scenario.price)}
@@ -179,7 +182,7 @@ export function ModelPage({ modelId, results, ranked, keep, horizon, onHorizon, 
           <div className="mt-6 grid gap-6 md:grid-cols-2">
             <div>
               <h3 className="mb-3 text-sm font-semibold">
-                Melhor forma: {best.scenario.ageAtStart === 0 ? '0 km' : best.scenario.detail.split(' · ').pop()} · {money(best.horizons[horizon].total)} em {yearsLabel(horizon)}
+                Melhor forma: {versionOf(best.scenario.modelId)} · {best.scenario.ageAtStart === 0 ? '0 km' : best.scenario.detail.split(' · ').pop()} · {money(best.horizons[horizon].total)} em {yearsLabel(horizon)}
               </h3>
               <BreakdownBars breakdown={best.horizons[horizon].breakdown} total={best.horizons[horizon].total} />
             </div>
@@ -310,6 +313,7 @@ export function ModelPage({ modelId, results, ranked, keep, horizon, onHorizon, 
 }
 
 function AutoAnalysis({
+  version,
   best,
   keep,
   horizon,
@@ -317,6 +321,7 @@ function AutoAnalysis({
   total,
   leader,
 }: {
+  version: string
   best: ScenarioResult
   keep: ScenarioResult
   horizon: Horizon
@@ -325,7 +330,9 @@ function AutoAnalysis({
   leader?: ScenarioResult
 }) {
   const h = best.horizons[horizon]
-  const form = best.scenario.ageAtStart === 0 ? 'comprar 0 km' : `comprar seminovo ${best.scenario.detail.split(' · ').pop()?.replace(' (seminovo)', '')}`
+  const form =
+    (best.scenario.ageAtStart === 0 ? 'comprar 0 km' : `comprar seminovo ${best.scenario.detail.split(' · ').pop()?.replace(' (seminovo)', '')}`) +
+    (version ? ` na versão ${version}` : '')
   const isLeader = leader?.scenario.id === best.scenario.id
   return (
     <>
