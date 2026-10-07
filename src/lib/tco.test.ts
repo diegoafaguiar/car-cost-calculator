@@ -6,7 +6,9 @@ import {
   breakEven,
   buildScenarios,
   energyCostPerKm,
+  groupByModel,
   mileagePenalty,
+  modelYearOf,
   pmt,
   projectValue,
   runAll,
@@ -239,5 +241,35 @@ describe('fipe helpers', () => {
 
   it('converte preço FIPE', () => {
     expect(parseBrl('R$ 123.456,78')).toBeCloseTo(123456.78)
+  })
+})
+
+describe('anos-modelo', () => {
+  it('modelYearOf: 0 km é o ano atual; seminovo desconta a idade; manter e assinatura não têm ano', () => {
+    const list = buildScenarios({ car, assumptions: a, usedAges: [4], prices: {}, year: 2026 })
+    expect(modelYearOf(list.find((s) => s.kind === 'new')!, 2026)).toBe(2026)
+    expect(modelYearOf(list.find((s) => s.kind === 'used')!, 2026)).toBe(2022)
+    expect(modelYearOf(list.find((s) => s.kind === 'keep')!, 2026)).toBeNull()
+    const sub = list.find((s) => s.kind === 'subscription')
+    if (sub) expect(modelYearOf(sub, 2026)).toBeNull()
+  })
+
+  it('groupByModel deixa uma linha por modelo, no melhor ano, com os demais anos agrupados', () => {
+    const list = buildScenarios({ car, assumptions: a, usedAges: [1, 2, 3, 4], prices: {}, year: 2026 })
+    const ranked = runAll(list, ctx).sort((x, y) => x.horizons[3].total - y.horizons[3].total)
+    const rows = groupByModel(ranked)
+    expect(rows.map((r) => r.rank)).toEqual(rows.map((_, i) => i + 1))
+    // Nenhum modelo aparece em duas linhas, e nenhum cenário se perde.
+    const heads = rows.filter((r) => r.result.scenario.modelId && r.result.scenario.kind !== 'subscription').map((r) => r.result.scenario.modelId)
+    expect(new Set(heads).size).toBe(heads.length)
+    expect(rows.reduce((n, r) => n + 1 + (r.others?.length ?? 0), 0)).toBe(ranked.length)
+    // A linha principal é o melhor ano; os agrupados são do mesmo modelo e não mais baratos.
+    for (const r of rows) {
+      for (const o of r.others ?? []) {
+        expect(o.scenario.modelId).toBe(r.result.scenario.modelId)
+        expect(o.horizons[3].total).toBeGreaterThanOrEqual(r.result.horizons[3].total)
+      }
+    }
+    expect(rows.some((r) => (r.others?.length ?? 0) > 0)).toBe(true)
   })
 })

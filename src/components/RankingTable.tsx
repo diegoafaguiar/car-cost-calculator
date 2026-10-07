@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import { CATEGORY_LABEL, POWERTRAIN_LABEL } from '../lib/catalog'
 import { money, money2, months } from '../lib/format'
-import type { Horizon, PriceSource, ScenarioKind, ScenarioResult } from '../lib/types'
+import type { Horizon, PriceSource, RankRow, ScenarioKind, ScenarioResult } from '../lib/types'
 import { CostTooltip } from './CostTooltip'
 import { Badge } from './ui'
 
@@ -44,7 +44,7 @@ const SOURCE_LABEL: Record<PriceSource, string> = {
 }
 
 interface Props {
-  rows: { result: ScenarioResult; rank: number }[]
+  rows: RankRow[]
   horizon: Horizon
   sort: { key: SortKey; dir: 1 | -1 }
   onSort: (key: SortKey) => void
@@ -118,7 +118,7 @@ export function RankingTable({ rows, horizon, sort, onSort, compare, colors, onT
             </tr>
           </thead>
           <tbody>
-            {rows.slice(0, limit).map(({ result: r, rank }) => {
+            {rows.slice(0, limit).map(({ result: r, rank, others }) => {
               const s = r.scenario
               const isKeep = s.kind === 'keep'
               const checked = compare.includes(s.id)
@@ -143,6 +143,7 @@ export function RankingTable({ rows, horizon, sort, onSort, compare, colors, onT
                   <td className="px-1 py-3 tabular text-muted">{rank}</td>
                   <td className="min-w-64 px-3 py-3">
                     <OptionCell result={r} />
+                    <OtherYears best={r} others={others} horizon={horizon} onOpen={onOpen} />
                   </td>
                   {visible.map((c) => (
                     <td key={c.key} className="px-3 py-3 text-right tabular whitespace-nowrap">
@@ -164,7 +165,7 @@ export function RankingTable({ rows, horizon, sort, onSort, compare, colors, onT
       </div>
 
       <ul className="space-y-2 md:hidden">
-        {rows.slice(0, limit).map(({ result: r, rank }) => {
+        {rows.slice(0, limit).map(({ result: r, rank, others }) => {
           const isKeep = r.scenario.kind === 'keep'
           return (
             <li key={r.scenario.id} className={`rounded-xl border border-line p-3 ${isKeep ? 'bg-warn-soft' : 'bg-surface'}`}>
@@ -178,6 +179,7 @@ export function RankingTable({ rows, horizon, sort, onSort, compare, colors, onT
                   </span>
                 </div>
                 <OptionCell result={r} />
+                <OtherYears best={r} others={others} horizon={horizon} onOpen={onOpen} />
                 <div className="mt-2 flex items-center justify-between gap-2 border-t border-line pt-2">
                   <span className="text-xs text-ink-2 tabular">
                     {r.scenario.kind === 'subscription' ? 'sem compra' : money(r.scenario.price)}
@@ -227,6 +229,35 @@ function OptionCell({ result: r }: { result: ScenarioResult }) {
           </a>
         )}
       </span>
+    </div>
+  )
+}
+
+const yearLabel = (r: ScenarioResult) =>
+  r.scenario.ageAtStart === 0 ? '0 km' : String(new Date().getFullYear() - r.scenario.ageAtStart)
+
+/** Chips com os outros anos do mesmo modelo e a diferença de custo por mês para o melhor ano. */
+function OtherYears({ best, others, horizon, onOpen }: { best: ScenarioResult; others?: ScenarioResult[]; horizon: Horizon; onOpen: (id: string) => void }) {
+  if (!others?.length) return null
+  const base = best.horizons[horizon].monthly
+  const list = [...others].sort((a, b) => a.scenario.ageAtStart - b.scenario.ageAtStart)
+  return (
+    <div className="mt-2 flex flex-wrap items-center gap-1 text-xs" onClick={(e) => e.stopPropagation()}>
+      <span className="text-muted">Melhor ano: {yearLabel(best)} · outros:</span>
+      {list.map((o) => {
+        const d = o.horizons[horizon].monthly - base
+        return (
+          <button
+            key={o.scenario.id}
+            type="button"
+            onClick={() => onOpen(o.scenario.id)}
+            title={`${o.scenario.label} ${yearLabel(o)}: ${money(o.horizons[horizon].monthly)}/mês`}
+            className="rounded-md border border-line bg-surface-2 px-1.5 py-0.5 tabular text-ink-2 hover:border-accent hover:text-accent"
+          >
+            {yearLabel(o)} <span className="text-muted">{d >= 0 ? "+" : "−"}{money(Math.abs(d))}</span>
+          </button>
+        )
+      })}
     </div>
   )
 }

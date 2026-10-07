@@ -85,6 +85,10 @@ export const DEFAULT_PREFERENCES: Preferences = {
   maxMonthly: 0,
   minSeats: 0,
   minPrice: 0,
+  // Preferência do usuário: nada abaixo do ano-modelo 2022.
+  minModelYear: 2022,
+  maxModelYear: 0,
+  groupByModel: false,
   // "Pequena inclinação" a híbridos: R$ 100/mês é um ponto de partida, ajuste ao seu gosto.
   powertrainValue: { hibrido: 100, 'hibrido-plugin': 100 },
   rankBy: 'ajustado',

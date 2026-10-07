@@ -20,6 +20,7 @@ import type {
   HorizonResult,
   Powertrain,
   PriceSource,
+  RankRow,
   Scenario,
   ScenarioResult,
 } from './types'
@@ -450,6 +451,34 @@ export function priceFor(
     price: age === 0 ? base : estimateUsedPrice(base, age, model.depreciationFactor),
     source: 'estimado',
   }
+}
+
+/**
+ * Uma linha por modelo do catálogo (0 km e seminovos juntos), na posição do melhor ano;
+ * os demais anos vão em `others`. Assinaturas, manter e carros sem modelo ficam sozinhos.
+ * `ranked` já deve vir ordenado do melhor para o pior.
+ */
+export function groupByModel(ranked: ScenarioResult[]): RankRow[] {
+  const groups = new Map<string, RankRow>()
+  const rows: RankRow[] = []
+  for (const result of ranked) {
+    const s = result.scenario
+    const key = s.modelId && (s.kind === 'new' || s.kind === 'used') ? `m:${s.modelId}` : `s:${s.id}`
+    const g = groups.get(key)
+    if (g) g.others!.push(result)
+    else {
+      const row: RankRow = { result, rank: rows.length + 1, others: [] }
+      groups.set(key, row)
+      rows.push(row)
+    }
+  }
+  return rows
+}
+
+/** Ano-modelo da opção (0 km = ano atual); null para manter e assinatura. */
+export function modelYearOf(s: Scenario, year: number): number | null {
+  if (s.kind === 'keep' || s.kind === 'subscription') return null
+  return year - s.ageAtStart
 }
 
 export function carAge(car: CurrentCar, year: number): number {

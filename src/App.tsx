@@ -17,14 +17,33 @@ import { CATALOG } from './lib/catalog'
 import { DEFAULT_ASSUMPTIONS, DEFAULT_CAR, DEFAULT_PREFERENCES } from './lib/defaults'
 import { FipeError, resolveCatalogPrice, setFipeToken, type FipeOverride } from './lib/fipe'
 import { money, normalize } from './lib/format'
-import { buildScenarios, currentCarValue, priceKey, runAll, type PriceEntry } from './lib/tco'
-import type { CustomCar, Horizon, ScenarioResult } from './lib/types'
+import { buildScenarios, currentCarValue, groupByModel, modelYearOf, priceKey, runAll, type PriceEntry } from './lib/tco'
+import type { CustomCar, Horizon, RankRow, ScenarioResult } from './lib/types'
 import { usePersisted } from './lib/usePersisted'
 
 const YEAR = new Date().getFullYear()
 const START_MONTH = new Date().getMonth()
 const SERIES_COLORS = ['var(--s1)', 'var(--s2)', 'var(--s3)', 'var(--s4)', 'var(--s5)']
 const MAX_COMPARE = SERIES_COLORS.length
+
+/**
+ * Remove (uma vez) preços FIPE salvos com uma busca errada. O Onix Plus buscava a versão LT,
+ * mais barata, embora o catálogo seja o LTZ; esses preços somem até a próxima atualização.
+ */
+const STALE_PRICE_FIXES: { flag: string; modelIds: string[] }[] = [{ flag: 'ccc:fix:onix-plus-ltz', modelIds: ['chevrolet-onix-plus'] }]
+function dropStalePrices(stored: Record<string, unknown>) {
+  const out = { ...stored }
+  for (const fix of STALE_PRICE_FIXES) {
+    try {
+      if (localStorage.getItem(fix.flag)) continue
+      for (const k of Object.keys(out)) if (fix.modelIds.includes(k.split(':')[0])) delete out[k]
+      localStorage.setItem(fix.flag, '1')
+    } catch {
+      // Sem armazenamento: nada salvo para corrigir.
+    }
+  }
+  return out
+}
 
 function sortValue(r: ScenarioResult, key: SortKey, horizon: Horizon, rank: number): number | string {
   const h = r.horizons[horizon]
@@ -93,7 +112,7 @@ export default function App() {
     // O padrão antigo simulava só seminovos de 2 e 4 anos; amplia para 1 a 4.
     JSON.stringify(s.usedAges) === '[2,4]' ? { ...s, usedAges: [1, 2, 3, 4] } : s,
   )
-  const [prices, setPrices] = usePersisted<Record<string, PriceEntry>>('ccc:prices', {})
+  const [prices, setPrices] = usePersisted<Record<string, PriceEntry>>('ccc:prices', {}, dropStalePrices)
   const [overrides, setOverrides] = usePersisted<Record<string, FipeOverride>>('ccc:overrides', {})
   const [token, setToken] = usePersisted('ccc:fipeToken', '')
   const [compare, setCompare] = usePersisted<string[]>('ccc:compare', [])
@@ -127,6 +146,9 @@ export default function App() {
       if (prefs.brands?.length && s.kind !== 'subscription' && !prefs.brands.includes(s.brand ?? '')) return false
       if (prefs.maxPrice > 0 && s.price > prefs.maxPrice) return false
       if (prefs.minPrice > 0 && s.kind !== 'subscription' && s.price < prefs.minPrice) return false
+      const my = modelYearOf(s, YEAR)
+      if (my !== null && prefs.minModelYear > 0 && my < prefs.minModelYear) return false
+      if (my !== null && prefs.maxModelYear > 0 && my > prefs.maxModelYear) return false
       if (prefs.maxMonthly > 0 && r.horizons[horizon].monthly > prefs.maxMonthly) return false
       if (prefs.minSeats > 0 && (s.seats ?? 5) < prefs.minSeats) return false
       if (onlySavings && r.horizons[horizon].savingsVsKeep <= 0) return false
@@ -149,14 +171,14 @@ export default function App() {
   const hasPreference = Object.values(prefs.powertrainValue ?? {}).some((v) => v)
 
   const rows = useMemo(() => {
-    const withRank = ranked.map((result, i) => ({ result, rank: i + 1 }))
+    const withRank: RankRow[] = prefs.groupByModel ? groupByModel(ranked) : ranked.map((result, i) => ({ result, rank: i + 1 }))
     return withRank.sort((a, b) => {
       const va = sortValue(a.result, sort.key, horizon, a.rank)
       const vb = sortValue(b.result, sort.key, horizon, b.rank)
       const c = typeof va === 'string' ? va.localeCompare(String(vb), 'pt-BR') : va - (vb as number)
       return c * sort.dir
     })
-  }, [ranked, sort, horizon])
+  }, [ranked, sort, horizon, prefs.groupByModel])
 
   // Na primeira visita, compara as 4 melhores opções; depois a escolha do usuário é mantida.
   useEffect(() => {
@@ -286,6 +308,12 @@ export default function App() {
               onHorizon={(v) => setPrefs({ ...prefs, rankHorizon: v })}
               assumptions={assumptions}
               car={car}
+              maxCompare={MAX_COMPARE}
+              onCompare={(ids) => {
+                setCompare(ids)
+                window.location.hash = '#/'
+                setTimeout(() => document.getElementById('sec-compare')?.scrollIntoView({ behavior: 'smooth' }), 80)
+              }}
             />
             </ErrorBoundary>
           </main>

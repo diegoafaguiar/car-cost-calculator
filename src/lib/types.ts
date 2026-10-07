@@ -199,6 +199,11 @@ export interface Preferences {
   maxMonthly: number
   minSeats: number
   minPrice: number
+  /** Ano-modelo mínimo e máximo das opções (0 = sem limite). */
+  minModelYear: number
+  maxModelYear: number
+  /** Ranking com uma linha por modelo (melhor ano), com os demais anos agrupados. */
+  groupByModel: boolean
   search: string
   /** Marcas a mostrar; vazio = todas. */
   brands: string[]
@@ -291,4 +296,11 @@ export interface ScenarioResult {
   finance: { rateMonth: number; months: number; downPaymentPct: number; ruleId?: string }
   /** Mês a partir do qual a opção passa a ser mais barata que manter (até 60). */
   breakEvenMonth: number | null
+}
+
+/** Linha do ranking. Com "um por modelo", `others` traz os demais anos do mesmo modelo, do melhor para o pior. */
+export interface RankRow {
+  result: ScenarioResult
+  rank: number
+  others?: ScenarioResult[]
 }

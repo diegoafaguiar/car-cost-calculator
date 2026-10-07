@@ -7,7 +7,7 @@ import type { Assumptions, Consumption, CurrentCar, Horizon, ScenarioResult } fr
 import { HORIZONS } from '../lib/types'
 import { BreakdownBars } from './BreakdownBars'
 import { MarketListings } from './MarketListings'
-import { Badge, Card, Segmented } from './ui'
+import { Badge, Button, Card, Segmented } from './ui'
 import { WikiImage } from './WikiImage'
 import { comfortScore, featuresFor, safetyScore, techScore } from '../lib/scores'
 import { ScoreBadge } from './ScoreBadge'
@@ -21,12 +21,15 @@ interface Props {
   onHorizon: (h: Horizon) => void
   assumptions: Assumptions
   car: CurrentCar
+  /** Coloca estes cenários no comparador e volta ao painel. */
+  onCompare?: (ids: string[]) => void
+  maxCompare?: number
 }
 
 const yearsLabel = (h: number) => `${h} ${h === 1 ? 'ano' : 'anos'}`
 
 /** Página de detalhes de um modelo: ficha pesquisada (com fontes) + análise comparativa calculada. */
-export function ModelPage({ modelId, results, ranked, keep, horizon, onHorizon, assumptions: a, car }: Props) {
+export function ModelPage({ modelId, results, ranked, keep, horizon, onHorizon, assumptions: a, car, onCompare, maxCompare = 5 }: Props) {
   const model = CATALOG.find((m) => m.id === modelId)
   if (!model) {
     return (
@@ -113,6 +116,28 @@ export function ModelPage({ modelId, results, ranked, keep, horizon, onHorizon, 
           />
         }
       >
+        {onCompare && options.length > 1 && (
+          <div className="mb-3 flex flex-wrap items-center justify-between gap-2 rounded-lg bg-surface-2 px-3 py-2 text-sm">
+            <span className="text-ink-2">
+              O ano muda preço, depreciação, consumo e equipamentos. Compare os anos deste modelo no comparador, com gráfico e vencedor por linha.
+              {options.length > maxCompare && ` Vão os ${maxCompare} mais baratos no horizonte.`}
+            </span>
+            <Button
+              variant="primary"
+              onClick={() =>
+                onCompare(
+                  [...options]
+                    .sort((x, y) => x.horizons[horizon].total - y.horizons[horizon].total)
+                    .slice(0, maxCompare)
+                    .sort((x, y) => x.scenario.ageAtStart - y.scenario.ageAtStart)
+                    .map((o) => o.scenario.id),
+                )
+              }
+            >
+              Comparar anos lado a lado
+            </Button>
+          </div>
+        )}
         <div className="overflow-x-auto rounded-lg border border-line">
           <table className="w-full min-w-[760px] text-sm">
             <thead className="bg-surface-2 text-xs text-ink-2">

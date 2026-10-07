@@ -110,6 +110,29 @@ export function FilterBar({ prefs, onPrefs, carCategory, onlySavings, onOnlySavi
           <p className="mt-1 text-xs text-muted">0 = sem limite. Assinaturas não entram no filtro de preço.</p>
         </div>
 
+        <div className="lg:col-span-2">
+          <span className="mb-1.5 block text-xs font-medium text-ink-2">Ano-modelo</span>
+          <div className="flex flex-wrap items-center gap-2">
+            <div className="grid w-full max-w-xs grid-cols-2 gap-2">
+              <NumberField label="" prefix="De" value={prefs.minModelYear ?? 0} onChange={(v) => set({ minModelYear: Math.round(v) })} />
+              <NumberField label="" prefix="Até" value={prefs.maxModelYear ?? 0} onChange={(v) => set({ maxModelYear: Math.round(v) })} />
+            </div>
+            {[2022, 2023, 2024, 2025].map((y) => (
+              <Chip key={y} active={prefs.minModelYear === y && !prefs.maxModelYear} onClick={() => set({ minModelYear: y, maxModelYear: 0 })}>
+                {y} ou mais novo
+              </Chip>
+            ))}
+            <Chip active={!prefs.minModelYear && !prefs.maxModelYear} onClick={() => set({ minModelYear: 0, maxModelYear: 0 })}>
+              Qualquer ano
+            </Chip>
+            <span className="mx-1 hidden h-5 w-px bg-line sm:block" aria-hidden />
+            <Chip active={!!prefs.groupByModel} onClick={() => set({ groupByModel: !prefs.groupByModel })}>
+              Um por modelo (agrupar anos)
+            </Chip>
+          </div>
+          <p className="mt-1 text-xs text-muted">0 km conta como {new Date().getFullYear()}. O ano muda preço, consumo e equipamentos — compare anos na ficha de cada modelo.</p>
+        </div>
+
       </div>
 
       <div className="mt-4 border-t border-line pt-4">
