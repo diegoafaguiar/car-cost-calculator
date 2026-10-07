@@ -12,12 +12,13 @@ interface Props {
   score: (r: ScenarioResult, h: Horizon) => number
   onEdit: () => void
   onOpen: (id: string) => void
+  includeOpportunity: boolean
 }
 
 const TERM: Record<Horizon, string> = { 1: 'Curto prazo', 3: 'Médio prazo', 5: 'Longo prazo' }
 
 /** Topo do painel: o seu carro, quanto ele custa de verdade e o veredito por horizonte. */
-export function CarHero({ car, keep, ranked, horizon, score, onEdit, onOpen }: Props) {
+export function CarHero({ car, keep, ranked, horizon, score, onEdit, onOpen, includeOpportunity }: Props) {
   const h = keep.horizons[horizon]
   const position = ranked.findIndex((r) => r.scenario.kind === 'keep') + 1
   const s = keep.scenario
@@ -61,8 +62,8 @@ export function CarHero({ car, keep, ranked, horizon, score, onEdit, onOpen }: P
             </div>
           </dl>
           <p className="mt-3 text-xs text-muted">
-            Custo real inclui depreciação, combustível, seguro, IPVA, manutenção e o rendimento que o dinheiro do carro
-            teria aplicado.
+            Custo real inclui depreciação, combustível, seguro, IPVA e manutenção
+            {includeOpportunity ? ', além do rendimento que o dinheiro do carro teria aplicado.' : '. Custo de oportunidade desligado.'}
             {position > 0 && ` Manter está em ${position}º de ${ranked.length} no ranking atual.`}
           </p>
         </div>

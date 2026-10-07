@@ -1,6 +1,6 @@
 import { CATALOG, CATEGORY_LABEL } from '../lib/catalog'
 import type { Assumptions, FinanceRule, PaymentMode, Preferences } from '../lib/types'
-import { Button, ChipGroup, Collapsible, NumberField, SelectField, TextField } from './ui'
+import { Button, ChipGroup, Collapsible, NumberField, SelectField, Switch, TextField } from './ui'
 
 interface Props {
   a: Assumptions
@@ -55,6 +55,14 @@ export function AssumptionsForm({ a, onChange, prefs, onPrefs, token, onToken }:
       </Collapsible>
 
       <Collapsible title="Economia e impostos" hint={`Rendimento ${(a.investReturnYear * 100).toFixed(1)}% · IPCA ${(a.inflationYear * 100).toFixed(1)}%`}>
+        <div className="mb-3">
+          <Switch
+            checked={a.includeOpportunity !== false}
+            onChange={(v) => set('includeOpportunity', v)}
+            label="Incluir custo de oportunidade"
+            hint="Rendimento que o dinheiro do carro (e dos gastos) teria se ficasse aplicado"
+          />
+        </div>
         <div className="grid grid-cols-2 gap-3">
           <NumberField label="Rendimento líquido" suffix="% a.a." scale={100} step={0.1} value={a.investReturnYear} onChange={(v) => set('investReturnYear', v)} hint="Custo de oportunidade" />
           <NumberField label="Inflação" suffix="% a.a." scale={100} step={0.1} value={a.inflationYear} onChange={(v) => set('inflationYear', v)} />

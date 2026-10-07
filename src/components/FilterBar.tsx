@@ -4,7 +4,7 @@ import { normalize } from '../lib/format'
 import type { Category, Horizon, Powertrain, Preferences, ScenarioKind } from '../lib/types'
 import { HORIZONS } from '../lib/types'
 import { KIND_LABEL } from './RankingTable'
-import { Chip, ChipGroup, NumberField, Segmented } from './ui'
+import { Chip, ChipGroup, NumberField, Segmented, Switch } from './ui'
 
 const BRANDS = [...new Set(CATALOG.map((m) => m.brand))].sort((a, b) => a.localeCompare(b, 'pt-BR'))
 
@@ -16,12 +16,15 @@ interface Props {
   onOnlySavings: (v: boolean) => void
   resultCount: number
   onAddCustom: (query: string) => void
+  includeOpportunity: boolean
+  onIncludeOpportunity: (v: boolean) => void
+  investReturn: number
 }
 
 const labels = (cats: Category[]) => cats.map((c) => CATEGORY_LABEL[c]).join(' e ')
 
 /** Filtros principais sempre à vista; os demais ficam em "Mais filtros". */
-export function FilterBar({ prefs, onPrefs, carCategory, onlySavings, onOnlySavings, resultCount, onAddCustom }: Props) {
+export function FilterBar({ prefs, onPrefs, carCategory, onlySavings, onOnlySavings, resultCount, onAddCustom, includeOpportunity, onIncludeOpportunity, investReturn }: Props) {
   const [open, setOpen] = useState(false)
   const [focused, setFocused] = useState(false)
   const set = (p: Partial<Preferences>) => onPrefs({ ...prefs, ...p })
@@ -119,6 +122,14 @@ export function FilterBar({ prefs, onPrefs, carCategory, onlySavings, onOnlySavi
             options={HORIZONS.map((y) => ({ value: y, label: `${y} ${y === 1 ? 'ano' : 'anos'}` }))}
             onChange={(v) => set({ rankHorizon: v })}
           />
+          <div className="mt-3">
+            <Switch
+              checked={includeOpportunity}
+              onChange={onIncludeOpportunity}
+              label="Custo de oportunidade"
+              hint={includeOpportunity ? `Considera ${(investReturn * 100).toFixed(1)}% a.a. que o dinheiro renderia` : 'Desligado: só gastos e depreciação'}
+            />
+          </div>
         </div>
       </div>
 

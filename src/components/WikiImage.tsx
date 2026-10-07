@@ -31,16 +31,56 @@ function fetchSummary(lang: string, title: string) {
   return cache.get(key)!
 }
 
+const searchCache = new Map<string, Promise<Summary | null>>()
+
+/** Plano B: busca o artigo mais relevante na Wikipédia em inglês e usa a imagem principal dele. */
+function searchImage(query: string) {
+  if (!searchCache.has(query)) {
+    const url =
+      'https://en.wikipedia.org/w/api.php?action=query&format=json&origin=*&generator=search&gsrlimit=1' +
+      `&gsrsearch=${encodeURIComponent(query)}&prop=pageimages|info&piprop=original|thumbnail&pithumbsize=900&inprop=url`
+    searchCache.set(
+      query,
+      fetch(url)
+        .then((r) => (r.ok ? r.json() : null))
+        .then((d) => {
+          const page = d?.query?.pages ? (Object.values(d.query.pages)[0] as Record<string, any>) : null
+          if (!page) return null
+          const image = page.original?.source ?? page.thumbnail?.source
+          return image ? { title: page.title as string, image, page: page.fullurl as string } : null
+        })
+        .catch(() => null),
+    )
+  }
+  return searchCache.get(query)!
+}
+
 /** Foto do artigo da Wikipédia (Wikimedia Commons), sempre com crédito e aviso de imagem ilustrativa. */
-export function WikiImage({ lang, title, alt, compact }: { lang: string; title: string; alt: string; compact?: boolean }) {
+export function WikiImage({
+  lang,
+  title,
+  alt,
+  compact,
+  fallbackQuery,
+}: {
+  lang?: string
+  title?: string
+  alt: string
+  compact?: boolean
+  /** Busca usada quando o artigo não existe ou não tem foto (ex.: "BYD Song Pro"). */
+  fallbackQuery?: string
+}) {
   const [data, setData] = useState<Summary | null | undefined>(undefined)
   useEffect(() => {
     let alive = true
-    fetchSummary(lang, title).then((d) => alive && setData(d))
+    const first = lang && title ? fetchSummary(lang, title) : Promise.resolve(null)
+    first
+      .then((d) => (d?.image || !fallbackQuery ? d : searchImage(fallbackQuery)))
+      .then((d) => alive && setData(d))
     return () => {
       alive = false
     }
-  }, [lang, title])
+  }, [lang, title, fallbackQuery])
 
   const box = compact ? 'aspect-[16/10] rounded-lg' : 'aspect-[16/9] rounded-xl'
   if (data === undefined) return <div className={`${box} w-full animate-pulse bg-surface-2`} />

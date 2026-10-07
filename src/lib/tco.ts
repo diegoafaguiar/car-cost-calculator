@@ -215,6 +215,8 @@ export function simulate(s: Scenario, ctx: SimContext): Omit<ScenarioResult, 'br
   const a = ctx.assumptions
   const car = ctx.car
   const rm = monthlyRate(a.investReturnYear)
+  // Sem custo de oportunidade, o dinheiro não rende no cálculo do custo (a decisão de financiar continua usando o rendimento).
+  const rmCost = a.includeOpportunity === false ? 0 : rm
   const sale = 1 - a.saleDiscountPct
   const kmMonth = a.kmPerYear / 12
   const curValue = currentCarValue(car)
@@ -328,9 +330,9 @@ export function simulate(s: Scenario, ctx: SimContext): Omit<ScenarioResult, 'br
     sums.interest += interest
     out += paid
 
-    cash = (cash - out) * (1 + rm)
+    cash = (cash - out) * (1 + rmCost)
     const netWorth = cash + resaleAt(m + 1) - loan.balance
-    const cost = w0 * Math.pow(1 + rm, m + 1) - netWorth
+    const cost = w0 * Math.pow(1 + rmCost, m + 1) - netWorth
     cumulative.push(cost)
 
     const month = m + 1

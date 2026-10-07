@@ -143,6 +143,8 @@ export interface Assumptions {
   kwhPrice: number
   /** Fração dos km rodada no modo elétrico pelos híbridos plug-in (depende de recarregar em casa). */
   phevElectricShare: number
+  /** Considera o rendimento perdido do dinheiro empatado no carro (custo de oportunidade). */
+  includeOpportunity: boolean
   /** Rendimento líquido anual do dinheiro parado (custo de oportunidade). */
   investReturnYear: number
   inflationYear: number

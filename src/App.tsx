@@ -1,6 +1,7 @@
 import { useEffect, useMemo, useRef, useState } from 'react'
 import { BreakdownBars } from './components/BreakdownBars'
 import { CarHero } from './components/CarHero'
+import { Comparator } from './components/Comparator'
 import { CustomCarDialog } from './components/CustomCarDialog'
 import { CostChart, type Series } from './components/CostChart'
 import { DetailDrawer } from './components/DetailDrawer'
@@ -62,7 +63,7 @@ function useHashRoute() {
   useEffect(() => {
     const on = () => {
       setHash(window.location.hash)
-      window.scrollTo(0, 0)
+      if (window.location.hash.startsWith('#/')) window.scrollTo(0, 0)
     }
     window.addEventListener('hashchange', on)
     return () => window.removeEventListener('hashchange', on)
@@ -266,6 +267,8 @@ export default function App() {
           </main>
         ) : (
           <main className="space-y-6">
+            <SectionNav />
+
             {!hasValue && (
               <div className="flex flex-wrap items-center justify-between gap-3 rounded-2xl border border-line bg-warn-soft p-4 text-sm">
                 Informe o valor do seu carro (busque na FIPE ou preencha manualmente) para comparar as opções.
@@ -276,6 +279,7 @@ export default function App() {
             )}
 
             {keep && (
+              <section id="sec-summary" className="scroll-mt-32">
               <CarHero
                 car={car}
                 keep={keep}
@@ -284,9 +288,12 @@ export default function App() {
                 score={score}
                 onEdit={() => setSettings('car')}
                 onOpen={setOpenId}
+                includeOpportunity={assumptions.includeOpportunity !== false}
               />
+              </section>
             )}
 
+            <section id="sec-filters" className="scroll-mt-32">
             <FilterBar
               prefs={prefs}
               onPrefs={setPrefs}
@@ -295,11 +302,34 @@ export default function App() {
               onOnlySavings={setOnlySavings}
               resultCount={ranked.length}
               onAddCustom={(q) => setAdding(q)}
+              includeOpportunity={assumptions.includeOpportunity !== false}
+              onIncludeOpportunity={(v) => setAssumptions({ ...assumptions, includeOpportunity: v })}
+              investReturn={assumptions.investReturnYear}
             />
+            </section>
 
-            <TopModels ranked={ranked} horizon={horizon} />
+            <section id="sec-top" className="scroll-mt-32">
+              <TopModels ranked={ranked} horizon={horizon} compare={compare} onToggleCompare={toggleCompare} max={MAX_COMPARE} />
+            </section>
 
-            <div className="grid grid-cols-1 gap-6 xl:grid-cols-[minmax(0,1.6fr)_minmax(0,1fr)]">
+            <section id="sec-compare" className="scroll-mt-32">
+              <Comparator
+                keep={keep}
+                results={results}
+                ranked={ranked}
+                compare={compare}
+                colors={colors}
+                max={MAX_COMPARE}
+                onToggle={toggleCompare}
+                horizon={horizon}
+                onHorizon={(v) => setPrefs({ ...prefs, rankHorizon: v })}
+                assumptions={assumptions}
+                onOpen={setOpenId}
+                carModelId={car.catalogModelId}
+              />
+            </section>
+
+            <div id="sec-chart" className="grid scroll-mt-32 grid-cols-1 gap-6 xl:grid-cols-[minmax(0,1.6fr)_minmax(0,1fr)]">
               <Card className="min-w-0" title="Custo acumulado" subtitle="Perda de patrimônio mês a mês, já descontando a revenda">
                 <CostChart series={series} />
               </Card>
@@ -314,6 +344,7 @@ export default function App() {
               )}
             </div>
 
+            <section id="sec-ranking" className="scroll-mt-32">
             <Card
               title="Ranking completo"
               subtitle={`Ordenado pelo ${prefs.rankBy === 'ajustado' && hasPreference ? 'custo ajustado à sua preferência' : 'custo total'} em ${horizon} ${horizon === 1 ? 'ano' : 'anos'}. Clique numa linha para ver o detalhe.`}
@@ -348,6 +379,7 @@ export default function App() {
                 showAdjusted={hasPreference}
               />
             </Card>
+            </section>
 
             <Methodology inflation={assumptions.inflationYear} />
           </main>
@@ -401,9 +433,41 @@ export default function App() {
             })
           }
           onClose={() => setOpenId(null)}
+          inCompare={compare.includes(open.scenario.id)}
+          onToggleCompare={() => toggleCompare(open.scenario.id)}
         />
       )}
     </div>
+  )
+}
+
+const SECTIONS = [
+  ['sec-summary', 'Resumo'],
+  ['sec-filters', 'Filtros'],
+  ['sec-top', 'Top 10'],
+  ['sec-compare', 'Comparar'],
+  ['sec-chart', 'Evolução do custo'],
+  ['sec-ranking', 'Ranking'],
+] as const
+
+/** Atalhos para as seções do painel. */
+function SectionNav() {
+  return (
+    <nav aria-label="Seções" className="sticky top-14 z-20 -mx-4 -mt-6 border-b border-line bg-page/90 px-4 backdrop-blur sm:-mx-6 sm:px-6 lg:-mt-8">
+      <ul className="flex gap-1 overflow-x-auto py-2 text-sm">
+        {SECTIONS.map(([id, label]) => (
+          <li key={id}>
+            <button
+              type="button"
+              onClick={() => document.getElementById(id)?.scrollIntoView({ behavior: 'smooth', block: 'start' })}
+              className="rounded-lg px-3 py-1.5 font-medium whitespace-nowrap text-ink-2 hover:bg-surface hover:text-ink"
+            >
+              {label}
+            </button>
+          </li>
+        ))}
+      </ul>
+    </nav>
   )
 }
 

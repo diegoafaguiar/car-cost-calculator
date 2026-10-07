@@ -91,6 +91,17 @@ describe('simulate', () => {
     )
   })
 
+  it('sem custo de oportunidade, o componente fica zerado', () => {
+    const ra = { ...a, investReturnYear: 0.1, includeOpportunity: false }
+    const list = buildScenarios({ car, assumptions: ra, usedAges: [2], prices: {}, year: 2026 })
+    for (const s of list.slice(0, 5)) {
+      const r = simulate(s, { ...ctx, assumptions: ra })
+      expect(Math.abs(r.horizons[3].breakdown.opportunity)).toBeLessThan(1)
+    }
+    const withOpp = simulate(list[0], { ...ctx, assumptions: { ...ra, includeOpportunity: true } })
+    expect(withOpp.horizons[3].breakdown.opportunity).toBeGreaterThan(1000)
+  })
+
   it('separa IPVA de híbrido convencional e plug-in', () => {
     const ra = { ...a, ipvaRateHybrid: 0.04, ipvaRatePHEV: 0.015 }
     const list = buildScenarios({ car, assumptions: ra, usedAges: [], prices: {}, year: 2026 })

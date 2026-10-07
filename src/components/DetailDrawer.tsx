@@ -18,9 +18,11 @@ interface Props {
   override?: FipeOverride
   onOverride: (modelId: string, o: FipeOverride | undefined) => void
   onClose: () => void
+  inCompare?: boolean
+  onToggleCompare?: () => void
 }
 
-export function DetailDrawer({ result, keep, a, initialHorizon, override, onOverride, onClose }: Props) {
+export function DetailDrawer({ result, keep, a, initialHorizon, override, onOverride, onClose, inCompare, onToggleCompare }: Props) {
   const ref = useRef<HTMLDialogElement>(null)
   const [horizon, setHorizon] = useState<Horizon>(initialHorizon)
   const [picking, setPicking] = useState(false)
@@ -75,9 +77,16 @@ export function DetailDrawer({ result, keep, a, initialHorizon, override, onOver
           <h2 className="text-lg font-semibold">{s.label}</h2>
           <p className="text-sm text-ink-2">{s.detail}</p>
         </div>
-        <Button variant="ghost" onClick={() => ref.current?.close()}>
-          Fechar
-        </Button>
+        <div className="flex gap-2">
+          {onToggleCompare && s.kind !== 'keep' && (
+            <Button variant={inCompare ? 'secondary' : 'primary'} onClick={onToggleCompare}>
+              {inCompare ? '✓ Na comparação' : '+ Comparar'}
+            </Button>
+          )}
+          <Button variant="ghost" onClick={() => ref.current?.close()}>
+            Fechar
+          </Button>
+        </div>
       </div>
 
       <div className="space-y-6 p-4 sm:px-6">

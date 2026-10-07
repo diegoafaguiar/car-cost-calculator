@@ -55,13 +55,12 @@ export function ModelPage({ modelId, results, ranked, keep, horizon, onHorizon, 
 
       <div className="grid gap-6 lg:grid-cols-[1.1fr_1fr]">
         <div>
-          {info?.wikipedia ? (
-            <WikiImage lang={info.wikipedia.lang} title={info.wikipedia.title} alt={`${model.brand} ${model.model}`} />
-          ) : (
-            <div className="flex aspect-[16/9] items-center justify-center rounded-xl bg-surface-2 text-sm text-muted">
-              Sem imagem cadastrada
-            </div>
-          )}
+          <WikiImage
+            lang={info?.wikipedia?.lang}
+            title={info?.wikipedia?.title}
+            fallbackQuery={`${model.brand} ${model.model}`}
+            alt={`${model.brand} ${model.model}`}
+          />
           {info?.officialUrl && (
             <a href={info.officialUrl} target="_blank" rel="noreferrer" className="mt-2 inline-block text-sm text-accent underline">
               Fotos e versões no site oficial →
