@@ -1,0 +1,117 @@
+{
+  "id": "byd-dolphin-plus",
+  "researchedAt": "2026-10",
+  "displayName": "BYD Dolphin Plus",
+  "summary": "Versão topo do hatch elétrico Dolphin, com motor de 204 cv e 31,6 kgfm e bateria Blade de 60,5 kWh (330 km PBEV). Primeiro elétrico e primeiro carro chinês com 5 estrelas no Latin NCAP.",
+  "generation": "1ª geração, lançada no Brasil em set/2023.",
+  "timeline": [
+    {
+      "modelYear": "2024",
+      "change": "Lançamento (set/2023) com 204 cv e 60,5 kWh."
+    },
+    {
+      "modelYear": "2026",
+      "change": "Mantém o preço de R$ 184.800 da linha 2025."
+    }
+  ],
+  "highlights": [
+    "Latin NCAP 5 estrelas (2024): 92,6% adulto, 93,1% criança, 77% pedestre, 85% ADAS.",
+    "204 cv, 0-100 km/h em 7 s.",
+    "330 km PBEV; consumo PBEV de 0,51 MJ/km (≈ 7,1 km/kWh)."
+  ],
+  "watchOuts": [
+    "Diferença de R$ 24,8 mil para o novo Dolphin SE (177 cv), que tem visual mais novo.",
+    "Porta-malas de 345 L, igual ao GS.",
+    "Cortes de preço da BYD pressionam a revenda."
+  ],
+  "specs": {
+    "version": "Plus",
+    "engine": "motor elétrico dianteiro",
+    "powerCv": "204",
+    "torqueKgfm": "31,6",
+    "transmission": "redução fixa (1 marcha)",
+    "trunkL": 345,
+    "lengthMm": 4290,
+    "wheelbaseMm": 2700,
+    "safety": "Latin NCAP 5 estrelas (2024)",
+    "warranty": "6 anos sem limite de km para o veículo e 8 anos sem limite de km para a bateria (política BYD Brasil para pessoa física); uso comercial tem limites de km (ex.: Dolphin Mini 2027: 200 mil km veículo)."
+  },
+  "inmetro": {
+    "version": "Plus (0,51 MJ/km)",
+    "cityGas": null,
+    "roadGas": null,
+    "cityEth": null,
+    "roadEth": null,
+    "cityKmKWh": 7.06,
+    "roadKmKWh": 7.06,
+    "year": "PBEV 2024",
+    "source": "https://canalve.com.br/byd-dolphin-plus-tem-autonomia-divulgada-de-330-km-pelo-pbev",
+    "note": "3,6 ÷ 0,51 = 7,06 km/kWh (combinado, repetido)."
+  },
+  "price0km": {
+    "version": "Plus",
+    "price": 184800,
+    "date": "jul/2026",
+    "source": "https://www.vrum.com.br/mercado/2026/07/7460341-byd-dolphin-2026-qual-versao-vale-mais-a-pena-entre-mini-gs-se-e-plus.html"
+  },
+  "versionsAndPrices": [
+    {
+      "version": "Plus",
+      "price": 184800,
+      "date": "jul/2026",
+      "source": "https://www.vrum.com.br/mercado/2026/07/7460341-byd-dolphin-2026-qual-versao-vale-mais-a-pena-entre-mini-gs-se-e-plus.html"
+    }
+  ],
+  "launchModelYearBR": 2024,
+  "catalogCheck": "Não está no catálogo (o km/kWh hoje atribuído ao byd-dolphin parece ser deste modelo).",
+  "wikipedia": {
+    "lang": "en",
+    "title": "BYD Dolphin"
+  },
+  "officialUrl": null,
+  "sources": [
+    {
+      "label": "Vrum – família Dolphin",
+      "url": "https://www.vrum.com.br/mercado/2026/07/7460341-byd-dolphin-2026-qual-versao-vale-mais-a-pena-entre-mini-gs-se-e-plus.html"
+    },
+    {
+      "label": "Canal VE – PBEV 330 km",
+      "url": "https://canalve.com.br/byd-dolphin-plus-tem-autonomia-divulgada-de-330-km-pelo-pbev"
+    },
+    {
+      "label": "Canal VE – Latin NCAP",
+      "url": "https://canalve.com.br/byd-dolphin-plus-recebe-nota-maxima-em-teste-do-latin-ncap/"
+    },
+    {
+      "label": "car.blog.br – lançamento",
+      "url": "https://www.car.blog.br/2023/09/novo-byd-dolphin-plus-de-204-cv-cores.html"
+    }
+  ],
+  "unverified": [
+    "Fonte primária do 0,51 MJ/km (veio de resumo de busca)",
+    "Ano-modelo de estreia (2024)"
+  ],
+  "catalogSeed": {
+    "brand": "BYD",
+    "model": "Dolphin Plus",
+    "version": "Plus",
+    "category": "hatch",
+    "powertrain": "eletrico",
+    "seats": 5,
+    "trunkL": 345,
+    "refPriceNew": 184800,
+    "consumption": {
+      "cityKmL": null,
+      "roadKmL": null,
+      "cityKmLEthanol": null,
+      "roadKmLEthanol": null,
+      "cityKmKWh": 7.06,
+      "roadKmKWh": 7.06
+    },
+    "consumptionNote": "PBEV 0,51 MJ/km → 3,6 ÷ 0,51 = 7,06 km/kWh; só valor combinado, repetido.",
+    "fipeInclude": [
+      "Dolphin Plus"
+    ],
+    "since": 2024
+  }
+}

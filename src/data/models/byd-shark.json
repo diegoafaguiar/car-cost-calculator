@@ -1,0 +1,129 @@
+{
+  "id": "byd-shark",
+  "researchedAt": "2026-10",
+  "displayName": "BYD Shark",
+  "summary": "Picape média híbrida plug-in (Shark 6 em outros mercados), a primeira PHEV do Brasil. Motor 1.5 turbo a gasolina + dois motores elétricos (tração integral), 437 cv e 65 kgfm combinados, bateria Blade de 29,6 kWh. Versão única GS.",
+  "generation": "1ª geração, lançada no Brasil em out/2024 (R$ 379.800).",
+  "timeline": [
+    {
+      "modelYear": "2025",
+      "change": "Lançamento (out/2024) a R$ 379.800, lote inicial a R$ 339.800."
+    },
+    {
+      "modelYear": "2026",
+      "change": "Preço público reduzido para R$ 344.990; desde mar/2026 venda direta a CNPJ/produtor rural por ~R$ 313 mil."
+    },
+    {
+      "modelYear": "2027",
+      "change": "Preço sugerido mantido em R$ 344.990."
+    }
+  ],
+  "highlights": [
+    "437 cv e 65 kgfm combinados.",
+    "Caçamba de 1.200 L e carga de 790 kg.",
+    "57 km elétricos PBEV (100 km no ciclo NEDC)."
+  ],
+  "watchOuts": [
+    "Só com gasolina gasta muito: 9,5 km/l cidade e 7,7 km/l estrada (PBEV).",
+    "Vendas fracas levaram a cortes de até R$ 66 mil (Guru dos Carros).",
+    "Recall na Austrália (32.009 unidades, risco de o estepe se soltar, produção ago/2024–jun/2026) — conferir se se aplica ao Brasil.",
+    "Sem teste Latin NCAP."
+  ],
+  "specs": {
+    "version": "GS (única)",
+    "engine": "1.5 turbo a gasolina + 2 motores elétricos (DMO), tração integral",
+    "powerCv": "437 (combinada)",
+    "torqueKgfm": "65 (combinado)",
+    "transmission": "E-CVT (sistema híbrido DMO)",
+    "trunkL": 1200,
+    "lengthMm": 5457,
+    "wheelbaseMm": 3260,
+    "safety": null,
+    "warranty": "6 anos para o veículo e 8 anos para a bateria"
+  },
+  "inmetro": {
+    "version": "GS",
+    "cityGas": 9.5,
+    "roadGas": 7.7,
+    "cityEth": null,
+    "roadEth": null,
+    "cityKmKWh": 1.93,
+    "roadKmKWh": 1.93,
+    "year": "PBEV 2025",
+    "source": "https://garagem360.com.br/qual-o-consumo-da-byd-shark",
+    "note": "Gasolina = consumo com bateria em baixa carga. Modo híbrido: 24,6/19,9 km/l. km/kWh ESTIMADO: 57 km PBEV ÷ 29,6 kWh = 1,93."
+  },
+  "price0km": {
+    "version": "GS",
+    "price": 344990,
+    "date": "2026",
+    "source": "https://gurudoscarros.com.br/2026/04/29/byd-ja-reduziu-em-ate-r-66-mil-preco-da-shark-no-brasil-apos-vendas-discretas/"
+  },
+  "versionsAndPrices": [
+    {
+      "version": "GS (única)",
+      "price": 344990,
+      "date": "2026",
+      "source": "https://gurudoscarros.com.br/2026/04/29/byd-ja-reduziu-em-ate-r-66-mil-preco-da-shark-no-brasil-apos-vendas-discretas/"
+    },
+    {
+      "version": "GS – lançamento",
+      "price": 379800,
+      "date": "out/2024",
+      "source": "https://motorshow.com.br/nova-byd-shark-saiba-preco-detalhes-e-ficha-tecnica-da-1a-picape-hibrida-plug-in-do-brasil"
+    }
+  ],
+  "launchModelYearBR": 2025,
+  "catalogCheck": "Não está no catálogo. trunkL = volume da caçamba.",
+  "wikipedia": {
+    "lang": "en",
+    "title": "BYD Shark 6"
+  },
+  "officialUrl": null,
+  "sources": [
+    {
+      "label": "Guru dos Carros – cortes de preço",
+      "url": "https://gurudoscarros.com.br/2026/04/29/byd-ja-reduziu-em-ate-r-66-mil-preco-da-shark-no-brasil-apos-vendas-discretas/"
+    },
+    {
+      "label": "Garagem360 – consumo",
+      "url": "https://garagem360.com.br/qual-o-consumo-da-byd-shark"
+    },
+    {
+      "label": "Motor Show – lançamento",
+      "url": "https://motorshow.com.br/nova-byd-shark-saiba-preco-detalhes-e-ficha-tecnica-da-1a-picape-hibrida-plug-in-do-brasil"
+    },
+    {
+      "label": "AutoPapo – recall estepe (Austrália)",
+      "url": "https://autopapo.com.br/curta/risco-no-estepe-da-byd-shark-leva-a-recall-de-32-000-unidades/"
+    }
+  ],
+  "unverified": [
+    "km/kWh elétrico oficial",
+    "Se o recall do estepe abrange unidades brasileiras",
+    "Ano-modelo de estreia (2025)"
+  ],
+  "catalogSeed": {
+    "brand": "BYD",
+    "model": "Shark",
+    "version": "GS",
+    "category": "picape",
+    "powertrain": "hibrido-plugin",
+    "seats": 5,
+    "trunkL": 1200,
+    "refPriceNew": 344990,
+    "consumption": {
+      "cityKmL": 9.5,
+      "roadKmL": 7.7,
+      "cityKmLEthanol": null,
+      "roadKmLEthanol": null,
+      "cityKmKWh": 1.93,
+      "roadKmKWh": 1.93
+    },
+    "consumptionNote": "Gasolina = PBEV com bateria descarregada. km/kWh ESTIMADO: 57 km PBEV ÷ 29,6 kWh = 1,93. trunkL = caçamba.",
+    "fipeInclude": [
+      "Shark"
+    ],
+    "since": 2025
+  }
+}

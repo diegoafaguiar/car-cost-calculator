@@ -1,0 +1,145 @@
+{
+  "id": "byd-dolphin-mini",
+  "researchedAt": "2026-10",
+  "displayName": "BYD Dolphin Mini",
+  "summary": "Hatch subcompacto 100% elétrico (Seagull na China, Dolphin Surf na Europa), o BYD mais barato e o elétrico mais vendido do Brasil. Motor dianteiro de 75 cv e 13,8 kgfm. Desde a montagem em Camaçari (BA) é oferecido em GL (bateria de 30,08 kWh, 224 km PBEV) e GS (38 kWh, 280 km PBEV).",
+  "generation": "1ª geração, lançada no Brasil em 28/02/2024 (R$ 115.800); hoje montada em Camaçari (BA).",
+  "timeline": [
+    {
+      "modelYear": "2024",
+      "change": "Lançamento em fev/2024 por R$ 115.800; 75 cv, bateria Blade de 38 kWh; inicialmente 4 lugares, versão 5 lugares em lote seguinte."
+    },
+    {
+      "modelYear": "2026",
+      "change": "Linha 2026 com preço reduzido para R$ 119.990 (GS)."
+    },
+    {
+      "modelYear": "2027",
+      "change": "Montagem em Camaçari; nova versão de entrada GL (30,08 kWh, 224 km) por R$ 118.990 e GS (38 kWh, 280 km) por R$ 119.990; promoção oficial do GL a R$ 109.990 até 30/09/2026."
+    }
+  ],
+  "highlights": [
+    "Consumo PBEV de 0,41 MJ/km no GS (0,39 no GL) — entre os elétricos mais eficientes do país (≈ 8,8 km/kWh).",
+    "Autonomia PBEV de 280 km (GS) com bateria Blade LFP de 38 kWh.",
+    "5 estrelas no Euro NCAP 2025 como Dolphin Surf (82% adulto, 86% criança).",
+    "GS 2027 custa R$ 10 abaixo do teto de R$ 120 mil para isenção de ICMS PcD (JK Carros)."
+  ],
+  "watchOuts": [
+    "Desempenho modesto: 0-100 km/h em 14,9 s e máxima de 130 km/h.",
+    "Porta-malas pequeno (230 L).",
+    "Imprensa (A Revista) relata que a linha 2027 reduziu o limite de km da garantia para uso comercial.",
+    "Promoções e cortes frequentes de preço pela própria BYD pressionam o valor de revenda.",
+    "Recall de módulo ABS envolvendo Dolphin Mini 2023-2025 citado por site de consulta (consultadeplaca.net) — não confirmado em fonte primária."
+  ],
+  "specs": {
+    "version": "GS 2027",
+    "engine": "motor elétrico dianteiro",
+    "powerCv": "75",
+    "torqueKgfm": "13,8",
+    "transmission": "redução fixa (1 marcha)",
+    "trunkL": 230,
+    "lengthMm": 3780,
+    "wheelbaseMm": 2500,
+    "safety": "Sem teste Latin NCAP; 5 estrelas Euro NCAP 2025 (como Dolphin Surf)",
+    "warranty": "6 anos sem limite de km para o veículo e 8 anos sem limite de km para a bateria (política BYD Brasil para pessoa física); uso comercial tem limites de km (ex.: Dolphin Mini 2027: 200 mil km veículo)."
+  },
+  "inmetro": {
+    "version": "GS (0,41 MJ/km; GL 0,39 MJ/km)",
+    "cityGas": null,
+    "roadGas": null,
+    "cityEth": null,
+    "roadEth": null,
+    "cityKmKWh": 8.78,
+    "roadKmKWh": 8.78,
+    "year": "PBEV 2026",
+    "source": "https://www.mercadolivre.com.br/blog/mo-consumo-byd-dolphin-mini-2026-consumo-autonomia-e-desempenho-por-versao",
+    "note": "3,6 ÷ 0,41 = 8,78 km/kWh (valor combinado PBEV repetido em cidade e estrada). Pela autonomia ÷ bateria (280 km ÷ 38 kWh) daria ~7,4 km/kWh."
+  },
+  "price0km": {
+    "version": "GS 2027",
+    "price": 119990,
+    "date": "set/2026",
+    "source": "https://arevista.com.br/mercados/byd-dolphin-mini-gs-2027-custa-r-119-990-tem-280-km-de-autonomia-75-cv-e-bateria-blade/"
+  },
+  "versionsAndPrices": [
+    {
+      "version": "GL 2027",
+      "price": 118990,
+      "date": "set/2026",
+      "source": "https://www.terra.com.br/mobilidade/carros/byd-dolphin-mini-2027-parte-de-r-118990-veja-diferencas-entre-versoes,ffcaf04ff583cc8476fa9302b2ee456cwn0m9ba8.html"
+    },
+    {
+      "version": "GS 2027",
+      "price": 119990,
+      "date": "set/2026",
+      "source": "https://arevista.com.br/mercados/byd-dolphin-mini-gs-2027-custa-r-119-990-tem-280-km-de-autonomia-75-cv-e-bateria-blade/"
+    },
+    {
+      "version": "GL 2027 (promoção até 30/09/2026)",
+      "price": 109990,
+      "date": "set/2026",
+      "source": "https://www.mixvale.com.br/2026/09/25/byd-dolphin-mini-2027-mantem-duas-versoes-e-entra-em-promocao-por-r-109-990/"
+    }
+  ],
+  "launchModelYearBR": 2024,
+  "catalogCheck": "Preço (R$ 119.990) e porta-malas (230 L) corretos; versão GS ainda existe (agora há também a GL de R$ 118.990). Consumo do catálogo (7,8/6,6 km/kWh) não bate com o PBEV: 0,41 MJ/km = 8,78 km/kWh combinado (PBEV dá só valor combinado).",
+  "wikipedia": {
+    "lang": "en",
+    "title": "BYD Seagull"
+  },
+  "officialUrl": "https://www.byd.com/br/car/dolphin-mini",
+  "sources": [
+    {
+      "label": "A Revista – GS 2027",
+      "url": "https://arevista.com.br/mercados/byd-dolphin-mini-gs-2027-custa-r-119-990-tem-280-km-de-autonomia-75-cv-e-bateria-blade/"
+    },
+    {
+      "label": "Terra – Dolphin Mini 2027",
+      "url": "https://www.terra.com.br/mobilidade/carros/byd-dolphin-mini-2027-parte-de-r-118990-veja-diferencas-entre-versoes,ffcaf04ff583cc8476fa9302b2ee456cwn0m9ba8.html"
+    },
+    {
+      "label": "Mercado Livre – consumo",
+      "url": "https://www.mercadolivre.com.br/blog/mo-consumo-byd-dolphin-mini-2026-consumo-autonomia-e-desempenho-por-versao"
+    },
+    {
+      "label": "Canal VE – lançamento",
+      "url": "https://canalve.com.br/por-r-115-800-byd-dolphin-mini-e-lancado-oficialmente-em-sp/"
+    },
+    {
+      "label": "Vrum – Euro NCAP",
+      "url": "https://www.vrum.com.br/aceleradas/2025/09/7244983-byd-dolphin-mini-obtem-nota-maxima-em-teste-de-seguranca.html"
+    },
+    {
+      "label": "Mix Vale – promoção",
+      "url": "https://www.mixvale.com.br/2026/09/25/byd-dolphin-mini-2027-mantem-duas-versoes-e-entra-em-promocao-por-r-109-990/"
+    }
+  ],
+  "unverified": [
+    "Valores PBEV separados cidade/estrada em km/kWh",
+    "Detalhe exato da redução de garantia na linha 2027",
+    "Recall de ABS no Brasil"
+  ],
+  "catalogSeed": {
+    "brand": "BYD",
+    "model": "Dolphin Mini",
+    "version": "GS",
+    "category": "hatch-compacto",
+    "powertrain": "eletrico",
+    "seats": 5,
+    "trunkL": 230,
+    "refPriceNew": 119990,
+    "consumption": {
+      "cityKmL": null,
+      "roadKmL": null,
+      "cityKmLEthanol": null,
+      "roadKmLEthanol": null,
+      "cityKmKWh": 8.78,
+      "roadKmKWh": 8.78
+    },
+    "consumptionNote": "PBEV 0,41 MJ/km → 3,6 ÷ 0,41 = 8,78 km/kWh; PBEV só dá valor combinado, repetido em cidade e estrada.",
+    "fipeInclude": [
+      "Dolphin Mini GS"
+    ],
+    "since": 2024
+  }
+}

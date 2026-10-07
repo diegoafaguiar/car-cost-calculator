@@ -104,6 +104,7 @@ export default function App() {
       if (s.kind === 'keep') return true
       if (!prefs.categories.includes(s.category)) return false
       if (!prefs.powertrains.includes(s.powertrain)) return false
+      if (prefs.brands?.length && s.kind !== 'subscription' && !prefs.brands.includes(s.brand ?? '')) return false
       if (prefs.maxPrice > 0 && s.price > prefs.maxPrice) return false
       if (prefs.maxMonthly > 0 && r.horizons[horizon].monthly > prefs.maxMonthly) return false
       if (prefs.minSeats > 0 && (s.seats ?? 5) < prefs.minSeats) return false

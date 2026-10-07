@@ -1,0 +1,138 @@
+{
+  "id": "byd-king",
+  "researchedAt": "2026-10",
+  "displayName": "BYD King",
+  "summary": "Sedã médio híbrido plug-in (Destroyer 05 / Qin Plus DM-i na China), importado, rival do Corolla. Motor 1.5 aspirado a gasolina + motor elétrico (sistema DM-i), câmbio de 1 marcha. GL com bateria de 8,3 kWh (209 cv) e GS com 18,3 kWh (235 cv, ~80 km elétricos PBEV).",
+  "generation": "1ª geração, lançada no Brasil em jun/2024; nova geração com visual de Seal e motor flex prevista para produção em Camaçari, sem data.",
+  "timeline": [
+    {
+      "modelYear": "2025",
+      "change": "Lançamento (jun/2024): GL R$ 175.800 e GS R$ 187.800."
+    },
+    {
+      "modelYear": "2026",
+      "change": "Linha 2026 (jul/2025) com cortes: GL R$ 169.990 e GS R$ 175.990; novos itens."
+    },
+    {
+      "modelYear": "2027",
+      "change": "GL R$ 172.990 e GS R$ 175.990 (A Revista/JK Carros, 2026). Promoções pontuais levaram o GS a R$ 149.990."
+    }
+  ],
+  "highlights": [
+    "PBEV: 44,2 km/l (cidade) e 36,7 km/l (estrada) em modo híbrido/elétrico no GS — sedã médio mais econômico do Inmetro.",
+    "Só com gasolina: 16,8 km/l cidade e 14,7 km/l estrada (GS).",
+    "Até ~80 km elétricos (PBEV) no GS; autonomia total de ~1.200 km.",
+    "Porta-malas de 450 L."
+  ],
+  "watchOuts": [
+    "Depreciação forte: GS usado de 2 anos perdeu mais de R$ 37 mil (Click Petróleo e Gás).",
+    "Promoções constantes da BYD (GS a R$ 149.990) derrubam a revenda.",
+    "Geração nova (flex, visual Seal) já mostrada no exterior — risco de o atual envelhecer rápido.",
+    "Sem teste Latin NCAP."
+  ],
+  "specs": {
+    "version": "GS 2027",
+    "engine": "1.5 aspirado a gasolina (98 cv) + motor elétrico dianteiro (179 cv); DM-i",
+    "powerCv": "235 (combinada)",
+    "torqueKgfm": "33,1 (combinado)",
+    "transmission": "automático de 1 marcha (E-CVT DM-i)",
+    "trunkL": 450,
+    "lengthMm": 4780,
+    "wheelbaseMm": 2718,
+    "safety": null,
+    "warranty": "6 anos sem limite de km para o veículo e 8 anos sem limite de km para a bateria (política BYD Brasil para pessoa física); uso comercial tem limites de km (ex.: Dolphin Mini 2027: 200 mil km veículo)."
+  },
+  "inmetro": {
+    "version": "GS",
+    "cityGas": 16.8,
+    "roadGas": 14.7,
+    "cityEth": null,
+    "roadEth": null,
+    "cityKmKWh": 4.37,
+    "roadKmKWh": 4.37,
+    "year": "PBEV 2025",
+    "source": "https://www.terra.com.br/mobilidade/inmetro-revela-consumo-do-byd-king-ate-442-kmlitro,3bddf1d1bf60fd01c75cd6425fae47ddy7igq69u.html",
+    "note": "km/kWh é ESTIMATIVA: 80 km PBEV ÷ 18,3 kWh = 4,37. O 0,50 MJ/km do PBEV é consumo ponderado do PHEV, não elétrico puro. Fontes de 2027 (iCarros/A Revista) citam 16,4/12,9 km/l só gasolina e 78 km elétricos — possível nova medição."
+  },
+  "price0km": {
+    "version": "GS 2027",
+    "price": 175990,
+    "date": "ago/2026",
+    "source": "https://arevista.com.br/mercados/byd-king-gs-2027-tem-235-cv-roda-78-km-no-eletrico-e-custa-r-176-mil/"
+  },
+  "versionsAndPrices": [
+    {
+      "version": "GL 2027",
+      "price": 172990,
+      "date": "2026",
+      "source": "https://jkcarros.com.br/byd-king-gl-2027-ficha-tecnica-tco/"
+    },
+    {
+      "version": "GS 2027",
+      "price": 175990,
+      "date": "ago/2026",
+      "source": "https://arevista.com.br/mercados/byd-king-gs-2027-tem-235-cv-roda-78-km-no-eletrico-e-custa-r-176-mil/"
+    }
+  ],
+  "launchModelYearBR": 2025,
+  "catalogCheck": "Preço do catálogo (GS R$ 179.990) está errado: GS 2027 custa R$ 175.990 (GL R$ 172.990). Gasolina do catálogo (18,0/16,0) diverge do PBEV só-gasolina (16,8/14,7). km/kWh do catálogo (6,3/5,4) não tem fonte PBEV; estimativa autonomia÷bateria dá ~4,4. Porta-malas 450 L correto. Versão GS existe.",
+  "wikipedia": {
+    "lang": "en",
+    "title": "BYD Destroyer 05"
+  },
+  "officialUrl": null,
+  "sources": [
+    {
+      "label": "A Revista – King GS 2027",
+      "url": "https://arevista.com.br/mercados/byd-king-gs-2027-tem-235-cv-roda-78-km-no-eletrico-e-custa-r-176-mil/"
+    },
+    {
+      "label": "JK Carros – King GL 2027",
+      "url": "https://jkcarros.com.br/byd-king-gl-2027-ficha-tecnica-tco/"
+    },
+    {
+      "label": "Terra – Inmetro King",
+      "url": "https://www.terra.com.br/mobilidade/inmetro-revela-consumo-do-byd-king-ate-442-kmlitro,3bddf1d1bf60fd01c75cd6425fae47ddy7igq69u.html"
+    },
+    {
+      "label": "O Povo – ficha/lançamento",
+      "url": "https://www.opovo.com.br/noticias/veiculos/2024/06/18/byd-king-preco-ficha-tecnica-e-tudo-sobre-novo-carro-da-marca-chinesa.html"
+    },
+    {
+      "label": "Webmotors – King 2027",
+      "url": "https://www.webmotors.com.br/wm1/carros/lancamentos/byd-king-2027-mexico-brasil/"
+    },
+    {
+      "label": "Garagem360 – King flex",
+      "url": "https://garagem360.com.br/byd-king-de-r-147-990-ganha-sucessor-flex-com-alcance-de-2-000-km-para-pressionar-corolla/"
+    }
+  ],
+  "unverified": [
+    "km/kWh elétrico oficial (PBEV não informa para PHEV)",
+    "Se o PBEV 2026/2027 mudou o consumo só-gasolina (16,4/12,9 em iCarros)",
+    "Ano-modelo de estreia (2024 ou 2025)"
+  ],
+  "catalogSeed": {
+    "brand": "BYD",
+    "model": "King",
+    "version": "GS",
+    "category": "sedan",
+    "powertrain": "hibrido-plugin",
+    "seats": 5,
+    "trunkL": 450,
+    "refPriceNew": 175990,
+    "consumption": {
+      "cityKmL": 16.8,
+      "roadKmL": 14.7,
+      "cityKmLEthanol": null,
+      "roadKmLEthanol": null,
+      "cityKmKWh": 4.37,
+      "roadKmKWh": 4.37
+    },
+    "consumptionNote": "Gasolina = PBEV só combustão. km/kWh ESTIMADO: autonomia elétrica PBEV ~80 km ÷ 18,3 kWh = 4,37 (mesmo valor em cidade/estrada).",
+    "fipeInclude": [
+      "King GS"
+    ],
+    "since": 2025
+  }
+}

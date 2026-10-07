@@ -1,11 +1,13 @@
 import { useState } from 'react'
-import { CATEGORY_LABEL, CATEGORY_NEIGHBORS, CATEGORY_ORDER, POWERTRAIN_LABEL } from '../lib/catalog'
+import { CATALOG, CATEGORY_LABEL, CATEGORY_NEIGHBORS, CATEGORY_ORDER, POWERTRAIN_LABEL } from '../lib/catalog'
 import type { Category, Horizon, Powertrain, Preferences, ScenarioKind } from '../lib/types'
 import { HORIZONS } from '../lib/types'
 import { KIND_LABEL } from './RankingTable'
 import { Chip, ChipGroup, NumberField, Segmented, TextField } from './ui'
 
 type Preset = 'same' | 'near' | 'all' | 'custom'
+
+const BRANDS = [...new Set(CATALOG.map((m) => m.brand))].sort((a, b) => a.localeCompare(b, 'pt-BR'))
 
 const sameSet = (a: Category[], b: Category[]) => a.length === b.length && a.every((x) => b.includes(x))
 
@@ -28,7 +30,7 @@ export function FilterBar({ prefs, onPrefs, carCategory, onlySavings, onOnlySavi
   }
   const preset: Preset =
     (Object.keys(presets) as (keyof typeof presets)[]).find((k) => sameSet(presets[k], prefs.categories)) ?? 'custom'
-  const extra = [prefs.maxPrice > 0, prefs.maxMonthly > 0, prefs.minSeats > 0, !!prefs.search, onlySavings].filter(Boolean).length
+  const extra = [(prefs.brands ?? []).length > 0, prefs.maxPrice > 0, prefs.maxMonthly > 0, prefs.minSeats > 0, !!prefs.search, onlySavings].filter(Boolean).length
   const set = (p: Partial<Preferences>) => onPrefs({ ...prefs, ...p })
 
   return (
@@ -103,6 +105,22 @@ export function FilterBar({ prefs, onPrefs, carCategory, onlySavings, onOnlySavi
             <NumberField label="Preço máximo" prefix="R$" step={5000} value={prefs.maxPrice} onChange={(v) => set({ maxPrice: v })} hint="0 = sem limite" />
             <NumberField label={`Custo mensal máximo (${prefs.rankHorizon}a)`} prefix="R$" step={100} value={prefs.maxMonthly} onChange={(v) => set({ maxMonthly: v })} hint="0 = sem limite" />
             <NumberField label="Lugares mínimos" value={prefs.minSeats} onChange={(v) => set({ minSeats: Math.round(v) })} />
+          </div>
+          <div>
+            <div className="mb-1.5 flex items-center gap-2">
+              <span className="text-xs font-medium text-ink-2">Marcas</span>
+              {(prefs.brands ?? []).length > 0 && (
+                <button type="button" className="text-xs text-accent hover:underline" onClick={() => set({ brands: [] })}>
+                  limpar (todas)
+                </button>
+              )}
+            </div>
+            <ChipGroup<string>
+              options={BRANDS.map((b) => ({ value: b, label: b }))}
+              selected={prefs.brands ?? []}
+              onChange={(v) => set({ brands: v })}
+            />
+            <p className="mt-1 text-xs text-muted">Nenhuma marcada = todas as marcas. Assinaturas não são filtradas por marca.</p>
           </div>
           <Chip active={onlySavings} onClick={() => onOnlySavings(!onlySavings)}>
             Só opções que economizam em relação a manter

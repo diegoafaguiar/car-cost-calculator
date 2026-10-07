@@ -1,0 +1,118 @@
+{
+  "id": "byd-sealion-7",
+  "researchedAt": "2026-10",
+  "displayName": "BYD Sealion 7",
+  "summary": "SUV-cupê médio 100% elétrico da linha Ocean (o 'SUV do Seal'), importado. No Brasil, versão única AWD com dois motores (531 cv, 690 Nm), bateria Blade de 82,5 kWh e 360 km PBEV, por R$ 339.990.",
+  "generation": "1ª geração, lançada no Brasil em 26/05/2026.",
+  "timeline": [
+    {
+      "modelYear": "2026",
+      "change": "Lançamento em mai/2026, versão única AWD por R$ 339.990."
+    }
+  ],
+  "highlights": [
+    "531 cv e 0-100 km/h em 4,5 s.",
+    "Porta-malas de 500 L + frunk de 58 L.",
+    "Bateria Blade LFP de 82,5 kWh; recarga 10-80% em ~25 min (imprensa)."
+  ],
+  "watchOuts": [
+    "Autonomia PBEV de só 360 km para a bateria de 82,5 kWh.",
+    "Preço alto (R$ 339.990) e FIPE de usado 2027 já em R$ 308.461 (ago/2026).",
+    "Sem teste Latin NCAP; sem MJ/km PBEV publicado nas fontes encontradas."
+  ],
+  "specs": {
+    "version": "AWD (única)",
+    "engine": "2 motores elétricos (dianteiro + traseiro), tração integral",
+    "powerCv": "531",
+    "torqueKgfm": "70,4",
+    "transmission": "redução fixa (1 marcha)",
+    "trunkL": 500,
+    "lengthMm": 4830,
+    "wheelbaseMm": 2930,
+    "safety": null,
+    "warranty": "6 anos sem limite de km para o veículo e 8 anos sem limite de km para a bateria (política BYD Brasil para pessoa física); uso comercial tem limites de km (ex.: Dolphin Mini 2027: 200 mil km veículo)."
+  },
+  "inmetro": {
+    "version": "AWD",
+    "cityGas": null,
+    "roadGas": null,
+    "cityEth": null,
+    "roadEth": null,
+    "cityKmKWh": 4.36,
+    "roadKmKWh": 4.36,
+    "year": "PBEV 2026",
+    "source": "https://canalve.com.br/byd-lanca-suv-eletrico-sealion-7-brasil-r-r-339-990/",
+    "note": "ESTIMATIVA: 360 km PBEV ÷ 82,5 kWh = 4,36 km/kWh; MJ/km não encontrado."
+  },
+  "price0km": {
+    "version": "AWD",
+    "price": 339990,
+    "date": "mai/2026",
+    "source": "https://www.autoindustria.com.br/2026/05/26/byd-sealion-7-desembarca-no-brasil-por-r-339-990/"
+  },
+  "versionsAndPrices": [
+    {
+      "version": "AWD (versão única)",
+      "price": 339990,
+      "date": "mai/2026",
+      "source": "https://www.otempo.com.br/autotempo/2026/5/27/byd-sealion-7-chega-ao-brasil-por-r-339-990"
+    }
+  ],
+  "launchModelYearBR": 2026,
+  "catalogCheck": "Preço do catálogo (R$ 299.990) está errado: R$ 339.990 (versão única AWD; FIPE 0 km set/2026 igual). Porta-malas: 500 L + 58 L de frunk (catálogo diz 520 L). Consumo do catálogo (5,4/4,6) sem fonte PBEV; estimativa 360 km ÷ 82,5 kWh = 4,36 km/kWh.",
+  "wikipedia": {
+    "lang": "en",
+    "title": "BYD Sealion 7"
+  },
+  "officialUrl": null,
+  "sources": [
+    {
+      "label": "Canal VE – lançamento",
+      "url": "https://canalve.com.br/byd-lanca-suv-eletrico-sealion-7-brasil-r-r-339-990/"
+    },
+    {
+      "label": "AutoIndústria",
+      "url": "https://www.autoindustria.com.br/2026/05/26/byd-sealion-7-desembarca-no-brasil-por-r-339-990/"
+    },
+    {
+      "label": "O Tempo",
+      "url": "https://www.otempo.com.br/autotempo/2026/5/27/byd-sealion-7-chega-ao-brasil-por-r-339-990"
+    },
+    {
+      "label": "Vrum",
+      "url": "https://www.vrum.com.br/noticias/2026/05/7428381-byd-sealion-7-estreia-como-suv-do-seal-por-rs-339.html"
+    },
+    {
+      "label": "FIPE Sealion 7 AWD",
+      "url": "https://www.tabelafipebrasil.com/carros/BYD/SEALION-7-AWD-ELETRICO/Zero-Km-a-eletrico"
+    }
+  ],
+  "unverified": [
+    "MJ/km PBEV",
+    "Comprimento e entre-eixos (dados globais da Wikipédia: 4.830/2.930 mm)",
+    "Torque em kgfm (690 Nm convertido)"
+  ],
+  "catalogSeed": {
+    "brand": "BYD",
+    "model": "Sealion 7",
+    "version": "AWD",
+    "category": "suv-medio",
+    "powertrain": "eletrico",
+    "seats": 5,
+    "trunkL": 500,
+    "refPriceNew": 339990,
+    "consumption": {
+      "cityKmL": null,
+      "roadKmL": null,
+      "cityKmLEthanol": null,
+      "roadKmLEthanol": null,
+      "cityKmKWh": 4.36,
+      "roadKmKWh": 4.36
+    },
+    "consumptionNote": "ESTIMATIVA: autonomia PBEV 360 km ÷ bateria 82,5 kWh = 4,36 km/kWh (MJ/km PBEV não encontrado).",
+    "fipeInclude": [
+      "Sealion 7 AWD"
+    ],
+    "since": 2026
+  }
+}

@@ -1,0 +1,139 @@
+{
+  "id": "byd-dolphin",
+  "researchedAt": "2026-10",
+  "displayName": "BYD Dolphin",
+  "summary": "Hatch compacto 100% elétrico importado da China, da linha Ocean. A família tem GS (95 cv, 44,9 kWh, 291 km PBEV), a nova SE/Special Edition (177 cv, 45,12 kWh, abr/2026) e a Plus (204 cv, 60,5 kWh, 330 km PBEV).",
+  "generation": "1ª geração, lançada no Brasil em meados de 2023; versão SE com visual renovado em abr/2026 (linha 2027).",
+  "timeline": [
+    {
+      "modelYear": "2023",
+      "change": "Lançamento do Dolphin (GS) no Brasil; Dolphin Plus chega em set/2023."
+    },
+    {
+      "modelYear": "2026",
+      "change": "Linha 2026 (jul/2025) mantém R$ 149.990 no GS e ganha itens."
+    },
+    {
+      "modelYear": "2027",
+      "change": "Abr/2026: estreia o Dolphin SE (177 cv, 29,5 kgfm, 45,12 kWh, faróis e rodas 17\" novos, ADAS) por R$ 159.990, entre o GS e o Plus."
+    }
+  ],
+  "highlights": [
+    "Consumo PBEV de 0,42 MJ/km no GS (≈ 8,6 km/kWh).",
+    "Autonomia PBEV de 291 km (GS) com bateria Blade LFP de 44,9 kWh; recarga DC 30-80% em ~30 min (60 kW).",
+    "Latin NCAP 5 estrelas (2024, teste do Dolphin Plus — primeiro elétrico com nota máxima)."
+  ],
+  "watchOuts": [
+    "GS tem só 95 cv (0-100 km/h em 10,9 s).",
+    "A chegada do SE por R$ 10 mil a mais pode levar ao fim do GS (Portal N10).",
+    "Recall de suspensão dianteira (risco de quebra do braço) citado para Dolphin 2025 por site de consulta (motorguia) — conferir pelo chassi.",
+    "Cortes de preço e promoções frequentes afetam a revenda."
+  ],
+  "specs": {
+    "version": "GS 2026/2027",
+    "engine": "motor elétrico dianteiro",
+    "powerCv": "95",
+    "torqueKgfm": "18,3",
+    "transmission": "redução fixa (1 marcha)",
+    "trunkL": 345,
+    "lengthMm": 4290,
+    "wheelbaseMm": 2700,
+    "safety": "Latin NCAP 5 estrelas (2024, avaliação feita com o Dolphin Plus)",
+    "warranty": "6 anos sem limite de km para o veículo e 8 anos sem limite de km para a bateria (política BYD Brasil para pessoa física); uso comercial tem limites de km (ex.: Dolphin Mini 2027: 200 mil km veículo)."
+  },
+  "inmetro": {
+    "version": "GS (0,42 MJ/km)",
+    "cityGas": null,
+    "roadGas": null,
+    "cityEth": null,
+    "roadEth": null,
+    "cityKmKWh": 8.57,
+    "roadKmKWh": 8.57,
+    "year": "PBEV 2025/2026",
+    "source": "https://canalve.com.br/ficha-tecnica/byd/tudo-sobre-dolphin-gs-2026/",
+    "note": "3,6 ÷ 0,42 = 8,57 km/kWh (combinado, repetido). Outra fonte (evblog) cita 6,8 km/kWh, que bate com autonomia ÷ bateria (291/44,9 = 6,5)."
+  },
+  "price0km": {
+    "version": "GS",
+    "price": 149990,
+    "date": "jul/2026",
+    "source": "https://www.vrum.com.br/mercado/2026/07/7460341-byd-dolphin-2026-qual-versao-vale-mais-a-pena-entre-mini-gs-se-e-plus.html"
+  },
+  "versionsAndPrices": [
+    {
+      "version": "GS",
+      "price": 149990,
+      "date": "jul/2026",
+      "source": "https://www.vrum.com.br/mercado/2026/07/7460341-byd-dolphin-2026-qual-versao-vale-mais-a-pena-entre-mini-gs-se-e-plus.html"
+    },
+    {
+      "version": "SE 2027",
+      "price": 159990,
+      "date": "abr/2026",
+      "source": "https://gurudoscarros.com.br/2026/04/06/byd-lanca-dolphin-se-por-r-159-990-e-atualiza-yuan-plus-2027-com-449-cv-e-tracao-integral/"
+    },
+    {
+      "version": "Plus",
+      "price": 184800,
+      "date": "jul/2026",
+      "source": "https://www.vrum.com.br/mercado/2026/07/7460341-byd-dolphin-2026-qual-versao-vale-mais-a-pena-entre-mini-gs-se-e-plus.html"
+    }
+  ],
+  "launchModelYearBR": 2023,
+  "catalogCheck": "Preço GS R$ 149.990 e porta-malas 345 L corretos; versão GS ainda existe. Consumo do catálogo (7,0/6,0 km/kWh) parece ser do Dolphin Plus (0,51 MJ/km = 7,06); o GS tem 0,42 MJ/km = 8,57 km/kWh combinado.",
+  "wikipedia": {
+    "lang": "en",
+    "title": "BYD Dolphin"
+  },
+  "officialUrl": null,
+  "sources": [
+    {
+      "label": "Vrum – Mini, GS, SE e Plus",
+      "url": "https://www.vrum.com.br/mercado/2026/07/7460341-byd-dolphin-2026-qual-versao-vale-mais-a-pena-entre-mini-gs-se-e-plus.html"
+    },
+    {
+      "label": "Canal VE – ficha Dolphin GS 2026",
+      "url": "https://canalve.com.br/ficha-tecnica/byd/tudo-sobre-dolphin-gs-2026/"
+    },
+    {
+      "label": "Guru dos Carros – Dolphin SE",
+      "url": "https://gurudoscarros.com.br/2026/04/06/byd-lanca-dolphin-se-por-r-159-990-e-atualiza-yuan-plus-2027-com-449-cv-e-tracao-integral/"
+    },
+    {
+      "label": "Motor Show – Latin NCAP",
+      "url": "https://motorshow.com.br/byd-dolphin-e-o-1o-carro-eletrico-a-receber-nota-maxima-de-seguranca-no-brasil-pelo-latin-ncap"
+    },
+    {
+      "label": "FIPE Dolphin EV GS 2027",
+      "url": "https://www.tabelafipebrasil.com/carros/BYD/DOLPHIN-EV-GS-ELETRICO/2027-Eletrico"
+    }
+  ],
+  "unverified": [
+    "Mês exato do lançamento em 2023",
+    "PBEV do Dolphin SE (não divulgado na época do lançamento)",
+    "Recall da suspensão no Brasil"
+  ],
+  "catalogSeed": {
+    "brand": "BYD",
+    "model": "Dolphin",
+    "version": "GS",
+    "category": "hatch",
+    "powertrain": "eletrico",
+    "seats": 5,
+    "trunkL": 345,
+    "refPriceNew": 149990,
+    "consumption": {
+      "cityKmL": null,
+      "roadKmL": null,
+      "cityKmLEthanol": null,
+      "roadKmLEthanol": null,
+      "cityKmKWh": 8.57,
+      "roadKmKWh": 8.57
+    },
+    "consumptionNote": "PBEV 0,42 MJ/km → 3,6 ÷ 0,42 = 8,57 km/kWh; só valor combinado, repetido em cidade e estrada.",
+    "fipeInclude": [
+      "Dolphin EV GS"
+    ],
+    "since": 2023
+  }
+}

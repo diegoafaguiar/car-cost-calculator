@@ -1,0 +1,133 @@
+{
+  "id": "byd-seal",
+  "researchedAt": "2026-10",
+  "displayName": "BYD Seal",
+  "summary": "Sedã-cupê médio 100% elétrico da linha Ocean, importado, com estrutura CTB (bateria integrada à carroceria). No Brasil, versão AWD de dois motores (531 cv, 0-100 em 3,8 s), bateria de 82,5 kWh e 372 km PBEV.",
+  "generation": "1ª geração, lançada no Brasil no 2º semestre de 2023 (R$ 296.800).",
+  "timeline": [
+    {
+      "modelYear": "2024",
+      "change": "Lançamento (2023) por R$ 296.800."
+    },
+    {
+      "modelYear": "2026",
+      "change": "Preço cai para R$ 249.990 (fim de 2025) e sobe para R$ 259.990 (jan/2026) e R$ 269.990."
+    },
+    {
+      "modelYear": "2027",
+      "change": "Volta a R$ 299.990 (linha 2027); FIPE 0 km set/2026 R$ 298.797."
+    }
+  ],
+  "highlights": [
+    "531 cv, 0-100 km/h em 3,8 s.",
+    "Consumo PBEV de 0,62 MJ/km (≈ 5,8 km/kWh).",
+    "Autonomia PBEV de 372 km."
+  ],
+  "watchOuts": [
+    "Preço oscilou de R$ 249.990 a R$ 299.990 em menos de um ano — revenda imprevisível.",
+    "Porta-malas de 400 L.",
+    "Recall de módulo ABS envolvendo Seal 2023-2025 citado por site de consulta — não confirmado em fonte primária.",
+    "Sem teste Latin NCAP."
+  ],
+  "specs": {
+    "version": "AWD 2027",
+    "engine": "2 motores elétricos (dianteiro + traseiro), tração integral",
+    "powerCv": "531",
+    "torqueKgfm": "68,9",
+    "transmission": "redução fixa (1 marcha)",
+    "trunkL": 400,
+    "lengthMm": 4800,
+    "wheelbaseMm": 2920,
+    "safety": null,
+    "warranty": "6 anos sem limite de km para o veículo e 8 anos sem limite de km para a bateria (política BYD Brasil para pessoa física); uso comercial tem limites de km (ex.: Dolphin Mini 2027: 200 mil km veículo)."
+  },
+  "inmetro": {
+    "version": "AWD (0,62 MJ/km)",
+    "cityGas": null,
+    "roadGas": null,
+    "cityEth": null,
+    "roadEth": null,
+    "cityKmKWh": 5.81,
+    "roadKmKWh": 5.81,
+    "year": "PBEV 2025",
+    "source": "https://www.mercadolivre.com.br/blog/mo-consumo-consumo-do-byd-seal-autonomia-das-diferentes-versoes",
+    "note": "3,6 ÷ 0,62 = 5,81 km/kWh (combinado, repetido). A mesma fonte cita 21,1 kWh/100 km, que não bate com 0,62 MJ/km."
+  },
+  "price0km": {
+    "version": "AWD 2027",
+    "price": 299990,
+    "date": "2026",
+    "source": "https://tabelacarros.com/post/a-montanha-russa-de-precos-do-byd-seal-entenda-a-alta"
+  },
+  "versionsAndPrices": [
+    {
+      "version": "AWD 2027",
+      "price": 299990,
+      "date": "2026",
+      "source": "https://tabelacarros.com/post/a-montanha-russa-de-precos-do-byd-seal-entenda-a-alta"
+    },
+    {
+      "version": "AWD 2026 (anterior)",
+      "price": 269990,
+      "date": "início de 2026",
+      "source": "https://www.terra.com.br/mobilidade/byd-seal-sobe-de-preco-e-ja-acumula-alta-de-r-20-mil-confira,86de4ab866ac3ba19b6358b037cc20063byb58l3.html"
+    }
+  ],
+  "launchModelYearBR": 2024,
+  "catalogCheck": "Não está no catálogo.",
+  "wikipedia": {
+    "lang": "en",
+    "title": "BYD Seal"
+  },
+  "officialUrl": "https://www.byd.com/br/car/seal",
+  "sources": [
+    {
+      "label": "Tabela Carros – histórico de preços",
+      "url": "https://tabelacarros.com/post/a-montanha-russa-de-precos-do-byd-seal-entenda-a-alta"
+    },
+    {
+      "label": "Terra – alta de preço",
+      "url": "https://www.terra.com.br/mobilidade/byd-seal-sobe-de-preco-e-ja-acumula-alta-de-r-20-mil-confira,86de4ab866ac3ba19b6358b037cc20063byb58l3.html"
+    },
+    {
+      "label": "FIPE Seal 0 km",
+      "url": "https://www.tabelafipebrasil.com/carros/BYD/SEAL-ELETRICO/Zero-Km-a-eletrico"
+    },
+    {
+      "label": "Canal VE – lançamento",
+      "url": "https://canalve.com.br/coupe-100-eletrico-byd-seal-chega-ao-brasil-por-r-2968-mil/"
+    },
+    {
+      "label": "Mercado Livre – consumo",
+      "url": "https://www.mercadolivre.com.br/blog/mo-consumo-consumo-do-byd-seal-autonomia-das-diferentes-versoes"
+    }
+  ],
+  "unverified": [
+    "Data exata da alta para R$ 299.990",
+    "Ano-modelo de estreia (2023 ou 2024)",
+    "Torque em kgfm (fontes citam 60,1–60,2 e 670 Nm)"
+  ],
+  "catalogSeed": {
+    "brand": "BYD",
+    "model": "Seal",
+    "version": "AWD",
+    "category": "sedan",
+    "powertrain": "eletrico",
+    "seats": 5,
+    "trunkL": 400,
+    "refPriceNew": 299990,
+    "consumption": {
+      "cityKmL": null,
+      "roadKmL": null,
+      "cityKmLEthanol": null,
+      "roadKmLEthanol": null,
+      "cityKmKWh": 5.81,
+      "roadKmKWh": 5.81
+    },
+    "consumptionNote": "PBEV 0,62 MJ/km → 3,6 ÷ 0,62 = 5,81 km/kWh; só valor combinado, repetido.",
+    "fipeInclude": [
+      "Seal"
+    ],
+    "since": 2024
+  }
+}

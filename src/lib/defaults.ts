@@ -75,4 +75,5 @@ export const DEFAULT_PREFERENCES: Preferences = {
   powertrainValue: { hibrido: 100, 'hibrido-plugin': 100 },
   rankBy: 'ajustado',
   search: '',
+  brands: [],
 }

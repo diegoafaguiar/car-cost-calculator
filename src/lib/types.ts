@@ -181,6 +181,8 @@ export interface Preferences {
   maxMonthly: number
   minSeats: number
   search: string
+  /** Marcas a mostrar; vazio = todas. */
+  brands: string[]
   /**
    * Quanto vale para você (R$/mês) ter cada motorização. Não muda o custo real:
    * só o "custo ajustado", usado no ranking quando rankBy = 'ajustado'.

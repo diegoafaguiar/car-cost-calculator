@@ -1,0 +1,118 @@
+{
+  "id": "byd-atto-8",
+  "researchedAt": "2026-10",
+  "displayName": "BYD Atto 8",
+  "summary": "SUV grande de 7 lugares híbrido plug-in (Tang L DM na China), sucessor do Tan e topo de linha SUV da BYD. Primeiro com plataforma DM-p no Brasil: 1.5 turbo (156 cv) + motores elétricos dianteiro (272 cv) e traseiro (216 cv), 488 cv combinados, bateria de 35,6 kWh.",
+  "generation": "1ª geração, apresentada no Salão de SP (nov/2025); vendas a partir de mar/2026.",
+  "timeline": [
+    {
+      "modelYear": "2026",
+      "change": "Lançamento por R$ 399.990, versão única AWD de 7 lugares."
+    }
+  ],
+  "highlights": [
+    "488 cv, 0-100 km/h em 4,9 s.",
+    "111 km elétricos PBEV; autonomia total de ~900 km.",
+    "Modo híbrido PBEV: 30,1 km/l cidade e 27 km/l estrada.",
+    "Porta-malas de 270 L (7 lugares) a 960 L (5 lugares)."
+  ],
+  "watchOuts": [
+    "Só gasolina: 11,4 km/l cidade e 10,8 km/l estrada (PBEV).",
+    "Preço de R$ 399.990; histórico do Tan e do Han mostra baixa liquidez dos BYD de topo.",
+    "Sem teste Latin NCAP."
+  ],
+  "specs": {
+    "version": "AWD 7 lugares (única)",
+    "engine": "1.5 turbo a gasolina + 2 motores elétricos (DM-p), tração integral",
+    "powerCv": "488 (combinada)",
+    "torqueKgfm": "68,8 (combinado)",
+    "transmission": "E-CVT (DM-p)",
+    "trunkL": 270,
+    "lengthMm": 5040,
+    "wheelbaseMm": 2950,
+    "safety": null,
+    "warranty": "6 anos para o veículo e 8 anos para a bateria, sem limite de km"
+  },
+  "inmetro": {
+    "version": "AWD",
+    "cityGas": 11.4,
+    "roadGas": 10.8,
+    "cityEth": null,
+    "roadEth": null,
+    "cityKmKWh": 3.12,
+    "roadKmKWh": 3.12,
+    "year": "PBEV 2026",
+    "source": "https://garagem360.com.br/byd-atto-8-e-suv-de-7-lugares-que-roda-111-km-no-modo-eletrico-e-custa-quase-r-400-mil/",
+    "note": "km/kWh ESTIMADO: 111 km PBEV ÷ 35,6 kWh = 3,12."
+  },
+  "price0km": {
+    "version": "AWD",
+    "price": 399990,
+    "date": "mar/2026",
+    "source": "https://www.automaistv.com.br/novidades/byd-atto-8-ja-aparece-no-configurador-por-r-399-990-e-estreia-em-marco-de-2026/"
+  },
+  "versionsAndPrices": [
+    {
+      "version": "AWD 7 lugares (única)",
+      "price": 399990,
+      "date": "2026",
+      "source": "https://jkcarros.com.br/byd-atto-8-2027-ficha-tecnica-tco/"
+    }
+  ],
+  "launchModelYearBR": 2026,
+  "catalogCheck": "Não está no catálogo. trunkL com 7 lugares em uso (960 L com 5).",
+  "wikipedia": {
+    "lang": "en",
+    "title": "BYD Tang L"
+  },
+  "officialUrl": "https://www.byd.com/br/noticias-byd-brasil/byd-atto-8-suv-hibrido-plug-in-de-sete-lugares-e-apresentado-no-salao-automovel",
+  "sources": [
+    {
+      "label": "Garagem360 – Inmetro",
+      "url": "https://garagem360.com.br/byd-atto-8-e-suv-de-7-lugares-que-roda-111-km-no-modo-eletrico-e-custa-quase-r-400-mil/"
+    },
+    {
+      "label": "Auto+ TV – preço",
+      "url": "https://www.automaistv.com.br/novidades/byd-atto-8-ja-aparece-no-configurador-por-r-399-990-e-estreia-em-marco-de-2026/"
+    },
+    {
+      "label": "Canal VE – ficha",
+      "url": "https://canalve.com.br/ficha-tecnica/byd/tudo-sobre-atto-8/"
+    },
+    {
+      "label": "JK Carros – Atto 8 2027",
+      "url": "https://jkcarros.com.br/byd-atto-8-2027-ficha-tecnica-tco/"
+    },
+    {
+      "label": "CarNewsChina – sucessor do Tan",
+      "url": "https://carnewschina.com/2025/11/25/byd-atto-8-phev-launched-in-brazil-with-150-km-ev-range-from-74200-usd/"
+    }
+  ],
+  "unverified": [
+    "km/kWh elétrico oficial",
+    "Autonomia elétrica: 111 km (Garagem360) vs 106 km (outra ficha)"
+  ],
+  "catalogSeed": {
+    "brand": "BYD",
+    "model": "Atto 8",
+    "version": "AWD",
+    "category": "suv-grande",
+    "powertrain": "hibrido-plugin",
+    "seats": 7,
+    "trunkL": 270,
+    "refPriceNew": 399990,
+    "consumption": {
+      "cityKmL": 11.4,
+      "roadKmL": 10.8,
+      "cityKmLEthanol": null,
+      "roadKmLEthanol": null,
+      "cityKmKWh": 3.12,
+      "roadKmKWh": 3.12
+    },
+    "consumptionNote": "Gasolina = PBEV só combustão. km/kWh ESTIMADO: 111 km PBEV ÷ 35,6 kWh = 3,12.",
+    "fipeInclude": [
+      "Atto 8"
+    ],
+    "since": 2026
+  }
+}
