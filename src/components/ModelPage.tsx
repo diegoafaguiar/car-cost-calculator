@@ -34,7 +34,7 @@ export function ModelPage({ modelId, results, ranked, keep, horizon, onHorizon, 
       </Card>
     )
   }
-  const info = MODEL_INFO[modelId]
+  const info = MODEL_INFO[model.infoId ?? modelId]
   const mine = car.catalogModelId ? MODEL_INFO[car.catalogModelId] : undefined
   const options = results
     .filter((r) => r.scenario.modelId === modelId && (r.scenario.kind === 'new' || r.scenario.kind === 'used'))

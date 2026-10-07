@@ -343,6 +343,7 @@ export function simulate(s: Scenario, ctx: SimContext): Omit<ScenarioResult, 'br
       perKm: a.kmPerYear > 0 ? total / (a.kmPerYear * h) : 0,
       breakdown: snapshots[h * 12] ?? emptyBreakdown(),
       savingsVsKeep: 0,
+      adjusted: total,
     }
   }
 
@@ -481,7 +482,11 @@ export function buildScenarios(opts: {
   return list
 }
 
-export function runAll(scenarios: Scenario[], ctx: SimContext): ScenarioResult[] {
+export function runAll(
+  scenarios: Scenario[],
+  ctx: SimContext,
+  powertrainValue: Partial<Record<Powertrain, number>> = {},
+): ScenarioResult[] {
   const raw = scenarios.map((s) => simulate(s, ctx))
   const keep = raw.find((r) => r.scenario.kind === 'keep')
   return raw.map((r) => {
@@ -490,6 +495,7 @@ export function runAll(scenarios: Scenario[], ctx: SimContext): ScenarioResult[]
       horizons[h] = {
         ...horizons[h],
         savingsVsKeep: keep ? keep.horizons[h].total - horizons[h].total : 0,
+        adjusted: horizons[h].total - (powertrainValue[r.scenario.powertrain] ?? 0) * h * 12,
       }
     }
     return {

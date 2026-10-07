@@ -69,5 +69,8 @@ export const DEFAULT_PREFERENCES: Preferences = {
   maxPrice: 0,
   maxMonthly: 0,
   minSeats: 0,
+  // "Pequena inclinação" a híbridos: R$ 100/mês é um ponto de partida, ajuste ao seu gosto.
+  powertrainValue: { hibrido: 100, 'hibrido-plugin': 100 },
+  rankBy: 'ajustado',
   search: '',
 }

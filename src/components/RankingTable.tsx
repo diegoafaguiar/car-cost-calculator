@@ -14,6 +14,7 @@ export type SortKey =
   | 't1'
   | 't3'
   | 't5'
+  | 'adjusted'
   | 'perKm'
   | 'savings'
   | 'breakEven'
@@ -41,11 +42,12 @@ interface Props {
   colors: Record<string, string>
   onToggleCompare: (id: string) => void
   onOpen: (id: string) => void
+  showAdjusted?: boolean
 }
 
 const PAGE = 25
 
-export function RankingTable({ rows, horizon, sort, onSort, compare, colors, onToggleCompare, onOpen }: Props) {
+export function RankingTable({ rows, horizon, sort, onSort, compare, colors, onToggleCompare, onOpen, showAdjusted }: Props) {
   const [limit, setLimit] = useState(PAGE)
   const cols: { key: SortKey; label: string; align?: 'right'; title?: string }[] = [
     { key: 'rank', label: '#' },
@@ -57,6 +59,9 @@ export function RankingTable({ rows, horizon, sort, onSort, compare, colors, onT
     { key: 't1', label: '1 ano', align: 'right' },
     { key: 't3', label: '3 anos', align: 'right' },
     { key: 't5', label: '5 anos', align: 'right' },
+    ...(showAdjusted
+      ? [{ key: 'adjusted' as const, label: `Ajustado (${horizon}a)`, align: 'right' as const, title: 'Custo total menos o valor que você atribui à motorização (preferência)' }]
+      : []),
     { key: 'perKm', label: 'R$/km', align: 'right' },
     { key: 'savings', label: `Economia (${horizon}a)`, align: 'right', title: 'Quanto você economiza em relação a manter o carro atual' },
     { key: 'breakEven', label: 'Compensa em', align: 'right', title: 'A partir de quando fica mais barato que manter' },
@@ -152,6 +157,12 @@ export function RankingTable({ rows, horizon, sort, onSort, compare, colors, onT
                   <Num v={r.horizons[1].total} strong={horizon === 1} />
                   <Num v={r.horizons[3].total} strong={horizon === 3} />
                   <Num v={r.horizons[5].total} strong={horizon === 5} />
+                  {showAdjusted && (
+                    <td className="px-2 py-2 text-right tabular whitespace-nowrap text-ink-2">
+                      {money(h.adjusted)}
+                      {h.adjusted !== h.total && <span className="block text-xs text-good">preferência</span>}
+                    </td>
+                  )}
                   <td className="px-2 py-2 text-right tabular">{money2(h.perKm)}</td>
                   <td
                     className={`px-2 py-2 text-right tabular whitespace-nowrap ${

@@ -10,10 +10,11 @@ interface Props {
   ranked: ScenarioResult[]
   horizon: Horizon
   onOpen: (id: string) => void
+  score: (r: ScenarioResult, h: Horizon) => number
 }
 
 /** Visão do carro atual e da melhor alternativa em cada horizonte. */
-export function Insights({ keep, ranked, horizon, onOpen }: Props) {
+export function Insights({ keep, ranked, horizon, onOpen, score }: Props) {
   const h = keep.horizons[horizon]
   const top = (Object.entries(h.breakdown) as [CostKey, number][]).sort((a, b) => b[1] - a[1])[0]
   const alternatives = ranked.filter((r) => r.scenario.kind !== 'keep')
@@ -49,7 +50,7 @@ export function Insights({ keep, ranked, horizon, onOpen }: Props) {
         <Card title="Melhor opção por horizonte" subtitle="Considerando os filtros e premissas atuais">
           <ul className="space-y-3">
             {HORIZONS.map((y) => {
-              const best = [...ranked].sort((a, b) => a.horizons[y].total - b.horizons[y].total)[0]
+              const best = [...ranked].sort((a, b) => score(a, y) - score(b, y))[0]
               if (!best) return null
               const isKeep = best.scenario.kind === 'keep'
               const saving = best.horizons[y].savingsVsKeep

@@ -43,6 +43,8 @@ function sortValue(r: ScenarioResult, key: SortKey, horizon: Horizon, rank: numb
       return r.horizons[3].total
     case 't5':
       return r.horizons[5].total
+    case 'adjusted':
+      return h.adjusted
     case 'perKm':
       return h.perKm
     case 'savings':
@@ -85,8 +87,8 @@ export default function App() {
 
   const results = useMemo(() => {
     const scenarios = buildScenarios({ car, assumptions, usedAges: prefs.usedAges, prices, year: YEAR })
-    return runAll(scenarios, { assumptions, car, startMonth: START_MONTH, year: YEAR })
-  }, [car, assumptions, prefs.usedAges, prices])
+    return runAll(scenarios, { assumptions, car, startMonth: START_MONTH, year: YEAR }, prefs.powertrainValue)
+  }, [car, assumptions, prefs.usedAges, prefs.powertrainValue, prices])
 
   const keep = results.find((r) => r.scenario.kind === 'keep')
   const horizon = prefs.rankHorizon
@@ -111,10 +113,15 @@ export default function App() {
     })
   }, [results, prefs, horizon, onlySavings])
 
-  const ranked = useMemo(
-    () => [...filtered].sort((a, b) => a.horizons[horizon].total - b.horizons[horizon].total),
-    [filtered, horizon],
+  const score = useMemo(
+    () => (r: ScenarioResult, h: Horizon) => (prefs.rankBy === 'ajustado' ? r.horizons[h].adjusted : r.horizons[h].total),
+    [prefs.rankBy],
   )
+  const ranked = useMemo(
+    () => [...filtered].sort((a, b) => score(a, horizon) - score(b, horizon)),
+    [filtered, horizon, score],
+  )
+  const hasPreference = Object.values(prefs.powertrainValue ?? {}).some((v) => v)
 
   const rows = useMemo(() => {
     const withRank = ranked.map((result, i) => ({ result, rank: i + 1 }))
@@ -266,7 +273,7 @@ export default function App() {
             </p>
           )}
 
-          {keep && <Insights keep={keep} ranked={ranked} horizon={horizon} onOpen={setOpenId} />}
+          {keep && <Insights keep={keep} ranked={ranked} horizon={horizon} onOpen={setOpenId} score={score} />}
 
           <TopModels ranked={ranked} horizon={horizon} />
 
@@ -279,7 +286,7 @@ export default function App() {
 
           <Card
             title="Ranking de opções"
-            subtitle={`Ordenado pelo custo total em ${horizon} ${horizon === 1 ? 'ano' : 'anos'}. Clique numa opção para ver o detalhe.`}
+            subtitle={`Ordenado pelo ${prefs.rankBy === 'ajustado' && hasPreference ? 'custo ajustado à sua preferência' : 'custo total'} em ${horizon} ${horizon === 1 ? 'ano' : 'anos'}. Clique numa opção para ver o detalhe.`}
             actions={
               <div className="flex items-center gap-2">
                 <span className="text-xs text-muted">
@@ -330,6 +337,37 @@ export default function App() {
                 <input type="checkbox" checked={onlySavings} onChange={(e) => setOnlySavings(e.target.checked)} className="size-4 accent-[var(--accent)]" />
                 Mostrar só opções que economizam em relação a manter
               </label>
+              <div className="rounded-lg border border-line p-3">
+                <div className="flex flex-wrap items-center justify-between gap-2">
+                  <span className="text-sm font-medium">Preferência por motorização</span>
+                  <Segmented<'real' | 'ajustado'>
+                    label="Ordenar ranking por"
+                    value={prefs.rankBy}
+                    options={[
+                      { value: 'ajustado', label: 'Com preferência' },
+                      { value: 'real', label: 'Só custo' },
+                    ]}
+                    onChange={(v) => setPrefs({ ...prefs, rankBy: v })}
+                  />
+                </div>
+                <p className="mt-1 text-xs text-muted">
+                  Quanto vale para você, por mês, ter cada tipo de motor. Não altera os custos — só desconta esse valor no
+                  “custo ajustado” usado para ordenar.
+                </p>
+                <div className="mt-2 grid grid-cols-2 gap-3 sm:grid-cols-4">
+                  {(['hibrido', 'hibrido-plugin', 'eletrico', 'flex'] as Powertrain[]).map((p) => (
+                    <NumberField
+                      key={p}
+                      label={POWERTRAIN_LABEL[p]}
+                      prefix="R$"
+                      suffix="/mês"
+                      step={50}
+                      value={prefs.powertrainValue?.[p] ?? 0}
+                      onChange={(v) => setPrefs({ ...prefs, powertrainValue: { ...prefs.powertrainValue, [p]: v } })}
+                    />
+                  ))}
+                </div>
+              </div>
             </div>
 
             <RankingTable
@@ -341,6 +379,7 @@ export default function App() {
               colors={colors}
               onToggleCompare={toggleCompare}
               onOpen={setOpenId}
+              showAdjusted={hasPreference}
             />
           </Card>
 

@@ -25,7 +25,7 @@ export function TopModels({ ranked, horizon }: { ranked: ScenarioResult[]; horiz
       <ol className="grid gap-3 sm:grid-cols-2 xl:grid-cols-5">
         {top.map((r, i) => {
           const m = CATALOG.find((x) => x.id === r.scenario.modelId)!
-          const info = MODEL_INFO[m.id]
+          const info = MODEL_INFO[m.infoId ?? m.id]
           const s = r.horizons[horizon].savingsVsKeep
           return (
             <li key={m.id}>

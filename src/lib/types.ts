@@ -59,6 +59,8 @@ export interface CatalogModel {
   consumptionHistory?: { untilModelYear: number; consumption: Consumption }[]
   /** Campos do catálogo que são estimativas sem fonte (exibidos como aviso). */
   estimated?: string[]
+  /** Ficha pesquisada compartilhada com outra versão do mesmo modelo. */
+  infoId?: string
   /** Primeiro ano-modelo vendido no Brasil (seminovos anteriores não existem). */
   since?: number
   /** Fração rodada no modo elétrico (só híbridos plug-in). */
@@ -175,6 +177,12 @@ export interface Preferences {
   maxMonthly: number
   minSeats: number
   search: string
+  /**
+   * Quanto vale para você (R$/mês) ter cada motorização. Não muda o custo real:
+   * só o "custo ajustado", usado no ranking quando rankBy = 'ajustado'.
+   */
+  powertrainValue: Partial<Record<Powertrain, number>>
+  rankBy: 'real' | 'ajustado'
 }
 
 export type PriceSource = 'fipe' | 'estimado' | 'manual'
@@ -224,6 +232,8 @@ export interface HorizonResult {
   breakdown: Breakdown
   /** Diferença para manter o carro atual (positivo = economia). */
   savingsVsKeep: number
+  /** Custo total menos o valor que você atribui à motorização no período. */
+  adjusted: number
 }
 
 export interface ScenarioResult {

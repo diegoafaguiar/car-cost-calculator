@@ -128,6 +128,15 @@ describe('simulate', () => {
     expect(used.finance.ruleId).toBeUndefined()
   })
 
+  it('preferência por motorização só afeta o custo ajustado', () => {
+    const list = buildScenarios({ car, assumptions: a, usedAges: [], prices: {}, year: 2026 })
+    const results = runAll(list, ctx, { hibrido: 100 })
+    const hybrid = results.find((r) => r.scenario.id === 'new:toyota-corolla-hybrid:0')!
+    expect(hybrid.horizons[3].adjusted).toBeCloseTo(hybrid.horizons[3].total - 3600)
+    const flexCar = results.find((r) => r.scenario.id === 'new:fiat-mobi:0')!
+    expect(flexCar.horizons[3].adjusted).toBe(flexCar.horizons[3].total)
+  })
+
   it('runAll calcula economia em relação a manter', () => {
     const list = buildScenarios({ car, assumptions: a, usedAges: [2], prices: {}, year: 2026 })
     const results = runAll(list, ctx)
