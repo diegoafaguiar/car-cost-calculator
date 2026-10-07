@@ -70,7 +70,8 @@ export const DEFAULT_PREFERENCES: Preferences = {
   categories: ['suv-compacto', 'suv-medio', 'suv-grande'],
   powertrains: ['flex', 'gasolina', 'diesel', 'hibrido', 'hibrido-plugin', 'eletrico'],
   kinds: ['keep', 'new', 'used', 'subscription'],
-  usedAges: [2, 4],
+  // 1 a 4 anos: inclui os BYD lançados entre 2023 e 2025.
+  usedAges: [1, 2, 3, 4],
   maxPrice: 0,
   maxMonthly: 0,
   minSeats: 0,

@@ -5,6 +5,7 @@ import { MODEL_INFO, type ModelInfo } from '../lib/modelInfo'
 import { COST_KEYS, COST_LABEL, energyCostPerKm } from '../lib/tco'
 import type { Assumptions, Horizon, ScenarioResult } from '../lib/types'
 import { HORIZONS } from '../lib/types'
+import { CostTooltip } from './CostTooltip'
 import { Card, Segmented } from './ui'
 import { WikiImage } from './WikiImage'
 
@@ -46,6 +47,19 @@ export function Comparator({ keep, results, ranked, compare, colors, max, onTogg
   }, [query, results, compare])
 
   const h = (r: ScenarioResult) => r.horizons[horizon]
+  const shortName = (r: ScenarioResult) =>
+    r.scenario.kind === 'keep' ? 'Seu carro' : `${r.scenario.label} ${r.scenario.ageAtStart === 0 ? '0 km' : r.scenario.detail.match(/\b(20\d\d)\b/)?.[1] ?? ''}`.trim()
+  /** Nome da opção vencedora numa linha (ou "empate"); null quando não se aplica. */
+  const winnerName = (vals: (number | null)[], better: 'low' | 'high' | 'none') => {
+    if (better === 'none') return null
+    const valid = vals.map((v, i) => [v, i] as const).filter((x): x is readonly [number, number] => x[0] !== null)
+    if (valid.length < 2) return null
+    const target = better === 'low' ? Math.min(...valid.map((x) => x[0])) : Math.max(...valid.map((x) => x[0]))
+    const winners = valid.filter((x) => Math.abs(x[0] - target) < 0.5)
+    if (winners.length > 1) return 'empate'
+    const r = columns[winners[0][1]]
+    return { name: shortName(r), color: r.scenario.kind === 'keep' ? 'var(--ink-2)' : colors[r.scenario.id] }
+  }
   /** Linha numérica: destaca o menor (ou maior) valor entre as colunas. */
   const numRow = (label: string, get: (r: ScenarioResult) => number | null, fmt: (v: number) => string, better: 'low' | 'high' | 'none' = 'low') => {
     const vals = columns.map(get)
@@ -56,8 +70,10 @@ export function Comparator({ keep, results, ranked, compare, colors, max, onTogg
         {vals.map((v, i) => (
           <td key={i} className={`px-3 py-2 text-right tabular ${v !== null && v === target ? 'font-semibold text-good' : ''}`}>
             {v === null ? <span className="text-muted">—</span> : fmt(v)}
+            {v !== null && v === target && <span className="ml-1 sm:hidden" aria-label="vencedor">🏆</span>}
           </td>
         ))}
+        <Winner name={winnerName(vals, better)} />
       </Row>
     )
   }
@@ -78,13 +94,14 @@ export function Comparator({ keep, results, ranked, compare, colors, max, onTogg
           })()}
         </td>
       ))}
+      <td className="hidden sm:table-cell" />
     </Row>
   )
 
   return (
     <Card
       title="Comparar lado a lado"
-      subtitle={`Seu carro e até ${max} opções. Em verde, o melhor valor de cada linha.`}
+      subtitle={`Seu carro e até ${max} opções. 🏆 indica o vencedor de cada linha (em verde).`}
       actions={
         <Segmented<Horizon>
           label="Horizonte"
@@ -132,15 +149,16 @@ export function Comparator({ keep, results, ranked, compare, colors, max, onTogg
         </p>
       ) : (
         <div className="overflow-x-auto rounded-xl border border-line">
-          <table className="w-full min-w-[640px] border-collapse text-sm">
+          <p className="px-3 pt-2 text-[11px] text-muted sm:hidden">Deslize para o lado para ver todas as opções →</p>
+          <table className="w-full border-collapse text-sm">
             <thead>
               <tr className="align-top">
-                <th className="sticky left-0 z-10 w-44 bg-surface px-3 py-3 text-left text-xs font-medium text-ink-2" />
+                <th className="sticky left-0 z-10 w-28 bg-surface px-3 py-3 text-left text-xs font-medium text-ink-2 sm:w-44" />
                 {columns.map((r) => {
                   const info = infoOf(r)
                   const isKeep = r.scenario.kind === 'keep'
                   return (
-                    <th key={r.scenario.id} className={`min-w-44 px-3 py-3 text-left font-normal ${isKeep ? 'bg-warn-soft' : ''}`}>
+                    <th key={r.scenario.id} className={`min-w-36 px-3 py-3 text-left font-normal sm:min-w-44 ${isKeep ? 'bg-warn-soft' : ''}`}>
                       <div className="mb-2 w-full">
                         <WikiImage
                           compact
@@ -174,11 +192,27 @@ export function Comparator({ keep, results, ranked, compare, colors, max, onTogg
                     </th>
                   )
                 })}
+                <th className="hidden min-w-32 bg-surface-2/60 px-3 py-3 text-left align-bottom text-xs font-semibold text-ink-2 sm:table-cell">
+                  Vencedor
+                </th>
               </tr>
             </thead>
             <tbody>
               <Group label={`Custo em ${horizon} ${horizon === 1 ? 'ano' : 'anos'}`} span={columns.length} />
-              {numRow('Custo por mês', (r) => h(r).monthly, money)}
+              <Row label="Custo por mês">
+                {columns.map((r) => {
+                  const best = Math.min(...columns.map((c) => h(c).monthly))
+                  return (
+                    <td key={r.scenario.id} className={`px-3 py-2 text-right tabular ${h(r).monthly === best ? 'font-semibold text-good' : ''}`}>
+                      <CostTooltip result={r} horizon={horizon} keep={keep}>
+                        {money(h(r).monthly)}
+                      </CostTooltip>
+                      {h(r).monthly === best && <span className="ml-1 sm:hidden" aria-label="vencedor">🏆</span>}
+                    </td>
+                  )
+                })}
+                <Winner name={winnerName(columns.map((c) => h(c).monthly), 'low')} />
+              </Row>
               {numRow('Custo total', (r) => h(r).total, money)}
               {numRow('Custo por km', (r) => h(r).perKm, money2)}
               {numRow('vs. manter', (r) => (r.scenario.kind === 'keep' ? 0 : h(r).savingsVsKeep), (v) => (v === 0 ? 'base' : `${v > 0 ? '+' : '−'}${money(Math.abs(v))}`), 'high')}
@@ -231,17 +265,33 @@ export function Comparator({ keep, results, ranked, compare, colors, max, onTogg
 function Group({ label, span }: { label: string; span: number }) {
   return (
     <tr>
-      <th colSpan={span + 1} className="bg-surface-2 px-3 py-1.5 text-left text-[11px] font-semibold tracking-wide text-muted uppercase">
+      <th colSpan={span + 2} className="bg-surface-2 px-3 py-1.5 text-left text-[11px] font-semibold tracking-wide text-muted uppercase">
         {label}
       </th>
     </tr>
   )
 }
 
+function Winner({ name }: { name: { name: string; color: string } | 'empate' | null }) {
+  return (
+    <td className="hidden bg-surface-2/60 px-3 py-2 text-left text-xs sm:table-cell">
+      {name === null ? null : name === 'empate' ? (
+        <span className="text-muted">empate</span>
+      ) : (
+        <span className="inline-flex items-center gap-1.5 font-medium">
+          <span aria-hidden>🏆</span>
+          <span className="size-2 shrink-0 rounded-full" style={{ background: name.color }} />
+          <span className="line-clamp-2">{name.name}</span>
+        </span>
+      )}
+    </td>
+  )
+}
+
 function Row({ label, children }: { label: string; children: ReactNode }) {
   return (
     <tr className="border-t border-line align-top">
-      <th scope="row" className="sticky left-0 z-10 bg-surface px-3 py-2 text-left font-normal text-ink-2">
+      <th scope="row" className="sticky left-0 z-10 max-w-28 bg-surface px-3 py-2 text-left text-xs font-normal text-ink-2 sm:max-w-none sm:text-sm">
         {label}
       </th>
       {children}

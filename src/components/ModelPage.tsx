@@ -6,6 +6,7 @@ import { energyCostPerKm } from '../lib/tco'
 import type { Assumptions, Consumption, CurrentCar, Horizon, ScenarioResult } from '../lib/types'
 import { HORIZONS } from '../lib/types'
 import { BreakdownBars } from './BreakdownBars'
+import { MarketListings } from './MarketListings'
 import { Badge, Card, Segmented } from './ui'
 import { WikiImage } from './WikiImage'
 
@@ -150,7 +151,7 @@ export function ModelPage({ modelId, results, ranked, keep, horizon, onHorizon, 
                     </td>
                     <td className="px-3 py-2 text-right tabular whitespace-nowrap">
                       {money(o.scenario.price)}
-                      <span className="block text-xs text-muted">{{ fipe: 'FIPE', pesquisa: 'pesquisa', manual: 'manual', estimado: 'estimado' }[o.scenario.priceSource]}</span>
+                      <span className="block text-xs text-muted">{{ fipe: 'FIPE', pesquisa: 'pesquisa', anuncios: 'anúncios', manual: 'manual', estimado: 'estimado' }[o.scenario.priceSource]}</span>
                     </td>
                     <td className="px-3 py-2 text-right tabular">{o.upfrontCash > 0 ? money(o.upfrontCash) : '—'}</td>
                     <td className="px-3 py-2 text-right tabular whitespace-nowrap">
@@ -194,6 +195,8 @@ export function ModelPage({ modelId, results, ranked, keep, horizon, onHorizon, 
           </div>
         )}
       </Card>
+
+      <MarketListings modelIds={[...family]} brand={model.brand} model={model.model} />
 
       <Card title="Como este carro entra no cálculo" subtitle="Transparência: o que vem de fonte e o que é estimativa">
         <dl className="divide-y divide-line text-sm">

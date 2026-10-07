@@ -2,6 +2,7 @@ import { useState } from 'react'
 import { CATEGORY_LABEL, POWERTRAIN_LABEL } from '../lib/catalog'
 import { money, money2, months } from '../lib/format'
 import type { Horizon, PriceSource, ScenarioKind, ScenarioResult } from '../lib/types'
+import { CostTooltip } from './CostTooltip'
 import { Badge } from './ui'
 
 export type SortKey =
@@ -37,6 +38,7 @@ const KIND_TONE: Record<ScenarioKind, 'neutral' | 'accent' | 'good' | 'warn'> = 
 const SOURCE_LABEL: Record<PriceSource, string> = {
   fipe: 'FIPE',
   pesquisa: 'Preço pesquisado',
+  anuncios: 'Mediana de anúncios',
   manual: 'Manual',
   estimado: 'Preço estimado',
 }
@@ -51,11 +53,12 @@ interface Props {
   onToggleCompare: (id: string) => void
   onOpen: (id: string) => void
   showAdjusted?: boolean
+  keep?: ScenarioResult
 }
 
 const PAGE = 20
 
-export function RankingTable({ rows, horizon, sort, onSort, compare, colors, onToggleCompare, onOpen, showAdjusted }: Props) {
+export function RankingTable({ rows, horizon, sort, onSort, compare, colors, onToggleCompare, onOpen, showAdjusted, keep }: Props) {
   const [limit, setLimit] = useState(PAGE)
   const [detailed, setDetailed] = useState(false)
 
@@ -143,7 +146,7 @@ export function RankingTable({ rows, horizon, sort, onSort, compare, colors, onT
                   </td>
                   {visible.map((c) => (
                     <td key={c.key} className="px-3 py-3 text-right tabular whitespace-nowrap">
-                      <Cell k={c.key} r={r} horizon={horizon} />
+                      <Cell k={c.key} r={r} horizon={horizon} keep={keep} />
                     </td>
                   ))}
                 </tr>
@@ -165,10 +168,14 @@ export function RankingTable({ rows, horizon, sort, onSort, compare, colors, onT
           const isKeep = r.scenario.kind === 'keep'
           return (
             <li key={r.scenario.id} className={`rounded-xl border border-line p-3 ${isKeep ? 'bg-warn-soft' : 'bg-surface'}`}>
-              <button type="button" className="w-full text-left" onClick={() => onOpen(r.scenario.id)}>
+              <div role="button" tabIndex={0} className="w-full cursor-pointer text-left" onClick={() => onOpen(r.scenario.id)} onKeyDown={(e) => e.key === 'Enter' && onOpen(r.scenario.id)}>
                 <div className="flex items-baseline justify-between gap-3">
                   <span className="text-xs text-muted tabular">#{rank}</span>
-                  <span className="font-semibold tabular">{money(r.horizons[horizon].monthly)}/mês</span>
+                  <span className="font-semibold tabular" onClick={(e) => e.stopPropagation()}>
+                    <CostTooltip result={r} horizon={horizon} keep={keep}>
+                      {money(r.horizons[horizon].monthly)}/mês
+                    </CostTooltip>
+                  </span>
                 </div>
                 <OptionCell result={r} />
                 <div className="mt-2 flex items-center justify-between gap-2 border-t border-line pt-2">
@@ -177,7 +184,7 @@ export function RankingTable({ rows, horizon, sort, onSort, compare, colors, onT
                   </span>
                   <Savings r={r} horizon={horizon} />
                 </div>
-              </button>
+              </div>
             </li>
           )
         })}
@@ -235,7 +242,7 @@ function Savings({ r, horizon }: { r: ScenarioResult; horizon: Horizon }) {
   )
 }
 
-function Cell({ k, r, horizon }: { k: SortKey; r: ScenarioResult; horizon: Horizon }) {
+function Cell({ k, r, horizon, keep }: { k: SortKey; r: ScenarioResult; horizon: Horizon; keep?: ScenarioResult }) {
   const s = r.scenario
   const h = r.horizons[horizon]
   switch (k) {
@@ -251,7 +258,13 @@ function Cell({ k, r, horizon }: { k: SortKey; r: ScenarioResult; horizon: Horiz
         />
       )
     case 'monthly':
-      return <span className="font-semibold">{money(h.monthly)}</span>
+      return (
+        <span className="font-semibold" onClick={(e) => e.stopPropagation()}>
+          <CostTooltip result={r} horizon={horizon} keep={keep}>
+            {money(h.monthly)}
+          </CostTooltip>
+        </span>
+      )
     case 'total':
       return <span className="text-ink-2">{money(h.total)}</span>
     case 't1':

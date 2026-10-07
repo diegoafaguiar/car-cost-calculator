@@ -16,7 +16,7 @@ interface Props {
 }
 
 export function CurrentCarForm({ car, onChange, year, assumptions }: Props) {
-  const [picking, setPicking] = useState(!car.fipe)
+  const [picking, setPicking] = useState(!car.fipe && !car.fipeValue)
   const set = <K extends keyof CurrentCar>(k: K, v: CurrentCar[K]) => onChange({ ...car, [k]: v })
   const setCons = (k: keyof CurrentCar['consumption'], v: number) =>
     onChange({ ...car, consumption: { ...car.consumption, [k]: v } })

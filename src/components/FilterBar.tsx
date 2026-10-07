@@ -1,10 +1,9 @@
 import { useMemo, useState } from 'react'
 import { CATALOG, CATEGORY_ABOVE, CATEGORY_BELOW, CATEGORY_LABEL, CATEGORY_ORDER, POWERTRAIN_LABEL } from '../lib/catalog'
 import { normalize } from '../lib/format'
-import type { Category, Horizon, Powertrain, Preferences, ScenarioKind } from '../lib/types'
-import { HORIZONS } from '../lib/types'
+import type { Category, Powertrain, Preferences, ScenarioKind } from '../lib/types'
 import { KIND_LABEL } from './RankingTable'
-import { Chip, ChipGroup, NumberField, Segmented, Switch } from './ui'
+import { Chip, ChipGroup, NumberField, Segmented } from './ui'
 
 const BRANDS = [...new Set(CATALOG.map((m) => m.brand))].sort((a, b) => a.localeCompare(b, 'pt-BR'))
 
@@ -16,15 +15,12 @@ interface Props {
   onOnlySavings: (v: boolean) => void
   resultCount: number
   onAddCustom: (query: string) => void
-  includeOpportunity: boolean
-  onIncludeOpportunity: (v: boolean) => void
-  investReturn: number
 }
 
 const labels = (cats: Category[]) => cats.map((c) => CATEGORY_LABEL[c]).join(' e ')
 
 /** Filtros principais sempre à vista; os demais ficam em "Mais filtros". */
-export function FilterBar({ prefs, onPrefs, carCategory, onlySavings, onOnlySavings, resultCount, onAddCustom, includeOpportunity, onIncludeOpportunity, investReturn }: Props) {
+export function FilterBar({ prefs, onPrefs, carCategory, onlySavings, onOnlySavings, resultCount, onAddCustom }: Props) {
   const [open, setOpen] = useState(false)
   const [focused, setFocused] = useState(false)
   const set = (p: Partial<Preferences>) => onPrefs({ ...prefs, ...p })
@@ -51,7 +47,7 @@ export function FilterBar({ prefs, onPrefs, carCategory, onlySavings, onOnlySavi
 
   return (
     <div className="rounded-2xl border border-line bg-surface p-4 shadow-card">
-      <div className="grid gap-4 lg:grid-cols-[minmax(0,1.3fr)_minmax(0,1fr)_auto]">
+      <div className="grid gap-4 lg:grid-cols-[minmax(0,1.4fr)_minmax(0,1fr)]">
         <div className="relative">
           <label className="mb-1.5 block text-xs font-medium text-ink-2" htmlFor="car-search">
             Buscar um carro
@@ -114,23 +110,6 @@ export function FilterBar({ prefs, onPrefs, carCategory, onlySavings, onOnlySavi
           <p className="mt-1 text-xs text-muted">0 = sem limite. Assinaturas não entram no filtro de preço.</p>
         </div>
 
-        <div>
-          <span className="mb-1.5 block text-xs font-medium text-ink-2">Horizonte</span>
-          <Segmented<Horizon>
-            label="Horizonte"
-            value={prefs.rankHorizon}
-            options={HORIZONS.map((y) => ({ value: y, label: `${y} ${y === 1 ? 'ano' : 'anos'}` }))}
-            onChange={(v) => set({ rankHorizon: v })}
-          />
-          <div className="mt-3">
-            <Switch
-              checked={includeOpportunity}
-              onChange={onIncludeOpportunity}
-              label="Custo de oportunidade"
-              hint={includeOpportunity ? `Considera ${(investReturn * 100).toFixed(1)}% a.a. que o dinheiro renderia` : 'Desligado: só gastos e depreciação'}
-            />
-          </div>
-        </div>
       </div>
 
       <div className="mt-4 border-t border-line pt-4">

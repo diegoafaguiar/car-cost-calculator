@@ -8,6 +8,7 @@ import { HORIZONS } from '../lib/types'
 import { BreakdownBars } from './BreakdownBars'
 import { FipePicker } from './FipePicker'
 import { KIND_LABEL } from './RankingTable'
+import { MarketListings } from './MarketListings'
 import { Badge, Button, Segmented } from './ui'
 
 interface Props {
@@ -140,6 +141,19 @@ export function DetailDrawer({ result, keep, a, initialHorizon, override, onOver
             ))}
           </dl>
         </section>
+
+        {model && s.kind === 'used' && (
+          <section>
+            <h3 className="mb-2 text-sm font-semibold">Anúncios deste carro</h3>
+            <MarketListings
+              compact
+              modelIds={[model.id]}
+              brand={model.brand}
+              model={model.model}
+              initialYear={new Date().getFullYear() - s.ageAtStart}
+            />
+          </section>
+        )}
 
         {model && s.kind !== 'subscription' && (
           <a href={`#/carro/${model.id}`} onClick={() => ref.current?.close()} className="block rounded-lg border border-accent p-3 text-sm font-medium text-accent hover:bg-accent/8">

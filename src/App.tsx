@@ -81,7 +81,10 @@ export default function App() {
       ? { ...s, ipvaRatePHEV: s.ipvaRateHybrid ?? DEFAULT_ASSUMPTIONS.ipvaRatePHEV, ipvaRateHybrid: s.ipvaRateHybrid === 0.015 ? 0.04 : s.ipvaRateHybrid }
       : s,
   )
-  const [prefs, setPrefs] = usePersisted('ccc:prefs', DEFAULT_PREFERENCES)
+  const [prefs, setPrefs] = usePersisted('ccc:prefs', DEFAULT_PREFERENCES, (s) =>
+    // O padrão antigo simulava só seminovos de 2 e 4 anos; amplia para 1 a 4.
+    JSON.stringify(s.usedAges) === '[2,4]' ? { ...s, usedAges: [1, 2, 3, 4] } : s,
+  )
   const [prices, setPrices] = usePersisted<Record<string, PriceEntry>>('ccc:prices', {})
   const [overrides, setOverrides] = usePersisted<Record<string, FipeOverride>>('ccc:overrides', {})
   const [token, setToken] = usePersisted('ccc:fipeToken', '')
@@ -228,13 +231,13 @@ export default function App() {
     <div className="min-h-dvh">
       <header className="sticky top-0 z-30 border-b border-line bg-surface/85 backdrop-blur">
         <div className="mx-auto flex h-14 max-w-[1280px] items-center gap-3 px-4 sm:px-6">
-          <a href="#/" className="flex items-center gap-2.5">
+          <a href="#/" className="flex shrink-0 items-center gap-2.5" aria-label="Custo de Carro — início">
             <span className="grid size-8 place-items-center rounded-lg bg-accent text-accent-ink" aria-hidden>
               <svg viewBox="0 0 24 24" className="size-5">
                 <path d="M4 15l1.8-4.6A2.5 2.5 0 0 1 8.1 9h7.8a2.5 2.5 0 0 1 2.3 1.4L20 15v3a1 1 0 0 1-1 1h-1.2a1 1 0 0 1-1-1v-.8H7.2v.8a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1z" fill="currentColor" />
               </svg>
             </span>
-            <span className="leading-tight">
+            <span className="hidden leading-tight min-[430px]:block">
               <span className="block text-sm font-semibold tracking-tight whitespace-nowrap">Custo de Carro</span>
               <span className="hidden text-xs text-muted sm:block">Manter, trocar ou assinar — com dados</span>
             </span>
@@ -289,6 +292,12 @@ export default function App() {
                 onEdit={() => setSettings('car')}
                 onOpen={setOpenId}
                 includeOpportunity={assumptions.includeOpportunity !== false}
+                onIncludeOpportunity={(v) => setAssumptions({ ...assumptions, includeOpportunity: v })}
+                investReturn={assumptions.investReturnYear}
+                onHorizon={(v) => setPrefs({ ...prefs, rankHorizon: v })}
+                compare={compare}
+                onToggleCompare={toggleCompare}
+                usingPreference={prefs.rankBy === 'ajustado' && hasPreference}
               />
               </section>
             )}
@@ -302,9 +311,6 @@ export default function App() {
               onOnlySavings={setOnlySavings}
               resultCount={ranked.length}
               onAddCustom={(q) => setAdding(q)}
-              includeOpportunity={assumptions.includeOpportunity !== false}
-              onIncludeOpportunity={(v) => setAssumptions({ ...assumptions, includeOpportunity: v })}
-              investReturn={assumptions.investReturnYear}
             />
             </section>
 
@@ -377,6 +383,7 @@ export default function App() {
                 onToggleCompare={toggleCompare}
                 onOpen={setOpenId}
                 showAdjusted={hasPreference}
+                keep={keep}
               />
             </Card>
             </section>

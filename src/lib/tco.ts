@@ -6,6 +6,7 @@ import {
   POWERTRAIN_LABEL,
   SUBSCRIPTION_REPRESENTATIVE,
 } from './catalog'
+import { marketFor } from './market'
 import type {
   Assumptions,
   Breakdown,
@@ -237,7 +238,8 @@ export function simulate(s: Scenario, ctx: SimContext): Omit<ScenarioResult, 'br
   } else {
     cash = curSale - car.loanBalance
     if (s.kind !== 'subscription') {
-      const paid = s.kind === 'used' ? s.price * (1 + a.usedPremiumPct) : s.price
+      // Preço de anúncio já é o preço pedido: não soma o ágio sobre a FIPE.
+      const paid = s.kind === 'used' && s.priceSource !== 'anuncios' ? s.price * (1 + a.usedPremiumPct) : s.price
       costBasis = paid
       const available = Math.max(0, cash)
       let down = paid
@@ -405,6 +407,10 @@ export function priceFor(
   const known = year !== undefined ? KNOWN_FIPE[`${model.id}@${year - age}`] : undefined
   const hit = prices[priceKey(model.id, age)] ?? known
   if (hit && hit.price > 0) return hit
+  // Seminovo sem FIPE ao vivo: usa a FIPE vista na pesquisa de mercado ou a mediana dos anúncios.
+  const mk = year !== undefined && age > 0 ? marketFor(model.id, year - age) : undefined
+  if (mk?.fipe?.price) return { price: mk.fipe.price, source: 'fipe', reference: mk.fipe.reference }
+  if (mk?.summary && mk.summary.count >= 3) return { price: mk.summary.median, source: 'anuncios', reference: mk.listings[0]?.date }
   const newHit = prices[priceKey(model.id, 0)]
   const base = newHit && newHit.price > 0 ? newHit.price : model.refPriceNew
   if (age === 0 && !(newHit && newHit.price > 0) && model.priceRef) {

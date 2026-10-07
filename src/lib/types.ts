@@ -213,7 +213,7 @@ export interface CustomCar {
   fipeReference?: string
 }
 
-export type PriceSource = 'fipe' | 'pesquisa' | 'estimado' | 'manual'
+export type PriceSource = 'fipe' | 'pesquisa' | 'anuncios' | 'estimado' | 'manual'
 
 export interface Scenario {
   id: string
