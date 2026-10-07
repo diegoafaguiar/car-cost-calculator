@@ -1,6 +1,13 @@
 export type Powertrain = 'flex' | 'gasolina' | 'diesel' | 'hibrido' | 'hibrido-plugin' | 'eletrico'
 
-export type Category = 'hatch-compacto' | 'hatch' | 'sedan' | 'suv-compacto' | 'suv-medio' | 'picape'
+export type Category =
+  | 'hatch-compacto'
+  | 'hatch'
+  | 'sedan'
+  | 'suv-compacto'
+  | 'suv-medio'
+  | 'suv-grande'
+  | 'picape'
 
 export type ScenarioKind = 'keep' | 'new' | 'used' | 'subscription'
 
@@ -24,7 +31,7 @@ export interface Consumption {
 export interface FipeQuery {
   /** Trecho do nome da marca na FIPE (ex.: "chevrolet"). */
   brand: string
-  /** Todos os termos devem aparecer no nome do modelo FIPE. */
+  /** Todos os termos devem aparecer no nome do modelo FIPE ("a|b" aceita qualquer um). */
   include: string[]
   /** Nenhum destes termos pode aparecer. */
   exclude?: string[]
@@ -48,6 +55,8 @@ export interface CatalogModel {
   maintenanceBase: number
   /** Multiplicador da curva de depreciação (1 = média de mercado). */
   depreciationFactor: number
+  /** Primeiro ano-modelo vendido no Brasil (seminovos anteriores não existem). */
+  since?: number
   /** Fração rodada no modo elétrico (só híbridos plug-in). */
   evShare?: number
   fipe: FipeQuery
@@ -78,6 +87,8 @@ export interface CurrentCar {
   /** Valor informado manualmente; tem prioridade sobre a FIPE quando preenchido. */
   manualValue?: number
   modelYear: number
+  /** Quilometragem atual (para ajustar o valor de revenda). */
+  odometerKm: number
   category: Category
   powertrain: Powertrain
   consumption: Consumption
@@ -123,6 +134,10 @@ export interface Assumptions {
   saleDiscountPct: number
   /** Ágio pago na compra de seminovo em relação à FIPE. */
   usedPremiumPct: number
+  /** Multiplicador do seguro estimado (região, perfil, bônus). 1 = média nacional. */
+  insuranceFactor: number
+  /** Desconto no valor do carro atual a cada 10 mil km acima da média de 12 mil km/ano. */
+  mileageDiscountPer10k: number
   /** Crescimento anual da manutenção com a idade do carro. */
   maintenanceGrowth: number
   subscriptionPlans: SubscriptionPlan[]

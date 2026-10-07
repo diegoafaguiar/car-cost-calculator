@@ -2,7 +2,8 @@ import { useState } from 'react'
 import { CATEGORY_LABEL, POWERTRAIN_LABEL } from '../lib/catalog'
 import { yearOf, ZERO_KM_YEAR } from '../lib/fipe'
 import { money } from '../lib/format'
-import { currentCarValue, depreciationRate } from '../lib/tco'
+import { currentCarValue, depreciationRate, mileagePenalty } from '../lib/tco'
+import type { Assumptions } from '../lib/types'
 import type { Category, CurrentCar, PlannedCost, Powertrain } from '../lib/types'
 import { FipePicker } from './FipePicker'
 import { Button, Collapsible, NumberField, SelectField, TextField } from './ui'
@@ -11,9 +12,10 @@ interface Props {
   car: CurrentCar
   onChange: (c: CurrentCar) => void
   year: number
+  assumptions: Assumptions
 }
 
-export function CurrentCarForm({ car, onChange, year }: Props) {
+export function CurrentCarForm({ car, onChange, year, assumptions }: Props) {
   const [picking, setPicking] = useState(!car.fipe)
   const set = <K extends keyof CurrentCar>(k: K, v: CurrentCar[K]) => onChange({ ...car, [k]: v })
   const setCons = (k: keyof CurrentCar['consumption'], v: number) =>
@@ -22,6 +24,7 @@ export function CurrentCarForm({ car, onChange, year }: Props) {
   const value = currentCarValue(car)
   const isEV = car.powertrain === 'eletrico'
   const age = Math.max(0, year - car.modelYear)
+  const kmPen = mileagePenalty(car, assumptions, year)
 
   return (
     <Collapsible title="Meu carro" hint={value ? `${car.label} · ${money(value)}` : 'Informe seu carro'} defaultOpen>
@@ -79,6 +82,20 @@ export function CurrentCarForm({ car, onChange, year }: Props) {
             hint="Sobrepõe a FIPE"
           />
           <NumberField label="Ano modelo" value={car.modelYear} onChange={(v) => set('modelYear', Math.round(v))} hint={`${age} anos de uso`} />
+          <NumberField
+            label="Km rodados"
+            suffix="km"
+            step={1000}
+            value={car.odometerKm}
+            onChange={(v) => set('odometerKm', v)}
+            hint={
+              kmPen > 0
+                ? `−${(kmPen * 100).toFixed(1)}% na revenda (acima da média)`
+                : kmPen < 0
+                  ? `+${(-kmPen * 100).toFixed(1)}% na revenda (abaixo da média)`
+                  : 'Na média de mercado'
+            }
+          />
           <SelectField<Category>
             label="Categoria"
             value={car.category}

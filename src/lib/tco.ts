@@ -146,9 +146,20 @@ export function currentCarValue(car: CurrentCar): number {
   return car.manualValue && car.manualValue > 0 ? car.manualValue : (car.fipeValue ?? 0)
 }
 
+/** Desconto (ou ágio, se negativo) no carro atual por rodar acima (abaixo) da média de 12 mil km/ano. */
+export function mileagePenalty(car: CurrentCar, a: Assumptions, year: number): number {
+  if (!car.odometerKm) return 0
+  const expected = Math.max(0.5, year - car.modelYear) * 12000
+  const pen = ((car.odometerKm - expected) / 10000) * a.mileageDiscountPer10k
+  return Math.min(0.25, Math.max(-0.05, pen))
+}
+
 export interface SimContext {
   assumptions: Assumptions
   car: CurrentCar
+  /** Mês do calendário em que a simulação começa (0 = janeiro). Define quando o IPVA vence. */
+  startMonth: number
+  year: number
 }
 
 interface Loan {
@@ -183,8 +194,10 @@ export function simulate(s: Scenario, ctx: SimContext): Omit<ScenarioResult, 'br
   const sale = 1 - a.saleDiscountPct
   const kmMonth = a.kmPerYear / 12
   const curValue = currentCarValue(car)
+  const kmFactor = 1 - mileagePenalty(car, a, ctx.year)
+  const curSale = curValue * kmFactor * sale
 
-  const w0 = curValue * sale - car.loanBalance
+  const w0 = curSale - car.loanBalance
   let cash = 0
   let loan: Loan = { balance: 0, payment: 0, remaining: 0 }
   let costBasis = 0
@@ -193,9 +206,9 @@ export function simulate(s: Scenario, ctx: SimContext): Omit<ScenarioResult, 'br
 
   if (s.kind === 'keep') {
     loan = { balance: car.loanBalance, payment: car.loanPayment, remaining: car.loanRemaining }
-    costBasis = curValue * sale
+    costBasis = curSale
   } else {
-    cash = curValue * sale - car.loanBalance
+    cash = curSale - car.loanBalance
     if (s.kind !== 'subscription') {
       const paid = s.kind === 'used' ? s.price * (1 + a.usedPremiumPct) : s.price
       costBasis = paid
@@ -222,9 +235,13 @@ export function simulate(s: Scenario, ctx: SimContext): Omit<ScenarioResult, 'br
   const assetAt = (m: number) =>
     hasAsset ? projectValue(s.price, s.ageAtStart, s.depreciationFactor, m, s.fixedDepreciation) : 0
 
+  // Valor de revenda: deságio de venda e, no carro atual, ajuste por quilometragem.
+  const resaleAt = (m: number) => assetAt(m) * sale * (s.kind === 'keep' ? kmFactor : 1)
+
   const cpk = energyCostPerKm(s.powertrain, s.consumption, a, s.evShare)
   const sums = emptyBreakdown()
-  const cumulative: number[] = [w0 - (cash + assetAt(0) * sale - loan.balance)]
+  const cumulative: number[] = [w0 - (cash + resaleAt(0) - loan.balance)]
+  let insuranceMonthly = 0
   const snapshots: Partial<Record<number, Breakdown>> = {}
 
   for (let m = 0; m < SIM_MONTHS; m++) {
@@ -233,13 +250,23 @@ export function simulate(s: Scenario, ctx: SimContext): Omit<ScenarioResult, 'br
     const inflYear = Math.pow(1 + a.inflationYear, y)
     let out = 0
 
-    if (hasAsset && m % 12 === 0) {
-      const value = assetAt(m)
-      const insurance = value * s.insuranceRate * inflYear
-      const taxes = value * ipvaRateFor(s.powertrain, a) + a.licensingFee * inflYear
-      sums.insurance += insurance
+    if (hasAsset) {
+      // Seguro: renovado a cada 12 meses sobre o valor do carro, pago mensalmente.
+      if (m % 12 === 0) insuranceMonthly = (assetAt(m) * s.insuranceRate * inflYear) / 12
+      sums.insurance += insuranceMonthly
+      out += insuranceMonthly
+
+      // IPVA e licenciamento vencem em janeiro. O ano corrente já está pago no carro atual e
+      // no seminovo; o 0 km paga IPVA proporcional aos meses restantes do ano.
+      const calendarMonth = (ctx.startMonth + m) % 12
+      let taxes = 0
+      if (calendarMonth === 0 && (m > 0 || s.kind === 'new')) {
+        taxes = assetAt(m) * ipvaRateFor(s.powertrain, a) + a.licensingFee * infl
+      } else if (m === 0 && s.kind === 'new') {
+        taxes = (s.price * ipvaRateFor(s.powertrain, a) * (12 - ctx.startMonth)) / 12
+      }
       sums.taxes += taxes
-      out += insurance + taxes
+      out += taxes
     }
 
     const energy = kmMonth * cpk * infl
@@ -274,14 +301,14 @@ export function simulate(s: Scenario, ctx: SimContext): Omit<ScenarioResult, 'br
     out += paid
 
     cash = (cash - out) * (1 + rm)
-    const netWorth = cash + assetAt(m + 1) * sale - loan.balance
+    const netWorth = cash + resaleAt(m + 1) - loan.balance
     const cost = w0 * Math.pow(1 + rm, m + 1) - netWorth
     cumulative.push(cost)
 
     const month = m + 1
     if (month % 12 === 0 && HORIZONS.includes((month / 12) as Horizon)) {
       const b: Breakdown = { ...sums }
-      b.depreciation = hasAsset ? costBasis - assetAt(month) * sale : 0
+      b.depreciation = hasAsset ? costBasis - resaleAt(month) : 0
       const accounted = COST_KEYS.filter((k) => k !== 'opportunity').reduce((t, k) => t + b[k], 0)
       b.opportunity = cost - accounted
       snapshots[month] = b
@@ -381,7 +408,8 @@ export function buildScenarios(opts: {
   })
 
   for (const m of catalog) {
-    for (const ageOpt of [0, ...usedAges]) {
+    const insuranceRate = m.insuranceRate * a.insuranceFactor
+    for (const ageOpt of [0, ...usedAges.filter((age) => year - age >= (m.since ?? 0))]) {
       const p = priceFor(m, ageOpt, prices)
       const used = ageOpt > 0
       list.push({
@@ -399,7 +427,7 @@ export function buildScenarios(opts: {
         priceSource: p.source,
         fipeReference: p.reference,
         ageAtStart: ageOpt,
-        insuranceRate: m.insuranceRate,
+        insuranceRate,
         maintenanceBase: m.maintenanceBase,
         depreciationFactor: m.depreciationFactor,
       })

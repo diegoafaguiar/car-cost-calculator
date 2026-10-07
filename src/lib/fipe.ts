@@ -126,12 +126,13 @@ export const yearOf = (code: string) => Number.parseInt(code.split('-')[0], 10)
 const words = (s: string) =>
   normalize(s)
     .split(/\s+/)
-    .map((w) => w.replace(/\.$/, ''))
+    .map((w) => w.replace(/^[(\[]+|[)\],]+$/g, '').replace(/\.$/, ''))
     .filter(Boolean)
 
 export function matchesQuery(name: string, q: FipeQuery): boolean {
   const ws = new Set(words(name))
-  return q.include.every((t) => ws.has(t)) && !(q.exclude ?? []).some((t) => ws.has(t))
+  const has = (t: string) => t.split('|').some((alt) => ws.has(alt))
+  return q.include.every(has) && !(q.exclude ?? []).some(has)
 }
 
 export function findBrand(brands: FipeItem[], q: FipeQuery): FipeItem | undefined {

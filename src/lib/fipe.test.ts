@@ -18,6 +18,15 @@ const routes: Record<string, unknown> = {
 
 afterEach(() => vi.unstubAllGlobals())
 
+describe('matchesQuery', () => {
+  it('reconhece "(Híbrido)" da FIPE', async () => {
+    const { matchesQuery } = await import('./fipe')
+    const cc = CATALOG.find((m) => m.id === 'toyota-corolla-cross-hybrid')!
+    expect(matchesQuery('Corolla Cross XRX 1.8 16V Aut. (Híbrido)', cc.fipe)).toBe(true)
+    expect(matchesQuery('Corolla Cross XRX 2.0 16V Flex Aut.', cc.fipe)).toBe(false)
+  })
+})
+
 describe('resolveCatalogPrice', () => {
   it('encontra a versão certa e o ano pedido', async () => {
     const store = new Map<string, string>()

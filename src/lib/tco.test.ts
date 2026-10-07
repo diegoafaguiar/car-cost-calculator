@@ -6,6 +6,7 @@ import {
   breakEven,
   buildScenarios,
   energyCostPerKm,
+  mileagePenalty,
   pmt,
   projectValue,
   runAll,
@@ -14,7 +15,19 @@ import {
 import type { Assumptions, CurrentCar } from './types'
 
 const a: Assumptions = { ...DEFAULT_ASSUMPTIONS, inflationYear: 0, investReturnYear: 0 }
-const car: CurrentCar = { ...DEFAULT_CAR, plannedCosts: [] }
+const car: CurrentCar = {
+  ...DEFAULT_CAR,
+  fipeValue: 62000,
+  modelYear: 2020,
+  odometerKm: 0,
+  category: 'hatch',
+  powertrain: 'flex',
+  insuranceYear: 2800,
+  maintenanceYear: 2600,
+  depreciationYear: 0.07,
+  plannedCosts: [],
+}
+const ctx = { assumptions: a, car, startMonth: 0, year: 2026 }
 
 describe('energyCostPerKm', () => {
   it('escolhe etanol quando compensa no flex', () => {
@@ -47,11 +60,12 @@ describe('financeiro', () => {
 describe('simulate', () => {
   it('manter sem juros nem inflação soma custos + depreciação', () => {
     const [keep] = buildScenarios({ car, assumptions: a, usedAges: [], prices: {}, year: 2026 })
-    const r = simulate(keep, { assumptions: a, car })
+    const r = simulate(keep, ctx)
     const b = r.horizons[1].breakdown
     expect(r.cumulative[0]).toBeCloseTo(0)
     expect(b.opportunity).toBeCloseTo(0, 4)
     const value = 62000
+    expect(b.taxes).toBe(0) // IPVA do ano corrente já pago
     const sale = 1 - a.saleDiscountPct
     expect(b.depreciation).toBeCloseTo(value * 0.07 * sale, 4)
     expect(b.insurance).toBeCloseTo(2800, 4)
@@ -62,10 +76,33 @@ describe('simulate', () => {
     )
   })
 
+  it('cobra IPVA em janeiro e proporcional no 0 km', () => {
+    const list = buildScenarios({ car, assumptions: a, usedAges: [2], prices: {}, year: 2026 })
+    const october = { ...ctx, startMonth: 9 }
+    const keep = simulate(list[0], october)
+    expect(keep.horizons[1].breakdown.taxes).toBeCloseTo(
+      projectValue(62000, 6, 1, 3, 0.07) * a.ipvaRate + a.licensingFee,
+    )
+    const zero = list.find((s) => s.id === 'new:fiat-mobi:0')!
+    const r = simulate(zero, october)
+    const proportional = (zero.price * a.ipvaRate * 3) / 12
+    expect(r.horizons[1].breakdown.taxes).toBeCloseTo(
+      proportional + projectValue(zero.price, 0, zero.depreciationFactor, 3) * a.ipvaRate + a.licensingFee,
+    )
+  })
+
+  it('aplica desconto por quilometragem alta no carro atual', () => {
+    const high = { ...car, odometerKm: 6 * 12000 + 30000 }
+    expect(mileagePenalty(high, a, 2026)).toBeCloseTo(0.03)
+    const [keep] = buildScenarios({ car: high, assumptions: a, usedAges: [], prices: {}, year: 2026 })
+    const r = simulate(keep, { ...ctx, car: high })
+    expect(r.cumulative[0]).toBeCloseTo(0)
+  })
+
   it('assinatura não tem ativo e o carro atual vira caixa', () => {
     const list = buildScenarios({ car, assumptions: a, usedAges: [], prices: {}, year: 2026 })
     const sub = list.find((s) => s.kind === 'subscription')!
-    const r = simulate(sub, { assumptions: a, car })
+    const r = simulate(sub, ctx)
     expect(r.horizons[1].breakdown.depreciation).toBe(0)
     expect(r.horizons[1].breakdown.subscription).toBeCloseTo(sub.plan!.monthlyFee * 12)
   })
@@ -73,7 +110,7 @@ describe('simulate', () => {
   it('financia quando não há dinheiro suficiente no modo auto', () => {
     const list = buildScenarios({ car, assumptions: a, usedAges: [], prices: {}, year: 2026 })
     const corolla = list.find((s) => s.id === 'new:toyota-corolla:0')!
-    const r = simulate(corolla, { assumptions: { ...a, investReturnYear: 0.1 }, car })
+    const r = simulate(corolla, { ...ctx, assumptions: { ...a, investReturnYear: 0.1 } })
     expect(r.financed).toBeGreaterThan(0)
     expect(r.installment).toBeGreaterThan(0)
     expect(r.horizons[5].breakdown.interest).toBeGreaterThan(0)
@@ -81,7 +118,7 @@ describe('simulate', () => {
 
   it('runAll calcula economia em relação a manter', () => {
     const list = buildScenarios({ car, assumptions: a, usedAges: [2], prices: {}, year: 2026 })
-    const results = runAll(list, { assumptions: a, car })
+    const results = runAll(list, ctx)
     const keep = results.find((r) => r.scenario.kind === 'keep')!
     expect(keep.horizons[3].savingsVsKeep).toBe(0)
     const other = results[1]

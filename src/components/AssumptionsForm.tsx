@@ -58,6 +58,8 @@ export function AssumptionsForm({ a, onChange, prefs, onPrefs, token, onToken }:
           <NumberField label="IPVA híbridos" suffix="%" scale={100} step={0.1} value={a.ipvaRateHybrid} onChange={(v) => set('ipvaRateHybrid', v)} />
           <NumberField label="IPVA elétricos" suffix="%" scale={100} step={0.1} value={a.ipvaRateEV} onChange={(v) => set('ipvaRateEV', v)} hint="Isento em alguns estados" />
           <NumberField label="Licenciamento" prefix="R$" value={a.licensingFee} onChange={(v) => set('licensingFee', v)} />
+          <NumberField label="Fator do seguro" suffix="×" step={0.05} value={a.insuranceFactor} onChange={(v) => set('insuranceFactor', v)} hint="Região/perfil vs. média nacional" />
+          <NumberField label="Desconto por km extra" suffix="% /10 mil" scale={100} step={0.1} value={a.mileageDiscountPer10k} onChange={(v) => set('mileageDiscountPer10k', v)} hint="Acima de 12 mil km/ano" />
           <NumberField label="Manutenção cresce" suffix="% a.a." scale={100} value={a.maintenanceGrowth} onChange={(v) => set('maintenanceGrowth', v)} hint="Por ano de idade" />
         </div>
       </Collapsible>

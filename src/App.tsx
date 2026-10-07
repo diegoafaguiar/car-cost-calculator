@@ -16,6 +16,7 @@ import { HORIZONS } from './lib/types'
 import { usePersisted } from './lib/usePersisted'
 
 const YEAR = new Date().getFullYear()
+const START_MONTH = new Date().getMonth()
 const SERIES_COLORS = ['var(--s1)', 'var(--s2)', 'var(--s3)', 'var(--s4)', 'var(--s5)']
 const MAX_COMPARE = SERIES_COLORS.length
 
@@ -67,7 +68,7 @@ export default function App() {
 
   const results = useMemo(() => {
     const scenarios = buildScenarios({ car, assumptions, usedAges: prefs.usedAges, prices, year: YEAR })
-    return runAll(scenarios, { assumptions, car })
+    return runAll(scenarios, { assumptions, car, startMonth: START_MONTH, year: YEAR })
   }, [car, assumptions, prefs.usedAges, prices])
 
   const keep = results.find((r) => r.scenario.kind === 'keep')
@@ -148,7 +149,9 @@ export default function App() {
       ...(prefs.kinds.includes('new') || prefs.kinds.includes('used') ? [0] : []),
       ...(prefs.kinds.includes('used') ? prefs.usedAges : []),
     ]
-    const jobs = models.flatMap((m) => ages.map((age) => ({ m, age })))
+    const jobs = models.flatMap((m) =>
+      ages.filter((age) => YEAR - age >= (m.since ?? 0)).map((age) => ({ m, age })),
+    )
     const state = { done: 0, total: jobs.length, failed: 0, error: undefined as string | undefined }
     setFetchState({ ...state })
 
@@ -198,7 +201,7 @@ export default function App() {
 
       <div className="grid gap-6 lg:grid-cols-[380px_minmax(0,1fr)]">
         <aside className="space-y-3 lg:sticky lg:top-6 lg:max-h-[calc(100dvh-3rem)] lg:overflow-y-auto lg:pr-1">
-          <CurrentCarForm car={car} onChange={setCar} year={YEAR} />
+          <CurrentCarForm car={car} onChange={setCar} year={YEAR} assumptions={assumptions} />
           <AssumptionsForm a={assumptions} onChange={setAssumptions} prefs={prefs} onPrefs={setPrefs} token={token} onToken={setToken} />
           <Button
             variant="ghost"
@@ -229,12 +232,6 @@ export default function App() {
           {!hasValue && (
             <p className="rounded-lg border border-line bg-[#fab219]/12 p-3 text-sm">
               Informe o valor do seu carro (busque na FIPE ou preencha o valor manual) para comparar as opções.
-            </p>
-          )}
-          {car.label.includes('(exemplo)') && (
-            <p className="rounded-lg border border-line bg-surface-2 p-3 text-sm text-ink-2">
-              Você está vendo um carro de exemplo. Abra <strong className="text-ink">Meu carro</strong> e busque o seu na
-              FIPE para ver a sua análise.
             </p>
           )}
 
