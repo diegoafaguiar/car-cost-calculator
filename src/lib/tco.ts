@@ -1,0 +1,455 @@
+import { CATALOG, CATEGORY_LABEL, POWERTRAIN_LABEL, SUBSCRIPTION_REPRESENTATIVE } from './catalog'
+import type {
+  Assumptions,
+  Breakdown,
+  CatalogModel,
+  Consumption,
+  CostKey,
+  CurrentCar,
+  Horizon,
+  HorizonResult,
+  Powertrain,
+  PriceSource,
+  Scenario,
+  ScenarioResult,
+} from './types'
+import { HORIZONS } from './types'
+
+export const SIM_MONTHS = 60
+
+export const COST_KEYS: CostKey[] = [
+  'depreciation',
+  'energy',
+  'insurance',
+  'taxes',
+  'maintenance',
+  'interest',
+  'subscription',
+  'opportunity',
+]
+
+export const COST_LABEL: Record<CostKey, string> = {
+  depreciation: 'Depreciação',
+  energy: 'Combustível / energia',
+  insurance: 'Seguro',
+  taxes: 'IPVA e licenciamento',
+  maintenance: 'Manutenção',
+  interest: 'Juros do financiamento',
+  subscription: 'Assinatura',
+  opportunity: 'Custo de oportunidade',
+}
+
+const emptyBreakdown = (): Breakdown => ({
+  depreciation: 0,
+  energy: 0,
+  insurance: 0,
+  taxes: 0,
+  maintenance: 0,
+  interest: 0,
+  subscription: 0,
+  opportunity: 0,
+})
+
+const monthlyRate = (yearly: number) => Math.pow(1 + yearly, 1 / 12) - 1
+
+/** Custo de energia por km, escolhendo o combustível mais barato em carros flex. */
+export function energyCostPerKm(
+  powertrain: Powertrain,
+  c: Consumption,
+  a: Assumptions,
+  evShare = 0,
+): number {
+  const mix = (city: number, road: number) => {
+    if (city <= 0 || road <= 0) return Infinity
+    return a.cityShare / city + (1 - a.cityShare) / road
+  }
+  const litersGas = mix(c.cityKmL, c.roadKmL)
+  const kwh = mix(c.cityKmKWh ?? 0, c.roadKmKWh ?? 0)
+
+  const combustion = () => {
+    if (powertrain === 'diesel') return litersGas * a.dieselPrice
+    const gas = litersGas * a.gasolinePrice
+    if (powertrain === 'gasolina') return gas
+    // Flex (inclui híbridos flex da Toyota): usa o mais barato por km.
+    const hasEthanol = powertrain === 'flex' || c.cityKmLEthanol !== undefined
+    if (!hasEthanol) return gas
+    const eth =
+      mix(c.cityKmLEthanol ?? c.cityKmL * 0.7, c.roadKmLEthanol ?? c.roadKmL * 0.7) * a.ethanolPrice
+    return Math.min(gas, eth)
+  }
+
+  if (powertrain === 'eletrico') return kwh * a.kwhPrice
+  if (powertrain === 'hibrido-plugin') {
+    return evShare * kwh * a.kwhPrice + (1 - evShare) * combustion()
+  }
+  return combustion()
+}
+
+/** Qual combustível compensa (para exibição). */
+export function bestFuel(powertrain: Powertrain, c: Consumption, a: Assumptions): string {
+  if (powertrain === 'eletrico') return 'Energia elétrica'
+  if (powertrain === 'diesel') return 'Diesel'
+  if (powertrain === 'gasolina' || (powertrain !== 'flex' && c.cityKmLEthanol === undefined)) {
+    return powertrain === 'hibrido-plugin' ? 'Eletricidade + gasolina' : 'Gasolina'
+  }
+  const gas = energyCostPerKm('gasolina', c, a)
+  const eth = energyCostPerKm('flex', c, a)
+  const fuel = eth < gas ? 'Etanol' : 'Gasolina'
+  return powertrain === 'hibrido-plugin' ? `Eletricidade + ${fuel.toLowerCase()}` : fuel
+}
+
+/** Depreciação anual esperada para um carro com a idade informada. */
+export function depreciationRate(age: number, factor: number): number {
+  const base = age <= 0 ? 0.15 : Math.max(0.04, 0.1 - 0.006 * (age - 1))
+  return Math.min(0.4, base * factor)
+}
+
+/** Valor de mercado após `months` meses, a partir do valor atual. */
+export function projectValue(
+  value: number,
+  ageAtStart: number,
+  factor: number,
+  months: number,
+  fixedRate?: number,
+): number {
+  let v = value
+  let remaining = months
+  let age = ageAtStart
+  while (remaining > 0) {
+    const step = Math.min(12, remaining)
+    const rate = fixedRate ?? depreciationRate(age, factor)
+    v *= Math.pow(1 - rate, step / 12)
+    remaining -= step
+    age += 1
+  }
+  return v
+}
+
+/** Valor estimado de um modelo com `age` anos, a partir do preço 0 km. */
+export function estimateUsedPrice(newPrice: number, age: number, factor: number): number {
+  return projectValue(newPrice, 0, factor, age * 12)
+}
+
+export function pmt(principal: number, rate: number, n: number): number {
+  if (principal <= 0 || n <= 0) return 0
+  if (rate === 0) return principal / n
+  return (principal * rate) / (1 - Math.pow(1 + rate, -n))
+}
+
+function ipvaRateFor(p: Powertrain, a: Assumptions) {
+  if (p === 'eletrico') return a.ipvaRateEV
+  if (p === 'hibrido' || p === 'hibrido-plugin') return a.ipvaRateHybrid
+  return a.ipvaRate
+}
+
+export function currentCarValue(car: CurrentCar): number {
+  return car.manualValue && car.manualValue > 0 ? car.manualValue : (car.fipeValue ?? 0)
+}
+
+export interface SimContext {
+  assumptions: Assumptions
+  car: CurrentCar
+}
+
+interface Loan {
+  balance: number
+  payment: number
+  remaining: number
+  /** Juros mensais; quando ausente, os juros são rateados linearmente. */
+  rate?: number
+}
+
+function stepLoan(loan: Loan): { paid: number; interest: number } {
+  if (loan.remaining <= 0 || loan.payment <= 0) return { paid: 0, interest: 0 }
+  const interest =
+    loan.rate !== undefined
+      ? loan.balance * loan.rate
+      : Math.max(0, (loan.payment * loan.remaining - loan.balance) / loan.remaining)
+  const principal = Math.min(loan.balance, loan.payment - interest)
+  loan.balance = Math.max(0, loan.balance - principal)
+  loan.remaining -= 1
+  return { paid: loan.payment, interest }
+}
+
+/**
+ * Simula 60 meses de um cenário. O custo é medido como a perda de patrimônio
+ * frente a vender o carro atual hoje e investir o valor: considera fluxo de caixa,
+ * valor de revenda ao final (com deságio de venda), saldo devedor e rendimento.
+ */
+export function simulate(s: Scenario, ctx: SimContext): Omit<ScenarioResult, 'breakEvenMonth'> {
+  const a = ctx.assumptions
+  const car = ctx.car
+  const rm = monthlyRate(a.investReturnYear)
+  const sale = 1 - a.saleDiscountPct
+  const kmMonth = a.kmPerYear / 12
+  const curValue = currentCarValue(car)
+
+  const w0 = curValue * sale - car.loanBalance
+  let cash = 0
+  let loan: Loan = { balance: 0, payment: 0, remaining: 0 }
+  let costBasis = 0
+  let upfrontCash = 0
+  let financed = 0
+
+  if (s.kind === 'keep') {
+    loan = { balance: car.loanBalance, payment: car.loanPayment, remaining: car.loanRemaining }
+    costBasis = curValue * sale
+  } else {
+    cash = curValue * sale - car.loanBalance
+    if (s.kind !== 'subscription') {
+      const paid = s.kind === 'used' ? s.price * (1 + a.usedPremiumPct) : s.price
+      costBasis = paid
+      const available = Math.max(0, cash)
+      let down = paid
+      if (a.paymentMode === 'financiado') {
+        down = Math.min(paid, Math.max(paid * a.downPaymentPct, available))
+      } else if (a.paymentMode === 'auto' && available + a.savingsAvailable < paid) {
+        down = Math.min(paid, Math.max(paid * a.downPaymentPct, available + a.savingsAvailable))
+      }
+      financed = paid - down
+      cash -= down
+      upfrontCash = Math.max(0, -cash)
+      loan = {
+        balance: financed,
+        payment: pmt(financed, a.financeRateMonth, a.financeMonths),
+        remaining: financed > 0 ? a.financeMonths : 0,
+        rate: a.financeRateMonth,
+      }
+    }
+  }
+
+  const hasAsset = s.kind !== 'subscription'
+  const assetAt = (m: number) =>
+    hasAsset ? projectValue(s.price, s.ageAtStart, s.depreciationFactor, m, s.fixedDepreciation) : 0
+
+  const cpk = energyCostPerKm(s.powertrain, s.consumption, a, s.evShare)
+  const sums = emptyBreakdown()
+  const cumulative: number[] = [w0 - (cash + assetAt(0) * sale - loan.balance)]
+  const snapshots: Partial<Record<number, Breakdown>> = {}
+
+  for (let m = 0; m < SIM_MONTHS; m++) {
+    const y = Math.floor(m / 12)
+    const infl = Math.pow(1 + a.inflationYear, m / 12)
+    const inflYear = Math.pow(1 + a.inflationYear, y)
+    let out = 0
+
+    if (hasAsset && m % 12 === 0) {
+      const value = assetAt(m)
+      const insurance = value * s.insuranceRate * inflYear
+      const taxes = value * ipvaRateFor(s.powertrain, a) + a.licensingFee * inflYear
+      sums.insurance += insurance
+      sums.taxes += taxes
+      out += insurance + taxes
+    }
+
+    const energy = kmMonth * cpk * infl
+    sums.energy += energy
+    out += energy
+
+    if (hasAsset) {
+      const maintenance =
+        ((s.maintenanceBase * Math.pow(1 + a.maintenanceGrowth, s.ageAtStart + y)) / 12) * infl
+      sums.maintenance += maintenance
+      out += maintenance
+    }
+
+    if (s.kind === 'keep') {
+      for (const pc of car.plannedCosts) {
+        if (Math.max(1, Math.round(pc.month)) - 1 === m) {
+          sums.maintenance += pc.amount
+          out += pc.amount
+        }
+      }
+    }
+
+    if (s.plan) {
+      const excess = Math.max(0, kmMonth - s.plan.kmFranchiseMonth) * s.plan.excessKmPrice
+      const fee = (s.plan.monthlyFee + excess) * inflYear
+      sums.subscription += fee
+      out += fee
+    }
+
+    const { paid, interest } = stepLoan(loan)
+    sums.interest += interest
+    out += paid
+
+    cash = (cash - out) * (1 + rm)
+    const netWorth = cash + assetAt(m + 1) * sale - loan.balance
+    const cost = w0 * Math.pow(1 + rm, m + 1) - netWorth
+    cumulative.push(cost)
+
+    const month = m + 1
+    if (month % 12 === 0 && HORIZONS.includes((month / 12) as Horizon)) {
+      const b: Breakdown = { ...sums }
+      b.depreciation = hasAsset ? costBasis - assetAt(month) * sale : 0
+      const accounted = COST_KEYS.filter((k) => k !== 'opportunity').reduce((t, k) => t + b[k], 0)
+      b.opportunity = cost - accounted
+      snapshots[month] = b
+    }
+  }
+
+  const horizons = {} as Record<Horizon, HorizonResult>
+  for (const h of HORIZONS) {
+    const total = cumulative[h * 12]
+    horizons[h] = {
+      years: h,
+      total,
+      monthly: total / (h * 12),
+      perKm: a.kmPerYear > 0 ? total / (a.kmPerYear * h) : 0,
+      breakdown: snapshots[h * 12] ?? emptyBreakdown(),
+      savingsVsKeep: 0,
+    }
+  }
+
+  return {
+    scenario: s,
+    cumulative,
+    horizons,
+    upfrontCash,
+    financed,
+    installment: loan.rate !== undefined ? pmt(financed, a.financeRateMonth, a.financeMonths) : 0,
+  }
+}
+
+/** Primeiro mês a partir do qual a opção fica (e permanece) mais barata que manter. */
+export function breakEven(option: number[], keep: number[]): number | null {
+  const last = option.length - 1
+  if (option[last] > keep[last]) return null
+  let m = last
+  while (m > 0 && option[m - 1] <= keep[m - 1]) m--
+  return m
+}
+
+export interface PriceEntry {
+  price: number
+  source: PriceSource
+  reference?: string
+}
+
+export const priceKey = (modelId: string, age: number) => `${modelId}:${age}`
+
+export function priceFor(
+  model: CatalogModel,
+  age: number,
+  prices: Record<string, PriceEntry>,
+): PriceEntry {
+  const hit = prices[priceKey(model.id, age)]
+  if (hit && hit.price > 0) return hit
+  const newHit = prices[priceKey(model.id, 0)]
+  const base = newHit && newHit.price > 0 ? newHit.price : model.refPriceNew
+  return {
+    price: age === 0 ? base : estimateUsedPrice(base, age, model.depreciationFactor),
+    source: 'estimado',
+  }
+}
+
+export function carAge(car: CurrentCar, year: number): number {
+  return Math.max(0, year - car.modelYear)
+}
+
+export function buildScenarios(opts: {
+  car: CurrentCar
+  assumptions: Assumptions
+  usedAges: number[]
+  prices: Record<string, PriceEntry>
+  year: number
+  catalog?: CatalogModel[]
+}): Scenario[] {
+  const { car, assumptions: a, usedAges, prices, year } = opts
+  const catalog = opts.catalog ?? CATALOG
+  const value = currentCarValue(car)
+  const age = carAge(car, year)
+  const list: Scenario[] = []
+
+  list.push({
+    id: 'keep',
+    kind: 'keep',
+    label: car.label || 'Meu carro atual',
+    detail: `Manter · ${car.modelYear}`,
+    category: car.category,
+    powertrain: car.powertrain,
+    consumption: car.consumption,
+    price: value,
+    priceSource: car.manualValue ? 'manual' : car.fipeValue ? 'fipe' : 'manual',
+    fipeReference: car.fipeReference,
+    ageAtStart: age,
+    insuranceRate: value > 0 ? car.insuranceYear / value : 0,
+    // A manutenção informada já é a do carro na idade atual.
+    maintenanceBase: car.maintenanceYear / Math.pow(1 + a.maintenanceGrowth, age),
+    depreciationFactor: 1,
+    fixedDepreciation: car.depreciationYear,
+  })
+
+  for (const m of catalog) {
+    for (const ageOpt of [0, ...usedAges]) {
+      const p = priceFor(m, ageOpt, prices)
+      const used = ageOpt > 0
+      list.push({
+        id: `${used ? 'used' : 'new'}:${m.id}:${ageOpt}`,
+        kind: used ? 'used' : 'new',
+        label: `${m.brand} ${m.model}`,
+        detail: `${m.version} · ${used ? `${year - ageOpt} (seminovo)` : '0 km'}`,
+        modelId: m.id,
+        category: m.category,
+        powertrain: m.powertrain,
+        seats: m.seats,
+        consumption: m.consumption,
+        evShare: m.evShare,
+        price: p.price,
+        priceSource: p.source,
+        fipeReference: p.reference,
+        ageAtStart: ageOpt,
+        insuranceRate: m.insuranceRate,
+        maintenanceBase: m.maintenanceBase,
+        depreciationFactor: m.depreciationFactor,
+      })
+    }
+  }
+
+  for (const plan of a.subscriptionPlans) {
+    const rep = catalog.find((m) => m.id === SUBSCRIPTION_REPRESENTATIVE[plan.category])
+    if (!rep) continue
+    list.push({
+      id: `sub:${plan.category}`,
+      kind: 'subscription',
+      label: `Assinatura · ${CATEGORY_LABEL[plan.category]}`,
+      detail: `Ex.: ${rep.brand} ${rep.model} · ${plan.kmFranchiseMonth.toLocaleString('pt-BR')} km/mês`,
+      modelId: rep.id,
+      category: plan.category,
+      powertrain: rep.powertrain,
+      seats: rep.seats,
+      consumption: rep.consumption,
+      price: 0,
+      priceSource: 'estimado',
+      ageAtStart: 0,
+      insuranceRate: 0,
+      maintenanceBase: 0,
+      depreciationFactor: 1,
+      plan,
+    })
+  }
+
+  return list
+}
+
+export function runAll(scenarios: Scenario[], ctx: SimContext): ScenarioResult[] {
+  const raw = scenarios.map((s) => simulate(s, ctx))
+  const keep = raw.find((r) => r.scenario.kind === 'keep')
+  return raw.map((r) => {
+    const horizons = { ...r.horizons }
+    for (const h of HORIZONS) {
+      horizons[h] = {
+        ...horizons[h],
+        savingsVsKeep: keep ? keep.horizons[h].total - horizons[h].total : 0,
+      }
+    }
+    return {
+      ...r,
+      horizons,
+      breakEvenMonth:
+        keep && r.scenario.kind !== 'keep' ? breakEven(r.cumulative, keep.cumulative) : null,
+    }
+  })
+}
+
+export const describePowertrain = (p: Powertrain) => POWERTRAIN_LABEL[p]
