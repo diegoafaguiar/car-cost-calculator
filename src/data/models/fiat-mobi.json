@@ -1,0 +1,135 @@
+{
+  "id": "fiat-mobi",
+  "researchedAt": "2026-10",
+  "displayName": "Fiat Mobi",
+  "summary": "Subcompacto (segmento A) de entrada da Fiat, feito em Betim (MG). Desde a linha 2026 usa o 1.0 Firefly 3 cil. flex (até 75 cv) no lugar do antigo Fire Evo 4 cil., sempre com câmbio manual de 5 marchas. Versões Like e Trekking (visual aventureiro). Linha 2027 tabelada em R$ 85.490 (Like) e R$ 87.990 (Trekking).",
+  "generation": "1ª geração, lançada em 2016 (ano-modelo 2017); reestilização com motor Firefly e painel/volante da Strada na linha 2026.",
+  "timeline": [
+    {
+      "modelYear": "2026",
+      "change": "Troca do Fire Evo 4 cil. pelo 1.0 Firefly 3 cil. (até 75 cv); novo painel de instrumentos e volante da Strada, ajuste de altura da coluna de direção; Trekking com teto preto de série; lançada a R$ 79.060 (Like) / R$ 80.990 (Trekking) com benefício do programa Carro Sustentável; reajustes ao longo de 2026 (Like R$ 82.560 em jan/2026, depois > R$ 84 mil)."
+    },
+    {
+      "modelYear": "2027",
+      "change": "Like R$ 85.490 e Trekking R$ 87.990 (preço público); ofertas pontuais de R$ 72.790 para a Like (lote limitado)."
+    }
+  ],
+  "highlights": [
+    "Inmetro (Firefly): gasolina 14,0 cidade / 15,1 estrada; etanol 9,8 / 10,6 km/l",
+    "Motor Firefly 3 cil. mais silencioso e esperto que o Fire, segundo avaliação do AutoPapo",
+    "Mecânica simples e manutenção barata; dimensões compactas (3.596 mm)"
+  ],
+  "watchOuts": [
+    "Preço de tabela subiu várias vezes em 2026 e passou de R$ 85 mil; descontos frequentes indicam tabela inflada",
+    "Espaço traseiro limitado e porta-malas pequeno (≈200 L segundo imprensa; versões antigas declaravam 215 L)",
+    "Sem teste Latin NCAP encontrado para o Mobi atual",
+    "Só câmbio manual"
+  ],
+  "specs": {
+    "version": "Mobi Like 1.0 Firefly (2026/2027)",
+    "engine": "1.0 Firefly flex 3 cil. aspirado",
+    "powerCv": "75 (E) / 71 (G)",
+    "torqueKgfm": "10,5 (E)",
+    "transmission": "manual de 5 marchas",
+    "trunkL": 200,
+    "lengthMm": 3596,
+    "wheelbaseMm": 2304,
+    "safety": null,
+    "warranty": null
+  },
+  "inmetro": {
+    "version": "Mobi 1.0 Firefly",
+    "cityGas": 14.0,
+    "roadGas": 15.1,
+    "cityEth": 9.8,
+    "roadEth": 10.6,
+    "cityKmKWh": null,
+    "roadKmKWh": null,
+    "year": "PBEV 2025/2026 (Firefly)",
+    "source": "https://autopapo.com.br/noticia/avaliacao-fiat-mobi-2026/"
+  },
+  "price0km": {
+    "version": "Like 1.0 2027",
+    "price": 85490,
+    "date": "ago-set/2026",
+    "source": "https://garagem360.com.br/?p=315986"
+  },
+  "versionsAndPrices": [
+    {
+      "version": "Like 1.0 2027",
+      "price": 85490,
+      "date": "ago-set/2026",
+      "source": "https://garagem360.com.br/?p=315986"
+    },
+    {
+      "version": "Trekking 1.0 2027",
+      "price": 87990,
+      "date": "ago-set/2026",
+      "source": "https://garagem360.com.br/?p=315986"
+    },
+    {
+      "version": "Like 1.0 2026 (lançamento)",
+      "price": 79060,
+      "date": "2025",
+      "source": "https://www.autoo.com.br/fiat-lanca-linha-2026-do-mobi-com-uma-serie-de-mudancas-veja-precos/"
+    }
+  ],
+  "launchModelYearBR": 2017,
+  "catalogCheck": "Versão Like existe (linha 2027). Preço do catálogo R$ 78.990 está defasado: tabela atual R$ 85.490 (Like 2027; Trekking R$ 87.990); FIPE 0 km Like ≈ R$ 76.775 (set/2026) e ofertas de R$ 69.990–72.790 existem. Consumo do catálogo (G 13,5/15,0; E 9,6/10,5) diverge do Inmetro do Firefly: G 14,0/15,1; E 9,8/10,6.",
+  "wikipedia": {
+    "lang": "en",
+    "title": "Fiat Mobi"
+  },
+  "officialUrl": "https://www.fiat.com.br/mobi.html",
+  "sources": [
+    {
+      "label": "AutoPapo – avaliação Mobi 2026 Firefly",
+      "url": "https://autopapo.com.br/noticia/avaliacao-fiat-mobi-2026/"
+    },
+    {
+      "label": "Garagem360 – Mobi R$ 85.490",
+      "url": "https://garagem360.com.br/?p=315986"
+    },
+    {
+      "label": "Autoo – linha 2026 do Mobi",
+      "url": "https://www.autoo.com.br/fiat-lanca-linha-2026-do-mobi-com-uma-serie-de-mudancas-veja-precos/"
+    },
+    {
+      "label": "Automais – aumento jan/2026",
+      "url": "https://www.automaistv.com.br/vendas-e-precos/fiat-mobi-recebe-aumento-de-r-1-500-e-passa-dos-r-84-mil/"
+    },
+    {
+      "label": "Motorshow – avaliação Mobi Firefly",
+      "url": "https://motorshow.com.br/avaliacao-fiat-mobi-firefly-2026"
+    }
+  ],
+  "unverified": [
+    "officialUrl (não visto nos resultados)",
+    "garantia",
+    "torque com gasolina",
+    "porta-malas exato (200 vs 215 L)",
+    "Latin NCAP"
+  ],
+  "catalogSeed": {
+    "version": "Mobi Like 1.0 Firefly 2027",
+    "refPriceNew": 85490,
+    "trunkL": 200,
+    "seats": 5,
+    "powertrain": "flex",
+    "consumption": {
+      "cityKmL": 14.0,
+      "roadKmL": 15.1,
+      "cityKmLEthanol": 9.8,
+      "roadKmLEthanol": 10.6,
+      "cityKmKWh": null,
+      "roadKmKWh": null
+    },
+    "consumptionNote": "Inmetro/PBEV do Mobi 1.0 Firefly, citado por AutoPapo e outros (2025/2026)",
+    "since": 2017,
+    "fipeInclude": [
+      "Mobi",
+      "Like"
+    ],
+    "discontinued": false
+  }
+}

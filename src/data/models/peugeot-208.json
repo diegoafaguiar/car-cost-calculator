@@ -1,0 +1,139 @@
+{
+  "id": "peugeot-208",
+  "researchedAt": "2026-10",
+  "displayName": "Peugeot 208",
+  "summary": "Hatch compacto da Peugeot fabricado em Porto Real (RJ), na plataforma CMP. A linha 2027 (set/2026) ficou mais barata e perdeu a versão Active: Style 1.0 Firefly aspirado (75 cv E / 71 cv G, manual de 5) por R$ 93.990, Allure Turbo 200 AT por R$ 119.990 e GT MHEV Turbo 200 AT por R$ 132.990. O 1.0 turbo caiu de 130/125 cv para 115 cv.",
+  "generation": "2ª geração (P21); no Brasil desde a linha 2021; reestilização em set/2024 (linha 2025).",
+  "timeline": [
+    {
+      "modelYear": "2025",
+      "change": "Reestilização (set/2024), a partir de cerca de R$ 77 mil."
+    },
+    {
+      "modelYear": "2027",
+      "change": "Set/2026: fim da versão Active; Style vira a de entrada com 1.0 aspirado (R$ 93.990, antes R$ 106.990 com turbo); Allure R$ 119.990; GT R$ 132.990; turbo 200 cai para 115 cv e 20,4 kgfm."
+    }
+  ],
+  "highlights": [
+    "Linha 2027 mais barata em todas as versões",
+    "Inmetro Style 1.0 MT: gasolina 13,6/15,3; etanol 9,5/10,8 km/l"
+  ],
+  "watchOuts": [
+    "Latin NCAP (dez/2021): 2 estrelas, com apenas 2 airbags",
+    "Porta-malas pequeno: 265 L",
+    "Turbo perdeu potência na linha 2027",
+    "Cortes de preço pressionam a revenda dos usados"
+  ],
+  "specs": {
+    "version": "208 Style 1.0 MT 2027",
+    "engine": "1.0 Firefly aspirado flex 3 cil.",
+    "powerCv": "75 (E) / 71 (G)",
+    "torqueKgfm": "10,7",
+    "transmission": "manual de 5 marchas",
+    "trunkL": 265,
+    "lengthMm": null,
+    "wheelbaseMm": null,
+    "safety": "Latin NCAP dez/2021: 2 estrelas",
+    "warranty": null
+  },
+  "inmetro": {
+    "version": "208 Style 1.0 MT 2027",
+    "cityGas": 13.6,
+    "roadGas": 15.3,
+    "cityEth": 9.5,
+    "roadEth": 10.8,
+    "cityKmKWh": null,
+    "roadKmKWh": null,
+    "year": "PBEV 2026 (linha 2027, conforme imprensa)",
+    "source": "https://www.otempo.com.br/autotempo/2026/9/11/peugeot-208-2027-versoes-precos-consumo-e-mudancas"
+  },
+  "price0km": {
+    "version": "208 Style 1.0 MT 2027",
+    "price": 93990,
+    "date": "set/2026",
+    "source": "https://www.otempo.com.br/autotempo/2026/9/11/peugeot-208-2027-versoes-precos-consumo-e-mudancas"
+  },
+  "versionsAndPrices": [
+    {
+      "version": "Style 1.0 MT",
+      "price": 93990,
+      "date": "set/2026",
+      "source": "https://www.autoo.com.br/peugeot-208-2027-perde-versao-e-potencia-veja-precos-pecas-consumo-e-equipamentos-do-hatch/"
+    },
+    {
+      "version": "Allure Turbo 200 AT",
+      "price": 119990,
+      "date": "set/2026",
+      "source": "https://www.autoo.com.br/peugeot-208-2027-perde-versao-e-potencia-veja-precos-pecas-consumo-e-equipamentos-do-hatch/"
+    },
+    {
+      "version": "GT MHEV Turbo 200 AT",
+      "price": 132990,
+      "date": "set/2026",
+      "source": "https://www.autoo.com.br/peugeot-208-2027-perde-versao-e-potencia-veja-precos-pecas-consumo-e-equipamentos-do-hatch/"
+    }
+  ],
+  "launchModelYearBR": 2021,
+  "catalogCheck": "A versão 'Active 1.0' foi descontinuada na linha 2027; a equivalente de entrada é a 'Style 1.0 MT' por R$ 93.990 (set/2026), não R$ 94.990. Consumo do catálogo (G 13,6/15,0; E 9,5/10,6) deve ser G 13,6/15,3; E 9,5/10,8 (Style 1.0 MT). Porta-malas 265 L. FIPE: '208 Style 1.0 Flex 6V 5p Mec.' (a Active antiga é '208 Active 1.0 Flex 6V 5p Mec.').",
+  "wikipedia": {
+    "lang": "en",
+    "title": "Peugeot 208"
+  },
+  "officialUrl": null,
+  "sources": [
+    {
+      "label": "O Tempo – Peugeot 208 2027 versões, preços, consumo",
+      "url": "https://www.otempo.com.br/autotempo/2026/9/11/peugeot-208-2027-versoes-precos-consumo-e-mudancas"
+    },
+    {
+      "label": "Autoo – 208 2027 perde versão e potência",
+      "url": "https://www.autoo.com.br/peugeot-208-2027-perde-versao-e-potencia-veja-precos-pecas-consumo-e-equipamentos-do-hatch/"
+    },
+    {
+      "label": "Encontracarros – 208 2027 mais barato e menos potente",
+      "url": "https://www.encontracarros.com.br/peugeot-208-2027-2"
+    },
+    {
+      "label": "Vrum – Peugeot revela preços do novo 208 (2024)",
+      "url": "https://www.vrum.com.br/noticias/2024/09/6941587-peugeot-revela-precos-do-novo-208-modelo-parte-de-rs-76.html"
+    },
+    {
+      "label": "Latin NCAP – Peugeot 208 duas estrelas",
+      "url": "https://www.latinncap.com/po/area-imprensa/noticia/861b357c5a9ff9/novos-resultados-do-latin-ncapo-peugeot-208-ganhou-duas-estrelas-enquanto-o"
+    },
+    {
+      "label": "Wikipedia – Peugeot 208",
+      "url": "https://en.wikipedia.org/wiki/Peugeot_208"
+    }
+  ],
+  "unverified": [
+    "mês exato de estreia da 2ª geração no Brasil (linha 2021)",
+    "comprimento e entre-eixos",
+    "garantia",
+    "página oficial"
+  ],
+  "catalogSeed": {
+    "version": "208 Style 1.0 MT (linha 2027)",
+    "refPriceNew": 93990,
+    "trunkL": 265,
+    "seats": 5,
+    "powertrain": "flex",
+    "consumption": {
+      "cityKmL": 13.6,
+      "roadKmL": 15.3,
+      "cityKmLEthanol": 9.5,
+      "roadKmLEthanol": 10.8,
+      "cityKmKWh": null,
+      "roadKmKWh": null
+    },
+    "consumptionNote": "Inmetro do Style 1.0 MT linha 2027 publicado por O Tempo/Encontracarros",
+    "since": 2021,
+    "fipeInclude": [
+      "208",
+      "Style",
+      "1.0",
+      "Mec"
+    ],
+    "discontinued": false
+  }
+}

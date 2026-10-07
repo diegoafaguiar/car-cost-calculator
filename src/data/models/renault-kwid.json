@@ -1,0 +1,157 @@
+{
+  "id": "renault-kwid",
+  "researchedAt": "2026-10",
+  "displayName": "Renault Kwid",
+  "summary": "Subcompacto de entrada da Renault feito em São José dos Pinhais (PR), com 1.0 SCe 3 cil. flex (71 cv E / 68 cv G) e câmbio manual de 5 marchas. Linha 2027 (ago/2026) trouxe dianteira nova, painel digital de 7\" e multimídia 10,1\", e renomeou as versões para Evolution (substitui a Zen), Techno e Outsider.",
+  "generation": "1ª geração no Brasil desde 2017 (ano-modelo 2018); reestilizações em 2022 (linha 2023) e ago/2026 (linha 2027).",
+  "timeline": [
+    {
+      "modelYear": "2026",
+      "change": "Versões Zen (R$ 79.790), Intense (R$ 82.990), nova Iconic (R$ 86.490, substitui Intense Pack Biton) e Outsider (R$ 86.590); reajustes levaram o Kwid perto de R$ 90 mil."
+    },
+    {
+      "modelYear": "2027",
+      "change": "Ago/2026: nova grade preta brilhante e logotipo, lanternas 'Crystal Lens', DRL LED, quadro digital 7\", TPMS e 4 airbags em todas; multimídia 10,1\" sem fio na Techno. Versões Evolution (tabela R$ 82.790, lançamento a R$ 71.090), Techno (R$ 75.990 promocional) e Outsider (R$ 84.890). Mecânica inalterada."
+    }
+  ],
+  "highlights": [
+    "Um dos carros a combustão mais econômicos do Brasil (Inmetro G 15,3/15,7 km/l)",
+    "Porta-malas de 290 L (1.100 L com banco rebatido)",
+    "Linha 2027 com painel digital, 4 airbags e DRL LED de série",
+    "Preço de lançamento da Evolution 2027 (R$ 71.090) o tornou o 0 km mais barato do país"
+  ],
+  "watchOuts": [
+    "Latin NCAP: 3 estrelas (adulto e criança) no teste de 2017, protocolo antigo",
+    "Motor de 68–71 cv e só câmbio manual",
+    "Preço de tabela (R$ 82.790) bem acima do promocional; descontos > R$ 20 mil no estoque 2026 pressionam a revenda",
+    "Divergência de consumo entre fontes da linha 2027"
+  ],
+  "specs": {
+    "version": "Kwid Evolution 1.0 2027",
+    "engine": "1.0 SCe flex 3 cil. 12V",
+    "powerCv": "71 (E) / 68 (G)",
+    "torqueKgfm": "10,0 (E) / 9,4 (G)",
+    "transmission": "manual de 5 marchas",
+    "trunkL": 290,
+    "lengthMm": null,
+    "wheelbaseMm": null,
+    "safety": "Latin NCAP 2017: 3 estrelas adulto / 3 estrelas criança (protocolo antigo)",
+    "warranty": null
+  },
+  "inmetro": {
+    "version": "Kwid 1.0 SCe (Zen 2026)",
+    "cityGas": 15.3,
+    "roadGas": 15.7,
+    "cityEth": 10.8,
+    "roadEth": 11.0,
+    "cityKmKWh": null,
+    "roadKmKWh": null,
+    "year": "PBEV 2026 (conforme imprensa)",
+    "source": "https://monitordomercado.com.br/noticias/385648-renault-kwid-2026-vale-a-pena-veja-preco-consumo-versoes-e-cuidados-antes-da-compra/",
+    "note": "Para a linha 2027 a imprensa (Autoo/O Antagonista) cita G 14,4/15,5 e E 10,4/'14,4' km/l (estrada etanol provavelmente erro de digitação). Não confirmado na tabela PBEV."
+  },
+  "price0km": {
+    "version": "Evolution 1.0 2027 (preço de tabela)",
+    "price": 82790,
+    "date": "ago/2026",
+    "source": "https://www.vrum.com.br/mercado/2026/08/7486100-renault-kwid-2027-parte-de-rs-71-090-com-visual-renovado-e-mais-tecnologia.html"
+  },
+  "versionsAndPrices": [
+    {
+      "version": "Evolution 2027 (tabela)",
+      "price": 82790,
+      "date": "ago/2026",
+      "source": "https://www.dgabc.com.br/Noticia/4343990/renault-renova-kwid-e-kardian-ganha-versao-de-entrada-vibe"
+    },
+    {
+      "version": "Evolution 2027 (condição de lançamento)",
+      "price": 71090,
+      "date": "ago/2026",
+      "source": "https://www.bemparana.com.br/carros/renault-kwid-2027-tem-novo-visual-duas-telas-e-preco-de-r-71-090/"
+    },
+    {
+      "version": "Techno 2027",
+      "price": 75990,
+      "date": "ago/2026",
+      "source": "https://autopapo.com.br/noticia/renault-kwid-2027/"
+    },
+    {
+      "version": "Outsider 2027",
+      "price": 84890,
+      "date": "ago/2026",
+      "source": "https://autopapo.com.br/noticia/renault-kwid-2027/"
+    },
+    {
+      "version": "Zen 2026",
+      "price": 79790,
+      "date": "2026",
+      "source": "https://www.autoo.com.br/renault-kwid-2026-precos-versoes-consumo-e-equipamentos-do-hatch/"
+    }
+  ],
+  "launchModelYearBR": 2018,
+  "catalogCheck": "A versão Zen deixou de existir na linha 2027 (ago/2026); equivalente atual é a Evolution, tabelada em R$ 82.790 (lançamento promocional a R$ 71.090; Techno R$ 75.990 promocional; Outsider R$ 84.890). Preço do catálogo R$ 74.990 não corresponde a nenhum preço oficial atual. Consumo do catálogo (G 15,3/15,7; E 10,8/11,0) confere com o citado para o Kwid 2026; para 2027 há fonte com G 14,4/15,5 e E 10,4 cidade (não confirmado).",
+  "wikipedia": {
+    "lang": "en",
+    "title": "Renault Kwid"
+  },
+  "officialUrl": "https://www.renault.com.br/veiculos-de-passeio/kwid.html",
+  "sources": [
+    {
+      "label": "AutoPapo – Kwid 2027",
+      "url": "https://autopapo.com.br/noticia/renault-kwid-2027/"
+    },
+    {
+      "label": "Vrum – Kwid 2027 parte de R$ 71.090",
+      "url": "https://www.vrum.com.br/mercado/2026/08/7486100-renault-kwid-2027-parte-de-rs-71-090-com-visual-renovado-e-mais-tecnologia.html"
+    },
+    {
+      "label": "DGABC – Kwid 2027 Evolution tabela R$ 82.790",
+      "url": "https://www.dgabc.com.br/Noticia/4343990/renault-renova-kwid-e-kardian-ganha-versao-de-entrada-vibe"
+    },
+    {
+      "label": "Autoo – Kwid 2027 consumo e porta-malas",
+      "url": "https://www.autoo.com.br/renault-kwid-2027-confira-precos-pecas-consumo-e-equipamentos-do-hatch/"
+    },
+    {
+      "label": "Autoo – Kwid 2026 versões",
+      "url": "https://www.autoo.com.br/renault-kwid-2026-precos-versoes-consumo-e-equipamentos-do-hatch/"
+    },
+    {
+      "label": "Monitor do Mercado – Kwid 2026 consumo",
+      "url": "https://monitordomercado.com.br/noticias/385648-renault-kwid-2026-vale-a-pena-veja-preco-consumo-versoes-e-cuidados-antes-da-compra/"
+    },
+    {
+      "label": "Motorshow – Kwid 3 estrelas Latin NCAP",
+      "url": "https://motorshow.com.br/renault-kwid-leva-tres-estrelas-no-latin-ncap"
+    }
+  ],
+  "unverified": [
+    "Inmetro exato da linha 2027",
+    "comprimento/entre-eixos",
+    "garantia",
+    "officialUrl (não visto nos resultados)",
+    "nome FIPE da versão Evolution"
+  ],
+  "catalogSeed": {
+    "version": "Kwid Evolution 1.0 2027 (substitui Zen)",
+    "refPriceNew": 82790,
+    "trunkL": 290,
+    "seats": 5,
+    "powertrain": "flex",
+    "consumption": {
+      "cityKmL": 15.3,
+      "roadKmL": 15.7,
+      "cityKmLEthanol": 10.8,
+      "roadKmLEthanol": 11.0,
+      "cityKmKWh": null,
+      "roadKmKWh": null
+    },
+    "consumptionNote": "Inmetro citado para o Kwid 2026 (mesma mecânica do 2027). Fonte da linha 2027 cita G 14,4/15,5 e E 10,4 cidade — não confirmado no PBEV.",
+    "since": 2018,
+    "fipeInclude": [
+      "KWID",
+      "Zen"
+    ],
+    "discontinued": false
+  }
+}

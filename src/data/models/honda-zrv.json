@@ -1,0 +1,138 @@
+{
+  "id": "honda-zrv",
+  "researchedAt": "2026-10",
+  "displayName": "Honda ZR-V",
+  "summary": "SUV médio importado do México, posicionado entre HR-V e CR-V, derivado da plataforma do Civic 11. No Brasil há só a versão Touring, com motor 2.0 aspirado a gasolina de 161 cv e câmbio CVT. Não há versão híbrida no Brasil (o e:HEV é vendido em Japão, Europa e Índia).",
+  "generation": "1ª geração, lançada no Brasil em nov/2023 (ano-modelo 2024); primeira atualização (linha 2026) em out/2025.",
+  "timeline": [
+    {
+      "modelYear": "2024",
+      "change": "Lançamento em nov/2023, versão única Touring 2.0 a gasolina, por cerca de R$ 214 mil."
+    },
+    {
+      "modelYear": "2026",
+      "change": "Rodas diamantadas de 18\", retrovisores com rebatimento elétrico, CarPlay/Android Auto sem fio, carregador por indução, alerta de ponto cego; preço mantido em R$ 214.500."
+    },
+    {
+      "modelYear": "2027",
+      "change": "Sem linha 2027 anunciada no Brasil até out/2026. No Japão o facelift (fev/2026) passou a ser só híbrido."
+    }
+  ],
+  "highlights": [
+    "Motor 2.0 i-VTEC de 161 cv e 19,1 kgfm com CVT",
+    "Plataforma do Civic 11 e componentes do CR-V",
+    "Linha 2026 ganhou equipamentos sem aumento de preço (R$ 214.500)"
+  ],
+  "watchOuts": [
+    "Só gasolina e sem eletrificação no Brasil; consumo Inmetro modesto (10,2/12,1 km/l)",
+    "Porta-malas pequeno para a categoria (389 L)",
+    "Desvalorização: FIPE do 2026 caiu para R$ 191.200 em set/2026 (-3,5% no mês), ~11% abaixo do preço de tabela",
+    "Euro NCAP 2023: 4 estrelas; sem teste Latin NCAP"
+  ],
+  "specs": {
+    "version": "ZR-V Touring 2.0 (linha 2026)",
+    "engine": "2.0 16V i-VTEC aspirado a gasolina, 4 cil.",
+    "powerCv": "161",
+    "torqueKgfm": "19,1",
+    "transmission": "CVT (simula 7 marchas)",
+    "trunkL": 389,
+    "lengthMm": 4568,
+    "wheelbaseMm": 2657,
+    "safety": "Sem teste Latin NCAP; Euro NCAP 2023: 4 estrelas",
+    "warranty": null
+  },
+  "inmetro": {
+    "version": "ZR-V Touring 2.0",
+    "cityGas": 10.2,
+    "roadGas": 12.1,
+    "cityEth": null,
+    "roadEth": null,
+    "cityKmKWh": null,
+    "roadKmKWh": null,
+    "year": "PBEV (dado do lançamento, 2023/2024; não achei revisão 2026)",
+    "source": "https://tribunademinas.com.br/especiais/carro-e-cia/11-11-2023/honda-zr-v.html?amp=1"
+  },
+  "price0km": {
+    "version": "Touring 2.0 2026",
+    "price": 214500,
+    "date": "out/2025 (sem reajuste encontrado até out/2026)",
+    "source": "https://www.autoo.com.br/honda-zr-v-2026-chega-sem-aumento-e-com-novidades-que-o-publico-pediu/"
+  },
+  "versionsAndPrices": [
+    {
+      "version": "Touring 2.0 2026",
+      "price": 214500,
+      "date": "out/2025",
+      "source": "https://autopapo.com.br/curta/honda-zr-v-2026-tem-novo-interior-e-rodas-maiores-mas-nao-fica-mais-caro/"
+    }
+  ],
+  "launchModelYearBR": 2024,
+  "catalogCheck": "Versão Touring continua sendo a única. Preço: R$ 214.500 (não R$ 214.900). Consumo: Inmetro 10,2 cidade / 12,1 estrada (catálogo 10,6/12,9 não confere com as fontes). FIPE 0 km era R$ 216.094 em jul/2026; FIPE do 2026 R$ 191.200 em set/2026.",
+  "wikipedia": {
+    "lang": "en",
+    "title": "Honda ZR-V"
+  },
+  "officialUrl": null,
+  "sources": [
+    {
+      "label": "Autoo - ZR-V 2026 sem aumento",
+      "url": "https://www.autoo.com.br/honda-zr-v-2026-chega-sem-aumento-e-com-novidades-que-o-publico-pediu/"
+    },
+    {
+      "label": "AutoPapo - ZR-V 2026",
+      "url": "https://autopapo.com.br/curta/honda-zr-v-2026-tem-novo-interior-e-rodas-maiores-mas-nao-fica-mais-caro/"
+    },
+    {
+      "label": "Tribuna de Minas - consumo Inmetro",
+      "url": "https://tribunademinas.com.br/especiais/carro-e-cia/11-11-2023/honda-zr-v.html?amp=1"
+    },
+    {
+      "label": "CNN Brasil - guia ZR-V (dimensões, porta-malas)",
+      "url": "https://www.cnnbrasil.com.br/auto/honda-zr-v-confira-o-guia-completo-do-suv-medio/"
+    },
+    {
+      "label": "FIPE ZR-V 0 km",
+      "url": "https://www.tabelafipebrasil.com/carros/HONDA/ZR-V-TOURING-20-16V-5P-AUT/Zero-Km-a-gasolina"
+    },
+    {
+      "label": "FIPE ZR-V 2026 (set/2026)",
+      "url": "https://valorfinal.com.br/tabela-fipe/carros/honda/zr-v/2026/touring-2-0-16v-5p-aut-014114-3"
+    },
+    {
+      "label": "Vrum - facelift Japão só híbrido",
+      "url": "https://www.vrum.com.br/aceleradas/2026/02/7364269-honda-zr-v-ganha-facelift-e-abandona-motor-a-combustao-no-japao.html"
+    },
+    {
+      "label": "Euro NCAP datasheet",
+      "url": "https://cdn.euroncap.com/media/79858/euroncap-2023-honda-zr-v-datasheet.pdf"
+    }
+  ],
+  "unverified": [
+    "garantia",
+    "officialUrl",
+    "consumo PBEV 2026 atualizado (só achei os números do lançamento)",
+    "existência de linha 2027 / reajuste em 2026"
+  ],
+  "catalogSeed": {
+    "version": "ZR-V Touring 2.0 (gasolina)",
+    "refPriceNew": 214500,
+    "trunkL": 389,
+    "seats": 5,
+    "powertrain": "gasolina",
+    "consumption": {
+      "cityKmL": 10.2,
+      "roadKmL": 12.1,
+      "cityKmLEthanol": null,
+      "roadKmLEthanol": null,
+      "cityKmKWh": null,
+      "roadKmKWh": null
+    },
+    "consumptionNote": "Inmetro/PBEV do lançamento (etiqueta 2023/2024), citado por Tribuna de Minas e outras; mecânica inalterada na linha 2026.",
+    "since": 2024,
+    "fipeInclude": [
+      "ZR-V",
+      "Touring"
+    ],
+    "discontinued": false
+  }
+}

@@ -1,4 +1,6 @@
-import { CATEGORY_LABEL, POWERTRAIN_LABEL } from '../lib/catalog'
+import { CATALOG, CATEGORY_LABEL, POWERTRAIN_LABEL } from '../lib/catalog'
+import { MODEL_INFO } from '../lib/modelInfo'
+import { WikiImage } from './WikiImage'
 import { money, money2, months } from '../lib/format'
 import type { CurrentCar, Horizon, ScenarioResult } from '../lib/types'
 import { HORIZONS } from '../lib/types'
@@ -22,15 +24,22 @@ export function CarHero({ car, keep, ranked, horizon, score, onEdit, onOpen, inc
   const h = keep.horizons[horizon]
   const position = ranked.findIndex((r) => r.scenario.kind === 'keep') + 1
   const s = keep.scenario
+  const cm = CATALOG.find((m) => m.id === car.catalogModelId)
+  const info = cm ? MODEL_INFO[cm.infoId ?? cm.id] : undefined
 
   return (
     <section className="overflow-hidden rounded-2xl border border-line bg-surface shadow-card">
       <div className="grid gap-6 p-5 sm:p-6 lg:grid-cols-[minmax(0,1fr)_minmax(0,1.35fr)]">
         <div className="min-w-0">
           <div className="flex items-start justify-between gap-3">
-            <div className="min-w-0">
+            {cm && (
+              <div className="hidden w-28 shrink-0 sm:block">
+                <WikiImage compact lang={info?.wikipedia?.lang} title={info?.wikipedia?.title} fallbackQuery={`${cm.brand} ${cm.model}`} alt={car.label} />
+              </div>
+            )}
+            <div className="min-w-0 flex-1">
               <p className="text-xs font-medium tracking-wide text-muted uppercase">Seu carro</p>
-              <h2 className="mt-1 truncate text-xl font-semibold tracking-tight sm:text-2xl">{car.label}</h2>
+              <h2 className="mt-1 line-clamp-2 text-xl font-semibold tracking-tight sm:text-2xl">{car.label}</h2>
               <p className="mt-1 text-sm text-ink-2">
                 {car.modelYear} · {car.odometerKm ? `${car.odometerKm.toLocaleString('pt-BR')} km` : 'km não informado'}
               </p>

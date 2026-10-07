@@ -1,0 +1,154 @@
+{
+  "id": "fiat-argo",
+  "researchedAt": "2026-10",
+  "displayName": "Fiat Argo",
+  "summary": "Hatch compacto da Fiat feito em Betim (MG), substituto de Punto e Palio. Versões 1.0 Firefly 3 cil. (71/75 cv) com câmbio manual e 1.3 Firefly (Drive 1.3 AT e Trekking). A Fiat prepara uma nova geração (Argo X, plataforma CMP Smart Car) que deve conviver com o Argo atual.",
+  "generation": "1ª geração, apresentada em mai/2017 (plataforma MP1).",
+  "timeline": [
+    {
+      "modelYear": "2018",
+      "change": "Lançamento no Brasil (mai/2017)."
+    },
+    {
+      "modelYear": "2026",
+      "change": "Linha 2026 com versões 1.0, Drive 1.0, Drive 1.3 AT e Trekking 1.3 AT (R$ 90.990 a R$ 106.990 no lançamento); reajustes em jun/2026 e set/2026."
+    }
+  ],
+  "highlights": [
+    "Porta-malas de 300 L.",
+    "Drive 1.0 tem multimídia de 7\" com espelhamento sem fio, volante multifuncional e banco do motorista com regulagem de altura.",
+    "Inmetro 1.0: 13,9/15,1 km/l (G) e 9,6/10,7 km/l (E), segundo fichas técnicas da imprensa.",
+    "Mais de 600 mil unidades vendidas no Brasil."
+  ],
+  "watchOuts": [
+    "Latin NCAP: 3 estrelas adulto (2019) e ZERO estrelas no teste de auditoria de 2021 (sem airbags laterais/cortina e sem controle de estabilidade na versão básica avaliada).",
+    "Nova geração (Argo X) anunciada para 2026, o que tende a pressionar a revenda da geração atual.",
+    "Motor 1.0 aspirado de 71/75 cv tem desempenho modesto (0-100 km/h em 13,9 s com etanol)."
+  ],
+  "specs": {
+    "version": "Drive 1.0",
+    "engine": "1.0 Firefly flex 3 cil. aspirado",
+    "powerCv": "75 (E) / 71 (G)",
+    "torqueKgfm": "10,7 (E) / 10,0 (G)",
+    "transmission": "manual de 5 marchas",
+    "trunkL": 300,
+    "lengthMm": null,
+    "wheelbaseMm": null,
+    "safety": "Latin NCAP 2019: 3 estrelas adulto / 4 criança; auditoria 2021: 0 estrela",
+    "warranty": null
+  },
+  "inmetro": {
+    "version": "Argo 1.0 / Drive 1.0",
+    "cityGas": 13.9,
+    "roadGas": 15.1,
+    "cityEth": 9.6,
+    "roadEth": 10.7,
+    "cityKmKWh": null,
+    "roadKmKWh": null,
+    "year": "linha 2026 (ano PBEV não explicitado na fonte)",
+    "source": "https://consultadeplaca.net/blog/ficha-tecnica-argo-drive"
+  },
+  "price0km": {
+    "version": "Drive 1.0",
+    "price": 93490,
+    "date": "set/2026",
+    "source": "https://mundodoautomovelparapcd.com.br/fiat-argo-2026-sofre-novo-aumento-em-setembro-veja-a-tabela-atualizada-de-precos/"
+  },
+  "versionsAndPrices": [
+    {
+      "version": "Argo 1.0",
+      "price": 90990,
+      "date": "lançamento linha 2026",
+      "source": "https://revistacarro.com.br/fiat-argo-2026-versoes-equipamentos-e-precos/"
+    },
+    {
+      "version": "Drive 1.0",
+      "price": 93490,
+      "date": "set/2026",
+      "source": "https://mundodoautomovelparapcd.com.br/fiat-argo-2026-sofre-novo-aumento-em-setembro-veja-a-tabela-atualizada-de-precos/"
+    },
+    {
+      "version": "Drive 1.3 AT",
+      "price": 102990,
+      "date": "lançamento linha 2026",
+      "source": "https://revistacarro.com.br/fiat-argo-2026-versoes-equipamentos-e-precos/"
+    },
+    {
+      "version": "Trekking 1.3 AT",
+      "price": 106990,
+      "date": "lançamento linha 2026",
+      "source": "https://revistacarro.com.br/fiat-argo-2026-versoes-equipamentos-e-precos/"
+    }
+  ],
+  "launchModelYearBR": 2018,
+  "catalogCheck": "Nome 'Argo Drive 1.0' segue existindo. Preço: catálogo R$ 92.990 (valor de lançamento da linha 2026) → atual R$ 93.490 (set/2026, após 2º reajuste). Inmetro: catálogo G 13,5/15,0 E 9,5/10,5 → fontes de imprensa citam G 13,9/15,1 e E 9,6/10,7 (diferença pequena; não vi a tabela PBEV direta).",
+  "wikipedia": {
+    "lang": "en",
+    "title": "Fiat Argo"
+  },
+  "officialUrl": null,
+  "sources": [
+    {
+      "label": "Revista Carro – Argo 2026 versões e preços",
+      "url": "https://revistacarro.com.br/fiat-argo-2026-versoes-equipamentos-e-precos/"
+    },
+    {
+      "label": "Mundo do Automóvel PCD – aumento set/2026",
+      "url": "https://mundodoautomovelparapcd.com.br/fiat-argo-2026-sofre-novo-aumento-em-setembro-veja-a-tabela-atualizada-de-precos/"
+    },
+    {
+      "label": "Consulta de Placa – ficha Argo Drive",
+      "url": "https://consultadeplaca.net/blog/ficha-tecnica-argo-drive"
+    },
+    {
+      "label": "JK Carros – ficha Argo 1.0 2026",
+      "url": "https://jkcarros.com.br/?p=33700"
+    },
+    {
+      "label": "Motor Show – Latin NCAP 3 estrelas",
+      "url": "https://motorshow.com.br/fiat-argo-leva-tres-estrelas-em-teste-de-colisao"
+    },
+    {
+      "label": "Motorpasión – Argo reprovado Latin NCAP 2021",
+      "url": "https://www.motorpasion.com.mx/industria/fiat-argo-volkswagen-taos-seguridad"
+    },
+    {
+      "label": "Band – novo Argo X 2026",
+      "url": "https://www.band.com.br/bandmotor/noticias/novo-fiat-argo-x-chega-em-2026-e-muda-o-futuro-da-marca-no-brasil-202607221142"
+    },
+    {
+      "label": "Wikipedia – Fiat Argo",
+      "url": "https://en.wikipedia.org/wiki/Fiat_Argo"
+    }
+  ],
+  "unverified": [
+    "Comprimento/entre-eixos",
+    "Garantia",
+    "Preços atuais das versões além da Drive 1.0 (só valores de lançamento da linha 2026)",
+    "Inmetro direto da tabela PBEV (valores vêm de fichas de imprensa)",
+    "URL oficial fiat.com.br do Argo",
+    "Data de lançamento do Argo X"
+  ],
+  "catalogSeed": {
+    "version": "Drive 1.0",
+    "refPriceNew": 93490,
+    "trunkL": 300,
+    "seats": 5,
+    "powertrain": "flex",
+    "consumption": {
+      "cityKmL": 13.9,
+      "roadKmL": 15.1,
+      "cityKmLEthanol": 9.6,
+      "roadKmLEthanol": 10.7,
+      "cityKmKWh": null,
+      "roadKmKWh": null
+    },
+    "consumptionNote": "Inmetro citado por consultadeplaca.net e jkcarros (linha 2026); tabela PBEV não consultada diretamente.",
+    "since": 2018,
+    "fipeInclude": [
+      "Argo",
+      "Drive 1.0"
+    ],
+    "discontinued": false
+  }
+}

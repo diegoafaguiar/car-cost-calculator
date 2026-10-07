@@ -1,0 +1,159 @@
+{
+  "id": "fiat-strada",
+  "researchedAt": "2026-10",
+  "displayName": "Fiat Strada",
+  "summary": "Picape compacta líder de vendas no Brasil, feita em Betim (MG) sobre a plataforma MC-P (derivada do Argo). Sete versões com cabine simples, Plus ou dupla; motores 1.3 Firefly flex aspirado (107/98 cv) com câmbio manual de 5 marchas ou CVT e 1.0 Turbo 200 flex (130/125 cv) com CVT nas versões Ultra e Ranch.",
+  "generation": "2ª geração (projeto 281), apresentada em jun/2020 (ano-modelo 2021).",
+  "timeline": [
+    {
+      "modelYear": "2021",
+      "change": "Nova geração com cabine dupla de 4 portas e 5 lugares."
+    },
+    {
+      "modelYear": "2023",
+      "change": "Chegam o 1.0 Turbo 200 e o câmbio CVT."
+    },
+    {
+      "modelYear": "2027",
+      "change": "Volcano ganha o para-choque dianteiro de Ranch/Ultra com frisos cromados; versões mais caras com nova dianteira; Endurance mantém o visual. Volcano CD 1.3 MT R$ 136.490 e CVT R$ 142.490."
+    }
+  ],
+  "highlights": [
+    "Caçamba de 844 L e 650 kg de carga útil (Volcano CD)",
+    "1.3 Firefly flex: 107 cv (E) / 98 cv (G), 13,6/13,1 kgfm",
+    "Liquidez alta no mercado de usados"
+  ],
+  "watchOuts": [
+    "Latin NCAP: 1 estrela (cabine simples e dupla)",
+    "Preço subiu bastante: Volcano CD MT foi a R$ 136.490 na linha 2027",
+    "Consumo Inmetro varia entre as fontes (ver unverified)"
+  ],
+  "specs": {
+    "version": "Strada Volcano CD 1.3 manual",
+    "engine": "1.3 Firefly flex 8V 4 cil.",
+    "powerCv": "107 (E) / 98 (G)",
+    "torqueKgfm": "13,6 (E) / 13,1 (G)",
+    "transmission": "manual de 5 marchas (opção CVT)",
+    "trunkL": 844,
+    "lengthMm": 4474,
+    "wheelbaseMm": 2737,
+    "safety": "Latin NCAP: 1 estrela",
+    "warranty": null
+  },
+  "inmetro": {
+    "version": "Strada Volcano CD 1.3 manual 2026",
+    "cityGas": 12.4,
+    "roadGas": 13.9,
+    "cityEth": 8.9,
+    "roadEth": 9.8,
+    "cityKmKWh": null,
+    "roadKmKWh": null,
+    "year": "PBEV 2026 (segundo a fonte)",
+    "source": "https://carro.blog.br/carros/fiat/fiat-strada-volcano-1-3-cd-2026-manual-preco-ficha-tecnica-consumo-equipamentos-e-fotos-picape-combina-conforto-desempenho-e-praticidade-no-uso-diario.html",
+    "note": "A Crítica (linha 2027) cita para o 1.3 Firefly: G 12,1/13,3 e E 8,4/9,4. Volcano CVT 2026 (jkcarros): G 12,6/13,5, E 8,9/9,7."
+  },
+  "price0km": {
+    "version": "Volcano CD 1.3 MT 2027",
+    "price": 136490,
+    "date": "2026 (linha 2027)",
+    "source": "https://acritica.net/noticias/fiat-strada-2027-precos-versoes-equipamentos/"
+  },
+  "versionsAndPrices": [
+    {
+      "version": "Endurance Cabine Plus 1.3 MT",
+      "price": 116990,
+      "date": "2026 (linha 2027)",
+      "source": "https://acritica.net/noticias/fiat-strada-2027-precos-versoes-equipamentos/"
+    },
+    {
+      "version": "Volcano CD 1.3 MT",
+      "price": 136490,
+      "date": "2026 (linha 2027)",
+      "source": "https://acritica.net/noticias/fiat-strada-2027-precos-versoes-equipamentos/"
+    },
+    {
+      "version": "Volcano CD 1.3 CVT",
+      "price": 142490,
+      "date": "2026 (linha 2027)",
+      "source": "https://acritica.net/noticias/fiat-strada-2027-precos-versoes-equipamentos/"
+    },
+    {
+      "version": "Ultra CD Turbo 200 CVT",
+      "price": 153990,
+      "date": "2026 (linha 2027)",
+      "source": "https://acritica.net/noticias/fiat-strada-2027-precos-versoes-equipamentos/"
+    },
+    {
+      "version": "Ranch CD Turbo 200 CVT",
+      "price": 153990,
+      "date": "2026 (linha 2027)",
+      "source": "https://acritica.net/noticias/fiat-strada-2027-precos-versoes-equipamentos/"
+    }
+  ],
+  "launchModelYearBR": 2021,
+  "catalogCheck": "Nome Volcano 1.3 continua existindo (CD manual e CVT). Preço do catálogo R$ 124.990 está defasado: linha 2027 Volcano CD 1.3 MT = R$ 136.490 (CVT R$ 142.490); FIPE 2027 set/2026 R$ 128.034 (MT). Consumo do catálogo (G 12,4/13,5, E 8,6/9,4) está na faixa das fontes, mas nenhuma fonte bate exatamente; carro.blog.br (2026 MT) dá G 12,4/13,9, E 8,9/9,8.",
+  "wikipedia": {
+    "lang": "en",
+    "title": "Fiat Strada"
+  },
+  "officialUrl": null,
+  "sources": [
+    {
+      "label": "A Crítica - Strada 2027 preços e versões",
+      "url": "https://acritica.net/noticias/fiat-strada-2027-precos-versoes-equipamentos/"
+    },
+    {
+      "label": "Carro.blog.br - Strada Volcano CD 2026 manual",
+      "url": "https://carro.blog.br/carros/fiat/fiat-strada-volcano-1-3-cd-2026-manual-preco-ficha-tecnica-consumo-equipamentos-e-fotos-picape-combina-conforto-desempenho-e-praticidade-no-uso-diario.html"
+    },
+    {
+      "label": "jkcarros - Volcano CVT 2026",
+      "url": "https://jkcarros.com.br/?p=33649"
+    },
+    {
+      "label": "Auto+ - mudanças Strada 2027",
+      "url": "https://www.automaistv.com.br/segredos/exclusivo-fiat-strada-2027-vai-mudar-ganhar-itens-ineditos-mas-so-nas-versoes-mais-caras/"
+    },
+    {
+      "label": "Autoo - Latin NCAP 1 estrela",
+      "url": "https://www.autoo.com.br/veiculo-mais-vendido-no-brasil-fiat-strada-decepciona-em-seguranca/"
+    },
+    {
+      "label": "FIPE Strada Volcano 1.3 2027",
+      "url": "https://www.tabelafipebrasil.com/carros/FIAT/STRADA-VOLCANO-13-FLEX-8V-CD/2027-Flex"
+    },
+    {
+      "label": "Wikipedia - Fiat Strada",
+      "url": "https://en.wikipedia.org/wiki/Fiat_Strada"
+    }
+  ],
+  "unverified": [
+    "consumo Inmetro exato do Volcano 1.3 MT 2027 (fontes divergem)",
+    "mês exato da tabela de preços 2027",
+    "garantia",
+    "officialUrl",
+    "preços de Freedom CD e Endurance CS 2027"
+  ],
+  "catalogSeed": {
+    "version": "Strada Volcano Cabine Dupla 1.3 manual (linha 2027)",
+    "refPriceNew": 136490,
+    "trunkL": 844,
+    "seats": 5,
+    "powertrain": "flex",
+    "consumption": {
+      "cityKmL": 12.4,
+      "roadKmL": 13.9,
+      "cityKmLEthanol": 8.9,
+      "roadKmLEthanol": 9.8,
+      "cityKmKWh": null,
+      "roadKmKWh": null
+    },
+    "consumptionNote": "Carro.blog.br, Volcano CD 1.3 manual 2026 (Inmetro). Fontes divergem: A Crítica (2027) G 12,1/13,3 E 8,4/9,4. trunkL = volume da caçamba.",
+    "since": 2021,
+    "fipeInclude": [
+      "Strada Volcano 1.3",
+      "CD"
+    ],
+    "discontinued": false
+  }
+}

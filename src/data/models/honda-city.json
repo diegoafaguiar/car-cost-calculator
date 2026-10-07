@@ -1,0 +1,170 @@
+{
+  "id": "honda-city",
+  "researchedAt": "2026-10",
+  "displayName": "Honda City Sedan",
+  "summary": "Sedã compacto/médio-compacto da Honda feito em Itirapina (SP), vendido também como hatch. Toda a linha usa o 1.5 aspirado flex de injeção direta (126 cv, 15,5/15,8 kgfm) com câmbio CVT. Linha 2027 (pré-venda desde 3/out/2026) traz visual novo, faróis full LED e seis airbags em todas as versões; sedã em LX, EX, EXL e Touring.",
+  "generation": "7ª geração (GN), lançada no Brasil no fim de 2021 como linha 2022; reestilização linha 2027 em out/2026.",
+  "timeline": [
+    {
+      "modelYear": "2022",
+      "change": "Estreia da 7ª geração no Brasil (sedã e, pela primeira vez, hatch), 1.5 flex 126 cv + CVT."
+    },
+    {
+      "modelYear": "2025",
+      "change": "Reajustes de preço sem mudanças de conteúdo."
+    },
+    {
+      "modelYear": "2026",
+      "change": "Sem mudanças de produto; EXL foi de R$ 142.300 para R$ 144.200 em jan/2026; Touring R$ 152.700."
+    },
+    {
+      "modelYear": "2027",
+      "change": "Out/2026: nova dianteira (inspirada no Prelude), faróis full LED de série, seis airbags, alerta de pressão dos pneus, câmera de ré e ISOFIX em toda a linha; versão RS só no hatch. Pré-venda EXL R$ 144.700; tabela de novembro EXL R$ 145.800. Inmetro sedã: G 13,2/15,3, E 9,1/10,8."
+    }
+  ],
+  "highlights": [
+    "Porta-malas de 519 L",
+    "Inmetro 2027 (sedã): gasolina 13,2 km/l cidade / 15,3 estrada; etanol 9,1 / 10,8",
+    "Linha 2027 com seis airbags, controles de tração/estabilidade, câmera de ré e faróis full LED em todas as versões",
+    "Motor 1.5 aspirado com injeção direta e CVT, mecânica simples sem turbo"
+  ],
+  "watchOuts": [
+    "Motor aspirado de 126 cv é modesto frente aos rivais turbo",
+    "Preço subiu várias vezes: EXL foi de R$ 142.300 (2025) para R$ 145.800 (tabela nov/2026)",
+    "Linha 2026/2025 tinha menos itens de série (ex.: seis airbags não em todas as versões) — seminovos não equivalem à 2027",
+    "Sem teste Latin NCAP da geração atual encontrado (5 estrelas citadas referem-se a geração anterior)"
+  ],
+  "specs": {
+    "version": "City Sedan EXL 1.5 CVT 2027",
+    "engine": "1.5 aspirado flex 4 cil., injeção direta",
+    "powerCv": "126 (E) / 126 (G)",
+    "torqueKgfm": "15,8 (E) / 15,5 (G)",
+    "transmission": "CVT (7 marchas simuladas)",
+    "trunkL": 519,
+    "lengthMm": 4580,
+    "wheelbaseMm": null,
+    "safety": null,
+    "warranty": null
+  },
+  "inmetro": {
+    "version": "City Sedan 1.5 CVT 2027",
+    "cityGas": 13.2,
+    "roadGas": 15.3,
+    "cityEth": 9.1,
+    "roadEth": 10.8,
+    "cityKmKWh": null,
+    "roadKmKWh": null,
+    "year": "PBEV 2026 (linha 2027, divulgado pela imprensa em out/2026)",
+    "source": "https://www.autoo.com.br/honda-city-2027-confira-precos-versoes-consumo-pecas-e-equipamentos/"
+  },
+  "price0km": {
+    "version": "City Sedan EXL 1.5 CVT 2027",
+    "price": 145800,
+    "date": "tabela a partir de nov/2026 (pré-venda out/2026: R$ 144.700)",
+    "source": "https://www.autoo.com.br/honda-city-2027-confira-precos-versoes-consumo-pecas-e-equipamentos/"
+  },
+  "versionsAndPrices": [
+    {
+      "version": "Sedan LX 2027",
+      "price": 117700,
+      "date": "nov/2026 (pré-venda R$ 117.500)",
+      "source": "https://www.autoo.com.br/honda-city-2027-confira-precos-versoes-consumo-pecas-e-equipamentos/"
+    },
+    {
+      "version": "Sedan EX 2027",
+      "price": 138400,
+      "date": "nov/2026 (pré-venda R$ 137.300)",
+      "source": "https://www.autoo.com.br/honda-city-2027-confira-precos-versoes-consumo-pecas-e-equipamentos/"
+    },
+    {
+      "version": "Sedan EXL 2027",
+      "price": 145800,
+      "date": "nov/2026 (pré-venda R$ 144.700)",
+      "source": "https://www.autoo.com.br/honda-city-2027-confira-precos-versoes-consumo-pecas-e-equipamentos/"
+    },
+    {
+      "version": "Sedan Touring 2027",
+      "price": 154300,
+      "date": "nov/2026 (pré-venda R$ 153.200)",
+      "source": "https://www.autoo.com.br/honda-city-2027-confira-precos-versoes-consumo-pecas-e-equipamentos/"
+    },
+    {
+      "version": "Sedan EXL 2026",
+      "price": 144200,
+      "date": "jan/2026",
+      "source": "https://www.vrum.com.br/bom-negocio/2026/07/7470963-honda-city-2026-qual-versao-e-o-melhor-negocio-para-o-seu-bolso.html"
+    }
+  ],
+  "launchModelYearBR": 2022,
+  "catalogCheck": "Versão EXL existe na linha 2027. Preço do catálogo (R$ 139.990) está desatualizado: EXL 2026 custava R$ 144.200 (jan/2026); EXL 2027 R$ 144.700 na pré-venda (out/2026) e R$ 145.800 na tabela de novembro. Consumo do catálogo (G 12,6/15,4; E 8,8/10,7) não confere com o Inmetro da linha 2027 divulgado: G 13,2/15,3; E 9,1/10,8 (dados 2024 citados pela imprensa: G 13,1/15,2; E 9,2/10,5).",
+  "wikipedia": {
+    "lang": "en",
+    "title": "Honda City"
+  },
+  "officialUrl": null,
+  "catalogSeed": {
+    "version": "City Sedan EXL 1.5 CVT 2027",
+    "refPriceNew": 145800,
+    "trunkL": 519,
+    "seats": 5,
+    "powertrain": "flex",
+    "consumption": {
+      "cityKmL": 13.2,
+      "roadKmL": 15.3,
+      "cityKmLEthanol": 9.1,
+      "roadKmLEthanol": 10.8,
+      "cityKmKWh": null,
+      "roadKmKWh": null
+    },
+    "consumptionNote": "Inmetro linha 2027 sedã, via Autoo (out/2026); vale para todas as versões do sedã (mesmo conjunto mecânico).",
+    "since": 2022,
+    "fipeInclude": [
+      "City Sedan",
+      "EXL",
+      "1.5"
+    ],
+    "discontinued": false
+  },
+  "sources": [
+    {
+      "label": "Autoo – Honda City 2027 preços, versões, consumo",
+      "url": "https://www.autoo.com.br/honda-city-2027-confira-precos-versoes-consumo-pecas-e-equipamentos/"
+    },
+    {
+      "label": "Autoo – City 2027 novo visual, versão RS",
+      "url": "https://www.autoo.com.br/honda-city-2027-chega-com-novo-visual-mais-equipamentos-e-versao-rs-veja-precos-e-o-que-muda/"
+    },
+    {
+      "label": "Car.blog.br – City 2027 ficha técnica",
+      "url": "https://www.car.blog.br/2026/10/honda-city-2027-preco-versoes-ficha-te.html"
+    },
+    {
+      "label": "AutoPapo – City 2027 versões e preços",
+      "url": "https://autopapo.com.br/noticia/honda-city-2027-versoes-precos/"
+    },
+    {
+      "label": "Vrum – City 2026 qual versão (jul/2026)",
+      "url": "https://www.vrum.com.br/bom-negocio/2026/07/7470963-honda-city-2026-qual-versao-e-o-melhor-negocio-para-o-seu-bolso.html"
+    },
+    {
+      "label": "Vrum – City mais caro jan/2026",
+      "url": "https://www.vrum.com.br/aceleradas/2026/01/7342439-honda-city-esta-mais-caro-e-supera-a-faixa-dos-rs-150-mil.html"
+    },
+    {
+      "label": "Garagem360 – City EXL 2024 consumo",
+      "url": "https://garagem360.com.br/honda-city-exl-2024"
+    },
+    {
+      "label": "Wikipedia – Honda City",
+      "url": "https://en.wikipedia.org/wiki/Honda_City"
+    }
+  ],
+  "unverified": [
+    "Entre-eixos (Wikipedia não especifica no resumo; não confirmado para o Brasil)",
+    "Garantia de fábrica",
+    "Nota Latin NCAP da geração atual",
+    "Comprimento 4.580 mm vem de resumo de imprensa (Wikipedia cita 4.553 mm para o sedã global)",
+    "Página oficial Honda Brasil não vista",
+    "Não há artigo próprio da 7ª geração na Wikipedia; usado o artigo geral"
+  ]
+}

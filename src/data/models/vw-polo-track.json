@@ -1,0 +1,145 @@
+{
+  "id": "vw-polo-track",
+  "researchedAt": "2026-10",
+  "displayName": "Volkswagen Polo Track",
+  "summary": "Versão de entrada do Polo (sucessora do Gol), lançada em fev/2023, com acabamento simplificado. Motor 1.0 MPI flex 3 cil. de 84 cv (E) / 77 cv (G) e câmbio manual de 5 marchas. Existe também a variante Robust, voltada a frotas, com mesmo preço e mecânica.",
+  "generation": "Derivada do Polo Mk6 nacional; Polo Track lançado em fev/2023 (linha 2023).",
+  "timeline": [
+    {
+      "modelYear": "2023",
+      "change": "Lançamento (fev/2023), a partir de R$ 80.580."
+    },
+    {
+      "modelYear": "2024",
+      "change": "Revisão do Inmetro: G 13,7/15,2 e E 9,4/10,8 km/l (1,48 MJ/km)."
+    },
+    {
+      "modelYear": "2026",
+      "change": "Preço de lista chegou a R$ 96.690 (fim de 2025) e caiu para R$ 93.660 (Track e Robust, maio/2026); bônus de até R$ 10 mil com usado na troca."
+    }
+  ],
+  "highlights": [
+    "Porta-malas de 300 L",
+    "Controles de tração/estabilidade, assistente de partida em rampa, ISOFIX e 4 airbags de série",
+    "Mecânica simples, 1.0 MPI de 84 cv"
+  ],
+  "watchOuts": [
+    "Latin NCAP 2023: 3 estrelas (4 airbags, sem airbags de cortina)",
+    "Preço de tabela oscila muito e há descontos fortes de concessionária, o que pressiona a revenda",
+    "Linha 2027 ainda não divulgada oficialmente até set/2026"
+  ],
+  "specs": {
+    "version": "Polo Track 1.0 MPI MT",
+    "engine": "1.0 MPI flex 3 cil.",
+    "powerCv": "84 (E) / 77 (G)",
+    "torqueKgfm": "10,3 (E) / 9,6 (G)",
+    "transmission": "manual de 5 marchas",
+    "trunkL": 300,
+    "lengthMm": 4074,
+    "wheelbaseMm": 2566,
+    "safety": "Latin NCAP 2023: 3 estrelas",
+    "warranty": null
+  },
+  "inmetro": {
+    "version": "Polo 1.0 MPI MT",
+    "cityGas": 13.7,
+    "roadGas": 15.2,
+    "cityEth": 9.4,
+    "roadEth": 10.8,
+    "cityKmKWh": null,
+    "roadKmKWh": null,
+    "year": "PBEV 2024 (revisão)",
+    "source": "https://www.automaistv.com.br/destaque/vw-polo-track-mpi-consumo/"
+  },
+  "price0km": {
+    "version": "Polo Track 1.0 MPI MT 2026",
+    "price": 93660,
+    "date": "mai/2026",
+    "source": "https://jkcarros.com.br/?p=34026"
+  },
+  "versionsAndPrices": [
+    {
+      "version": "Polo Track 1.0 MPI MT",
+      "price": 93660,
+      "date": "mai/2026",
+      "source": "https://jkcarros.com.br/?p=34026"
+    },
+    {
+      "version": "Polo Robust 1.0 MPI MT",
+      "price": 93660,
+      "date": "mai/2026",
+      "source": "https://jkcarros.com.br/?p=34026"
+    },
+    {
+      "version": "Polo Track 1.0 MPI MT (preço anterior, site de ofertas VW)",
+      "price": 96690,
+      "date": "fim/2025",
+      "source": "https://ofertas.vw.com.br/ofertas/modelo/polo-track-1-0-mpi/263723"
+    }
+  ],
+  "launchModelYearBR": 2023,
+  "catalogCheck": "Nome 'Polo Track 1.0' existe. Preço do catálogo (R$ 92.990) não confere: último preço público encontrado R$ 93.660 (mai/2026; antes R$ 96.690). Consumo do catálogo (G 13,4/15,6; E 9,3/10,9) não bate com o PBEV 2024 (G 13,7/15,2; E 9,4/10,8); outra fonte cita 13,5/15,7 (G). FIPE: 'Polo Track 1.0 Flex 12V 5p' (também existe 'Polo Track Robust 1.0 Flex 12V 5p').",
+  "wikipedia": {
+    "lang": "en",
+    "title": "Volkswagen Polo Mk6"
+  },
+  "officialUrl": "https://ofertas.vw.com.br/ofertas/modelo/polo-track-1-0-mpi/263723",
+  "sources": [
+    {
+      "label": "Auto+ TV – Polo Track MPI consumo",
+      "url": "https://www.automaistv.com.br/destaque/vw-polo-track-mpi-consumo/"
+    },
+    {
+      "label": "JK Carros – VW Polo 2026 versões e preços de maio",
+      "url": "https://jkcarros.com.br/?p=34026"
+    },
+    {
+      "label": "Ofertas VW – Polo Track",
+      "url": "https://ofertas.vw.com.br/ofertas/modelo/polo-track-1-0-mpi/263723"
+    },
+    {
+      "label": "Mix Vale – descontos Polo Track 2026",
+      "url": "https://www.mixvale.com.br/2025/12/31/descontos-agressivos-de-r-10-mil-fazem-o-volkswagen-polo-track-2026-custar-menos-que-o-renault-kwid/amp/"
+    },
+    {
+      "label": "O Antagonista – Polo Track 15 km/l e 300 L",
+      "url": "https://oantagonista.com.br/ladooa/carros/com-15-km-l-e-porta-malas-de-300l-polo-track-mira-quem-quer-economia-sem-exagero/"
+    },
+    {
+      "label": "Autoo – Polo 2026 dimensões",
+      "url": "https://www.autoo.com.br/volkswagen-polo-2026-precos-versoes-consumo-e-equipamentos-do-hatch/"
+    },
+    {
+      "label": "Wikipedia – Volkswagen Polo Mk6",
+      "url": "https://en.wikipedia.org/wiki/Volkswagen_Polo_Mk6"
+    }
+  ],
+  "unverified": [
+    "preço após mai/2026 e da linha 2027",
+    "consumo PBEV 2026 (fontes divergem)",
+    "garantia"
+  ],
+  "catalogSeed": {
+    "version": "Polo Track 1.0 MPI MT (2026)",
+    "refPriceNew": 93660,
+    "trunkL": 300,
+    "seats": 5,
+    "powertrain": "flex",
+    "consumption": {
+      "cityKmL": 13.7,
+      "roadKmL": 15.2,
+      "cityKmLEthanol": 9.4,
+      "roadKmLEthanol": 10.8,
+      "cityKmKWh": null,
+      "roadKmKWh": null
+    },
+    "consumptionNote": "PBEV 2024 revisado (Auto+ TV); outra fonte cita G 13,5/15,7",
+    "since": 2023,
+    "fipeInclude": [
+      "Polo",
+      "Track",
+      "1.0"
+    ],
+    "discontinued": false
+  }
+}

@@ -1,0 +1,154 @@
+{
+  "id": "vw-virtus",
+  "researchedAt": "2026-10",
+  "displayName": "Volkswagen Virtus",
+  "summary": "Sedã compacto/médio derivado do Polo, fabricado em Anchieta (SP). Gama 2026 com seis versões: Sense e TSI MT (1.0 170 TSI manual), TSI AT (1.0 170 TSI automático de 6 marchas, 116 cv), Comfortline e Highline (200 TSI, 128 cv) e Exclusive (1.4 250 TSI, 150 cv).",
+  "generation": "1ª geração, lançada em jan/2018 (linha 2018); reestilização em mar/2023 (linha 2023/2024).",
+  "timeline": [
+    {
+      "modelYear": "2018",
+      "change": "Lançamento."
+    },
+    {
+      "modelYear": "2023",
+      "change": "Reestilização (mar/2023): versões TSI MT/AT, Comfortline, Highline e Exclusive (substitui GTS); 5 estrelas Latin NCAP (jul/2023)."
+    },
+    {
+      "modelYear": "2026",
+      "change": "Versão Sense (170 TSI manual) vira a de entrada (R$ 108.990); reajustes em jan/2026 (TSI AT R$ 132.890) e abr/2026 (TSI AT R$ 134.390)."
+    }
+  ],
+  "highlights": [
+    "Latin NCAP 2023: 5 estrelas (adulto 92,35%, criança 91,84%)",
+    "Porta-malas de 521 L",
+    "6 airbags e ESP de série"
+  ],
+  "watchOuts": [
+    "Preços subiram várias vezes em 2026",
+    "Automático custa mais de R$ 10 mil acima do manual",
+    "Linha 2027 não encontrada"
+  ],
+  "specs": {
+    "version": "Virtus 170 TSI AT 2026",
+    "engine": "1.0 TSI turbo flex 3 cil., injeção direta",
+    "powerCv": "116 (E) / 109 (G)",
+    "torqueKgfm": "16,8",
+    "transmission": "automático de 6 marchas",
+    "trunkL": 521,
+    "lengthMm": null,
+    "wheelbaseMm": null,
+    "safety": "Latin NCAP 2023: 5 estrelas",
+    "warranty": null
+  },
+  "inmetro": {
+    "version": "Virtus 1.0 TSI AT 2026",
+    "cityGas": 12.2,
+    "roadGas": 14.9,
+    "cityEth": 8.5,
+    "roadEth": 10.4,
+    "cityKmKWh": null,
+    "roadKmKWh": null,
+    "year": "PBEV (linha 2026, conforme JK Carros)",
+    "source": "https://jkcarros.com.br/?p=8617"
+  },
+  "price0km": {
+    "version": "Virtus 170 TSI AT 2026",
+    "price": 134390,
+    "date": "abr/2026",
+    "source": "https://mundodoautomovelparapcd.com.br/volkswagen-virtus-sobe-de-preco-em-abril-de-2026-confira-nova-tabela-atualizada/"
+  },
+  "versionsAndPrices": [
+    {
+      "version": "Sense 170 TSI MT",
+      "price": 108990,
+      "date": "2026",
+      "source": "https://www.mercadolivre.com.br/blog/mo-volkswagen-virtus-2026-preco-versoes-consumo-e-equipamento-do-seda"
+    },
+    {
+      "version": "170 TSI AT",
+      "price": 132890,
+      "date": "jan/2026",
+      "source": "https://www.automaistv.com.br/vendas-e-precos/volkswagen-virtus-recebe-aumento-de-ate-r-3-900-e-se-aproxima-dos-r-175-mil/"
+    },
+    {
+      "version": "170 TSI AT",
+      "price": 134390,
+      "date": "abr/2026",
+      "source": "https://mundodoautomovelparapcd.com.br/volkswagen-virtus-sobe-de-preco-em-abril-de-2026-confira-nova-tabela-atualizada/"
+    },
+    {
+      "version": "Comfortline 200 TSI AT",
+      "price": 150890,
+      "date": "jan/2026",
+      "source": "https://www.automaistv.com.br/vendas-e-precos/volkswagen-virtus-recebe-aumento-de-ate-r-3-900-e-se-aproxima-dos-r-175-mil/"
+    }
+  ],
+  "launchModelYearBR": 2018,
+  "catalogCheck": "Nome 'TSI 1.0 Aut.' equivale à versão '170 TSI AT' atual. Preço do catálogo (R$ 129.990) está defasado: R$ 132.890 (jan/2026) e R$ 134.390 (abr/2026). Consumo do catálogo (G 12,4/14,8; E 8,6/10,4) difere levemente do publicado: G 12,2/14,9; E 8,5/10,4. Porta-malas 521 L. FIPE: 'VIRTUS TSI 1.0 Flex 12V 4p Aut.'",
+  "wikipedia": {
+    "lang": "en",
+    "title": "Volkswagen Virtus"
+  },
+  "officialUrl": null,
+  "sources": [
+    {
+      "label": "Mundo do Automóvel para PCD – Virtus sobe em abril/2026",
+      "url": "https://mundodoautomovelparapcd.com.br/volkswagen-virtus-sobe-de-preco-em-abril-de-2026-confira-nova-tabela-atualizada/"
+    },
+    {
+      "label": "Auto+ TV – Virtus aumento até R$ 3.900",
+      "url": "https://www.automaistv.com.br/vendas-e-precos/volkswagen-virtus-recebe-aumento-de-ate-r-3-900-e-se-aproxima-dos-r-175-mil/"
+    },
+    {
+      "label": "JK Carros – Virtus TSI AT 2026",
+      "url": "https://jkcarros.com.br/?p=8617"
+    },
+    {
+      "label": "JK Carros – Virtus TSI automático R$ 132.890",
+      "url": "https://jkcarros.com.br/?p=37281"
+    },
+    {
+      "label": "Mercado Livre – Virtus 2026 preços",
+      "url": "https://www.mercadolivre.com.br/blog/mo-volkswagen-virtus-2026-preco-versoes-consumo-e-equipamento-do-seda"
+    },
+    {
+      "label": "Auto+ TV – Virtus 5 estrelas Latin NCAP",
+      "url": "https://www.automaistv.com.br/destaque/volkswagen-virtus-brasileiro-ganha-5-estrelas-no-latin-ncap/"
+    },
+    {
+      "label": "Wikipedia – Volkswagen Virtus",
+      "url": "https://en.wikipedia.org/wiki/Volkswagen_Virtus"
+    }
+  ],
+  "unverified": [
+    "preço após abr/2026",
+    "comprimento e entre-eixos",
+    "garantia",
+    "página oficial",
+    "ano exato do PBEV"
+  ],
+  "catalogSeed": {
+    "version": "Virtus 170 TSI AT (2026)",
+    "refPriceNew": 134390,
+    "trunkL": 521,
+    "seats": 5,
+    "powertrain": "flex",
+    "consumption": {
+      "cityKmL": 12.2,
+      "roadKmL": 14.9,
+      "cityKmLEthanol": 8.5,
+      "roadKmLEthanol": 10.4,
+      "cityKmKWh": null,
+      "roadKmKWh": null
+    },
+    "consumptionNote": "Inmetro citado por JK Carros para o TSI AT 2026",
+    "since": 2018,
+    "fipeInclude": [
+      "VIRTUS",
+      "TSI",
+      "1.0",
+      "Aut"
+    ],
+    "discontinued": false
+  }
+}

@@ -1,0 +1,170 @@
+{
+  "id": "renault-kardian",
+  "researchedAt": "2026-10",
+  "displayName": "Renault Kardian",
+  "summary": "SUV compacto da Renault sobre a plataforma RMP (CMF-B), feito em São José dos Pinhais/Curitiba (PR). Usa o 1.0 TCe turbo flex 3 cil. (120 cv G / 125 cv E, 22,4 kgfm) com câmbio automático EDC de dupla embreagem e 6 marchas, ou manual de 6 marchas. Linha 2027 (ago/set 2026) ganhou a versão de entrada Vibe manual por R$ 99.990.",
+  "generation": "1ª geração, lançada no Brasil em mar/2024 como linha 2025.",
+  "timeline": [
+    {
+      "modelYear": "2025",
+      "change": "Lançamento (mar/2024) a partir de R$ 112.790; versões Evolution, Techno e Première Edition; câmbio EDC. Versão manual adicionada em out/2024."
+    },
+    {
+      "modelYear": "2026",
+      "change": "Atualizações de linha (ago/2025); reavaliação Latin NCAP com AEB para vulneráveis rendeu 5 estrelas (nov/2025)."
+    },
+    {
+      "modelYear": "2027",
+      "change": "Ago/2026: nova versão de entrada Vibe (manual, -43 kg, Inmetro G 13,7/15,3). Tabela: Vibe MT R$ 99.990, Evolution AT R$ 126.590, Techno AT R$ 128.990, Iconic AT R$ 140.990."
+    }
+  ],
+  "highlights": [
+    "Motor turbo de 125 cv (E) e 22,4 kgfm já na versão de entrada",
+    "Latin NCAP: 5 estrelas (2025, reavaliação com AEB para vulneráveis); 4 estrelas no teste de 2024",
+    "Inmetro Evolution EDC 2027: G 13,1/13,9; E 9,0/9,7 km/l",
+    "Descontos de até R$ 20 mil nas lojas para o 2026 (Autoo)"
+  ],
+  "watchOuts": [
+    "Porta-malas de 358 L, pequeno para o segmento",
+    "Câmbio de dupla embreagem EDC: atenção a manutenção/uso em trânsito pesado",
+    "Fontes divergem sobre preços 2027 (Autoo cita Evolution R$ 124.590; Webmotors/Autoentusiastas/Carro.blog.br R$ 126.590)",
+    "Descontos fortes nas concessionárias pressionam a revenda"
+  ],
+  "specs": {
+    "version": "Kardian Evolution 1.0 TCe EDC 2027",
+    "engine": "1.0 turbo flex 3 cil. (TCe)",
+    "powerCv": "125 (E) / 120 (G)",
+    "torqueKgfm": "22,4",
+    "transmission": "automático EDC de dupla embreagem, 6 marchas",
+    "trunkL": 358,
+    "lengthMm": 4119,
+    "wheelbaseMm": 2604,
+    "safety": "Latin NCAP 5 estrelas (2025, versão atualizada com AEB VRU); 4 estrelas em 2024",
+    "warranty": null
+  },
+  "inmetro": {
+    "version": "Kardian Evolution EDC 2027",
+    "cityGas": 13.1,
+    "roadGas": 13.9,
+    "cityEth": 9.0,
+    "roadEth": 9.7,
+    "cityKmKWh": null,
+    "roadKmKWh": null,
+    "year": "PBEV 2026 (linha 2027)",
+    "source": "https://www.autoo.com.br/renault-kardian-2027-confira-precos-pecas-consumo-e-equipamentos-da-novidade/"
+  },
+  "price0km": {
+    "version": "Kardian Evolution AT (EDC) 2027",
+    "price": 126590,
+    "date": "ago-set/2026",
+    "source": "https://www.webmotors.com.br/wm1/seu-bolso/renault-kardian-vibe-chega-lojas"
+  },
+  "versionsAndPrices": [
+    {
+      "version": "Vibe MT 2027",
+      "price": 99990,
+      "date": "ago/2026",
+      "source": "https://autoentusiastas.com.br/2026/08/renault-kardian-vibe-a-nova-versao-de-acesso-oferece-motor-de-125-cv-por-r-99-990/"
+    },
+    {
+      "version": "Evolution AT 2027",
+      "price": 126590,
+      "date": "ago-set/2026",
+      "source": "https://www.webmotors.com.br/wm1/seu-bolso/renault-kardian-vibe-chega-lojas"
+    },
+    {
+      "version": "Techno AT 2027",
+      "price": 128990,
+      "date": "ago-set/2026",
+      "source": "https://www.webmotors.com.br/wm1/seu-bolso/renault-kardian-vibe-chega-lojas"
+    },
+    {
+      "version": "Iconic AT 2027",
+      "price": 140990,
+      "date": "ago-set/2026",
+      "source": "https://www.webmotors.com.br/wm1/seu-bolso/renault-kardian-vibe-chega-lojas"
+    }
+  ],
+  "launchModelYearBR": 2025,
+  "catalogCheck": "Versão Evolution (automática EDC) existe na linha 2027. Preço do catálogo (R$ 116.990) está defasado: Evolution AT 2027 custa R$ 126.590 (Webmotors/Autoentusiastas/Carro.blog.br, ago-set/2026; Autoo cita R$ 124.590). Consumo do catálogo (G 11,8/13,9; E 8,2/9,6) não confere: Inmetro Evolution EDC 2027 G 13,1/13,9; E 9,0/9,7 (Autoo). A Evolution MT (manual) aparece em parte da imprensa; a entrada agora é a Vibe MT R$ 99.990.",
+  "wikipedia": {
+    "lang": "en",
+    "title": "Renault Kardian"
+  },
+  "officialUrl": null,
+  "catalogSeed": {
+    "version": "Kardian Evolution 1.0 TCe EDC 2027",
+    "refPriceNew": 126590,
+    "trunkL": 358,
+    "seats": 5,
+    "powertrain": "flex",
+    "consumption": {
+      "cityKmL": 13.1,
+      "roadKmL": 13.9,
+      "cityKmLEthanol": 9.0,
+      "roadKmLEthanol": 9.7,
+      "cityKmKWh": null,
+      "roadKmKWh": null
+    },
+    "consumptionNote": "Inmetro Evolution EDC 2027 via Autoo; preço pela tabela Webmotors/Autoentusiastas ago-set/2026.",
+    "since": 2025,
+    "fipeInclude": [
+      "Kardian",
+      "Evolution"
+    ],
+    "discontinued": false
+  },
+  "sources": [
+    {
+      "label": "Autoo – Kardian 2027 preços, consumo",
+      "url": "https://www.autoo.com.br/renault-kardian-2027-confira-precos-pecas-consumo-e-equipamentos-da-novidade/"
+    },
+    {
+      "label": "Autoo – Kardian chega à linha 2027",
+      "url": "https://www.autoo.com.br/renault-kardian-chega-a-linha-2027-com-uma-serie-de-novidades-saiba-o-que-muda-no-suv/"
+    },
+    {
+      "label": "Webmotors – Kardian Vibe chega às lojas",
+      "url": "https://www.webmotors.com.br/wm1/seu-bolso/renault-kardian-vibe-chega-lojas"
+    },
+    {
+      "label": "Autoentusiastas – Kardian Vibe R$ 99.990",
+      "url": "https://autoentusiastas.com.br/2026/08/renault-kardian-vibe-a-nova-versao-de-acesso-oferece-motor-de-125-cv-por-r-99-990/"
+    },
+    {
+      "label": "Carro.blog.br – Kardian Vibe e automático R$ 26.600 a mais",
+      "url": "https://carro.blog.br/carros/renault/renault-coloca-motor-turbo-de-125-cv-em-suv-de-r-99-990-e-deixa-o-cambio-automatico-para-quem-aceitar-pagar-r-26-600-a-mais.html"
+    },
+    {
+      "label": "AutoPapo – Kardian Vibe consumo 15,3 km/l",
+      "url": "https://autopapo.com.br/noticia/renault-kardian-vibe-2027/"
+    },
+    {
+      "label": "Autoo – Kardian 2026 descontos de até R$ 20 mil",
+      "url": "https://www.autoo.com.br/renault-kardian-2026-tem-descontos-de-ate-r-20-mil-nas-lojas-veja-precos/"
+    },
+    {
+      "label": "Global NCAP – Kardian 5 estrelas",
+      "url": "https://www.globalncap.org/news/kardian-is-renaults-first-five-stars-and-taos-renews-top-safety"
+    },
+    {
+      "label": "Autoblog UY – Kardian 4 estrelas 2024",
+      "url": "https://www.autoblog.com.uy/2024/12/latin-ncap-renault-kardian-con-cuatro.html"
+    },
+    {
+      "label": "Autoentusiastas – lançamento Kardian 2024",
+      "url": "https://autoentusiastas.com.br/2024/02/novo-renault-kardian-a-partir-de-r-112-790/"
+    },
+    {
+      "label": "Wikipedia – Renault Kardian",
+      "url": "https://en.wikipedia.org/wiki/Renault_Kardian"
+    }
+  ],
+  "unverified": [
+    "Garantia de fábrica",
+    "Se o 5 estrelas Latin NCAP vale para todas as versões (exige AEB para vulneráveis)",
+    "Divergência de preço da Evolution 2027 (R$ 124.590 vs R$ 126.590)",
+    "Porta-malas: Autoo 358 L; AutoPapo cita 410 L para a Vibe (provável medida diferente)",
+    "Página oficial Renault não vista"
+  ]
+}

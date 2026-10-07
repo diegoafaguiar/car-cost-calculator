@@ -1,0 +1,172 @@
+{
+  "id": "vw-taos",
+  "researchedAt": "2026-10",
+  "displayName": "Volkswagen Taos",
+  "summary": "SUV médio-compacto da VW importado da Argentina, posicionado entre T-Cross e Tiguan. Usa o 1.4 250 TSI flex (150 cv, 25,5 kgfm) com câmbio automático Aisin de 8 marchas. Linha 2026 reestilizada (jan/2026) em Comfortline e Highline.",
+  "generation": "1ª geração (MQB A1), lançada no Brasil em 2021 como linha 2022; reestilização linha 2026 em jan/2026.",
+  "timeline": [
+    {
+      "modelYear": "2022",
+      "change": "Lançamento no Brasil com 1.4 250 TSI e câmbio automático de 6 marchas."
+    },
+    {
+      "modelYear": "2025",
+      "change": "Câmbio automático de 8 marchas (linha 2024/2025)."
+    },
+    {
+      "modelYear": "2026",
+      "change": "Jan/2026: reestilização (faróis em X, logo iluminado, central de 10,1\"), Comfortline R$ 199.990 e Highline R$ 209.990; Highline subiu para R$ 214.990 (abr/2026). Inmetro G 11,1/13,3; E 7,7/9,3. Promoções: jun/2026 Highline de R$ 214.490 por R$ 198.490; jul/2026 tabela Highline R$ 219.990 com oferta a R$ 201.990."
+    }
+  ],
+  "highlights": [
+    "Latin NCAP 5 estrelas (2021, renovado em dez/2025 para o modelo reestilizado)",
+    "Porta-malas de 498 L",
+    "Câmbio Aisin de 8 marchas",
+    "Inmetro 2026: G 11,1/13,3; E 7,7/9,3 km/l"
+  ],
+  "watchOuts": [
+    "Preço de tabela oscila muito e há descontos de R$ 16–22 mil em campanhas, o que derruba a revenda (FIPE Highline 2026 R$ 195.778 em set/2026)",
+    "Consumo com etanol baixo (7,7 km/l cidade)",
+    "Importado da Argentina"
+  ],
+  "specs": {
+    "version": "Taos Highline 1.4 250 TSI 2026",
+    "engine": "1.4 turbo flex 4 cil. (250 TSI)",
+    "powerCv": "150",
+    "torqueKgfm": "25,5",
+    "transmission": "automático Aisin de 8 marchas",
+    "trunkL": 498,
+    "lengthMm": null,
+    "wheelbaseMm": null,
+    "safety": "Latin NCAP 5 estrelas (2021; renovado em dez/2025)",
+    "warranty": null
+  },
+  "inmetro": {
+    "version": "Taos 1.4 250 TSI 2026",
+    "cityGas": 11.1,
+    "roadGas": 13.3,
+    "cityEth": 7.7,
+    "roadEth": 9.3,
+    "cityKmKWh": null,
+    "roadKmKWh": null,
+    "year": "PBEV 2026",
+    "source": "https://aceleratudo.com.br/blog/volkswagen-taos-2026-preco-versoes-ficha-tecnica"
+  },
+  "price0km": {
+    "version": "Taos Highline 250 TSI 2026",
+    "price": 219990,
+    "date": "jul/2026 (preço de tabela; oferta R$ 201.990)",
+    "source": "https://www.vrum.com.br/bom-negocio/2026/07/7461233-volkswagen-reduz-preco-do-taos-em-ate-rs-22-mil-veja-os-novos-precos.html"
+  },
+  "versionsAndPrices": [
+    {
+      "version": "Comfortline 2026 (lançamento)",
+      "price": 199990,
+      "date": "jan/2026",
+      "source": "https://vwnews.com.br/news/2705"
+    },
+    {
+      "version": "Highline 2026 (lançamento)",
+      "price": 209990,
+      "date": "jan/2026",
+      "source": "https://vwnews.com.br/news/2705"
+    },
+    {
+      "version": "Highline 2026",
+      "price": 214990,
+      "date": "abr/2026",
+      "source": "https://www.car.blog.br/2026/04/novo-vw-taos-2026-highline-preco-r-5.html"
+    },
+    {
+      "version": "Comfortline 2026 (tabela; oferta R$ 171.990)",
+      "price": 193990,
+      "date": "jul/2026",
+      "source": "https://www.vrum.com.br/bom-negocio/2026/07/7461233-volkswagen-reduz-preco-do-taos-em-ate-rs-22-mil-veja-os-novos-precos.html"
+    },
+    {
+      "version": "Highline 2026 (tabela; oferta R$ 201.990)",
+      "price": 219990,
+      "date": "jul/2026",
+      "source": "https://www.vrum.com.br/bom-negocio/2026/07/7461233-volkswagen-reduz-preco-do-taos-em-ate-rs-22-mil-veja-os-novos-precos.html"
+    }
+  ],
+  "launchModelYearBR": 2022,
+  "catalogCheck": "Highline 250 TSI existe. Preço do catálogo (R$ 209.990) é o de lançamento (jan/2026); subiu para R$ 214.990 (abr/2026) e a tabela citada em jul/2026 é R$ 219.990 (com oferta promocional de R$ 201.990). Consumo do catálogo (G 9,9/12,1; E 6,9/8,4) está errado/antigo: Inmetro 2026 G 11,1/13,3; E 7,7/9,3.",
+  "wikipedia": {
+    "lang": "en",
+    "title": "Volkswagen Taos"
+  },
+  "officialUrl": null,
+  "catalogSeed": {
+    "version": "Taos Highline 1.4 250 TSI 2026",
+    "refPriceNew": 219990,
+    "trunkL": 498,
+    "seats": 5,
+    "powertrain": "flex",
+    "consumption": {
+      "cityKmL": 11.1,
+      "roadKmL": 13.3,
+      "cityKmLEthanol": 7.7,
+      "roadKmLEthanol": 9.3,
+      "cityKmKWh": null,
+      "roadKmKWh": null
+    },
+    "consumptionNote": "Inmetro 2026 citado por car.blog.br/aceleratudo/autoo para o Taos reestilizado (mesmo para Comfortline e Highline). Preço: tabela jul/2026 (Vrum); há campanhas com até R$ 18 mil de desconto na Highline.",
+    "since": 2022,
+    "fipeInclude": [
+      "TAOS",
+      "Highline",
+      "250 TSI"
+    ],
+    "discontinued": false
+  },
+  "sources": [
+    {
+      "label": "VW News – Novo Taos parte de R$ 199.990",
+      "url": "https://vwnews.com.br/news/2705"
+    },
+    {
+      "label": "Car.blog.br – Taos 2026 preço (jan/2026)",
+      "url": "https://www.car.blog.br/2026/01/novo-vw-taos-2026-preco-parte-de-r.html"
+    },
+    {
+      "label": "Car.blog.br – Taos Highline +R$ 5 mil (abr/2026)",
+      "url": "https://www.car.blog.br/2026/04/novo-vw-taos-2026-highline-preco-r-5.html"
+    },
+    {
+      "label": "Vrum – VW reduz preço do Taos em até R$ 22 mil (jul/2026)",
+      "url": "https://www.vrum.com.br/bom-negocio/2026/07/7461233-volkswagen-reduz-preco-do-taos-em-ate-rs-22-mil-veja-os-novos-precos.html"
+    },
+    {
+      "label": "Garagem360 – Taos Highline R$ 16 mil de desconto (jun/2026)",
+      "url": "https://garagem360.com.br/?p=313396"
+    },
+    {
+      "label": "Aceleratudo – Taos 2026 ficha técnica",
+      "url": "https://aceleratudo.com.br/blog/volkswagen-taos-2026-preco-versoes-ficha-tecnica"
+    },
+    {
+      "label": "Tabela FIPE Brasil – Taos Highline 2026",
+      "url": "https://www.tabelafipebrasil.com/carros/VW---VOLKSWAGEN/TAOS-HIGHLINE-14-250-TSI-FLEX-AUT/2026-Flex"
+    },
+    {
+      "label": "O Povo – Taos nota máxima Latin NCAP (dez/2025)",
+      "url": "https://www.opovo.com.br/noticias/veiculos/2025/12/05/novo-volkswagen-taos-conquista-nota-maxima-em-seguranca-no-latin-ncap.html"
+    },
+    {
+      "label": "Autoblog UY – Latin NCAP 2021 Taos 5 estrelas",
+      "url": "https://www.autoblog.com.uy/2021/12/latin-ncap-fase-xii-cinco-estrellas.html"
+    },
+    {
+      "label": "Wikipedia – Volkswagen Taos",
+      "url": "https://en.wikipedia.org/wiki/Volkswagen_Taos"
+    }
+  ],
+  "unverified": [
+    "Comprimento e entre-eixos",
+    "Garantia",
+    "Preço de tabela atual (out/2026): fontes divergem — R$ 214.490 (jun), R$ 219.990 (jul); não achei tabela de set/out",
+    "Se já existe linha 2027 no Brasil",
+    "Página oficial VW não vista"
+  ]
+}

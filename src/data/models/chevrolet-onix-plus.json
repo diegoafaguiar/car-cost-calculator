@@ -1,0 +1,175 @@
+{
+  "id": "chevrolet-onix-plus",
+  "researchedAt": "2026-10",
+  "displayName": "Chevrolet Onix Plus",
+  "summary": "Versão sedã do Onix (plataforma GEM), com 1.0 aspirado (manual) e 1.0 turbo de cerca de 115 cv (manual ou automático de 6). Na linha 2027 (jun/2026) perdeu a versão LT; a gama é Eco (turbo só etanol, AT), 1.0 MT, 1.0 Turbo AT, LTZ e Premier.",
+  "generation": "2ª geração (sucessor do Prisma), lançada no fim de 2019 (linha 2020); facelift na linha 2026 (jul/2025).",
+  "timeline": [
+    {
+      "modelYear": "2020",
+      "change": "Estreia como sucessor do Prisma."
+    },
+    {
+      "modelYear": "2026",
+      "change": "Facelift: nova dianteira, painel digital de 8\" e multimídia de 11\" nas versões superiores."
+    },
+    {
+      "modelYear": "2027",
+      "change": "Jun/2026: sai a versão LT; entra Eco (turbo só etanol); preços da linha caem frente à linha 2026."
+    }
+  ],
+  "highlights": [
+    "Latin NCAP 2019: 5 estrelas adulto e criança, com 6 airbags e controle de estabilidade de série.",
+    "Porta-malas grande para o segmento (fontes citam 500 L).",
+    "Turbo AT: 0-100 km/h em 10,6 s, 187 km/h (Autoo)."
+  ],
+  "watchOuts": [
+    "Versão LT descontinuada na linha 2027.",
+    "Dados de consumo do turbo AT divergem entre fontes (ver inmetro.note).",
+    "Descontos agressivos de varejo afetam a revenda."
+  ],
+  "specs": {
+    "version": "LTZ 1.0 Turbo AT (linha 2027)",
+    "engine": "1.0 turbo flex 3 cil. injeção direta",
+    "powerCv": "115 (E/G)",
+    "torqueKgfm": "16,8",
+    "transmission": "automático de 6 marchas",
+    "trunkL": 500,
+    "lengthMm": 4474,
+    "wheelbaseMm": 2600,
+    "safety": "Latin NCAP 2019: 5 estrelas adulto/criança",
+    "warranty": null
+  },
+  "inmetro": {
+    "version": "1.0 Turbo AT",
+    "cityGas": null,
+    "roadGas": null,
+    "cityEth": null,
+    "roadEth": null,
+    "cityKmKWh": null,
+    "roadKmKWh": null,
+    "year": "não confirmado",
+    "source": "https://www.mercadolivre.com.br/blog/mo-consumo-chevrolet-onix-plus-2026-versoes",
+    "note": "Fontes divergem: Mercado Livre (PBEV 2026) G 12,1/16,0 E 9,1/11,0; Autoo 2026 G 12,3/15,7 E 9,3/12,0; Autoo 2027 G 13,7/17,0 E 9,6/12,2. Nenhuma bate com o catálogo (G 12,6/16,3 E 8,8/11,4)."
+  },
+  "price0km": {
+    "version": "LTZ 1.0 Turbo AT",
+    "price": 120190,
+    "date": "jun/2026",
+    "source": "https://gurudoscarros.com.br/2026/06/04/chevrolet-amplia-gama-onix-e-lanca-linha-2027-com-versoes-ineditas-activ-eco-pro-e-log-precos-partem-de-r-99-990/"
+  },
+  "versionsAndPrices": [
+    {
+      "version": "Eco 1.0 turbo etanol AT",
+      "price": 106990,
+      "date": "jun/2026 (R$ 103.990 com bônus)",
+      "source": "https://gurudoscarros.com.br/2026/06/04/chevrolet-amplia-gama-onix-e-lanca-linha-2027-com-versoes-ineditas-activ-eco-pro-e-log-precos-partem-de-r-99-990/"
+    },
+    {
+      "version": "1.0 MT",
+      "price": 108990,
+      "date": "jun/2026",
+      "source": "https://gurudoscarros.com.br/2026/06/04/chevrolet-amplia-gama-onix-e-lanca-linha-2027-com-versoes-ineditas-activ-eco-pro-e-log-precos-partem-de-r-99-990/"
+    },
+    {
+      "version": "1.0 Turbo AT",
+      "price": 114190,
+      "date": "jun/2026",
+      "source": "https://gurudoscarros.com.br/2026/06/04/chevrolet-amplia-gama-onix-e-lanca-linha-2027-com-versoes-ineditas-activ-eco-pro-e-log-precos-partem-de-r-99-990/"
+    },
+    {
+      "version": "LTZ 1.0 Turbo AT",
+      "price": 120190,
+      "date": "jun/2026",
+      "source": "https://gurudoscarros.com.br/2026/06/04/chevrolet-amplia-gama-onix-e-lanca-linha-2027-com-versoes-ineditas-activ-eco-pro-e-log-precos-partem-de-r-99-990/"
+    },
+    {
+      "version": "Premier 1.0 Turbo AT",
+      "price": 125290,
+      "date": "jun/2026",
+      "source": "https://gurudoscarros.com.br/2026/06/04/chevrolet-amplia-gama-onix-e-lanca-linha-2027-com-versoes-ineditas-activ-eco-pro-e-log-precos-partem-de-r-99-990/"
+    },
+    {
+      "version": "LT 1.0 Turbo AT (linha 2026, extinta)",
+      "price": 123790,
+      "date": "2025/2026",
+      "source": "https://revistacarro.com.br/chevrolet-onix-2026-precos-versoes-e-equipamentos/"
+    }
+  ],
+  "launchModelYearBR": 2020,
+  "catalogCheck": "Nome 'Onix Plus LT 1.0 Turbo Aut.' não existe mais na linha 2027 (custava R$ 123.790 na linha 2026, Revista Carro). Equivalente em equipamentos (painel digital + multimídia 11\"): LTZ 1.0 Turbo AT, R$ 120.190 (jun/2026); a versão turbo AT mais simples custa R$ 114.190. Catálogo R$ 124.990 está acima de ambos. Consumo do catálogo não confirmado; fontes divergem.",
+  "wikipedia": {
+    "lang": "en",
+    "title": "Chevrolet Onix"
+  },
+  "officialUrl": null,
+  "sources": [
+    {
+      "label": "Guru dos Carros – linha Onix 2027 preços",
+      "url": "https://gurudoscarros.com.br/2026/06/04/chevrolet-amplia-gama-onix-e-lanca-linha-2027-com-versoes-ineditas-activ-eco-pro-e-log-precos-partem-de-r-99-990/"
+    },
+    {
+      "label": "Itatiaia – Onix Plus 2027 preços",
+      "url": "https://www.itatiaia.com.br/auto/chevrolet-onix-e-onix-plus-2027-chegam-com-novidades-veja-os-precos/"
+    },
+    {
+      "label": "Grupo Sentinela – Onix/Onix Plus 2027",
+      "url": "https://www.gruposentinela.com.br/chevrolet-onix-e-onix-plus-2027-precos-versoes-e-equipamentos/"
+    },
+    {
+      "label": "Autoo – Onix Plus 2027",
+      "url": "https://www.autoo.com.br/onix-plus-2027-confira-precos-versoes-consumo-e-equipamentos-do-seda/"
+    },
+    {
+      "label": "Autoo – Onix Plus 2026",
+      "url": "https://www.autoo.com.br/chevrolet-onix-plus-2026-precos-pecas-consumo-e-equipamentos-do-seda/"
+    },
+    {
+      "label": "Mercado Livre – consumo Onix Plus 2026",
+      "url": "https://www.mercadolivre.com.br/blog/mo-consumo-chevrolet-onix-plus-2026-versoes"
+    },
+    {
+      "label": "Revista Carro – Onix 2026 preços",
+      "url": "https://revistacarro.com.br/chevrolet-onix-2026-precos-versoes-e-equipamentos/"
+    },
+    {
+      "label": "Revista Carro – 5 estrelas Latin NCAP",
+      "url": "https://revistacarro.com.br/relembre-os-ultimos-carros-que-ganharam-5-estrelas-no-latin-ncap/"
+    },
+    {
+      "label": "Wikipedia – Chevrolet Onix",
+      "url": "https://en.wikipedia.org/wiki/Chevrolet_Onix"
+    }
+  ],
+  "unverified": [
+    "Consumo Inmetro do turbo AT (3 valores conflitantes)",
+    "Porta-malas: fontes citam 500 L; GM historicamente divulgava 469 L",
+    "Garantia",
+    "URL oficial"
+  ],
+  "catalogSeed": {
+    "version": "LTZ 1.0 Turbo AT",
+    "refPriceNew": 120190,
+    "trunkL": 500,
+    "seats": 5,
+    "powertrain": "flex",
+    "consumption": {
+      "cityKmL": null,
+      "roadKmL": null,
+      "cityKmLEthanol": null,
+      "roadKmLEthanol": null,
+      "cityKmKWh": null,
+      "roadKmKWh": null
+    },
+    "consumptionNote": "Sem valor confiável: PBEV 2026 segundo Mercado Livre G 12,1/16,0 E 9,1/11,0; Autoo 2026 G 12,3/15,7 E 9,3/12,0; Autoo 2027 G 13,7/17,0 E 9,6/12,2.",
+    "since": 2020,
+    "fipeInclude": [
+      "ONIX SEDAN",
+      "Plus",
+      "LTZ",
+      "TB",
+      "Aut"
+    ],
+    "discontinued": false
+  }
+}

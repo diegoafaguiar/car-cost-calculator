@@ -1,0 +1,190 @@
+{
+  "id": "chevrolet-onix",
+  "researchedAt": "2026-10",
+  "displayName": "Chevrolet Onix",
+  "summary": "Hatch compacto da GM feito em Gravataí (RS), na plataforma GEM. Motores 1.0 aspirado 3 cil. (80/82 cv, manual de 6) e 1.0 turbo (cerca de 115 cv, manual ou automático de 6). Na linha 2027 (jun/2026) as versões LT e LTZ do hatch saíram e entraram Eco (turbo só etanol, AT), Pro, Log (furgãozinho de 2 lugares) e Activ.",
+  "generation": "2ª geração, lançada no fim de 2019 (linha 2020); facelift em jul/2025 (linha 2026).",
+  "timeline": [
+    {
+      "modelYear": "2020",
+      "change": "Estreia da 2ª geração (plataforma GEM)."
+    },
+    {
+      "modelYear": "2026",
+      "change": "Facelift (jul/2025): nova dianteira, faróis LED opcionais, painel digital 8\" e multimídia 11\"; turbo cai de 116 para 115,5 cv (programa Carro Sustentável)."
+    },
+    {
+      "modelYear": "2027",
+      "change": "Jun/2026: saem LT e LTZ do hatch; entram Eco (só etanol, turbo AT), Pro, Log e Activ."
+    }
+  ],
+  "highlights": [
+    "Onix 1.0 MT lidera o ranking de eficiência do Inmetro 2026 (1,38 MJ/km): 13,7 km/l cidade e 17,7 km/l estrada com gasolina.",
+    "Seis airbags, OnStar e chave presencial já na versão 1.0 MT.",
+    "Latin NCAP 2019: 5 estrelas (Onix/Onix Plus)."
+  ],
+  "watchOuts": [
+    "Versão LT do hatch não existe mais na linha 2027; nomes mudaram (1.0 MT, Pro, Eco, Activ, RS, Premier).",
+    "Fortes descontos de varejo em 2026 (reportagens citam até R$ 20–22 mil), o que derruba o valor de revenda.",
+    "Porta-malas pequeno: 275 L."
+  ],
+  "specs": {
+    "version": "Onix 1.0 MT (aspirado)",
+    "engine": "1.0 Ecotec flex 3 cil. aspirado",
+    "powerCv": "82 (E) / 80 (G)",
+    "torqueKgfm": "10,6 (E) / 10,2 (G)",
+    "transmission": "manual de 6 marchas",
+    "trunkL": 275,
+    "lengthMm": 4160,
+    "wheelbaseMm": 2550,
+    "safety": "Latin NCAP 2019: 5 estrelas (protocolo 2019)",
+    "warranty": null
+  },
+  "inmetro": {
+    "version": "Onix 1.0 MT aspirado",
+    "cityGas": 13.7,
+    "roadGas": 17.7,
+    "cityEth": null,
+    "roadEth": null,
+    "cityKmKWh": null,
+    "roadKmKWh": null,
+    "year": "PBEV 2026",
+    "source": "https://revistacarro.com.br/onix-2026-segue-como-carro-mais-economico-do-brasil-veja-lista-do-inmetro/",
+    "note": "Outra fonte (Motor Show, 2026) cita G 13,5/16,3 e E 9,5/11,3 para o mesmo motor; etanol não confirmado no ranking."
+  },
+  "price0km": {
+    "version": "Onix 1.0 MT (linha 2027)",
+    "price": 102890,
+    "date": "jun/2026",
+    "source": "https://gurudoscarros.com.br/2026/06/04/chevrolet-amplia-gama-onix-e-lanca-linha-2027-com-versoes-ineditas-activ-eco-pro-e-log-precos-partem-de-r-99-990/"
+  },
+  "versionsAndPrices": [
+    {
+      "version": "1.0 MT",
+      "price": 102890,
+      "date": "jun/2026",
+      "source": "https://gurudoscarros.com.br/2026/06/04/chevrolet-amplia-gama-onix-e-lanca-linha-2027-com-versoes-ineditas-activ-eco-pro-e-log-precos-partem-de-r-99-990/"
+    },
+    {
+      "version": "Pro 1.0 MT",
+      "price": 104390,
+      "date": "jun/2026",
+      "source": "https://gurudoscarros.com.br/2026/06/04/chevrolet-amplia-gama-onix-e-lanca-linha-2027-com-versoes-ineditas-activ-eco-pro-e-log-precos-partem-de-r-99-990/"
+    },
+    {
+      "version": "Log 1.0 MT",
+      "price": 105990,
+      "date": "jun/2026",
+      "source": "https://gurudoscarros.com.br/2026/06/04/chevrolet-amplia-gama-onix-e-lanca-linha-2027-com-versoes-ineditas-activ-eco-pro-e-log-precos-partem-de-r-99-990/"
+    },
+    {
+      "version": "Eco 1.0 turbo etanol AT",
+      "price": 103190,
+      "date": "jun/2026 (R$ 99.990 com bônus)",
+      "source": "https://gurudoscarros.com.br/2026/06/04/chevrolet-amplia-gama-onix-e-lanca-linha-2027-com-versoes-ineditas-activ-eco-pro-e-log-precos-partem-de-r-99-990/"
+    },
+    {
+      "version": "1.0 Turbo MT",
+      "price": 104690,
+      "date": "jun/2026",
+      "source": "https://gurudoscarros.com.br/2026/06/04/chevrolet-amplia-gama-onix-e-lanca-linha-2027-com-versoes-ineditas-activ-eco-pro-e-log-precos-partem-de-r-99-990/"
+    },
+    {
+      "version": "1.0 Turbo AT",
+      "price": 111990,
+      "date": "jun/2026",
+      "source": "https://gurudoscarros.com.br/2026/06/04/chevrolet-amplia-gama-onix-e-lanca-linha-2027-com-versoes-ineditas-activ-eco-pro-e-log-precos-partem-de-r-99-990/"
+    },
+    {
+      "version": "Activ 1.0 Turbo AT",
+      "price": 116190,
+      "date": "jun/2026",
+      "source": "https://gurudoscarros.com.br/2026/06/04/chevrolet-amplia-gama-onix-e-lanca-linha-2027-com-versoes-ineditas-activ-eco-pro-e-log-precos-partem-de-r-99-990/"
+    },
+    {
+      "version": "RS 1.0 Turbo AT",
+      "price": 121190,
+      "date": "jun/2026",
+      "source": "https://gurudoscarros.com.br/2026/06/04/chevrolet-amplia-gama-onix-e-lanca-linha-2027-com-versoes-ineditas-activ-eco-pro-e-log-precos-partem-de-r-99-990/"
+    },
+    {
+      "version": "Premier 1.0 Turbo AT",
+      "price": 121190,
+      "date": "jun/2026",
+      "source": "https://gurudoscarros.com.br/2026/06/04/chevrolet-amplia-gama-onix-e-lanca-linha-2027-com-versoes-ineditas-activ-eco-pro-e-log-precos-partem-de-r-99-990/"
+    }
+  ],
+  "launchModelYearBR": 2020,
+  "catalogCheck": "Nome 'Onix LT 1.0 (hatch)' não existe na linha 2027 (e na linha 2026 o R$ 99.990 era da versão de entrada '1.0 MT', não LT). Equivalente atual: Onix 1.0 MT, R$ 102.890 (jun/2026). Inmetro: catálogo G 13,9/17,1 E 9,7/11,9 parecem ser do Onix Plus aspirado; para o hatch 1.0 MT o ranking PBEV 2026 dá G 13,7/17,7 (etanol não confirmado; outra fonte: E 9,5/11,3).",
+  "wikipedia": {
+    "lang": "en",
+    "title": "Chevrolet Onix"
+  },
+  "officialUrl": null,
+  "sources": [
+    {
+      "label": "Guru dos Carros – linha Onix 2027 preços",
+      "url": "https://gurudoscarros.com.br/2026/06/04/chevrolet-amplia-gama-onix-e-lanca-linha-2027-com-versoes-ineditas-activ-eco-pro-e-log-precos-partem-de-r-99-990/"
+    },
+    {
+      "label": "Automotive Business – Onix 2027",
+      "url": "https://www.automotivebusiness.com.br/noticias/activ-pro-eco-onix-novas-versoes-linha-2027"
+    },
+    {
+      "label": "Itatiaia – Onix e Onix Plus 2027 preços",
+      "url": "https://www.itatiaia.com.br/auto/chevrolet-onix-e-onix-plus-2027-chegam-com-novidades-veja-os-precos/"
+    },
+    {
+      "label": "Vrum – Onix 2027 quatro novas versões",
+      "url": "https://www.vrum.com.br/noticias/2026/06/7434088-chevrolet-anuncia-onix-2027-com-quatro-novas-versoes-veja-novidades.html"
+    },
+    {
+      "label": "Revista Carro – Onix 2026 preços",
+      "url": "https://revistacarro.com.br/chevrolet-onix-2026-precos-versoes-e-equipamentos/"
+    },
+    {
+      "label": "Revista Carro – ranking Inmetro 2026",
+      "url": "https://revistacarro.com.br/onix-2026-segue-como-carro-mais-economico-do-brasil-veja-lista-do-inmetro/"
+    },
+    {
+      "label": "Motor Show – Onix 1.0 2026",
+      "url": "https://motorshow.com.br/promocao-chevrolet-onix-1-0-2026"
+    },
+    {
+      "label": "Wikipedia – Chevrolet Onix",
+      "url": "https://en.wikipedia.org/wiki/Chevrolet_Onix"
+    },
+    {
+      "label": "Revista Carro – Onix Plus 5 estrelas Latin NCAP",
+      "url": "https://revistacarro.com.br/relembre-os-ultimos-carros-que-ganharam-5-estrelas-no-latin-ncap/"
+    }
+  ],
+  "unverified": [
+    "Consumo com etanol do 1.0 MT no PBEV 2026",
+    "Garantia",
+    "Comprimento/entre-eixos pós-facelift (valores da Wikipedia)",
+    "URL oficial chevrolet.com.br"
+  ],
+  "catalogSeed": {
+    "version": "Onix 1.0 MT (aspirado)",
+    "refPriceNew": 102890,
+    "trunkL": 275,
+    "seats": 5,
+    "powertrain": "flex",
+    "consumption": {
+      "cityKmL": 13.7,
+      "roadKmL": 17.7,
+      "cityKmLEthanol": null,
+      "roadKmLEthanol": null,
+      "cityKmKWh": null,
+      "roadKmKWh": null
+    },
+    "consumptionNote": "Gasolina do ranking PBEV 2026 (Revista Carro). Etanol não confirmado; Motor Show cita E 9,5/11,3 (e G 13,5/16,3).",
+    "since": 2020,
+    "fipeInclude": [
+      "ONIX HATCH",
+      "1.0 12V Flex 5p Mec"
+    ],
+    "discontinued": false
+  }
+}

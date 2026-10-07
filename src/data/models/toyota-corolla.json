@@ -1,0 +1,216 @@
+{
+  "id": "toyota-corolla",
+  "researchedAt": "2026-10",
+  "displayName": "Toyota Corolla",
+  "summary": "Sedã médio líder do segmento, feito em Indaiatuba (SP). Versões 2.0 Dynamic Force flex com CVT (XEi, Altis, GR-S) e híbridas flex 1.8 + elétrico (122 cv combinados) com e-CVT (GLi Hybrid e Altis Premium Hybrid). Nova geração/reestilização é esperada entre o fim de 2026 e 2027.",
+  "generation": "12ª geração (E210, plataforma TNGA-C), lançada no Brasil em set/2019 como linha 2020; reestilização leve na linha 2024/2025.",
+  "timeline": [
+    {
+      "modelYear": "2020",
+      "change": "Estreia da 12ª geração no Brasil, com primeira versão híbrida flex do mundo (Altis Hybrid)."
+    },
+    {
+      "modelYear": "2024",
+      "change": "Atualização: versão de entrada mais econômica e mudanças de equipamentos (AutoPapo)."
+    },
+    {
+      "modelYear": "2026",
+      "change": "Estreia da GLi Hybrid (híbrido mais barato; Inmetro G 17,5/15,2, E 12,5/10,7). Reajustes em mar/2026 (XEi R$ 174.990) e jun/2026 (XEi R$ 177.590; GLi Hybrid R$ 194.790; Altis R$ 206.790; GR-S R$ 206.790; Altis Premium Hybrid R$ 210.090)."
+    },
+    {
+      "modelYear": "2027",
+      "change": "Nova geração/reestilização com visual inspirado no Prius esperada para fim de 2026/início de 2027 (Autoo); sem preços oficiais até out/2026."
+    }
+  ],
+  "highlights": [
+    "Híbrido flex: Inmetro gasolina 17,5 km/l cidade / 15,2 estrada; etanol 12,5 / 10,7 (GLi Hybrid)",
+    "XEi 2.0: Inmetro G 11,9/14,5; E 8,0/10,0",
+    "Porta-malas de 470 L",
+    "Líder entre sedãs médios (>2.200 vendas/mês, jun/2026)"
+  ],
+  "watchOuts": [
+    "Geração de 2019 com substituta prevista para 2027 — risco de depreciação acelerada do modelo atual",
+    "Preços subiram duas vezes em 2026 (XEi +R$ 7,6 mil desde 2025; Altis Premium Hybrid passou de R$ 210 mil)",
+    "Versão 'Altis Hybrid' sem 'Premium' não aparece mais nas tabelas de 2026",
+    "Dados de consumo do híbrido variam entre fontes (Altis Premium Hybrid: 18,5/15,7 em 2025 vs 17,5/15,2 nos rankings PBEV 2026)"
+  ],
+  "specs": {
+    "version": "Corolla XEi 2.0 CVT 2026",
+    "engine": "2.0 Dynamic Force flex 4 cil. 16V",
+    "powerCv": null,
+    "torqueKgfm": null,
+    "transmission": "CVT (10 marchas simuladas não confirmado)",
+    "trunkL": 470,
+    "lengthMm": 4630,
+    "wheelbaseMm": null,
+    "safety": "5 estrelas Latin NCAP (teste da geração E210; ano não confirmado)",
+    "warranty": null
+  },
+  "inmetro": {
+    "version": "Corolla XEi 2.0 2026",
+    "cityGas": 11.9,
+    "roadGas": 14.5,
+    "cityEth": 8.0,
+    "roadEth": 10.0,
+    "cityKmKWh": null,
+    "roadKmKWh": null,
+    "year": "PBEV 2026",
+    "source": "https://consultadeplaca.net/blog/ficha-tecnica-corolla-xei"
+  },
+  "price0km": {
+    "version": "Corolla XEi 2.0 CVT 2026",
+    "price": 177590,
+    "date": "jun/2026",
+    "source": "https://autopapo.com.br/curta/toyota-corolla-sofre-aumento-de-precos-com-versoes-superiores-a-r-210-mil/"
+  },
+  "versionsAndPrices": [
+    {
+      "version": "XEi 2.0 CVT",
+      "price": 177590,
+      "date": "jun/2026",
+      "source": "https://autopapo.com.br/curta/toyota-corolla-sofre-aumento-de-precos-com-versoes-superiores-a-r-210-mil/"
+    },
+    {
+      "version": "GLi Hybrid 1.8",
+      "price": 194790,
+      "date": "jun/2026",
+      "source": "https://autopapo.com.br/curta/toyota-corolla-sofre-aumento-de-precos-com-versoes-superiores-a-r-210-mil/"
+    },
+    {
+      "version": "Altis 2.0 CVT",
+      "price": 206790,
+      "date": "jun/2026",
+      "source": "https://autopapo.com.br/curta/toyota-corolla-sofre-aumento-de-precos-com-versoes-superiores-a-r-210-mil/"
+    },
+    {
+      "version": "GR-S 2.0 CVT",
+      "price": 206790,
+      "date": "jun/2026",
+      "source": "https://autopapo.com.br/curta/toyota-corolla-sofre-aumento-de-precos-com-versoes-superiores-a-r-210-mil/"
+    },
+    {
+      "version": "Altis Premium Hybrid 1.8",
+      "price": 210090,
+      "date": "jun/2026",
+      "source": "https://autopapo.com.br/curta/toyota-corolla-sofre-aumento-de-precos-com-versoes-superiores-a-r-210-mil/"
+    }
+  ],
+  "launchModelYearBR": 2020,
+  "catalogCheck": "XEi 2.0 existe. Preço do catálogo (R$ 182.990) não confere: XEi custa R$ 177.590 desde jun/2026 (era R$ 174.990 em mar/2026). Consumo do catálogo (G 11,0/13,9; E 7,6/9,8) está desatualizado: PBEV 2026 G 11,9/14,5; E 8,0/10,0. Híbrido: não existe mais 'Altis Hybrid' simples; as versões são GLi Hybrid (R$ 194.790) e Altis Premium Hybrid (R$ 210.090, jun/2026); o valor do catálogo (R$ 204.990) não corresponde a nenhuma (Altis Premium Hybrid custava R$ 206.990 antes de jun/2026). Consumo híbrido do catálogo (G 17,3/15,5; E 12,1/10,8) não confere: PBEV 2026 G 17,5/15,2; E 12,5/10,7.",
+  "wikipedia": {
+    "lang": "en",
+    "title": "Toyota Corolla (E210)"
+  },
+  "officialUrl": null,
+  "catalogSeed": {
+    "version": "Corolla XEi 2.0 CVT 2026",
+    "refPriceNew": 177590,
+    "trunkL": 470,
+    "seats": 5,
+    "powertrain": "flex",
+    "consumption": {
+      "cityKmL": 11.9,
+      "roadKmL": 14.5,
+      "cityKmLEthanol": 8.0,
+      "roadKmLEthanol": 10.0,
+      "cityKmKWh": null,
+      "roadKmKWh": null
+    },
+    "consumptionNote": "PBEV 2026 via consultadeplaca.net (ficha XEi 2026); confirmado por fichacompleta/carro.blog.br ('até 14,5 km/l').",
+    "since": 2020,
+    "fipeInclude": [
+      "Corolla",
+      "XEi",
+      "2.0"
+    ],
+    "discontinued": false
+  },
+  "versionSeeds": [
+    {
+      "id": "toyota-corolla-hybrid",
+      "version": "Corolla Altis Premium Hybrid 1.8 2026 (equivalente atual ao 'Altis Hybrid')",
+      "refPriceNew": 210090,
+      "trunkL": null,
+      "seats": 5,
+      "powertrain": "hibrido",
+      "consumption": {
+        "cityKmL": 17.5,
+        "roadKmL": 15.2,
+        "cityKmLEthanol": 12.5,
+        "roadKmLEthanol": 10.7,
+        "cityKmKWh": null,
+        "roadKmKWh": null
+      },
+      "consumptionNote": "Valores Inmetro da GLi Hybrid (garagem360), que segundo a imprensa iguala o Altis Premium Hybrid; ranking PBEV de nov/2025 lista o Corolla HEV com 17,5 km/l (1,26 MJ/km). Em 2025 o Altis Premium Hybrid constava com G 18,5/15,7 e E 12,8/11,1 (1,21 MJ/km). Alternativa mais barata: GLi Hybrid R$ 194.790 (jun/2026).",
+      "since": 2020,
+      "fipeInclude": [
+        "Corolla",
+        "Altis",
+        "Premium",
+        "1.8"
+      ],
+      "discontinued": false,
+      "source": "https://autopapo.com.br/curta/toyota-corolla-sofre-aumento-de-precos-com-versoes-superiores-a-r-210-mil/"
+    }
+  ],
+  "sources": [
+    {
+      "label": "AutoPapo – Corolla aumento jun/2026",
+      "url": "https://autopapo.com.br/curta/toyota-corolla-sofre-aumento-de-precos-com-versoes-superiores-a-r-210-mil/"
+    },
+    {
+      "label": "Vrum – Corolla passa dos R$ 210 mil (jun/2026)",
+      "url": "https://www.vrum.com.br/mercado/2026/06/7437138-toyota-corolla-fica-mais-caro-e-ja-passa-dos-rs-210-mil-na-versao-hibrida.html"
+    },
+    {
+      "label": "Auto+ TV – Corolla linha passa de R$ 210 mil",
+      "url": "https://www.automaistv.com.br/vendas-e-precos/toyota-corolla-fica-mais-caro-e-linha-ja-passa-de-r-210-mil/"
+    },
+    {
+      "label": "Itatiaia – Corolla até R$ 5 mil mais caro em março",
+      "url": "https://www.itatiaia.com.br/auto/toyota-corolla-fica-ate-r-5-mil-mais-caro-em-marco-confira-os-precos/"
+    },
+    {
+      "label": "Garagem360 – Inmetro vaza consumo GLi Hybrid",
+      "url": "https://garagem360.com.br/?p=287602"
+    },
+    {
+      "label": "Consultadeplaca – ficha Corolla XEi 2026",
+      "url": "https://consultadeplaca.net/blog/ficha-tecnica-corolla-xei"
+    },
+    {
+      "label": "Carro.blog.br – Corolla XEi 2026 até 14,5 km/l",
+      "url": "https://carro.blog.br/toyota-corolla-xei-2-0-2026-preco-ficha-tecnica-consumo-equipamentos-e-fotos-seda-faz-ate-145-km-l-e-roda-mais-de-700-km-ideal-para-longas-viagens.html"
+    },
+    {
+      "label": "Vrum – ranking sedãs mais econômicos (nov/2025)",
+      "url": "https://www.vrum.com.br/aceleradas/2025/11/7289294-inmetro-atualiza-ranking-dos-sedas-mais-economicos-confira.html"
+    },
+    {
+      "label": "Vrum – automáticos mais econômicos 2025",
+      "url": "https://www.vrum.com.br/aceleradas/2025/01/7041273-carros-automaticos-confira-os-mais-economicos-em-2025.html"
+    },
+    {
+      "label": "Autoo – Corolla 2027 o que esperar",
+      "url": "https://www.autoo.com.br/toyota-corolla-2027-o-que-esperar-da-versao-renovada-do-seda-no-brasil/"
+    },
+    {
+      "label": "Comprecar – Corolla 5 estrelas Latin NCAP",
+      "url": "https://www.comprecar.com.br/revista/novo-corolla-recebe-5-estrelas-no-latin-ncap"
+    },
+    {
+      "label": "Wikipedia – Toyota Corolla (E210)",
+      "url": "https://en.wikipedia.org/wiki/Toyota_Corolla_(E210)"
+    }
+  ],
+  "unverified": [
+    "Potência/torque da XEi no Brasil (ficha peruana cita 168 hp/199 Nm a gasolina)",
+    "Entre-eixos",
+    "Garantia",
+    "Ano exato do teste Latin NCAP",
+    "Porta-malas do híbrido",
+    "Consumo oficial 2026 específico do Altis Premium Hybrid (usado o da GLi Hybrid)",
+    "Se houve reajuste após jun/2026",
+    "Fábrica (Indaiatuba) não confirmada nesta pesquisa"
+  ]
+}

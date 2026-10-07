@@ -1,0 +1,151 @@
+{
+  "id": "citroen-c3",
+  "researchedAt": "2026-10",
+  "displayName": "Citroën C3",
+  "summary": "Hatch compacto de 3ª geração (plataforma CMP/Smart Car), feito em Porto Real (RJ). Versões 1.0 Firefly flex (75 cv, manual 5) e topo YOU! com 1.0 Turbo 200 (130 cv, CVT). Na linha 2027 (ago/2026) as versões passaram a Live Go, Live Plus, Feel Plus, XTR e YOU!.",
+  "generation": "3ª geração (sul-americana/indiana), lançada no Brasil em 2022 (ano-modelo 2023).",
+  "timeline": [
+    {
+      "modelYear": "2026",
+      "change": "Preços reduzidos (Live R$ 74.990 com Carro Sustentável), nova versão XTR, painel pintado e TPMS; Live Pack R$ 83.990, Feel R$ 85.990, XTR R$ 88.990, YOU! R$ 103.990."
+    },
+    {
+      "modelYear": "2027",
+      "change": "Ago/2026: versões renomeadas — Live Go R$ 77.990, Live Plus R$ 87.990, Feel Plus R$ 91.490, XTR R$ 93.990, YOU! Turbo 200 AT R$ 113.990; multimídia 10,25\" com novo tema, porta-documentos, alarme na Live Plus, sensor de ré nas XTR/YOU!, Vermelho Ruby sem custo."
+    }
+  ],
+  "highlights": [
+    "Maior porta-malas do segmento: 315 L",
+    "Inmetro Live: G 13,2/14,5; E 9,3/10,3 km/l",
+    "Entre-eixos de 2.540 mm, bom espaço interno",
+    "Opção turbo com CVT (YOU!)"
+  ],
+  "watchOuts": [
+    "Latin NCAP 2023: zero estrela (estrutura instável, só 2 airbags, sem proteção lateral de cabeça)",
+    "Preços subiram até R$ 4.400 na linha 2027",
+    "Versão de entrada com equipamentos básicos (rodas de aço, sem multimídia)"
+  ],
+  "specs": {
+    "version": "C3 Live Go 1.0 Firefly 2027",
+    "engine": "1.0 Firefly flex 3 cil. aspirado",
+    "powerCv": "75 (E)",
+    "torqueKgfm": "10,7 (E)",
+    "transmission": "manual de 5 marchas",
+    "trunkL": 315,
+    "lengthMm": 3980,
+    "wheelbaseMm": 2540,
+    "safety": "Latin NCAP 2023: 0 estrela",
+    "warranty": null
+  },
+  "inmetro": {
+    "version": "C3 Live/Live Go 1.0 Firefly",
+    "cityGas": 13.2,
+    "roadGas": 14.5,
+    "cityEth": 9.3,
+    "roadEth": 10.3,
+    "cityKmKWh": null,
+    "roadKmKWh": null,
+    "year": "PBEV 2026",
+    "source": "https://carro.blog.br/?p=175550"
+  },
+  "price0km": {
+    "version": "Live Go 1.0 2027",
+    "price": 77990,
+    "date": "ago/2026",
+    "source": "https://www.autoo.com.br/citroen-c3-e-aircrosschegam-a-linha-2027-veja-precos-das-versoes-e-o-que-muda/"
+  },
+  "versionsAndPrices": [
+    {
+      "version": "Live Go 1.0 2027",
+      "price": 77990,
+      "date": "ago/2026",
+      "source": "https://www.autoo.com.br/citroen-c3-e-aircrosschegam-a-linha-2027-veja-precos-das-versoes-e-o-que-muda/"
+    },
+    {
+      "version": "Live Plus 1.0 2027",
+      "price": 87990,
+      "date": "ago/2026",
+      "source": "https://www.autoo.com.br/citroen-c3-e-aircrosschegam-a-linha-2027-veja-precos-das-versoes-e-o-que-muda/"
+    },
+    {
+      "version": "Feel Plus 1.0 2027",
+      "price": 91490,
+      "date": "ago/2026",
+      "source": "https://motorshow.com.br/citroen-c3-2027-estreia"
+    },
+    {
+      "version": "XTR 1.0 2027",
+      "price": 93990,
+      "date": "ago/2026",
+      "source": "https://motorshow.com.br/citroen-c3-2027-estreia"
+    },
+    {
+      "version": "YOU! Turbo 200 AT 2027",
+      "price": 113990,
+      "date": "ago/2026",
+      "source": "https://motorshow.com.br/citroen-c3-2027-estreia"
+    }
+  ],
+  "launchModelYearBR": 2023,
+  "catalogCheck": "Nome 'Live' não existe mais na linha 2027: equivalente é Live Go, R$ 77.990 (catálogo R$ 79.990). Consumo do catálogo G 13,4/14,6 diverge levemente do Inmetro citado (13,2/14,5); etanol 9,3/10,3 confere.",
+  "wikipedia": {
+    "lang": "en",
+    "title": "Citroën C3 (CC21)"
+  },
+  "officialUrl": "https://www.citroen.com.br/carros/novo-c3.html",
+  "sources": [
+    {
+      "label": "Autoo – C3 e Aircross 2027",
+      "url": "https://www.autoo.com.br/citroen-c3-e-aircrosschegam-a-linha-2027-veja-precos-das-versoes-e-o-que-muda/"
+    },
+    {
+      "label": "Motorshow – C3 2027 estreia",
+      "url": "https://motorshow.com.br/citroen-c3-2027-estreia"
+    },
+    {
+      "label": "AutoPapo – C3 2027 até R$ 4.400 mais caro",
+      "url": "https://autopapo.com.br/curta/citroen-c3-2027-ganha-nova-interface-na-multimidia-e-cores-ineditas-mas-fica-ate-r-4-400-mais-caro/"
+    },
+    {
+      "label": "Carro.blog.br – consumo C3 2026",
+      "url": "https://carro.blog.br/?p=175550"
+    },
+    {
+      "label": "Autoo – C3 zero estrela Latin NCAP",
+      "url": "https://www.autoo.com.br/citroen-c3-e-reprovado-em-teste-de-colisao-do-latin-ncap-veja-video/"
+    },
+    {
+      "label": "Webmotors – ficha C3 Live Go 2027",
+      "url": "https://www.webmotors.com.br/catalogo/comparativo-de-carros/citroen-c3-2027-1-0-firefly-flex-live-go-manual-388565"
+    }
+  ],
+  "unverified": [
+    "potência/torque com gasolina",
+    "garantia",
+    "officialUrl (não visto nos resultados)",
+    "nome FIPE da Live Go"
+  ],
+  "catalogSeed": {
+    "version": "C3 Live Go 1.0 Firefly 2027",
+    "refPriceNew": 77990,
+    "trunkL": 315,
+    "seats": 5,
+    "powertrain": "flex",
+    "consumption": {
+      "cityKmL": 13.2,
+      "roadKmL": 14.5,
+      "cityKmLEthanol": 9.3,
+      "roadKmLEthanol": 10.3,
+      "cityKmKWh": null,
+      "roadKmKWh": null
+    },
+    "consumptionNote": "Inmetro/PBEV do C3 1.0 Firefly (Live), citado por Carro.blog.br e ficha da Live Go 2027",
+    "since": 2023,
+    "fipeInclude": [
+      "C3",
+      "Live",
+      "1.0"
+    ],
+    "discontinued": false
+  }
+}

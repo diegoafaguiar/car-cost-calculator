@@ -1,0 +1,149 @@
+{
+  "id": "hyundai-hb20s",
+  "researchedAt": "2026-10",
+  "displayName": "Hyundai HB20S",
+  "summary": "Sedã compacto fabricado em Piracicaba (SP), derivado do hatch HB20. Linha 2027 com Comfort 1.0 MT, Limited 1.0 MT, Limited 1.0 TGDI AT e Platinum 1.0 TGDI AT. Motores 1.0 Kappa aspirado flex 3 cil. (80 cv E / 75 cv G) com câmbio manual de 5 marchas e 1.0 TGDI turbo flex (120 cv, 17,5 kgfm) com automático de 6.",
+  "generation": "2ª geração (BR2), lançada em set/2019 (linha 2020); reestilização em jul/2022 (linha 2023).",
+  "timeline": [
+    {
+      "modelYear": "2020",
+      "change": "Estreia da 2ª geração (set/2019)."
+    },
+    {
+      "modelYear": "2023",
+      "change": "Reestilização (jul/2022); 6 airbags e controle de estabilidade passam a ser de série."
+    },
+    {
+      "modelYear": "2027",
+      "change": "Gama com quatro configurações: Comfort 1.0 MT R$ 105.290, Limited 1.0 MT R$ 107.590, Limited TGDI AT R$ 128.990, Platinum TGDI AT R$ 138.890 (após reajuste de até R$ 1.380)."
+    }
+  ],
+  "highlights": [
+    "Porta-malas de 475 L",
+    "Comfort já traz 6 airbags, controles de tração/estabilidade, câmera de ré e multimídia com espelhamento",
+    "Inmetro Comfort 1.0: gasolina 13,4/15,4 km/l; etanol 9,7/10,9 km/l"
+  ],
+  "watchOuts": [
+    "Latin NCAP (2023, protocolo atual): HB20 reestilizado com 6 airbags obteve 3 estrelas; versão antiga com 2 airbags teve zero",
+    "Versão de entrada só com câmbio manual e motor aspirado de 80 cv",
+    "Preços subiram em 2026 (reajuste de R$ 1.000 a R$ 1.380)"
+  ],
+  "specs": {
+    "version": "HB20S Comfort 1.0 MT 2027",
+    "engine": "1.0 Kappa aspirado flex 3 cil. 12V",
+    "powerCv": "80 (E) / 75 (G)",
+    "torqueKgfm": "10,2 (E) / 9,4 (G)",
+    "transmission": "manual de 5 marchas",
+    "trunkL": 475,
+    "lengthMm": 4325,
+    "wheelbaseMm": 2530,
+    "safety": "Latin NCAP 2023: 3 estrelas (HB20 hatch com 6 airbags; resultado do hatch, sedã não testado separadamente)",
+    "warranty": null
+  },
+  "inmetro": {
+    "version": "HB20S 1.0 aspirado MT",
+    "cityGas": 13.4,
+    "roadGas": 15.4,
+    "cityEth": 9.7,
+    "roadEth": 10.9,
+    "cityKmKWh": null,
+    "roadKmKWh": null,
+    "year": "PBEV (citado pela imprensa na linha 2027)",
+    "source": "https://www.autoo.com.br/hyundai-hb20s-2027-veja-precos-motores-consumo-e-equipamentos-do-seda/"
+  },
+  "price0km": {
+    "version": "Comfort 1.0 MT 2027",
+    "price": 105290,
+    "date": "2026 (linha 2027)",
+    "source": "https://www.automaistv.com.br/vendas-e-precos/hyundai-hb20s-sofre-aumento-de-ate-r-1-380-e-beira-os-r-140-mil/"
+  },
+  "versionsAndPrices": [
+    {
+      "version": "Comfort 1.0 MT",
+      "price": 105290,
+      "date": "2026 (linha 2027)",
+      "source": "https://www.autoo.com.br/hyundai-hb20s-2027-veja-precos-motores-consumo-e-equipamentos-do-seda/"
+    },
+    {
+      "version": "Limited 1.0 MT",
+      "price": 107590,
+      "date": "2026 (linha 2027)",
+      "source": "https://www.autoo.com.br/hyundai-hb20s-2027-veja-precos-motores-consumo-e-equipamentos-do-seda/"
+    },
+    {
+      "version": "Limited 1.0 TGDI AT",
+      "price": 128990,
+      "date": "2026 (linha 2027)",
+      "source": "https://www.automaistv.com.br/vendas-e-precos/hyundai-hb20s-sofre-aumento-de-ate-r-1-380-e-beira-os-r-140-mil/"
+    },
+    {
+      "version": "Platinum 1.0 TGDI AT",
+      "price": 138890,
+      "date": "2026 (linha 2027)",
+      "source": "https://www.autoo.com.br/hyundai-hb20s-2027-veja-precos-motores-consumo-e-equipamentos-do-seda/"
+    }
+  ],
+  "launchModelYearBR": 2020,
+  "catalogCheck": "Nome 'Comfort 1.0' existe (é manual de 5 marchas). Preço errado: R$ 105.290 (linha 2027), não R$ 109.990. Consumo do catálogo (G 13,0/15,2; E 9,1/10,6) diverge do publicado: G 13,4/15,4; E 9,7/10,9. Porta-malas 475 L. FIPE da versão: 'HB20S Comfort 1.0 Flex 12V Mec.' (R$ 92.140 para 2027 em set/2026).",
+  "wikipedia": {
+    "lang": "en",
+    "title": "Hyundai HB20"
+  },
+  "officialUrl": null,
+  "sources": [
+    {
+      "label": "Autoo – HB20S 2027 preços, motores, consumo",
+      "url": "https://www.autoo.com.br/hyundai-hb20s-2027-veja-precos-motores-consumo-e-equipamentos-do-seda/"
+    },
+    {
+      "label": "Auto+ TV – HB20S sofre aumento de até R$ 1.380",
+      "url": "https://www.automaistv.com.br/vendas-e-precos/hyundai-hb20s-sofre-aumento-de-ate-r-1-380-e-beira-os-r-140-mil/"
+    },
+    {
+      "label": "JK Carros – HB20S Comfort 2027 ficha técnica",
+      "url": "https://jkcarros.com.br/?p=37184"
+    },
+    {
+      "label": "Tabela FIPE HB20S Comfort 2027",
+      "url": "https://tabelacarros.com/carros/hyundai/HB20S-COMFORT-1-0--FLEX-12V-MEC-/2027-Flex"
+    },
+    {
+      "label": "Latin NCAP – resultados (via imprensa)",
+      "url": "https://www.latinncap.com/po/area-imprensa/noticia/861b357c5a9ff9/novos-resultados-do-latin-ncapo-peugeot-208-ganhou-duas-estrelas-enquanto-o"
+    },
+    {
+      "label": "Wikipedia – Hyundai HB20",
+      "url": "https://en.wikipedia.org/wiki/Hyundai_HB20"
+    }
+  ],
+  "unverified": [
+    "garantia",
+    "página oficial",
+    "ano exato do PBEV do consumo",
+    "teste Latin NCAP específico do sedã"
+  ],
+  "catalogSeed": {
+    "version": "HB20S Comfort 1.0 MT (linha 2027)",
+    "refPriceNew": 105290,
+    "trunkL": 475,
+    "seats": 5,
+    "powertrain": "flex",
+    "consumption": {
+      "cityKmL": 13.4,
+      "roadKmL": 15.4,
+      "cityKmLEthanol": 9.7,
+      "roadKmLEthanol": 10.9,
+      "cityKmKWh": null,
+      "roadKmKWh": null
+    },
+    "consumptionNote": "Inmetro/PBEV do 1.0 aspirado citado por Autoo/Grupo Sentinela na linha 2027",
+    "since": 2020,
+    "fipeInclude": [
+      "HB20S",
+      "Comfort",
+      "1.0",
+      "Mec"
+    ],
+    "discontinued": false
+  }
+}

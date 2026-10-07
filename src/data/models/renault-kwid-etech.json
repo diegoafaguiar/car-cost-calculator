@@ -1,0 +1,126 @@
+{
+  "id": "renault-kwid-etech",
+  "researchedAt": "2026-10",
+  "displayName": "Renault Kwid E-Tech",
+  "summary": "Subcompacto 100% elétrico importado da China (derivado do Dacia Spring/City K-ZE). Versão única Techno: motor de 65 cv e 113 Nm, bateria de 26,8 kWh e 180 km de autonomia PBEV. Linha 2026 (out/2025) adotou o visual do Dacia Spring renovado, 6 airbags, ESP e 11 ADAS, por R$ 99.990.",
+  "generation": "Lançado no Brasil em abr/2022 (pré-venda a R$ 142.990); renovação com design do Dacia Spring na linha 2026 (out/2025).",
+  "timeline": [
+    {
+      "modelYear": "2022/2023",
+      "change": "Lançamento em abr/2022 por R$ 142.990; depois reduzido a R$ 139.990 e com descontos de > R$ 45 mil no estoque."
+    },
+    {
+      "modelYear": "2026",
+      "change": "Out/2025: novo visual (Dacia Spring), interior renovado, 11 ADAS, 6 airbags; preço R$ 99.990 em versão única Techno."
+    }
+  ],
+  "highlights": [
+    "Elétrico mais barato do Brasil: R$ 99.990",
+    "PBEV 2026: 0,44 MJ/km (≈8,2 km/kWh), equivalente a 52,7 km/l cidade e 39,6 km/l estrada — mais eficiente do programa",
+    "Garantia da bateria de 8 anos ou 120 mil km",
+    "Recarga DC 30 kW (≈45 min 20–80%); wallbox 7 kW ≈3 h"
+  ],
+  "watchOuts": [
+    "Autonomia curta (180 km PBEV) — uso essencialmente urbano",
+    "Motor de 65 cv, 0–100 km/h em 14,6 s",
+    "Forte depreciação histórica: preço caiu de R$ 142.990 para R$ 99.990",
+    "Sem resultado Latin NCAP encontrado para a versão atual"
+  ],
+  "specs": {
+    "version": "Kwid E-Tech Techno 2026",
+    "engine": "motor elétrico dianteiro",
+    "powerCv": "65",
+    "torqueKgfm": "11,5 (113 Nm)",
+    "transmission": "redução única (automático)",
+    "trunkL": 290,
+    "lengthMm": 3701,
+    "wheelbaseMm": 2423,
+    "safety": null,
+    "warranty": "Bateria: 8 anos ou 120.000 km; garantia do veículo não confirmada"
+  },
+  "inmetro": {
+    "version": "Kwid E-Tech Techno 2026",
+    "cityGas": null,
+    "roadGas": null,
+    "cityEth": null,
+    "roadEth": null,
+    "cityKmKWh": null,
+    "roadKmKWh": null,
+    "year": "PBEV 2026",
+    "source": "https://jkcarros.com.br/?p=31005",
+    "note": "PBEV publica 0,44 MJ/km combinado (= 8,18 km/kWh) e equivalência 52,7 km/l (cidade) / 39,6 km/l (estrada) / 45,0 km/l (combinado). Estimativa derivada (não oficial) por proporção: ≈9,6 km/kWh cidade e ≈7,2 km/kWh estrada."
+  },
+  "price0km": {
+    "version": "Techno 2026",
+    "price": 99990,
+    "date": "out/2025 (mantido em 2026)",
+    "source": "https://www.cnnbrasil.com.br/auto/renault-lanca-kwid-e-tech-2026-novo-eletrico-mais-barato-do-brasil/"
+  },
+  "versionsAndPrices": [
+    {
+      "version": "Techno 2026",
+      "price": 99990,
+      "date": "2026",
+      "source": "https://canaltech.com.br/carros/renault-kwid-e-tech-2026-chega-por-r-99990-e-busca-reacao-ao-byd-dolphin-mini/"
+    }
+  ],
+  "launchModelYearBR": 2022,
+  "catalogCheck": "Preço R$ 99.990 confere (versão única Techno; catálogo diz apenas 'elétrico'). Consumo 9,0/7,4 km/kWh não tem fonte direta: PBEV dá 0,44 MJ/km ≈ 8,18 km/kWh combinado; derivando pela equivalência cidade/estrada (52,7/39,6 km/l) chega-se a ≈9,6/7,2 km/kWh. Porta-malas 290 L.",
+  "wikipedia": {
+    "lang": "en",
+    "title": "Dacia Spring"
+  },
+  "officialUrl": "https://www.renault.com.br/veiculos-eletricos/kwid-e-tech.html",
+  "sources": [
+    {
+      "label": "CNN Brasil – Kwid E-Tech 2026",
+      "url": "https://www.cnnbrasil.com.br/auto/renault-lanca-kwid-e-tech-2026-novo-eletrico-mais-barato-do-brasil/"
+    },
+    {
+      "label": "Canaltech – Kwid E-Tech 2026 R$ 99.990",
+      "url": "https://canaltech.com.br/carros/renault-kwid-e-tech-2026-chega-por-r-99990-e-busca-reacao-ao-byd-dolphin-mini/"
+    },
+    {
+      "label": "JK Carros – PBEV/consumo",
+      "url": "https://jkcarros.com.br/?p=31005"
+    },
+    {
+      "label": "Canal VE – ficha técnica",
+      "url": "https://canalve.com.br/ficha-tecnica/renault/tudo-sobre-kwid-e-tech-2026/"
+    },
+    {
+      "label": "Motorshow – lançamento 2022",
+      "url": "https://motorshow.com.br/renault-lanca-kwid-e-tech-que-se-torna-o-eletrico-mais-barato-do-brasil/"
+    }
+  ],
+  "unverified": [
+    "km/kWh cidade/estrada (apenas estimativa derivada)",
+    "garantia do veículo",
+    "Latin NCAP",
+    "officialUrl (não visto nos resultados)",
+    "ano-modelo exato de estreia (2022 vs 2023)",
+    "não achei artigo próprio do Kwid E-Tech na Wikipédia; 'Dacia Spring' é o gêmeo de visual idêntico (alternativa: 'Renault Kwid')"
+  ],
+  "catalogSeed": {
+    "version": "Kwid E-Tech Techno 2026",
+    "refPriceNew": 99990,
+    "trunkL": 290,
+    "seats": 4,
+    "powertrain": "eletrico",
+    "consumption": {
+      "cityKmL": null,
+      "roadKmL": null,
+      "cityKmLEthanol": null,
+      "roadKmLEthanol": null,
+      "cityKmKWh": 9.6,
+      "roadKmKWh": 7.2
+    },
+    "consumptionNote": "ESTIMATIVA: PBEV 2026 publica 0,44 MJ/km (8,18 km/kWh combinado) e 52,7/39,6 km/l equivalentes; cidade/estrada em km/kWh derivados proporcionalmente (não oficiais). Lotação de 4 lugares não confirmada nesta pesquisa.",
+    "since": 2022,
+    "fipeInclude": [
+      "KWID",
+      "E-Tech"
+    ],
+    "discontinued": false
+  }
+}

@@ -1,0 +1,200 @@
+{
+  "id": "jeep-commander",
+  "researchedAt": "2026-10",
+  "displayName": "Jeep Commander",
+  "summary": "SUV de 7 lugares derivado do Compass, feito em Goiana (PE). A linha 2027 (mar/2026) trouxe híbrido leve 48V (MHEV) com o 1.3 T270 flex nas versões Limited e Overland, manteve o Longitude T270 sem eletrificação, o 2.2 turbodiesel no Overland e estreou o 2.0 Hurricane turbo flex de 272 cv no Blackhawk.",
+  "generation": "1ª geração (Commander H6), lançada no Brasil em ago/2021 (ano-modelo 2022); atualização linha 2027 em mar/2026.",
+  "timeline": [
+    {
+      "modelYear": "2022",
+      "change": "Lançamento em ago/2021 com 1.3 T270 flex e 2.0 turbodiesel."
+    },
+    {
+      "modelYear": "2025",
+      "change": "Diesel passa a 2.2 turbodiesel (200 cv) com câmbio de 9 marchas."
+    },
+    {
+      "modelYear": "2027",
+      "change": "Mar/2026: MHEV 48V no 1.3 T270 (Limited e Overland), novo 2.0 Hurricane flex de 272 cv (Blackhawk), ADAS nível 2 de série em toda a linha. Overland 1.3 passa a ser só MHEV (R$ 283.790)."
+    }
+  ],
+  "highlights": [
+    "7 lugares; porta-malas 233 L com 7 lugares e 661 L com a 3ª fileira rebatida",
+    "MHEV: Inmetro gasolina 11,0/11,2 e etanol 7,6/8,1 km/l (redução de até 9,4%)",
+    "MHEV tem isenção/redução de IPVA em alguns estados e fica fora do rodízio de SP",
+    "ADAS nível 2 de série na linha 2027"
+  ],
+  "watchOuts": [
+    "1.3 T270 criticado por desempenho limitado no carro pesado (avaliação Auto+ do MHEV)",
+    "Recall mar/2026 (modelos 2025/2026 diesel): linha de retorno de combustível com risco de incêndio",
+    "Descontos de quase R$ 40 mil no varejo pressionam a revenda (Overland MHEV ofertado a R$ 244.890)",
+    "Sem teste Latin NCAP encontrado"
+  ],
+  "specs": {
+    "version": "Commander Overland T270 MHEV 2027",
+    "engine": "1.3 turbo flex 4 cil. (T270) + motor-gerador BSG 48V (15,5 cv) e bateria 0,82 kWh",
+    "powerCv": "176",
+    "torqueKgfm": "27,5 (+6,5 elétrico)",
+    "transmission": "automático de 6 marchas",
+    "trunkL": 661,
+    "lengthMm": 4764,
+    "wheelbaseMm": 2794,
+    "safety": null,
+    "warranty": "60 meses (segundo Revista Carro; não confirmado no site oficial)"
+  },
+  "inmetro": {
+    "version": "Limited/Overland T270 MHEV 2027",
+    "cityGas": 11.0,
+    "roadGas": 11.2,
+    "cityEth": 7.6,
+    "roadEth": 8.1,
+    "cityKmKWh": null,
+    "roadKmKWh": null,
+    "year": "PBEV 2026",
+    "source": "https://motorshow.com.br/jeep-commander-2027-lancamento",
+    "note": "Longitude T270 2027 (sem MHEV): gasolina 10,0/11,4, etanol 7,0/8,2 (jkcarros)."
+  },
+  "price0km": {
+    "version": "Overland T270 MHEV 2027",
+    "price": 283790,
+    "date": "mar/2026",
+    "source": "https://www.autoo.com.br/jeep-commander-2027-chega-com-duas-versoes-hibridas-confira-precos-e-detalhes/"
+  },
+  "versionsAndPrices": [
+    {
+      "version": "Longitude T270",
+      "price": 228790,
+      "date": "mar/2026",
+      "source": "https://www.vrum.com.br/mercado/2026/03/7387250-jeep-commander-2027-ganha-motor-hibrido-veja-versoes-precos-e-mais.html"
+    },
+    {
+      "version": "Limited T270 MHEV",
+      "price": 255690,
+      "date": "mar/2026",
+      "source": "https://www.vrum.com.br/mercado/2026/03/7387250-jeep-commander-2027-ganha-motor-hibrido-veja-versoes-precos-e-mais.html"
+    },
+    {
+      "version": "Overland T270 MHEV",
+      "price": 283790,
+      "date": "mar/2026",
+      "source": "https://www.vrum.com.br/mercado/2026/03/7387250-jeep-commander-2027-ganha-motor-hibrido-veja-versoes-precos-e-mais.html"
+    },
+    {
+      "version": "Overland 2.2 turbodiesel 4x4",
+      "price": 319990,
+      "date": "mar/2026",
+      "source": "https://www.vrum.com.br/mercado/2026/03/7387250-jeep-commander-2027-ganha-motor-hibrido-veja-versoes-precos-e-mais.html"
+    },
+    {
+      "version": "Blackhawk 2.0 Hurricane turbo flex",
+      "price": 329990,
+      "date": "mar/2026",
+      "source": "https://www.vrum.com.br/mercado/2026/03/7387250-jeep-commander-2027-ganha-motor-hibrido-veja-versoes-precos-e-mais.html"
+    }
+  ],
+  "launchModelYearBR": 2022,
+  "catalogCheck": "'Overland 1.3T flex' a R$ 259.990 não existe mais: na linha 2027 o Overland 1.3 é MHEV a R$ 283.790 (FIPE set/2026 R$ 262.102). Consumo do catálogo (G 9,4/11,1, E 6,5/7,8) é da linha antiga; MHEV 2027 = G 11,0/11,2, E 7,6/8,1. Se a ideia é manter um 1.3 sem eletrificação, a equivalente é a Longitude T270 (R$ 228.790; G 10,0/11,4, E 7,0/8,2).",
+  "wikipedia": {
+    "lang": "en",
+    "title": "Jeep Commander (2022)"
+  },
+  "officialUrl": null,
+  "sources": [
+    {
+      "label": "Autoo - Commander 2027 duas versões híbridas",
+      "url": "https://www.autoo.com.br/jeep-commander-2027-chega-com-duas-versoes-hibridas-confira-precos-e-detalhes/"
+    },
+    {
+      "label": "Vrum - Commander 2027 versões e preços",
+      "url": "https://www.vrum.com.br/mercado/2026/03/7387250-jeep-commander-2027-ganha-motor-hibrido-veja-versoes-precos-e-mais.html"
+    },
+    {
+      "label": "Motorshow - lançamento Commander 2027",
+      "url": "https://motorshow.com.br/jeep-commander-2027-lancamento"
+    },
+    {
+      "label": "Itatiaia - Commander 2027",
+      "url": "https://www.itatiaia.com.br/auto/jeep-commander-2027-ganha-motores-hibrido-e-2-0-turbo-flex/"
+    },
+    {
+      "label": "jkcarros - Longitude 2027",
+      "url": "https://jkcarros.com.br/?p=37406"
+    },
+    {
+      "label": "Autoo - descontos Commander 2027",
+      "url": "https://www.autoo.com.br/jeep-commander-ja-tem-descontos-de-quase-r-40-mil-na-nova-linha-2027-veja-precos/"
+    },
+    {
+      "label": "Localiza - porta-malas Commander",
+      "url": "https://seminovos.localiza.com/blog/posts/porta-malas-jeep-commander"
+    },
+    {
+      "label": "Revista Carro - Commander 2027",
+      "url": "https://revistacarro.com.br/jeep-commander-2027-ganha-motor-2-0-turboflex-e-versoes-hibridas-leves-48v/amp/"
+    },
+    {
+      "label": "AutoPapo - recall incêndio",
+      "url": "https://autopapo.com.br/curta/jeep-convoca-recall-do-commander-por-risco-de-incendio-no-motor/"
+    },
+    {
+      "label": "Auto+ - avaliação MHEV",
+      "url": "https://www.automaistv.com.br/avaliacao/jeep-commander-mhev-e-bom-mas-o-motor-ainda-e-seu-calcanhar-de-aquiles-avaliacao/"
+    },
+    {
+      "label": "FIPE Overland T270 2027 Híbrido",
+      "url": "https://tabelacarros.com/carros/jeep/COMMANDER-OVERLAND-T270-1-3-TURBO-AUT-/2027-Hibrido"
+    }
+  ],
+  "unverified": [
+    "garantia (60 meses citado só por uma fonte)",
+    "Latin NCAP",
+    "officialUrl",
+    "consumo Inmetro do Blackhawk e do diesel 2027"
+  ],
+  "catalogSeed": {
+    "version": "Commander Overland T270 MHEV 2027 (1.3 turbo flex híbrido leve 48V, 7 lugares)",
+    "refPriceNew": 283790,
+    "trunkL": 661,
+    "seats": 7,
+    "powertrain": "flex",
+    "mildHybrid": true,
+    "consumption": {
+      "cityKmL": 11.0,
+      "roadKmL": 11.2,
+      "cityKmLEthanol": 7.6,
+      "roadKmLEthanol": 8.1,
+      "cityKmKWh": null,
+      "roadKmKWh": null
+    },
+    "consumptionNote": "Inmetro/PBEV 2026 para Limited/Overland MHEV (Motorshow, Itatiaia). Híbrido leve não recarregável: abastece só com combustível flex; FIPE classifica como 'Híbrido'. trunkL 661 L com 3ª fileira rebatida (233 L com 7 lugares).",
+    "since": 2022,
+    "fipeInclude": [
+      "Commander",
+      "Overland",
+      "T270"
+    ],
+    "discontinued": false
+  },
+  "versionSeeds": [
+    {
+      "id": "jeep-commander-longitude",
+      "version": "Commander Longitude T270 2027 (1.3 turbo flex, sem MHEV)",
+      "refPriceNew": 228790,
+      "trunkL": 661,
+      "seats": 7,
+      "powertrain": "flex",
+      "consumption": {
+        "cityKmL": 10.0,
+        "roadKmL": 11.4,
+        "cityKmLEthanol": 7.0,
+        "roadKmLEthanol": 8.2
+      },
+      "fipeInclude": [
+        "Commander",
+        "Longitude",
+        "T270"
+      ],
+      "source": "https://jkcarros.com.br/?p=37406"
+    }
+  ]
+}

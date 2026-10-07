@@ -1,0 +1,141 @@
+{
+  "id": "hyundai-hb20",
+  "researchedAt": "2026-10",
+  "displayName": "Hyundai HB20",
+  "summary": "Hatch compacto feito pela Hyundai em Piracicaba (SP), projetado para o Brasil. Versões Comfort e Limited com 1.0 Kappa aspirado 3 cil. (80/75 cv, manual de 5) e Limited/Platinum com 1.0 TGDI turbo (120/115 cv, automático de 6). Linha 2027 sem mudanças relevantes.",
+  "generation": "2ª geração, lançada em set/2019 (linha 2020).",
+  "timeline": [
+    {
+      "modelYear": "2020",
+      "change": "Estreia da 2ª geração (17/set/2019)."
+    },
+    {
+      "modelYear": "2027",
+      "change": "Mantém Comfort, Limited e Platinum e os dois motores; reajuste em fev/2026 (Comfort R$ 96.140)."
+    }
+  ],
+  "highlights": [
+    "Porta-malas de 300 L.",
+    "Comfort tem direção elétrica progressiva, multimídia, sensor crepuscular e Isofix.",
+    "Dimensões: 4.015 mm de comprimento e 2.530 mm de entre-eixos."
+  ],
+  "watchOuts": [
+    "Latin NCAP 2019: 4 estrelas adulto e 3 criança (sem airbags laterais e ESC em todas as versões); a Wikipedia cita 1 estrela adulto para a versão básica.",
+    "Preço de tabela é alto frente a promoções frequentes (R$ 92.140 em ago–set/2026), o que pesa na revenda.",
+    "Motor aspirado manual de 5 marchas tem desempenho modesto."
+  ],
+  "specs": {
+    "version": "Comfort 1.0 MT",
+    "engine": "1.0 Kappa flex 3 cil. aspirado",
+    "powerCv": "80 (E) / 75 (G)",
+    "torqueKgfm": "10,2 (E) / 9,6 (G)",
+    "transmission": "manual de 5 marchas",
+    "trunkL": 300,
+    "lengthMm": 4015,
+    "wheelbaseMm": 2530,
+    "safety": "Latin NCAP 2019: 4 estrelas adulto / 3 criança",
+    "warranty": null
+  },
+  "inmetro": {
+    "version": "1.0 aspirado (Comfort/Limited MT)",
+    "cityGas": 13.4,
+    "roadGas": 15.4,
+    "cityEth": 9.7,
+    "roadEth": 10.9,
+    "cityKmKWh": null,
+    "roadKmKWh": null,
+    "year": "linha 2027 (ano PBEV não explicitado)",
+    "source": "https://www.autoo.com.br/hyundai-hb20-2027-veja-precos-motores-consumo-e-equipamentos-do-hatch/",
+    "note": "Outra fonte (consultadeplaca) cita G 13,3/14,6 E 9,6/10,4."
+  },
+  "price0km": {
+    "version": "Comfort 1.0 MT",
+    "price": 96140,
+    "date": "fev/2026 (promoção de R$ 92.140 entre 6/ago e 2/set/2026)",
+    "source": "https://www.automaistv.com.br/vendas-e-precos/hyundai-hb20-sofre-aumento-de-ate-r-13-mil-e-passa-dos-r-132-mil/"
+  },
+  "versionsAndPrices": [
+    {
+      "version": "Comfort 1.0 MT",
+      "price": 96140,
+      "date": "fev/2026",
+      "source": "https://www.automaistv.com.br/vendas-e-precos/hyundai-hb20-sofre-aumento-de-ate-r-13-mil-e-passa-dos-r-132-mil/"
+    },
+    {
+      "version": "Limited 1.0 MT",
+      "price": 100290,
+      "date": "fev/2026",
+      "source": "https://www.automaistv.com.br/vendas-e-precos/hyundai-hb20-sofre-aumento-de-ate-r-13-mil-e-passa-dos-r-132-mil/"
+    },
+    {
+      "version": "Limited 1.0 Turbo AT",
+      "price": 122690,
+      "date": "2026",
+      "source": "https://www.autoo.com.br/hyundai-hb20-2027-veja-precos-motores-consumo-e-equipamentos-do-hatch/"
+    },
+    {
+      "version": "Platinum 1.0 Turbo AT",
+      "price": 132490,
+      "date": "2026",
+      "source": "https://www.autoo.com.br/hyundai-hb20-2027-veja-precos-motores-consumo-e-equipamentos-do-hatch/"
+    }
+  ],
+  "launchModelYearBR": 2020,
+  "catalogCheck": "Nome 'HB20 Comfort 1.0' segue existindo. Preço: catálogo R$ 97.990 → tabela R$ 96.140 desde fev/2026 (Auto+ TV), com promoção de R$ 92.140 em ago–set/2026. Inmetro: catálogo G 13,3/15,5 E 9,3/10,8 → Autoo cita G 13,4/15,4 E 9,7/10,9 (diferença pequena; tabela PBEV não consultada diretamente).",
+  "wikipedia": {
+    "lang": "en",
+    "title": "Hyundai HB20"
+  },
+  "officialUrl": null,
+  "sources": [
+    {
+      "label": "Auto+ TV – aumento fev/2026",
+      "url": "https://www.automaistv.com.br/vendas-e-precos/hyundai-hb20-sofre-aumento-de-ate-r-13-mil-e-passa-dos-r-132-mil/"
+    },
+    {
+      "label": "Autoo – HB20 2027",
+      "url": "https://www.autoo.com.br/hyundai-hb20-2027-veja-precos-motores-consumo-e-equipamentos-do-hatch/"
+    },
+    {
+      "label": "O Antagonista – HB20 por R$ 92.140",
+      "url": "https://oantagonista.com.br/ladooa/carros/hyundai-deixa-hb20-0-km-por-r-92-140-e-coloca-painel-digital-piloto-automatico-e-motor-1-0-em-um-dos-hatches-mais-conhecidos-do-brasil/"
+    },
+    {
+      "label": "Motor Show – HB20 4 estrelas Latin NCAP",
+      "url": "https://motorshow.com.br/novo-hyundai-hb20-leva-quatro-estrelas-em-crash-test"
+    },
+    {
+      "label": "Wikipedia – Hyundai HB20",
+      "url": "https://en.wikipedia.org/wiki/Hyundai_HB20"
+    }
+  ],
+  "unverified": [
+    "Inmetro direto da tabela PBEV",
+    "Garantia",
+    "Se houve reajuste de tabela após fev/2026",
+    "URL oficial hyundai.com.br"
+  ],
+  "catalogSeed": {
+    "version": "Comfort 1.0 MT",
+    "refPriceNew": 96140,
+    "trunkL": 300,
+    "seats": 5,
+    "powertrain": "flex",
+    "consumption": {
+      "cityKmL": 13.4,
+      "roadKmL": 15.4,
+      "cityKmLEthanol": 9.7,
+      "roadKmLEthanol": 10.9,
+      "cityKmKWh": null,
+      "roadKmKWh": null
+    },
+    "consumptionNote": "Inmetro citado pela Autoo (HB20 2027); consultadeplaca cita G 13,3/14,6 E 9,6/10,4.",
+    "since": 2020,
+    "fipeInclude": [
+      "HB20",
+      "Comfort",
+      "1.0 Flex 12V Mec"
+    ],
+    "discontinued": false
+  }
+}
