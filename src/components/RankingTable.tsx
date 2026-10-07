@@ -1,7 +1,7 @@
 import { useState } from 'react'
-import { POWERTRAIN_LABEL } from '../lib/catalog'
+import { CATEGORY_LABEL, POWERTRAIN_LABEL } from '../lib/catalog'
 import { money, money2, months } from '../lib/format'
-import type { Horizon, ScenarioKind, ScenarioResult } from '../lib/types'
+import type { Horizon, PriceSource, ScenarioKind, ScenarioResult } from '../lib/types'
 import { Badge } from './ui'
 
 export type SortKey =
@@ -11,6 +11,7 @@ export type SortKey =
   | 'upfront'
   | 'installment'
   | 'monthly'
+  | 'total'
   | 't1'
   | 't3'
   | 't5'
@@ -33,6 +34,13 @@ const KIND_TONE: Record<ScenarioKind, 'neutral' | 'accent' | 'good' | 'warn'> = 
   subscription: 'good',
 }
 
+const SOURCE_LABEL: Record<PriceSource, string> = {
+  fipe: 'FIPE',
+  pesquisa: 'Preço pesquisado',
+  manual: 'Manual',
+  estimado: 'Preço estimado',
+}
+
 interface Props {
   rows: { result: ScenarioResult; rank: number }[]
   horizon: Horizon
@@ -45,51 +53,63 @@ interface Props {
   showAdjusted?: boolean
 }
 
-const PAGE = 25
+const PAGE = 20
 
 export function RankingTable({ rows, horizon, sort, onSort, compare, colors, onToggleCompare, onOpen, showAdjusted }: Props) {
   const [limit, setLimit] = useState(PAGE)
-  const cols: { key: SortKey; label: string; align?: 'right'; title?: string }[] = [
-    { key: 'rank', label: '#' },
-    { key: 'label', label: 'Opção' },
-    { key: 'price', label: 'Preço', align: 'right' },
-    { key: 'upfront', label: 'Desembolso', align: 'right', title: 'Dinheiro necessário além do carro atual' },
-    { key: 'installment', label: 'Parcela', align: 'right' },
-    { key: 'monthly', label: `Custo/mês (${horizon}a)`, align: 'right', title: 'Custo total do horizonte dividido pelos meses' },
-    { key: 't1', label: '1 ano', align: 'right' },
-    { key: 't3', label: '3 anos', align: 'right' },
-    { key: 't5', label: '5 anos', align: 'right' },
-    ...(showAdjusted
-      ? [{ key: 'adjusted' as const, label: `Ajustado (${horizon}a)`, align: 'right' as const, title: 'Custo total menos o valor que você atribui à motorização (preferência)' }]
-      : []),
-    { key: 'perKm', label: 'R$/km', align: 'right' },
-    { key: 'savings', label: `Economia (${horizon}a)`, align: 'right', title: 'Quanto você economiza em relação a manter o carro atual' },
-    { key: 'breakEven', label: 'Compensa em', align: 'right', title: 'A partir de quando fica mais barato que manter' },
+  const [detailed, setDetailed] = useState(false)
+
+  const cols: { key: SortKey; label: string; title?: string; when?: boolean }[] = [
+    { key: 'price', label: 'Preço' },
+    { key: 'installment', label: 'Pagamento', title: 'Parcela e desembolso além do seu carro' },
+    { key: 'monthly', label: 'Custo/mês', title: `Custo total em ${horizon} ${horizon === 1 ? 'ano' : 'anos'} dividido pelos meses` },
+    { key: 'total', label: `Total ${horizon}a` },
+    { key: 't1', label: '1 ano', when: detailed },
+    { key: 't3', label: '3 anos', when: detailed },
+    { key: 't5', label: '5 anos', when: detailed },
+    { key: 'perKm', label: 'R$/km', when: detailed },
+    { key: 'adjusted', label: 'Ajustado', title: 'Custo total menos o valor da sua preferência por motorização', when: detailed && showAdjusted },
+    { key: 'savings', label: 'vs. manter', title: 'Positivo = economia em relação a manter o seu carro' },
+    { key: 'breakEven', label: 'Compensa em', title: 'A partir de quando fica mais barato que manter' },
   ]
+  const visible = cols.filter((c) => c.when === undefined || c.when)
+
+  const sortButton = (k: SortKey, label: string, title?: string) => (
+    <button type="button" title={title} className="inline-flex items-center gap-1 hover:text-ink" onClick={() => onSort(k)}>
+      {label}
+      <span aria-hidden className={sort.key === k ? 'text-ink' : 'opacity-0'}>
+        {sort.key === k && sort.dir === -1 ? '↓' : '↑'}
+      </span>
+    </button>
+  )
 
   return (
     <div>
-      <div className="overflow-x-auto rounded-lg border border-line">
-        <table className="w-full min-w-[1200px] border-collapse text-sm">
+      <div className="mb-3 flex flex-wrap items-center justify-between gap-2">
+        <label className="inline-flex items-center gap-2 text-sm text-ink-2">
+          <input type="checkbox" checked={detailed} onChange={(e) => setDetailed(e.target.checked)} className="size-4 accent-[var(--accent)]" />
+          Visão detalhada (1, 3 e 5 anos, custo por km)
+        </label>
+        <span className="hidden text-xs text-muted md:inline">Marque até 5 opções para comparar no gráfico</span>
+      </div>
+
+      <div className="hidden overflow-x-auto rounded-xl border border-line md:block">
+        <table className="w-full border-collapse text-sm">
           <thead className="bg-surface-2 text-xs text-ink-2">
             <tr>
-              <th className="w-8 px-2 py-2">
+              <th className="w-10 px-3 py-2.5">
                 <span className="sr-only">Comparar</span>
               </th>
-              {cols.map((c) => (
+              <th className="w-10 px-1 py-2.5 text-left font-medium">{sortButton('rank', '#')}</th>
+              <th className="px-3 py-2.5 text-left font-medium">{sortButton('label', 'Opção')}</th>
+              {visible.map((c) => (
                 <th
                   key={c.key}
                   scope="col"
-                  title={c.title}
                   aria-sort={sort.key === c.key ? (sort.dir === 1 ? 'ascending' : 'descending') : 'none'}
-                  className={`px-2 py-2 font-medium whitespace-nowrap ${c.align === 'right' ? 'text-right' : 'text-left'}`}
+                  className="px-3 py-2.5 text-right font-medium whitespace-nowrap"
                 >
-                  <button type="button" className="inline-flex items-center gap-1 hover:text-ink" onClick={() => onSort(c.key)}>
-                    {c.label}
-                    <span aria-hidden className={sort.key === c.key ? 'text-ink' : 'opacity-30'}>
-                      {sort.key === c.key && sort.dir === -1 ? '↓' : '↑'}
-                    </span>
-                  </button>
+                  {sortButton(c.key, c.label, c.title)}
                 </th>
               ))}
             </tr>
@@ -97,92 +117,75 @@ export function RankingTable({ rows, horizon, sort, onSort, compare, colors, onT
           <tbody>
             {rows.slice(0, limit).map(({ result: r, rank }) => {
               const s = r.scenario
-              const h = r.horizons[horizon]
               const isKeep = s.kind === 'keep'
               const checked = compare.includes(s.id)
               return (
                 <tr
                   key={s.id}
-                  className={`border-t border-line hover:bg-surface-2/60 ${isKeep ? 'bg-[#fab219]/8' : ''}`}
+                  onClick={() => onOpen(s.id)}
+                  className={`cursor-pointer border-t border-line transition-colors hover:bg-surface-2/70 ${isKeep ? 'bg-warn-soft' : ''}`}
                 >
-                  <td className="px-2 py-2 text-center">
-                    <input
-                      type="checkbox"
-                      checked={checked}
-                      aria-label={`Comparar ${s.label}`}
-                      onChange={() => onToggleCompare(s.id)}
-                      className="size-4 accent-[var(--accent)]"
-                      style={checked && colors[s.id] ? { accentColor: colors[s.id] } : undefined}
-                    />
-                  </td>
-                  <td className="px-2 py-2 tabular text-muted">{rank}</td>
-                  <td className="min-w-60 px-2 py-2">
-                    <button type="button" className="text-left hover:underline" onClick={() => onOpen(s.id)}>
-                      <span className="font-medium text-ink">{s.label}</span>
-                      <span className="block text-xs text-ink-2">{s.detail}</span>
-                    </button>
-                    {s.modelId && s.kind !== 'subscription' && (
-                      <a href={`#/carro/${s.modelId}`} className="ml-2 text-xs font-medium whitespace-nowrap text-accent hover:underline">
-                        Ficha e análise →
-                      </a>
-                    )}
-                    <span className="mt-1 flex flex-wrap gap-1">
-                      <Badge tone={KIND_TONE[s.kind]}>{KIND_LABEL[s.kind]}</Badge>
-                      <Badge>{POWERTRAIN_LABEL[s.powertrain]}</Badge>
-                      {s.kind !== 'subscription' && (
-                        <Badge tone={s.priceSource === 'fipe' || s.priceSource === 'pesquisa' ? 'good' : 'neutral'}>
-                          {{ fipe: 'FIPE', pesquisa: 'Preço pesquisado', manual: 'Manual', estimado: 'Estimado' }[s.priceSource]}
-                        </Badge>
-                      )}
-                    </span>
-                  </td>
-                  <Num v={s.kind === 'subscription' ? null : s.price} />
-                  <Num v={isKeep ? null : r.upfrontCash} zeroDash />
-                  <td className="px-2 py-2 text-right tabular whitespace-nowrap">
-                    {s.plan ? (
-                      <>
-                        {money(s.plan.monthlyFee)}
-                        <span className="block text-xs text-muted">mensalidade</span>
-                      </>
-                    ) : r.installment > 0 ? (
-                      <>
-                        {money(r.installment)}
-                        <span className="block text-xs text-muted">financiado</span>
-                      </>
-                    ) : (
-                      '—'
+                  <td className="px-3 py-3 text-center" onClick={(e) => e.stopPropagation()}>
+                    {!isKeep && (
+                      <input
+                        type="checkbox"
+                        checked={checked}
+                        aria-label={`Comparar ${s.label}`}
+                        onChange={() => onToggleCompare(s.id)}
+                        className="size-4"
+                        style={{ accentColor: checked && colors[s.id] ? colors[s.id] : 'var(--accent)' }}
+                      />
                     )}
                   </td>
-                  <td className="px-2 py-2 text-right font-semibold tabular whitespace-nowrap">{money(h.monthly)}</td>
-                  <Num v={r.horizons[1].total} strong={horizon === 1} />
-                  <Num v={r.horizons[3].total} strong={horizon === 3} />
-                  <Num v={r.horizons[5].total} strong={horizon === 5} />
-                  {showAdjusted && (
-                    <td className="px-2 py-2 text-right tabular whitespace-nowrap text-ink-2">
-                      {money(h.adjusted)}
-                      {h.adjusted !== h.total && <span className="block text-xs text-good">preferência</span>}
+                  <td className="px-1 py-3 tabular text-muted">{rank}</td>
+                  <td className="min-w-64 px-3 py-3">
+                    <OptionCell result={r} />
+                  </td>
+                  {visible.map((c) => (
+                    <td key={c.key} className="px-3 py-3 text-right tabular whitespace-nowrap">
+                      <Cell k={c.key} r={r} horizon={horizon} />
                     </td>
-                  )}
-                  <td className="px-2 py-2 text-right tabular">{money2(h.perKm)}</td>
-                  <td
-                    className={`px-2 py-2 text-right tabular whitespace-nowrap ${
-                      isKeep ? 'text-muted' : h.savingsVsKeep > 0 ? 'text-good' : 'text-bad'
-                    }`}
-                  >
-                    {isKeep ? 'base' : `${h.savingsVsKeep > 0 ? '▲ ' : '▼ '}${money(Math.abs(h.savingsVsKeep))}`}
-                  </td>
-                  <td className="px-2 py-2 text-right text-xs whitespace-nowrap text-ink-2">
-                    {isKeep ? '—' : r.breakEvenMonth === null ? 'não em 5 anos' : r.breakEvenMonth === 0 ? 'imediato' : months(r.breakEvenMonth)}
-                  </td>
+                  ))}
                 </tr>
               )
             })}
+            {rows.length === 0 && (
+              <tr>
+                <td colSpan={visible.length + 3} className="px-3 py-10 text-center text-sm text-muted">
+                  Nenhuma opção com os filtros atuais.
+                </td>
+              </tr>
+            )}
           </tbody>
         </table>
       </div>
-      <div className="mt-2 flex items-center justify-between text-xs text-muted">
+
+      <ul className="space-y-2 md:hidden">
+        {rows.slice(0, limit).map(({ result: r, rank }) => {
+          const isKeep = r.scenario.kind === 'keep'
+          return (
+            <li key={r.scenario.id} className={`rounded-xl border border-line p-3 ${isKeep ? 'bg-warn-soft' : 'bg-surface'}`}>
+              <button type="button" className="w-full text-left" onClick={() => onOpen(r.scenario.id)}>
+                <div className="flex items-baseline justify-between gap-3">
+                  <span className="text-xs text-muted tabular">#{rank}</span>
+                  <span className="font-semibold tabular">{money(r.horizons[horizon].monthly)}/mês</span>
+                </div>
+                <OptionCell result={r} />
+                <div className="mt-2 flex items-center justify-between gap-2 border-t border-line pt-2">
+                  <span className="text-xs text-ink-2 tabular">
+                    {r.scenario.kind === 'subscription' ? 'sem compra' : money(r.scenario.price)}
+                  </span>
+                  <Savings r={r} horizon={horizon} />
+                </div>
+              </button>
+            </li>
+          )
+        })}
+      </ul>
+
+      <div className="mt-3 flex items-center justify-between text-xs text-muted">
         <span>
-          Mostrando {Math.min(limit, rows.length)} de {rows.length} opções
+          Mostrando {Math.min(limit, rows.length)} de {rows.length}
         </span>
         {rows.length > limit && (
           <button type="button" className="font-medium text-accent hover:underline" onClick={() => setLimit((l) => l + PAGE)}>
@@ -194,10 +197,91 @@ export function RankingTable({ rows, horizon, sort, onSort, compare, colors, onT
   )
 }
 
-function Num({ v, strong, zeroDash }: { v: number | null; strong?: boolean; zeroDash?: boolean }) {
+function OptionCell({ result: r }: { result: ScenarioResult }) {
+  const s = r.scenario
   return (
-    <td className={`px-2 py-2 text-right tabular whitespace-nowrap ${strong ? 'font-semibold text-ink' : 'text-ink-2'}`}>
-      {v === null || (zeroDash && v < 1) ? '—' : money(v)}
-    </td>
+    <div>
+      <span className="font-medium text-ink">{s.label}</span>
+      <span className="block text-xs text-ink-2">{s.detail}</span>
+      <span className="mt-1.5 flex flex-wrap items-center gap-1">
+        <Badge tone={KIND_TONE[s.kind]}>{KIND_LABEL[s.kind]}</Badge>
+        <Badge>{CATEGORY_LABEL[s.category]}</Badge>
+        <Badge>{POWERTRAIN_LABEL[s.powertrain]}</Badge>
+        {s.kind !== 'subscription' && s.kind !== 'keep' && (
+          <Badge tone={s.priceSource === 'estimado' ? 'neutral' : 'good'}>{SOURCE_LABEL[s.priceSource]}</Badge>
+        )}
+        {s.modelId && s.kind !== 'subscription' && (
+          <a
+            href={`#/carro/${s.modelId}`}
+            onClick={(e) => e.stopPropagation()}
+            className="ml-1 text-xs font-medium whitespace-nowrap text-accent hover:underline"
+          >
+            Ficha →
+          </a>
+        )}
+      </span>
+    </div>
+  )
+}
+
+function Savings({ r, horizon }: { r: ScenarioResult; horizon: Horizon }) {
+  if (r.scenario.kind === 'keep') return <span className="text-xs text-muted">referência</span>
+  const v = r.horizons[horizon].savingsVsKeep
+  return (
+    <span className={`text-xs font-medium ${v > 0 ? 'text-good' : 'text-bad'}`}>
+      {v > 0 ? '▲ economiza ' : '▼ custa mais '}
+      {money(Math.abs(v))}
+    </span>
+  )
+}
+
+function Cell({ k, r, horizon }: { k: SortKey; r: ScenarioResult; horizon: Horizon }) {
+  const s = r.scenario
+  const h = r.horizons[horizon]
+  switch (k) {
+    case 'price':
+      return <span className="text-ink-2">{s.kind === 'subscription' ? '—' : money(s.price)}</span>
+    case 'installment':
+      if (s.plan) return <Two a={`${money(s.plan.monthlyFee)}/mês`} b="mensalidade" />
+      if (s.kind === 'keep') return <span className="text-muted">—</span>
+      return (
+        <Two
+          a={r.installment > 0 ? `${money(r.installment)} × ${r.finance.months}` : 'à vista'}
+          b={r.upfrontCash > 0 ? `+ ${money(r.upfrontCash)} da reserva` : 'só com o seu carro'}
+        />
+      )
+    case 'monthly':
+      return <span className="font-semibold">{money(h.monthly)}</span>
+    case 'total':
+      return <span className="text-ink-2">{money(h.total)}</span>
+    case 't1':
+      return <span className="text-ink-2">{money(r.horizons[1].total)}</span>
+    case 't3':
+      return <span className="text-ink-2">{money(r.horizons[3].total)}</span>
+    case 't5':
+      return <span className="text-ink-2">{money(r.horizons[5].total)}</span>
+    case 'perKm':
+      return <span className="text-ink-2">{money2(h.perKm)}</span>
+    case 'adjusted':
+      return <span className="text-ink-2">{money(h.adjusted)}</span>
+    case 'savings':
+      return <Savings r={r} horizon={horizon} />
+    case 'breakEven':
+      return (
+        <span className="text-xs text-ink-2">
+          {s.kind === 'keep' ? '—' : r.breakEvenMonth === null ? 'não em 5 anos' : r.breakEvenMonth === 0 ? 'imediato' : months(r.breakEvenMonth)}
+        </span>
+      )
+    default:
+      return null
+  }
+}
+
+function Two({ a, b }: { a: string; b: string }) {
+  return (
+    <span>
+      <span className="block">{a}</span>
+      <span className="block text-xs text-muted">{b}</span>
+    </span>
   )
 }

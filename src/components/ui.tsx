@@ -14,11 +14,11 @@ export function Card({
   className?: string
 }) {
   return (
-    <section className={`rounded-xl border border-line bg-surface p-4 sm:p-5 ${className}`}>
+    <section className={`rounded-2xl border border-line bg-surface p-5 shadow-card sm:p-6 ${className}`}>
       {(title || actions) && (
         <header className="mb-4 flex flex-wrap items-start justify-between gap-2">
           <div>
-            {title && <h2 className="text-base font-semibold text-ink">{title}</h2>}
+            {title && <h2 className="text-[15px] font-semibold tracking-tight text-ink">{title}</h2>}
             {subtitle && <p className="mt-0.5 text-sm text-ink-2">{subtitle}</p>}
           </div>
           {actions}
@@ -197,10 +197,10 @@ export function Chip({
       type="button"
       aria-pressed={active}
       onClick={onClick}
-      className={`inline-flex items-center gap-1 rounded-full border px-2.5 py-1 text-xs font-medium transition-colors ${
+      className={`inline-flex items-center gap-1 rounded-full border px-3 py-1 text-xs font-medium transition-colors ${
         active
-          ? 'border-accent bg-accent text-accent-ink'
-          : 'border-line bg-surface-2 text-ink-2 hover:text-ink'
+          ? 'border-accent/40 bg-accent-soft text-accent'
+          : 'border-line bg-surface text-ink-2 hover:border-ink/20 hover:text-ink'
       }`}
     >
       {active && (
@@ -309,9 +309,9 @@ export function Button({
 export function Badge({ children, tone = 'neutral' }: { children: ReactNode; tone?: 'neutral' | 'accent' | 'good' | 'warn' }) {
   const styles = {
     neutral: 'bg-surface-2 text-ink-2',
-    accent: 'bg-accent/12 text-accent',
+    accent: 'bg-accent-soft text-accent',
     good: 'bg-good/12 text-good',
-    warn: 'bg-[#fab219]/18 text-ink-2',
+    warn: 'bg-warn-soft text-ink-2',
   }[tone]
   return <span className={`inline-flex items-center rounded px-1.5 py-0.5 text-[11px] font-medium ${styles}`}>{children}</span>
 }
@@ -326,9 +326,9 @@ export function Stat({
   sub?: ReactNode
 }) {
   return (
-    <div className="min-w-0 rounded-xl border border-line bg-surface p-4">
+    <div className="min-w-0 rounded-2xl border border-line bg-surface p-4 shadow-card">
       <div className="text-xs font-medium text-ink-2">{label}</div>
-      <div className="mt-1 truncate text-2xl font-semibold text-ink">{value}</div>
+      <div className="mt-1 truncate text-2xl font-semibold tracking-tight text-ink">{value}</div>
       {sub && <div className="mt-1 text-xs text-muted">{sub}</div>}
     </div>
   )

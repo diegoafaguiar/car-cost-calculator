@@ -174,3 +174,24 @@ export const SUBSCRIPTION_REPRESENTATIVE: Record<Category, string> = {
   'suv-grande': 'jeep-commander',
   picape: 'fiat-strada',
 }
+
+export const CATEGORY_ORDER: Category[] = [
+  'hatch-compacto',
+  'hatch',
+  'sedan',
+  'suv-compacto',
+  'suv-medio',
+  'suv-grande',
+  'picape',
+]
+
+/** Categorias comparáveis ("uma acima ou uma abaixo") a partir da categoria do seu carro. */
+export const CATEGORY_NEIGHBORS: Record<Category, Category[]> = {
+  'hatch-compacto': ['hatch-compacto', 'hatch'],
+  hatch: ['hatch-compacto', 'hatch', 'sedan', 'suv-compacto'],
+  sedan: ['hatch', 'sedan', 'suv-compacto', 'suv-medio'],
+  'suv-compacto': ['sedan', 'suv-compacto', 'suv-medio'],
+  'suv-medio': ['suv-compacto', 'suv-medio', 'suv-grande'],
+  'suv-grande': ['suv-medio', 'suv-grande'],
+  picape: ['picape'],
+}

@@ -1,20 +1,20 @@
 import { useEffect, useMemo, useRef, useState } from 'react'
-import { AssumptionsForm } from './components/AssumptionsForm'
+import { BreakdownBars } from './components/BreakdownBars'
+import { CarHero } from './components/CarHero'
 import { CostChart, type Series } from './components/CostChart'
-import { CurrentCarForm } from './components/CurrentCarForm'
 import { DetailDrawer } from './components/DetailDrawer'
-import { Insights } from './components/Insights'
+import { FilterBar } from './components/FilterBar'
 import { ModelPage } from './components/ModelPage'
-import { TopModels } from './components/TopModels'
 import { KIND_LABEL, RankingTable, type SortKey } from './components/RankingTable'
-import { Button, Card, ChipGroup, NumberField, Segmented, TextField } from './components/ui'
-import { CATALOG, CATEGORY_LABEL, POWERTRAIN_LABEL } from './lib/catalog'
+import { SettingsDrawer, type SettingsTab } from './components/SettingsDrawer'
+import { TopModels } from './components/TopModels'
+import { Button, Card } from './components/ui'
+import { CATALOG } from './lib/catalog'
 import { DEFAULT_ASSUMPTIONS, DEFAULT_CAR, DEFAULT_PREFERENCES } from './lib/defaults'
 import { FipeError, resolveCatalogPrice, setFipeToken, type FipeOverride } from './lib/fipe'
-import { normalize } from './lib/format'
+import { money, normalize } from './lib/format'
 import { buildScenarios, currentCarValue, priceKey, runAll, type PriceEntry } from './lib/tco'
-import type { Category, Horizon, Powertrain, ScenarioKind, ScenarioResult } from './lib/types'
-import { HORIZONS } from './lib/types'
+import type { Horizon, ScenarioResult } from './lib/types'
 import { usePersisted } from './lib/usePersisted'
 
 const YEAR = new Date().getFullYear()
@@ -37,6 +37,8 @@ function sortValue(r: ScenarioResult, key: SortKey, horizon: Horizon, rank: numb
       return r.scenario.plan?.monthlyFee ?? r.installment
     case 'monthly':
       return h.monthly
+    case 'total':
+      return h.total
     case 't1':
       return r.horizons[1].total
     case 't3':
@@ -80,6 +82,7 @@ export default function App() {
   const [onlySavings, setOnlySavings] = useState(false)
   const [sort, setSort] = useState<{ key: SortKey; dir: 1 | -1 }>({ key: 'rank', dir: 1 })
   const [openId, setOpenId] = useState<string | null>(null)
+  const [settings, setSettings] = useState<SettingsTab | null>(null)
   const [fetchState, setFetchState] = useState<{ done: number; total: number; failed: number; error?: string } | null>(null)
   const abort = useRef(false)
 
@@ -211,37 +214,35 @@ export default function App() {
   const hasValue = currentCarValue(car) > 0
 
   return (
-    <div className="mx-auto max-w-[1440px] px-4 py-6 sm:px-6 lg:py-8">
-      <header className="mb-6 flex flex-wrap items-end justify-between gap-4">
-        <div>
-          <h1 className="text-2xl font-semibold tracking-tight sm:text-3xl">Custo de Carro</h1>
-          <p className="mt-1 max-w-2xl text-sm text-ink-2">
-            Compare o custo total de manter seu carro com 0 km, seminovos e assinatura em 1, 3 e 5 anos —
-            com Tabela FIPE, depreciação, financiamento e custo de oportunidade.
-          </p>
+    <div className="min-h-dvh">
+      <header className="sticky top-0 z-30 border-b border-line bg-surface/85 backdrop-blur">
+        <div className="mx-auto flex h-14 max-w-[1280px] items-center gap-3 px-4 sm:px-6">
+          <a href="#/" className="flex items-center gap-2.5">
+            <span className="grid size-8 place-items-center rounded-lg bg-accent text-accent-ink" aria-hidden>
+              <svg viewBox="0 0 24 24" className="size-5">
+                <path d="M4 15l1.8-4.6A2.5 2.5 0 0 1 8.1 9h7.8a2.5 2.5 0 0 1 2.3 1.4L20 15v3a1 1 0 0 1-1 1h-1.2a1 1 0 0 1-1-1v-.8H7.2v.8a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1z" fill="currentColor" />
+              </svg>
+            </span>
+            <span className="leading-tight">
+              <span className="block text-sm font-semibold tracking-tight whitespace-nowrap">Custo de Carro</span>
+              <span className="hidden text-xs text-muted sm:block">Manter, trocar ou assinar — com dados</span>
+            </span>
+          </a>
+          <nav className="ml-auto flex items-center gap-0.5 whitespace-nowrap sm:gap-1.5">
+            <Button variant="ghost" onClick={() => setSettings('car')}>
+              Meu carro
+            </Button>
+            <Button variant="ghost" onClick={() => setSettings('assumptions')}>
+              Premissas
+            </Button>
+            <ThemeToggle />
+          </nav>
         </div>
-        <ThemeToggle />
       </header>
 
-      <div className="grid gap-6 lg:grid-cols-[380px_minmax(0,1fr)]">
-        <aside className="space-y-3 lg:sticky lg:top-6 lg:max-h-[calc(100dvh-3rem)] lg:overflow-y-auto lg:pr-1">
-          <CurrentCarForm car={car} onChange={setCar} year={YEAR} assumptions={assumptions} />
-          <AssumptionsForm a={assumptions} onChange={setAssumptions} prefs={prefs} onPrefs={setPrefs} token={token} onToken={setToken} />
-          <Button
-            variant="ghost"
-            onClick={() => {
-              if (confirm('Restaurar todas as premissas para os valores padrão? Seu carro e preços FIPE salvos serão mantidos.')) {
-                setAssumptions(DEFAULT_ASSUMPTIONS)
-                setPrefs(DEFAULT_PREFERENCES)
-              }
-            }}
-          >
-            Restaurar premissas padrão
-          </Button>
-        </aside>
-
+      <div className="mx-auto max-w-[1280px] px-4 py-6 sm:px-6 lg:py-8">
         {modelRoute ? (
-          <main className="min-w-0">
+          <main>
             <ModelPage
               modelId={modelRoute}
               results={results}
@@ -254,139 +255,112 @@ export default function App() {
             />
           </main>
         ) : (
-        <main className="min-w-0 space-y-6">
-          <div className="flex flex-wrap items-center justify-between gap-3">
-            <Segmented<Horizon>
-              label="Horizonte do ranking"
-              value={horizon}
-              options={HORIZONS.map((y) => ({ value: y, label: `${y === 1 ? 'Curto' : y === 3 ? 'Médio' : 'Longo'} · ${y}a` }))}
-              onChange={(v) => setPrefs({ ...prefs, rankHorizon: v })}
-            />
-            <span className="text-xs text-muted">
-              Custos em reais nominais, com inflação de {(assumptions.inflationYear * 100).toFixed(1)}% a.a.
-            </span>
-          </div>
-
-          {!hasValue && (
-            <p className="rounded-lg border border-line bg-[#fab219]/12 p-3 text-sm">
-              Informe o valor do seu carro (busque na FIPE ou preencha o valor manual) para comparar as opções.
-            </p>
-          )}
-
-          {keep && <Insights keep={keep} ranked={ranked} horizon={horizon} onOpen={setOpenId} score={score} />}
-
-          <TopModels ranked={ranked} horizon={horizon} />
-
-          <Card
-            title="Custo acumulado"
-            subtitle="Perda de patrimônio mês a mês, já descontando a revenda. Marque até 5 opções no ranking para comparar."
-          >
-            <CostChart series={series} />
-          </Card>
-
-          <Card
-            title="Ranking de opções"
-            subtitle={`Ordenado pelo ${prefs.rankBy === 'ajustado' && hasPreference ? 'custo ajustado à sua preferência' : 'custo total'} em ${horizon} ${horizon === 1 ? 'ano' : 'anos'}. Clique numa opção para ver o detalhe.`}
-            actions={
-              <div className="flex items-center gap-2">
-                <span className="text-xs text-muted">
-                  {fetching
-                    ? `Consultando FIPE ${fetchState.done}/${fetchState.total}…`
-                    : `${fipeCount} preços FIPE · demais estimados`}
-                </span>
-                <Button variant="primary" onClick={refreshPrices} disabled={fetching}>
-                  Atualizar preços FIPE
+          <main className="space-y-6">
+            {!hasValue && (
+              <div className="flex flex-wrap items-center justify-between gap-3 rounded-2xl border border-line bg-warn-soft p-4 text-sm">
+                Informe o valor do seu carro (busque na FIPE ou preencha manualmente) para comparar as opções.
+                <Button variant="primary" onClick={() => setSettings('car')}>
+                  Cadastrar meu carro
                 </Button>
               </div>
-            }
-          >
-            {fetchState?.error && !fetching && <p className="mb-3 text-sm text-bad">{fetchState.error}</p>}
-            {fetchState && !fetching && !fetchState.error && fetchState.failed > 0 && (
-              <p className="mb-3 text-sm text-ink-2">
-                {fetchState.failed} preço(s) não encontrados na FIPE para o ano pedido; usando estimativa. Ajuste a versão no
-                detalhe da opção, se quiser.
-              </p>
             )}
 
-            <div className="mb-4 space-y-3 rounded-lg border border-line bg-surface-2/40 p-3">
-              <div className="grid gap-3 sm:grid-cols-2 xl:grid-cols-4">
-                <TextField label="Buscar" value={prefs.search} onChange={(v) => setPrefs({ ...prefs, search: v })} placeholder="ex.: corolla, elétrico" />
-                <NumberField label="Preço máximo" prefix="R$" step={5000} value={prefs.maxPrice} onChange={(v) => setPrefs({ ...prefs, maxPrice: v })} hint="0 = sem limite" />
-                <NumberField label={`Custo mensal máx. (${horizon}a)`} prefix="R$" step={100} value={prefs.maxMonthly} onChange={(v) => setPrefs({ ...prefs, maxMonthly: v })} hint="0 = sem limite" />
-                <NumberField label="Lugares mínimos" value={prefs.minSeats} onChange={(v) => setPrefs({ ...prefs, minSeats: Math.round(v) })} />
-              </div>
-              <ChipGroup<ScenarioKind>
-                label="Tipo"
-                options={(Object.keys(KIND_LABEL) as ScenarioKind[]).map((k) => ({ value: k, label: KIND_LABEL[k] }))}
-                selected={prefs.kinds}
-                onChange={(v) => setPrefs({ ...prefs, kinds: v })}
+            {keep && (
+              <CarHero
+                car={car}
+                keep={keep}
+                ranked={ranked}
+                horizon={horizon}
+                score={score}
+                onEdit={() => setSettings('car')}
+                onOpen={setOpenId}
               />
-              <ChipGroup<Category>
-                label="Categoria"
-                options={(Object.keys(CATEGORY_LABEL) as Category[]).map((k) => ({ value: k, label: CATEGORY_LABEL[k] }))}
-                selected={prefs.categories}
-                onChange={(v) => setPrefs({ ...prefs, categories: v })}
-              />
-              <ChipGroup<Powertrain>
-                label="Motorização"
-                options={(Object.keys(POWERTRAIN_LABEL) as Powertrain[]).map((k) => ({ value: k, label: POWERTRAIN_LABEL[k] }))}
-                selected={prefs.powertrains}
-                onChange={(v) => setPrefs({ ...prefs, powertrains: v })}
-              />
-              <label className="flex items-center gap-2 text-sm text-ink-2">
-                <input type="checkbox" checked={onlySavings} onChange={(e) => setOnlySavings(e.target.checked)} className="size-4 accent-[var(--accent)]" />
-                Mostrar só opções que economizam em relação a manter
-              </label>
-              <div className="rounded-lg border border-line p-3">
-                <div className="flex flex-wrap items-center justify-between gap-2">
-                  <span className="text-sm font-medium">Preferência por motorização</span>
-                  <Segmented<'real' | 'ajustado'>
-                    label="Ordenar ranking por"
-                    value={prefs.rankBy}
-                    options={[
-                      { value: 'ajustado', label: 'Com preferência' },
-                      { value: 'real', label: 'Só custo' },
-                    ]}
-                    onChange={(v) => setPrefs({ ...prefs, rankBy: v })}
-                  />
-                </div>
-                <p className="mt-1 text-xs text-muted">
-                  Quanto vale para você, por mês, ter cada tipo de motor. Não altera os custos — só desconta esse valor no
-                  “custo ajustado” usado para ordenar.
-                </p>
-                <div className="mt-2 grid grid-cols-2 gap-3 sm:grid-cols-4">
-                  {(['hibrido', 'hibrido-plugin', 'eletrico', 'flex'] as Powertrain[]).map((p) => (
-                    <NumberField
-                      key={p}
-                      label={POWERTRAIN_LABEL[p]}
-                      prefix="R$"
-                      suffix="/mês"
-                      step={50}
-                      value={prefs.powertrainValue?.[p] ?? 0}
-                      onChange={(v) => setPrefs({ ...prefs, powertrainValue: { ...prefs.powertrainValue, [p]: v } })}
-                    />
-                  ))}
-                </div>
-              </div>
+            )}
+
+            <FilterBar
+              prefs={prefs}
+              onPrefs={setPrefs}
+              carCategory={car.category}
+              onlySavings={onlySavings}
+              onOnlySavings={setOnlySavings}
+              resultCount={ranked.length}
+            />
+
+            <TopModels ranked={ranked} horizon={horizon} />
+
+            <div className="grid grid-cols-1 gap-6 xl:grid-cols-[minmax(0,1.6fr)_minmax(0,1fr)]">
+              <Card className="min-w-0" title="Custo acumulado" subtitle="Perda de patrimônio mês a mês, já descontando a revenda">
+                <CostChart series={series} />
+              </Card>
+              {keep && (
+                <Card
+                  className="min-w-0"
+                  title="Para onde vai o dinheiro do seu carro"
+                  subtitle={`${horizon} ${horizon === 1 ? 'ano' : 'anos'} · ${money(keep.horizons[horizon].total)} no total`}
+                >
+                  <BreakdownBars breakdown={keep.horizons[horizon].breakdown} total={keep.horizons[horizon].total} />
+                </Card>
+              )}
             </div>
 
-            <RankingTable
-              rows={rows}
-              horizon={horizon}
-              sort={sort}
-              onSort={onSort}
-              compare={compare}
-              colors={colors}
-              onToggleCompare={toggleCompare}
-              onOpen={setOpenId}
-              showAdjusted={hasPreference}
-            />
-          </Card>
+            <Card
+              title="Ranking completo"
+              subtitle={`Ordenado pelo ${prefs.rankBy === 'ajustado' && hasPreference ? 'custo ajustado à sua preferência' : 'custo total'} em ${horizon} ${horizon === 1 ? 'ano' : 'anos'}. Clique numa linha para ver o detalhe.`}
+              actions={
+                <div className="flex flex-wrap items-center gap-2">
+                  <span className="text-xs text-muted">
+                    {fetching ? `Consultando FIPE ${fetchState.done}/${fetchState.total}…` : `${fipeCount} preços FIPE ao vivo`}
+                  </span>
+                  <Button variant="primary" onClick={refreshPrices} disabled={fetching}>
+                    Atualizar preços FIPE
+                  </Button>
+                </div>
+              }
+            >
+              {fetchState?.error && !fetching && <p className="mb-3 text-sm text-bad">{fetchState.error}</p>}
+              {fetchState && !fetching && !fetchState.error && fetchState.failed > 0 && (
+                <p className="mb-3 text-sm text-ink-2">
+                  {fetchState.failed} preço(s) não encontrados na FIPE para o ano pedido; usando estimativa. Ajuste a versão
+                  no detalhe da opção, se quiser.
+                </p>
+              )}
+              <RankingTable
+                rows={rows}
+                horizon={horizon}
+                sort={sort}
+                onSort={onSort}
+                compare={compare}
+                colors={colors}
+                onToggleCompare={toggleCompare}
+                onOpen={setOpenId}
+                showAdjusted={hasPreference}
+              />
+            </Card>
 
-          <Methodology />
-        </main>
+            <Methodology inflation={assumptions.inflationYear} />
+          </main>
         )}
+        <footer className="mt-10 border-t border-line pt-6 text-xs text-muted">
+          Preços: Tabela FIPE (API Parallelum) e fichas pesquisadas com fontes citadas. Estimativas são sinalizadas. Não é
+          recomendação financeira.
+        </footer>
       </div>
+
+      {settings && (
+        <SettingsDrawer
+          tab={settings}
+          onClose={() => setSettings(null)}
+          car={car}
+          onCar={setCar}
+          assumptions={assumptions}
+          onAssumptions={setAssumptions}
+          prefs={prefs}
+          onPrefs={setPrefs}
+          token={token}
+          onToken={setToken}
+          year={YEAR}
+        />
+      )}
 
       {open && (
         <DetailDrawer
@@ -411,33 +385,37 @@ export default function App() {
   )
 }
 
-function Methodology() {
+function Methodology({ inflation }: { inflation: number }) {
   return (
-    <Card title="Como o cálculo funciona">
-      <div className="grid gap-4 text-sm text-ink-2 md:grid-cols-2">
+    <details className="group rounded-2xl border border-line bg-surface p-5 shadow-card sm:p-6">
+      <summary className="flex cursor-pointer list-none items-center justify-between font-semibold">
+        Como o cálculo funciona
+        <span className="text-sm font-normal text-muted group-open:hidden">mostrar</span>
+      </summary>
+      <div className="mt-4 grid gap-4 text-sm text-ink-2 md:grid-cols-2">
         <p>
           <strong className="text-ink">Custo total = perda de patrimônio.</strong> O ponto de partida é vender seu carro
           hoje e aplicar o dinheiro. Cada cenário simula 60 meses de gastos (combustível, seguro, IPVA, manutenção,
-          parcelas, mensalidade) e, ao final, soma o valor de revenda do carro e desconta o saldo devedor. A diferença
-          para o ponto de partida é o custo real.
+          parcelas, mensalidade) e, ao final, soma o valor de revenda e desconta o saldo devedor.
         </p>
         <p>
           <strong className="text-ink">Depreciação</strong> segue uma curva de mercado (≈15% no 1º ano de um 0 km,
-          caindo para ≈4–10% a.a.), ajustada por marca e por motorização. Seu carro usa a taxa que você informar.
-          <strong className="text-ink"> Flex</strong> usa o combustível mais barato por km.
+          caindo para ≈4–10% a.a.), ajustada por marca e motorização. Seu carro usa a taxa que você informar.
+          <strong className="text-ink"> Flex</strong> usa o combustível mais barato por km. Valores nominais, com
+          inflação de {(inflation * 100).toFixed(1)}% a.a.
         </p>
         <p>
-          <strong className="text-ink">Preços</strong> vêm da Tabela FIPE quando consultados; caso contrário, usam a
-          referência do catálogo (0 km) e a curva de depreciação (seminovos). Consumo segue o INMETRO. Seguro e
-          manutenção são estimativas por categoria; ajuste o seu carro com os valores reais.
+          <strong className="text-ink">Preços</strong> vêm da FIPE quando consultados; sem ela, do preço 0 km pesquisado
+          (com fonte) ou de uma estimativa pela curva de depreciação. Consumo segue o INMETRO. Seguro e manutenção são
+          médias por categoria.
         </p>
         <p>
-          <strong className="text-ink">Limitações:</strong> não considera valor de revenda de assinatura (não há),
-          reajustes do seguro por sinistro, nem preferências subjetivas (conforto, espaço, tecnologia). Use o ranking
-          como base de dados e combine com o que importa para você.
+          <strong className="text-ink">Limitações:</strong> não considera sinistros, condições de negociação nem
+          preferências subjetivas além da preferência por motorização. Use o ranking como base de dados e combine com o
+          que importa para você.
         </p>
       </div>
-    </Card>
+    </details>
   )
 }
 
@@ -448,16 +426,31 @@ function ThemeToggle() {
     if (theme === 'system') el.removeAttribute('data-theme')
     else el.setAttribute('data-theme', theme)
   }, [theme])
+  const next = { system: 'light', light: 'dark', dark: 'system' } as const
+  const label = { system: 'Tema automático', light: 'Tema claro', dark: 'Tema escuro' }[theme]
   return (
-    <Segmented
-      label="Tema"
-      value={theme}
-      options={[
-        { value: 'system', label: 'Auto' },
-        { value: 'light', label: 'Claro' },
-        { value: 'dark', label: 'Escuro' },
-      ]}
-      onChange={setTheme}
-    />
+    <button
+      type="button"
+      onClick={() => setTheme(next[theme])}
+      title={`${label} (clique para trocar)`}
+      aria-label={label}
+      className="grid size-9 place-items-center rounded-lg text-ink-2 hover:bg-surface-2 hover:text-ink"
+    >
+      <svg viewBox="0 0 20 20" className="size-[18px]" aria-hidden>
+        {theme === 'dark' ? (
+          <path d="M15.5 12.5A6.5 6.5 0 0 1 7.5 4.5a6.5 6.5 0 1 0 8 8z" fill="currentColor" />
+        ) : theme === 'light' ? (
+          <g fill="none" stroke="currentColor" strokeWidth="1.7" strokeLinecap="round">
+            <circle cx="10" cy="10" r="3.5" />
+            <path d="M10 2v2M10 16v2M2 10h2M16 10h2M4.3 4.3l1.4 1.4M14.3 14.3l1.4 1.4M4.3 15.7l1.4-1.4M14.3 5.7l1.4-1.4" />
+          </g>
+        ) : (
+          <g fill="none" stroke="currentColor" strokeWidth="1.7">
+            <circle cx="10" cy="10" r="7" />
+            <path d="M10 3a7 7 0 0 1 0 14z" fill="currentColor" />
+          </g>
+        )}
+      </svg>
+    </button>
   )
 }
