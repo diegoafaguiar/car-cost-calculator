@@ -15,8 +15,17 @@ export const DEFAULT_CAR: CurrentCar = {
   // INMETRO: 17,7/14,6 km/l gasolina e 12,5/10,1 km/l etanol.
   consumption: { cityKmL: 17.7, roadKmL: 14.6, cityKmLEthanol: 12.5, roadKmLEthanol: 10.1 },
   insuranceYear: 450 * 12,
-  // Estimativa: revisões Toyota + desgaste (pastilhas, fluidos) para ~90-100 mil km.
-  maintenanceYear: 4200,
+  // R$ 4.200/ano informados pelo usuário (manutenção + lavagens), dos quais ~R$ 1.650/ano são revisões
+  // (média das 7 revisões previstas de 90 a 150 mil km). O restante fica aqui; as revisões vão no plano abaixo.
+  maintenanceYear: 2550,
+  // Preço fixo Toyota Corolla Cross 10–100 mil km (válido até set/2025) + R$ 177,60 por revisão na versão híbrida.
+  // Após 100 mil km, o ciclo é repetido (estimativa: a Toyota não publica preços acima de 100 mil km).
+  revisions: {
+    intervalKm: 10000,
+    prices: [543, 1062, 765, 1452, 753, 1359, 681, 1314, 672, 1750],
+    surcharge: 177.6,
+    reference: 'Tabela de revisões com preço fixo Toyota, válida até set/2025',
+  },
   // FIPE caiu de R$ 150.129 (ago/2025) para R$ 139.427 (set/2026): ~7% a.a.
   depreciationYear: 0.07,
   loanBalance: 0,

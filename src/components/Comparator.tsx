@@ -152,7 +152,7 @@ export function Comparator({ keep, results, ranked, compare, colors, max, onTogg
         />
       }
     >
-      <div className="relative mb-4 max-w-md">
+      <div className="relative mb-4 max-w-md" data-export-ignore="true">
         <input
           type="search"
           value={query}

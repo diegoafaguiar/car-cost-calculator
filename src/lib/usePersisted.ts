@@ -7,6 +7,8 @@ export function usePersisted<T>(key: string, initial: T, migrate?: (stored: Reco
       const raw = localStorage.getItem(key)
       if (!raw) return initial
       let parsed = JSON.parse(raw) as T
+      // Dado corrompido ou de outro formato: volta ao padrão.
+      if (parsed === null || typeof parsed !== typeof initial || Array.isArray(parsed) !== Array.isArray(initial)) return initial
       if (initial && typeof initial === 'object' && !Array.isArray(initial)) {
         if (migrate) parsed = migrate(parsed as Record<string, unknown>) as T
         return { ...initial, ...parsed }

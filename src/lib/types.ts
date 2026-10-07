@@ -79,6 +79,16 @@ export interface FipeSelection {
   yearName: string
 }
 
+export interface RevisionPlan {
+  /** Intervalo entre revisões, em km. */
+  intervalKm: number
+  /** Preço de cada revisão no ciclo (1ª = intervalo, 2ª = 2× intervalo, …); repete após o fim do ciclo. */
+  prices: number[]
+  /** Acréscimo por revisão (ex.: versão híbrida). */
+  surcharge: number
+  reference: string
+}
+
 export interface PlannedCost {
   id: string
   label: string
@@ -103,7 +113,10 @@ export interface CurrentCar {
   powertrain: Powertrain
   consumption: Consumption
   insuranceYear: number
+  /** Manutenção anual além das revisões programadas (lavagens, desgaste, pequenos reparos). */
   maintenanceYear: number
+  /** Plano de revisões por quilometragem (ex.: preço fixo da montadora). */
+  revisions?: RevisionPlan | null
   /** Depreciação anual esperada (fração). */
   depreciationYear: number
   loanBalance: number

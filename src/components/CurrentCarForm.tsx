@@ -2,7 +2,8 @@ import { useState } from 'react'
 import { CATEGORY_LABEL, POWERTRAIN_LABEL } from '../lib/catalog'
 import { yearOf, ZERO_KM_YEAR } from '../lib/fipe'
 import { money } from '../lib/format'
-import { currentCarValue, depreciationRate, mileagePenalty } from '../lib/tco'
+import { currentCarValue, depreciationRate, mileagePenalty, revisionSchedule } from '../lib/tco'
+import { DEFAULT_CAR } from '../lib/defaults'
 import type { Assumptions } from '../lib/types'
 import type { Category, CurrentCar, PlannedCost, Powertrain } from '../lib/types'
 import { FipePicker } from './FipePicker'
@@ -112,6 +113,11 @@ export function CurrentCarForm({ car, onChange, year, assumptions }: Props) {
 
         <fieldset className="space-y-2">
           <legend className="text-sm font-medium">Consumo real</legend>
+          {(isEV ? !(car.consumption.cityKmKWh && car.consumption.roadKmKWh) : !(car.consumption.cityKmL > 0 && car.consumption.roadKmL > 0)) && (
+            <p role="alert" className="rounded-lg bg-warn-soft px-3 py-2 text-xs">
+              Informe o consumo na cidade e na estrada; sem ele o custo de combustível fica zerado.
+            </p>
+          )}
           <div className="grid grid-cols-2 gap-3">
             {isEV ? (
               <>
@@ -137,7 +143,13 @@ export function CurrentCarForm({ car, onChange, year, assumptions }: Props) {
           <legend className="text-sm font-medium">Custos atuais</legend>
           <div className="grid grid-cols-2 gap-3">
             <NumberField label="Seguro por ano" prefix="R$" value={car.insuranceYear} onChange={(v) => set('insuranceYear', v)} />
-            <NumberField label="Manutenção por ano" prefix="R$" value={car.maintenanceYear} onChange={(v) => set('maintenanceYear', v)} hint="Revisões, pneus, freios" />
+            <NumberField
+              label="Outros gastos de manutenção/ano"
+              prefix="R$"
+              value={car.maintenanceYear}
+              onChange={(v) => set('maintenanceYear', v)}
+              hint={car.revisions ? 'Lavagens, desgaste e reparos — sem as revisões' : 'Inclui revisões (plano de revisões desligado)'}
+            />
             <NumberField
               label="Depreciação esperada"
               suffix="% a.a."
@@ -148,6 +160,8 @@ export function CurrentCarForm({ car, onChange, year, assumptions }: Props) {
             />
           </div>
         </fieldset>
+
+        <RevisionsEditor car={car} onChange={onChange} kmPerYear={assumptions.kmPerYear} />
 
         <fieldset className="space-y-2">
           <legend className="text-sm font-medium">Financiamento em aberto</legend>
@@ -189,5 +203,81 @@ export function CurrentCarForm({ car, onChange, year, assumptions }: Props) {
         </fieldset>
       </div>
     </Collapsible>
+  )
+}
+
+/** Plano de revisões por km: tabela editável, próxima revisão e total previsto por horizonte. */
+function RevisionsEditor({ car, onChange, kmPerYear }: { car: CurrentCar; onChange: (c: CurrentCar) => void; kmPerYear: number }) {
+  const rp = car.revisions
+  const schedule = revisionSchedule(car, kmPerYear, 60)
+  const next = schedule[0]
+  const total = (months: number) => schedule.filter((r) => r.month <= months).reduce((s, r) => s + r.price, 0)
+  const setRp = (patch: Partial<NonNullable<CurrentCar['revisions']>>) => rp && onChange({ ...car, revisions: { ...rp, ...patch } })
+
+  return (
+    <fieldset className="space-y-3 rounded-lg border border-line p-3">
+      <legend className="px-1 text-sm font-medium">Revisões programadas</legend>
+      {!rp ? (
+        <div className="space-y-2 text-sm text-ink-2">
+          <p>Desligado: as revisões estão dentro de “Outros gastos de manutenção”.</p>
+          <Button
+            onClick={() =>
+              onChange({
+                ...car,
+                revisions: DEFAULT_CAR.revisions ?? { intervalKm: 10000, prices: Array(10).fill(1000), surcharge: 0, reference: 'informado' },
+              })
+            }
+          >
+            Usar plano de revisões por km
+          </Button>
+          <p className="text-xs text-muted">Ao ligar, tire o valor das revisões de “Outros gastos” para não contar duas vezes.</p>
+        </div>
+      ) : (
+        <>
+          {next && (
+            <div className="rounded-lg bg-accent-soft p-3 text-sm">
+              <span className="block text-xs font-medium text-accent">Próxima revisão</span>
+              <span className="block font-semibold">
+                {next.km.toLocaleString('pt-BR')} km · {money(next.price)}
+              </span>
+              <span className="block text-xs text-ink-2">
+                em cerca de {next.month} {next.month === 1 ? 'mês' : 'meses'} (rodando {kmPerYear.toLocaleString('pt-BR')} km/ano)
+              </span>
+            </div>
+          )}
+          <div className="grid grid-cols-3 gap-2 text-center text-xs">
+            {[12, 36, 60].map((m) => (
+              <div key={m} className="rounded-lg border border-line p-2">
+                <span className="block text-muted">{m / 12} {m === 12 ? 'ano' : 'anos'}</span>
+                <span className="block font-semibold text-ink tabular">{money(total(m))}</span>
+                <span className="block text-muted">{schedule.filter((r) => r.month <= m).length} revisões</span>
+              </div>
+            ))}
+          </div>
+          <details>
+            <summary className="cursor-pointer text-xs font-medium text-accent">Editar tabela de preços</summary>
+            <div className="mt-2 grid grid-cols-2 gap-2">
+              <NumberField label="Intervalo" suffix="km" step={1000} value={rp.intervalKm} onChange={(v) => setRp({ intervalKm: Math.max(1000, v) })} />
+              <NumberField label="Acréscimo por revisão" prefix="R$" value={rp.surcharge} onChange={(v) => setRp({ surcharge: v })} hint="Ex.: versão híbrida" />
+              {rp.prices.map((p, i) => (
+                <NumberField
+                  key={i}
+                  label={`${((i + 1) * rp.intervalKm).toLocaleString('pt-BR')} km`}
+                  prefix="R$"
+                  value={p}
+                  onChange={(v) => setRp({ prices: rp.prices.map((x, j) => (j === i ? v : x)) })}
+                />
+              ))}
+            </div>
+          </details>
+          <p className="text-xs text-muted">
+            {rp.reference}. Depois do fim da tabela, o ciclo se repete (estimativa). Valores corrigidos pela inflação no cálculo.
+          </p>
+          <Button variant="ghost" onClick={() => onChange({ ...car, revisions: null })}>
+            Desligar plano de revisões
+          </Button>
+        </>
+      )}
+    </fieldset>
   )
 }

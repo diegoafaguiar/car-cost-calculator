@@ -3,8 +3,9 @@ const brl2 = new Intl.NumberFormat('pt-BR', { style: 'currency', currency: 'BRL'
 const num = new Intl.NumberFormat('pt-BR', { maximumFractionDigits: 1 })
 const compact = new Intl.NumberFormat('pt-BR', { notation: 'compact', maximumFractionDigits: 1 })
 
-export const money = (v: number) => brl.format(Math.round(v))
-export const money2 = (v: number) => brl2.format(v)
+/** Formata em reais; valores inválidos (NaN/infinito) viram "—" em vez de quebrar a tela. */
+export const money = (v: number) => (Number.isFinite(v) ? brl.format(Math.round(v)) : '—')
+export const money2 = (v: number) => (Number.isFinite(v) ? brl2.format(v) : '—')
 export const number = (v: number) => num.format(v)
 export const compactMoney = (v: number) => `R$ ${compact.format(v)}`
 export const pct = (v: number, digits = 1) =>

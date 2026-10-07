@@ -76,14 +76,20 @@ async function get<T>(path: string): Promise<T> {
   if (pending) return pending as Promise<T>
 
   const p = slot(async () => {
-    let res: Response
-    try {
-      res = await fetch(`${BASE}${path}`, {
-        headers: token ? { 'X-Subscription-Token': token } : undefined,
-      })
-    } catch {
-      throw new FipeError(0, 'Não foi possível conectar à API FIPE. Verifique sua conexão e tente de novo.')
+    let res: Response | undefined
+    // Uma nova tentativa em falha de rede ou erro temporário do servidor (5xx).
+    for (let attempt = 0; attempt < 2; attempt++) {
+      try {
+        res = await fetch(`${BASE}${path}`, {
+          headers: token ? { 'X-Subscription-Token': token } : undefined,
+        })
+        if (res.status < 500) break
+      } catch {
+        res = undefined
+      }
+      if (attempt === 0) await new Promise((r) => setTimeout(r, 800))
     }
+    if (!res) throw new FipeError(0, 'Não foi possível conectar à API FIPE. Verifique sua conexão e tente de novo.')
     if (!res.ok) {
       const msg =
         res.status === 429

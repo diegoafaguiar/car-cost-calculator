@@ -270,7 +270,9 @@ export function simulate(s: Scenario, ctx: SimContext): Omit<ScenarioResult, 'br
   // Valor de revenda: deságio de venda e, no carro atual, ajuste por quilometragem.
   const resaleAt = (m: number) => assetAt(m) * sale * (s.kind === 'keep' ? kmFactor : 1)
 
-  const cpk = energyCostPerKm(s.powertrain, s.consumption, a, s.evShare)
+  // Consumo não informado (0) daria custo infinito: trata como 0 e o formulário avisa o usuário.
+  const cpkRaw = energyCostPerKm(s.powertrain, s.consumption, a, s.evShare)
+  const cpk = Number.isFinite(cpkRaw) ? cpkRaw : 0
   const sums = emptyBreakdown()
   const cumulative: number[] = [w0 - (cash + resaleAt(0) - loan.balance)]
   let insuranceMonthly = 0
@@ -313,6 +315,17 @@ export function simulate(s: Scenario, ctx: SimContext): Omit<ScenarioResult, 'br
     }
 
     if (s.kind === 'keep') {
+      // Revisões programadas pela quilometragem: dispara quando o hodômetro passa por um múltiplo do intervalo.
+      const rp = car.revisions
+      if (rp && rp.intervalKm > 0 && rp.prices.length && kmMonth > 0) {
+        const odoStart = (car.odometerKm || 0) + kmMonth * m
+        const odoEnd = odoStart + kmMonth
+        for (let k = Math.floor(odoStart / rp.intervalKm) + 1; k * rp.intervalKm <= odoEnd; k++) {
+          const price = (rp.prices[(k - 1) % rp.prices.length] + rp.surcharge) * infl
+          sums.maintenance += price
+          out += price
+        }
+      }
       for (const pc of car.plannedCosts) {
         if (Math.max(1, Math.round(pc.month)) - 1 === m) {
           sums.maintenance += pc.amount
@@ -379,6 +392,22 @@ export function breakEven(option: number[], keep: number[]): number | null {
   let m = last
   while (m > 0 && option[m - 1] <= keep[m - 1]) m--
   return m
+}
+
+/** Próximas revisões do carro atual dentro de `months` meses, com mês e preço (sem inflação). */
+export function revisionSchedule(car: CurrentCar, kmPerYear: number, months = 60) {
+  const rp = car.revisions
+  if (!rp || rp.intervalKm <= 0 || !rp.prices.length || kmPerYear <= 0) return []
+  const kmMonth = kmPerYear / 12
+  const odo = car.odometerKm || 0
+  const list: { km: number; month: number; price: number }[] = []
+  for (let k = Math.floor(odo / rp.intervalKm) + 1; ; k++) {
+    const km = k * rp.intervalKm
+    const month = Math.max(1, Math.ceil((km - odo) / kmMonth))
+    if (month > months) break
+    list.push({ km, month, price: rp.prices[(k - 1) % rp.prices.length] + rp.surcharge })
+  }
+  return list
 }
 
 export interface PriceEntry {

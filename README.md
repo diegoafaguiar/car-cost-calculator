@@ -26,6 +26,9 @@ comparando o custo total de propriedade (TCO) em **1, 3 e 5 anos** com preços d
   "uma abaixo" e "uma acima" independentes, motorização, tipo, marca e preferência por motorização.
 - **Comparador lado a lado**: o seu carro e até 5 opções, com custos por horizonte, composição, compra e ficha técnica.
 - **Custo de oportunidade opcional**: chave para incluir ou não o rendimento do dinheiro no custo.
+- **Exportar**: resumo para WhatsApp (copiar ou abrir), planilha Excel (.xlsx com resumo, comparação e ranking), CSV
+  do ranking e imagem PNG da comparação.
+- **Revisões programadas** do carro atual por quilometragem (tabela de preço fixo editável), somadas à manutenção.
 - **Carros fora do catálogo**: adicione qualquer carro pela FIPE informando categoria, motorização e consumo INMETRO.
 - Tudo fica salvo no `localStorage` do navegador. Não há backend.
 

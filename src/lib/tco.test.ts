@@ -26,6 +26,7 @@ const car: CurrentCar = {
   maintenanceYear: 2600,
   depreciationYear: 0.07,
   plannedCosts: [],
+  revisions: null,
 }
 const ctx = { assumptions: a, car, startMonth: 0, year: 2026 }
 
@@ -193,6 +194,25 @@ describe('dados de mercado', () => {
   it('ignora anúncios de versão diferente da do catálogo', () => {
     const list = buildScenarios({ car, assumptions: a, usedAges: [2], prices: {}, year: 2026 })
     expect(list.find((x) => x.id === 'used:fiat-pulse:2')!.priceSource).toBe('estimado')
+  })
+})
+
+describe('revisões', () => {
+  it('agenda as revisões pela quilometragem', async () => {
+    const { revisionSchedule } = await import('./tco')
+    const s = revisionSchedule(DEFAULT_CAR, 12000, 60)
+    expect(s[0]).toEqual({ km: 90000, month: 1, price: 672 + 177.6 })
+    expect(s[1]).toEqual({ km: 100000, month: 11, price: 1750 + 177.6 })
+    expect(s.length).toBe(6) // 90 a 140 mil km em 60 meses (12 mil km/ano a partir de 89 mil)
+  })
+
+  it('soma as revisões na manutenção do carro atual', () => {
+    const withRev = { ...DEFAULT_CAR, plannedCosts: [] }
+    const noRev = { ...withRev, revisions: null }
+    const aa = { ...a, kmPerYear: 12000 }
+    const k1 = simulate(buildScenarios({ car: withRev, assumptions: aa, usedAges: [], prices: {}, year: 2026 })[0], { ...ctx, car: withRev, assumptions: aa })
+    const k0 = simulate(buildScenarios({ car: noRev, assumptions: aa, usedAges: [], prices: {}, year: 2026 })[0], { ...ctx, car: noRev, assumptions: aa })
+    expect(k1.horizons[1].breakdown.maintenance - k0.horizons[1].breakdown.maintenance).toBeCloseTo(672 + 177.6 + 1750 + 177.6)
   })
 })
 

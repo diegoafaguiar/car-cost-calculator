@@ -5,6 +5,8 @@ import { Comparator } from './components/Comparator'
 import { CustomCarDialog } from './components/CustomCarDialog'
 import { CostChart, type Series } from './components/CostChart'
 import { DetailDrawer } from './components/DetailDrawer'
+import { ErrorBoundary } from './components/ErrorBoundary'
+import { ExportMenu } from './components/ExportMenu'
 import { FilterBar } from './components/FilterBar'
 import { ModelPage } from './components/ModelPage'
 import { KIND_LABEL, RankingTable, type SortKey } from './components/RankingTable'
@@ -74,7 +76,13 @@ function useHashRoute() {
 export default function App() {
   const route = useHashRoute()
   const modelRoute = route.match(/^#\/carro\/([\w-]+)/)?.[1]
-  const [car, setCar] = usePersisted('ccc:car', DEFAULT_CAR)
+  const [car, setCar] = usePersisted('ccc:car', DEFAULT_CAR, (s) => {
+    // Versões anteriores não separavam as revisões: os R$ 4.200/ano já as incluíam.
+    if (s.revisions !== undefined) return s
+    return s.maintenanceYear === 4200
+      ? { ...s, maintenanceYear: DEFAULT_CAR.maintenanceYear, revisions: DEFAULT_CAR.revisions }
+      : { ...s, revisions: null }
+  })
   const [assumptions, setAssumptions] = usePersisted('ccc:assumptions', DEFAULT_ASSUMPTIONS, (s) =>
     // Versões anteriores tinham uma única alíquota para híbridos (1,5%): separa HEV e plug-in.
     s.ipvaRatePHEV === undefined
@@ -222,6 +230,16 @@ export default function App() {
     )
   }
 
+  const exportCtx = () => ({
+    car,
+    keep,
+    ranked,
+    compared: compare.map((id) => results.find((r) => r.scenario.id === id)).filter((r): r is ScenarioResult => !!r),
+    horizon,
+    includeOpportunity: assumptions.includeOpportunity !== false,
+    url: window.location.origin + window.location.pathname,
+  })
+
   const fetching = fetchState !== null && fetchState.done < fetchState.total
   const fipeCount = results.filter((r) => r.scenario.priceSource === 'fipe' && r.scenario.kind !== 'keep').length
   const open = openId ? results.find((r) => r.scenario.id === openId) : undefined
@@ -243,6 +261,7 @@ export default function App() {
             </span>
           </a>
           <nav className="ml-auto flex items-center gap-0.5 whitespace-nowrap sm:gap-1.5">
+            {!modelRoute && <ExportMenu ctx={exportCtx} />}
             <Button variant="ghost" onClick={() => setSettings('car')}>
               Meu carro
             </Button>
@@ -257,6 +276,7 @@ export default function App() {
       <div className="mx-auto max-w-[1280px] px-4 py-6 sm:px-6 lg:py-8">
         {modelRoute ? (
           <main>
+            <ErrorBoundary area="Ficha do carro">
             <ModelPage
               modelId={modelRoute}
               results={results}
@@ -267,6 +287,7 @@ export default function App() {
               assumptions={assumptions}
               car={car}
             />
+            </ErrorBoundary>
           </main>
         ) : (
           <main className="space-y-6">
@@ -315,10 +336,13 @@ export default function App() {
             </section>
 
             <section id="sec-top" className="scroll-mt-32">
+              <ErrorBoundary area="Top 10">
               <TopModels ranked={ranked} horizon={horizon} compare={compare} onToggleCompare={toggleCompare} max={MAX_COMPARE} />
+              </ErrorBoundary>
             </section>
 
             <section id="sec-compare" className="scroll-mt-32">
+              <ErrorBoundary area="Comparação">
               <Comparator
                 keep={keep}
                 results={results}
@@ -334,6 +358,7 @@ export default function App() {
                 carModelId={car.catalogModelId}
                 carModelYear={car.modelYear}
               />
+              </ErrorBoundary>
             </section>
 
             <div id="sec-chart" className="grid scroll-mt-32 grid-cols-1 gap-6 xl:grid-cols-[minmax(0,1.6fr)_minmax(0,1fr)]">
