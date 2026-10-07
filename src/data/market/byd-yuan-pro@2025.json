@@ -1,0 +1,79 @@
+{
+ "modelId": "byd-yuan-pro",
+ "modelYear": 2025,
+ "version": "EV 45,1 kWh",
+ "fipe": {
+  "price": 153006,
+  "reference": "set/2026",
+  "source": "https://tabelacarros.com/carros/byd/YUAN-PRO--ELETRICO-/2025-Eletrico"
+ },
+ "listings": [
+  {
+   "title": "BYD Yuan Pro Elétrico 2025",
+   "price": 157900,
+   "km": 14985,
+   "city": "Itajaí/SC",
+   "source": "OLX",
+   "url": "https://www.olx.com.br/autos-e-pecas/carros-vans-e-utilitarios/byd/yuan-pro/eletrico",
+   "date": "out/2026"
+  },
+  {
+   "title": "BYD Yuan Pro Elétrico 2025 branco",
+   "price": 153990,
+   "km": 26665,
+   "city": "Brasília/DF",
+   "source": "OLX",
+   "url": "https://www.olx.com.br/autos-e-pecas/carros-vans-e-utilitarios/byd/yuan-pro/eletrico",
+   "date": "out/2026"
+  },
+  {
+   "title": "BYD Yuan Pro Elétrico 2025",
+   "price": 199900,
+   "km": 18000,
+   "city": "Belo Horizonte/MG",
+   "source": "OLX",
+   "url": "https://www.olx.com.br/autos-e-pecas/carros-vans-e-utilitarios/byd/yuan-pro/eletrico",
+   "date": "out/2026"
+  },
+  {
+   "title": "BYD Yuan Pro 2025",
+   "price": 159900,
+   "km": 28000,
+   "city": "SC",
+   "source": "OLX",
+   "url": "https://www.olx.com.br/autos-e-pecas/carros-vans-e-utilitarios/byd/yuan-pro/estado-sc/florianopolis-e-regiao/ararangua",
+   "date": "out/2026"
+  },
+  {
+   "title": "BYD Yuan Pro 2025",
+   "price": 155000,
+   "km": 26300,
+   "city": "Ceará",
+   "source": "OLX",
+   "url": "https://www.olx.com.br/autos-e-pecas/carros-vans-e-utilitarios/byd/yuan-pro/estado-ce/fortaleza",
+   "date": "out/2026"
+  }
+ ],
+ "summary": {
+  "count": 5,
+  "min": 153990,
+  "median": 157900,
+  "max": 199900
+ },
+ "notes": "O anúncio de BH a R$ 199.900 destoa (acima da FIPE); os demais estão R$ 154–160 mil. O anúncio SC de 28 mil km pode ser o mesmo de Itajaí (km diferente, então mantido). URLs de listings: para Webmotors/OLX/Mobiauto os snippets só expõem a página de busca onde o anúncio apareceu (não o link individual); carregados.com.br, comprecar e litoralcar expõem o link do anúncio.",
+ "sources": [
+  {
+   "label": "OLX Yuan Pro elétrico",
+   "url": "https://www.olx.com.br/autos-e-pecas/carros-vans-e-utilitarios/byd/yuan-pro/eletrico"
+  },
+  {
+   "label": "Webmotors Yuan Pro SP",
+   "url": "https://www.webmotors.com.br/carros/sp/byd/yuan-pro"
+  },
+  {
+   "label": "FIPE Yuan Pro 2025 (tabelacarros)",
+   "url": "https://tabelacarros.com/carros/byd/YUAN-PRO--ELETRICO-/2025-Eletrico"
+  }
+ ],
+ "useForPrice": true
+}

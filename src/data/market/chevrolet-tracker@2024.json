@@ -1,0 +1,75 @@
+{
+ "modelId": "chevrolet-tracker",
+ "modelYear": 2024,
+ "version": "LT 1.0 Turbo Flex Aut.",
+ "fipe": {
+  "price": 101499,
+  "reference": "jul/2026",
+  "source": "https://www.tabelafipebrasil.com/carros/GM---CHEVROLET/TRACKER-LT-10-TURBO-12V-FLEX-AUT/2024-Flex"
+ },
+ "listings": [
+  {
+   "title": "Chevrolet Tracker 1.0 Turbo LT 2024 branco",
+   "price": 90000,
+   "km": 88000,
+   "city": "Salto/SP",
+   "source": "CompreCar",
+   "url": "https://www.comprecar.com.br/carros-usados/salto/tracker-10-turbo-lt-2419759",
+   "date": "out/2026"
+  },
+  {
+   "title": "Chevrolet Tracker 1.0 Turbo LT 2024 branco",
+   "price": 105990,
+   "km": 42000,
+   "city": "Sorocaba/SP",
+   "source": "CompreCar",
+   "url": "https://www.comprecar.com.br/carros-usados/sorocaba/tracker-10-turbo-lt-2397716",
+   "date": "out/2026"
+  },
+  {
+   "title": "Chevrolet Tracker LT 2024",
+   "price": 110990,
+   "km": 26000,
+   "city": "Santos/SP",
+   "source": "Napista",
+   "url": "https://napista.com.br/busca/sp/santos/chevrolet/tracker/lt/2024",
+   "date": "out/2026"
+  },
+  {
+   "title": "Chevrolet Tracker 1.0 Turbo LT Auto 2024",
+   "price": 103990,
+   "km": 15134,
+   "city": "Araçatuba/SP",
+   "source": "Napista",
+   "url": "https://napista.com.br/busca/aracatuba/chevrolet/tracker/lt/chevrolet-tracker-1.0-turbo-lt-auto/2024",
+   "date": "out/2026"
+  },
+  {
+   "title": "Chevrolet Tracker LT 2024",
+   "price": 104700,
+   "km": 33000,
+   "city": "Sobral/CE",
+   "source": "Napista",
+   "url": "https://napista.com.br/busca/ce/sobral/chevrolet/lt/2024",
+   "date": "out/2026"
+  }
+ ],
+ "summary": {
+  "count": 5,
+  "min": 90000,
+  "median": 104700,
+  "max": 110990
+ },
+ "notes": "Ficou fora um anúncio de Taubaté com '1 km' a R$ 105.990 (km provavelmente não informado). Outras versões 2024: Premier 1.2 Turbo com 18.906 km a R$ 114.990; Midnight 1.0 Turbo com 47.603 km a R$ 102.990. O Napista mostrava 404 ofertas do Tracker LT 2024, de uns R$ 90 mil a R$ 115 mil.",
+ "sources": [
+  {
+   "label": "Napista Tracker LT 2024",
+   "url": "https://napista.com.br/busca/chevrolet/tracker/lt/2024"
+  },
+  {
+   "label": "Tabela FIPE Brasil",
+   "url": "https://www.tabelafipebrasil.com/carros/GM---CHEVROLET/TRACKER-LT-10-TURBO-12V-FLEX-AUT/2024-Flex"
+  }
+ ],
+ "useForPrice": true
+}

@@ -1,0 +1,178 @@
+{
+ "modelId": "byd-dolphin-mini",
+ "modelYear": 2025,
+ "version": "GS/GL 38 kWh",
+ "fipe": {
+  "price": 105665,
+  "reference": "ago/2026",
+  "source": "https://www.tabelafipebrasil.com/carros/BYD/DOLPHIN-MINI-GS-ELETRICO/2025-Eletrico"
+ },
+ "listings": [
+  {
+   "title": "BYD Dolphin Mini 2025 preto",
+   "price": 99900,
+   "km": 108000,
+   "city": null,
+   "source": "Carregados",
+   "url": "https://carregados.com.br/carros/byd-dolphin-mini-2025-preto-108000km-24015",
+   "date": "out/2026"
+  },
+  {
+   "title": "BYD Dolphin Mini 2025 preto",
+   "price": 112900,
+   "km": 64000,
+   "city": null,
+   "source": "Carregados",
+   "url": "https://carregados.com.br/carros/byd-dolphin-mini-2025-preto-64000km-24239",
+   "date": "out/2026"
+  },
+  {
+   "title": "BYD Dolphin Mini Base 2025 preto",
+   "price": 110990,
+   "km": 3700,
+   "city": null,
+   "source": "Carregados",
+   "url": "https://www.carregados.com.br/carros/byd-dolphin-mini-base-2025-preto-3700km-23758",
+   "date": "out/2026"
+  },
+  {
+   "title": "BYD Dolphin Mini 2025 branco",
+   "price": 104990,
+   "km": 26000,
+   "city": null,
+   "source": "Carregados",
+   "url": "https://carregados.com.br/carros/byd-dolphin-mini-2025-branco-26000km-22375",
+   "date": "out/2026"
+  },
+  {
+   "title": "BYD Dolphin Mini 300km 2025 branco",
+   "price": 107900,
+   "km": 11400,
+   "city": null,
+   "source": "Carregados",
+   "url": "https://carregados.com.br/carros/byd-dolphin-mini-300km-2025-branco-11400km-21599",
+   "date": "out/2026"
+  },
+  {
+   "title": "BYD Dolphin Mini 380km 2025 verde",
+   "price": 109900,
+   "km": 26000,
+   "city": null,
+   "source": "Carregados",
+   "url": "https://carregados.com.br/carros/byd-dolphin-mini-380km-2025-verde-26000km-21971",
+   "date": "out/2026"
+  },
+  {
+   "title": "BYD Dolphin Mini 2025 verde",
+   "price": 108990,
+   "km": 11300,
+   "city": null,
+   "source": "Carregados",
+   "url": "https://carregados.com.br/carros/byd-dolphin-mini-2025-verde-11300km-23267",
+   "date": "out/2026"
+  },
+  {
+   "title": "BYD Dolphin Mini 2025 branco",
+   "price": 109900,
+   "km": 22000,
+   "city": null,
+   "source": "Carregados",
+   "url": "https://carregados.com.br/carros/byd-dolphin-mini-2025-branco-22000km-22310",
+   "date": "out/2026"
+  },
+  {
+   "title": "BYD Dolphin Mini 2025",
+   "price": 79200,
+   "km": 41000,
+   "city": "Lauro de Freitas/BA",
+   "source": "OLX",
+   "url": "https://www.olx.com.br/autos-e-pecas/carros-vans-e-utilitarios/byd/dolphin/eletrico/2025",
+   "date": "out/2026"
+  },
+  {
+   "title": "BYD Dolphin Mini 2025",
+   "price": 94680,
+   "km": 28791,
+   "city": "Brasília/DF",
+   "source": "OLX",
+   "url": "https://www.olx.com.br/autos-e-pecas/carros-vans-e-utilitarios/byd/dolphin/eletrico/2025",
+   "date": "out/2026"
+  },
+  {
+   "title": "BYD Dolphin Mini 2025",
+   "price": 96800,
+   "km": 23450,
+   "city": "Cascavel/PR",
+   "source": "OLX",
+   "url": "https://www.olx.com.br/autos-e-pecas/carros-vans-e-utilitarios/byd/dolphin/eletrico/2025",
+   "date": "out/2026"
+  },
+  {
+   "title": "BYD Dolphin Mini 2025",
+   "price": 102390,
+   "km": 51347,
+   "city": "Barueri/SP",
+   "source": "OLX",
+   "url": "https://www.olx.com.br/autos-e-pecas/carros-vans-e-utilitarios/byd/dolphin/eletrico/2025",
+   "date": "out/2026"
+  },
+  {
+   "title": "BYD Dolphin Mini 2025",
+   "price": 102990,
+   "km": 11000,
+   "city": "Goiânia/GO",
+   "source": "OLX",
+   "url": "https://www.olx.com.br/autos-e-pecas/carros-vans-e-utilitarios/byd/dolphin/eletrico/2025",
+   "date": "out/2026"
+  },
+  {
+   "title": "BYD Dolphin Mini 2025",
+   "price": 105990,
+   "km": 68232,
+   "city": "Jundiaí/SP",
+   "source": "OLX",
+   "url": "https://www.olx.com.br/autos-e-pecas/carros-vans-e-utilitarios/byd/dolphin/eletrico/2025",
+   "date": "out/2026"
+  },
+  {
+   "title": "BYD Dolphin Mini 2025",
+   "price": 110900,
+   "km": 9678,
+   "city": "Brasília/DF",
+   "source": "OLX",
+   "url": "https://www.olx.com.br/autos-e-pecas/carros-vans-e-utilitarios/byd/dolphin/eletrico/2025",
+   "date": "out/2026"
+  },
+  {
+   "title": "BYD Dolphin Mini 2025",
+   "price": 121900,
+   "km": 5000,
+   "city": "Sorocaba/SP",
+   "source": "OLX",
+   "url": "https://www.olx.com.br/autos-e-pecas/carros-vans-e-utilitarios/byd/dolphin/eletrico/2025",
+   "date": "out/2026"
+  }
+ ],
+ "summary": {
+  "count": 16,
+  "min": 79200,
+  "median": 106945,
+  "max": 121900
+ },
+ "notes": "FIPE GS 2025 R$ 105.665 (ago/2026); GL 2025 R$ 103.958; 'Dolphin Mini (Elétrico)' 2025 R$ 106.594 (jul/2026). Carregados (lojas/particulares) mais caro e sem cidade nos snippets; o OLX de R$ 79.200 é muito baixo. A página OLX 'dolphin/eletrico/2025' pode misturar Dolphin e Mini; preços compatíveis com o Mini. URLs de listings: para Webmotors/OLX/Mobiauto os snippets só expõem a página de busca onde o anúncio apareceu (não o link individual); carregados.com.br, comprecar e litoralcar expõem o link do anúncio.",
+ "sources": [
+  {
+   "label": "Carregados Dolphin Mini",
+   "url": "https://carregados.com.br/carros/byd-dolphin-mini-2025-branco-22000km-22310"
+  },
+  {
+   "label": "OLX Dolphin 2025",
+   "url": "https://www.olx.com.br/autos-e-pecas/carros-vans-e-utilitarios/byd/dolphin/eletrico/2025"
+  },
+  {
+   "label": "FIPE Dolphin Mini GS 2025",
+   "url": "https://www.tabelafipebrasil.com/carros/BYD/DOLPHIN-MINI-GS-ELETRICO/2025-Eletrico"
+  }
+ ],
+ "useForPrice": true
+}

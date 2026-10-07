@@ -1,0 +1,28 @@
+{
+ "modelId": "byd-yuan-plus",
+ "modelYear": 2023,
+ "version": "EV 60,8 kWh",
+ "fipe": {
+  "price": 157563,
+  "reference": "jul/2026",
+  "source": "https://carzin.com.br/tabela-fipe/carros/byd/yuan/2023/plus-eletrico.html"
+ },
+ "listings": [],
+ "summary": null,
+ "notes": "Nenhum anúncio individual confiável de ano-modelo 2023 nos snippets. Faixas vistas: OLX/Mobiauto 2023 de R$ 147.890 a R$ 158.900; OLX Brasília R$ 144.900–163.900 (fonte: https://www.olx.com.br/autos-e-pecas/carros-vans-e-utilitarios/byd/yuan-plus/2023). Dois anúncios OLX marcados '2023' (R$ 215.990 com 6.463 km; R$ 237.990 0 km) parecem cadastro errado e foram ignorados. FIPE 2023 varia entre fontes: R$ 157.563 (carzin, jul/2026), R$ 155.121 (ago/2026, tabelafipeconsulta), R$ 152.900 (Mobiauto, mês não informado). URLs de listings: para Webmotors/OLX/Mobiauto os snippets só expõem a página de busca onde o anúncio apareceu (não o link individual); carregados.com.br, comprecar e litoralcar expõem o link do anúncio.",
+ "sources": [
+  {
+   "label": "OLX Yuan Plus 2023",
+   "url": "https://www.olx.com.br/autos-e-pecas/carros-vans-e-utilitarios/byd/yuan-plus/2023"
+  },
+  {
+   "label": "Mobiauto FIPE Yuan Plus 2023",
+   "url": "https://www.mobiauto.com.br/tabela-fipe/carros/byd/yuan-plus/2023/ev"
+  },
+  {
+   "label": "carzin FIPE 2023",
+   "url": "https://carzin.com.br/tabela-fipe/carros/byd/yuan/2023/plus-eletrico.html"
+  }
+ ],
+ "useForPrice": true
+}

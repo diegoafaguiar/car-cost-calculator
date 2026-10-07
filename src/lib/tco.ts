@@ -408,7 +408,8 @@ export function priceFor(
   const hit = prices[priceKey(model.id, age)] ?? known
   if (hit && hit.price > 0) return hit
   // Seminovo sem FIPE ao vivo: usa a FIPE vista na pesquisa de mercado ou a mediana dos anúncios.
-  const mk = year !== undefined && age > 0 ? marketFor(model.id, year - age) : undefined
+  const mkRaw = year !== undefined && age > 0 ? marketFor(model.id, year - age) : undefined
+  const mk = mkRaw?.useForPrice === false ? undefined : mkRaw
   if (mk?.fipe?.price) return { price: mk.fipe.price, source: 'fipe', reference: mk.fipe.reference }
   if (mk?.summary && mk.summary.count >= 3) return { price: mk.summary.median, source: 'anuncios', reference: mk.listings[0]?.date }
   const newHit = prices[priceKey(model.id, 0)]

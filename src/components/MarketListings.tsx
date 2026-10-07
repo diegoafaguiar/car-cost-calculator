@@ -40,6 +40,11 @@ export function MarketListings({ modelIds, brand, model, initialYear, compact }:
           </div>
           {current.map((d) => (
             <div key={`${d.modelId}@${d.modelYear}`} className="space-y-3">
+              {current.length > 1 && (
+                <h4 className="text-sm font-semibold">
+                  {model} {d.version ?? ''} · {d.modelYear}
+                </h4>
+              )}
               <div className="grid grid-cols-2 gap-3 sm:grid-cols-4">
                 <Fig label="Mediana dos anúncios" value={d.summary?.count ? money(d.summary.median) : '—'} />
                 <Fig label="Faixa" value={d.summary?.count ? `${money(d.summary.min)} – ${money(d.summary.max)}` : '—'} />
@@ -50,7 +55,7 @@ export function MarketListings({ modelIds, brand, model, initialYear, compact }:
                   sub={d.fipe?.reference}
                 />
               </div>
-              {d.version && <p className="text-xs text-ink-2">Versão predominante: {d.version}</p>}
+              {d.version && current.length === 1 && <p className="text-xs text-ink-2">Versão predominante: {d.version}</p>}
               {d.listings.length > 0 && (
                 <ul className="divide-y divide-line rounded-xl border border-line">
                   {d.listings.slice(0, compact ? 4 : 10).map((l, i) => (
@@ -70,7 +75,15 @@ export function MarketListings({ modelIds, brand, model, initialYear, compact }:
                   ))}
                 </ul>
               )}
-              {d.notes && <p className="text-xs text-ink-2">{d.notes}</p>}
+              {d.notes && (
+                <details className="text-xs text-ink-2">
+                  <summary className="cursor-pointer text-muted hover:text-ink">Notas da pesquisa</summary>
+                  <p className="mt-1">{d.notes}</p>
+                </details>
+              )}
+              {d.useForPrice === false && (
+                <p className="rounded-lg bg-warn-soft px-3 py-2 text-xs">Anúncios de outra versão: mostrados só como referência, não entram no cálculo.</p>
+              )}
             </div>
           ))}
           <p className="text-xs text-muted">

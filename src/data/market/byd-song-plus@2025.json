@@ -1,0 +1,123 @@
+{
+ "modelId": "byd-song-plus",
+ "modelYear": 2025,
+ "version": "1.5 DM-i",
+ "fipe": {
+  "price": 179503,
+  "reference": "set/2026",
+  "source": "https://www.tabelafipebrasil.com/carros/BYD/SONG-PLUS-15-16V-AUT-HIBRIDO/2025-Hibrido"
+ },
+ "listings": [
+  {
+   "title": "BYD Song Plus 1.5 DM-i Híbrido Automático 2024/2025",
+   "price": 187700,
+   "km": 45500,
+   "city": "Indaiatuba/SP",
+   "source": "Webmotors",
+   "url": "https://www.webmotors.com.br/carros-usados/sp-indaiatuba/byd/song-plus/15-dm-i-hibrido-automatico/de.2024",
+   "date": "out/2026"
+  },
+  {
+   "title": "BYD Song Plus 1.5 DM-i Híbrido 2024/2025",
+   "price": 179890,
+   "km": 30929,
+   "city": "Campinas/SP",
+   "source": "Webmotors",
+   "url": "https://www.webmotors.com.br/carros/sp-campinas/byd/song-plus",
+   "date": "out/2026"
+  },
+  {
+   "title": "BYD Song Plus 1.5 DM-i 2024/2025",
+   "price": 173990,
+   "km": 49220,
+   "city": "Aparecida de Goiânia/GO",
+   "source": "Webmotors",
+   "url": "https://www.webmotors.com.br/carros/go-aparecida-de-goiania/byd/song-plus",
+   "date": "out/2026"
+  },
+  {
+   "title": "BYD Song Plus 1.5 DM-i 2024/2025",
+   "price": 179990,
+   "km": 25534,
+   "city": "Aparecida de Goiânia/GO",
+   "source": "Webmotors",
+   "url": "https://www.webmotors.com.br/carros/go-aparecida-de-goiania/byd/song-plus",
+   "date": "out/2026"
+  },
+  {
+   "title": "BYD Song Plus 1.5 DM-i 2024/2025",
+   "price": 187800,
+   "km": 20000,
+   "city": "Goiânia/GO",
+   "source": "Webmotors",
+   "url": "https://www.webmotors.com.br/carros-usados/go-goiania/byd/song-plus",
+   "date": "out/2026"
+  },
+  {
+   "title": "BYD Song Plus 1.5 DM-i 2024/2025",
+   "price": 175900,
+   "km": 54923,
+   "city": "Goiânia/GO",
+   "source": "Webmotors",
+   "url": "https://www.webmotors.com.br/carros-usados/go-goiania/byd/song-plus",
+   "date": "out/2026"
+  },
+  {
+   "title": "BYD Song Plus 1.5 DM-i 2024/2025",
+   "price": 184990,
+   "km": 39990,
+   "city": "Campinas/SP",
+   "source": "Webmotors",
+   "url": "https://www.webmotors.com.br/carros/sp-campinas/byd/song-plus/precoate.250000",
+   "date": "out/2026"
+  },
+  {
+   "title": "BYD Song Plus 1.5 16V Híbrido 2025",
+   "price": 179900,
+   "km": 17895,
+   "city": "São José/SC",
+   "source": "OLX",
+   "url": "https://www.olx.com.br/autos-e-pecas/carros-vans-e-utilitarios/byd/song-plus/2025/suv",
+   "date": "out/2026"
+  },
+  {
+   "title": "BYD Song Plus 1.5 16V Híbrido 2025",
+   "price": 169900,
+   "km": 15000,
+   "city": "Serra/ES",
+   "source": "OLX",
+   "url": "https://www.olx.com.br/autos-e-pecas/carros-vans-e-utilitarios/byd/song-plus/2025/suv",
+   "date": "out/2026"
+  }
+ ],
+ "summary": {
+  "count": 9,
+  "min": 169900,
+  "median": 179900,
+  "max": 187800
+ },
+ "notes": "Ano-modelo 2025 = 2024/2025. Anúncios 2025/2026 (R$ 214.990–216.900) excluídos (ano-modelo 2026). OLX 2025 também mostrou faixas sem detalhe: SP R$ 183.899–189.890 (21–45 mil km), RJ R$ 189.900–199.990, DF R$ 175.900–184.990. Preços na faixa ou um pouco acima da FIPE. URLs de listings: para Webmotors/OLX/Mobiauto os snippets só expõem a página de busca onde o anúncio apareceu (não o link individual); carregados.com.br, comprecar e litoralcar expõem o link do anúncio.",
+ "sources": [
+  {
+   "label": "Webmotors Song Plus Indaiatuba",
+   "url": "https://www.webmotors.com.br/carros-usados/sp-indaiatuba/byd/song-plus/15-dm-i-hibrido-automatico/de.2024"
+  },
+  {
+   "label": "Webmotors Song Plus Aparecida de Goiânia",
+   "url": "https://www.webmotors.com.br/carros/go-aparecida-de-goiania/byd/song-plus"
+  },
+  {
+   "label": "Webmotors Song Plus Goiânia",
+   "url": "https://www.webmotors.com.br/carros-usados/go-goiania/byd/song-plus"
+  },
+  {
+   "label": "OLX Song Plus 2025",
+   "url": "https://www.olx.com.br/autos-e-pecas/carros-vans-e-utilitarios/byd/song-plus/2025/suv"
+  },
+  {
+   "label": "FIPE Song Plus 2025",
+   "url": "https://www.tabelafipebrasil.com/carros/BYD/SONG-PLUS-15-16V-AUT-HIBRIDO/2025-Hibrido"
+  }
+ ],
+ "useForPrice": true
+}

@@ -17,17 +17,12 @@ export interface MarketData {
   listings: Listing[]
   summary: { count: number; min: number; median: number; max: number } | null
   notes: string | null
+  /** Falso quando os anúncios são de outra versão que a do catálogo (não entram no cálculo). */
+  useForPrice?: boolean
   sources: { label: string; url: string }[]
 }
 
-interface SearchPattern {
-  pattern: string
-  example?: string
-  note?: string
-}
-
 const files = import.meta.glob<{ default: MarketData }>('../data/market/*@*.json', { eager: true })
-const patterns = import.meta.glob<{ default: Record<string, SearchPattern> }>('../data/market/_search_urls.json', { eager: true })
 
 export const MARKET: Record<string, MarketData> = Object.fromEntries(
   Object.values(files).map((m) => [`${m.default.modelId}@${m.default.modelYear}`, m.default]),
@@ -48,30 +43,20 @@ const slug = (s: string) =>
     .replace(/[^a-z0-9]+/g, '-')
     .replace(/(^-|-$)/g, '')
 
-const PATTERNS: Record<string, SearchPattern> = Object.values(patterns)[0]?.default ?? {}
-
 /**
- * Links de busca nos marketplaces. Usa os padrões confirmados na pesquisa (src/data/market/_search_urls.json)
- * e, para os demais, uma busca no Google restrita ao site.
+ * Links de busca nos marketplaces, com padrões de URL confirmados em páginas reais (pesquisa de out/2026).
+ * Filtram por marca, modelo e, quando o site aceita, ano-modelo.
  */
 export function searchLinks(brand: string, model: string, year?: number): { source: string; url: string }[] {
-  const q = `${brand} ${model}${year ? ` ${year}` : ''}`
-  const fill = (p: string) =>
-    p
-      .replace('{marca}', slug(brand))
-      .replace('{modelo}', slug(model))
-      .replace('{ano}', year ? String(year) : '')
-      .replace('{q}', encodeURIComponent(q))
-  const sites: [string, string][] = [
-    ['Webmotors', 'webmotors.com.br'],
-    ['OLX', 'olx.com.br'],
-    ['iCarros', 'icarros.com.br'],
-    ['Mobiauto', 'mobiauto.com.br'],
+  const b = slug(brand)
+  const m = slug(model)
+  return [
+    {
+      source: 'Webmotors',
+      url: `https://www.webmotors.com.br/carros-usados/estoque/${b}/${m}${year ? `/de.${year}/ate.${year}` : ''}`,
+    },
+    { source: 'OLX', url: `https://www.olx.com.br/autos-e-pecas/carros-vans-e-utilitarios/${b}/${m}${year ? `/${year}` : ''}` },
+    { source: 'Mobiauto', url: `https://www.mobiauto.com.br/comprar/carros-usados/brasil/${b}/${m}${year ? `/ano-${year}` : ''}` },
+    { source: 'iCarros', url: `https://www.icarros.com.br/comprar/${b}/${m}` },
   ]
-  return sites.map(([name, domain]) => ({
-    source: name,
-    url: PATTERNS[name]?.pattern
-      ? fill(PATTERNS[name].pattern)
-      : `https://www.google.com/search?q=${encodeURIComponent(`${q} site:${domain}`)}`,
-  }))
 }

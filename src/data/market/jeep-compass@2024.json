@@ -1,0 +1,66 @@
+{
+ "modelId": "jeep-compass",
+ "modelYear": 2024,
+ "version": "Longitude 1.3 T270 Turbo Flex AT6",
+ "fipe": {
+  "price": 136445,
+  "reference": "jul/2026",
+  "source": "https://www.tabelafipebrasil.com/carros/JEEP/COMPASS-LONG-T270-13-TB-4X2-FLEX-AUT/2024-Flex"
+ },
+ "listings": [
+  {
+   "title": "Jeep Compass 1.3 T270 Turbo Flex Longitude AT6 2024/2024",
+   "price": 140590,
+   "km": 49319,
+   "city": "Santarém/PA",
+   "source": "Webmotors",
+   "url": "https://www.webmotors.com.br/carros-usados/pa/jeep/compass/13-t270-turbo-flex-longitude-at6/de.2024",
+   "date": "out/2026"
+  },
+  {
+   "title": "Jeep Compass 1.3 T270 Longitude 2024",
+   "price": 139900,
+   "km": 40600,
+   "city": "Curitiba/PR",
+   "source": "Napista",
+   "url": "https://napista.com.br/busca/suv-coupe/jeep/compass/2024",
+   "date": "out/2026"
+  },
+  {
+   "title": "Jeep Compass 1.3 T270 Longitude Auto 2024",
+   "price": 140500,
+   "km": 29000,
+   "city": "Sorocaba/SP",
+   "source": "Napista",
+   "url": "https://napista.com.br/busca/sorocaba/jeep/compass/longitude/2024",
+   "date": "out/2026"
+  },
+  {
+   "title": "Jeep Compass Long. T270 1.3 TB 4x2 Flex Aut. 2024",
+   "price": 132977,
+   "km": 21000,
+   "city": "Niterói/RJ",
+   "source": "Napista",
+   "url": "https://napista.com.br/busca/niteroi/jeep/compass/longitude/2024",
+   "date": "out/2026"
+  }
+ ],
+ "summary": {
+  "count": 4,
+  "min": 132977,
+  "median": 140200,
+  "max": 140590
+ },
+ "notes": "Na Webmotors, a maioria dos anúncios 'a partir de 2024' é 2024/2025 (ano-modelo 2025) e ficou fora: Chapecó R$ 148.490 (35.600 km), Duque de Caxias R$ 141.990 (40.772), Ananindeua R$ 152.690 (38.016), Poá R$ 148.890 (68.897), Rio R$ 140.690 (46.261), Rio das Ostras R$ 141.990 (44.900). Outros anúncios '2024' sem confirmação do ano-modelo: Santarém R$ 155.990 (21.804 km), Ananindeua R$ 141.990 (44.744), Novo Hamburgo R$ 149.900 (61.742), Palhoça R$ 154.190 (21.975), Itajaí R$ 153.090 (24.120). Ficaram fora também o Limited 2024 em Curitiba com 17.144 km a R$ 152.900 e o 'Série S' com 202 mil km. FIPE 2025: R$ 146.567.",
+ "sources": [
+  {
+   "label": "Webmotors Compass Longitude PA",
+   "url": "https://www.webmotors.com.br/carros-usados/pa/jeep/compass/13-t270-turbo-flex-longitude-at6/de.2024"
+  },
+  {
+   "label": "Tabela FIPE Brasil",
+   "url": "https://www.tabelafipebrasil.com/carros/JEEP/COMPASS-LONG-T270-13-TB-4X2-FLEX-AUT/2024-Flex"
+  }
+ ],
+ "useForPrice": true
+}

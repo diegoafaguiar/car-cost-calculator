@@ -1,0 +1,101 @@
+{
+ "modelId": "byd-king",
+ "modelYear": 2025,
+ "version": "GS/GL 1.5 DM-i (misto)",
+ "fipe": {
+  "price": 144702,
+  "reference": "set/2026",
+  "source": "https://www.litoralcar.com.br/tabela-fipe/byd/king"
+ },
+ "listings": [
+  {
+   "title": "BYD King GL 1.5 Híbrido 2025",
+   "price": 141990,
+   "km": 10000,
+   "city": null,
+   "source": "OLX",
+   "url": "https://www.olx.com.br/autos-e-pecas/carros-vans-e-utilitarios/byd/king/2025/estado-pa/regiao-de-belem",
+   "date": "out/2026"
+  },
+  {
+   "title": "BYD King GL 1.5 Híbrido 2025",
+   "price": 139000,
+   "km": 30500,
+   "city": null,
+   "source": "OLX",
+   "url": "https://www.olx.com.br/autos-e-pecas/carros-vans-e-utilitarios/byd/king/2025/estado-pa/regiao-de-belem",
+   "date": "out/2026"
+  },
+  {
+   "title": "BYD King GL 1.5 Híbrido 2025",
+   "price": 144990,
+   "km": 70030,
+   "city": null,
+   "source": "OLX",
+   "url": "https://www.olx.com.br/autos-e-pecas/carros-vans-e-utilitarios/byd/king/2025/estado-pa/regiao-de-belem",
+   "date": "out/2026"
+  },
+  {
+   "title": "BYD King GS 1.5 Híbrido 2025",
+   "price": 153900,
+   "km": 13000,
+   "city": null,
+   "source": "OLX",
+   "url": "https://www.olx.com.br/autos-e-pecas/carros-vans-e-utilitarios/byd/king/2025/estado-pa/regiao-de-belem",
+   "date": "out/2026"
+  },
+  {
+   "title": "BYD King GS 1.5 Híbrido 2025",
+   "price": 149900,
+   "km": 61000,
+   "city": null,
+   "source": "OLX",
+   "url": "https://www.olx.com.br/autos-e-pecas/carros-vans-e-utilitarios/byd/king/2025/estado-pa/regiao-de-belem",
+   "date": "out/2026"
+  },
+  {
+   "title": "BYD King GS 1.5 Híbrido 2025",
+   "price": 149900,
+   "km": 32000,
+   "city": null,
+   "source": "OLX",
+   "url": "https://www.olx.com.br/autos-e-pecas/carros-vans-e-utilitarios/byd/king/2025/estado-pa/regiao-de-belem",
+   "date": "out/2026"
+  },
+  {
+   "title": "BYD King GS 1.5 Híbrido 2025",
+   "price": 153900,
+   "km": 12000,
+   "city": null,
+   "source": "OLX",
+   "url": "https://www.olx.com.br/autos-e-pecas/carros-vans-e-utilitarios/byd/king/2025/estado-pa/regiao-de-belem",
+   "date": "out/2026"
+  }
+ ],
+ "summary": {
+  "count": 7,
+  "min": 139000,
+  "median": 149900,
+  "max": 153900
+ },
+ "notes": "FIPE em 'fipe' é a do GS 2025 (R$ 144.702, set/2026); GL 2025 = R$ 135.521. Mediana GS ≈ R$ 151.900 e GL ≈ R$ 141.990, ambos ~5% acima da FIPE da versão. Os snippets misturam páginas OLX de vários estados (PA, AM, MS, PR, SC) sem cidade por anúncio; a URL é uma dessas páginas. Webmotors cita GS seminovo entre R$ 136 mil e R$ 158 mil. URLs de listings: para Webmotors/OLX/Mobiauto os snippets só expõem a página de busca onde o anúncio apareceu (não o link individual); carregados.com.br, comprecar e litoralcar expõem o link do anúncio.",
+ "sources": [
+  {
+   "label": "OLX King 2025 (Belém)",
+   "url": "https://www.olx.com.br/autos-e-pecas/carros-vans-e-utilitarios/byd/king/2025/estado-pa/regiao-de-belem"
+  },
+  {
+   "label": "Webmotors King 2025 SP",
+   "url": "https://www.webmotors.com.br/carros/sp/byd/king/de.2025/ate.2025"
+  },
+  {
+   "label": "Webmotors matéria King seminovo",
+   "url": "https://www.webmotors.com.br/wm1/dinheiro-e-economia/byd-king-seminovo-tem-preco-bom-baixa-quilometragem"
+  },
+  {
+   "label": "FIPE King (litoralcar)",
+   "url": "https://www.litoralcar.com.br/tabela-fipe/byd/king"
+  }
+ ],
+ "useForPrice": true
+}

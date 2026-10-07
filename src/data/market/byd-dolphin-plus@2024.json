@@ -1,0 +1,129 @@
+{
+ "modelId": "byd-dolphin-plus",
+ "modelYear": 2024,
+ "version": "Plus 60,5 kWh",
+ "fipe": {
+  "price": 144986,
+  "reference": "jul/2025 (desatualizado)",
+  "source": "https://www.tabelafipeconsulta.com.br/?p=173582"
+ },
+ "listings": [
+  {
+   "title": "BYD Dolphin Plus 2024 preto",
+   "price": 115900,
+   "km": 60000,
+   "city": null,
+   "source": "Carregados",
+   "url": "https://carregados.com.br/carros/byd-dolphin-plus-2024-preto-60000km-22539",
+   "date": "out/2026"
+  },
+  {
+   "title": "BYD Dolphin Plus 2024 preto",
+   "price": 99900,
+   "km": 54000,
+   "city": null,
+   "source": "Carregados",
+   "url": "https://carregados.com.br/carros/byd-dolphin-plus-2024-preto-54000km-23261",
+   "date": "out/2026"
+  },
+  {
+   "title": "BYD Dolphin Plus 2024 azul",
+   "price": 143800,
+   "km": 27299,
+   "city": null,
+   "source": "Carregados",
+   "url": "https://carregados.com.br/carros/byd-dolphin-plus-2024-azul-27299km-22853",
+   "date": "out/2026"
+  },
+  {
+   "title": "BYD Dolphin Plus 2024 cinza",
+   "price": 129900,
+   "km": 31000,
+   "city": "Manaus/AM",
+   "source": "Carregados",
+   "url": "https://carregados.com.br/carros/byd-dolphin-plus-2024-cinza-31000km-21942",
+   "date": "out/2026"
+  },
+  {
+   "title": "BYD Dolphin Plus 2024 cinza",
+   "price": 119900,
+   "km": 65000,
+   "city": null,
+   "source": "Carregados",
+   "url": "https://carregados.com.br/carros/byd-dolphin-plus-2024-cinza-65000km-22761",
+   "date": "out/2026"
+  },
+  {
+   "title": "BYD Dolphin Plus 2024 preto",
+   "price": 117900,
+   "km": 44000,
+   "city": "Brasília/DF",
+   "source": "Carregados",
+   "url": "https://www.carregados.com.br/carros/byd-dolphin-plus-2024-preto-44000km-21759",
+   "date": "out/2026"
+  },
+  {
+   "title": "BYD Dolphin Plus (Elétrico) 2024 cinza",
+   "price": 138990,
+   "km": 40000,
+   "city": "Salvador/BA",
+   "source": "OLX",
+   "url": "https://www.olx.com.br/autos-e-pecas/carros-vans-e-utilitarios/byd/dolphin/dolphin-plus-eletrico",
+   "date": "out/2026"
+  },
+  {
+   "title": "BYD Dolphin Plus (Elétrico) 2024 cinza",
+   "price": 136000,
+   "km": 50000,
+   "city": "Brasília/DF",
+   "source": "OLX",
+   "url": "https://www.olx.com.br/autos-e-pecas/carros-vans-e-utilitarios/byd/dolphin/dolphin-plus-eletrico",
+   "date": "out/2026"
+  },
+  {
+   "title": "BYD Dolphin Plus (Elétrico) 2024 branco",
+   "price": 132900,
+   "km": 45400,
+   "city": "Maricá/RJ",
+   "source": "OLX",
+   "url": "https://www.olx.com.br/autos-e-pecas/carros-vans-e-utilitarios/byd/dolphin/dolphin-plus-eletrico",
+   "date": "out/2026"
+  },
+  {
+   "title": "BYD Dolphin Plus (Elétrico) 2024",
+   "price": 159900,
+   "km": 12000,
+   "city": "Natal/RN",
+   "source": "OLX",
+   "url": "https://www.olx.com.br/autos-e-pecas/carros-vans-e-utilitarios/byd/dolphin/dolphin-plus-eletrico",
+   "date": "out/2026"
+  },
+  {
+   "title": "BYD Dolphin Plus (Elétrico) 2024 branco",
+   "price": 129900,
+   "km": 32000,
+   "city": "Recife/PE",
+   "source": "OLX",
+   "url": "https://www.olx.com.br/autos-e-pecas/carros-vans-e-utilitarios/byd/dolphin/dolphin-plus-eletrico",
+   "date": "out/2026"
+  }
+ ],
+ "summary": {
+  "count": 11,
+  "min": 99900,
+  "median": 129900,
+  "max": 159900
+ },
+ "notes": "FIPE encontrada só com ref. jul/2025 (R$ 144.986) e fonte incerta — não usar como referência atual; FIPE Dolphin Plus 2025 = R$ 150.090 (mês não informado). Carregados tem preços bem mais baixos (R$ 99,9–143,8 mil) que OLX (R$ 130–160 mil); um anúncio Carregados '2024 0 km' a R$ 113.000 foi ignorado. OLX citou faixa geral de R$ 80.900 a R$ 174.890 (12–166 mil km). URLs de listings: para Webmotors/OLX/Mobiauto os snippets só expõem a página de busca onde o anúncio apareceu (não o link individual); carregados.com.br, comprecar e litoralcar expõem o link do anúncio.",
+ "sources": [
+  {
+   "label": "OLX Dolphin Plus",
+   "url": "https://www.olx.com.br/autos-e-pecas/carros-vans-e-utilitarios/byd/dolphin/dolphin-plus-eletrico"
+  },
+  {
+   "label": "Carregados Dolphin Plus",
+   "url": "https://carregados.com.br/carros/byd-dolphin-plus-2024-cinza-31000km-21942"
+  }
+ ],
+ "useForPrice": true
+}

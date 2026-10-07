@@ -1,0 +1,88 @@
+{
+ "modelId": "jeep-renegade",
+ "modelYear": 2022,
+ "version": "Longitude 1.3 T270 Turbo Flex AT6",
+ "fipe": {
+  "price": 98354,
+  "reference": "jun/2026",
+  "source": "https://www.tabelafipebrasil.com/carros/JEEP/RENEGADE-LONG-T270-13-TB-4X2-FLEX-AUT/2022-Flex"
+ },
+ "listings": [
+  {
+   "title": "Jeep Renegade Longitude T270 2022",
+   "price": 102900,
+   "km": 100505,
+   "city": "São José dos Campos/SP",
+   "source": "Napista",
+   "url": "https://napista.com.br/busca/sao-jose/jeep/renegade/longitude/2022/ate-200000-reais",
+   "date": "out/2026"
+  },
+  {
+   "title": "Jeep Renegade 1.3 T270 Turbo Longitude 2022/2022",
+   "price": 95900,
+   "km": 56000,
+   "city": null,
+   "source": "CompreCar",
+   "url": "https://www.comprecar.com.br/carros-usados/itu/renegade-13-t270-turbo-longitude-2484316",
+   "date": "out/2026"
+  },
+  {
+   "title": "Jeep Renegade 1.3 T270 Longitude 2022",
+   "price": 96800,
+   "km": 103435,
+   "city": null,
+   "source": "Mercado Livre",
+   "url": "https://lista.mercadolivre.com.br/renegade-4x4",
+   "date": "out/2026"
+  },
+  {
+   "title": "Jeep Renegade 1.3 T270 Longitude 2022",
+   "price": 99990,
+   "km": 52606,
+   "city": null,
+   "source": "Mercado Livre",
+   "url": "https://lista.mercadolivre.com.br/renegade-4x4",
+   "date": "out/2026"
+  },
+  {
+   "title": "Jeep Renegade 1.3 T270 Longitude Auto 2022 (menor preço em Campinas)",
+   "price": 95900,
+   "km": null,
+   "city": "Campinas/SP",
+   "source": "Napista",
+   "url": "https://napista.com.br/busca/sp/campinas/jeep/renegade-1.3-t270-longitude-auto/2022",
+   "date": "out/2026"
+  },
+  {
+   "title": "Jeep Renegade 1.3 T270 Longitude Auto 2022 (maior preço em Campinas)",
+   "price": 111990,
+   "km": null,
+   "city": "Campinas/SP",
+   "source": "Napista",
+   "url": "https://napista.com.br/busca/sp/campinas/jeep/renegade-1.3-t270-longitude-auto/2022",
+   "date": "out/2026"
+  }
+ ],
+ "summary": {
+  "count": 6,
+  "min": 95900,
+  "median": 98395,
+  "max": 111990
+ },
+ "notes": "Os resumos traziam mais faixas de preço do que anúncios individuais. Osasco: R$ 89.399 a R$ 98.900; Diadema: R$ 90.399 a R$ 100.199; Hortolândia: R$ 95.900 a R$ 96.900; geral no Napista: R$ 91.990 a R$ 123.990, com 40 mil a mais de 120 mil km. A URL do CompreCar (Itu, 2484316 ou Jundiaí, 2477212) não é certa. Ficaram fora: 2022/2023 com 126 mil km a R$ 105.900 e 2022/2023 com 71 mil km a R$ 102.900 (ano-modelo 2023); um anúncio com 248.432 km a R$ 104.000 (km improvável). Os 2 do Mercado Livre não informam se são 4x2 ou 4x4.",
+ "sources": [
+  {
+   "label": "Napista Renegade 2022 SP",
+   "url": "https://napista.com.br/busca/sp/jeep/renegade/2022"
+  },
+  {
+   "label": "Webmotors Renegade Longitude SP",
+   "url": "https://www.webmotors.com.br/carros/sp/jeep/renegade/13-t270-turbo-flex-longitude-at6/de.2022"
+  },
+  {
+   "label": "Tabela FIPE Brasil",
+   "url": "https://www.tabelafipebrasil.com/carros/JEEP/RENEGADE-LONG-T270-13-TB-4X2-FLEX-AUT/2022-Flex"
+  }
+ ],
+ "useForPrice": true
+}

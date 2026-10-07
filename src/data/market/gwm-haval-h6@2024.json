@@ -1,0 +1,88 @@
+{
+ "modelId": "gwm-haval-h6",
+ "modelYear": 2024,
+ "version": "1.5 HEV Premium E-Traction",
+ "fipe": {
+  "price": 167674,
+  "reference": "set/2026",
+  "source": "https://tabelacarros.com/carros/gwm/HAVAL-H6-PREMIUM-HEV/2024-Hibrido"
+ },
+ "listings": [
+  {
+   "title": "GWM Haval H6 1.5 HEV Premium E-Traction 2023/2024",
+   "price": 165990,
+   "km": 33002,
+   "city": "Barueri/SP",
+   "source": "Webmotors",
+   "url": "https://www.webmotors.com.br/carros-usados/sp-barueri/gwm/haval-h6/15-hev-premium-e-traction/de.2024",
+   "date": "out/2026"
+  },
+  {
+   "title": "GWM Haval H6 1.5 HEV Premium E-Traction 2023/2024",
+   "price": 165000,
+   "km": 41584,
+   "city": "Brasília/DF",
+   "source": "Webmotors",
+   "url": "https://www.webmotors.com.br/carros-usados/df-brasilia/gwm/haval-h6/15-hev-premium-e-traction/de.2024",
+   "date": "out/2026"
+  },
+  {
+   "title": "GWM Haval H6 1.5 HEV Premium E-Traction 2023/2024",
+   "price": 164900,
+   "km": 38060,
+   "city": "Brasília/DF",
+   "source": "Webmotors",
+   "url": "https://www.webmotors.com.br/carros-usados/df-brasilia/gwm/haval-h6/15-hev-premium-e-traction/de.2024",
+   "date": "out/2026"
+  },
+  {
+   "title": "GWM Haval H6 1.5 HEV E-Traction 2023/2024",
+   "price": 185000,
+   "km": 36902,
+   "city": "Itu/SP",
+   "source": "CompreCar",
+   "url": "https://www.comprecar.com.br/carros-usados/itu/haval-h6-15-hev-e-traction-2498577",
+   "date": "out/2026"
+  },
+  {
+   "title": "GWM Haval H6 1.5 HEV Premium E-Traction 2023/2024",
+   "price": 161990,
+   "km": 79800,
+   "city": "Campinas/SP",
+   "source": "CompreCar",
+   "url": "https://www.comprecar.com.br/carros-usados/campinas/haval-h6-15-hev-premium-e-traction-2449341",
+   "date": "out/2026"
+  },
+  {
+   "title": "GWM Haval H6 1.5 HEV Premium E-Traction 2023/2024",
+   "price": 159990,
+   "km": 58699,
+   "city": "Campinas/SP",
+   "source": "CompreCar",
+   "url": "https://www.comprecar.com.br/carros-usados/campinas/haval-h6-15-hev-premium-e-traction-2501227",
+   "date": "out/2026"
+  }
+ ],
+ "summary": {
+  "count": 6,
+  "min": 159990,
+  "median": 164950,
+  "max": 185000
+ },
+ "notes": "As URLs do CompreCar estão trocadas ou incertas: em Itu pode ser a 2498577 ou a 2502379; em Campinas, a 2449341 ou a 2501227. O anúncio de Itu (R$ 185 mil) fica bem acima dos demais. No OLX/PR, o H6 Premium HEV 2024 ia de R$ 159.790 a R$ 185.900, com 34 mil a 89.542 km. Ficaram fora os 2024/2025 em BH (R$ 183.894, 29.400 km) e no RS (R$ 179.900 a R$ 195.900). FIPE set/2026 do 'Haval H6 HEV' 2024: R$ 167.169. Não confundir com o PHEV ou o GT (FIPE do GT 2024: R$ 214.413).",
+ "sources": [
+  {
+   "label": "Webmotors Haval H6 HEV DF",
+   "url": "https://www.webmotors.com.br/carros-usados/df-brasilia/gwm/haval-h6/15-hev-premium-e-traction/de.2024"
+  },
+  {
+   "label": "OLX H6 Premium HEV 2024 PR",
+   "url": "https://www.olx.com.br/autos-e-pecas/carros-vans-e-utilitarios/gwm/haval/h6-premium-hev/2024/estado-pr"
+  },
+  {
+   "label": "tabelacarros FIPE",
+   "url": "https://tabelacarros.com/carros/gwm/HAVAL-H6-PREMIUM-HEV/2024-Hibrido"
+  }
+ ],
+ "useForPrice": true
+}

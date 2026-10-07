@@ -182,6 +182,20 @@ describe('simulate', () => {
   })
 })
 
+describe('dados de mercado', () => {
+  it('usa a FIPE vista na pesquisa de anúncios para o seminovo', () => {
+    const list = buildScenarios({ car, assumptions: a, usedAges: [1], prices: {}, year: 2026 })
+    const s = list.find((x) => x.id === 'used:byd-song-pro:1')!
+    expect(s.priceSource).toBe('fipe')
+    expect(s.price).toBe(161133)
+  })
+
+  it('ignora anúncios de versão diferente da do catálogo', () => {
+    const list = buildScenarios({ car, assumptions: a, usedAges: [2], prices: {}, year: 2026 })
+    expect(list.find((x) => x.id === 'used:fiat-pulse:2')!.priceSource).toBe('estimado')
+  })
+})
+
 describe('fipe helpers', () => {
   it('casa nomes por palavra inteira', () => {
     const q = { brand: 'chevrolet', include: ['onix', 'lt', '1.0'], exclude: ['plus', 'ltz'] }

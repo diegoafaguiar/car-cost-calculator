@@ -1,0 +1,75 @@
+{
+ "modelId": "fiat-pulse",
+ "modelYear": 2024,
+ "version": "Audace 1.0 Turbo 200 Flex CVT",
+ "fipe": {
+  "price": 99095,
+  "reference": "jul/2026",
+  "source": "https://www.tabelafipebrasil.com/carros/FIAT/PULSE-AUDACE-10-TURBO-200-FLEX-AUT/2024-Flex"
+ },
+ "listings": [
+  {
+   "title": "Fiat Pulse 1.0 Turbo 200 Flex Audace CVT 2024/2024",
+   "price": 101900,
+   "km": 39867,
+   "city": "São José/SC",
+   "source": "Webmotors",
+   "url": "https://www.webmotors.com.br/carros-usados/sc-sao-jose/fiat/pulse/10-turbo-200-flex-audace-cvt/de.2024",
+   "date": "out/2026"
+  },
+  {
+   "title": "Fiat Pulse 1.0 Turbo 200 Flex Audace CVT 2024/2024",
+   "price": 99990,
+   "km": 37000,
+   "city": "São José/SC",
+   "source": "Webmotors",
+   "url": "https://www.webmotors.com.br/carros-usados/sc-sao-jose/fiat/pulse/10-turbo-200-flex-audace-cvt/de.2024",
+   "date": "out/2026"
+  },
+  {
+   "title": "Fiat Pulse 1.0 Turbo 200 Flex Audace CVT 2024/2024",
+   "price": 101900,
+   "km": 37430,
+   "city": "São José/SC",
+   "source": "Webmotors",
+   "url": "https://www.webmotors.com.br/carros-usados/sc-sao-jose/fiat/pulse/10-turbo-200-flex-audace-cvt/de.2024",
+   "date": "out/2026"
+  },
+  {
+   "title": "Fiat Pulse 1.0 Turbo 200 Flex Audace CVT 2024/2024",
+   "price": 102690,
+   "km": 47850,
+   "city": "Santo André/SP",
+   "source": "Webmotors",
+   "url": "https://www.webmotors.com.br/carros-usados/sp-santo-andre/fiat/pulse/10-turbo-200-flex-audace-cvt/de.2024",
+   "date": "out/2026"
+  },
+  {
+   "title": "Fiat Pulse 1.0 Turbo 200 Flex Audace CVT 2024/2024",
+   "price": 100290,
+   "km": 50232,
+   "city": "Santo André/SP",
+   "source": "Webmotors",
+   "url": "https://www.webmotors.com.br/carros-usados/sp-santo-andre/fiat/pulse/10-turbo-200-flex-audace-cvt/de.2024",
+   "date": "out/2026"
+  }
+ ],
+ "summary": {
+  "count": 5,
+  "min": 99990,
+  "median": 101900,
+  "max": 102690
+ },
+ "notes": "Ficaram fora: 2023/2024 em Guarulhos com 16.059 km a R$ 99.900; 2024/2025 em Itajaí a R$ 106.190 e em Valinhos a R$ 109.690. Outras versões 2024: Impetus T200 cerca de R$ 106.900 com uns 50 mil km; Drive 1.3 a partir de uns R$ 90.900 com 30 mil km. A FIPE de set/2026 não foi confirmada; o valor usado é o de jul/2026. Atenção: anúncios da versão Audace T200 (o catálogo usa Drive 1.3 CVT); não usado no cálculo.",
+ "sources": [
+  {
+   "label": "Webmotors São José/SC",
+   "url": "https://www.webmotors.com.br/carros-usados/sc-sao-jose/fiat/pulse/10-turbo-200-flex-audace-cvt/de.2024"
+  },
+  {
+   "label": "Tabela FIPE Brasil",
+   "url": "https://www.tabelafipebrasil.com/carros/FIAT/PULSE-AUDACE-10-TURBO-200-FLEX-AUT/2024-Flex"
+  }
+ ],
+ "useForPrice": false
+}

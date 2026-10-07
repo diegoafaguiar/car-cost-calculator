@@ -1,0 +1,84 @@
+{
+ "modelId": "byd-dolphin-mini",
+ "modelYear": 2024,
+ "version": "GS 38 kWh",
+ "fipe": {
+  "price": 100255,
+  "reference": "ago/2026",
+  "source": "https://www.tabelafipebrasil.com/carros/BYD/DOLPHIN-MINI-GS-ELETRICO/2024-Eletrico"
+ },
+ "listings": [
+  {
+   "title": "BYD Dolphin Mini 2024 branco",
+   "price": 104790,
+   "km": 18551,
+   "city": "São Paulo/SP",
+   "source": "OLX",
+   "url": "https://www.olx.com.br/autos-e-pecas/carros-vans-e-utilitarios/byd/dolphin/mini-eletrico",
+   "date": "out/2026"
+  },
+  {
+   "title": "BYD Dolphin Mini 2024 preto",
+   "price": 105900,
+   "km": 8300,
+   "city": "Sorocaba/SP",
+   "source": "OLX",
+   "url": "https://www.olx.com.br/autos-e-pecas/carros-vans-e-utilitarios/byd/dolphin/mini-eletrico",
+   "date": "out/2026"
+  },
+  {
+   "title": "BYD Dolphin Mini 2024 preto",
+   "price": 98900,
+   "km": 50000,
+   "city": "Brasília/DF",
+   "source": "OLX",
+   "url": "https://www.olx.com.br/autos-e-pecas/carros-vans-e-utilitarios/byd/dolphin/mini-eletrico",
+   "date": "out/2026"
+  },
+  {
+   "title": "BYD Dolphin Mini 2024 branco",
+   "price": 92900,
+   "km": 71000,
+   "city": "Lagoa Santa/MG",
+   "source": "OLX",
+   "url": "https://www.olx.com.br/autos-e-pecas/carros-vans-e-utilitarios/byd/dolphin/mini-eletrico",
+   "date": "out/2026"
+  },
+  {
+   "title": "BYD Dolphin Mini 2024 branco",
+   "price": 95500,
+   "km": 66545,
+   "city": "Sumaré/SP",
+   "source": "OLX",
+   "url": "https://www.olx.com.br/autos-e-pecas/carros-vans-e-utilitarios/byd/dolphin/mini-eletrico",
+   "date": "out/2026"
+  },
+  {
+   "title": "BYD Dolphin Mini 2024 branco",
+   "price": 98990,
+   "km": 41000,
+   "city": "Vitória/ES",
+   "source": "OLX",
+   "url": "https://www.olx.com.br/autos-e-pecas/carros-vans-e-utilitarios/byd/dolphin/mini-eletrico",
+   "date": "out/2026"
+  }
+ ],
+ "summary": {
+  "count": 6,
+  "min": 92900,
+  "median": 98945,
+  "max": 105900
+ },
+ "notes": "Faixa OLX citada: R$ 80.900 a R$ 104.790. A página exata do snippet pode ter sido a de 'dolphin/2024' (que mistura Dolphin e Mini); preços são compatíveis com o Mini. Anúncios perto da FIPE. URLs de listings: para Webmotors/OLX/Mobiauto os snippets só expõem a página de busca onde o anúncio apareceu (não o link individual); carregados.com.br, comprecar e litoralcar expõem o link do anúncio.",
+ "sources": [
+  {
+   "label": "OLX Dolphin Mini",
+   "url": "https://www.olx.com.br/autos-e-pecas/carros-vans-e-utilitarios/byd/dolphin/mini-eletrico"
+  },
+  {
+   "label": "FIPE Dolphin Mini GS 2024",
+   "url": "https://www.tabelafipebrasil.com/carros/BYD/DOLPHIN-MINI-GS-ELETRICO/2024-Eletrico"
+  }
+ ],
+ "useForPrice": true
+}

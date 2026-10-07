@@ -1,0 +1,83 @@
+{
+ "modelId": "byd-seal",
+ "modelYear": 2024,
+ "version": "AWD 82,5 kWh",
+ "fipe": {
+  "price": 205776,
+  "reference": "set/2026",
+  "source": "https://www.tabelafipebrasil.com/carros/BYD/SEAL-ELETRICO/2024-Eletrico"
+ },
+ "listings": [
+  {
+   "title": "BYD Seal 82,5 kW Elétrico AWD 2023/2024",
+   "price": 249900,
+   "km": 27000,
+   "city": "Itatiba/SP",
+   "source": "Webmotors",
+   "url": "https://www.webmotors.com.br/carros-usados/estoque/byd/seal",
+   "date": "out/2026"
+  },
+  {
+   "title": "BYD Seal 2024 AWD GS Elétrico preto",
+   "price": 199000,
+   "km": 43000,
+   "city": null,
+   "source": "Litoralcar",
+   "url": "https://www.litoralcar.com.br/comprar/carros/byd/seal/seal-awd-gs-eletrico/1433957",
+   "date": "out/2026"
+  },
+  {
+   "title": "BYD Seal Elétrico 2024",
+   "price": 208900,
+   "km": 49900,
+   "city": "Americana/SP",
+   "source": "OLX",
+   "url": "https://www.olx.com.br/autos-e-pecas/carros-vans-e-utilitarios/byd/seal/2024/estado-sp/all",
+   "date": "out/2026"
+  },
+  {
+   "title": "BYD Seal Elétrico 2024",
+   "price": 209990,
+   "km": 18622,
+   "city": "Jundiaí/SP",
+   "source": "OLX",
+   "url": "https://www.olx.com.br/autos-e-pecas/carros-vans-e-utilitarios/byd/seal/2024/estado-sp/all",
+   "date": "out/2026"
+  },
+  {
+   "title": "BYD Seal Elétrico 2024",
+   "price": 269900,
+   "km": 39000,
+   "city": "São Paulo/SP (Vila Leopoldina)",
+   "source": "OLX",
+   "url": "https://www.olx.com.br/autos-e-pecas/carros-vans-e-utilitarios/byd/seal/2024/estado-sp/all",
+   "date": "out/2026"
+  }
+ ],
+ "summary": {
+  "count": 5,
+  "min": 199000,
+  "median": 209990,
+  "max": 269900
+ },
+ "notes": "Ano-modelo 2024 inclui 2023/2024. Muito disperso: R$ 199–270 mil; o de R$ 269.900 destoa. Um anúncio '2024 0 km' a R$ 210.000 em Indaiatuba foi ignorado. Matéria do carro.blog.br cita unidades a R$ 175–185 mil em classificados e FIPE de R$ 205.580 (jul/2026). Litoralcar: ano exibido só como '2024'. URLs de listings: para Webmotors/OLX/Mobiauto os snippets só expõem a página de busca onde o anúncio apareceu (não o link individual); carregados.com.br, comprecar e litoralcar expõem o link do anúncio.",
+ "sources": [
+  {
+   "label": "Webmotors Seal",
+   "url": "https://www.webmotors.com.br/carros-usados/estoque/byd/seal"
+  },
+  {
+   "label": "OLX Seal 2024 SP",
+   "url": "https://www.olx.com.br/autos-e-pecas/carros-vans-e-utilitarios/byd/seal/2024/estado-sp/all"
+  },
+  {
+   "label": "FIPE Seal 2024",
+   "url": "https://www.tabelafipebrasil.com/carros/BYD/SEAL-ELETRICO/2024-Eletrico"
+  },
+  {
+   "label": "carro.blog.br",
+   "url": "https://carro.blog.br/usados/byd-seal-usado-cai-ate-r-120-mil-e-vira-destaque-entre-carros-eletricos-usados.html"
+  }
+ ],
+ "useForPrice": true
+}

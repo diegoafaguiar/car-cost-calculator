@@ -1,0 +1,137 @@
+{
+ "modelId": "byd-song-plus",
+ "modelYear": 2023,
+ "version": "1.5 DM-i",
+ "fipe": {
+  "price": 157526,
+  "reference": "set/2026",
+  "source": "https://www.tabelafipebrasil.com/carros/BYD/SONG-PLUS-15-16V-AUT-HIBRIDO/2025-Hibrido"
+ },
+ "listings": [
+  {
+   "title": "BYD Song Plus 1.5 DM-i Híbrido Automático 2023/2023",
+   "price": 159890,
+   "km": 89000,
+   "city": "Campinas/SP",
+   "source": "Webmotors",
+   "url": "https://www.webmotors.com.br/carros/sp-campinas/byd/song-plus",
+   "date": "out/2026"
+  },
+  {
+   "title": "BYD Song Plus 1.5 16V Aut. Híbrido 2023",
+   "price": 155990,
+   "km": 55000,
+   "city": "Americana/SP",
+   "source": "OLX",
+   "url": "https://www.olx.com.br/autos-e-pecas/carros-vans-e-utilitarios/byd/2023/estado-sp/grande-campinas/mombuca",
+   "date": "out/2026"
+  },
+  {
+   "title": "BYD Song Plus 2023 preto",
+   "price": 214900,
+   "km": 25000,
+   "city": "São Paulo/SP",
+   "source": "OLX",
+   "url": "https://www.olx.com.br/autos-e-pecas/carros-vans-e-utilitarios/byd/2023/estado-sp/grande-campinas/mombuca",
+   "date": "out/2026"
+  },
+  {
+   "title": "BYD Song Plus 2023",
+   "price": 140500,
+   "km": null,
+   "city": "São Paulo/SP (Vila Nova)",
+   "source": "OLX",
+   "url": "https://www.olx.com.br/autos-e-pecas/carros-vans-e-utilitarios/byd/2023/estado-sp/grande-campinas/mombuca",
+   "date": "out/2026"
+  },
+  {
+   "title": "BYD Song Plus 2023",
+   "price": 159900,
+   "km": null,
+   "city": "Bauru/SP",
+   "source": "OLX",
+   "url": "https://www.olx.com.br/autos-e-pecas/carros-vans-e-utilitarios/byd/2023/estado-sp/grande-campinas/mombuca",
+   "date": "out/2026"
+  },
+  {
+   "title": "BYD Song Plus 2023",
+   "price": 149900,
+   "km": 102900,
+   "city": "Campinas/SP",
+   "source": "OLX",
+   "url": "https://www.olx.com.br/autos-e-pecas/carros-vans-e-utilitarios/byd/2023/estado-sp/grande-campinas/mombuca",
+   "date": "out/2026"
+  },
+  {
+   "title": "BYD Song Plus 1.5 DM-i 2023",
+   "price": 154990,
+   "km": null,
+   "city": null,
+   "source": "OLX",
+   "url": "https://www.olx.com.br/autos-e-pecas/carros-vans-e-utilitarios/byd/song-plus/2023/estado-sp",
+   "date": "out/2026"
+  },
+  {
+   "title": "BYD Song Plus 1.5 DM-i 2023",
+   "price": 195000,
+   "km": 55000,
+   "city": null,
+   "source": "OLX",
+   "url": "https://www.olx.com.br/autos-e-pecas/carros-vans-e-utilitarios/byd/song-plus/2023/estado-sp",
+   "date": "out/2026"
+  },
+  {
+   "title": "BYD Song Plus 1.5 DM-i 2023",
+   "price": 159990,
+   "km": 54448,
+   "city": null,
+   "source": "OLX",
+   "url": "https://www.olx.com.br/autos-e-pecas/carros-vans-e-utilitarios/byd/song-plus/2023/estado-sp",
+   "date": "out/2026"
+  },
+  {
+   "title": "BYD Song Plus 1.5 DM-i 2023",
+   "price": 160990,
+   "km": 44391,
+   "city": null,
+   "source": "OLX",
+   "url": "https://www.olx.com.br/autos-e-pecas/carros-vans-e-utilitarios/byd/song-plus/2023/estado-sp",
+   "date": "out/2026"
+  },
+  {
+   "title": "BYD Song Plus 1.5 DM-i 2023",
+   "price": 159990,
+   "km": 48000,
+   "city": null,
+   "source": "OLX",
+   "url": "https://www.olx.com.br/autos-e-pecas/carros-vans-e-utilitarios/byd/song-plus/2023/estado-sp",
+   "date": "out/2026"
+  }
+ ],
+ "summary": {
+  "count": 11,
+  "min": 140500,
+  "median": 159900,
+  "max": 214900
+ },
+ "notes": "Anúncios OLX '2023' podem incluir unidades fab. 2023 com ano-modelo 2024 (o snippet não diz). Os de R$ 195–215 mil destoam (prováveis erros de cadastro ou ano-modelo 2024); sem eles a mediana fica em ~R$ 159,9 mil. km alto é comum (45–100 mil km). Um OLX Campinas R$ 159.990 sem km foi omitido por provável duplicata. URLs de listings: para Webmotors/OLX/Mobiauto os snippets só expõem a página de busca onde o anúncio apareceu (não o link individual); carregados.com.br, comprecar e litoralcar expõem o link do anúncio.",
+ "sources": [
+  {
+   "label": "Webmotors Song Plus Campinas",
+   "url": "https://www.webmotors.com.br/carros/sp-campinas/byd/song-plus"
+  },
+  {
+   "label": "OLX BYD 2023 (Grande Campinas)",
+   "url": "https://www.olx.com.br/autos-e-pecas/carros-vans-e-utilitarios/byd/2023/estado-sp/grande-campinas/mombuca"
+  },
+  {
+   "label": "OLX Song Plus 2023 SP",
+   "url": "https://www.olx.com.br/autos-e-pecas/carros-vans-e-utilitarios/byd/song-plus/2023/estado-sp"
+  },
+  {
+   "label": "FIPE Song Plus (tabelafipebrasil)",
+   "url": "https://www.tabelafipebrasil.com/carros/BYD/SONG-PLUS-15-16V-AUT-HIBRIDO/2025-Hibrido"
+  }
+ ],
+ "useForPrice": true
+}

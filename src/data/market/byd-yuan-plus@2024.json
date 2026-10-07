@@ -1,0 +1,97 @@
+{
+ "modelId": "byd-yuan-plus",
+ "modelYear": 2024,
+ "version": "EV 60,8 kWh",
+ "fipe": {
+  "price": 164268,
+  "reference": "jul/2026",
+  "source": "https://carzin.com.br/tabela-fipe/carros/byd/yuan/2024/plus-eletrico.html"
+ },
+ "listings": [
+  {
+   "title": "BYD Yuan Plus 60,8 kW Elétrico 2023/2024",
+   "price": 169990,
+   "km": 29038,
+   "city": "São Paulo/SP",
+   "source": "Webmotors",
+   "url": "https://www.webmotors.com.br/carros/sp/byd/yuan-plus",
+   "date": "out/2026"
+  },
+  {
+   "title": "BYD Yuan Plus 60,8 kW Elétrico 2023/2024",
+   "price": 159990,
+   "km": 35000,
+   "city": "São Paulo/SP",
+   "source": "Webmotors",
+   "url": "https://www.webmotors.com.br/carros/sp/byd/yuan-plus",
+   "date": "out/2026"
+  },
+  {
+   "title": "BYD Yuan Plus 60,8 kW Elétrico 2023/2024",
+   "price": 165990,
+   "km": 57000,
+   "city": "Americana/SP",
+   "source": "Webmotors",
+   "url": "https://www.webmotors.com.br/carros/sp/byd/yuan-plus",
+   "date": "out/2026"
+  },
+  {
+   "title": "BYD Yuan Plus 60,8 kW Elétrico 2023/2024",
+   "price": 165000,
+   "km": 49000,
+   "city": "São José do Rio Preto/SP",
+   "source": "Webmotors",
+   "url": "https://www.webmotors.com.br/carros/sp/byd/yuan-plus",
+   "date": "out/2026"
+  },
+  {
+   "title": "BYD Yuan Plus 60,8 kW Elétrico 2023/2024",
+   "price": 162000,
+   "km": 28500,
+   "city": "Brasília/DF",
+   "source": "Webmotors",
+   "url": "https://www.webmotors.com.br/carros/df/byd/yuan-plus",
+   "date": "out/2026"
+  },
+  {
+   "title": "BYD Yuan Plus 60,8 kW Elétrico 2023/2024",
+   "price": 150900,
+   "km": 76278,
+   "city": "Brasília/DF",
+   "source": "Webmotors",
+   "url": "https://www.webmotors.com.br/carros/df/byd/yuan-plus",
+   "date": "out/2026"
+  },
+  {
+   "title": "BYD Yuan Plus 60,8 kW 2023/2024",
+   "price": 179900,
+   "km": 50000,
+   "city": "Itu/SP",
+   "source": "Comprecar",
+   "url": "https://www.comprecar.com.br/carros-usados/itu/yuan-plus-608-kw-2415692",
+   "date": "out/2026"
+  }
+ ],
+ "summary": {
+  "count": 7,
+  "min": 150900,
+  "median": 165000,
+  "max": 179900
+ },
+ "notes": "Ano-modelo 2024 = anúncios 2023/2024. Os dois anúncios de Brasília foram atribuídos a 2023/2024 pelo resumo da busca (confiança média). FIPE 2024 também aparece como R$ 163.332 (ago/2026). Preços próximos da FIPE. URLs de listings: para Webmotors/OLX/Mobiauto os snippets só expõem a página de busca onde o anúncio apareceu (não o link individual); carregados.com.br, comprecar e litoralcar expõem o link do anúncio.",
+ "sources": [
+  {
+   "label": "Webmotors Yuan Plus SP",
+   "url": "https://www.webmotors.com.br/carros/sp/byd/yuan-plus"
+  },
+  {
+   "label": "Webmotors Yuan Plus DF",
+   "url": "https://www.webmotors.com.br/carros/df/byd/yuan-plus"
+  },
+  {
+   "label": "carzin FIPE 2024",
+   "url": "https://carzin.com.br/tabela-fipe/carros/byd/yuan/2024/plus-eletrico.html"
+  }
+ ],
+ "useForPrice": true
+}

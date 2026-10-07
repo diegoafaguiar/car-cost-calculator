@@ -1,0 +1,75 @@
+{
+ "modelId": "vw-tcross",
+ "modelYear": 2022,
+ "version": "Comfortline 1.0 200 TSI Aut.",
+ "fipe": {
+  "price": 102637,
+  "reference": "jul/2026",
+  "source": "https://seminovos.localiza.com/tabela-fipe/volkswagen/t-cross/2022/comfortline%25201.0%2520200%2520tsi%252012v%2520total%2520flex%2520automatico"
+ },
+ "listings": [
+  {
+   "title": "VW T-Cross 200 TSI Comfortline 2022/2022",
+   "price": 108900,
+   "km": 72000,
+   "city": "São Carlos/SP",
+   "source": "Webmotors",
+   "url": "https://www.webmotors.com.br/carros-usados/sp-sao-carlos/volkswagen/t-cross/de.2022/ate.2022",
+   "date": "out/2026"
+  },
+  {
+   "title": "VW T-Cross 200 TSI Comfortline 2022/2022",
+   "price": 105900,
+   "km": 60000,
+   "city": "São Carlos/SP",
+   "source": "Webmotors",
+   "url": "https://www.webmotors.com.br/carros-usados/sp-sao-carlos/volkswagen/t-cross/de.2022/ate.2022",
+   "date": "out/2026"
+  },
+  {
+   "title": "VW T-Cross 1.0 200 TSI Total Comfortline Automático 2022 prata",
+   "price": 102900,
+   "km": 42413,
+   "city": "São Paulo/SP",
+   "source": "CompreCar",
+   "url": "https://www.comprecar.com.br/carros-usados/sao-paulo/t-cross-10-200-tsi-total-comfortline-automatico-2341951",
+   "date": "out/2026"
+  },
+  {
+   "title": "VW T-Cross 1.0 200 TSI Comfortline Auto 2022",
+   "price": 98890,
+   "km": null,
+   "city": null,
+   "source": "Napista",
+   "url": "https://napista.com.br/busca/carros-volkswagen-t_cross-1.0-200-tsi-comfortline-auto-ate-180.000-reais-2022",
+   "date": "out/2026"
+  },
+  {
+   "title": "VW T-Cross 1.0 200 TSI Comfortline Auto 2022",
+   "price": 99990,
+   "km": null,
+   "city": null,
+   "source": "Napista",
+   "url": "https://napista.com.br/busca/carros-volkswagen-t_cross-1.0-200-tsi-comfortline-auto-ate-180.000-reais-2022",
+   "date": "out/2026"
+  }
+ ],
+ "summary": {
+  "count": 5,
+  "min": 98890,
+  "median": 102900,
+  "max": 108900
+ },
+ "notes": "Os dois anúncios do Napista tinham km entre 45.846 e 89.000 (não dá para saber qual km é de qual). Ficaram fora: Comfortline 2022/2023 com 56 mil km em Brasília a R$ 109.990 (ano-modelo 2023); Highline 2021/2022 com 47.799 km em Jundiaí a R$ 116.790; Highline 2022/2023 com 89 mil km em Osasco a R$ 119.700. A FIPE do T-Cross 200 TSI 2022 sem versão (tabelafipebrasil) era R$ 96.572 em jul/2026.",
+ "sources": [
+  {
+   "label": "Webmotors São Carlos",
+   "url": "https://www.webmotors.com.br/carros-usados/sp-sao-carlos/volkswagen/t-cross/de.2022/ate.2022"
+  },
+  {
+   "label": "Tabela FIPE Brasil T-Cross 200 TSI 2022",
+   "url": "https://www.tabelafipebrasil.com/carros/VW---VOLKSWAGEN/T-CROSS-200-TSI-10-FLEX-12V-5P-AUT/2022-Flex"
+  }
+ ],
+ "useForPrice": true
+}

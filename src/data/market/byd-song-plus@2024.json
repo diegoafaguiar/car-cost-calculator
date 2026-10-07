@@ -1,0 +1,88 @@
+{
+ "modelId": "byd-song-plus",
+ "modelYear": 2024,
+ "version": "1.5 DM-i",
+ "fipe": {
+  "price": 164189,
+  "reference": "set/2026",
+  "source": "https://www.tabelafipebrasil.com/carros/BYD/SONG-PLUS-15-16V-AUT-HIBRIDO/2024-Hibrido"
+ },
+ "listings": [
+  {
+   "title": "BYD Song Plus 1.5 DM-i Híbrido 2024/2024",
+   "price": 159990,
+   "km": 69000,
+   "city": "Campinas/SP",
+   "source": "Webmotors",
+   "url": "https://www.webmotors.com.br/carros/sp-campinas/byd/song-plus",
+   "date": "out/2026"
+  },
+  {
+   "title": "BYD Song Plus 1.5 DM-i 2023/2024",
+   "price": 215900,
+   "km": 58000,
+   "city": null,
+   "source": "Webmotors",
+   "url": "https://www.webmotors.com.br/carros-usados/estoque/byd/song-plus",
+   "date": "out/2026"
+  },
+  {
+   "title": "BYD Song Plus 1.5 DM-i 2023/2024",
+   "price": 175000,
+   "km": 54500,
+   "city": null,
+   "source": "Webmotors",
+   "url": "https://www.webmotors.com.br/carros-usados/estoque/byd/song-plus",
+   "date": "out/2026"
+  },
+  {
+   "title": "BYD Song Plus 1.5 DM-i 2023/2024",
+   "price": 165990,
+   "km": 73000,
+   "city": null,
+   "source": "Webmotors",
+   "url": "https://www.webmotors.com.br/carros-usados/estoque/byd/song-plus",
+   "date": "out/2026"
+  },
+  {
+   "title": "BYD Song Plus 1.5 DM-i 2023/2024",
+   "price": 229900,
+   "km": 18470,
+   "city": "São Paulo/SP",
+   "source": "Webmotors",
+   "url": "https://www.webmotors.com.br/carros-usados/estoque/byd/song-plus",
+   "date": "out/2026"
+  },
+  {
+   "title": "BYD Song Plus 1.5 DM-i 2023/2024",
+   "price": 225790,
+   "km": 41000,
+   "city": null,
+   "source": "Webmotors",
+   "url": "https://www.webmotors.com.br/carros-usados/estoque/byd/song-plus",
+   "date": "out/2026"
+  }
+ ],
+ "summary": {
+  "count": 6,
+  "min": 159990,
+  "median": 195450,
+  "max": 229900
+ },
+ "notes": "Ano-modelo 2024 = anúncios 2023/2024 e 2024/2024. Preços muito dispersos: três anúncios 2023/2024 a R$ 216–230 mil, bem acima da FIPE (R$ 164.189); podem ser Premium/erro de cadastro ou preço de lojista. Anúncios 2024/2025 entraram no arquivo @2025. Também visto: Sorocaba 2024 com 30 mil km a R$ 174.890 (fonte não identificada, não incluído). FIPE Song Plus Premium 2024: R$ 160.567 (set/2026). URLs de listings: para Webmotors/OLX/Mobiauto os snippets só expõem a página de busca onde o anúncio apareceu (não o link individual); carregados.com.br, comprecar e litoralcar expõem o link do anúncio.",
+ "sources": [
+  {
+   "label": "Webmotors Song Plus (Brasil)",
+   "url": "https://www.webmotors.com.br/carros-usados/estoque/byd/song-plus"
+  },
+  {
+   "label": "Webmotors Song Plus Campinas",
+   "url": "https://www.webmotors.com.br/carros/sp-campinas/byd/song-plus"
+  },
+  {
+   "label": "FIPE Song Plus 2024",
+   "url": "https://www.tabelafipebrasil.com/carros/BYD/SONG-PLUS-15-16V-AUT-HIBRIDO/2024-Hibrido"
+  }
+ ],
+ "useForPrice": true
+}

@@ -1,0 +1,66 @@
+{
+ "modelId": "honda-hrv",
+ "modelYear": 2024,
+ "version": "EXL 1.5 DI i-VTEC Flex CVT",
+ "fipe": {
+  "price": 137921,
+  "reference": "set/2026",
+  "source": "https://www.tabelafipebrasil.com/carros/HONDA/HR-V-EXL-15-FLEX-SENSING-16V-5P-AUT/2024-Flex"
+ },
+ "listings": [
+  {
+   "title": "Honda HR-V 1.5 EXL CVT 2024",
+   "price": 134900,
+   "km": 79900,
+   "city": "São José dos Campos/SP",
+   "source": "Napista",
+   "url": "https://napista.com.br/busca/sp/sao-jose-dos-campos/honda/hr_v-1.5-exl-cvt/2024",
+   "date": "out/2026"
+  },
+  {
+   "title": "Honda HR-V 1.5 EXL CVT 2024",
+   "price": 150990,
+   "km": 43818,
+   "city": "São José dos Campos/SP",
+   "source": "Napista",
+   "url": "https://napista.com.br/busca/sp/sao-jose-dos-campos/honda/hr_v-1.5-exl-cvt/2024",
+   "date": "out/2026"
+  },
+  {
+   "title": "Honda HR-V 1.5 DI i-VTEC EXL 2024",
+   "price": 139900,
+   "km": 74000,
+   "city": "Salto/SP",
+   "source": "CompreCar",
+   "url": "https://www.comprecar.com.br/carros-usados/salto/hr-v-15-di-i-vtec-exl-2414132",
+   "date": "out/2026"
+  },
+  {
+   "title": "Honda HR-V 1.5 DI i-VTEC Flex EXL CVT 2024/2024",
+   "price": 137600,
+   "km": 32707,
+   "city": "Curitiba/PR",
+   "source": "Webmotors",
+   "url": "https://www.webmotors.com.br/carros-usados/pr/honda/hr-v/15-di-i-vtec-flex-exl-cvt/de.2024",
+   "date": "out/2026"
+  }
+ ],
+ "summary": {
+  "count": 4,
+  "min": 134900,
+  "median": 138750,
+  "max": 150990
+ },
+ "notes": "Ficaram fora (ano-modelo 2025): 2024/2025 em Londrina com 40.686 km a R$ 153.900; 2024/2025 em São José dos Pinhais com 22.743 km a R$ 155.900. O Napista mostrava 18 ofertas do HR-V EXL 2024 em SP, de R$ 125.990 a R$ 155.990. Faixas de outras versões 2024 (resumo): EX R$ 136–150 mil; Advance R$ 139,7–160,9 mil; Touring R$ 155–165,9 mil. FIPE jul/2026: R$ 140.431.",
+ "sources": [
+  {
+   "label": "Webmotors HR-V EXL PR",
+   "url": "https://www.webmotors.com.br/carros-usados/pr/honda/hr-v/15-di-i-vtec-flex-exl-cvt/de.2024"
+  },
+  {
+   "label": "Tabela FIPE Brasil",
+   "url": "https://www.tabelafipebrasil.com/carros/HONDA/HR-V-EXL-15-FLEX-SENSING-16V-5P-AUT/2024-Flex"
+  }
+ ],
+ "useForPrice": true
+}

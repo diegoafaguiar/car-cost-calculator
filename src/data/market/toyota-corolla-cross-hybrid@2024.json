@@ -1,0 +1,106 @@
+{
+ "modelId": "toyota-corolla-cross-hybrid",
+ "modelYear": 2024,
+ "version": "XRX 1.8 VVT-i Hybrid Flex CVT",
+ "fipe": {
+  "price": 161244,
+  "reference": "set/2026",
+  "source": "https://www.tabelafipebrasil.com/carros/TOYOTA/COROLLA-CROSS-XRX-18-16V-AUT-HIBRIDO/2024-Hibrido"
+ },
+ "listings": [
+  {
+   "title": "Corolla Cross 1.8 VVT-i Hybrid Flex XRX CVT 2023/2024",
+   "price": 175900,
+   "km": 17444,
+   "city": "Novo Hamburgo/RS",
+   "source": "Webmotors",
+   "url": "https://www.webmotors.com.br/carros-usados/rs-novo-hamburgo/toyota/corolla-cross/precoate.300000",
+   "date": "out/2026"
+  },
+  {
+   "title": "Corolla Cross 1.8 VVT-i Hybrid Flex XRX CVT 2023/2024",
+   "price": 179900,
+   "km": 19000,
+   "city": "Recife/PE",
+   "source": "Webmotors",
+   "url": "https://www.webmotors.com.br/carros/pe-recife/toyota/corolla-cross/1.8-vvt-i-hybrid-flex-xrx-cvt",
+   "date": "out/2026"
+  },
+  {
+   "title": "Corolla Cross XRX 1.8 16V Aut. (Híbrido) 2023/2024",
+   "price": 167900,
+   "km": 24320,
+   "city": "Jundiaí/SP",
+   "source": "CompreCar",
+   "url": "https://www.comprecar.com.br/carros-usados/jundiai/corolla-cross-xrx-18-16v-aut-hibrido-2502490",
+   "date": "out/2026"
+  },
+  {
+   "title": "Corolla Cross 1.8 VVT-i Hybrid Flex XRX CVT 2023/2024 prata",
+   "price": 169900,
+   "km": 82000,
+   "city": "Sorocaba/SP",
+   "source": "CompreCar",
+   "url": "https://www.comprecar.com.br/carros-usados/sorocaba/corolla-cross-18-vvt-i-hybrid-flex-xrx-cvt-2487016",
+   "date": "out/2026"
+  },
+  {
+   "title": "Corolla Cross 1.8 VVT-i Hybrid Flex XRX CVT 2024/2024",
+   "price": 167990,
+   "km": 46418,
+   "city": "Campinas/SP",
+   "source": "Webmotors",
+   "url": "https://www.webmotors.com.br/carros/sp-campinas/toyota/corolla-cross/18-vvt-i-hybrid-flex-xrx-cvt",
+   "date": "out/2026"
+  },
+  {
+   "title": "Corolla Cross 1.8 VVT-i Hybrid Flex XRX CVT 2024/2024",
+   "price": 167000,
+   "km": 39000,
+   "city": "Belém/PA",
+   "source": "Webmotors",
+   "url": "https://www.webmotors.com.br/carros/pa/toyota/corolla-cross",
+   "date": "out/2026"
+  },
+  {
+   "title": "Toyota Corolla 2024 Cross XRX 1.8 16v Automático (híbrido)",
+   "price": 164900,
+   "km": 49797,
+   "city": "Ribeirão Preto/SP",
+   "source": "Mercado Livre",
+   "url": "https://lista.mercadolivre.com.br/toyota-corolla-hibrido",
+   "date": "out/2026"
+  },
+  {
+   "title": "Toyota Corolla 2024 Cross XRX 1.8 16v Automático (híbrido)",
+   "price": 165900,
+   "km": 64243,
+   "city": "Cotia/SP",
+   "source": "Mercado Livre",
+   "url": "https://lista.mercadolivre.com.br/toyota-corolla-hibrido",
+   "date": "out/2026"
+  }
+ ],
+ "summary": {
+  "count": 8,
+  "min": 164900,
+  "median": 167945,
+  "max": 179900
+ },
+ "notes": "Ano-modelo 2024 = anúncios 2023/2024 e 2024/2024. Ficaram fora os 2024/2025 (ano-modelo 2025): Recife 9 mil km R$ 187.900; Marabá 33 mil km R$ 189.900; RJ 19.800 km R$ 269.900 (provável erro ou outra versão). As URLs do CompreCar Sorocaba e de Campinas são as mais prováveis entre as que apareceram. FIPE zero km jul/2026: R$ 225.043.",
+ "sources": [
+  {
+   "label": "Webmotors Recife",
+   "url": "https://www.webmotors.com.br/carros/pe-recife/toyota/corolla-cross/1.8-vvt-i-hybrid-flex-xrx-cvt"
+  },
+  {
+   "label": "Mercado Livre",
+   "url": "https://lista.mercadolivre.com.br/toyota-corolla-hibrido"
+  },
+  {
+   "label": "Tabela FIPE Brasil 2024",
+   "url": "https://www.tabelafipebrasil.com/carros/TOYOTA/COROLLA-CROSS-XRX-18-16V-AUT-HIBRIDO/2024-Hibrido"
+  }
+ ],
+ "useForPrice": true
+}

@@ -1,0 +1,84 @@
+{
+ "modelId": "fiat-pulse",
+ "modelYear": 2022,
+ "version": "Drive 1.3 Flex CVT",
+ "fipe": {
+  "price": 84568,
+  "reference": "set/2026",
+  "source": "https://www.litoralcar.com.br/tabela-fipe/fiat/pulse"
+ },
+ "listings": [
+  {
+   "title": "Fiat Pulse 1.3 Flex Drive CVT 2022",
+   "price": 92900,
+   "km": 68897,
+   "city": "Bragança Paulista/SP",
+   "source": "Webmotors",
+   "url": "https://www.webmotors.com.br/carros-usados/sp-braganca-paulista/fiat/pulse/13-flex-drive-cvt/precoate.200000",
+   "date": "out/2026"
+  },
+  {
+   "title": "Fiat Pulse 1.3 Flex Drive CVT 2022",
+   "price": 82990,
+   "km": 76500,
+   "city": "Bragança Paulista/SP",
+   "source": "Webmotors",
+   "url": "https://www.webmotors.com.br/carros-usados/sp-braganca-paulista/fiat/pulse/13-flex-drive-cvt/precoate.200000",
+   "date": "out/2026"
+  },
+  {
+   "title": "Fiat Pulse 1.3 Drive CVT 2022",
+   "price": 89990,
+   "km": 74255,
+   "city": "Mogi das Cruzes/SP",
+   "source": "Napista",
+   "url": "https://napista.com.br/busca/pulse/fiat-pulse-1.3-drive-cvt/2022",
+   "date": "out/2026"
+  },
+  {
+   "title": "Fiat Pulse 1.3 Drive CVT 2022",
+   "price": 89900,
+   "km": 60000,
+   "city": "São Carlos/SP",
+   "source": "Napista",
+   "url": "https://napista.com.br/busca/pulse/fiat-pulse-1.3-drive-cvt/2022",
+   "date": "out/2026"
+  },
+  {
+   "title": "Fiat Pulse 1.3 Drive CVT 2022",
+   "price": 89900,
+   "km": 103897,
+   "city": "Mogi das Cruzes/SP",
+   "source": "Napista",
+   "url": "https://napista.com.br/busca/pulse/fiat-pulse-1.3-drive-cvt/2022",
+   "date": "out/2026"
+  },
+  {
+   "title": "Fiat Pulse 1.3 Drive CVT 2022",
+   "price": 85900,
+   "km": 68000,
+   "city": "Americana/SP",
+   "source": "Napista",
+   "url": "https://napista.com.br/busca/sp/fiat/pulse/fiat-pulse-1.3-drive-cvt/2022/ate-220000-reais",
+   "date": "out/2026"
+  }
+ ],
+ "summary": {
+  "count": 6,
+  "min": 82990,
+  "median": 89900,
+  "max": 92900
+ },
+ "notes": "Ficaram fora dois anúncios do Napista com km improvável (R$ 91.890 com 202.255 km em Florianópolis e R$ 89.990 com 240.735 km em Extrema/MG), que parecem erro de cadastro. No Rio, os anúncios do Drive 1.3 iam de R$ 75.900 a R$ 97.900 (o resumo não trazia o km de cada um). Referência de outras versões 2022 no Napista: Audace T200 cerca de R$ 81.299; Impetus T200 de R$ 97.900 a R$ 99.900. A FIPE do Drive 1.3 2022 (R$ 84.568, set/2026) veio de um resumo de busca agregado e não foi conferida na fonte primária.",
+ "sources": [
+  {
+   "label": "Napista Pulse 1.3 Drive CVT 2022",
+   "url": "https://napista.com.br/busca/pulse/fiat-pulse-1.3-drive-cvt/2022"
+  },
+  {
+   "label": "Webmotors Bragança Paulista",
+   "url": "https://www.webmotors.com.br/carros-usados/sp-braganca-paulista/fiat/pulse/13-flex-drive-cvt/precoate.200000"
+  }
+ ],
+ "useForPrice": true
+}

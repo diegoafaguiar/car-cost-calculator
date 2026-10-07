@@ -1,0 +1,88 @@
+{
+ "modelId": "byd-seal",
+ "modelYear": 2025,
+ "version": "AWD 82,5 kWh",
+ "fipe": {
+  "price": 219743,
+  "reference": "set/2026",
+  "source": "https://www.tabelafipebrasil.com/carros/BYD/SEAL-ELETRICO"
+ },
+ "listings": [
+  {
+   "title": "BYD Seal 82,5 kW Elétrico AWD 2024/2025",
+   "price": 214900,
+   "km": 51000,
+   "city": "Campinas/SP",
+   "source": "Webmotors",
+   "url": "https://www.webmotors.com.br/carros-usados/estoque/byd/seal",
+   "date": "out/2026"
+  },
+  {
+   "title": "BYD Seal Elétrico 2025 preto",
+   "price": 225900,
+   "km": 35000,
+   "city": "Rio de Janeiro/RJ (Barra da Tijuca)",
+   "source": "OLX",
+   "url": "https://www.olx.com.br/autos-e-pecas/carros-vans-e-utilitarios/byd/seal/2025",
+   "date": "out/2026"
+  },
+  {
+   "title": "BYD Seal Elétrico 2025 cinza",
+   "price": 229900,
+   "km": 24000,
+   "city": "Rio de Janeiro/RJ (Recreio)",
+   "source": "OLX",
+   "url": "https://www.olx.com.br/autos-e-pecas/carros-vans-e-utilitarios/byd/seal/2025",
+   "date": "out/2026"
+  },
+  {
+   "title": "BYD Seal Elétrico 2025 cinza",
+   "price": 212000,
+   "km": null,
+   "city": "Rio de Janeiro/RJ (Barra da Tijuca)",
+   "source": "OLX",
+   "url": "https://www.olx.com.br/autos-e-pecas/carros-vans-e-utilitarios/byd/seal/2025",
+   "date": "out/2026"
+  },
+  {
+   "title": "BYD Seal Elétrico 2025 preto",
+   "price": 212000,
+   "km": 9000,
+   "city": "Rio de Janeiro/RJ",
+   "source": "OLX",
+   "url": "https://www.olx.com.br/autos-e-pecas/carros-vans-e-utilitarios/byd/seal/2025",
+   "date": "out/2026"
+  },
+  {
+   "title": "BYD Seal Elétrico 2025 branco",
+   "price": 214990,
+   "km": 24000,
+   "city": "Niterói/RJ",
+   "source": "OLX",
+   "url": "https://www.olx.com.br/autos-e-pecas/carros-vans-e-utilitarios/byd/seal/2025",
+   "date": "out/2026"
+  }
+ ],
+ "summary": {
+  "count": 6,
+  "min": 212000,
+  "median": 214945,
+  "max": 229900
+ },
+ "notes": "Também vistos na Comprecar Sorocaba vários anúncios de Seal AWD 2024/2025 com 32 mil km a R$ 215.900–229.000 (provavelmente a mesma unidade repetida; não incluídos). OLX RJ citou faixa geral de R$ 135.000 a R$ 305.000 (inclui 0 km e possíveis erros). Anúncios bem próximos da FIPE. URLs de listings: para Webmotors/OLX/Mobiauto os snippets só expõem a página de busca onde o anúncio apareceu (não o link individual); carregados.com.br, comprecar e litoralcar expõem o link do anúncio.",
+ "sources": [
+  {
+   "label": "OLX Seal 2025",
+   "url": "https://www.olx.com.br/autos-e-pecas/carros-vans-e-utilitarios/byd/seal/2025"
+  },
+  {
+   "label": "Webmotors Seal",
+   "url": "https://www.webmotors.com.br/carros-usados/estoque/byd/seal"
+  },
+  {
+   "label": "FIPE Seal",
+   "url": "https://www.tabelafipebrasil.com/carros/BYD/SEAL-ELETRICO"
+  }
+ ],
+ "useForPrice": true
+}

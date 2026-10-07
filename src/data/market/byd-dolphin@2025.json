@@ -1,0 +1,97 @@
+{
+ "modelId": "byd-dolphin",
+ "modelYear": 2025,
+ "version": "GS 44,9 kWh",
+ "fipe": {
+  "price": 122596,
+  "reference": "ago/2026",
+  "source": "https://www.tabelafipebrasil.com/carros/BYD/DOLPHIN-EV-GS-ELETRICO/2025-Eletrico/desvalorizacao"
+ },
+ "listings": [
+  {
+   "title": "BYD Dolphin GS 2025",
+   "price": 133900,
+   "km": 1933,
+   "city": "São Bernardo do Campo/SP",
+   "source": "OLX",
+   "url": "https://www.olx.com.br/autos-e-pecas/carros-vans-e-utilitarios/byd/dolphin/eletrico/2025",
+   "date": "out/2026"
+  },
+  {
+   "title": "BYD Dolphin GS 2025",
+   "price": 110800,
+   "km": 45000,
+   "city": "Joinville/SC",
+   "source": "OLX",
+   "url": "https://www.olx.com.br/autos-e-pecas/carros-vans-e-utilitarios/byd/dolphin/eletrico/2025",
+   "date": "out/2026"
+  },
+  {
+   "title": "BYD Dolphin GS 2025",
+   "price": 112800,
+   "km": 29568,
+   "city": "Joinville/SC",
+   "source": "OLX",
+   "url": "https://www.olx.com.br/autos-e-pecas/carros-vans-e-utilitarios/byd/dolphin/eletrico/2025",
+   "date": "out/2026"
+  },
+  {
+   "title": "BYD Dolphin GS 2025",
+   "price": 129990,
+   "km": 27861,
+   "city": "São Paulo/SP",
+   "source": "OLX",
+   "url": "https://www.olx.com.br/autos-e-pecas/carros-vans-e-utilitarios/byd/dolphin/eletrico/2025",
+   "date": "out/2026"
+  },
+  {
+   "title": "BYD Dolphin GS 2025",
+   "price": 122890,
+   "km": 87000,
+   "city": "Belo Horizonte/MG",
+   "source": "OLX",
+   "url": "https://www.olx.com.br/autos-e-pecas/carros-vans-e-utilitarios/byd/dolphin/eletrico/2025",
+   "date": "out/2026"
+  },
+  {
+   "title": "BYD Dolphin GS 2025 preto",
+   "price": 105990,
+   "km": 12400,
+   "city": "Atibaia/SP",
+   "source": "Carregados",
+   "url": "https://carregados.com.br/carros/byd-dolphin-gs-2025-preto-12400km-21366",
+   "date": "out/2026"
+  },
+  {
+   "title": "BYD Dolphin GS 2025 cinza",
+   "price": 135000,
+   "km": 16500,
+   "city": "Recife/PE",
+   "source": "Carregados",
+   "url": "https://www.carregados.com.br/carros/byd-dolphin-gs-2025-cinza-16500-km-23180",
+   "date": "out/2026"
+  }
+ ],
+ "summary": {
+  "count": 7,
+  "min": 105990,
+  "median": 122890,
+  "max": 135000
+ },
+ "notes": "Fontes: OLX e Mobiauto (o snippet não separa qual anúncio é de qual; URL é a página OLX). O anúncio de Atibaia (R$ 105.990, 44 kWh/291 km) pode ser um Dolphin Mini GS mal cadastrado. Anúncios Webmotors 2025/2026 (R$ 139.890–143.900) excluídos (ano-modelo 2026). URLs de listings: para Webmotors/OLX/Mobiauto os snippets só expõem a página de busca onde o anúncio apareceu (não o link individual); carregados.com.br, comprecar e litoralcar expõem o link do anúncio.",
+ "sources": [
+  {
+   "label": "OLX Dolphin 2025",
+   "url": "https://www.olx.com.br/autos-e-pecas/carros-vans-e-utilitarios/byd/dolphin/eletrico/2025"
+  },
+  {
+   "label": "Mobiauto Dolphin 2025",
+   "url": "https://www.mobiauto.com.br/comprar/carros/brasil/byd/dolphin/ano-2025/preco-ate-200000"
+  },
+  {
+   "label": "FIPE Dolphin EV GS 2025",
+   "url": "https://www.tabelafipebrasil.com/carros/BYD/DOLPHIN-EV-GS-ELETRICO/2025-Eletrico/desvalorizacao"
+  }
+ ],
+ "useForPrice": true
+}

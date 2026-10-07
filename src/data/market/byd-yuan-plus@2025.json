@@ -1,0 +1,48 @@
+{
+ "modelId": "byd-yuan-plus",
+ "modelYear": 2025,
+ "version": "EV 60,8 kWh",
+ "fipe": {
+  "price": 174823,
+  "reference": "jul/2026",
+  "source": "https://carzin.com.br/tabela-fipe/carros/byd/yuan/2025/plus-eletrico.html"
+ },
+ "listings": [
+  {
+   "title": "BYD Yuan Plus 60,8 kW Elétrico 2024/2025",
+   "price": 179990,
+   "km": 29800,
+   "city": "São Paulo/SP",
+   "source": "Webmotors",
+   "url": "https://www.webmotors.com.br/carros/sp/byd/yuan-plus",
+   "date": "out/2026"
+  },
+  {
+   "title": "BYD Yuan Plus 2024/2025",
+   "price": 175000,
+   "km": 19800,
+   "city": "Barueri/SP",
+   "source": "Webmotors",
+   "url": "https://www.webmotors.com.br/carros/sp/byd/yuan-plus/60,8-kw-eletrico",
+   "date": "out/2026"
+  }
+ ],
+ "summary": {
+  "count": 2,
+  "min": 175000,
+  "median": 177495,
+  "max": 179990
+ },
+ "notes": "Só 2 anúncios de ano-modelo 2025. Um 2025/2026 com 3.593 km a R$ 198.990 foi excluído (ano-modelo 2026). URLs de listings: para Webmotors/OLX/Mobiauto os snippets só expõem a página de busca onde o anúncio apareceu (não o link individual); carregados.com.br, comprecar e litoralcar expõem o link do anúncio.",
+ "sources": [
+  {
+   "label": "Webmotors Yuan Plus SP",
+   "url": "https://www.webmotors.com.br/carros/sp/byd/yuan-plus"
+  },
+  {
+   "label": "carzin FIPE 2025",
+   "url": "https://carzin.com.br/tabela-fipe/carros/byd/yuan/2025/plus-eletrico.html"
+  }
+ ],
+ "useForPrice": true
+}

@@ -1,0 +1,102 @@
+{
+ "modelId": "hyundai-creta",
+ "modelYear": 2022,
+ "version": "Limited 1.0 TGDI Flex Aut.",
+ "fipe": {
+  "price": 107857,
+  "reference": "jun/2026",
+  "source": "https://www.fichacompleta.com.br/carros/comparativo/renegade-longitude-1-3-2022-vs-creta-limited-1-0-turbo-2022"
+ },
+ "listings": [
+  {
+   "title": "Hyundai Creta 1.0 TGDI Flex Limited Automático 2022/2022",
+   "price": 101430,
+   "km": 30622,
+   "city": "Belém/PA",
+   "source": "Webmotors",
+   "url": "https://www.webmotors.com.br/carros-usados/pa/hyundai/creta/10-tgdi-flex-limited-automatico/de.2022",
+   "date": "out/2026"
+  },
+  {
+   "title": "Hyundai Creta 1.0 TGDI Flex Limited Automático 2022",
+   "price": 104900,
+   "km": 98000,
+   "city": "Americana/SP",
+   "source": "CompreCar",
+   "url": "https://www.comprecar.com.br/carros-usados/americana/creta-10-tgdi-flex-limited-automatico-2489232",
+   "date": "out/2026"
+  },
+  {
+   "title": "Hyundai Creta 1.0 TGDI Limited 2021/2022",
+   "price": 121900,
+   "km": 41000,
+   "city": "Blumenau/SC",
+   "source": "Webmotors",
+   "url": "https://www.webmotors.com.br/carros-usados/sc-blumenau/hyundai/creta/10-tgdi-flex-limited-automatico/de.2022",
+   "date": "out/2026"
+  },
+  {
+   "title": "Hyundai Creta 1.0 TGDI Limited 2021/2022",
+   "price": 112900,
+   "km": 79000,
+   "city": "Blumenau/SC",
+   "source": "Webmotors",
+   "url": "https://www.webmotors.com.br/carros-usados/sc-blumenau/hyundai/creta/10-tgdi-flex-limited-automatico/de.2022",
+   "date": "out/2026"
+  },
+  {
+   "title": "Hyundai Creta 1.0 TGDI Limited 2021/2022",
+   "price": 109900,
+   "km": 89000,
+   "city": "Gravataí/RS",
+   "source": "Webmotors",
+   "url": "https://www.webmotors.com.br/carros-usados/rs-gravatai/hyundai/creta/10-tgdi-flex-limited-automatico/de.2022",
+   "date": "out/2026"
+  },
+  {
+   "title": "Hyundai Creta 1.0 TGDI Limited 2022/2022",
+   "price": 115890,
+   "km": 31128,
+   "city": "Curitiba/PR",
+   "source": "Webmotors",
+   "url": "https://www.webmotors.com.br/carros-usados/pr-curitiba/hyundai/creta/10-tgdi-flex-limited-automatico/de.2022",
+   "date": "out/2026"
+  },
+  {
+   "title": "Hyundai Creta 1.0 TGDI Limited 2022/2022",
+   "price": 110990,
+   "km": 74000,
+   "city": "Pelotas/RS",
+   "source": "Webmotors",
+   "url": "https://www.webmotors.com.br/carros/rs-pelotas/hyundai/creta/10-tgdi-flex-limited-automatico",
+   "date": "out/2026"
+  },
+  {
+   "title": "Hyundai Creta 1.0 TGDI Limited 2022/2022",
+   "price": 118900,
+   "km": 61000,
+   "city": "Pelotas/RS",
+   "source": "Webmotors",
+   "url": "https://www.webmotors.com.br/carros/rs-pelotas/hyundai/creta/10-tgdi-flex-limited-automatico",
+   "date": "out/2026"
+  }
+ ],
+ "summary": {
+  "count": 8,
+  "min": 101430,
+  "median": 111945,
+  "max": 121900
+ },
+ "notes": "Ficaram fora (ano-modelo 2023): 2022/2023 com 75.114 km em Rio Claro a R$ 128.990; 2022/2023 com 47.260 km em Jaboatão a R$ 109.990; 2022/2023 com 33 mil km em Belém a R$ 119.900. A URL do CompreCar de Americana pode ser a 2489232 ou a 2483544 (esse anúncio também apareceu no carrosp.com.br). A FIPE (R$ 107.857, jun/2026) veio de um comparativo do fichacompleta e não foi conferida na fonte primária. A FIPE do Creta Limited 2023 era R$ 112.453 em jul/2026. Atenção: anúncios da versão Limited (o catálogo usa Comfort); não usado no cálculo.",
+ "sources": [
+  {
+   "label": "Webmotors Creta Limited Blumenau",
+   "url": "https://www.webmotors.com.br/carros-usados/sc-blumenau/hyundai/creta/10-tgdi-flex-limited-automatico/de.2022"
+  },
+  {
+   "label": "Tabela FIPE Brasil Creta Limited 2023",
+   "url": "https://www.tabelafipebrasil.com/carros/HYUNDAI/CRETA-LIMITED-10-TB-12V-FLEX-AUT/2023-Flex"
+  }
+ ],
+ "useForPrice": false
+}

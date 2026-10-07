@@ -1,0 +1,84 @@
+{
+ "modelId": "byd-dolphin",
+ "modelYear": 2024,
+ "version": "GS 44,9 kWh",
+ "fipe": {
+  "price": 118020,
+  "reference": "ago/2026",
+  "source": "https://www.tabelafipebrasil.com/carros/BYD/DOLPHIN-EV-GS-ELETRICO/2024-Eletrico"
+ },
+ "listings": [
+  {
+   "title": "BYD Dolphin GS (Elétrico) 2024 amarelo",
+   "price": 129900,
+   "km": 60000,
+   "city": "São Leopoldo/RS",
+   "source": "OLX",
+   "url": "https://www.olx.com.br/autos-e-pecas/carros-vans-e-utilitarios/byd/dolphin/2024",
+   "date": "out/2026"
+  },
+  {
+   "title": "BYD Dolphin GS (Elétrico) 2024 amarelo",
+   "price": 128800,
+   "km": 35000,
+   "city": "Goiânia/GO",
+   "source": "OLX",
+   "url": "https://www.olx.com.br/autos-e-pecas/carros-vans-e-utilitarios/byd/dolphin/2024",
+   "date": "out/2026"
+  },
+  {
+   "title": "BYD Dolphin GS (Elétrico) 2024 cinza",
+   "price": 123800,
+   "km": 71180,
+   "city": "Curitiba/PR",
+   "source": "OLX",
+   "url": "https://www.olx.com.br/autos-e-pecas/carros-vans-e-utilitarios/byd/dolphin/2024",
+   "date": "out/2026"
+  },
+  {
+   "title": "BYD Dolphin GS (Elétrico) 2024 cinza",
+   "price": 124800,
+   "km": 65000,
+   "city": "Porto Alegre/RS",
+   "source": "OLX",
+   "url": "https://www.olx.com.br/autos-e-pecas/carros-vans-e-utilitarios/byd/dolphin/2024",
+   "date": "out/2026"
+  },
+  {
+   "title": "BYD Dolphin GS (Elétrico) 2024 cinza",
+   "price": 110990,
+   "km": 102427,
+   "city": "Guarulhos/SP",
+   "source": "OLX",
+   "url": "https://www.olx.com.br/autos-e-pecas/carros-vans-e-utilitarios/byd/dolphin/2024",
+   "date": "out/2026"
+  },
+  {
+   "title": "BYD Dolphin GS 2024 cinza",
+   "price": 139900,
+   "km": 30941,
+   "city": "Manaus/AM",
+   "source": "Carregados",
+   "url": "https://carregados.com.br/carros/byd-dolphin-gs-2024-cinza-30941km-21467",
+   "date": "out/2026"
+  }
+ ],
+ "summary": {
+  "count": 6,
+  "min": 110990,
+  "median": 126800,
+  "max": 139900
+ },
+ "notes": "Anúncios ~5–10% acima da FIPE, com km alto (35–100 mil). O anúncio de Manaus cita bateria 45 kWh e autonomia 405 km (dado inconsistente com o GS). URLs de listings: para Webmotors/OLX/Mobiauto os snippets só expõem a página de busca onde o anúncio apareceu (não o link individual); carregados.com.br, comprecar e litoralcar expõem o link do anúncio.",
+ "sources": [
+  {
+   "label": "OLX Dolphin 2024",
+   "url": "https://www.olx.com.br/autos-e-pecas/carros-vans-e-utilitarios/byd/dolphin/2024"
+  },
+  {
+   "label": "FIPE Dolphin EV GS 2024",
+   "url": "https://www.tabelafipebrasil.com/carros/BYD/DOLPHIN-EV-GS-ELETRICO/2024-Eletrico"
+  }
+ ],
+ "useForPrice": true
+}

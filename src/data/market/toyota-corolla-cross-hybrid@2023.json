@@ -1,0 +1,115 @@
+{
+ "modelId": "toyota-corolla-cross-hybrid",
+ "modelYear": 2023,
+ "version": "XRX 1.8 VVT-i Hybrid Flex CVT",
+ "fipe": {
+  "price": 147971,
+  "reference": "set/2026",
+  "source": "https://www.tabelafipebrasil.com/carros/TOYOTA/COROLLA-CROSS-XRX-18-16V-AUT-HIBRIDO/2023-Hibrido"
+ },
+ "listings": [
+  {
+   "title": "Corolla Cross 1.8 VVT-i Hybrid Flex XRX CVT 2022/2023",
+   "price": 155029,
+   "km": 57000,
+   "city": "Catalão/GO",
+   "source": "Webmotors",
+   "url": "https://www.webmotors.com.br/carros/go-catalao/toyota/corolla-cross/de.2022",
+   "date": "out/2026"
+  },
+  {
+   "title": "Corolla Cross 1.8 VVT-i Hybrid Flex XRX CVT 2022/2023",
+   "price": 144991,
+   "km": 46116,
+   "city": "Catalão/GO",
+   "source": "Webmotors",
+   "url": "https://www.webmotors.com.br/carros/go-catalao/toyota/corolla-cross/de.2022",
+   "date": "out/2026"
+  },
+  {
+   "title": "Corolla Cross 1.8 VVT-i Hybrid Flex XRX CVT 2022/2023",
+   "price": 149000,
+   "km": 59000,
+   "city": "Brasília/DF",
+   "source": "Webmotors",
+   "url": "https://www.webmotors.com.br/carros/df/toyota/corolla-cross/1.8-vvt-i-hybrid-flex-xrx-cvt/precoate.250000",
+   "date": "out/2026"
+  },
+  {
+   "title": "Corolla Cross 1.8 VVT-i Hybrid Flex XRX CVT 2022/2023",
+   "price": 149800,
+   "km": 33000,
+   "city": "Porto Alegre/RS",
+   "source": "Webmotors",
+   "url": "https://www.webmotors.com.br/carros/rs/toyota/corolla-cross/1.8-vvt-i-hybrid-flex-xrx-cvt/precoate.200000",
+   "date": "out/2026"
+  },
+  {
+   "title": "Corolla Cross 1.8 VVT-i Hybrid Flex XRX CVT 2022/2023",
+   "price": 159890,
+   "km": 43987,
+   "city": "São Paulo/SP",
+   "source": "Webmotors",
+   "url": "https://www.webmotors.com.br/carros/sp/toyota/corolla-cross/1.8-vvt-i-hybrid-flex-xrx-cvt/precoate.200000",
+   "date": "out/2026"
+  },
+  {
+   "title": "Corolla Cross 1.8 VVT-i Hybrid XRX 2022/2023 cinza",
+   "price": 147900,
+   "km": 58000,
+   "city": "Jundiaí/SP",
+   "source": "CompreCar",
+   "url": "https://www.comprecar.com.br/carros-usados/jundiai/corolla-cross-18-vvt-i-hybrid-xrx-2504138",
+   "date": "out/2026"
+  },
+  {
+   "title": "Corolla Cross 1.8 VVT-i Hybrid Flex XRX CVT 2023/2023",
+   "price": 153990,
+   "km": 78000,
+   "city": "São João de Meriti/RJ",
+   "source": "Webmotors",
+   "url": "https://www.webmotors.com.br/carros/rj-sao-joao-de-meriti/toyota/corolla-cross/de.2023/ate.2023",
+   "date": "out/2026"
+  },
+  {
+   "title": "Corolla Cross 1.8 VVT-i Hybrid Flex XRX CVT 2023/2023",
+   "price": 168900,
+   "km": 49900,
+   "city": "Santarém/PA",
+   "source": "Webmotors",
+   "url": "https://www.webmotors.com.br/carros/pa/toyota/corolla-cross",
+   "date": "out/2026"
+  },
+  {
+   "title": "Toyota Corolla 2023 Cross XRX 1.8 16v Aut. (híbrido)",
+   "price": 154900,
+   "km": 106085,
+   "city": "Bragança Paulista/SP",
+   "source": "Mercado Livre",
+   "url": "https://lista.mercadolivre.com.br/toyota-corolla-hibrido",
+   "date": "out/2026"
+  }
+ ],
+ "summary": {
+  "count": 9,
+  "min": 144991,
+  "median": 153990,
+  "max": 168900
+ },
+ "notes": "Ano-modelo 2023 = anúncios 2022/2023 e 2023/2023. Se o carro do usuário é fabricação 2022 com modelo 2023, use este arquivo e não o @2022. 'url' é a página de resultados onde o anúncio apareceu. Km alto: 78 mil km R$ 153.990; 106 mil km R$ 154.900. FIPE jul/2026 era R$ 152.856.",
+ "sources": [
+  {
+   "label": "Webmotors Catalão/GO",
+   "url": "https://www.webmotors.com.br/carros/go-catalao/toyota/corolla-cross/de.2022"
+  },
+  {
+   "label": "CompreCar Jundiaí",
+   "url": "https://www.comprecar.com.br/carros-usados/jundiai/corolla-cross-18-vvt-i-hybrid-xrx-2504138"
+  },
+  {
+   "label": "Tabela FIPE Brasil 2023",
+   "url": "https://www.tabelafipebrasil.com/carros/TOYOTA/COROLLA-CROSS-XRX-18-16V-AUT-HIBRIDO/2023-Hibrido"
+  }
+ ],
+ "useForPrice": true
+}

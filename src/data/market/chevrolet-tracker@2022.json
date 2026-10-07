@@ -1,0 +1,75 @@
+{
+ "modelId": "chevrolet-tracker",
+ "modelYear": 2022,
+ "version": "LT 1.0 Turbo Flex Aut.",
+ "fipe": {
+  "price": 91618,
+  "reference": "jul/2026",
+  "source": "https://www.tabelafipebrasil.com/carros/GM---CHEVROLET/TRACKER-LT-10-TURBO-12V-FLEX-AUT/2022-Flex"
+ },
+ "listings": [
+  {
+   "title": "Chevrolet Tracker 1.0 Turbo LT Auto 2022",
+   "price": 90900,
+   "km": 113000,
+   "city": "Osasco/SP",
+   "source": "Napista",
+   "url": "https://napista.com.br/busca/sp/osasco/chevrolet/tracker/chevrolet-tracker-1.0-turbo-lt-auto/2022",
+   "date": "out/2026"
+  },
+  {
+   "title": "Chevrolet Tracker 1.0 Turbo LT Auto 2022",
+   "price": 95700,
+   "km": 48000,
+   "city": "Osasco/SP",
+   "source": "Napista",
+   "url": "https://napista.com.br/busca/sp/osasco/chevrolet/tracker/chevrolet-tracker-1.0-turbo-lt-auto/2022",
+   "date": "out/2026"
+  },
+  {
+   "title": "Chevrolet Tracker LT 1.0 Turbo 2022",
+   "price": 87000,
+   "km": 87123,
+   "city": null,
+   "source": "Carzin",
+   "url": "https://carzin.com.br/comprar/carros/chevrolet/tracker/371987.html",
+   "date": "out/2026"
+  },
+  {
+   "title": "Chevrolet Tracker LT 2022",
+   "price": 92000,
+   "km": 56000,
+   "city": "Santos/SP",
+   "source": "Napista",
+   "url": "https://napista.com.br/busca/santos/chevrolet/lt/2022",
+   "date": "out/2026"
+  },
+  {
+   "title": "Chevrolet Tracker LT 2022",
+   "price": 82900,
+   "km": 60300,
+   "city": "Santos/SP",
+   "source": "Napista",
+   "url": "https://napista.com.br/busca/santos/chevrolet/lt/2022",
+   "date": "out/2026"
+  }
+ ],
+ "summary": {
+  "count": 5,
+  "min": 82900,
+  "median": 90900,
+  "max": 95700
+ },
+ "notes": "A URL do Carzin pode ser a 371987 ou a 370849 (as duas apareceram na busca). No Napista, os anúncios do Tracker LT 2022 iam de R$ 86.900 a R$ 104.900.",
+ "sources": [
+  {
+   "label": "Napista Tracker LT 2022",
+   "url": "https://napista.com.br/busca/chevrolet/tracker/lt/2022"
+  },
+  {
+   "label": "Tabela FIPE Brasil",
+   "url": "https://www.tabelafipebrasil.com/carros/GM---CHEVROLET/TRACKER-LT-10-TURBO-12V-FLEX-AUT/2022-Flex"
+  }
+ ],
+ "useForPrice": true
+}

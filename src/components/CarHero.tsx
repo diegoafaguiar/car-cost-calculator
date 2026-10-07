@@ -45,7 +45,16 @@ export function CarHero(p: Props) {
   const market = cm ? marketFor(cm.id, car.modelYear) : undefined
   const ordered = [...ranked].sort((a, b) => score(a, horizon) - score(b, horizon))
   const best = ordered[0]
-  const alternatives = ordered.filter((r) => r.scenario.kind !== 'keep').slice(0, 3)
+  // Uma linha por modelo (a melhor forma de tê-lo), para as alternativas não repetirem o mesmo carro.
+  const familyOf = (r: ScenarioResult) => {
+    const m = CATALOG.find((x) => x.id === r.scenario.modelId)
+    return r.scenario.kind === 'subscription' ? r.scenario.id : (m?.infoId ?? m?.id ?? r.scenario.id)
+  }
+  const seen = new Set<string>()
+  const alternatives = ordered
+    .filter((r) => r.scenario.kind !== 'keep')
+    .filter((r) => (seen.has(familyOf(r)) ? false : (seen.add(familyOf(r)), true)))
+    .slice(0, 3)
   const position = ordered.findIndex((r) => r.scenario.kind === 'keep') + 1
   const bestIsKeep = !best || best.scenario.kind === 'keep'
   const bestSaving = best ? best.horizons[horizon].savingsVsKeep : 0

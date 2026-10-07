@@ -1,0 +1,66 @@
+{
+ "modelId": "toyota-corolla-hybrid",
+ "modelYear": 2022,
+ "version": "Altis Hybrid 1.8 VVT-i Flex CVT",
+ "fipe": {
+  "price": 131907,
+  "reference": "jul/2026",
+  "source": "https://www.tabelafipebrasil.com/carros/TOYOTA/COROLLA-ALTIS-18-16V-AUT-HIBRIDO/2022-Hibrido"
+ },
+ "listings": [
+  {
+   "title": "Toyota Corolla 1.8 VVT-i Hybrid Flex Altis CVT 2021/2022",
+   "price": 138900,
+   "km": 52718,
+   "city": "São Bento do Sul/SC",
+   "source": "Webmotors",
+   "url": "https://www.webmotors.com.br/carros/sc/toyota/corolla/18-vvt-i-hybrid-flex-altis-cvt/de.2022",
+   "date": "out/2026"
+  },
+  {
+   "title": "Toyota Corolla 1.8 VVT-i Hybrid Flex Altis CVT 2021/2022",
+   "price": 139900,
+   "km": 60000,
+   "city": "Sapiranga/RS",
+   "source": "Webmotors",
+   "url": "https://www.webmotors.com.br/carros/rs/toyota/corolla/18-vvt-i-hybrid-flex-altis-cvt/de.2022",
+   "date": "out/2026"
+  },
+  {
+   "title": "Toyota Corolla 1.8 VVT-i Hybrid Flex Altis CVT 2021/2022",
+   "price": 129990,
+   "km": 85513,
+   "city": "Sorocaba/SP",
+   "source": "CompreCar",
+   "url": "https://www.comprecar.com.br/carros-usados/sorocaba/corolla-18-vvt-i-hybrid-flex-altis-cvt-2454628",
+   "date": "out/2026"
+  },
+  {
+   "title": "Toyota Corolla 1.8 VVT-i Hybrid Altis CVT 2021/2022",
+   "price": 134900,
+   "km": 91081,
+   "city": "São Paulo/SP",
+   "source": "CompreCar",
+   "url": "https://www.comprecar.com.br/carros-usados/sao-paulo/corolla-18-vvt-i-hybrid-altis-cvt-2341982",
+   "date": "out/2026"
+  }
+ ],
+ "summary": {
+  "count": 4,
+  "min": 129990,
+  "median": 136900,
+  "max": 139900
+ },
+ "notes": "A URL do CompreCar de Sorocaba pode ser a 2454628 ou a 2466139. Ficou fora o 2022/2023 com 86.400 km a R$ 139.800 (CompreCar). O Webmotors mostrava 90 anúncios 'a partir de 2022' em SP, 14 no PR, 6 em SC e 4 no RS. FIPE do Altis Premium Hybrid 2022: https://www.tabelafipebrasil.com/carros/TOYOTA/COROLLA-ALTIS-PREM-18-AUT-HIBRIDO/2022-Hibrido (valor não visto).",
+ "sources": [
+  {
+   "label": "Webmotors Corolla Altis Hybrid SP",
+   "url": "https://www.webmotors.com.br/carros/sp/toyota/corolla/18-vvt-i-hybrid-flex-altis-cvt/de.2022"
+  },
+  {
+   "label": "Tabela FIPE Brasil",
+   "url": "https://www.tabelafipebrasil.com/carros/TOYOTA/COROLLA-ALTIS-18-16V-AUT-HIBRIDO/2022-Hibrido"
+  }
+ ],
+ "useForPrice": true
+}

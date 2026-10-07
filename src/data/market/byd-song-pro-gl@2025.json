@@ -1,0 +1,92 @@
+{
+ "modelId": "byd-song-pro-gl",
+ "modelYear": 2025,
+ "version": "GL 1.5 DM-i",
+ "fipe": {
+  "price": 152843,
+  "reference": "ago/2026",
+  "source": "https://www.tabelafipebrasil.com/carros/BYD/SONG-PRO-GL-15-16V-AUT-HIBRIDO/2025-Hibrido"
+ },
+ "listings": [
+  {
+   "title": "BYD Song Pro 1.5 DM-i Híbrido GL 2024/2025",
+   "price": 149800,
+   "km": null,
+   "city": "SP",
+   "source": "Webmotors",
+   "url": "https://www.webmotors.com.br/carros-usados/sp/byd/song-pro/15-dm-i-hibrido-gl-automatico/de.2025",
+   "date": "out/2026"
+  },
+  {
+   "title": "BYD Song Pro 1.5 DM-i Híbrido GL 2024/2025",
+   "price": 151990,
+   "km": null,
+   "city": "SP",
+   "source": "Webmotors",
+   "url": "https://www.webmotors.com.br/carros-usados/sp/byd/song-pro/15-dm-i-hibrido-gl-automatico/de.2025",
+   "date": "out/2026"
+  },
+  {
+   "title": "BYD Song Pro GL 1.5 Híbrido 2025 (preço reduzido)",
+   "price": 148990,
+   "km": null,
+   "city": "SP",
+   "source": "OLX",
+   "url": "https://www.olx.com.br/autos-e-pecas/carros-vans-e-utilitarios/byd/song-pro/2025/estado-sp",
+   "date": "out/2026"
+  },
+  {
+   "title": "BYD Song Pro GL 1.5 Híbrido 2025",
+   "price": 155990,
+   "km": 50000,
+   "city": "SP",
+   "source": "OLX",
+   "url": "https://www.olx.com.br/autos-e-pecas/carros-vans-e-utilitarios/byd/song-pro/2025/estado-sp",
+   "date": "out/2026"
+  },
+  {
+   "title": "BYD Song Pro GL 1.5 16V Híbrido 2025 (preço reduzido)",
+   "price": 149900,
+   "km": null,
+   "city": "SC",
+   "source": "OLX",
+   "url": "https://www.olx.com.br/autos-e-pecas/carros-vans-e-utilitarios/byd/song-pro/2025/estado-sc",
+   "date": "out/2026"
+  },
+  {
+   "title": "BYD Song Pro GL 1.5 16V Híbrido 2025",
+   "price": 157900,
+   "km": null,
+   "city": "SC",
+   "source": "OLX",
+   "url": "https://www.olx.com.br/autos-e-pecas/carros-vans-e-utilitarios/byd/song-pro/2025/estado-sc",
+   "date": "out/2026"
+  }
+ ],
+ "summary": {
+  "count": 6,
+  "min": 148990,
+  "median": 150945,
+  "max": 157900
+ },
+ "notes": "Poucos detalhes (km/cidade) nos snippets. FIPE GL 2025: R$ 152.843 (ago/2026); R$ 153.257 (jul/2026). Também visto um Song Pro GL 2024/2025 com 11 mil km a R$ 162.900 na Webmotors, sem página de origem clara (não incluído). Anúncios na faixa da FIPE. URLs de listings: para Webmotors/OLX/Mobiauto os snippets só expõem a página de busca onde o anúncio apareceu (não o link individual); carregados.com.br, comprecar e litoralcar expõem o link do anúncio.",
+ "sources": [
+  {
+   "label": "Webmotors Song Pro GL SP",
+   "url": "https://www.webmotors.com.br/carros-usados/sp/byd/song-pro/15-dm-i-hibrido-gl-automatico/de.2025"
+  },
+  {
+   "label": "OLX Song Pro 2025 SP",
+   "url": "https://www.olx.com.br/autos-e-pecas/carros-vans-e-utilitarios/byd/song-pro/2025/estado-sp"
+  },
+  {
+   "label": "OLX Song Pro 2025 SC",
+   "url": "https://www.olx.com.br/autos-e-pecas/carros-vans-e-utilitarios/byd/song-pro/2025/estado-sc"
+  },
+  {
+   "label": "FIPE Song Pro GL 2025",
+   "url": "https://www.tabelafipebrasil.com/carros/BYD/SONG-PRO-GL-15-16V-AUT-HIBRIDO/2025-Hibrido"
+  }
+ ],
+ "useForPrice": true
+}

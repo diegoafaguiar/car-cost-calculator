@@ -1,0 +1,57 @@
+{
+ "modelId": "vw-nivus",
+ "modelYear": 2022,
+ "version": "Highline 1.0 200 TSI Aut.",
+ "fipe": {
+  "price": 107073,
+  "reference": "jul/2026",
+  "source": "https://www.tabelafipebrasil.com/carros/VW---VOLKSWAGEN/NIVUS-HIGHLINE-10-200-TSI-FLEX-AUT/2022-Flex"
+ },
+ "listings": [
+  {
+   "title": "VW Nivus 1.0 200 TSI Highline 2022/2022",
+   "price": 109900,
+   "km": 52000,
+   "city": "Itu/SP",
+   "source": "CompreCar",
+   "url": "https://www.comprecar.com.br/carros-usados/itu/nivus-10-200-tsi-highline-2427343",
+   "date": "out/2026"
+  },
+  {
+   "title": "VW Nivus 1.0 200 TSI Highline 2022/2022",
+   "price": 109900,
+   "km": 42000,
+   "city": "Boituva/SP",
+   "source": "CompreCar",
+   "url": "https://www.comprecar.com.br/carros-usados/boituva/nivus-10-200-tsi-highline-2443688",
+   "date": "out/2026"
+  },
+  {
+   "title": "VW Nivus 200 TSI Highline 2022/2022",
+   "price": 105000,
+   "km": 60000,
+   "city": "Paulínia/SP",
+   "source": "Webmotors",
+   "url": "https://www.webmotors.com.br/carros/estoque/volkswagen/nivus",
+   "date": "out/2026"
+  }
+ ],
+ "summary": {
+  "count": 3,
+  "min": 105000,
+  "median": 109900,
+  "max": 109900
+ },
+ "notes": "Versão Comfortline 2022/2022, fora da amostra: 48 mil km em Novo Hamburgo/RS a R$ 101.800 (https://www.webmotors.com.br/carros-usados/rs-novo-hamburgo/volkswagen/nivus/de.2022/ate.2022); 44.300 km em São Paulo a R$ 97.500. A URL do anúncio de Paulínia é aproximada (página geral de estoque do Webmotors). Atenção: anúncios da versão Highline (o catálogo usa Comfortline); não usado no cálculo.",
+ "sources": [
+  {
+   "label": "CompreCar Itu",
+   "url": "https://www.comprecar.com.br/carros-usados/itu/nivus-10-200-tsi-highline-2427343"
+  },
+  {
+   "label": "Tabela FIPE Brasil",
+   "url": "https://www.tabelafipebrasil.com/carros/VW---VOLKSWAGEN/NIVUS-HIGHLINE-10-200-TSI-FLEX-AUT/2022-Flex"
+  }
+ ],
+ "useForPrice": false
+}
