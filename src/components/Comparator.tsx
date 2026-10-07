@@ -5,7 +5,9 @@ import { MODEL_INFO, type ModelInfo } from '../lib/modelInfo'
 import { COST_KEYS, COST_LABEL, energyCostPerKm } from '../lib/tco'
 import type { Assumptions, Horizon, ScenarioResult } from '../lib/types'
 import { HORIZONS } from '../lib/types'
+import { average, comfortScore, featuresFor, relativeScore, safetyScore, techScore, type Score } from '../lib/scores'
 import { CostTooltip } from './CostTooltip'
+import { ScoreBadge } from './ScoreBadge'
 import { Card, Segmented } from './ui'
 import { WikiImage } from './WikiImage'
 
@@ -23,6 +25,7 @@ interface Props {
   onOpen: (id: string) => void
   /** Modelo do catálogo equivalente ao seu carro (para foto e ficha). */
   carModelId?: string
+  carModelYear?: number
 }
 
 const infoFor = (r: ScenarioResult, carModelId?: string): ModelInfo | undefined => {
@@ -31,7 +34,7 @@ const infoFor = (r: ScenarioResult, carModelId?: string): ModelInfo | undefined 
 }
 
 /** Comparação lado a lado: seu carro + até N opções, com custos, composição e ficha. */
-export function Comparator({ keep, results, ranked, compare, colors, max, onToggle, horizon, onHorizon, assumptions: a, onOpen, carModelId }: Props) {
+export function Comparator({ keep, results, ranked, compare, colors, max, onToggle, horizon, onHorizon, assumptions: a, onOpen, carModelId, carModelYear }: Props) {
   const infoOf = (r: ScenarioResult) => infoFor(r, carModelId)
   const [query, setQuery] = useState('')
   const columns = [keep, ...compare.map((id) => results.find((r) => r.scenario.id === id))].filter(Boolean) as ScenarioResult[]
@@ -49,13 +52,51 @@ export function Comparator({ keep, results, ranked, compare, colors, max, onTogg
   const h = (r: ScenarioResult) => r.horizons[horizon]
   const shortName = (r: ScenarioResult) =>
     r.scenario.kind === 'keep' ? 'Seu carro' : `${r.scenario.label} ${r.scenario.ageAtStart === 0 ? '0 km' : r.scenario.detail.match(/\b(20\d\d)\b/)?.[1] ?? ''}`.trim()
+  const modelOf = (r: ScenarioResult) => (r.scenario.kind === 'keep' ? carModelId : r.scenario.modelId)
+  const featOf = (r: ScenarioResult) => featuresFor(modelOf(r), r.scenario.kind === 'keep' ? carModelYear : undefined)
+  const energyOf = (r: ScenarioResult) => energyCostPerKm(r.scenario.powertrain, r.scenario.consumption, a, r.scenario.evShare)
+  const bestMonthly = Math.min(...columns.map((c) => c.horizons[horizon].monthly))
+  const bestEnergy = Math.min(...columns.map(energyOf).filter((v) => v > 0))
+  const scoresOf = (r: ScenarioResult) => {
+    const f = featOf(r)
+    const cost: Score = { value: relativeScore(r.horizons[horizon].monthly, bestMonthly), items: [], note: `Relativa às opções comparadas: a de menor custo por mês recebe 10 (${money(r.horizons[horizon].monthly)}/mês).` }
+    const eff: Score = { value: relativeScore(energyOf(r), bestEnergy), items: [], note: `Relativa às opções comparadas: o menor custo de energia por km recebe 10 (${money2(energyOf(r))}/km).` }
+    const tech = techScore(f)
+    const comfort = comfortScore(f, modelOf(r))
+    const safety = safetyScore(f)
+    const overall: Score = {
+      value: average([cost.value, eff.value, tech.value, comfort.value, safety.value]),
+      items: [],
+      note: 'Média simples das notas disponíveis (custo, eficiência, tecnologia, conforto e segurança).',
+    }
+    return { cost, eff, tech, comfort, safety, overall }
+  }
+  const allScores = columns.map(scoresOf)
+  const scoreRow = (label: string, key: keyof ReturnType<typeof scoresOf>) => {
+    const vals = allScores.map((s) => s[key].value)
+    const valid = vals.filter((v): v is number => v !== null)
+    const top = valid.length > 1 ? Math.max(...valid) : null
+    return (
+      <Row key={label} label={label}>
+        {allScores.map((s, i) => (
+          <td key={i} className="px-3 py-2 text-right">
+            <ScoreBadge score={s[key]} title={label} highlight={s[key].value !== null && s[key].value === top} />
+            {s[key].value !== null && s[key].value === top && <span className="ml-1 sm:hidden" aria-label="vencedor">🏆</span>}
+          </td>
+        ))}
+        <Winner name={winnerName(vals, 'high')} />
+      </Row>
+    )
+  }
   /** Nome da opção vencedora numa linha (ou "empate"); null quando não se aplica. */
   const winnerName = (vals: (number | null)[], better: 'low' | 'high' | 'none') => {
     if (better === 'none') return null
     const valid = vals.map((v, i) => [v, i] as const).filter((x): x is readonly [number, number] => x[0] !== null)
     if (valid.length < 2) return null
     const target = better === 'low' ? Math.min(...valid.map((x) => x[0])) : Math.max(...valid.map((x) => x[0]))
-    const winners = valid.filter((x) => Math.abs(x[0] - target) < 0.5)
+    // Empate só quando os valores são praticamente iguais (tolerância proporcional: serve para R$, km e notas).
+    const eps = Math.max(1e-6, Math.abs(target) * 1e-4)
+    const winners = valid.filter((x) => Math.abs(x[0] - target) <= eps)
     if (winners.length > 1) return 'empate'
     const r = columns[winners[0][1]]
     return { name: shortName(r), color: r.scenario.kind === 'keep' ? 'var(--ink-2)' : colors[r.scenario.id] }
@@ -198,6 +239,14 @@ export function Comparator({ keep, results, ranked, compare, colors, max, onTogg
               </tr>
             </thead>
             <tbody>
+              <Group label="Notas de 0 a 10 · toque para ver os critérios" span={columns.length} />
+              {scoreRow('Custo', 'cost')}
+              {scoreRow('Eficiência', 'eff')}
+              {scoreRow('Tecnologia', 'tech')}
+              {scoreRow('Conforto', 'comfort')}
+              {scoreRow('Segurança', 'safety')}
+              {scoreRow('Nota geral', 'overall')}
+
               <Group label={`Custo em ${horizon} ${horizon === 1 ? 'ano' : 'anos'}`} span={columns.length} />
               <Row label="Custo por mês">
                 {columns.map((r) => {
@@ -249,14 +298,16 @@ export function Comparator({ keep, results, ranked, compare, colors, max, onTogg
               {textRow('Motor', (r) => infoOf(r)?.specs.engine)}
               {textRow('Potência (cv)', (r) => infoOf(r)?.specs.powerCv)}
               {numRow('Porta-malas (L)', (r) => infoOf(r)?.specs.trunkL ?? null, (v) => number(v), 'high')}
-              {textRow('Segurança', (r) => infoOf(r)?.specs.safety)}
+              {textRow('Teste de colisão', (r) => infoOf(r)?.specs.safety)}
               {textRow('Garantia', (r) => infoOf(r)?.specs.warranty)}
             </tbody>
           </table>
         </div>
       )}
       <p className="mt-2 text-xs text-muted">
-        Dados técnicos das fichas pesquisadas; “—” quando não há ficha ou o dado não foi confirmado.
+        Tecnologia, conforto e segurança vêm de checklists de equipamentos pesquisados por versão (linha atual; seminovos
+        podem ter equipamentos diferentes) e do Latin NCAP. Custo e eficiência são relativos às opções na tela. “—” ou “sem
+        nota” quando o dado não foi confirmado.
       </p>
     </Card>
   )

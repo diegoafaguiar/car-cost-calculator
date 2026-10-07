@@ -1,0 +1,70 @@
+{
+  "id": "fiat-strada",
+  "version": "Fiat Strada Volcano CD 1.3 CVT 2026",
+  "researchedAt": "2026-10",
+  "tech": {
+    "screen10": false,
+    "wirelessMirroring": true,
+    "digitalCluster": false,
+    "wirelessCharger": true,
+    "camera360": null,
+    "adaptiveCruise": null,
+    "connectedApp": null,
+    "keyless": null
+  },
+  "comfort": {
+    "automatic": true,
+    "digitalAC": true,
+    "rearVents": null,
+    "leather": true,
+    "powerSeat": null,
+    "seatClimate": null,
+    "sunroof": null
+  },
+  "safety": {
+    "airbags6": true,
+    "aeb": null,
+    "laneKeep": null,
+    "blindSpot": null,
+    "rearCrossTraffic": null
+  },
+  "ncap": {
+    "stars": 1,
+    "year": 2022,
+    "program": "Latin NCAP",
+    "note": "1 estrela no protocolo atual (out/2022), cabine simples e dupla; teste com 2 airbags frontais e sem ADAS.",
+    "source": "https://autopapo.com.br/noticia/latin-ncap-fiat-strada/"
+  },
+  "sources": [
+    {
+      "label": "Carro.blog.br - Strada Volcano CD AT 2026",
+      "url": "https://carro.blog.br/fiat-strada-volcano-1-3-cd-at-2026-preco-ficha-tecnica-consumo-equipamentos-e-fotos-picape-automatica-une-conforto-urbano-e-cacamba-para-o-trabalho-leve.html"
+    },
+    {
+      "label": "Portal N10 - avaliação Strada Volcano 2026",
+      "url": "https://portaln10.com.br/fipecarros/avaliacao-fiat-strada-volcano-2026-automatica-ainda-vale-a-pena/"
+    },
+    {
+      "label": "Garagem360 - Strada Latin NCAP",
+      "url": "https://garagem360.com.br/?p=184470"
+    },
+    {
+      "label": "AutoPapo - Strada Latin NCAP",
+      "url": "https://autopapo.com.br/noticia/latin-ncap-fiat-strada/"
+    }
+  ],
+  "unverified": [
+    "tech.camera360",
+    "tech.adaptiveCruise",
+    "tech.connectedApp",
+    "tech.keyless",
+    "comfort.rearVents",
+    "comfort.powerSeat",
+    "comfort.seatClimate",
+    "comfort.sunroof",
+    "safety.aeb",
+    "safety.laneKeep",
+    "safety.blindSpot",
+    "safety.rearCrossTraffic"
+  ]
+}

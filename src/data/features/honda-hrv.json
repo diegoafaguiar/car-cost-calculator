@@ -1,0 +1,68 @@
+{
+  "id": "honda-hrv",
+  "version": "Honda HR-V EXL 1.5 CVT 2026",
+  "researchedAt": "2026-10",
+  "tech": {
+    "screen10": false,
+    "wirelessMirroring": true,
+    "digitalCluster": null,
+    "wirelessCharger": true,
+    "camera360": null,
+    "adaptiveCruise": true,
+    "connectedApp": null,
+    "keyless": true
+  },
+  "comfort": {
+    "automatic": true,
+    "digitalAC": true,
+    "rearVents": null,
+    "leather": true,
+    "powerSeat": null,
+    "seatClimate": null,
+    "sunroof": null
+  },
+  "safety": {
+    "airbags6": null,
+    "aeb": true,
+    "laneKeep": true,
+    "blindSpot": true,
+    "rearCrossTraffic": null
+  },
+  "ncap": {
+    "stars": null,
+    "year": null,
+    "program": "Latin NCAP",
+    "note": "Os 5 estrelas de 2015 são da geração anterior; a geração atual não foi encontrada em teste Latin NCAP.",
+    "source": "https://www.vrum.com.br/noticias/honda-hr-v-leva-nota-maxima-no-crash-test-city-e-fit-ganham-5-estrelas-e-ford-ka-quatro"
+  },
+  "sources": [
+    {
+      "label": "Garagem360 - HR-V EXL 2026",
+      "url": "https://garagem360.com.br/?p=287561"
+    },
+    {
+      "label": "Carro.blog.br - HR-V EXL 2026",
+      "url": "https://carro.blog.br/honda-hr-v-exl-1-5-2026-ficha-tecnica-preco-e-fotos-suv-une-conforto-tecnologia-e-economia-em-suv-nacional-completo-para-o-dia-a-dia-e-viagens.html"
+    },
+    {
+      "label": "AutoPapo - HR-V 2026",
+      "url": "https://autopapo.com.br/noticia/honda-hrv-2026/"
+    },
+    {
+      "label": "Garagem360 - ficha HR-V 2026",
+      "url": "https://garagem360.com.br/?p=294714"
+    }
+  ],
+  "notes": "R$ 170.900. Multimídia 9\" sem fio; quadro TFT 7\" (100% digital 10,2\" só no Touring, por isso digitalCluster=null). Honda Sensing com ACC, CMBS (AEB) e LKAS; alerta de ponto cego citado na lista. Couro, ar digital duas zonas, indução, partida por botão. Número de airbags não confirmado.",
+  "unverified": [
+    "tech.digitalCluster",
+    "tech.camera360",
+    "tech.connectedApp",
+    "comfort.rearVents",
+    "comfort.powerSeat",
+    "comfort.seatClimate",
+    "comfort.sunroof",
+    "safety.airbags6",
+    "safety.rearCrossTraffic"
+  ]
+}

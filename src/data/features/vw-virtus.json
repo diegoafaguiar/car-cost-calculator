@@ -1,0 +1,76 @@
+{
+  "id": "vw-virtus",
+  "version": "Volkswagen Virtus TSI AT (170 TSI) 2026",
+  "researchedAt": "2026-10",
+  "tech": {
+    "screen10": true,
+    "wirelessMirroring": null,
+    "digitalCluster": true,
+    "wirelessCharger": null,
+    "camera360": null,
+    "adaptiveCruise": true,
+    "connectedApp": null,
+    "keyless": null
+  },
+  "comfort": {
+    "automatic": true,
+    "digitalAC": null,
+    "rearVents": null,
+    "leather": null,
+    "powerSeat": null,
+    "seatClimate": null,
+    "sunroof": null
+  },
+  "safety": {
+    "airbags6": true,
+    "aeb": true,
+    "laneKeep": null,
+    "blindSpot": null,
+    "rearCrossTraffic": null
+  },
+  "ncap": {
+    "stars": 5,
+    "year": 2018,
+    "program": "Latin NCAP",
+    "note": "5 estrelas adulto e criança no protocolo antigo do Latin NCAP (jan/2018).",
+    "source": "https://www.latinncap.com/en/media-area/new/85a661af31a2bf/five-stars-for-volkswagena€™s-virtus-while-gma€™s-onix-improves-to-three-stars"
+  },
+  "sources": [
+    {
+      "label": "Motor Agora - Virtus 2026",
+      "url": "https://www.motoragora.com.br/?p=186068"
+    },
+    {
+      "label": "Autoo - Polo e Virtus linha 2026",
+      "url": "https://www.autoo.com.br/volkswagen-atualiza-polo-e-virtus-na-linha-2026-saiba-o-que-muda/"
+    },
+    {
+      "label": "JK Carros - Virtus 1.0 TSI AT 2026",
+      "url": "https://jkcarros.com.br/?p=8617"
+    },
+    {
+      "label": "Acelera Tudo - Virtus 2026",
+      "url": "https://aceleratudo.com.br/blog/volkswagen-virtus-2026-preco-versoes-ficha-tecnica"
+    },
+    {
+      "label": "Global NCAP - Virtus 5 estrelas",
+      "url": "https://www.globalncap.org/news/five-stars-for-volkswagens-virtus-while-gms-onix-improves-to-three-stars"
+    }
+  ],
+  "unverified": [
+    "tech.wirelessMirroring",
+    "tech.wirelessCharger",
+    "tech.camera360",
+    "tech.connectedApp",
+    "tech.keyless",
+    "comfort.digitalAC",
+    "comfort.rearVents",
+    "comfort.leather",
+    "comfort.powerSeat",
+    "comfort.seatClimate",
+    "comfort.sunroof",
+    "safety.laneKeep",
+    "safety.blindSpot",
+    "safety.rearCrossTraffic"
+  ]
+}

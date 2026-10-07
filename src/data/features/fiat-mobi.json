@@ -1,0 +1,73 @@
+{
+  "id": "fiat-mobi",
+  "version": "Fiat Mobi Like 1.0 (linha 2026)",
+  "researchedAt": "2026-10",
+  "tech": {
+    "screen10": false,
+    "wirelessMirroring": false,
+    "digitalCluster": null,
+    "wirelessCharger": null,
+    "camera360": null,
+    "adaptiveCruise": null,
+    "connectedApp": null,
+    "keyless": false
+  },
+  "comfort": {
+    "automatic": false,
+    "digitalAC": false,
+    "rearVents": null,
+    "leather": null,
+    "powerSeat": null,
+    "seatClimate": null,
+    "sunroof": null
+  },
+  "safety": {
+    "airbags6": false,
+    "aeb": null,
+    "laneKeep": null,
+    "blindSpot": null,
+    "rearCrossTraffic": null
+  },
+  "ncap": {
+    "stars": 1,
+    "year": 2017,
+    "program": "Latin NCAP",
+    "note": "1 estrela adulto / 2 estrelas criança, protocolo antigo (2017), resultado vencido; sem reteste encontrado",
+    "source": "https://motorshow.com.br/fiat-mobi-recebe-uma-estrela-no-latin-ncap"
+  },
+  "sources": [
+    {
+      "label": "Autoo - Fiat Mobi 2026 equipamentos",
+      "url": "https://www.autoo.com.br/fiat-mobi-2026-precos-pecas-consumo-e-equipamentos-do-hatch/"
+    },
+    {
+      "label": "Comprecar - Fiat Mobi linha 2026",
+      "url": "https://www.comprecar.com.br/revista/fiat-mobi-chega-em-sua-linha-2026"
+    },
+    {
+      "label": "Autoo - lançamento linha 2026 do Mobi",
+      "url": "https://www.autoo.com.br/fiat-lanca-linha-2026-do-mobi-com-uma-serie-de-mudancas-veja-precos/"
+    },
+    {
+      "label": "Motorshow - Mobi 1 estrela Latin NCAP",
+      "url": "https://motorshow.com.br/fiat-mobi-recebe-uma-estrela-no-latin-ncap"
+    }
+  ],
+  "unverified": [
+    "tech.digitalCluster",
+    "tech.wirelessCharger",
+    "tech.camera360",
+    "tech.adaptiveCruise",
+    "tech.connectedApp",
+    "comfort.rearVents",
+    "comfort.leather",
+    "comfort.powerSeat",
+    "comfort.seatClimate",
+    "comfort.sunroof",
+    "safety.aeb",
+    "safety.laneKeep",
+    "safety.blindSpot",
+    "safety.rearCrossTraffic"
+  ],
+  "notes": "Like: ar-condicionado manual, 2 airbags, câmbio manual. A central 7\" com CarPlay/AA sem fio e a chave canivete são citadas como acréscimos da Trekking (logo Like sem multimídia e com chave convencional). Um resumo de busca atribuiu a multimídia à Like, em conflito com as demais fontes."
+}

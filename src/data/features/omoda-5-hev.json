@@ -1,0 +1,64 @@
+{
+  "id": "omoda-5-hev",
+  "version": "Omoda 5 HEV Luxury 2026",
+  "researchedAt": "2026-10",
+  "tech": {
+    "screen10": true,
+    "wirelessMirroring": true,
+    "digitalCluster": true,
+    "wirelessCharger": true,
+    "camera360": true,
+    "adaptiveCruise": true,
+    "connectedApp": null,
+    "keyless": true
+  },
+  "comfort": {
+    "automatic": true,
+    "digitalAC": true,
+    "rearVents": null,
+    "leather": false,
+    "powerSeat": false,
+    "seatClimate": false,
+    "sunroof": true
+  },
+  "safety": {
+    "airbags6": true,
+    "aeb": true,
+    "laneKeep": null,
+    "blindSpot": null,
+    "rearCrossTraffic": null
+  },
+  "ncap": {
+    "stars": null,
+    "year": null,
+    "program": "Latin NCAP",
+    "note": "Não pesquisado/encontrado (limite de buscas).",
+    "source": ""
+  },
+  "sources": [
+    {
+      "label": "Motorshow - Omoda 5 HEV",
+      "url": "https://motorshow.com.br/omoda-5-hev-precos-motor-equipamentos"
+    },
+    {
+      "label": "AutoPapo - Omoda 5 e 7",
+      "url": "https://autopapo.com.br/noticia/omoda-5-omoda-7/"
+    },
+    {
+      "label": "Auto+ TV - equipamentos Omoda 5",
+      "url": "https://www.automaistv.com.br/novidades/exclusivo-desvendamos-a-lista-de-equipamentos-dos-novos-omoda-5-e-omoda-7/"
+    },
+    {
+      "label": "Mecânica Online - Omoda 5 HEV",
+      "url": "https://mecanicaonline.com.br/2025/10/omoda-5-hev-o-novo-suv-hibrido-que-une-performance-2-0-turbo-e-autonomia-superior-a-1-000-km/"
+    }
+  ],
+  "notes": "R$ 159.990. Multimídia 12,3\" sem fio; painel digital 12,3\" (outra fonte diz 10,25\"); câmera 360°, ACC e AEB, teto solar, ar digital 2 zonas, chave presencial, indução. 6 ou 7 airbags conforme fonte (>=6 nos dois casos). Bancos de tecido; couro sintético, ajustes elétricos e bancos aquecidos/ventilados só na Prestige. Ponto cego e assistente de faixa citados na Prestige; não confirmados na Luxury.",
+  "unverified": [
+    "tech.connectedApp",
+    "comfort.rearVents",
+    "safety.laneKeep",
+    "safety.blindSpot",
+    "safety.rearCrossTraffic"
+  ]
+}

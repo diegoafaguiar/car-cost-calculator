@@ -1,0 +1,70 @@
+{
+  "id": "toyota-corolla-hybrid",
+  "version": "Toyota Corolla Altis Premium Hybrid 2026",
+  "researchedAt": "2026-10",
+  "tech": {
+    "screen10": null,
+    "wirelessMirroring": null,
+    "digitalCluster": null,
+    "wirelessCharger": null,
+    "camera360": null,
+    "adaptiveCruise": true,
+    "connectedApp": null,
+    "keyless": null
+  },
+  "comfort": {
+    "automatic": true,
+    "digitalAC": true,
+    "rearVents": null,
+    "leather": true,
+    "powerSeat": null,
+    "seatClimate": null,
+    "sunroof": true
+  },
+  "safety": {
+    "airbags6": true,
+    "aeb": true,
+    "laneKeep": true,
+    "blindSpot": null,
+    "rearCrossTraffic": null
+  },
+  "ncap": {
+    "stars": 5,
+    "year": 2019,
+    "program": "Latin NCAP",
+    "note": "Nota do Corolla 2.0 nacional (protocolo antigo); a versão híbrida não foi testada separadamente.",
+    "source": "https://www.latinncap.com/en/result/137/toyota-new-corolla-+-7-airbags"
+  },
+  "sources": [
+    {
+      "label": "Garagem360 - Corolla Hybrid Altis 2026",
+      "url": "https://garagem360.com.br/?p=303529"
+    },
+    {
+      "label": "Eletricos.app - Altis Hybrid Premium 2026",
+      "url": "https://www.eletricos.app/veiculo/toyota-corolla-altis-hybrid-premium-2026"
+    },
+    {
+      "label": "Garagem360 - Altis Hybrid Premium",
+      "url": "https://garagem360.com.br/?p=218872"
+    },
+    {
+      "label": "Latin NCAP - Corolla",
+      "url": "https://www.latinncap.com/en/result/137/toyota-new-corolla-+-7-airbags"
+    }
+  ],
+  "unverified": [
+    "tech.screen10",
+    "tech.wirelessMirroring",
+    "tech.digitalCluster",
+    "tech.wirelessCharger",
+    "tech.camera360",
+    "tech.connectedApp",
+    "tech.keyless",
+    "comfort.rearVents",
+    "comfort.powerSeat",
+    "comfort.seatClimate",
+    "safety.blindSpot",
+    "safety.rearCrossTraffic"
+  ]
+}

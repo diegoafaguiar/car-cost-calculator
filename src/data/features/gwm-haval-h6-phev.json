@@ -1,0 +1,67 @@
+{
+  "id": "gwm-haval-h6-phev",
+  "version": "GWM Haval H6 PHEV35 Flex 2027 (R$ 290.000)",
+  "researchedAt": "2026-10",
+  "tech": {
+    "screen10": true,
+    "wirelessMirroring": true,
+    "digitalCluster": null,
+    "wirelessCharger": true,
+    "camera360": true,
+    "adaptiveCruise": true,
+    "connectedApp": null,
+    "keyless": null
+  },
+  "comfort": {
+    "automatic": true,
+    "digitalAC": null,
+    "rearVents": null,
+    "leather": true,
+    "powerSeat": true,
+    "seatClimate": true,
+    "sunroof": true
+  },
+  "safety": {
+    "airbags6": true,
+    "aeb": null,
+    "laneKeep": null,
+    "blindSpot": null,
+    "rearCrossTraffic": null
+  },
+  "ncap": {
+    "stars": 5,
+    "year": 2022,
+    "program": "ANCAP",
+    "note": "Teste ANCAP 2022 do Haval H6 (adulto 90%, criança 88%); versão PHEV flex brasileira não testada. Sem Latin NCAP.",
+    "source": "https://ancap.com.au/safety-ratings/haval/h6/b7830d"
+  },
+  "sources": [
+    {
+      "label": "GWM ficha técnica H6 PHEV35 Flex (PDF)",
+      "url": "https://www.gwmmotors.com.br/content/dam/gwm/pages/br/pt/models/phev-35/ficha-tecnica-haval-h6-phev35-flex.pdf"
+    },
+    {
+      "label": "GWM media center H6 PHEV35",
+      "url": "https://www.gwmmotors.com.br/pt/media-center/modelos/gwm-haval-h6-phev35"
+    },
+    {
+      "label": "Autoo Haval H6 flex 2027",
+      "url": "https://www.autoo.com.br/gwm-lanca-haval-h6-hibrido-plug-in-flex-da-linha-2027-veja-precos-e-o-que-muda-no-suv/"
+    },
+    {
+      "label": "ANCAP Haval H6",
+      "url": "https://ancap.com.au/safety-ratings/haval/h6/b7830d"
+    }
+  ],
+  "unverified": [
+    "digitalCluster",
+    "connectedApp",
+    "keyless",
+    "digitalAC",
+    "rearVents",
+    "aeb",
+    "laneKeep",
+    "blindSpot",
+    "rearCrossTraffic"
+  ]
+}

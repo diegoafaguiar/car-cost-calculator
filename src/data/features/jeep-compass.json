@@ -1,0 +1,68 @@
+{
+  "id": "jeep-compass",
+  "version": "Jeep Compass Longitude T270 1.3 turboflex AT6, linha 2026 (R$ 199.890)",
+  "researchedAt": "2026-10",
+  "tech": {
+    "screen10": true,
+    "wirelessMirroring": true,
+    "digitalCluster": true,
+    "wirelessCharger": null,
+    "camera360": null,
+    "adaptiveCruise": true,
+    "connectedApp": null,
+    "keyless": true
+  },
+  "comfort": {
+    "automatic": true,
+    "digitalAC": true,
+    "rearVents": true,
+    "leather": true,
+    "powerSeat": null,
+    "seatClimate": null,
+    "sunroof": null
+  },
+  "safety": {
+    "airbags6": true,
+    "aeb": true,
+    "laneKeep": null,
+    "blindSpot": null,
+    "rearCrossTraffic": null
+  },
+  "ncap": {
+    "stars": 5,
+    "year": 2017,
+    "program": "Euro NCAP (único disponível; Compass nacional não testado pelo Latin NCAP)",
+    "note": "Resultado europeu de 2017 (protocolo antigo); estrutura semelhante à do modelo de Goiana-PE.",
+    "source": "https://autopapo.com.br/noticia/jeep-compass-nota-maxima-seguranca-euroncap/"
+  },
+  "sources": [
+    {
+      "label": "Motorshow - Promoção Compass Longitude 2026",
+      "url": "https://motorshow.com.br/promocao-jeep-compass-longitude-2026"
+    },
+    {
+      "label": "Portal N10 - Compass Longitude 2026 desconto CNPJ",
+      "url": "https://portaln10.com.br/fipecarros/jeep-aplica-desconto-de-r-30-90000-no-compass-longitude-2026-para-cnpj/"
+    },
+    {
+      "label": "Gazeta SP - Compass Longitude T270",
+      "url": "https://www.gazetasp.com.br/automotor/jeep-compass-longitude-t270-promete-economia-e-sustentabiidade/"
+    },
+    {
+      "label": "AutoPapo - Compass nota máxima Euro NCAP",
+      "url": "https://autopapo.com.br/noticia/jeep-compass-nota-maxima-seguranca-euroncap/"
+    }
+  ],
+  "unverified": [
+    "wirelessCharger",
+    "camera360",
+    "connectedApp",
+    "powerSeat",
+    "seatClimate",
+    "sunroof",
+    "laneKeep",
+    "blindSpot",
+    "rearCrossTraffic"
+  ],
+  "notes": "Confirmados: multimídia 10,1\" com CarPlay/AA sem fio, painel 100% digital 10,25\", ar dual zone com saída traseira, keyless, couro, ACC Stop&Go, AEB (pedestres/ciclistas), 6 airbags. Carregador por indução e ponto cego aparecem só em anúncios de anos anteriores — não confirmados para a 2026. Limite de buscas atingido antes de confirmar banco elétrico, assistente de faixa e RCTA."
+}

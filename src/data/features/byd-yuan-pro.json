@@ -1,0 +1,71 @@
+{
+  "id": "byd-yuan-pro",
+  "version": "BYD Yuan Pro GS (elétrico, linha 2026/2027, R$ 182.990)",
+  "researchedAt": "2026-10",
+  "tech": {
+    "screen10": true,
+    "wirelessMirroring": null,
+    "digitalCluster": true,
+    "wirelessCharger": true,
+    "camera360": true,
+    "adaptiveCruise": null,
+    "connectedApp": true,
+    "keyless": null
+  },
+  "comfort": {
+    "automatic": true,
+    "digitalAC": true,
+    "rearVents": null,
+    "leather": null,
+    "powerSeat": true,
+    "seatClimate": null,
+    "sunroof": null
+  },
+  "safety": {
+    "airbags6": null,
+    "aeb": null,
+    "laneKeep": null,
+    "blindSpot": null,
+    "rearCrossTraffic": null
+  },
+  "ncap": {
+    "stars": null,
+    "year": null,
+    "program": null,
+    "note": "Sem teste Latin NCAP/Euro NCAP encontrado para o Yuan Pro. Fontes conflitam sobre o pacote ADAS da versão brasileira elétrica (Itatiaia diz que ACC/AEB/faixa não existem no elétrico vendido no Brasil; jkcarros/aceleratudo citam ADAS) — itens ADAS deixados null.",
+    "source": ""
+  },
+  "sources": [
+    {
+      "label": "Canal VE ficha Yuan Pro GS",
+      "url": "https://canalve.com.br/ficha-tecnica/byd/tudo-sobre-yuan-pro-gs/"
+    },
+    {
+      "label": "JK Carros Yuan Pro GS 2027",
+      "url": "https://jkcarros.com.br/?p=37645"
+    },
+    {
+      "label": "Acelera Tudo Yuan Pro 2026",
+      "url": "https://aceleratudo.com.br/blog/byd-yuan-pro-2026-preco-ficha-tecnica-autonomia"
+    },
+    {
+      "label": "Itatiaia Yuan Pro híbrido (ADAS ausente no elétrico)",
+      "url": "https://www.itatiaia.com.br/auto/byd-yuan-pro-hibrido-chega-no-primeiro-semestre-prometendo-1-000-km-de-autonomia/"
+    }
+  ],
+  "unverified": [
+    "wirelessMirroring",
+    "adaptiveCruise",
+    "keyless",
+    "rearVents",
+    "leather",
+    "seatClimate",
+    "sunroof",
+    "airbags6",
+    "aeb",
+    "laneKeep",
+    "blindSpot",
+    "rearCrossTraffic",
+    "ncap"
+  ]
+}

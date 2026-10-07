@@ -1,0 +1,71 @@
+{
+  "id": "hyundai-hb20",
+  "version": "Hyundai HB20 Comfort 1.0 (linhas 2026/2027, conteúdo igual)",
+  "researchedAt": "2026-10",
+  "tech": {
+    "screen10": false,
+    "wirelessMirroring": true,
+    "digitalCluster": null,
+    "wirelessCharger": null,
+    "camera360": null,
+    "adaptiveCruise": null,
+    "connectedApp": true,
+    "keyless": null
+  },
+  "comfort": {
+    "automatic": null,
+    "digitalAC": null,
+    "rearVents": null,
+    "leather": null,
+    "powerSeat": null,
+    "seatClimate": null,
+    "sunroof": null
+  },
+  "safety": {
+    "airbags6": true,
+    "aeb": null,
+    "laneKeep": null,
+    "blindSpot": null,
+    "rearCrossTraffic": null
+  },
+  "ncap": {
+    "stars": 3,
+    "year": 2023,
+    "program": "Latin NCAP",
+    "note": "3 estrelas (set/2023) com 6 airbags e ESC de série; antes, zero (2020)",
+    "source": "https://motorshow.com.br/hyundai-hb20-recebe-3-estrelas-de-5-em-teste-de-colisao"
+  },
+  "sources": [
+    {
+      "label": "Carro.blog.br - HB20 Comfort 1.0 2026",
+      "url": "https://carro.blog.br/hyundai-hb20-comfort-1-0-2026-preco-ficha-tecnica-consumo-equipamentos-e-fotos-hatch-faz-ate-133-km-l-na-cidade-e-conta-com-direcao-eletrica-para-facilitar-manobras.html"
+    },
+    {
+      "label": "Autoo - HB20 2027",
+      "url": "https://www.autoo.com.br/hyundai-hb20-2027-veja-precos-motores-consumo-e-equipamentos-do-hatch/"
+    },
+    {
+      "label": "Motorshow - HB20 3 estrelas",
+      "url": "https://motorshow.com.br/hyundai-hb20-recebe-3-estrelas-de-5-em-teste-de-colisao"
+    }
+  ],
+  "unverified": [
+    "tech.digitalCluster",
+    "tech.wirelessCharger",
+    "tech.camera360",
+    "tech.adaptiveCruise",
+    "tech.keyless",
+    "comfort.automatic",
+    "comfort.digitalAC",
+    "comfort.rearVents",
+    "comfort.leather",
+    "comfort.powerSeat",
+    "comfort.seatClimate",
+    "comfort.sunroof",
+    "safety.aeb",
+    "safety.laneKeep",
+    "safety.blindSpot",
+    "safety.rearCrossTraffic"
+  ],
+  "notes": "Comfort: multimídia 8\" com CarPlay/AA sem fio, Bluelink de série (comandos pelo app, rastreamento, imobilização; 5 anos grátis), 6 airbags, piloto automático convencional com limitador. ADAS (FCA/LFA) citados para versões superiores, não confirmados na Comfort. Câmbio da Comfort 1.0 (manual e/ou automático) não confirmado."
+}

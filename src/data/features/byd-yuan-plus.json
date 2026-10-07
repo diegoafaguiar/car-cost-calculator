@@ -1,0 +1,62 @@
+{
+  "id": "byd-yuan-plus",
+  "version": "BYD Yuan Plus AWD 2027 (R$ 269.990)",
+  "researchedAt": "2026-10",
+  "tech": {
+    "screen10": true,
+    "wirelessMirroring": null,
+    "digitalCluster": true,
+    "wirelessCharger": true,
+    "camera360": true,
+    "adaptiveCruise": true,
+    "connectedApp": null,
+    "keyless": true
+  },
+  "comfort": {
+    "automatic": true,
+    "digitalAC": true,
+    "rearVents": true,
+    "leather": true,
+    "powerSeat": true,
+    "seatClimate": true,
+    "sunroof": true
+  },
+  "safety": {
+    "airbags6": true,
+    "aeb": null,
+    "laneKeep": true,
+    "blindSpot": true,
+    "rearCrossTraffic": null
+  },
+  "ncap": {
+    "stars": 5,
+    "year": 2022,
+    "program": "Euro NCAP (como BYD Atto 3)",
+    "note": "Teste europeu do Atto 3 (versão FWD); sem teste Latin NCAP. AWD 2027 não testado especificamente.",
+    "source": "https://www.byd.com/za/news-list/byd-sealion-7-scores-maximum-five-star-euro-ncap-safety-rating"
+  },
+  "sources": [
+    {
+      "label": "Canal VE Yuan Plus 2027",
+      "url": "https://canalve.com.br/ficha-tecnica/byd/tudo-sobre-yuan-plus-2027/"
+    },
+    {
+      "label": "Carro.blog.br Yuan Plus AWD 2027",
+      "url": "https://www.car.blog.br/2026/04/novo-byd-yuan-plus-2027-awd-preco-r.html"
+    },
+    {
+      "label": "Autoo Yuan Plus 2027",
+      "url": "https://www.autoo.com.br/byd-yuan-plus-2027-veja-preco-pecas-consumo-e-equipamentos-do-suv/"
+    },
+    {
+      "label": "BYD ficha técnica Yuan Plus AWD (PDF)",
+      "url": "https://www.byd.com/material/__CN/byd-site/br/fichas-tecnicas-2026/update-13-07-2026/07-13-2026---ficha-txiunica/BYD_YuanPlusAWD_V2.pdf"
+    }
+  ],
+  "unverified": [
+    "wirelessMirroring",
+    "connectedApp",
+    "aeb",
+    "rearCrossTraffic"
+  ]
+}

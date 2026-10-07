@@ -1,0 +1,66 @@
+{
+  "id": "honda-city",
+  "version": "Honda City Sedan EXL 1.5 CVT 2026",
+  "researchedAt": "2026-10",
+  "tech": {
+    "screen10": false,
+    "wirelessMirroring": true,
+    "digitalCluster": true,
+    "wirelessCharger": true,
+    "camera360": null,
+    "adaptiveCruise": true,
+    "connectedApp": null,
+    "keyless": true
+  },
+  "comfort": {
+    "automatic": true,
+    "digitalAC": true,
+    "rearVents": null,
+    "leather": true,
+    "powerSeat": null,
+    "seatClimate": null,
+    "sunroof": null
+  },
+  "safety": {
+    "airbags6": true,
+    "aeb": true,
+    "laneKeep": true,
+    "blindSpot": null,
+    "rearCrossTraffic": null
+  },
+  "ncap": {
+    "stars": null,
+    "year": null,
+    "program": "Latin NCAP",
+    "note": "A geração atual não foi testada pelo Latin NCAP; o resultado de 2015 (5 estrelas adulto, 4 criança) é da geração anterior.",
+    "source": "https://mecanicaonline.com.br/2015/11/novos-honda-hr-v-fit-e-city-estao-entre-os-veiculos-mais-seguros-da-america-latina"
+  },
+  "sources": [
+    {
+      "label": "Vrum - City 2026 qual versão",
+      "url": "https://www.vrum.com.br/bom-negocio/2026/07/7470963-honda-city-2026-qual-versao-e-o-melhor-negocio-para-o-seu-bolso.html"
+    },
+    {
+      "label": "Bem Paraná - teste City EX 2026",
+      "url": "https://www.bemparana.com.br/carros/testamos-o-honda-city-ex-2026-conforto-de-sedan-medio-e-consumo-de-carro-popular"
+    },
+    {
+      "label": "Garagem360 - City EXL",
+      "url": "https://garagem360.com.br/?p=264263"
+    },
+    {
+      "label": "Conexão TO - City sedan",
+      "url": "https://conexaoto.com.br/2023/06/29/design-seguranca-e-tecnologia-sao-destaques-do-honda-city-sedan"
+    }
+  ],
+  "unverified": [
+    "tech.camera360",
+    "tech.connectedApp",
+    "comfort.rearVents",
+    "comfort.powerSeat",
+    "comfort.seatClimate",
+    "comfort.sunroof",
+    "safety.blindSpot",
+    "safety.rearCrossTraffic"
+  ]
+}

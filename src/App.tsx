@@ -332,6 +332,7 @@ export default function App() {
                 assumptions={assumptions}
                 onOpen={setOpenId}
                 carModelId={car.catalogModelId}
+                carModelYear={car.modelYear}
               />
             </section>
 

@@ -1,0 +1,63 @@
+{
+  "id": "byd-dolphin-plus",
+  "version": "BYD Dolphin Plus 2026",
+  "researchedAt": "2026-10",
+  "tech": {
+    "screen10": true,
+    "wirelessMirroring": true,
+    "digitalCluster": true,
+    "wirelessCharger": true,
+    "camera360": true,
+    "adaptiveCruise": true,
+    "connectedApp": null,
+    "keyless": null
+  },
+  "comfort": {
+    "automatic": true,
+    "digitalAC": null,
+    "rearVents": null,
+    "leather": true,
+    "powerSeat": true,
+    "seatClimate": null,
+    "sunroof": true
+  },
+  "safety": {
+    "airbags6": true,
+    "aeb": true,
+    "laneKeep": true,
+    "blindSpot": true,
+    "rearCrossTraffic": true
+  },
+  "ncap": {
+    "stars": 5,
+    "year": 2024,
+    "program": "Latin NCAP",
+    "note": "Primeiro elétrico e primeiro carro chinês com 5 estrelas no Latin NCAP (AOP 92,6%, COP 93,17%).",
+    "source": "https://canalve.com.br/byd-dolphin-plus-recebe-nota-maxima-em-teste-do-latin-ncap/"
+  },
+  "sources": [
+    {
+      "label": "Autoo - Dolphin 2026",
+      "url": "https://www.autoo.com.br/byd-dolphin-2026-ganha-equipamentos-mas-com-mesmo-visual-veja-o-que-muda/"
+    },
+    {
+      "label": "Vrum - Dolphin 2026",
+      "url": "https://www.vrum.com.br/ultimas-noticias/2025/07/7195827-byd-dolphin-2026-parte-de-rs-149-990-e-ganha-mais-equipamentos.html"
+    },
+    {
+      "label": "Acelera Tudo - Dolphin 2026",
+      "url": "https://aceleratudo.com.br/blog/byd-dolphin-2026-preco-ficha-tecnica-versoes-mini-plus"
+    },
+    {
+      "label": "Canal VE - Latin NCAP",
+      "url": "https://canalve.com.br/byd-dolphin-plus-recebe-nota-maxima-em-teste-do-latin-ncap/"
+    }
+  ],
+  "unverified": [
+    "tech.connectedApp",
+    "tech.keyless",
+    "comfort.digitalAC",
+    "comfort.rearVents",
+    "comfort.seatClimate"
+  ]
+}

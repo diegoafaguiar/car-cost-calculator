@@ -1,0 +1,71 @@
+{
+  "id": "jeep-renegade",
+  "version": "Jeep Renegade Longitude 1.3T MHEV 2027",
+  "researchedAt": "2026-10",
+  "tech": {
+    "screen10": true,
+    "wirelessMirroring": null,
+    "digitalCluster": true,
+    "wirelessCharger": true,
+    "camera360": null,
+    "adaptiveCruise": null,
+    "connectedApp": null,
+    "keyless": null
+  },
+  "comfort": {
+    "automatic": true,
+    "digitalAC": null,
+    "rearVents": true,
+    "leather": null,
+    "powerSeat": false,
+    "seatClimate": null,
+    "sunroof": null
+  },
+  "safety": {
+    "airbags6": true,
+    "aeb": true,
+    "laneKeep": null,
+    "blindSpot": null,
+    "rearCrossTraffic": null
+  },
+  "ncap": {
+    "stars": 1,
+    "year": 2023,
+    "program": "Latin NCAP",
+    "note": "Reavaliado em 2023 com 1 estrela (49% adulto); o 5 estrelas de 2015 é de protocolo antigo.",
+    "source": "https://www.autoblog.com.uy/2023/07/latin-ncap-fase-xiv-volkswagen-taigun.html"
+  },
+  "sources": [
+    {
+      "label": "AutoPapo - Renegade 2027",
+      "url": "https://autopapo.com.br/noticia/jeep-renegade-2027-agora-e-hibrido-e-traz-novo-visual-veja-preco-consumo-versoes-e-mais/"
+    },
+    {
+      "label": "Motorshow - Renegade 2027",
+      "url": "https://motorshow.com.br/jeep-renegade-2027-lancamento"
+    },
+    {
+      "label": "Autoo - Renegade 2027",
+      "url": "https://www.autoo.com.br/jeep-lanca-renegade-2027-hibrido-e-com-interior-renovado-veja-precos/"
+    },
+    {
+      "label": "Autoo - Renegade 2026",
+      "url": "https://www.autoo.com.br/jeep-renegade-2026-estreia-com-mais-equipamentos-e-ate-r-15-mil-mais-barato/"
+    }
+  ],
+  "notes": "R$ 158.690. Linha 2027: multimídia 10,1\", quadro 7\" totalmente digital, console com saída de ar traseira; banco elétrico só Sahara/Willys. Indução herdada da Altitude. Na linha 2026 a Longitude tinha couro, keyless, ar digital duas zonas, ponto cego, AEB e permanência em faixa ativa, mas esses itens não foram reconfirmados para a 2027 MHEV (ficaram null, exceto AEB/6 airbags citados para todas as versões).",
+  "unverified": [
+    "tech.wirelessMirroring",
+    "tech.camera360",
+    "tech.adaptiveCruise",
+    "tech.connectedApp",
+    "tech.keyless",
+    "comfort.digitalAC",
+    "comfort.leather",
+    "comfort.seatClimate",
+    "comfort.sunroof",
+    "safety.laneKeep",
+    "safety.blindSpot",
+    "safety.rearCrossTraffic"
+  ]
+}

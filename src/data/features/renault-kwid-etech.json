@@ -1,0 +1,72 @@
+{
+  "id": "renault-kwid-etech",
+  "version": "Renault Kwid E-Tech Techno (linha 2026)",
+  "researchedAt": "2026-10",
+  "tech": {
+    "screen10": true,
+    "wirelessMirroring": true,
+    "digitalCluster": true,
+    "wirelessCharger": null,
+    "camera360": null,
+    "adaptiveCruise": null,
+    "connectedApp": null,
+    "keyless": null
+  },
+  "comfort": {
+    "automatic": true,
+    "digitalAC": null,
+    "rearVents": null,
+    "leather": null,
+    "powerSeat": null,
+    "seatClimate": null,
+    "sunroof": null
+  },
+  "safety": {
+    "airbags6": true,
+    "aeb": true,
+    "laneKeep": true,
+    "blindSpot": null,
+    "rearCrossTraffic": null
+  },
+  "ncap": {
+    "stars": null,
+    "year": null,
+    "program": "Euro NCAP (como Dacia Spring) - único encontrado",
+    "note": "Não há teste Latin NCAP do Kwid E-Tech encontrado. O gêmeo europeu Dacia Spring recebeu 1 estrela no Euro NCAP (ano do teste da versão atual não confirmado na busca); stars deixado null por não ser o mesmo programa/ano confirmado",
+    "source": "https://www.vrum.com.br/noticias/confirmado-no-brasil-renault-kwid-e-tech-tem-nota-de-seguranca-vergonhosa/"
+  },
+  "sources": [
+    {
+      "label": "Autoo - Kwid E-Tech 2026 itens de série",
+      "url": "https://www.autoo.com.br/renault-kwid-e-tech-2026-veja-precos-consumo-e-itens-de-serie-do-hatch/"
+    },
+    {
+      "label": "CNN Brasil - lançamento Kwid E-Tech 2026",
+      "url": "https://www.cnnbrasil.com.br/auto/renault-lanca-kwid-e-tech-2026-novo-eletrico-mais-barato-do-brasil/"
+    },
+    {
+      "label": "Canal VE - tudo sobre Kwid E-Tech 2026",
+      "url": "https://canalve.com.br/ficha-tecnica/renault/tudo-sobre-kwid-e-tech-2026/"
+    },
+    {
+      "label": "Vrum - nota de segurança Kwid E-Tech",
+      "url": "https://www.vrum.com.br/noticias/confirmado-no-brasil-renault-kwid-e-tech-tem-nota-de-seguranca-vergonhosa/"
+    }
+  ],
+  "unverified": [
+    "tech.wirelessCharger",
+    "tech.camera360",
+    "tech.adaptiveCruise",
+    "tech.connectedApp",
+    "tech.keyless",
+    "comfort.digitalAC",
+    "comfort.rearVents",
+    "comfort.leather",
+    "comfort.powerSeat",
+    "comfort.seatClimate",
+    "comfort.sunroof",
+    "safety.blindSpot",
+    "safety.rearCrossTraffic"
+  ],
+  "notes": "Versão única Techno, R$ 99.990. Multimídia 10\" com CarPlay/AA sem fio, painel digital 7\", 6 airbags, 11 ADAS incl. AEB e LKA (uma fonte descreve só 'alerta' de faixa), câmera de ré, sensores dianteiro/traseiro. Piloto automático citado como convencional com limitador (ACC não confirmado)."
+}

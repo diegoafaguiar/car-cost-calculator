@@ -1,0 +1,66 @@
+{
+  "id": "honda-zrv",
+  "version": "Honda ZR-V Touring 2.0 CVT, linha 2026 (versão única)",
+  "researchedAt": "2026-10",
+  "tech": {
+    "screen10": false,
+    "wirelessMirroring": true,
+    "digitalCluster": null,
+    "wirelessCharger": true,
+    "camera360": null,
+    "adaptiveCruise": true,
+    "connectedApp": null,
+    "keyless": true
+  },
+  "comfort": {
+    "automatic": true,
+    "digitalAC": true,
+    "rearVents": null,
+    "leather": true,
+    "powerSeat": true,
+    "seatClimate": null,
+    "sunroof": true
+  },
+  "safety": {
+    "airbags6": true,
+    "aeb": true,
+    "laneKeep": true,
+    "blindSpot": null,
+    "rearCrossTraffic": null
+  },
+  "ncap": {
+    "stars": 4,
+    "year": 2023,
+    "program": "Euro NCAP (único disponível; sem teste Latin NCAP)",
+    "note": "Euro NCAP 2023: 79% adulto, 86% criança, 81% vulneráveis, 68% assistência.",
+    "source": "https://cdn.euroncap.com/media/79858/euroncap-2023-honda-zr-v-datasheet.pdf"
+  },
+  "sources": [
+    {
+      "label": "AutoEntusiastas - Honda ZR-V Touring 2026",
+      "url": "https://autoentusiastas.com.br/2025/10/honda-zr-v-touring-2026/"
+    },
+    {
+      "label": "Autoo - ZR-V 2026 preço e o que muda",
+      "url": "https://www.autoo.com.br/honda-lanca-zr-v-da-linha-2026-veja-preco-e-o-que-muda/"
+    },
+    {
+      "label": "Motorshow - Honda ZR-V 2026",
+      "url": "https://motorshow.com.br/honda-zr-v-2026"
+    },
+    {
+      "label": "CarAdvice - ZR-V 4 estrelas Euro NCAP",
+      "url": "https://www.caradvice.com.au/news/honda-zr-v-four-star-euro-ncap-rating/"
+    }
+  ],
+  "unverified": [
+    "digitalCluster",
+    "camera360",
+    "connectedApp",
+    "rearVents",
+    "seatClimate",
+    "blindSpot",
+    "rearCrossTraffic"
+  ],
+  "notes": "Multimídia de 9\" (agora com CarPlay/Android Auto sem fio). Quadro com tela de 7\" (não confirmado se 100% digital). Câmera de ré 'multivisão' e LaneWatch (câmera lateral direita) — não é câmera 360 nem monitor de ponto cego por radar. 8 airbags, Honda Sensing (ACC, AEB, permanência em faixa)."
+}

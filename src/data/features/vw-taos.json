@@ -1,0 +1,64 @@
+{
+  "id": "vw-taos",
+  "version": "Volkswagen Taos Highline 250 TSI 1.4 flex, linha 2026 (reestilizado)",
+  "researchedAt": "2026-10",
+  "tech": {
+    "screen10": true,
+    "wirelessMirroring": true,
+    "digitalCluster": true,
+    "wirelessCharger": true,
+    "camera360": null,
+    "adaptiveCruise": true,
+    "connectedApp": null,
+    "keyless": true
+  },
+  "comfort": {
+    "automatic": true,
+    "digitalAC": true,
+    "rearVents": null,
+    "leather": true,
+    "powerSeat": true,
+    "seatClimate": null,
+    "sunroof": null
+  },
+  "safety": {
+    "airbags6": true,
+    "aeb": true,
+    "laneKeep": true,
+    "blindSpot": true,
+    "rearCrossTraffic": true
+  },
+  "ncap": {
+    "stars": 5,
+    "year": 2025,
+    "program": "Latin NCAP",
+    "note": "Novo Taos reavaliado em dez/2025 (protocolo 2020-2025), repetindo as 5 estrelas de 2021.",
+    "source": "https://www.opovo.com.br/noticias/veiculos/2025/12/05/novo-volkswagen-taos-conquista-nota-maxima-em-seguranca-no-latin-ncap.html"
+  },
+  "sources": [
+    {
+      "label": "Car.blog.br - Novo VW Taos 2026 chega ao Brasil",
+      "url": "https://www.car.blog.br/2025/10/novo-vw-taos-2026-chega-ao-brasil-fotos.html"
+    },
+    {
+      "label": "Revista Carro - Taos 2026 versões e preços",
+      "url": "https://revistacarro.com.br/volkswagen-taos-2026-chega-ao-brasil-a-partir-de-r-199-mil-confira-versoes-e-precos/"
+    },
+    {
+      "label": "Webmotors - Taos 2026 versões e preços",
+      "url": "https://www.webmotors.com.br/wm1/noticias/volkswagen-taos-2026-confira-as-versoes-e-precos"
+    },
+    {
+      "label": "O Povo - Taos 5 estrelas Latin NCAP",
+      "url": "https://www.opovo.com.br/noticias/veiculos/2025/12/05/novo-volkswagen-taos-conquista-nota-maxima-em-seguranca-no-latin-ncap.html"
+    }
+  ],
+  "unverified": [
+    "camera360",
+    "connectedApp",
+    "rearVents",
+    "seatClimate",
+    "sunroof"
+  ],
+  "notes": "Highline: VW Play 10,1\", App-Connect sem fio, Active Info Display 10,25\", indução, Kessy, ACC Stop&Go, AEB, Lane Assist/Travel Assist, Side Assist + alerta de tráfego traseiro, 6 airbags, couro parcial, ar dual zone, banco elétrico. Teto panorâmico aparece como possível (opcional/pacote) — não confirmado como de série."
+}

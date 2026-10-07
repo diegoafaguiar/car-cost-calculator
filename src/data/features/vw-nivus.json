@@ -1,0 +1,63 @@
+{
+  "id": "vw-nivus",
+  "version": "Volkswagen Nivus Comfortline 200 TSI 2026",
+  "researchedAt": "2026-10",
+  "tech": {
+    "screen10": true,
+    "wirelessMirroring": true,
+    "digitalCluster": true,
+    "wirelessCharger": true,
+    "camera360": null,
+    "adaptiveCruise": true,
+    "connectedApp": false,
+    "keyless": true
+  },
+  "comfort": {
+    "automatic": true,
+    "digitalAC": true,
+    "rearVents": true,
+    "leather": false,
+    "powerSeat": null,
+    "seatClimate": false,
+    "sunroof": null
+  },
+  "safety": {
+    "airbags6": true,
+    "aeb": true,
+    "laneKeep": false,
+    "blindSpot": false,
+    "rearCrossTraffic": null
+  },
+  "ncap": {
+    "stars": 5,
+    "year": 2022,
+    "program": "Latin NCAP",
+    "note": "Nivus 2022: 92,47% adulto, 91,57% criança (protocolo 2020-2024).",
+    "source": "https://www.montevideo.com.uy/Airbag/Volkswagen-Nivus-recibe-calificacion-de-5-estrellas-en-seguridad-de-Latin-NCAP-uc833012"
+  },
+  "sources": [
+    {
+      "label": "Garagem360 - Nivus 2026",
+      "url": "https://garagem360.com.br/?p=284446"
+    },
+    {
+      "label": "Tribuna do Sertão - Nivus 2026",
+      "url": "https://www.tribunadosertao.com.br/blogs/alpha-autos/2025/07/22/147339-nivus-2026-traz-novidades-em-design-conectividade-e-seguranca"
+    },
+    {
+      "label": "AutoSDR - Nivus 2026 versões",
+      "url": "https://blog.autosdr.com.br/blog/volkswagen-nivus-2026-versoes-precos-ficha-tecnica"
+    },
+    {
+      "label": "Carro.blog.br - Nivus Comfortline 2026",
+      "url": "https://carro.blog.br/volkswagen-nivus-comfortline-1-0-tsi-2026-preco-ficha-tecnica-consumo-e-equipamentos-motor-1-0-turbo-entrega-128-cv-e-garante-agilidade-nas-manobras-da-cidade.html"
+    }
+  ],
+  "notes": "VW Play 10\" sem fio, painel digital 8\", Climatronic com saídas traseiras, Kessy, ACC, AEB, indução refrigerada. VW Play Connect (app com funções remotas) é opcional de R$ 1.590 na Comfortline. Lane Assist/ponto cego só no pacote ADAS opcional. Bancos de tecido premium (couro sintético com aquecimento só na Highline); motorista tem ajuste lombar elétrico, mas não banco elétrico completo (powerSeat=null).",
+  "unverified": [
+    "tech.camera360",
+    "comfort.powerSeat",
+    "comfort.sunroof",
+    "safety.rearCrossTraffic"
+  ]
+}

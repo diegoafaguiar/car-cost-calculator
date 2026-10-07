@@ -1,0 +1,69 @@
+{
+  "id": "peugeot-208",
+  "version": "Peugeot 208 Style 1.0 Firefly (linha 2026)",
+  "researchedAt": "2026-10",
+  "tech": {
+    "screen10": true,
+    "wirelessMirroring": true,
+    "digitalCluster": null,
+    "wirelessCharger": null,
+    "camera360": null,
+    "adaptiveCruise": null,
+    "connectedApp": null,
+    "keyless": null
+  },
+  "comfort": {
+    "automatic": false,
+    "digitalAC": true,
+    "rearVents": null,
+    "leather": null,
+    "powerSeat": null,
+    "seatClimate": null,
+    "sunroof": true
+  },
+  "safety": {
+    "airbags6": false,
+    "aeb": null,
+    "laneKeep": null,
+    "blindSpot": null,
+    "rearCrossTraffic": null
+  },
+  "ncap": {
+    "stars": null,
+    "year": null,
+    "program": "Latin NCAP",
+    "note": "Geração atual do 208 nacional sem teste Latin NCAP encontrado; o 2 estrelas de 2016 refere-se à geração anterior",
+    "source": "https://motorshow.com.br/peugeot-208-atinge-duas-estrelas-em-teste-de-impacto"
+  },
+  "sources": [
+    {
+      "label": "Carro.blog.br - 208 Style 1.0 2026",
+      "url": "https://carro.blog.br/peugeot-208-style-1-0-2026-preco-ficha-tecnica-consumo-equipamentos-e-fotos-compacto-entrega-bom-consumo-na-estrada-e-conforto-para-familia-no-dia-a-dia.html"
+    },
+    {
+      "label": "Olhar Digital - 208 Style 2026",
+      "url": "https://olhardigital.com.br/2025/12/09/carros-e-tecnologia/peugeot-208-style-2026-ganha-desconto-de-r-13-mil/"
+    },
+    {
+      "label": "Motorshow - promoção 208 Style 2026",
+      "url": "https://motorshow.com.br/promocao-peugeot-208-style-2026"
+    }
+  ],
+  "unverified": [
+    "tech.digitalCluster",
+    "tech.wirelessCharger",
+    "tech.camera360",
+    "tech.adaptiveCruise",
+    "tech.connectedApp",
+    "tech.keyless",
+    "comfort.rearVents",
+    "comfort.leather",
+    "comfort.powerSeat",
+    "comfort.seatClimate",
+    "safety.aeb",
+    "safety.laneKeep",
+    "safety.blindSpot",
+    "safety.rearCrossTraffic"
+  ],
+  "notes": "Style 1.0: multimídia 10,3\" sem fio, teto solar panorâmico, faróis LED, rodas 16\", câmera de ré 180° (Visiopark), ar digital automático, 4 airbags, manual 5 marchas. 'Auxílio de frenagem de emergência' citado é brake assist, não AEB confirmado."
+}

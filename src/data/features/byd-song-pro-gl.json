@@ -1,0 +1,62 @@
+{
+  "id": "byd-song-pro-gl",
+  "version": "BYD Song Pro GL 2027 DM-i flex (R$ 176.990)",
+  "researchedAt": "2026-10",
+  "tech": {
+    "screen10": true,
+    "wirelessMirroring": true,
+    "digitalCluster": true,
+    "wirelessCharger": true,
+    "camera360": true,
+    "adaptiveCruise": true,
+    "connectedApp": null,
+    "keyless": null
+  },
+  "comfort": {
+    "automatic": true,
+    "digitalAC": true,
+    "rearVents": true,
+    "leather": true,
+    "powerSeat": true,
+    "seatClimate": null,
+    "sunroof": false
+  },
+  "safety": {
+    "airbags6": true,
+    "aeb": true,
+    "laneKeep": true,
+    "blindSpot": false,
+    "rearCrossTraffic": false
+  },
+  "ncap": {
+    "stars": null,
+    "year": null,
+    "program": null,
+    "note": "Sem teste Latin NCAP/Euro NCAP encontrado para o Song Pro.",
+    "source": ""
+  },
+  "sources": [
+    {
+      "label": "Autoo Song Pro flex 2027",
+      "url": "https://www.autoo.com.br/byd-song-pro-flex-2027-veja-precos-pecas-consumo-e-equipamentos-do-suv/"
+    },
+    {
+      "label": "Carzin Song Pro 2027",
+      "url": "https://carzin.com.br/lancamentos/byd-song-pro-2027-lancado-mais-equipamentos-conjunto-hibrido-flex.html"
+    },
+    {
+      "label": "Grupo Sentinela Song Pro flex 2027",
+      "url": "https://www.gruposentinela.com.br/byd-song-pro-flex-2027-precos-versoes-e-equipamentos/"
+    },
+    {
+      "label": "Carro.blog.br Song Pro flex 2027",
+      "url": "https://www.car.blog.br/2026/08/novo-byd-song-pro-flex-2027-preco-r.html"
+    }
+  ],
+  "unverified": [
+    "connectedApp",
+    "keyless",
+    "seatClimate",
+    "ncap"
+  ]
+}

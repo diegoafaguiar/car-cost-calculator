@@ -1,0 +1,75 @@
+{
+  "id": "chevrolet-onix",
+  "version": "Chevrolet Onix 1.0 MT (linha 2027)",
+  "researchedAt": "2026-10",
+  "tech": {
+    "screen10": false,
+    "wirelessMirroring": null,
+    "digitalCluster": null,
+    "wirelessCharger": null,
+    "camera360": null,
+    "adaptiveCruise": null,
+    "connectedApp": null,
+    "keyless": null
+  },
+  "comfort": {
+    "automatic": false,
+    "digitalAC": false,
+    "rearVents": null,
+    "leather": null,
+    "powerSeat": null,
+    "seatClimate": null,
+    "sunroof": null
+  },
+  "safety": {
+    "airbags6": true,
+    "aeb": null,
+    "laneKeep": null,
+    "blindSpot": null,
+    "rearCrossTraffic": null
+  },
+  "ncap": {
+    "stars": 5,
+    "year": 2019,
+    "program": "Latin NCAP",
+    "note": "5 estrelas (2019, protocolo anterior ao atual); sem reteste encontrado",
+    "source": "https://www.automotiveworld.com/news/chevrolet-new-onix-hatchback-tops-in-safety-while-mitsubishi-l200-disappoints-with-zero-stars/"
+  },
+  "sources": [
+    {
+      "label": "JK Carros - Onix 1.0 MT 2027",
+      "url": "https://jkcarros.com.br/?p=37001"
+    },
+    {
+      "label": "Vrum - Onix 2027 novas versões",
+      "url": "https://www.vrum.com.br/noticias/2026/06/7434088-chevrolet-anuncia-onix-2027-com-quatro-novas-versoes-veja-novidades.html"
+    },
+    {
+      "label": "Carro.blog.br - Onix 2027",
+      "url": "https://carro.blog.br/carros/chevrolet/chevrolet-onix-2027-chega-com-varias-versoes-e-continua-com-a-correia-dentada-banhada-a-oleo-veja-precos.html"
+    },
+    {
+      "label": "Automotive World - Onix 5 estrelas Latin NCAP",
+      "url": "https://www.automotiveworld.com/news/chevrolet-new-onix-hatchback-tops-in-safety-while-mitsubishi-l200-disappoints-with-zero-stars/"
+    }
+  ],
+  "unverified": [
+    "tech.wirelessMirroring",
+    "tech.digitalCluster",
+    "tech.wirelessCharger",
+    "tech.camera360",
+    "tech.adaptiveCruise",
+    "tech.connectedApp",
+    "tech.keyless",
+    "comfort.rearVents",
+    "comfort.leather",
+    "comfort.powerSeat",
+    "comfort.seatClimate",
+    "comfort.sunroof",
+    "safety.aeb",
+    "safety.laneKeep",
+    "safety.blindSpot",
+    "safety.rearCrossTraffic"
+  ],
+  "notes": "1.0 MT (R$ 102.890): 6 airbags, câmera de ré, MyLink 8\" (a tela 11\" + painel 8\" digital é citada para Activ/versões superiores), ar manual, câmbio manual 6 marchas. Fontes conflitam sobre partida por botão vs chave canivete (keyless null). OnStar com 8 anos de serviço básico citado para a linha, mas funções remotas na 1.0 MT não confirmadas."
+}

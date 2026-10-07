@@ -9,6 +9,8 @@ import { BreakdownBars } from './BreakdownBars'
 import { MarketListings } from './MarketListings'
 import { Badge, Card, Segmented } from './ui'
 import { WikiImage } from './WikiImage'
+import { comfortScore, featuresFor, safetyScore, techScore } from '../lib/scores'
+import { ScoreBadge } from './ScoreBadge'
 
 interface Props {
   modelId: string
@@ -223,6 +225,9 @@ export function ModelPage({ modelId, results, ranked, keep, horizon, onHorizon, 
       </Card>
 
       <SpecComparison
+        modelId={model.id}
+        carModelId={car.catalogModelId}
+        carModelYear={car.modelYear}
         info={info}
         mine={mine}
         mineLabel={car.label}
@@ -375,12 +380,18 @@ function List({ items, marker, tone }: { items: string[]; marker: string; tone: 
 }
 
 function SpecComparison({
+  modelId,
+  carModelId,
+  carModelYear,
   info,
   mine,
   mineLabel,
   energyThis,
   energyMine,
 }: {
+  modelId: string
+  carModelId?: string
+  carModelYear?: number
   info?: ModelInfo
   mine?: ModelInfo
   mineLabel: string
@@ -398,7 +409,17 @@ function SpecComparison({
     ].filter(Boolean)
     return parts.length ? parts.join(' · ') : '—'
   }
+  const fThis = featuresFor(modelId)
+  const fMine = featuresFor(carModelId, carModelYear)
+  const pair = (label: string, a: ReturnType<typeof techScore>, b: ReturnType<typeof techScore>): [string, ReactNode, ReactNode] => [
+    label,
+    <ScoreBadge score={a} title={label} highlight={a.value !== null && b.value !== null && a.value > b.value} />,
+    <ScoreBadge score={b} title={label} highlight={a.value !== null && b.value !== null && b.value > a.value} />,
+  ]
   const rows: [string, ReactNode, ReactNode][] = [
+    pair('Tecnologia (0–10)', techScore(fThis), techScore(fMine)),
+    pair('Conforto (0–10)', comfortScore(fThis, modelId), comfortScore(fMine, carModelId)),
+    pair('Segurança (0–10)', safetyScore(fThis), safetyScore(fMine)),
     ['Versão de referência', info?.specs.version ?? '—', mine?.specs.version ?? '—'],
     ['Motor', info?.specs.engine ?? '—', mine?.specs.engine ?? '—'],
     ['Potência (cv)', info?.specs.powerCv ?? '—', mine?.specs.powerCv ?? '—'],

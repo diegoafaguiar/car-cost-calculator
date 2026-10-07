@@ -1,0 +1,60 @@
+{
+  "id": "toyota-corolla",
+  "version": "Toyota Corolla XEi 2.0 2026",
+  "researchedAt": "2026-10",
+  "tech": {
+    "screen10": true,
+    "wirelessMirroring": true,
+    "digitalCluster": true,
+    "wirelessCharger": true,
+    "camera360": null,
+    "adaptiveCruise": true,
+    "connectedApp": null,
+    "keyless": null
+  },
+  "comfort": {
+    "automatic": true,
+    "digitalAC": true,
+    "rearVents": null,
+    "leather": null,
+    "powerSeat": null,
+    "seatClimate": null,
+    "sunroof": null
+  },
+  "safety": {
+    "airbags6": true,
+    "aeb": true,
+    "laneKeep": true,
+    "blindSpot": null,
+    "rearCrossTraffic": null
+  },
+  "ncap": {
+    "stars": 5,
+    "year": 2019,
+    "program": "Latin NCAP",
+    "note": "5 estrelas adulto e criança no protocolo antigo (Corolla nacional com 7 airbags, publicado dez/2019).",
+    "source": "https://www.latinncap.com/en/result/137/toyota-new-corolla-+-7-airbags"
+  },
+  "sources": [
+    {
+      "label": "Verificar Auto - Corolla 2026",
+      "url": "https://verificarauto.com.br/toyota-corolla-2026-versoes-precos/"
+    },
+    {
+      "label": "Latin NCAP - Corolla",
+      "url": "https://www.latinncap.com/en/result/137/toyota-new-corolla-+-7-airbags"
+    }
+  ],
+  "unverified": [
+    "tech.camera360",
+    "tech.connectedApp",
+    "tech.keyless",
+    "comfort.rearVents",
+    "comfort.leather",
+    "comfort.powerSeat",
+    "comfort.seatClimate",
+    "comfort.sunroof",
+    "safety.blindSpot",
+    "safety.rearCrossTraffic"
+  ]
+}

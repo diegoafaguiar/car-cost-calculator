@@ -1,0 +1,70 @@
+{
+  "id": "toyota-yaris-cross-hybrid",
+  "version": "Toyota Yaris Cross XRX Hybrid 2026",
+  "researchedAt": "2026-10",
+  "tech": {
+    "screen10": null,
+    "wirelessMirroring": null,
+    "digitalCluster": null,
+    "wirelessCharger": null,
+    "camera360": true,
+    "adaptiveCruise": true,
+    "connectedApp": null,
+    "keyless": null
+  },
+  "comfort": {
+    "automatic": true,
+    "digitalAC": null,
+    "rearVents": null,
+    "leather": null,
+    "powerSeat": null,
+    "seatClimate": null,
+    "sunroof": true
+  },
+  "safety": {
+    "airbags6": true,
+    "aeb": true,
+    "laneKeep": true,
+    "blindSpot": true,
+    "rearCrossTraffic": true
+  },
+  "ncap": {
+    "stars": null,
+    "year": null,
+    "program": "Latin NCAP",
+    "note": "Não pesquisado/encontrado (limite de buscas).",
+    "source": ""
+  },
+  "sources": [
+    {
+      "label": "Vrum - Yaris Cross estreia",
+      "url": "https://www.vrum.com.br/noticias/2025/11/7296227-toyota-yaris-cross-estreia-por-rs-161-mil-hibrido-parte-de-rs-172-mil.html"
+    },
+    {
+      "label": "Itatiaia - Yaris Cross versões",
+      "url": "https://www.itatiaia.com.br/auto/toyota-yaris-cross-veja-os-precos-equipamentos-e-consumo-das-versoes/"
+    },
+    {
+      "label": "Band - Yaris Cross 2026 híbrido",
+      "url": "https://www.band.com.br/bandmotor/noticias/toyota-lanca-yaris-cross-2026-hibrido-com-preco-que-surpreende-o-mercado-202511191520"
+    },
+    {
+      "label": "Autoo - Yaris Cross XRX Hybrid",
+      "url": "https://www.autoo.com.br/toyota-yaris-cross-xrx-15-flex-confira-as-primeiras-impressoes-do-suv/"
+    }
+  ],
+  "notes": "R$ 189.990. Toyota Safety Sense em todas as versões (ACC, pré-colisão, permanência em faixa, farol alto automático); XRX acrescenta teto panorâmico, câmera 360°, ponto cego, tráfego cruzado traseiro, porta-malas elétrico. Itens de multimídia, quadro, indução, couro e chave presencial não confirmados: o único resultado com esses itens misturava dados do Corolla Cross e foi descartado.",
+  "unverified": [
+    "tech.screen10",
+    "tech.wirelessMirroring",
+    "tech.digitalCluster",
+    "tech.wirelessCharger",
+    "tech.connectedApp",
+    "tech.keyless",
+    "comfort.digitalAC",
+    "comfort.rearVents",
+    "comfort.leather",
+    "comfort.powerSeat",
+    "comfort.seatClimate"
+  ]
+}

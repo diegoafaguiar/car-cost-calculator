@@ -1,0 +1,65 @@
+{
+  "id": "byd-sealion-7",
+  "version": "BYD Sealion 7 AWD (R$ 339.990)",
+  "researchedAt": "2026-10",
+  "tech": {
+    "screen10": true,
+    "wirelessMirroring": true,
+    "digitalCluster": null,
+    "wirelessCharger": true,
+    "camera360": true,
+    "adaptiveCruise": true,
+    "connectedApp": null,
+    "keyless": null
+  },
+  "comfort": {
+    "automatic": true,
+    "digitalAC": null,
+    "rearVents": null,
+    "leather": null,
+    "powerSeat": true,
+    "seatClimate": true,
+    "sunroof": true
+  },
+  "safety": {
+    "airbags6": true,
+    "aeb": true,
+    "laneKeep": true,
+    "blindSpot": true,
+    "rearCrossTraffic": null
+  },
+  "ncap": {
+    "stars": 5,
+    "year": 2025,
+    "program": "Euro NCAP",
+    "note": "5 estrelas Euro NCAP (abr/2025): adulto 87%, criança 93%. Sem teste Latin NCAP.",
+    "source": "https://www.byd.com/za/news-list/byd-sealion-7-scores-maximum-five-star-euro-ncap-safety-rating"
+  },
+  "sources": [
+    {
+      "label": "Canal VE Sealion 7",
+      "url": "https://canalve.com.br/ficha-tecnica/byd/tudo-sobre-sealion-7/"
+    },
+    {
+      "label": "AutoPapo Sealion 7",
+      "url": "https://autopapo.com.br/curta/byd-seal-ganha-variante-suv-cupe-por-r-339-990-conheca-o-sealion-7/"
+    },
+    {
+      "label": "Autoo Sealion 7",
+      "url": "https://www.autoo.com.br/byd-lanca-suv-eletrico-com-jeito-de-cupe-sealion-7-confira-precos-e-detalhes/"
+    },
+    {
+      "label": "Autodata Sealion 7",
+      "url": "https://www.autodata.com.br/noticias/2026/05/26/suv-cupe-premium-byd-sealion-7-alcanca-531-cv-com-dois-motores-eletricos/104473/"
+    }
+  ],
+  "unverified": [
+    "digitalCluster",
+    "connectedApp",
+    "keyless",
+    "digitalAC",
+    "rearVents",
+    "leather",
+    "rearCrossTraffic"
+  ]
+}

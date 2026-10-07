@@ -1,0 +1,68 @@
+{
+  "id": "toyota-corolla-cross",
+  "version": "Toyota Corolla Cross XRE 2.0 flex, linha 2027 (R$ 194.790)",
+  "researchedAt": "2026-10",
+  "tech": {
+    "screen10": true,
+    "wirelessMirroring": true,
+    "digitalCluster": true,
+    "wirelessCharger": true,
+    "camera360": null,
+    "adaptiveCruise": true,
+    "connectedApp": true,
+    "keyless": null
+  },
+  "comfort": {
+    "automatic": true,
+    "digitalAC": null,
+    "rearVents": null,
+    "leather": true,
+    "powerSeat": null,
+    "seatClimate": null,
+    "sunroof": null
+  },
+  "safety": {
+    "airbags6": true,
+    "aeb": true,
+    "laneKeep": true,
+    "blindSpot": null,
+    "rearCrossTraffic": null
+  },
+  "ncap": {
+    "stars": 5,
+    "year": 2022,
+    "program": "ANCAP (Corolla Cross australiano; Latin NCAP não testou o Corolla Cross)",
+    "note": "Não encontrado teste Latin NCAP do Corolla Cross; ANCAP 5 estrelas (nov/2022, critérios 2020-2022). Euro NCAP também atribuiu 5 estrelas (2022).",
+    "source": "https://www.ancap.com.au/media-and-gallery/media-releases/93ae04"
+  },
+  "sources": [
+    {
+      "label": "A Revista - Corolla Cross XRE 2027",
+      "url": "https://arevista.com.br/mercados/corolla-cross-xre-2027-parte-de-r-194-790-ganha-conectividade-e-painel-digital/"
+    },
+    {
+      "label": "Canaltech - Corolla Cross 2027",
+      "url": "https://canaltech.com.br/carros/toyota-corolla-cross-2027-precos-e-o-que-muda-na-linha/"
+    },
+    {
+      "label": "Bem Paraná - Corolla Cross 2026 (Toyota Play 2.0 10\" sem fio)",
+      "url": "https://www.bemparana.com.br/carros/toyota-corolla-cross-ja-estaem-2026-com-novidades/"
+    },
+    {
+      "label": "Webmotors - Corolla Cross XRE 2026",
+      "url": "https://www.webmotors.com.br/toyota/corolla-cross/2026"
+    }
+  ],
+  "unverified": [
+    "camera360",
+    "keyless",
+    "digitalAC",
+    "rearVents",
+    "powerSeat",
+    "seatClimate",
+    "sunroof",
+    "blindSpot",
+    "rearCrossTraffic"
+  ],
+  "notes": "XRE 2027: quadro digital 12,3\", carregador por indução, Serviços Conectados Toyota (novidade na XRE), Toyota Safety Sense (pré-colisão, ACC, permanência em faixa), 7 airbags, TPMS. leather=true com base em listagem genérica (Webmotors). Ponto cego/RCTA não confirmados para a XRE."
+}

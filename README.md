@@ -47,3 +47,16 @@ npm run build   # type-check + build de produção em dist/
 
 Stack: React 19, TypeScript, Vite, Tailwind CSS v4. FIPE via [API Parallelum](https://fipe.parallelum.com.br)
 (500 consultas/dia sem token; token gratuito opcional em Premissas → Mercado).
+
+## Deploy na Vercel
+
+O projeto já está pronto para a Vercel (`vercel.json`: framework Vite, `npm run build`, saída em `dist/`).
+
+1. Em [vercel.com/new](https://vercel.com/new), clique em **Import Git Repository** e escolha `diegoafaguiar/car-cost-calculator`
+   (na primeira vez, autorize a Vercel a acessar o repositório no GitHub).
+2. A Vercel detecta **Vite** sozinha. Confira: Build Command `npm run build`, Output Directory `dist`, Node.js 20.19+ ou 22.12+ (padrão da Vercel atende).
+3. Não há variáveis de ambiente obrigatórias. Clique em **Deploy**.
+4. A cada push na `main` a Vercel publica uma nova versão; cada pull request ganha uma URL de pré-visualização.
+
+As rotas usam `#/carro/<id>`, então não é preciso configurar rewrites. A FIPE (fipe.parallelum.com.br) e as fotos
+(Wikipédia) são consultadas direto do navegador do visitante.

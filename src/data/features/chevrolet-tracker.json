@@ -1,0 +1,67 @@
+{
+  "id": "chevrolet-tracker",
+  "version": "Chevrolet Tracker LT 1.0 Turbo AT 2027",
+  "researchedAt": "2026-10",
+  "tech": {
+    "screen10": true,
+    "wirelessMirroring": true,
+    "digitalCluster": true,
+    "wirelessCharger": null,
+    "camera360": null,
+    "adaptiveCruise": false,
+    "connectedApp": true,
+    "keyless": true
+  },
+  "comfort": {
+    "automatic": true,
+    "digitalAC": false,
+    "rearVents": null,
+    "leather": null,
+    "powerSeat": null,
+    "seatClimate": null,
+    "sunroof": null
+  },
+  "safety": {
+    "airbags6": true,
+    "aeb": true,
+    "laneKeep": true,
+    "blindSpot": false,
+    "rearCrossTraffic": null
+  },
+  "ncap": {
+    "stars": 5,
+    "year": 2022,
+    "program": "Latin NCAP",
+    "note": "Fase XIII (2022): 91,07% adulto; incêndio no teste de poste lateral ligado a lote já em recall.",
+    "source": "https://autopapo.com.br/curta/chevrolet-tracker-latin-ncap/"
+  },
+  "sources": [
+    {
+      "label": "Mecânica Online - Tracker 2027",
+      "url": "https://mecanicaonline.com.br/2026/05/chevrolet-tracker-estreia-linha-2027-com-assistencias-de-conducao-ampliadas-e-maior-eficiencia-urbana/"
+    },
+    {
+      "label": "Autoo - Tracker 2027",
+      "url": "https://www.autoo.com.br/chevrolet-tracker-2027-recebe-novos-recursos-de-seguranca-veja-que-muda/"
+    },
+    {
+      "label": "AutoPapo - Tracker 2027",
+      "url": "https://autopapo.com.br/curta/chevrolet-tracker-2027/"
+    },
+    {
+      "label": "Vrum - Tracker 2027",
+      "url": "https://www.vrum.com.br/mercado/2026/05/7422010-chevrolet-tracker-2027-recebe-novos-itens-de-seguranca-e-conforto.html"
+    }
+  ],
+  "notes": "R$ 145.490. Multimídia 11\", painel digital 8\", chave presencial, myChevrolet/OnStar (8 anos), Wi-Fi. LT 2027 ganha AEB de baixa velocidade, detecção de pedestres/ciclistas e permanência em faixa. Tracker segue sem ACC. Ar digital e ponto cego citados como itens da LTZ (digitalAC=false inferido dessa diferença). Espelhamento sem fio citado em lista de itens possivelmente de linha anterior.",
+  "unverified": [
+    "tech.wirelessCharger",
+    "tech.camera360",
+    "comfort.rearVents",
+    "comfort.leather",
+    "comfort.powerSeat",
+    "comfort.seatClimate",
+    "comfort.sunroof",
+    "safety.rearCrossTraffic"
+  ]
+}

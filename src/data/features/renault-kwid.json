@@ -1,0 +1,74 @@
+{
+  "id": "renault-kwid",
+  "version": "Renault Kwid Evolution 1.0 (linha 2027, lançada ago/2026)",
+  "researchedAt": "2026-10",
+  "tech": {
+    "screen10": false,
+    "wirelessMirroring": false,
+    "digitalCluster": true,
+    "wirelessCharger": null,
+    "camera360": null,
+    "adaptiveCruise": null,
+    "connectedApp": null,
+    "keyless": null
+  },
+  "comfort": {
+    "automatic": false,
+    "digitalAC": null,
+    "rearVents": null,
+    "leather": null,
+    "powerSeat": null,
+    "seatClimate": null,
+    "sunroof": null
+  },
+  "safety": {
+    "airbags6": false,
+    "aeb": null,
+    "laneKeep": null,
+    "blindSpot": null,
+    "rearCrossTraffic": null
+  },
+  "ncap": {
+    "stars": 3,
+    "year": 2016,
+    "program": "Latin NCAP",
+    "note": "3 estrelas adulto e criança no protocolo antigo (nov/2016); sem reteste no protocolo atual encontrado",
+    "source": "https://motorshow.com.br/renault-kwid-leva-tres-estrelas-no-latin-ncap"
+  },
+  "sources": [
+    {
+      "label": "Vrum - Kwid 2027",
+      "url": "https://www.vrum.com.br/mercado/2026/08/7486100-renault-kwid-2027-parte-de-rs-71-090-com-visual-renovado-e-mais-tecnologia.html"
+    },
+    {
+      "label": "AutoPapo - Kwid 2027",
+      "url": "https://autopapo.com.br/noticia/renault-kwid-2027/"
+    },
+    {
+      "label": "Mecânica Online - Kwid 2027 painel digital",
+      "url": "https://mecanicaonline.com.br/2026/08/renault-kwid-2027-chega-com-novo-painel-digital-e-mais-tecnologia/"
+    },
+    {
+      "label": "Motorshow - Kwid 3 estrelas Latin NCAP",
+      "url": "https://motorshow.com.br/renault-kwid-leva-tres-estrelas-no-latin-ncap"
+    }
+  ],
+  "unverified": [
+    "tech.wirelessCharger",
+    "tech.camera360",
+    "tech.adaptiveCruise",
+    "tech.connectedApp",
+    "tech.keyless",
+    "comfort.digitalAC",
+    "comfort.rearVents",
+    "comfort.leather",
+    "comfort.powerSeat",
+    "comfort.seatClimate",
+    "comfort.sunroof",
+    "safety.aeb",
+    "safety.laneKeep",
+    "safety.blindSpot",
+    "safety.rearCrossTraffic"
+  ],
+  "notes": "Linha 2027: painel TFT 7\" 100% digital de série em todas as versões; Evolution sem central multimídia (tela 10,1\" com CarPlay/AA sem fio a partir da Techno). 4 airbags, só câmbio manual. Fontes citam câmera de ré mesmo na Evolution. Preço R$ 71.190."
+}

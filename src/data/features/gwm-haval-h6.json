@@ -1,0 +1,62 @@
+{
+  "id": "gwm-haval-h6",
+  "version": "GWM Haval H6 HEV2 1.5 turbo flex híbrido (DHT), linha 2026",
+  "researchedAt": "2026-10",
+  "tech": {
+    "screen10": true,
+    "wirelessMirroring": null,
+    "digitalCluster": true,
+    "wirelessCharger": true,
+    "camera360": true,
+    "adaptiveCruise": true,
+    "connectedApp": true,
+    "keyless": true
+  },
+  "comfort": {
+    "automatic": true,
+    "digitalAC": true,
+    "rearVents": null,
+    "leather": true,
+    "powerSeat": true,
+    "seatClimate": true,
+    "sunroof": true
+  },
+  "safety": {
+    "airbags6": true,
+    "aeb": null,
+    "laneKeep": true,
+    "blindSpot": true,
+    "rearCrossTraffic": true
+  },
+  "ncap": {
+    "stars": 5,
+    "year": 2021,
+    "program": "ANCAP (único encontrado; sem teste Latin NCAP)",
+    "note": "Teste do H6 importado da China (Austrália, 2021): 90% adulto, 88% criança, 73% pedestres, 81% assistência. Versão flex nacional não testada.",
+    "source": "https://www.car.blog.br/2024/12/haval-h6-e-eleito-o-melhor-suv-medio-em.html"
+  },
+  "sources": [
+    {
+      "label": "Garagem360 - Haval H6 HEV2 itens de série",
+      "url": "https://garagem360.com.br/?p=250287"
+    },
+    {
+      "label": "GWM - Ficha técnica H6 HEV2 Flex",
+      "url": "https://www.gwmmotors.com.br/content/dam/gwm/pages/br/pt/models/haval-hev2-my25/ficha-tecnica-haval-h6-hev2-flex-gwm.pdf"
+    },
+    {
+      "label": "Ficha técnica H6 HEV2 Flex (concessionária, jun/2026)",
+      "url": "https://carroscomcamanzi.com.br/wp-content/uploads/2026/06/Ficha-Tecnica-H6-HEV2-Flex.pdf"
+    },
+    {
+      "label": "GWM - Haval H6 HEV2",
+      "url": "https://www.gwmmotors.com.br/pt/modelos/haval-h6-hev"
+    }
+  ],
+  "unverified": [
+    "wirelessMirroring",
+    "rearVents",
+    "aeb"
+  ],
+  "notes": "Confirmados: multimídia 14,6\" (Coffee OS 3), painel digital 10,25\", indução 50W, câmeras 360, ACC full speed, smart key, app My GWM ('controlar o carro'), ar dual zone, couro, banco elétrico com memória, bancos dianteiros ventilados, teto panorâmico, 6 airbags, manutenção/centralização de faixa, ponto cego, RCTA. Espelhamento sem fio e frenagem autônoma não confirmados explicitamente (fonte cita só 'alerta de colisão frontal')."
+}

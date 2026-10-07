@@ -1,0 +1,66 @@
+{
+  "id": "nissan-kicks",
+  "version": "Nissan Kicks Advance 1.0 Turbo DCT 2026",
+  "researchedAt": "2026-10",
+  "tech": {
+    "screen10": true,
+    "wirelessMirroring": true,
+    "digitalCluster": true,
+    "wirelessCharger": true,
+    "camera360": true,
+    "adaptiveCruise": true,
+    "connectedApp": null,
+    "keyless": null
+  },
+  "comfort": {
+    "automatic": true,
+    "digitalAC": true,
+    "rearVents": null,
+    "leather": null,
+    "powerSeat": false,
+    "seatClimate": null,
+    "sunroof": false
+  },
+  "safety": {
+    "airbags6": true,
+    "aeb": true,
+    "laneKeep": null,
+    "blindSpot": true,
+    "rearCrossTraffic": null
+  },
+  "ncap": {
+    "stars": 5,
+    "year": null,
+    "program": "Latin NCAP",
+    "note": "Novo Kicks (feito no México): 90,32% adulto, 91,84% criança, 75,60% pedestres, 85,17% assistência. Ano exato do teste não confirmado (antes da chegada ao Brasil).",
+    "source": "https://carzin.com.br/seguranca/nissan-kicks-2026-consegue-5-estrelas-teste-latin-ncap.html"
+  },
+  "sources": [
+    {
+      "label": "AutoPapo - Kicks Advance x rivais",
+      "url": "https://autopapo.com.br/noticia/nissan-kicks-advance-2026-x-concorrentes/"
+    },
+    {
+      "label": "MotorAgora - Kicks 2026 Advance",
+      "url": "https://www.motoragora.com.br/?p=188681"
+    },
+    {
+      "label": "Engenharia360 - teste Kicks Advance",
+      "url": "https://engenharia360.com/teste-e-impressoes-nissan-kicks-advance-2026/"
+    },
+    {
+      "label": "Carzin - Latin NCAP",
+      "url": "https://carzin.com.br/seguranca/nissan-kicks-2026-consegue-5-estrelas-teste-latin-ncap.html"
+    }
+  ],
+  "notes": "R$ 168-180 mil conforme fonte. Multimídia 12,3\" sem fio, painel digital 7\", indução, câmera 360°, ACC, AEB, ponto cego, 6 airbags, partida remota. Sem teto solar nem banco elétrico (dito explicitamente). Couro, chave presencial, permanência em faixa e tráfego cruzado não confirmados para a Advance.",
+  "unverified": [
+    "tech.connectedApp",
+    "tech.keyless",
+    "comfort.rearVents",
+    "comfort.leather",
+    "comfort.seatClimate",
+    "safety.laneKeep",
+    "safety.rearCrossTraffic"
+  ]
+}

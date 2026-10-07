@@ -1,0 +1,72 @@
+{
+  "id": "renault-kardian",
+  "version": "Renault Kardian Evolution 1.0 TCe EDC 2026",
+  "researchedAt": "2026-10",
+  "tech": {
+    "screen10": false,
+    "wirelessMirroring": null,
+    "digitalCluster": true,
+    "wirelessCharger": null,
+    "camera360": null,
+    "adaptiveCruise": null,
+    "connectedApp": null,
+    "keyless": null
+  },
+  "comfort": {
+    "automatic": true,
+    "digitalAC": true,
+    "rearVents": null,
+    "leather": null,
+    "powerSeat": null,
+    "seatClimate": null,
+    "sunroof": null
+  },
+  "safety": {
+    "airbags6": true,
+    "aeb": false,
+    "laneKeep": null,
+    "blindSpot": false,
+    "rearCrossTraffic": null
+  },
+  "ncap": {
+    "stars": 5,
+    "year": 2025,
+    "program": "Latin NCAP",
+    "note": "Reavaliado em 2025 (5 estrelas) com AEB VRU opcional; em 2024 tinha 4 estrelas. A Evolution não tem AEB, configuração diferente da que garantiu 5 estrelas.",
+    "source": "https://olhardigital.com.br/2025/11/27/carros-e-tecnologia/renault-kardian-obtem-nota-maxima-no-teste-de-seguranca-do-latin-ncap/"
+  },
+  "sources": [
+    {
+      "label": "AutoPapo - Kardian 2026",
+      "url": "https://autopapo.com.br/noticia/renault-kardian-2026-lancamento/"
+    },
+    {
+      "label": "Autoo - Kardian 2026 preços",
+      "url": "https://www.autoo.com.br/renault-lanca-kardian-2026-com-nova-versao-veja-precos-e-o-que-muda/"
+    },
+    {
+      "label": "Motorshow - Kardian turbo manual",
+      "url": "https://motorshow.com.br/renault-kardian-ganha-versao-turbo-manual-mais-barata-do-brasil-veja-itens-e-preco"
+    },
+    {
+      "label": "Olhar Digital - Latin NCAP",
+      "url": "https://olhardigital.com.br/2025/11/27/carros-e-tecnologia/renault-kardian-obtem-nota-maxima-no-teste-de-seguranca-do-latin-ncap/"
+    }
+  ],
+  "notes": "R$ 124.690. Multimídia openR link 10\" + câmera de ré é opcional (pack R$ 1.200) na Evolution, por isso screen10=false (padrão). Quadro digital 7\". Cruise control convencional + limitador (ACC não citado). AEB a partir da Techno; ponto cego só na Iconic.",
+  "unverified": [
+    "tech.wirelessMirroring",
+    "tech.wirelessCharger",
+    "tech.camera360",
+    "tech.adaptiveCruise",
+    "tech.connectedApp",
+    "tech.keyless",
+    "comfort.rearVents",
+    "comfort.leather",
+    "comfort.powerSeat",
+    "comfort.seatClimate",
+    "comfort.sunroof",
+    "safety.laneKeep",
+    "safety.rearCrossTraffic"
+  ]
+}

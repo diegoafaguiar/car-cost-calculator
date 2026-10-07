@@ -1,0 +1,65 @@
+{
+  "id": "toyota-rav4-hybrid",
+  "version": "Toyota RAV4 SX 2.5 Hybrid AWD, 6ª geração, linha 2026 (R$ 349.290)",
+  "researchedAt": "2026-10",
+  "tech": {
+    "screen10": true,
+    "wirelessMirroring": true,
+    "digitalCluster": true,
+    "wirelessCharger": true,
+    "camera360": true,
+    "adaptiveCruise": true,
+    "connectedApp": null,
+    "keyless": null
+  },
+  "comfort": {
+    "automatic": true,
+    "digitalAC": null,
+    "rearVents": null,
+    "leather": null,
+    "powerSeat": null,
+    "seatClimate": true,
+    "sunroof": true
+  },
+  "safety": {
+    "airbags6": true,
+    "aeb": true,
+    "laneKeep": true,
+    "blindSpot": true,
+    "rearCrossTraffic": true
+  },
+  "ncap": {
+    "stars": null,
+    "year": null,
+    "program": "ANCAP/Euro NCAP",
+    "note": "Nova geração ainda sem nota: lançada sem classificação ANCAP; Toyota espera 5 estrelas após atualizações no 2º semestre de 2026. Sem teste Latin NCAP.",
+    "source": "https://www.whichcar.com.au/news/new-toyota-rav4-on-sale-without-ancap-safety-rating"
+  },
+  "sources": [
+    {
+      "label": "AutoPapo - Novo RAV4 chega ao Brasil",
+      "url": "https://autopapo.com.br/noticia/toyota-rav4-2026-lacado-no-br/"
+    },
+    {
+      "label": "Autodata - Nova geração do RAV4",
+      "url": "https://www.autodata.com.br/noticias/2026/04/14/nova-geracao-do-toyota-rav4-desembarca-com-sistema-hibrido/102189/"
+    },
+    {
+      "label": "Portal N10 - RAV4 SX avaliação",
+      "url": "https://portaln10.com.br/fipecarros/toyota-rav4-sx-hibrido-2026-passa-por-avaliacao-confira-os-pontos-fortes/"
+    },
+    {
+      "label": "Encontra Carros - Novo RAV4 2026",
+      "url": "https://www.encontracarros.com.br/?p=76844"
+    }
+  ],
+  "unverified": [
+    "connectedApp",
+    "keyless",
+    "digitalAC",
+    "rearVents",
+    "leather",
+    "powerSeat"
+  ],
+  "notes": "SX: multimídia 12,9\", CarPlay/AA sem fio, painel digital 12,3\", dois carregadores sem fio, câmera 360, head-up display, teto panorâmico, bancos traseiros aquecidos, som premium, Toyota Safety Sense 4.0 (ACC, AEB, assistências de faixa), ponto cego + RCTA, 7 airbags, câmbio e-CVT. Limite de buscas atingido antes de confirmar couro, banco elétrico, ar digital/saídas traseiras, chave presencial e app."
+}

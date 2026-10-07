@@ -1,0 +1,66 @@
+{
+  "id": "toyota-corolla-cross-xrv-hybrid",
+  "version": "Toyota Corolla Cross XRV Hybrid 1.8 híbrido flex, linha 2027 (lançada out/2026, R$ 213.990)",
+  "researchedAt": "2026-10",
+  "tech": {
+    "screen10": true,
+    "wirelessMirroring": true,
+    "digitalCluster": null,
+    "wirelessCharger": true,
+    "camera360": null,
+    "adaptiveCruise": true,
+    "connectedApp": true,
+    "keyless": null
+  },
+  "comfort": {
+    "automatic": true,
+    "digitalAC": null,
+    "rearVents": null,
+    "leather": null,
+    "powerSeat": false,
+    "seatClimate": null,
+    "sunroof": false
+  },
+  "safety": {
+    "airbags6": true,
+    "aeb": true,
+    "laneKeep": true,
+    "blindSpot": true,
+    "rearCrossTraffic": true
+  },
+  "ncap": {
+    "stars": 5,
+    "year": 2022,
+    "program": "ANCAP (Corolla Cross australiano; Latin NCAP não testou o Corolla Cross)",
+    "note": "Não encontrado teste Latin NCAP do Corolla Cross; ANCAP 5 estrelas (nov/2022, critérios 2020-2022). Euro NCAP também atribuiu 5 estrelas (2022).",
+    "source": "https://www.ancap.com.au/media-and-gallery/media-releases/93ae04"
+  },
+  "sources": [
+    {
+      "label": "Vrum - Corolla Cross ganha versão híbrida de entrada (out/2026)",
+      "url": "https://www.vrum.com.br/mercado/2026/10/7513396-corolla-cross-ganha-nova-versao-de-hibrida-de-entrada-por-rs-213.html"
+    },
+    {
+      "label": "Autoo - Corolla Cross 2027 ganha versão XRV",
+      "url": "https://www.autoo.com.br/corolla-cross-2027-ganha-nova-versao-hibrida-xrv-veja-precos-e-equipamentos-do-suv/"
+    },
+    {
+      "label": "Comprecar - Corolla Cross ganha versão XRV Hybrid",
+      "url": "https://www.comprecar.com.br/revista/corolla-cross-ganha-versao-xrv-hybrid"
+    },
+    {
+      "label": "A Revista - Corolla Cross XRE 2027 (pacote base da XRV)",
+      "url": "https://arevista.com.br/mercados/corolla-cross-xre-2027-parte-de-r-194-790-ganha-conectividade-e-painel-digital/"
+    }
+  ],
+  "unverified": [
+    "digitalCluster",
+    "camera360",
+    "keyless",
+    "digitalAC",
+    "rearVents",
+    "leather",
+    "seatClimate"
+  ],
+  "notes": "XRV = pacote da XRE + trem híbrido da XRX. Fonte lista como exclusivos da XRX Hybrid Premium: ar dual zone, banco do motorista elétrico, computador de bordo 7\" e teto solar (por isso powerSeat/sunroof = false). Carregador por indução e Serviços Conectados vêm do pacote XRE 2027. 7 airbags, Toyota Safety Sense, BSM e RCTA confirmados."
+}

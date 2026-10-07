@@ -1,0 +1,66 @@
+{
+  "id": "hyundai-creta",
+  "version": "Hyundai Creta Comfort 1.0 TGDi 2026",
+  "researchedAt": "2026-10",
+  "tech": {
+    "screen10": false,
+    "wirelessMirroring": false,
+    "digitalCluster": null,
+    "wirelessCharger": false,
+    "camera360": null,
+    "adaptiveCruise": null,
+    "connectedApp": null,
+    "keyless": true
+  },
+  "comfort": {
+    "automatic": true,
+    "digitalAC": true,
+    "rearVents": false,
+    "leather": true,
+    "powerSeat": false,
+    "seatClimate": null,
+    "sunroof": null
+  },
+  "safety": {
+    "airbags6": true,
+    "aeb": true,
+    "laneKeep": null,
+    "blindSpot": false,
+    "rearCrossTraffic": false
+  },
+  "ncap": {
+    "stars": null,
+    "year": null,
+    "program": "Latin NCAP",
+    "note": "Uma fonte secundária citou 4 estrelas em 2025 (com falha na instalação de cadeirinhas), mas não confirmado nem se refere à geração/versão atual.",
+    "source": ""
+  },
+  "sources": [
+    {
+      "label": "JK Carros - Creta Comfort 2026",
+      "url": "https://jkcarros.com.br/?p=34497"
+    },
+    {
+      "label": "Garagem360 - Creta 2026 couro em todas as versões",
+      "url": "https://garagem360.com.br/?p=281879"
+    },
+    {
+      "label": "MotorAgora - versão mais vantajosa Creta 2026",
+      "url": "https://www.motoragora.com.br/melhor-versao-do-creta-2026/"
+    },
+    {
+      "label": "Garagem360 - Creta Comfort",
+      "url": "https://garagem360.com.br/hyundai-creta-comfort-1-0-tgdi-atributos-da-versao-de-entrada-do-sul-coreano"
+    }
+  ],
+  "notes": "Fontes conflitantes: a Comfort 2026 aparece com multimídia 8\" (10,25\" sem fio só a partir da Limited) e quadro de 4,2\"; outra fonte diz que o 'Novo Creta' passou a ter quadro 10,25\" já na base (digitalCluster=null). Couro de série em todas as versões segundo 2 fontes (uma outra dizia tecido). 6 airbags e AEB de série. Saídas traseiras e indução só na Limited+; ponto cego, tráfego cruzado e banco elétrico só no Ultimate. Permanência em faixa: conflito (null).",
+  "unverified": [
+    "tech.digitalCluster",
+    "tech.camera360",
+    "tech.adaptiveCruise",
+    "tech.connectedApp",
+    "comfort.seatClimate",
+    "comfort.sunroof",
+    "safety.laneKeep"
+  ]
+}

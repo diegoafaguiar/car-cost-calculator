@@ -1,0 +1,66 @@
+{
+  "id": "jaecoo-7-phev",
+  "version": "Jaecoo 7 PHEV Elite 2027 (SHS, R$ 179.990-189.990)",
+  "researchedAt": "2026-10",
+  "tech": {
+    "screen10": true,
+    "wirelessMirroring": true,
+    "digitalCluster": true,
+    "wirelessCharger": true,
+    "camera360": false,
+    "adaptiveCruise": true,
+    "connectedApp": false,
+    "keyless": null
+  },
+  "comfort": {
+    "automatic": true,
+    "digitalAC": true,
+    "rearVents": null,
+    "leather": true,
+    "powerSeat": null,
+    "seatClimate": false,
+    "sunroof": false
+  },
+  "safety": {
+    "airbags6": true,
+    "aeb": true,
+    "laneKeep": true,
+    "blindSpot": true,
+    "rearCrossTraffic": null
+  },
+  "ncap": {
+    "stars": 5,
+    "year": 2025,
+    "program": "Euro NCAP",
+    "note": "Jaecoo 7 PHEV 5 estrelas Euro NCAP (abr/2025): adulto 81%, criança 80%, assistência 80%. Sem teste Latin NCAP.",
+    "source": "https://cdn.euroncap.com/media/86478/euroncap-2025-jaecoo-7-phev-datasheet.pdf"
+  },
+  "sources": [
+    {
+      "label": "AutoEntusiastas Jaecoo 7 Elite",
+      "url": "https://autoentusiastas.com.br/2026/05/jaecoo-7-elite-chega-por-r-179-990-e-se-torna-um-dos-phev-mais-acessiveis-do-brasil/"
+    },
+    {
+      "label": "Instacarro Jaecoo 7 Elite",
+      "url": "https://www.instacarro.com/blog/lancamentos/jaecoo-7-elite-estreia-por-r-179-990-em-pre-venda"
+    },
+    {
+      "label": "Vrum Jaecoo 7 2027 versões",
+      "url": "https://www.vrum.com.br/mercado/2026/07/7454426-jaecoo-7-2027-estreia-novas-versoes-e-parte-de-rs-189.html"
+    },
+    {
+      "label": "Auto+ TV Jaecoo 7 2027",
+      "url": "https://www.automaistv.com.br/novidades/jaecoo-7-2027-versoes-precos/"
+    },
+    {
+      "label": "Euro NCAP datasheet",
+      "url": "https://cdn.euroncap.com/media/86478/euroncap-2025-jaecoo-7-phev-datasheet.pdf"
+    }
+  ],
+  "unverified": [
+    "keyless",
+    "rearVents",
+    "powerSeat",
+    "rearCrossTraffic"
+  ]
+}

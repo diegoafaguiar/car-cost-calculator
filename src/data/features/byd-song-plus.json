@@ -1,0 +1,61 @@
+{
+  "id": "byd-song-plus",
+  "version": "BYD Song Plus 2027 1.5 turbo DM-i (R$ 249.990)",
+  "researchedAt": "2026-10",
+  "tech": {
+    "screen10": true,
+    "wirelessMirroring": null,
+    "digitalCluster": true,
+    "wirelessCharger": true,
+    "camera360": true,
+    "adaptiveCruise": true,
+    "connectedApp": null,
+    "keyless": true
+  },
+  "comfort": {
+    "automatic": true,
+    "digitalAC": true,
+    "rearVents": true,
+    "leather": true,
+    "powerSeat": true,
+    "seatClimate": true,
+    "sunroof": true
+  },
+  "safety": {
+    "airbags6": true,
+    "aeb": true,
+    "laneKeep": true,
+    "blindSpot": true,
+    "rearCrossTraffic": null
+  },
+  "ncap": {
+    "stars": 5,
+    "year": 2024,
+    "program": "Euro NCAP (como BYD Seal U DM-i)",
+    "note": "Teste europeu do Seal U DM-i (motor aspirado anterior); sem teste Latin NCAP.",
+    "source": "https://www.byd.com/za/news-list/byd-sealion-7-scores-maximum-five-star-euro-ncap-safety-rating"
+  },
+  "sources": [
+    {
+      "label": "BYD Brasil Song Plus 2027",
+      "url": "https://www.byd.com/br/noticias-byd-brasil/byd-song-plus-2027-alcanca-um-novo-patamar-com-motor-turbo---bat"
+    },
+    {
+      "label": "CompreCar Song Plus 2027",
+      "url": "https://www.comprecar.com.br/revista/byd-song-plus-2027-alcanca-um-novo-patamar-com-motor-turbo"
+    },
+    {
+      "label": "Autoo Song Plus 2027 turbo",
+      "url": "https://www.autoo.com.br/byd-lanca-song-plus-2027-turbo-e-atto-8-saiba-precos-e-detalhes-dos-suvs/"
+    },
+    {
+      "label": "JK Carros Song Plus Premium 2027",
+      "url": "https://jkcarros.com.br/?p=36479"
+    }
+  ],
+  "unverified": [
+    "wirelessMirroring",
+    "connectedApp",
+    "rearCrossTraffic"
+  ]
+}

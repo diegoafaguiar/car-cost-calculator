@@ -1,0 +1,73 @@
+{
+  "id": "byd-dolphin-mini",
+  "version": "BYD Dolphin Mini GS (linha 2026)",
+  "researchedAt": "2026-10",
+  "tech": {
+    "screen10": true,
+    "wirelessMirroring": null,
+    "digitalCluster": null,
+    "wirelessCharger": null,
+    "camera360": null,
+    "adaptiveCruise": false,
+    "connectedApp": null,
+    "keyless": null
+  },
+  "comfort": {
+    "automatic": true,
+    "digitalAC": null,
+    "rearVents": null,
+    "leather": null,
+    "powerSeat": null,
+    "seatClimate": null,
+    "sunroof": null
+  },
+  "safety": {
+    "airbags6": true,
+    "aeb": false,
+    "laneKeep": false,
+    "blindSpot": null,
+    "rearCrossTraffic": null
+  },
+  "ncap": {
+    "stars": null,
+    "year": null,
+    "program": "Latin NCAP",
+    "note": "Nenhum teste do Dolphin Mini encontrado (o 5 estrelas de 2024 é do Dolphin/Dolphin Plus, outro modelo)",
+    "source": ""
+  },
+  "sources": [
+    {
+      "label": "JK Carros - Dolphin Mini 2026 segurança/ADAS",
+      "url": "https://jkcarros.com.br/?p=34115"
+    },
+    {
+      "label": "Vrum - Dolphin 2026 Mini GS vs SE vs Plus",
+      "url": "https://www.vrum.com.br/mercado/2026/07/7460341-byd-dolphin-2026-qual-versao-vale-mais-a-pena-entre-mini-gs-se-e-plus.html"
+    },
+    {
+      "label": "Autoo - linha 2026 Dolphin Mini",
+      "url": "https://www.autoo.com.br/byd-lanca-linha-2026-de-dolphin-mini-e-song-pro-veja-precos-e-o-que-muda/"
+    },
+    {
+      "label": "Motorshow - linha 2026 BYD",
+      "url": "https://motorshow.com.br/byd-revela-linha-2026-de-dolphin-mini-dolphin-gs-e-song-pro-gs-veja-o-que-muda"
+    }
+  ],
+  "unverified": [
+    "tech.wirelessMirroring",
+    "tech.digitalCluster",
+    "tech.wirelessCharger",
+    "tech.camera360",
+    "tech.connectedApp",
+    "tech.keyless",
+    "comfort.digitalAC",
+    "comfort.rearVents",
+    "comfort.leather",
+    "comfort.powerSeat",
+    "comfort.seatClimate",
+    "comfort.sunroof",
+    "safety.blindSpot",
+    "safety.rearCrossTraffic"
+  ],
+  "notes": "Atenção: os resumos de busca misturaram Dolphin Mini GS com Dolphin GS (12,8\", carregador 50W, câmera 360, banco elétrico). Itens desse tipo ficaram null. Tela giratória (10,1\" no Mini, 12,8\" no Dolphin) é >=10\" em ambos. Fonte 2026 afirma que o Dolphin Mini não tem ADAS (AEB, faixa, ACC); garagem360 cita 'nova tecnologia de segurança' não verificada."
+}

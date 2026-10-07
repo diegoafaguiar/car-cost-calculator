@@ -1,0 +1,69 @@
+{
+  "id": "citroen-c3",
+  "version": "Citroën C3 Live Go 1.0 (linha 2026)",
+  "researchedAt": "2026-10",
+  "tech": {
+    "screen10": false,
+    "wirelessMirroring": false,
+    "digitalCluster": null,
+    "wirelessCharger": null,
+    "camera360": null,
+    "adaptiveCruise": null,
+    "connectedApp": null,
+    "keyless": false
+  },
+  "comfort": {
+    "automatic": false,
+    "digitalAC": false,
+    "rearVents": null,
+    "leather": null,
+    "powerSeat": null,
+    "seatClimate": null,
+    "sunroof": null
+  },
+  "safety": {
+    "airbags6": false,
+    "aeb": null,
+    "laneKeep": null,
+    "blindSpot": null,
+    "rearCrossTraffic": null
+  },
+  "ncap": {
+    "stars": 0,
+    "year": 2023,
+    "program": "Latin NCAP",
+    "note": "Zero estrela (jul/2023): 2 airbags, sem proteção lateral de cabeça",
+    "source": "https://olhardigital.com.br/2023/07/14/carros-e-tecnologia/citroen-c3-leva-zero-em-teste-de-seguranca-do-latin-ncap/"
+  },
+  "sources": [
+    {
+      "label": "AutoPapo - C3 linha 2026",
+      "url": "https://autopapo.com.br/noticia/citroen-c3-linha-2026/"
+    },
+    {
+      "label": "Carro.blog.br - C3 Live 1.0 2026",
+      "url": "https://carro.blog.br/citroen-c3-live-1-0-2026-preco-ficha-tecnica-consumo-equipamentos-e-fotos-hatch-compacto-e-ideal-para-o-dia-a-dia-e-encara-bem-viagens-curtas.html"
+    },
+    {
+      "label": "Olhar Digital - C3 zero no Latin NCAP",
+      "url": "https://olhardigital.com.br/2023/07/14/carros-e-tecnologia/citroen-c3-leva-zero-em-teste-de-seguranca-do-latin-ncap/"
+    }
+  ],
+  "unverified": [
+    "tech.digitalCluster",
+    "tech.wirelessCharger",
+    "tech.camera360",
+    "tech.adaptiveCruise",
+    "tech.connectedApp",
+    "comfort.rearVents",
+    "comfort.leather",
+    "comfort.powerSeat",
+    "comfort.seatClimate",
+    "comfort.sunroof",
+    "safety.aeb",
+    "safety.laneKeep",
+    "safety.blindSpot",
+    "safety.rearCrossTraffic"
+  ],
+  "notes": "Live Go: som com USB/Bluetooth (sem central; espelhamento só a partir da Live Plus), ar manual, chave canivete, 2 airbags frontais, câmbio manual 5 marchas."
+}

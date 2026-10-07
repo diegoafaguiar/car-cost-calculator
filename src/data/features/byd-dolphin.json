@@ -1,0 +1,71 @@
+{
+  "id": "byd-dolphin",
+  "version": "BYD Dolphin GS 2026",
+  "researchedAt": "2026-10",
+  "tech": {
+    "screen10": true,
+    "wirelessMirroring": true,
+    "digitalCluster": null,
+    "wirelessCharger": true,
+    "camera360": true,
+    "adaptiveCruise": false,
+    "connectedApp": null,
+    "keyless": null
+  },
+  "comfort": {
+    "automatic": true,
+    "digitalAC": true,
+    "rearVents": null,
+    "leather": null,
+    "powerSeat": true,
+    "seatClimate": null,
+    "sunroof": null
+  },
+  "safety": {
+    "airbags6": true,
+    "aeb": false,
+    "laneKeep": false,
+    "blindSpot": null,
+    "rearCrossTraffic": null
+  },
+  "ncap": {
+    "stars": null,
+    "year": null,
+    "program": "Latin NCAP",
+    "note": "O Dolphin (configuração Plus, com ADAS) recebeu 5 estrelas no Latin NCAP em dez/2024; a GS não tem frenagem autônoma nem assistente de faixa, então a nota não corresponde exatamente a esta versão.",
+    "source": "https://canalve.com.br/byd-dolphin-plus-recebe-nota-maxima-em-teste-do-latin-ncap/"
+  },
+  "sources": [
+    {
+      "label": "Canal VE - ficha Dolphin GS 2026",
+      "url": "https://canalve.com.br/ficha-tecnica/byd/tudo-sobre-dolphin-gs-2026/"
+    },
+    {
+      "label": "AutoPapo - Dolphin GS 2026",
+      "url": "https://autopapo.com.br/noticia/byd-dolphin-gs-2026/"
+    },
+    {
+      "label": "Motor Agora - Dolphin GS 2026 sem ADAS",
+      "url": "https://www.motoragora.com.br/?p=187621"
+    },
+    {
+      "label": "Vrum - Dolphin 2026",
+      "url": "https://www.vrum.com.br/ultimas-noticias/2025/07/7195827-byd-dolphin-2026-parte-de-rs-149-990-e-ganha-mais-equipamentos.html"
+    },
+    {
+      "label": "Acelera Tudo - Dolphin 2026 (CarPlay/AA sem fio em todas as versões)",
+      "url": "https://aceleratudo.com.br/blog/byd-dolphin-2026-preco-ficha-tecnica-versoes-mini-plus"
+    }
+  ],
+  "unverified": [
+    "tech.digitalCluster",
+    "tech.connectedApp",
+    "tech.keyless",
+    "comfort.rearVents",
+    "comfort.leather",
+    "comfort.seatClimate",
+    "comfort.sunroof",
+    "safety.blindSpot",
+    "safety.rearCrossTraffic"
+  ]
+}

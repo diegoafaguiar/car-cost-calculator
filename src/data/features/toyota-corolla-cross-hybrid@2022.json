@@ -1,0 +1,63 @@
+{
+  "id": "toyota-corolla-cross-hybrid",
+  "version": "Toyota Corolla Cross XRX Hybrid 1.8 híbrido flex, ano-modelo 2022",
+  "researchedAt": "2026-10",
+  "tech": {
+    "screen10": false,
+    "wirelessMirroring": null,
+    "digitalCluster": null,
+    "wirelessCharger": false,
+    "camera360": null,
+    "adaptiveCruise": true,
+    "connectedApp": null,
+    "keyless": null
+  },
+  "comfort": {
+    "automatic": true,
+    "digitalAC": true,
+    "rearVents": null,
+    "leather": true,
+    "powerSeat": true,
+    "seatClimate": null,
+    "sunroof": true
+  },
+  "safety": {
+    "airbags6": true,
+    "aeb": true,
+    "laneKeep": null,
+    "blindSpot": true,
+    "rearCrossTraffic": true
+  },
+  "ncap": {
+    "stars": 5,
+    "year": 2022,
+    "program": "ANCAP (Corolla Cross australiano; Latin NCAP não testou o Corolla Cross)",
+    "note": "Não encontrado teste Latin NCAP do Corolla Cross; ANCAP 5 estrelas (nov/2022, critérios 2020-2022). Euro NCAP também atribuiu 5 estrelas (2022).",
+    "source": "https://www.ancap.com.au/media-and-gallery/media-releases/93ae04"
+  },
+  "sources": [
+    {
+      "label": "Carro.blog.br - Corolla Cross XRX Hybrid 2022 ficha técnica",
+      "url": "https://carro.blog.br/usados/toyota-corolla-cross-xrx-hybrid-1-8-2022-ficha-tecnica-preco-e-fotos-do-suv-hibrido-que-faz-ate-17-km-l.html"
+    },
+    {
+      "label": "Motorshow - Corolla Cross 2022 versões e equipamentos",
+      "url": "https://motorshow.com.br/toyota-corolla-cross-2022-fotos-versoes-precos-e-equipamentos"
+    },
+    {
+      "label": "O Povo testou Corolla Cross Híbrido (2022)",
+      "url": "https://www.opovo.com.br/noticias/veiculos/2022/06/07/amp/o-povo-testou-corolla-cross-hibrido-chama-a-atencao-com-consumo-baixo.html"
+    }
+  ],
+  "unverified": [
+    "wirelessMirroring",
+    "digitalCluster",
+    "camera360",
+    "connectedApp",
+    "keyless",
+    "rearVents",
+    "seatClimate",
+    "laneKeep"
+  ],
+  "notes": "Multimídia de 9\" com Android Auto/CarPlay (sem confirmação de conexão sem fio; o espelhamento sem fio aparece como novidade da linha 2026). Quadro com tela TFT de 7\" (não confirmado se 100% digital). Carregador por indução só aparecia na Special Edition, não na XRX padrão. Confirmados: ACC, alerta de colisão + frenagem autônoma, ponto cego, RCTA, ar digital dual zone, couro bege, banco elétrico, teto solar, 7 airbags."
+}

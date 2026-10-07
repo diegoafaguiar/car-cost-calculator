@@ -1,0 +1,72 @@
+{
+  "id": "vw-polo-track",
+  "version": "Volkswagen Polo Track 1.0 (linha 2026)",
+  "researchedAt": "2026-10",
+  "tech": {
+    "screen10": false,
+    "wirelessMirroring": null,
+    "digitalCluster": null,
+    "wirelessCharger": null,
+    "camera360": null,
+    "adaptiveCruise": null,
+    "connectedApp": null,
+    "keyless": null
+  },
+  "comfort": {
+    "automatic": false,
+    "digitalAC": null,
+    "rearVents": null,
+    "leather": null,
+    "powerSeat": null,
+    "seatClimate": null,
+    "sunroof": null
+  },
+  "safety": {
+    "airbags6": false,
+    "aeb": null,
+    "laneKeep": null,
+    "blindSpot": null,
+    "rearCrossTraffic": null
+  },
+  "ncap": {
+    "stars": 3,
+    "year": 2023,
+    "program": "Latin NCAP",
+    "note": "3 estrelas por extensão/auditoria (ago/2023) do resultado do Polo testado em dez/2022",
+    "source": "https://www.vrum.com.br/noticias/vw-polo-track-latin-ncap/"
+  },
+  "sources": [
+    {
+      "label": "Vrum - Polo Track 2026",
+      "url": "https://www.vrum.com.br/mercado/2026/06/7443039-polo-track-por-menos-de-rs-100-mil-vale-a-pena-ou-e-so-marketing.html"
+    },
+    {
+      "label": "Vrum - linha 2026 Polo",
+      "url": "https://www.vrum.com.br/noticias/2025/04/7109909-vw-apresenta-novidades-na-linha-2026-de-polo-virtus-nivus-e-t-cross.html"
+    },
+    {
+      "label": "Vrum - Polo Track Latin NCAP",
+      "url": "https://www.vrum.com.br/noticias/vw-polo-track-latin-ncap/"
+    }
+  ],
+  "unverified": [
+    "tech.wirelessMirroring",
+    "tech.digitalCluster",
+    "tech.wirelessCharger",
+    "tech.camera360",
+    "tech.adaptiveCruise",
+    "tech.connectedApp",
+    "tech.keyless",
+    "comfort.digitalAC",
+    "comfort.rearVents",
+    "comfort.leather",
+    "comfort.powerSeat",
+    "comfort.seatClimate",
+    "comfort.sunroof",
+    "safety.aeb",
+    "safety.laneKeep",
+    "safety.blindSpot",
+    "safety.rearCrossTraffic"
+  ],
+  "notes": "Rádio com tela 6,5\" e Bluetooth (espelhamento sem fio não confirmado), 4 airbags, câmbio manual 5 marchas, R$ 95.790. Linha 2027 do Polo ainda não anunciada segundo as fontes."
+}

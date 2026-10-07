@@ -1,0 +1,73 @@
+{
+  "id": "vw-tcross",
+  "version": "Volkswagen T-Cross 200 TSI 2026",
+  "researchedAt": "2026-10",
+  "tech": {
+    "screen10": true,
+    "wirelessMirroring": null,
+    "digitalCluster": true,
+    "wirelessCharger": null,
+    "camera360": null,
+    "adaptiveCruise": null,
+    "connectedApp": true,
+    "keyless": null
+  },
+  "comfort": {
+    "automatic": true,
+    "digitalAC": null,
+    "rearVents": null,
+    "leather": null,
+    "powerSeat": null,
+    "seatClimate": null,
+    "sunroof": null
+  },
+  "safety": {
+    "airbags6": true,
+    "aeb": true,
+    "laneKeep": null,
+    "blindSpot": null,
+    "rearCrossTraffic": null
+  },
+  "ncap": {
+    "stars": 5,
+    "year": 2024,
+    "program": "Latin NCAP",
+    "note": "5 estrelas; na linha 2025 AEB com detecção de pedestres em todas as versões.",
+    "source": "https://motorshow.com.br/volkswagen-t%e2%80%91cross-recebe-5-estrelas-em-seguranca-no-latin-ncap-assista/"
+  },
+  "sources": [
+    {
+      "label": "Vrum - T-Cross 2026 versões",
+      "url": "https://www.vrum.com.br/aceleradas/2025/04/7122504-volkswagen-oficializa-t-cross-2026-veja-precos-versoes-e-itens.html"
+    },
+    {
+      "label": "Autoo - T-Cross 2026",
+      "url": "https://www.autoo.com.br/volkswagen-t-cross-2026-precos-versoes-consumo-e-equipamentos-do-suv/"
+    },
+    {
+      "label": "BNews - T-Cross 2026 cinco versões",
+      "url": "https://www.bnewssaopaulo.com.br/noticias/negocios/volkswagen-t-cross-2026-veja-precos-equipamentos-e-motores-das-cinco-versoes.html"
+    },
+    {
+      "label": "Motorshow - Latin NCAP",
+      "url": "https://motorshow.com.br/volkswagen-t%e2%80%91cross-recebe-5-estrelas-em-seguranca-no-latin-ncap-assista/"
+    }
+  ],
+  "notes": "Pouca informação específica da versão '200 TSI' (entre Sense e Comfortline; R$ 152.490-155.990 conforme fonte). Itens marcados vêm do que vale para todas as versões/Sense: VW Play Connect 10,1\" com app (travar/destravar, localização), painel digital 8\", 6 airbags, câmbio automático 6 marchas. Comfortline acrescenta ar digital, indução e painel 10,25\" sobre a Sense, mas não se confirmou o que a 200 TSI tem.",
+  "unverified": [
+    "tech.wirelessMirroring",
+    "tech.wirelessCharger",
+    "tech.camera360",
+    "tech.adaptiveCruise",
+    "tech.keyless",
+    "comfort.digitalAC",
+    "comfort.rearVents",
+    "comfort.leather",
+    "comfort.powerSeat",
+    "comfort.seatClimate",
+    "comfort.sunroof",
+    "safety.laneKeep",
+    "safety.blindSpot",
+    "safety.rearCrossTraffic"
+  ]
+}

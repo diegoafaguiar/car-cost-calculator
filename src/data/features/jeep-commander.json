@@ -1,0 +1,60 @@
+{
+  "id": "jeep-commander",
+  "version": "Jeep Commander Overland T270 1.3 turboflex MHEV 48V AT6, linha 2027 (R$ 283.790)",
+  "researchedAt": "2026-10",
+  "tech": {
+    "screen10": true,
+    "wirelessMirroring": true,
+    "digitalCluster": true,
+    "wirelessCharger": true,
+    "camera360": true,
+    "adaptiveCruise": true,
+    "connectedApp": null,
+    "keyless": true
+  },
+  "comfort": {
+    "automatic": true,
+    "digitalAC": true,
+    "rearVents": true,
+    "leather": true,
+    "powerSeat": true,
+    "seatClimate": true,
+    "sunroof": true
+  },
+  "safety": {
+    "airbags6": true,
+    "aeb": true,
+    "laneKeep": true,
+    "blindSpot": true,
+    "rearCrossTraffic": true
+  },
+  "ncap": {
+    "stars": null,
+    "year": null,
+    "program": "Latin NCAP",
+    "note": "Nenhum resultado de crash test encontrado para o Commander.",
+    "source": ""
+  },
+  "sources": [
+    {
+      "label": "Revista Carro - Commander 2027 MHEV",
+      "url": "https://revistacarro.com.br/jeep-commander-2027-ganha-motor-2-0-turboflex-e-versoes-hibridas-leves-48v/"
+    },
+    {
+      "label": "Stellantis Media - Commander 2027",
+      "url": "https://www.media.stellantis.com/br-pt/jeep/press/com-novas-opcoes-de-motores-jeep-commander-2027-chega-com-muita-tecnologia-performance-e-capacidade-off-road"
+    },
+    {
+      "label": "Motorshow - Commander 2027 preços e equipamentos",
+      "url": "https://motorshow.com.br/jeep-commander-2027-precos-equipamentos-motor"
+    },
+    {
+      "label": "Conexão TO - Linha Commander 2027",
+      "url": "https://conexaoto.com.br/2026/08/20/linha-commander-2027-reforca-evolucao-da-jeep-no-brasil"
+    }
+  ],
+  "unverified": [
+    "connectedApp"
+  ],
+  "notes": "Overland: câmera 360, couro+suede, bancos dianteiros elétricos (motorista com memória), bancos ventilados, indução, teto panorâmico, porta-malas elétrico, multimídia 10,1\" sem fio, painel digital 10,2/10,25\", ar dual zone com saídas traseiras, ADAS nível 2 (AEB, faixa, ACC, ponto cego, tráfego cruzado), até 7 airbags. keyless inferido por estar presente já na Longitude (Keyless Enter 'N Go)."
+}

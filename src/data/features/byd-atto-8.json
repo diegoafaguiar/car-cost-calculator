@@ -1,0 +1,62 @@
+{
+  "id": "byd-atto-8",
+  "version": "BYD Atto 8 AWD DM-p (7 lugares, R$ 399.990)",
+  "researchedAt": "2026-10",
+  "tech": {
+    "screen10": true,
+    "wirelessMirroring": null,
+    "digitalCluster": true,
+    "wirelessCharger": true,
+    "camera360": true,
+    "adaptiveCruise": true,
+    "connectedApp": null,
+    "keyless": true
+  },
+  "comfort": {
+    "automatic": true,
+    "digitalAC": true,
+    "rearVents": true,
+    "leather": null,
+    "powerSeat": true,
+    "seatClimate": true,
+    "sunroof": true
+  },
+  "safety": {
+    "airbags6": true,
+    "aeb": true,
+    "laneKeep": true,
+    "blindSpot": true,
+    "rearCrossTraffic": true
+  },
+  "ncap": {
+    "stars": null,
+    "year": null,
+    "program": null,
+    "note": "Sem teste Latin NCAP/Euro NCAP/ANCAP encontrado.",
+    "source": ""
+  },
+  "sources": [
+    {
+      "label": "Canal VE Atto 8",
+      "url": "https://canalve.com.br/ficha-tecnica/byd/tudo-sobre-atto-8/"
+    },
+    {
+      "label": "CNN Brasil Atto 8",
+      "url": "https://www.cnnbrasil.com.br/auto/byd-atto-8-suv-hibrido-de-7-lugares-com-488-cv-e-autonomia-de-900-km/"
+    },
+    {
+      "label": "Auto+ TV avaliação Atto 8",
+      "url": "https://www.automaistv.com.br/avaliacao/byd-atto-8-e-tudo-que-o-tan-e-muito-carro-de-luxo-deveria-ser-avaliacao/"
+    },
+    {
+      "label": "BYD ficha técnica Atto 8 (PDF)",
+      "url": "https://www.byd.com/material/__CN/byd-site/br/fichas-tecnicas-2026/update-02-07-2026/BYD_ATTO8_FichaTecnica_2026.pdf"
+    }
+  ],
+  "unverified": [
+    "wirelessMirroring",
+    "connectedApp",
+    "leather",
+    "ncap"
+  ]
+}

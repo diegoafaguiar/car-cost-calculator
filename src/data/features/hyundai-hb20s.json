@@ -1,0 +1,71 @@
+{
+  "id": "hyundai-hb20s",
+  "version": "Hyundai HB20S Comfort 1.0 (linhas 2026/2027)",
+  "researchedAt": "2026-10",
+  "tech": {
+    "screen10": false,
+    "wirelessMirroring": true,
+    "digitalCluster": null,
+    "wirelessCharger": null,
+    "camera360": null,
+    "adaptiveCruise": null,
+    "connectedApp": true,
+    "keyless": null
+  },
+  "comfort": {
+    "automatic": null,
+    "digitalAC": null,
+    "rearVents": null,
+    "leather": null,
+    "powerSeat": null,
+    "seatClimate": null,
+    "sunroof": null
+  },
+  "safety": {
+    "airbags6": true,
+    "aeb": null,
+    "laneKeep": null,
+    "blindSpot": null,
+    "rearCrossTraffic": null
+  },
+  "ncap": {
+    "stars": null,
+    "year": null,
+    "program": "Latin NCAP",
+    "note": "Sem teste específico do sedã encontrado; o HB20 hatch tem 3 estrelas (set/2023)",
+    "source": "https://motorshow.com.br/hyundai-hb20-recebe-3-estrelas-de-5-em-teste-de-colisao"
+  },
+  "sources": [
+    {
+      "label": "Carzin - linha 2026 HB20/HB20S",
+      "url": "https://carzin.com.br/lancamentos/linha-2026-hb20-hb20s-chega-novidades-equipamentos.html"
+    },
+    {
+      "label": "Webmotors - HB20S 2026",
+      "url": "https://www.webmotors.com.br/hyundai/hb20s/2026"
+    },
+    {
+      "label": "Motorshow - HB20 3 estrelas",
+      "url": "https://motorshow.com.br/hyundai-hb20-recebe-3-estrelas-de-5-em-teste-de-colisao"
+    }
+  ],
+  "unverified": [
+    "tech.digitalCluster",
+    "tech.wirelessCharger",
+    "tech.camera360",
+    "tech.adaptiveCruise",
+    "tech.keyless",
+    "comfort.automatic",
+    "comfort.digitalAC",
+    "comfort.rearVents",
+    "comfort.leather",
+    "comfort.powerSeat",
+    "comfort.seatClimate",
+    "comfort.sunroof",
+    "safety.aeb",
+    "safety.laneKeep",
+    "safety.blindSpot",
+    "safety.rearCrossTraffic"
+  ],
+  "notes": "Comfort: 6 airbags, câmera de ré, multimídia 8\" com CarPlay/AA sem fio, Bluelink (app). A '360° Smart Camera' citada no pacote Bluelink parece não ser câmera de visão 360 (camera360 null). Oferecida com manual 5 e automático 6 marchas segundo uma fonte (automatic null, depende da configuração)."
+}

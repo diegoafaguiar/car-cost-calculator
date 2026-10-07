@@ -1,0 +1,69 @@
+{
+  "id": "byd-seal",
+  "version": "BYD Seal AWD 2026",
+  "researchedAt": "2026-10",
+  "tech": {
+    "screen10": true,
+    "wirelessMirroring": null,
+    "digitalCluster": true,
+    "wirelessCharger": null,
+    "camera360": true,
+    "adaptiveCruise": true,
+    "connectedApp": null,
+    "keyless": null
+  },
+  "comfort": {
+    "automatic": true,
+    "digitalAC": null,
+    "rearVents": null,
+    "leather": true,
+    "powerSeat": true,
+    "seatClimate": true,
+    "sunroof": true
+  },
+  "safety": {
+    "airbags6": true,
+    "aeb": true,
+    "laneKeep": true,
+    "blindSpot": true,
+    "rearCrossTraffic": null
+  },
+  "ncap": {
+    "stars": 5,
+    "year": 2023,
+    "program": "Euro NCAP",
+    "note": "Não testado pelo Latin NCAP; Euro NCAP 2023 (AOP 89%, COP 87%). Também 5 estrelas ANCAP 2023.",
+    "source": "https://www.byd.com/eu/blog/BYD-DOLPHIN-and-SEAL-demonstrate-excellent-safety-levels-5-star-Euro-NCAP-rating"
+  },
+  "sources": [
+    {
+      "label": "AutoPapo - Seal 2026",
+      "url": "https://autopapo.com.br/curta/byd-seal-2026-estreia-com-porta-malas-maior-e-novo-visual/"
+    },
+    {
+      "label": "Garagem360 - Seal (itens BR)",
+      "url": "https://garagem360.com.br/byd-seal-2024/"
+    },
+    {
+      "label": "AutoPapo - pacote ADAS por modelo",
+      "url": "https://autopapo.com.br/noticia/pacote-adas-conteudo-marcas-modelos/"
+    },
+    {
+      "label": "Chaves na Mão - avaliação Seal",
+      "url": "https://www.chavesnamao.com.br/avaliacao/byd-seal/"
+    },
+    {
+      "label": "BYD Europa - Euro NCAP",
+      "url": "https://www.byd.com/eu/blog/BYD-DOLPHIN-and-SEAL-demonstrate-excellent-safety-levels-5-star-Euro-NCAP-rating"
+    }
+  ],
+  "unverified": [
+    "tech.wirelessMirroring",
+    "tech.wirelessCharger",
+    "tech.connectedApp",
+    "tech.keyless",
+    "comfort.digitalAC",
+    "comfort.rearVents",
+    "safety.rearCrossTraffic"
+  ]
+}

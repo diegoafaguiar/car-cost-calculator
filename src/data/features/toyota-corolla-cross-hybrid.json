@@ -1,0 +1,68 @@
+{
+  "id": "toyota-corolla-cross-hybrid",
+  "version": "Toyota Corolla Cross XRX Hybrid Premium 1.8 híbrido flex, linha 2027 (R$ 223.790)",
+  "researchedAt": "2026-10",
+  "tech": {
+    "screen10": true,
+    "wirelessMirroring": true,
+    "digitalCluster": true,
+    "wirelessCharger": true,
+    "camera360": true,
+    "adaptiveCruise": true,
+    "connectedApp": true,
+    "keyless": true
+  },
+  "comfort": {
+    "automatic": true,
+    "digitalAC": true,
+    "rearVents": true,
+    "leather": true,
+    "powerSeat": true,
+    "seatClimate": null,
+    "sunroof": true
+  },
+  "safety": {
+    "airbags6": true,
+    "aeb": true,
+    "laneKeep": true,
+    "blindSpot": true,
+    "rearCrossTraffic": true
+  },
+  "ncap": {
+    "stars": 5,
+    "year": 2022,
+    "program": "ANCAP (Corolla Cross australiano; Latin NCAP não testou o Corolla Cross)",
+    "note": "Não encontrado teste Latin NCAP do Corolla Cross; ANCAP 5 estrelas (nov/2022, critérios 2020-2022). Euro NCAP também atribuiu 5 estrelas (2022).",
+    "source": "https://www.ancap.com.au/media-and-gallery/media-releases/93ae04"
+  },
+  "sources": [
+    {
+      "label": "Autoo - Corolla Cross 2027 XRV (itens exclusivos XRX Hybrid Premium)",
+      "url": "https://www.autoo.com.br/corolla-cross-2027-ganha-nova-versao-hibrida-xrv-veja-precos-e-equipamentos-do-suv/"
+    },
+    {
+      "label": "Canaltech - Corolla Cross 2027 preços e o que muda",
+      "url": "https://canaltech.com.br/carros/toyota-corolla-cross-2027-precos-e-o-que-muda-na-linha/"
+    },
+    {
+      "label": "Autodata - Linha 2027 do Corolla Cross",
+      "url": "https://www.autodata.com.br/noticias/2026/06/16/linha-2027-do-corolla-cross-traz-atualizacoes-internas/106387/"
+    },
+    {
+      "label": "A Revista - Corolla Cross XRE 2027",
+      "url": "https://arevista.com.br/mercados/corolla-cross-xre-2027-parte-de-r-194-790-ganha-conectividade-e-painel-digital/"
+    },
+    {
+      "label": "Vrum - Corolla Cross lista de equipamentos",
+      "url": "https://www.vrum.com.br/noticias/toyota-corolla-cross-confira-a-lista-de-equipamentos-e-itens-de-seguranca/"
+    },
+    {
+      "label": "Bem Paraná - Corolla Cross 2026 novidades (Toyota Play 2.0 sem fio)",
+      "url": "https://www.bemparana.com.br/carros/toyota-corolla-cross-ja-estaem-2026-com-novidades/"
+    }
+  ],
+  "unverified": [
+    "seatClimate"
+  ],
+  "notes": "digitalCluster: fontes citam quadro digital 12,3\" a partir da XRX/XRE; uma fonte (Autoo) menciona 'computador de bordo 7\"' como exclusivo da Premium — leve conflito. connectedApp: Serviços Conectados Toyota/Toyota App (diagnóstico, rastreamento, imobilização remota, Wi-Fi; parte depende de assinatura). 7 airbags. Carregador por indução, câmera 360 (Panoramic View Monitor), duto de ar traseiro, Smart Entry, teto solar, BSM/RCTA confirmados para a XRX Hybrid."
+}

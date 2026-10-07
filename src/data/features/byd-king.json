@@ -1,0 +1,65 @@
+{
+  "id": "byd-king",
+  "version": "BYD King GS 2026",
+  "researchedAt": "2026-10",
+  "tech": {
+    "screen10": true,
+    "wirelessMirroring": null,
+    "digitalCluster": true,
+    "wirelessCharger": null,
+    "camera360": true,
+    "adaptiveCruise": true,
+    "connectedApp": null,
+    "keyless": null
+  },
+  "comfort": {
+    "automatic": true,
+    "digitalAC": true,
+    "rearVents": true,
+    "leather": null,
+    "powerSeat": true,
+    "seatClimate": null,
+    "sunroof": false
+  },
+  "safety": {
+    "airbags6": true,
+    "aeb": true,
+    "laneKeep": true,
+    "blindSpot": true,
+    "rearCrossTraffic": null
+  },
+  "ncap": {
+    "stars": null,
+    "year": null,
+    "program": "Latin NCAP",
+    "note": "Sem teste no Latin NCAP encontrado.",
+    "source": ""
+  },
+  "sources": [
+    {
+      "label": "Garagem360 - ficha King GS 2026",
+      "url": "https://garagem360.com.br/?p=293503"
+    },
+    {
+      "label": "Webmotors - teste King 2026",
+      "url": "https://www.webmotors.com.br/wm1/testes/byd-king-2026-teste"
+    },
+    {
+      "label": "Instacarro - teste King GS",
+      "url": "https://www.instacarro.com/blog/testes/teste-byd-king-gs-2025"
+    },
+    {
+      "label": "Bem Paraná - lançamento King",
+      "url": "https://www.bemparana.com.br/carros/byd-king-e-lancado-com-duas-versoes-a-partir-de-r-169-800/"
+    }
+  ],
+  "unverified": [
+    "tech.wirelessMirroring",
+    "tech.wirelessCharger",
+    "tech.connectedApp",
+    "tech.keyless",
+    "comfort.leather",
+    "comfort.seatClimate",
+    "safety.rearCrossTraffic"
+  ]
+}

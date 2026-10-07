@@ -1,0 +1,64 @@
+{
+  "id": "jeep-commander-longitude",
+  "version": "Jeep Commander Longitude T270 1.3 turboflex AT6, linha 2027 (R$ 228.790)",
+  "researchedAt": "2026-10",
+  "tech": {
+    "screen10": true,
+    "wirelessMirroring": true,
+    "digitalCluster": true,
+    "wirelessCharger": true,
+    "camera360": null,
+    "adaptiveCruise": true,
+    "connectedApp": null,
+    "keyless": true
+  },
+  "comfort": {
+    "automatic": true,
+    "digitalAC": true,
+    "rearVents": true,
+    "leather": true,
+    "powerSeat": true,
+    "seatClimate": null,
+    "sunroof": null
+  },
+  "safety": {
+    "airbags6": true,
+    "aeb": true,
+    "laneKeep": true,
+    "blindSpot": true,
+    "rearCrossTraffic": null
+  },
+  "ncap": {
+    "stars": null,
+    "year": null,
+    "program": "Latin NCAP",
+    "note": "Nenhum resultado de crash test encontrado para o Commander.",
+    "source": ""
+  },
+  "sources": [
+    {
+      "label": "Vrum - Commander nova versão de entrada",
+      "url": "https://www.vrum.com.br/noticias/jeep-commander-nova-versao-entrada/"
+    },
+    {
+      "label": "AutoPapo - Commander Longitude",
+      "url": "https://autopapo.com.br/noticia/novo-jeep-commander-longitude/"
+    },
+    {
+      "label": "Webmotors - Commander 2027",
+      "url": "https://www.webmotors.com.br/jeep/commander/2027"
+    },
+    {
+      "label": "Conexão TO - Linha Commander 2027",
+      "url": "https://conexaoto.com.br/2026/08/20/linha-commander-2027-reforca-evolucao-da-jeep-no-brasil"
+    }
+  ],
+  "unverified": [
+    "camera360",
+    "connectedApp",
+    "seatClimate",
+    "sunroof",
+    "rearCrossTraffic"
+  ],
+  "notes": "Longitude 2027: painel Full Digital 10,25\", multimídia 10,1\" com CarPlay/AA sem fio, indução, Keyless Enter 'N Go, ar dual zone com canal traseiro, couro preto, banco do motorista elétrico, 6 airbags, ADAS nível 2 (centralizador de faixa, ACC, frenagem automática), ponto cego, câmera de ré (não 360). Uma fonte descreve a Longitude 2027 com MHEV 48V, outra lista como T270 convencional — conferir."
+}

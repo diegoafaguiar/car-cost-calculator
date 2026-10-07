@@ -1,0 +1,62 @@
+{
+ "id": "geely-ex5-em-i",
+ "version": "Geely EX5 EM-i Pro (R$ 189.990-199.990)",
+ "researchedAt": "2026-10",
+ "tech": {
+  "screen10": true,
+  "wirelessMirroring": true,
+  "digitalCluster": true,
+  "wirelessCharger": null,
+  "camera360": false,
+  "adaptiveCruise": true,
+  "connectedApp": null,
+  "keyless": true
+ },
+ "comfort": {
+  "automatic": true,
+  "digitalAC": true,
+  "rearVents": true,
+  "leather": true,
+  "powerSeat": null,
+  "seatClimate": false,
+  "sunroof": false
+ },
+ "safety": {
+  "airbags6": true,
+  "aeb": true,
+  "laneKeep": true,
+  "blindSpot": false,
+  "rearCrossTraffic": false
+ },
+ "ncap": {
+  "stars": 5,
+  "year": 2025,
+  "program": "Euro NCAP (como Geely EX5 elétrico)",
+  "note": "Teste europeu da versão 100% elétrica; EM-i híbrido não testado. Sem Latin NCAP.",
+  "source": "https://www.automaistv.com.br/curiosidades/16-carros-chineses-5-estrelas-euro-ncap/",
+  "counts": false
+ },
+ "sources": [
+  {
+   "label": "Folha PE EX5 EM-i",
+   "url": "https://www.folhape.com.br/colunistas/fmotors/geely-ex5-em-i-suv-hibrido-de-1300-km-de-autonomia-estreia-por-r-189990-saiba-mais/56713/"
+  },
+  {
+   "label": "Autoo EX5 EM-i",
+   "url": "https://www.autoo.com.br/geely-ex5-em-i-veja-preco-pecas-consumo-e-equipamentos-do-rival-do-song-plus/"
+  },
+  {
+   "label": "Canal VE EX5 EM-i",
+   "url": "https://canalve.com.br/ficha-tecnica/geely/tudo-sobre-ex5-em-i/"
+  },
+  {
+   "label": "Vrum EX5 EM-i",
+   "url": "https://www.vrum.com.br/avaliacoes/2026/04/7398602-geely-ex5-em-i-estreia-por-rs-189-990-com-ate-1-300-km-de-autonomia.html"
+  }
+ ],
+ "unverified": [
+  "wirelessCharger",
+  "connectedApp",
+  "powerSeat"
+ ]
+}

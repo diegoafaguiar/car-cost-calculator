@@ -61,15 +61,51 @@
    "source": "Carregados",
    "url": "https://carregados.com.br/carros/byd-dolphin-gs-2024-cinza-30941km-21467",
    "date": "out/2026"
+  },
+  {
+   "title": "BYD Dolphin 44.9 kW elétrico 2023/2024",
+   "price": 117990,
+   "km": 58345,
+   "city": "São Paulo/SP",
+   "source": "Webmotors",
+   "url": "https://www.webmotors.com.br/carros-usados/estoque/byd/dolphin",
+   "date": "out/2026"
+  },
+  {
+   "title": "BYD Dolphin 44.9 kW elétrico 2023/2024",
+   "price": 117990,
+   "km": 56493,
+   "city": "São Paulo/SP",
+   "source": "Webmotors",
+   "url": "https://www.webmotors.com.br/carros-usados/estoque/byd/dolphin",
+   "date": "out/2026"
+  },
+  {
+   "title": "BYD Dolphin 44.9 kW elétrico 2023/2024",
+   "price": 118540,
+   "km": 64000,
+   "city": "Rio de Janeiro/RJ",
+   "source": "Webmotors",
+   "url": "https://www.webmotors.com.br/carros-usados/estoque/byd/dolphin",
+   "date": "out/2026"
+  },
+  {
+   "title": "BYD Dolphin 44.9 kW elétrico 2023/2024",
+   "price": 122400,
+   "km": 22960,
+   "city": "Brasília/DF",
+   "source": "Webmotors",
+   "url": "https://www.webmotors.com.br/carros-usados/estoque/byd/dolphin",
+   "date": "out/2026"
   }
  ],
  "summary": {
-  "count": 6,
+  "count": 10,
   "min": 110990,
-  "median": 126800,
+  "median": 123100,
   "max": 139900
  },
- "notes": "Anúncios ~5–10% acima da FIPE, com km alto (35–100 mil). O anúncio de Manaus cita bateria 45 kWh e autonomia 405 km (dado inconsistente com o GS). URLs de listings: para Webmotors/OLX/Mobiauto os snippets só expõem a página de busca onde o anúncio apareceu (não o link individual); carregados.com.br, comprecar e litoralcar expõem o link do anúncio.",
+ "notes": "Anúncios ~5–10% acima da FIPE, com km alto (35–100 mil). O anúncio de Manaus cita bateria 45 kWh e autonomia 405 km (dado inconsistente com o GS). URLs de listings: para Webmotors/OLX/Mobiauto os snippets só expõem a página de busca onde o anúncio apareceu (não o link individual); carregados.com.br, comprecar e litoralcar expõem o link do anúncio. O Dolphin chegou ao Brasil em 2023 como ano-modelo 2024 (\"2023/2024\"); a FIPE não lista ano-modelo 2023.",
  "sources": [
   {
    "label": "OLX Dolphin 2024",

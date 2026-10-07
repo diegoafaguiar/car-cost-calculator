@@ -1,0 +1,72 @@
+{
+  "id": "chevrolet-onix-plus",
+  "version": "Chevrolet Onix Plus LTZ 1.0 Turbo AT 2026",
+  "researchedAt": "2026-10",
+  "tech": {
+    "screen10": true,
+    "wirelessMirroring": true,
+    "digitalCluster": true,
+    "wirelessCharger": true,
+    "camera360": null,
+    "adaptiveCruise": null,
+    "connectedApp": null,
+    "keyless": true
+  },
+  "comfort": {
+    "automatic": true,
+    "digitalAC": null,
+    "rearVents": null,
+    "leather": null,
+    "powerSeat": null,
+    "seatClimate": null,
+    "sunroof": null
+  },
+  "safety": {
+    "airbags6": true,
+    "aeb": false,
+    "laneKeep": false,
+    "blindSpot": true,
+    "rearCrossTraffic": null
+  },
+  "ncap": {
+    "stars": 5,
+    "year": 2019,
+    "program": "Latin NCAP",
+    "note": "5 estrelas adulto e criança no protocolo antigo do Latin NCAP (2019); não foi retestado no protocolo atual.",
+    "source": "https://motorshow.com.br/novo-chevrolet-onix-plus-leva-nota-maxima-em-teste-de-colisao"
+  },
+  "sources": [
+    {
+      "label": "Autoo - Onix 2026 novo interior",
+      "url": "https://www.autoo.com.br/chevrolet-onix-2026-lancado-novo-interior-mesmo-preco/"
+    },
+    {
+      "label": "Autoo - Onix Plus 2026 equipamentos",
+      "url": "https://www.autoo.com.br/chevrolet-onix-plus-2026-precos-pecas-consumo-e-equipamentos-do-seda/"
+    },
+    {
+      "label": "Carzin - novo Onix painel inédito",
+      "url": "https://carzin.com.br/lancamentos/novo-onix-estreia-painel-inedito-ganha-novos-equipamentos.html"
+    },
+    {
+      "label": "Auto+ TV - Onix Plus 2026",
+      "url": "https://www.automaistv.com.br/novidades/chevrolet-onix-plus-2026-precos-versoes-e-equipamentos/"
+    },
+    {
+      "label": "Motorshow - Latin NCAP Onix Plus",
+      "url": "https://motorshow.com.br/novo-chevrolet-onix-plus-leva-nota-maxima-em-teste-de-colisao"
+    }
+  ],
+  "unverified": [
+    "tech.camera360",
+    "tech.adaptiveCruise",
+    "tech.connectedApp",
+    "comfort.digitalAC",
+    "comfort.rearVents",
+    "comfort.leather",
+    "comfort.powerSeat",
+    "comfort.seatClimate",
+    "comfort.sunroof",
+    "safety.rearCrossTraffic"
+  ]
+}

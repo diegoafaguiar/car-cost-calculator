@@ -1,0 +1,61 @@
+{
+  "id": "byd-shark",
+  "version": "BYD Shark GS (versão única)",
+  "researchedAt": "2026-10",
+  "tech": {
+    "screen10": true,
+    "wirelessMirroring": true,
+    "digitalCluster": true,
+    "wirelessCharger": true,
+    "camera360": true,
+    "adaptiveCruise": true,
+    "connectedApp": null,
+    "keyless": null
+  },
+  "comfort": {
+    "automatic": true,
+    "digitalAC": true,
+    "rearVents": true,
+    "leather": true,
+    "powerSeat": true,
+    "seatClimate": true,
+    "sunroof": null
+  },
+  "safety": {
+    "airbags6": true,
+    "aeb": true,
+    "laneKeep": true,
+    "blindSpot": true,
+    "rearCrossTraffic": true
+  },
+  "ncap": {
+    "stars": 5,
+    "year": 2025,
+    "program": "ANCAP (como BYD Shark 6)",
+    "note": "Teste australiano; sem teste Latin NCAP.",
+    "source": "https://www.4x4australia.com.au/news/2025-byd-shark-gets-five-star-ancap-safety-rating"
+  },
+  "sources": [
+    {
+      "label": "TecMundo Shark",
+      "url": "https://www.tecmundo.com.br/auto/294085-byd-lanca-picape-hibrida-shark-versao-unica-r-379-800-confira.htm"
+    },
+    {
+      "label": "AutoEntusiastas Shark GS no uso",
+      "url": "https://autoentusiastas.com.br/2025/03/byd-shark-gs-phev-no-uso-com-video/"
+    },
+    {
+      "label": "Motorshow Shark",
+      "url": "https://motorshow.com.br/nova-byd-shark-saiba-preco-detalhes-e-ficha-tecnica-da-1a-picape-hibrida-plug-in-do-brasil"
+    },
+    {
+      "label": "4x4 Australia ANCAP",
+      "url": "https://www.4x4australia.com.au/news/2025-byd-shark-gets-five-star-ancap-safety-rating"
+    }
+  ],
+  "unverified": [
+    "connectedApp",
+    "keyless",
+    "sunroof"
+  ]
+}

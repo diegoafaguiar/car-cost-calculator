@@ -196,6 +196,19 @@ describe('dados de mercado', () => {
   })
 })
 
+describe('notas', () => {
+  it('segurança ignora NCAP antigo e usa só assistentes', async () => {
+    const { safetyScore } = await import('./scores')
+    const f = {
+      id: 'x', version: '', researchedAt: '', tech: {} as never, comfort: {} as never,
+      safety: { airbags6: true, aeb: true, laneKeep: false, blindSpot: false, rearCrossTraffic: null },
+      ncap: { stars: 5, year: 2019, program: 'Latin NCAP' }, sources: [],
+    }
+    expect(safetyScore(f).value).toBe(4) // tem 2 de 5 itens (1 não confirmado conta como ausente)
+    expect(safetyScore({ ...f, ncap: { ...f.ncap, year: 2023 } }).value).toBe(7.6) // 0,6×10 + 0,4×4
+  })
+})
+
 describe('fipe helpers', () => {
   it('casa nomes por palavra inteira', () => {
     const q = { brand: 'chevrolet', include: ['onix', 'lt', '1.0'], exclude: ['plus', 'ltz'] }

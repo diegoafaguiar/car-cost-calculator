@@ -1,0 +1,72 @@
+{
+  "id": "fiat-argo",
+  "version": "Fiat Argo Drive 1.0 (linha 2026)",
+  "researchedAt": "2026-10",
+  "tech": {
+    "screen10": false,
+    "wirelessMirroring": true,
+    "digitalCluster": null,
+    "wirelessCharger": null,
+    "camera360": null,
+    "adaptiveCruise": null,
+    "connectedApp": null,
+    "keyless": null
+  },
+  "comfort": {
+    "automatic": false,
+    "digitalAC": null,
+    "rearVents": null,
+    "leather": null,
+    "powerSeat": null,
+    "seatClimate": null,
+    "sunroof": null
+  },
+  "safety": {
+    "airbags6": null,
+    "aeb": null,
+    "laneKeep": null,
+    "blindSpot": null,
+    "rearCrossTraffic": null
+  },
+  "ncap": {
+    "stars": 0,
+    "year": 2021,
+    "program": "Latin NCAP",
+    "note": "Zero estrela (dez/2021, protocolo atual): sem airbags laterais/cortina na configuração básica",
+    "source": "https://www.motorpasion.com.mx/industria/fiat-argo-volkswagen-taos-seguridad"
+  },
+  "sources": [
+    {
+      "label": "Carro.blog.br - Argo 2026",
+      "url": "https://carro.blog.br/carros/fiat/tudo-sobre-o-novo-fiat-argo-2026-confira-o-que-mudou-precos-e-versoes-do-hatch.html"
+    },
+    {
+      "label": "Revista Carro - Argo 2026 versões",
+      "url": "https://revistacarro.com.br/fiat-argo-2026-versoes-equipamentos-e-precos/"
+    },
+    {
+      "label": "Motorpasión - Argo zero estrela Latin NCAP",
+      "url": "https://www.motorpasion.com.mx/industria/fiat-argo-volkswagen-taos-seguridad"
+    }
+  ],
+  "unverified": [
+    "tech.digitalCluster",
+    "tech.wirelessCharger",
+    "tech.camera360",
+    "tech.adaptiveCruise",
+    "tech.connectedApp",
+    "tech.keyless",
+    "comfort.digitalAC",
+    "comfort.rearVents",
+    "comfort.leather",
+    "comfort.powerSeat",
+    "comfort.seatClimate",
+    "comfort.sunroof",
+    "safety.airbags6",
+    "safety.aeb",
+    "safety.laneKeep",
+    "safety.blindSpot",
+    "safety.rearCrossTraffic"
+  ],
+  "notes": "Drive 1.0: multimídia 7\" com CarPlay/AA sem fio, volante multifuncional, banco do motorista com altura, câmbio manual 5 marchas, R$ 92.990. Número de airbags e tipo de painel não confirmados."
+}
