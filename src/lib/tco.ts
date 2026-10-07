@@ -6,6 +6,7 @@ import type {
   Consumption,
   CostKey,
   CurrentCar,
+  FinanceRule,
   Horizon,
   HorizonResult,
   Powertrain,
@@ -154,6 +155,19 @@ export function mileagePenalty(car: CurrentCar, a: Assumptions, year: number): n
   return Math.min(0.25, Math.max(-0.05, pen))
 }
 
+/** Escolhe a condição de financiamento: regra do modelo > regra da marca > padrão. */
+export function financeTermsFor(s: Scenario, a: Assumptions) {
+  const kindOk = (r: FinanceRule) =>
+    r.appliesTo === 'all' || (r.appliesTo === 'new' ? s.kind === 'new' : s.kind === 'used')
+  const rules = (a.financeRules ?? []).filter(kindOk)
+  const rule =
+    rules.find((r) => r.modelId && r.modelId === s.modelId) ??
+    rules.find((r) => !r.modelId && r.brand && r.brand === s.brand)
+  return rule
+    ? { rateMonth: rule.rateMonth, months: rule.months, downPaymentPct: rule.downPaymentPct, ruleId: rule.id }
+    : { rateMonth: a.financeRateMonth, months: a.financeMonths, downPaymentPct: a.downPaymentPct }
+}
+
 export interface SimContext {
   assumptions: Assumptions
   car: CurrentCar
@@ -203,6 +217,7 @@ export function simulate(s: Scenario, ctx: SimContext): Omit<ScenarioResult, 'br
   let costBasis = 0
   let upfrontCash = 0
   let financed = 0
+  const terms = financeTermsFor(s, a)
 
   if (s.kind === 'keep') {
     loan = { balance: car.loanBalance, payment: car.loanPayment, remaining: car.loanRemaining }
@@ -215,18 +230,21 @@ export function simulate(s: Scenario, ctx: SimContext): Omit<ScenarioResult, 'br
       const available = Math.max(0, cash)
       let down = paid
       if (a.paymentMode === 'financiado') {
-        down = Math.min(paid, Math.max(paid * a.downPaymentPct, available))
+        down = Math.min(paid, Math.max(paid * terms.downPaymentPct, available))
+      } else if (a.paymentMode === 'auto' && terms.rateMonth < rm) {
+        // Juros abaixo do rendimento (ex.: taxa zero): vale financiar o máximo e manter o dinheiro aplicado.
+        down = paid * terms.downPaymentPct
       } else if (a.paymentMode === 'auto' && available + a.savingsAvailable < paid) {
-        down = Math.min(paid, Math.max(paid * a.downPaymentPct, available + a.savingsAvailable))
+        down = Math.min(paid, Math.max(paid * terms.downPaymentPct, available + a.savingsAvailable))
       }
       financed = paid - down
       cash -= down
       upfrontCash = Math.max(0, -cash)
       loan = {
         balance: financed,
-        payment: pmt(financed, a.financeRateMonth, a.financeMonths),
-        remaining: financed > 0 ? a.financeMonths : 0,
-        rate: a.financeRateMonth,
+        payment: pmt(financed, terms.rateMonth, terms.months),
+        remaining: financed > 0 ? terms.months : 0,
+        rate: terms.rateMonth,
       }
     }
   }
@@ -334,7 +352,8 @@ export function simulate(s: Scenario, ctx: SimContext): Omit<ScenarioResult, 'br
     horizons,
     upfrontCash,
     financed,
-    installment: loan.rate !== undefined ? pmt(financed, a.financeRateMonth, a.financeMonths) : 0,
+    installment: loan.rate !== undefined ? pmt(financed, terms.rateMonth, terms.months) : 0,
+    finance: terms,
   }
 }
 
@@ -416,6 +435,7 @@ export function buildScenarios(opts: {
         id: `${used ? 'used' : 'new'}:${m.id}:${ageOpt}`,
         kind: used ? 'used' : 'new',
         label: `${m.brand} ${m.model}`,
+        brand: m.brand,
         detail: `${m.version} · ${used ? `${year - ageOpt} (seminovo)` : '0 km'}`,
         modelId: m.id,
         category: m.category,

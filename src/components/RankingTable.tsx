@@ -116,6 +116,11 @@ export function RankingTable({ rows, horizon, sort, onSort, compare, colors, onT
                       <span className="font-medium text-ink">{s.label}</span>
                       <span className="block text-xs text-ink-2">{s.detail}</span>
                     </button>
+                    {s.modelId && s.kind !== 'subscription' && (
+                      <a href={`#/carro/${s.modelId}`} className="ml-2 text-xs font-medium whitespace-nowrap text-accent hover:underline">
+                        Ficha e análise →
+                      </a>
+                    )}
                     <span className="mt-1 flex flex-wrap gap-1">
                       <Badge tone={KIND_TONE[s.kind]}>{KIND_LABEL[s.kind]}</Badge>
                       <Badge>{POWERTRAIN_LABEL[s.powertrain]}</Badge>

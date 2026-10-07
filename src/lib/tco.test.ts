@@ -116,6 +116,18 @@ describe('simulate', () => {
     expect(r.horizons[5].breakdown.interest).toBeGreaterThan(0)
   })
 
+  it('usa a regra de financiamento da marca (taxa zero) só no 0 km', () => {
+    const rules = [{ id: 'tz', brand: 'Toyota', appliesTo: 'new' as const, rateMonth: 0, months: 24, downPaymentPct: 0.6 }]
+    const ra = { ...a, financeRules: rules, paymentMode: 'financiado' as const }
+    const list = buildScenarios({ car, assumptions: ra, usedAges: [2], prices: {}, year: 2026 })
+    const zero = simulate(list.find((s) => s.id === 'new:toyota-corolla:0')!, { ...ctx, assumptions: ra })
+    expect(zero.finance.ruleId).toBe('tz')
+    expect(zero.horizons[5].breakdown.interest).toBeCloseTo(0)
+    expect(zero.installment).toBeCloseTo(zero.financed / 24)
+    const used = simulate(list.find((s) => s.id === 'used:toyota-corolla:2')!, { ...ctx, assumptions: ra })
+    expect(used.finance.ruleId).toBeUndefined()
+  })
+
   it('runAll calcula economia em relação a manter', () => {
     const list = buildScenarios({ car, assumptions: a, usedAges: [2], prices: {}, year: 2026 })
     const results = runAll(list, ctx)

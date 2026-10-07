@@ -51,7 +51,8 @@ export function DetailDrawer({ result, keep, a, initialHorizon, override, onOver
   if (result.financed > 0) {
     facts.push(
       ['Valor financiado', money(result.financed)],
-      ['Parcela', `${money(result.installment)} × ${a.financeMonths}`],
+      ['Parcela', `${money(result.installment)} × ${result.finance.months}`],
+      ['Juros', `${(result.finance.rateMonth * 100).toFixed(2)}% a.m.${result.finance.ruleId ? ' (regra específica)' : ''}`],
     )
   }
   if (result.upfrontCash > 0) facts.push(['Desembolso além do carro atual', money(result.upfrontCash)])
@@ -130,6 +131,12 @@ export function DetailDrawer({ result, keep, a, initialHorizon, override, onOver
             ))}
           </dl>
         </section>
+
+        {model && s.kind !== 'subscription' && (
+          <a href={`#/carro/${model.id}`} onClick={() => ref.current?.close()} className="block rounded-lg border border-accent p-3 text-sm font-medium text-accent hover:bg-accent/8">
+            Ver ficha completa do {model.brand} {model.model} (versões, destaques, fotos e comparação) →
+          </a>
+        )}
 
         {model && s.kind !== 'subscription' && (
           <section className="rounded-lg border border-line p-3">

@@ -4,6 +4,8 @@ import { CostChart, type Series } from './components/CostChart'
 import { CurrentCarForm } from './components/CurrentCarForm'
 import { DetailDrawer } from './components/DetailDrawer'
 import { Insights } from './components/Insights'
+import { ModelPage } from './components/ModelPage'
+import { TopModels } from './components/TopModels'
 import { KIND_LABEL, RankingTable, type SortKey } from './components/RankingTable'
 import { Button, Card, ChipGroup, NumberField, Segmented, TextField } from './components/ui'
 import { CATALOG, CATEGORY_LABEL, POWERTRAIN_LABEL } from './lib/catalog'
@@ -50,7 +52,22 @@ function sortValue(r: ScenarioResult, key: SortKey, horizon: Horizon, rank: numb
   }
 }
 
+function useHashRoute() {
+  const [hash, setHash] = useState(() => window.location.hash)
+  useEffect(() => {
+    const on = () => {
+      setHash(window.location.hash)
+      window.scrollTo(0, 0)
+    }
+    window.addEventListener('hashchange', on)
+    return () => window.removeEventListener('hashchange', on)
+  }, [])
+  return hash
+}
+
 export default function App() {
+  const route = useHashRoute()
+  const modelRoute = route.match(/^#\/carro\/([\w-]+)/)?.[1]
   const [car, setCar] = usePersisted('ccc:car', DEFAULT_CAR)
   const [assumptions, setAssumptions] = usePersisted('ccc:assumptions', DEFAULT_ASSUMPTIONS)
   const [prefs, setPrefs] = usePersisted('ccc:prefs', DEFAULT_PREFERENCES)
@@ -216,6 +233,20 @@ export default function App() {
           </Button>
         </aside>
 
+        {modelRoute ? (
+          <main className="min-w-0">
+            <ModelPage
+              modelId={modelRoute}
+              results={results}
+              ranked={ranked}
+              keep={keep}
+              horizon={horizon}
+              onHorizon={(v) => setPrefs({ ...prefs, rankHorizon: v })}
+              assumptions={assumptions}
+              car={car}
+            />
+          </main>
+        ) : (
         <main className="min-w-0 space-y-6">
           <div className="flex flex-wrap items-center justify-between gap-3">
             <Segmented<Horizon>
@@ -236,6 +267,8 @@ export default function App() {
           )}
 
           {keep && <Insights keep={keep} ranked={ranked} horizon={horizon} onOpen={setOpenId} />}
+
+          <TopModels ranked={ranked} horizon={horizon} />
 
           <Card
             title="Custo acumulado"
@@ -313,6 +346,7 @@ export default function App() {
 
           <Methodology />
         </main>
+        )}
       </div>
 
       {open && (

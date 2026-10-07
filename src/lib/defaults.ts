@@ -9,6 +9,7 @@ export const DEFAULT_CAR: CurrentCar = {
   fipeReference: 'setembro de 2026',
   modelYear: 2022,
   odometerKm: 89000,
+  catalogModelId: 'toyota-corolla-cross-hybrid',
   category: 'suv-medio',
   powertrain: 'hibrido',
   // INMETRO: 17,7/14,6 km/l gasolina e 12,5/10,1 km/l etanol.
@@ -34,7 +35,8 @@ export const DEFAULT_ASSUMPTIONS: Assumptions = {
   ethanolPrice: 4.29,
   dieselPrice: 6.09,
   kwhPrice: 0.95,
-  investReturnYear: 0.11,
+  // Faixa informada pelo usuário: 8–10% a.a. líquido.
+  investReturnYear: 0.09,
   inflationYear: 0.045,
   // Alíquotas do RJ em 2026.
   ipvaRate: 0.04,
@@ -45,6 +47,8 @@ export const DEFAULT_ASSUMPTIONS: Assumptions = {
   financeRateMonth: 0.0149,
   financeMonths: 48,
   downPaymentPct: 0.3,
+  // Regras por montadora/modelo (ex.: taxa zero). Adicione em Premissas → Compra e financiamento.
+  financeRules: [],
   paymentMode: 'auto',
   savingsAvailable: 20000,
   saleDiscountPct: 0.08,

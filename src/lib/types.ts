@@ -89,6 +89,8 @@ export interface CurrentCar {
   modelYear: number
   /** Quilometragem atual (para ajustar o valor de revenda). */
   odometerKm: number
+  /** Modelo equivalente no catálogo (para comparar fichas técnicas). */
+  catalogModelId?: string
   category: Category
   powertrain: Powertrain
   consumption: Consumption
@@ -109,6 +111,20 @@ export interface SubscriptionPlan {
   excessKmPrice: number
 }
 
+/** Condição de financiamento específica (ex.: taxa promocional de montadora). */
+export interface FinanceRule {
+  id: string
+  /** Marca do catálogo (ex.: "Toyota"); vazio = qualquer marca. */
+  brand: string
+  /** Modelo do catálogo; tem prioridade sobre a marca. */
+  modelId?: string
+  appliesTo: 'new' | 'used' | 'all'
+  rateMonth: number
+  months: number
+  downPaymentPct: number
+  note?: string
+}
+
 export interface Assumptions {
   kmPerYear: number
   /** Fração rodada na cidade (0..1). */
@@ -127,6 +143,7 @@ export interface Assumptions {
   financeRateMonth: number
   financeMonths: number
   downPaymentPct: number
+  financeRules: FinanceRule[]
   paymentMode: PaymentMode
   /** Dinheiro disponível além do carro atual, usado para pagar à vista. */
   savingsAvailable: number
@@ -163,6 +180,7 @@ export interface Scenario {
   kind: ScenarioKind
   label: string
   detail: string
+  brand?: string
   modelId?: string
   category: Category
   powertrain: Powertrain
@@ -212,6 +230,8 @@ export interface ScenarioResult {
   upfrontCash: number
   financed: number
   installment: number
+  /** Condição de financiamento usada (padrão ou regra específica). */
+  finance: { rateMonth: number; months: number; downPaymentPct: number; ruleId?: string }
   /** Mês a partir do qual a opção passa a ser mais barata que manter (até 60). */
   breakEvenMonth: number | null
 }
