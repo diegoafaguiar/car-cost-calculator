@@ -1,0 +1,64 @@
+{
+  "id": "gac-gs3",
+  "version": "GAC GS3 Premium 1.5 Turbo 2026",
+  "researchedAt": "2026-10",
+  "tech": {
+    "screen10": true,
+    "wirelessMirroring": true,
+    "digitalCluster": true,
+    "wirelessCharger": false,
+    "camera360": false,
+    "adaptiveCruise": false,
+    "connectedApp": null,
+    "keyless": true
+  },
+  "comfort": {
+    "automatic": true,
+    "digitalAC": true,
+    "rearVents": true,
+    "leather": true,
+    "powerSeat": false,
+    "seatClimate": false,
+    "sunroof": false
+  },
+  "safety": {
+    "airbags6": true,
+    "aeb": false,
+    "laneKeep": null,
+    "blindSpot": null,
+    "rearCrossTraffic": null
+  },
+  "ncap": {
+    "stars": 5,
+    "year": 2024,
+    "program": "ASEAN NCAP",
+    "note": "ASEAN NCAP 5 estrelas (protocolo 2021-2025, ago/2024): 88,39 pontos, adulto 36,60. Testado o GS3 Emzoom do Sudeste Asiático, que precisou de AEB e visualização de ponto cego (itens que a Premium brasileira não tem) para chegar à nota. O programa não é Latin/Euro NCAP/ANCAP. Sem Latin NCAP.",
+    "source": "https://carguide.ph/2024/08/gac-gs3-emzoom-joins-5-star-asean-ncap.html",
+    "counts": false
+  },
+  "sources": [
+    {
+      "label": "Motorshow — GS3 preço, equipamentos, motor",
+      "url": "https://motorshow.com.br/gac-gs3-preco-equipamentos-motor"
+    },
+    {
+      "label": "Webmotors — GAC GS3 2027 (R$ 139.990 – R$ 159.990)",
+      "url": "https://www.webmotors.com.br/gac/gs3/2027"
+    },
+    {
+      "label": "Jornal do Brás — equipamentos da Elite",
+      "url": "https://jornaldobras.com.br/noticia/113167/gac-lanca-suv-gs3-em-salvador-com-condicoes-especiais-e-duas-versoes-tecnologicas"
+    },
+    {
+      "label": "Tabela Carros — GS3 chega por R$ 139.990",
+      "url": "https://tabelacarros.com/post/gac-gs3-chega-por-r-139990-para-desafiar-creta-e-t-cross"
+    }
+  ],
+  "notes": "Premium de R$ 139.990: multimídia de 14,6\" com CarPlay/Android Auto sem fio, painel digital de 7\", ar automático digital com saídas traseiras, bancos e volante em couro sintético, chave presencial, câmera de ré, sensores traseiros, Auto Hold, piloto automático comum, 6 airbags e rodas 18\". Exclusivos da Elite: câmeras 360°, ADAS (alerta de colisão, AEB, ACC), teto panorâmico, carregador por indução, banco do motorista elétrico e ventilado e rodas 19\". Uma matéria de pré-lançamento (Revista Carro) citou bancos elétricos no GS3, mas as fontes mais detalhadas (Webmotors, Motorshow) os põem só na Elite.",
+  "unverified": [
+    "tech.connectedApp",
+    "safety.laneKeep",
+    "safety.blindSpot",
+    "safety.rearCrossTraffic"
+  ]
+}

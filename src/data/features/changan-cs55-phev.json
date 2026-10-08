@@ -1,0 +1,73 @@
+{
+  "id": "changan-cs55-phev",
+  "version": "Caoa Changan CS55 PHEV 2027",
+  "researchedAt": "2026-10",
+  "tech": {
+    "screen10": null,
+    "wirelessMirroring": null,
+    "digitalCluster": null,
+    "wirelessCharger": null,
+    "camera360": null,
+    "adaptiveCruise": null,
+    "connectedApp": null,
+    "keyless": null
+  },
+  "comfort": {
+    "automatic": true,
+    "digitalAC": null,
+    "rearVents": null,
+    "leather": null,
+    "powerSeat": null,
+    "seatClimate": null,
+    "sunroof": null
+  },
+  "safety": {
+    "airbags6": true,
+    "aeb": null,
+    "laneKeep": null,
+    "blindSpot": null,
+    "rearCrossTraffic": null
+  },
+  "ncap": {
+    "stars": null,
+    "year": null,
+    "program": "Latin NCAP",
+    "note": "Sem teste Latin NCAP; nenhum Euro NCAP/ANCAP do CS55 encontrado.",
+    "source": ""
+  },
+  "sources": [
+    {
+      "label": "Auto+ TV — consumo do CS55 (PHEV 42,2/33,5 km/l, 76 km elétricos)",
+      "url": "https://www.automaistv.com.br/novidades/confira-como-ficou-o-consumo-do-caoa-changan-cs55/"
+    },
+    {
+      "label": "Vrum — Caoa Changan lança CS55 a partir de R$ 144 mil (set/2026)",
+      "url": "https://www.vrum.com.br/mercado/2026/09/7501381-caoa-changan-lanca-cs55-a-partir-de-rs-144-mil-para-destronar-jeep-compass.html"
+    },
+    {
+      "label": "AutoPapo — CS55 Infinity: positivos e negativos",
+      "url": "https://autopapo.com.br/noticia/caoa-changan-cs55-infinity-positivos-e-negativos/"
+    }
+  ],
+  "notes": "Lista de equipamentos específica da PHEV não encontrada; a imprensa só dá a da Infinity flex. 6 airbags citados para toda a linha CS55 (a Prime base também tem 6).",
+  "unverified": [
+    "tech.screen10",
+    "tech.wirelessMirroring",
+    "tech.digitalCluster",
+    "tech.wirelessCharger",
+    "tech.camera360",
+    "tech.adaptiveCruise",
+    "tech.connectedApp",
+    "tech.keyless",
+    "comfort.digitalAC",
+    "comfort.rearVents",
+    "comfort.leather",
+    "comfort.powerSeat",
+    "comfort.seatClimate",
+    "comfort.sunroof",
+    "safety.aeb",
+    "safety.laneKeep",
+    "safety.blindSpot",
+    "safety.rearCrossTraffic"
+  ]
+}

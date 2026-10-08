@@ -1,0 +1,156 @@
+{
+  "catalogSeed": {
+    "brand": "Kia",
+    "model": "Niro",
+    "version": "EX 1.6 GDI HEV",
+    "category": "suv-compacto",
+    "powertrain": "hibrido",
+    "seats": 5,
+    "trunkL": 425,
+    "refPriceNew": 194990,
+    "consumption": {
+      "cityKmL": 18.3,
+      "roadKmL": 15.9,
+      "cityKmLEthanol": null,
+      "roadKmLEthanol": null,
+      "cityKmKWh": null,
+      "roadKmKWh": null
+    },
+    "evShareNote": "Híbrido pleno (não recarrega na tomada); só gasolina.",
+    "fipeBrand": "KIA MOTORS",
+    "fipeInclude": [
+      "Niro",
+      "EX"
+    ],
+    "since": 2023
+  },
+  "id": "kia-niro-hev",
+  "researchedAt": "2026-10",
+  "displayName": "Kia Niro Hybrid",
+  "summary": "Crossover/SUV compacto híbrido pleno (HEV) da Kia, importado da Coreia do Sul. Usa o motor 1.6 GDI a gasolina com motor elétrico, 141 cv e 27 kgfm combinados, e câmbio de dupla embreagem de 6 marchas. O conjunto é o mesmo do Kona Hybrid. Há duas versões, EX e SX Prestige, e o porta-malas de 425 L é bom para o porte.",
+  "generation": "2ª geração (SG2, 2022). No Brasil desde out/2022 (linha 2023); linha 2025/2026 lançada em out/2025 e anunciada também como 2026/2027 em set/2026.",
+  "timeline": [
+    {
+      "modelYear": "2023",
+      "change": "Lançamento a partir de R$ 204.990 (Autoo/Motorshow); PBEV da época: 19,8 km/l cidade, 17,7 km/l estrada."
+    },
+    {
+      "modelYear": "2026",
+      "change": "Out/2025: tabela EX R$ 214.990 e SX Prestige R$ 239.990, com bônus de R$ 20 mil (EX R$ 194.990, SX R$ 219.990)."
+    },
+    {
+      "modelYear": "2026/2027",
+      "change": "Set/2026: EX citada a R$ 194.990 e SX Prestige a R$ 219.990, com mais R$ 20 mil de desconto até 30/09 (EX R$ 174.990)."
+    }
+  ],
+  "highlights": [
+    "PBEV atual: 18,3 km/l na cidade e 15,9 km/l na estrada (gasolina).",
+    "Porta-malas de 425 L (VDA), que chega a 1.419 L com o banco rebatido.",
+    "EX já traz AEB, alerta de faixa, ar digital de 2 zonas, painel digital, multimídia de 10,25\" e chave presencial.",
+    "Euro NCAP 2022: 4 estrelas com o equipamento de série e 5 estrelas com o pacote de segurança."
+  ],
+  "watchOuts": [
+    "Na prática, o preço de tabela nunca vale: há bônus de R$ 20 mil quase o tempo todo, o que pesa na revenda.",
+    "Consumo PBEV mudou de 19,8/17,7 para 18,3/15,9 km/l entre as edições (provável mudança de metodologia/ano).",
+    "Rodas da EX: 16\" (Webmotors) × 18\" (Motorshow); número de airbags: 6 × 7.",
+    "Rede Kia pequena no Brasil; não foi encontrado recall do Niro HEV no Brasil."
+  ],
+  "specs": {
+    "version": "Niro EX / SX Prestige (linha 2026)",
+    "engine": "1.6 GDI (Kappa) a gasolina + motor elétrico; híbrido pleno",
+    "powerCv": "141 (combinada)",
+    "torqueKgfm": "27 (combinado)",
+    "transmission": "Dupla embreagem de 6 marchas",
+    "trunkL": 425,
+    "lengthMm": null,
+    "wheelbaseMm": null,
+    "safety": "6 airbags (Webmotors) ou 7 (AutoPapo); Euro NCAP 4 estrelas (2022, série)",
+    "warranty": null
+  },
+  "inmetro": {
+    "version": "Niro 2026",
+    "cityGas": 18.3,
+    "roadGas": 15.9,
+    "cityEth": null,
+    "roadEth": null,
+    "cityKmKWh": null,
+    "roadKmKWh": null,
+    "year": "PBEV da linha 2026 (conforme imprensa)",
+    "source": "https://www.bemparana.com.br/publicacao/blogs/autosecia/kia-niro-2026-chega-as-lojas/"
+  },
+  "price0km": {
+    "version": "EX",
+    "price": 194990,
+    "date": "set/2026",
+    "source": "https://autopapo.com.br/curta/kia-niro-ganha-desconto-de-r-20-mil-e-parte-de-r-174-990-ate-o-fim-de-setembro/"
+  },
+  "versionsAndPrices": [
+    {
+      "version": "EX",
+      "price": 194990,
+      "date": "set/2026",
+      "source": "https://autopapo.com.br/curta/kia-niro-ganha-desconto-de-r-20-mil-e-parte-de-r-174-990-ate-o-fim-de-setembro/"
+    },
+    {
+      "version": "SX Prestige",
+      "price": 219990,
+      "date": "set/2026",
+      "source": "https://autopapo.com.br/curta/kia-niro-ganha-desconto-de-r-20-mil-e-parte-de-r-174-990-ate-o-fim-de-setembro/"
+    },
+    {
+      "version": "EX (promoção à vista até 30/09/2026)",
+      "price": 174990,
+      "date": "set/2026",
+      "source": "https://autopapo.com.br/curta/kia-niro-ganha-desconto-de-r-20-mil-e-parte-de-r-174-990-ate-o-fim-de-setembro/"
+    }
+  ],
+  "launchModelYearBR": 2023,
+  "catalogCheck": "Não está no catálogo. Sugere-se cadastrar a EX (R$ 194.990, set/2026; o preço 'cheio' oficial é R$ 214.990 com bônus permanente de R$ 20 mil). Nomes na FIPE: 'Niro EX 1.6 GDI (Híbrido)' (2026 = R$ 180.259, jul/2026) e 'Niro SX Prestige 1.6 GDI (Híbrido)' (2026 = R$ 203.415; 0 km = R$ 214.998). A FIPE lista a SX Prestige desde 2023; a EX é mais nova (ano inicial não confirmado).",
+  "wikipedia": {
+    "lang": "en",
+    "title": "Kia Niro"
+  },
+  "officialUrl": null,
+  "sources": [
+    {
+      "label": "AutoPapo — desconto set/2026 (EX R$ 194.990 → 174.990)",
+      "url": "https://autopapo.com.br/curta/kia-niro-ganha-desconto-de-r-20-mil-e-parte-de-r-174-990-ate-o-fim-de-setembro/"
+    },
+    {
+      "label": "Vrum — Niro 2026 estreia com bônus de R$ 20 mil",
+      "url": "https://www.vrum.com.br/noticias/2025/10/7281203-kia-niro-2026-estreia-com-bonus-de-rs-20.html"
+    },
+    {
+      "label": "Bem Paraná — Niro 2026 chega às lojas (consumo, porta-malas, itens)",
+      "url": "https://www.bemparana.com.br/publicacao/blogs/autosecia/kia-niro-2026-chega-as-lojas/"
+    },
+    {
+      "label": "Webmotors — ficha Niro 2026",
+      "url": "https://www.webmotors.com.br/kia/niro/2026"
+    },
+    {
+      "label": "Motorshow — promoção Niro 2026",
+      "url": "https://motorshow.com.br/promocao-kia-niro-hibrido-2026"
+    },
+    {
+      "label": "Autoo — lançamento (19,8 km/l)",
+      "url": "https://www.autoo.com.br/kia-niro-percorre-198-kml-na-cidade-e-torna-se-o-primeiro-hibrido-pleno-da-marca-no-brasil/"
+    },
+    {
+      "label": "Tabela FIPE Brasil — Niro EX 2026",
+      "url": "https://www.tabelafipebrasil.com/carros/KIA-MOTORS/NIRO-EX-16-GDI-HIBRIDO/2026-Hibrido"
+    },
+    {
+      "label": "Euro NCAP — Niro 2022",
+      "url": "https://news.euroncap.com/safercars/kia-niro---euro-ncap-2022-results---standard-equipment-4-stars-and-with-safety-pack-5-stars/s/0b1e4652-586e-456d-a124-bdc2acff7434"
+    }
+  ],
+  "unverified": [
+    "Dimensões (comprimento/entre-eixos) não vistas em fonte brasileira.",
+    "Garantia (Kia Brasil) não confirmada nas fontes vistas.",
+    "Rodas da EX (16\" × 18\") e número de airbags (6 × 7).",
+    "since 2023: lançamento em out/2022 deduzido da FIPE, que lista a SX Prestige 2023; a 1ª geração do Niro também foi vendida antes no Brasil.",
+    "Preço depois de 30/09/2026.",
+    "Pesquisa feita por resumos de busca das fontes listadas (páginas não abertas diretamente); confira os valores na fonte."
+  ]
+}

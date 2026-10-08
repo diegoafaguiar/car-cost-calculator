@@ -1,0 +1,56 @@
+{
+  "id": "hyundai-kona-hybrid",
+  "version": "Kona Hybrid Ultimate 2026",
+  "researchedAt": "2026-10",
+  "tech": {
+    "screen10": true,
+    "wirelessMirroring": true,
+    "digitalCluster": true,
+    "wirelessCharger": true,
+    "camera360": null,
+    "adaptiveCruise": true,
+    "connectedApp": null,
+    "keyless": null
+  },
+  "comfort": {
+    "automatic": true,
+    "digitalAC": true,
+    "rearVents": true,
+    "leather": false,
+    "powerSeat": true,
+    "seatClimate": null,
+    "sunroof": false
+  },
+  "safety": {
+    "airbags6": true,
+    "aeb": true,
+    "laneKeep": true,
+    "blindSpot": true,
+    "rearCrossTraffic": true
+  },
+  "ncap": {
+    "stars": 4,
+    "year": 2023,
+    "program": "Euro NCAP",
+    "counts": true,
+    "note": "Kona 2ª geração. Adulto 80%, criança 83%, pedestre 64%, assistência 60%. A ANCAP (jan/2024) estendeu as 4 estrelas a gasolina, híbrido e elétrico.",
+    "source": "https://www.rushlane.com/hyundai-kona-4-star-safety-rating-real-disappointment-says-euro-ncap-12483741.html"
+  },
+  "sources": [
+    {
+      "label": "Comprecar — equipamentos Ultimate",
+      "url": "https://www.comprecar.com.br/revista/hyundai-inicia-vendas-do-suv-novo-kona-hybrid-no-brasil"
+    },
+    {
+      "label": "AutoPapo — exclusivos da Signature",
+      "url": "https://autopapo.com.br/noticia/hyundai-kona-hybrid-2026/"
+    }
+  ],
+  "notes": "Ultimate: telas de 12,3\", CarPlay/Android Auto sem fio, carregador por indução, ar digital de 2 zonas com saídas traseiras, banco do motorista elétrico, auto hold, 6 airbags, AEB, ACC, faixa, ponto cego, tráfego cruzado traseiro e farol alto adaptativo. Teto solar, couro e tampa elétrica do porta-malas só na Signature. A câmera 360° tem informação conflitante.",
+  "unverified": [
+    "tech.camera360",
+    "tech.connectedApp",
+    "tech.keyless",
+    "comfort.seatClimate"
+  ]
+}

@@ -1,0 +1,64 @@
+{
+  "id": "renault-boreal",
+  "version": "Boreal Evolution 2026",
+  "researchedAt": "2026-10",
+  "tech": {
+    "screen10": true,
+    "wirelessMirroring": true,
+    "digitalCluster": true,
+    "wirelessCharger": true,
+    "camera360": false,
+    "adaptiveCruise": true,
+    "connectedApp": null,
+    "keyless": null
+  },
+  "comfort": {
+    "automatic": true,
+    "digitalAC": null,
+    "rearVents": null,
+    "leather": null,
+    "powerSeat": false,
+    "seatClimate": false,
+    "sunroof": false
+  },
+  "safety": {
+    "airbags6": true,
+    "aeb": true,
+    "laneKeep": true,
+    "blindSpot": null,
+    "rearCrossTraffic": null
+  },
+  "ncap": {
+    "stars": null,
+    "year": null,
+    "program": "Latin NCAP",
+    "counts": false,
+    "note": "Sem teste Latin NCAP até jun/2026. O Dacia Bigster (parente) tem 3 estrelas no Euro NCAP, mas é outro modelo e não conta.",
+    "source": "https://www.autoweb.com.ar/2026/06/29/prueba-renault-boreal-iconic/"
+  },
+  "sources": [
+    {
+      "label": "O POVO — versões",
+      "url": "https://www.opovo.com.br/noticias/veiculos/2025/11/06/renault-boreal-suv-feito-no-brasil-estreia-em-tres-versoes-a-partir-de-rs-1799-mil.html"
+    },
+    {
+      "label": "Revista Carro — equipamentos",
+      "url": "https://revistacarro.com.br/renault-boreal-inicia-pre-venda-no-brasil-e-tera-3-versoes-a-partir-de-r-1799-mil/"
+    },
+    {
+      "label": "Garagem360 — diferenças entre versões",
+      "url": "https://garagem360.com.br/?p=320908"
+    }
+  ],
+  "notes": "Evolution: multimídia Open R de 10\" com CarPlay/Android Auto sem fio, painel digital (7\" segundo uma fonte; 10\" só na Techno), carregador por indução, 4 USB-C, 6 airbags e ADAS com 13 funções: ACC, AEB frontal e em curva, alerta e assistente de faixa, reconhecimento de placas, sensor de fadiga, câmera de ré e sensor traseiro. Teto panorâmico, massagem e memória do banco, tampa elétrica e 24 ADAS só na Iconic. Uma fonte cita 'bancos em couro' sem deixar clara a versão.",
+  "unverified": [
+    "tech.connectedApp",
+    "tech.keyless",
+    "comfort.digitalAC",
+    "comfort.rearVents",
+    "comfort.leather",
+    "safety.blindSpot",
+    "safety.rearCrossTraffic",
+    "comfort.powerSeat/seatClimate (false inferido: só citados na Iconic)"
+  ]
+}

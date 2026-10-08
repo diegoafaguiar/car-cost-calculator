@@ -1,0 +1,166 @@
+{
+  "catalogSeed": {
+    "brand": "Volkswagen",
+    "model": "Tera",
+    "version": "Comfort 170 TSI Aut.",
+    "category": "suv-compacto",
+    "powertrain": "flex",
+    "seats": 5,
+    "trunkL": 350,
+    "refPriceNew": 133190,
+    "consumption": {
+      "cityKmL": 12.2,
+      "roadKmL": 14.5,
+      "cityKmLEthanol": 8.6,
+      "roadKmLEthanol": 10.3,
+      "cityKmKWh": null,
+      "roadKmKWh": null
+    },
+    "evShareNote": null,
+    "fipeBrand": "VW - VOLKSWAGEN",
+    "fipeInclude": [
+      "TERA",
+      "Comfort"
+    ],
+    "since": 2026
+  },
+  "id": "vw-tera",
+  "researchedAt": "2026-10",
+  "displayName": "Volkswagen Tera",
+  "summary": "SUV compacto de entrada da Volkswagen (plataforma MQB A0), produzido em Taubaté (SP) e lançado em jun/2025. Motores 1.0 MPI (84 cv) e 1.0 170 TSI flex (116 cv), com câmbio manual ou automático Aisin de 6 marchas. É o 2º SUV mais vendido do Brasil em set/2026, com 8.725 unidades e 70.646 no acumulado do ano. A linha 2027 chega em out/2026 com 200 TSI (128 cv) e câmbio automático de 8 marchas nas versões Comfort e High.",
+  "generation": "1ª geração (MQB A0, 2025); linha 2026; linha 2027 anunciada para out/2026.",
+  "timeline": [
+    {
+      "modelYear": "2026",
+      "change": "Jun/2025: lançamento a partir de R$ 99.990 (lote de 999 unidades), depois R$ 103.990 na MPI manual."
+    },
+    {
+      "modelYear": "2026",
+      "change": "Jan/2026: reajuste de R$ 2.500 a R$ 3.100 por versão."
+    },
+    {
+      "modelYear": "2026",
+      "change": "Set/2026: MPI R$ 107.190, Comfort 170 TSI R$ 133.190, High R$ 146.190; descontos de até R$ 19.200 até 30/09."
+    },
+    {
+      "modelYear": "2027",
+      "change": "Out/2026: Comfort e High passam a 200 TSI (128 cv) com automático de 8 marchas; preços ainda não divulgados."
+    }
+  ],
+  "highlights": [
+    "Latin NCAP 5 estrelas (2025): adulto 89,88%, criança 87,25%.",
+    "Líder de vendas em vários meses de 2026: rede VW enorme e liquidez de revenda alta.",
+    "Comfort: VW Play de 10\", painel digital, LED, ACC e 6 airbags.",
+    "Consumo Inmetro (Comfort TSI AT): 12,2/14,5 km/l na gasolina e 8,6/10,3 km/l no etanol."
+  ],
+  "watchOuts": [
+    "Bem menor que o Corolla Cross do usuário: porta-malas de 350 L e categoria abaixo.",
+    "A linha 2027 muda motor e câmbio nas versões Comfort/High. O preço e o consumo da Comfort 2027 ainda não foram publicados, e o catálogo usa a Comfort 2026 (170 TSI, AT6).",
+    "Recall da VW (2026) de cerca de 150 mil Polo, Tera, Nivus, T-Cross e Virtus por falha no freio de mão (Motorshow).",
+    "Não é eletrificado."
+  ],
+  "specs": {
+    "version": "Tera Comfort 170 TSI Aut. (linha 2026)",
+    "engine": "1.0 TSI turbo flex, 3 cil.",
+    "powerCv": "116 (E) / 109 (G)",
+    "torqueKgfm": null,
+    "transmission": "Automático de 6 marchas (Aisin)",
+    "trunkL": 350,
+    "lengthMm": null,
+    "wheelbaseMm": null,
+    "safety": "6 airbags; Latin NCAP 5 estrelas (2025)",
+    "warranty": null
+  },
+  "inmetro": {
+    "version": "Tera 170 TSI AT",
+    "cityGas": 12.2,
+    "roadGas": 14.5,
+    "cityEth": 8.6,
+    "roadEth": 10.3,
+    "cityKmKWh": null,
+    "roadKmKWh": null,
+    "year": "PBEV (conforme Motorshow, linha 2026)",
+    "source": "https://motorshow.com.br/volkswagen-tera-chega-as-lojas-veja-versoes-precos-e-equipamentos"
+  },
+  "price0km": {
+    "version": "Comfort 170 TSI Aut.",
+    "price": 133190,
+    "date": "set/2026",
+    "source": "https://autopapo.com.br/curta/volkswagen-tera-tem-descontos-de-ate-r-19-200-antes-da-chegada-da-linha-2027/"
+  },
+  "versionsAndPrices": [
+    {
+      "version": "1.0 MPI Manual",
+      "price": 107190,
+      "date": "set/2026",
+      "source": "https://autopapo.com.br/curta/volkswagen-tera-tem-descontos-de-ate-r-19-200-antes-da-chegada-da-linha-2027/"
+    },
+    {
+      "version": "Comfort 170 TSI Aut.",
+      "price": 133190,
+      "date": "set/2026",
+      "source": "https://autopapo.com.br/curta/volkswagen-tera-tem-descontos-de-ate-r-19-200-antes-da-chegada-da-linha-2027/"
+    },
+    {
+      "version": "High 170 TSI Aut.",
+      "price": 146190,
+      "date": "set/2026",
+      "source": "https://autopapo.com.br/curta/volkswagen-tera-tem-descontos-de-ate-r-19-200-antes-da-chegada-da-linha-2027/"
+    },
+    {
+      "version": "High 170 TSI Aut. (promoção até 30/09/2026)",
+      "price": 126990,
+      "date": "set/2026",
+      "source": "https://www.vrum.com.br/noticias/2026/09/7497708-vw-tera-tem-desconto-de-ate-rs-19-mil-antes-da-linha-2027.html"
+    }
+  ],
+  "launchModelYearBR": 2026,
+  "catalogCheck": "Não está no catálogo. Sugere-se a Comfort 170 TSI Aut. 2026 (R$ 133.190, set/2026), a ser atualizada quando saírem os preços da linha 2027. Nomes na FIPE: 'TERA 1.0 MPI Flex 12V 5p Mec.' e 'TERA 1.0 170 TSI Flex 12V 5p Mec.' (0 km MPI = R$ 104.503, ago/2026). O nome exato da Comfort automática não foi confirmado; o include ['tera','comfort'] pode precisar de ajuste. A FIPE 2026 vai de R$ 94.212 a R$ 131.411 (set/2026).",
+  "wikipedia": {
+    "lang": "en",
+    "title": "Volkswagen Tera"
+  },
+  "officialUrl": null,
+  "sources": [
+    {
+      "label": "AutoPapo — descontos e preços set/2026",
+      "url": "https://autopapo.com.br/curta/volkswagen-tera-tem-descontos-de-ate-r-19-200-antes-da-chegada-da-linha-2027/"
+    },
+    {
+      "label": "Vrum — desconto até R$ 19 mil antes da linha 2027",
+      "url": "https://www.vrum.com.br/noticias/2026/09/7497708-vw-tera-tem-desconto-de-ate-rs-19-mil-antes-da-linha-2027.html"
+    },
+    {
+      "label": "Webmotors — reajuste jan/2026",
+      "url": "https://www.webmotors.com.br/wm1/noticias/volkswagen-tera-mais-caro-2026"
+    },
+    {
+      "label": "Motorshow — versões, consumo, equipamentos",
+      "url": "https://motorshow.com.br/volkswagen-tera-chega-as-lojas-veja-versoes-precos-e-equipamentos"
+    },
+    {
+      "label": "Olhar Digital — Latin NCAP 5 estrelas",
+      "url": "https://olhardigital.com.br/2025/06/18/carros-e-tecnologia/volkswagen-tera-recebe-5-estrelas-em-teste-de-seguranca/"
+    },
+    {
+      "label": "Autoblog UY — notas Latin NCAP",
+      "url": "https://www.autoblog.com.uy/2025/06/latin-ncap-volkswagen-tera-consigue-las.html"
+    },
+    {
+      "label": "Carro.Blog.br — ranking SUVs set/2026",
+      "url": "https://carro.blog.br/noticia/ofertas/volkswagen-t-cross-lidera-vendas-de-suvs-em-setembro-de-2026-e-supera-o-tera-na-disputa-pelo-primeiro-lugar-toyota-yaris-cross-surpreende-no-ranking.html"
+    },
+    {
+      "label": "Tabela Carros — FIPE Tera 2026",
+      "url": "https://tabelacarros.com/modelo/carros/vw---volkswagen/tera/2026-Flex"
+    }
+  ],
+  "unverified": [
+    "Consumo: Motorshow 12,2/14,5 (G) e 8,6/10,3 (E) × JK Carros 12,5/14,8 e 8,8/10,3.",
+    "Preços conflitantes: jan/2026 Comfort R$ 131.390 (Webmotors) × set/2026 R$ 133.190 (AutoPapo).",
+    "Torque, dimensões e garantia não vistos.",
+    "Nome exato da Comfort automática na FIPE.",
+    "Preço e consumo da linha 2027 (200 TSI, AT8).",
+    "Pesquisa feita por resumos de busca das fontes listadas (páginas não abertas diretamente); confira os valores na fonte."
+  ]
+}

@@ -1,0 +1,166 @@
+{
+  "catalogSeed": {
+    "brand": "Volvo",
+    "model": "EX30",
+    "version": "Plus (elétrico, 51 kWh)",
+    "category": "suv-compacto",
+    "powertrain": "eletrico",
+    "seats": 5,
+    "trunkL": 318,
+    "refPriceNew": 239950,
+    "consumption": {
+      "cityKmL": 0,
+      "roadKmL": 0,
+      "cityKmLEthanol": null,
+      "roadKmLEthanol": null,
+      "cityKmKWh": 4.9,
+      "roadKmKWh": 4.9
+    },
+    "evShareNote": "100% elétrico; bateria LFP de 51 kWh; 250 km PBEV.",
+    "fipeBrand": "VOLVO",
+    "fipeInclude": [
+      "EX30",
+      "Plus"
+    ],
+    "since": 2024
+  },
+  "id": "volvo-ex30",
+  "researchedAt": "2026-10",
+  "displayName": "Volvo EX30",
+  "summary": "SUV compacto elétrico premium da Volvo. A versão de entrada no Brasil em 2026 é a Plus: motor traseiro de 272 cv, bateria LFP de 51 kWh e 250 km de autonomia PBEV, por R$ 239.950. As versões Ultra Twin Motor (428 cv, R$ 309.950) e Cross Country (R$ 314.950) passam de R$ 300 mil. É o SUV elétrico 'de luxo' mais barato do país.",
+  "generation": "1ª geração (plataforma SEA, 2023); vendido no Brasil desde o fim de 2023/2024. As versões Core e Core Extended Range saíram de linha em 2026.",
+  "timeline": [
+    {
+      "modelYear": "2024",
+      "change": "Pré-venda em 2023 de R$ 219.950 a R$ 279.950; na chegada às lojas, ficou R$ 10–14 mil mais caro por causa do imposto de importação."
+    },
+    {
+      "modelYear": "2026",
+      "change": "Jan–jul/2026: recall por risco de incêndio na bateria (unidades produzidas entre set/2024 e out/2025); carga limitada a 70% até a troca dos módulos, iniciada em 01/07/2026."
+    },
+    {
+      "modelYear": "2026",
+      "change": "Ago/2026: linha Plus R$ 239.950, Ultra Twin R$ 309.950, Cross Country R$ 314.950; saem as versões Core."
+    }
+  ],
+  "highlights": [
+    "272 cv com tração traseira, mesmo na versão de entrada.",
+    "Euro NCAP 5 estrelas (2024): adulto 86%, criança 85%.",
+    "Som Harman Kardon e piloto automático adaptativo na Plus.",
+    "Marca premium com rede estabelecida no Brasil."
+  ],
+  "watchOuts": [
+    "Autonomia PBEV de apenas 250 km na Plus (51 kWh).",
+    "Porta-malas pequeno: 318 L.",
+    "Recall de bateria com risco de incêndio (2024–2025, cerca de 5.600 donos no Brasil). O reparo começou com meses de atraso, e há reclamações no Reclame Aqui sobre falta de resposta e bloqueio de licenciamento.",
+    "Ergonomia peculiar: quase tudo é comandado pela tela central, sem painel atrás do volante.",
+    "Depreciação forte: FIPE do EX30 Plus 2026 em R$ 220.185 (set/2026) contra R$ 239.950 do 0 km."
+  ],
+  "specs": {
+    "version": "EX30 Plus (linha 2026)",
+    "engine": "Motor elétrico traseiro; bateria LFP de 51 kWh",
+    "powerCv": "272",
+    "torqueKgfm": null,
+    "transmission": "Redução única",
+    "trunkL": 318,
+    "lengthMm": null,
+    "wheelbaseMm": null,
+    "safety": "Euro NCAP 5 estrelas (2024)",
+    "warranty": null
+  },
+  "inmetro": {
+    "version": "EX30 51 kWh (single motor)",
+    "cityGas": null,
+    "roadGas": null,
+    "cityEth": null,
+    "roadEth": null,
+    "cityKmKWh": null,
+    "roadKmKWh": null,
+    "year": "PBEV 2024: autonomia de 250 km (km/kWh não publicado nas fontes)",
+    "source": "https://www.gruposentinela.com.br/?p=10050"
+  },
+  "price0km": {
+    "version": "Plus",
+    "price": 239950,
+    "date": "ago/2026",
+    "source": "https://www.eletricos.app/noticias/volvo-ex30-2026-brasil-novas-versoes-precos-autonomia"
+  },
+  "versionsAndPrices": [
+    {
+      "version": "Plus (51 kWh, 272 cv)",
+      "price": 239950,
+      "date": "ago/2026",
+      "source": "https://www.eletricos.app/noticias/volvo-ex30-2026-brasil-novas-versoes-precos-autonomia"
+    },
+    {
+      "version": "Ultra Twin Motor (428 cv)",
+      "price": 309950,
+      "date": "ago/2026",
+      "source": "https://www.eletricos.app/noticias/volvo-ex30-2026-brasil-novas-versoes-precos-autonomia"
+    },
+    {
+      "version": "Cross Country (428 cv)",
+      "price": 314950,
+      "date": "ago/2026",
+      "source": "https://www.eletricos.app/noticias/volvo-ex30-2026-brasil-novas-versoes-precos-autonomia"
+    }
+  ],
+  "launchModelYearBR": 2024,
+  "catalogCheck": "Não está no catálogo. Sugere-se a Plus (R$ 239.950), a única abaixo de R$ 300 mil. Nomes na FIPE: 'EX30 E40 Plus' (2026 = R$ 220.185, set/2026; 0 km = R$ 239.360, ago/2026), 'EX30 E40 Core (Elétrico)', 'EX30 E60 Twin Ultra AWD' e 'EX30 E60 Cross Country AWD'. O include ['ex30','plus'] pega a E40 Plus; antes de 2026, a Plus pode ter tido bateria de 69 kWh (fontes divergem).",
+  "wikipedia": {
+    "lang": "en",
+    "title": "Volvo EX30"
+  },
+  "officialUrl": null,
+  "sources": [
+    {
+      "label": "eletricos.app — EX30 2026 novas versões e preços",
+      "url": "https://www.eletricos.app/noticias/volvo-ex30-2026-brasil-novas-versoes-precos-autonomia"
+    },
+    {
+      "label": "Garagem360 — SUV de luxo mais barato, R$ 239.950, 250 km",
+      "url": "https://garagem360.com.br/?p=315815"
+    },
+    {
+      "label": "Webmotors — faixa R$ 239.950–314.950",
+      "url": "https://www.webmotors.com.br/volvo/ex30/2026"
+    },
+    {
+      "label": "Grupo Sentinela — Inmetro 250 km (E40, 51 kWh)",
+      "url": "https://www.gruposentinela.com.br/?p=10050"
+    },
+    {
+      "label": "Revista Carro — equipamentos, porta-malas",
+      "url": "https://revistacarro.com.br/volvo-lanca-eletrico-ex30-a-partir-de-r-2199-mil-veja-versoes-e-equipamentos/amp/"
+    },
+    {
+      "label": "AutoPapo — recall definitivo (troca de baterias)",
+      "url": "https://autopapo.com.br/curta/volvo-inicia-recall-definitivo-para-troca-de-baterias-do-ex30-no-brasil/"
+    },
+    {
+      "label": "Vrum — recall jan/2026",
+      "url": "https://www.vrum.com.br/noticias/2026/01/7327082-volvo-ex30-e-convocado-em-recall-no-brasil-por-risco-de-incendio-na-bateria.html"
+    },
+    {
+      "label": "Reclame Aqui — recall/licenciamento",
+      "url": "https://www.reclameaqui.com.br/volvo-cars-automoveis/volvo-ex30-falha-na-comunicacao-de-recall-e-bloqueio-de-licenciamento_u2AwSRMRJIsLW0ER/"
+    },
+    {
+      "label": "Volvo — Euro NCAP 5 estrelas",
+      "url": "https://volvocars.com/ie/news/safety/the-ex30-scores-maximum-five-star-rating-in-latest-euro-ncap-safety-tests"
+    },
+    {
+      "label": "LitoralCar — FIPE EX30 2026",
+      "url": "https://www.litoralcar.com.br/tabela-fipe/volvo/ex30"
+    }
+  ],
+  "unverified": [
+    "Consumo em km/kWh: 4,9 é estimativa (250 km ÷ 51 kWh).",
+    "Bateria da Plus: 51 kWh (2026, eletricos.app/Garagem360) × 69 kWh (lançamento, outra fonte).",
+    "Torque, dimensões e garantia não vistos nas fontes brasileiras.",
+    "Ano-modelo inicial: FIPE tem 2024 (anúncio de usado E60 Ultra 2024) e 2025; since 2024.",
+    "Preço vigente em out/2026 (última fonte de ago/2026).",
+    "Webmotors cita uma versão 'Performance Ultra' que conflita com a lista de versões.",
+    "Pesquisa feita por resumos de busca das fontes listadas (páginas não abertas diretamente); confira os valores na fonte."
+  ]
+}

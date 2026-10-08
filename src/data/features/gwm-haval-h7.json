@@ -1,0 +1,73 @@
+{
+  "id": "gwm-haval-h7",
+  "version": "GWM Haval H7 PHEV Flex AWD 2027",
+  "researchedAt": "2026-10",
+  "tech": {
+    "screen10": true,
+    "wirelessMirroring": null,
+    "digitalCluster": null,
+    "wirelessCharger": true,
+    "camera360": null,
+    "adaptiveCruise": null,
+    "connectedApp": null,
+    "keyless": null
+  },
+  "comfort": {
+    "automatic": true,
+    "digitalAC": true,
+    "rearVents": null,
+    "leather": null,
+    "powerSeat": true,
+    "seatClimate": true,
+    "sunroof": true
+  },
+  "safety": {
+    "airbags6": null,
+    "aeb": null,
+    "laneKeep": null,
+    "blindSpot": null,
+    "rearCrossTraffic": null
+  },
+  "ncap": {
+    "stars": 5,
+    "year": 2025,
+    "program": "ANCAP",
+    "note": "ANCAP 5 estrelas (19/dez/2025): adulto 89%, criança 91%, vulneráveis 81%, assistência 80%. Teste do H7 australiano (motorização diferente da PHEV flex brasileira). Encosto de cabeça do motorista soltou no teste frontal; recall voluntário na Austrália.",
+    "source": "https://www.ancap.com.au/safety-ratings/great-wall-motors/haval-h7/93729c",
+    "counts": false
+  },
+  "sources": [
+    {
+      "label": "Car.Blog.br — Haval H7 chega por R$ 261 mil (out/2026)",
+      "url": "https://www.car.blog.br/2026/10/novo-gwm-haval-h7-brasil-preco-ficha-tecnica-fotos.html"
+    },
+    {
+      "label": "Tribuna PR — versão única, Black Pack, equipamentos",
+      "url": "https://www.tribunapr.com.br/noticias/automoveis/gwm-haval-h7-suv-hibrido-plug-in-brasil/"
+    },
+    {
+      "label": "AutoPapo — lançamento Haval H7",
+      "url": "https://autopapo.com.br/noticia/gwm-haval-h7-lancamento/"
+    },
+    {
+      "label": "ANCAP — Haval H7 (5 estrelas, dez/2025)",
+      "url": "https://www.ancap.com.au/safety-ratings/great-wall-motors/haval-h7/93729c"
+    }
+  ],
+  "notes": "Versão única com Black Pack: rodas 19\", teto panorâmico, bancos dianteiros ventilados com ajustes elétricos, ar de duas zonas, indução 50 W, multimídia 15,6\". Lista completa de ADAS e airbags do carro brasileiro não divulgada nas fontes vistas (na Argentina: câmera 360°, ACC, AEB, faixa, painel 12,3\" e HUD).",
+  "unverified": [
+    "tech.wirelessMirroring",
+    "tech.digitalCluster",
+    "tech.camera360",
+    "tech.adaptiveCruise",
+    "tech.connectedApp",
+    "tech.keyless",
+    "comfort.rearVents",
+    "comfort.leather",
+    "safety.airbags6",
+    "safety.aeb",
+    "safety.laneKeep",
+    "safety.blindSpot",
+    "safety.rearCrossTraffic"
+  ]
+}

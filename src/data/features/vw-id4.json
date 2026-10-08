@@ -1,0 +1,58 @@
+{
+  "id": "vw-id4",
+  "version": "ID.4 Pro 2027",
+  "researchedAt": "2026-10",
+  "tech": {
+    "screen10": true,
+    "wirelessMirroring": true,
+    "digitalCluster": true,
+    "wirelessCharger": null,
+    "camera360": true,
+    "adaptiveCruise": true,
+    "connectedApp": null,
+    "keyless": null
+  },
+  "comfort": {
+    "automatic": true,
+    "digitalAC": true,
+    "rearVents": null,
+    "leather": null,
+    "powerSeat": true,
+    "seatClimate": true,
+    "sunroof": true
+  },
+  "safety": {
+    "airbags6": true,
+    "aeb": true,
+    "laneKeep": true,
+    "blindSpot": true,
+    "rearCrossTraffic": null
+  },
+  "ncap": {
+    "stars": 5,
+    "year": 2021,
+    "program": "Euro NCAP",
+    "counts": true,
+    "note": "ID.4 (MEB) 2021: adulto 93%, criança 89%, pedestre 76%, assistência 85%. O ID.4 Pro atual é a mesma carroceria com motor atualizado.",
+    "source": "https://www.volkswagen-newsroom.com/en/press-releases/top-marks-for-the-id4-five-stars-in-the-euro-ncap-test-7020/download"
+  },
+  "sources": [
+    {
+      "label": "AutoPapo — ID.4 R$ 299.990",
+      "url": "https://autopapo.com.br/noticia/volkswagen-id-4-chega-por-r-299-990-e-e-a-primeira-ameaca-real-aos-carros-chineses/"
+    },
+    {
+      "label": "Folha Vitória — ID.4",
+      "url": "https://www.folhavitoria.com.br/folha-motor/volkswagen-id4-preco-brasil/"
+    }
+  ],
+  "notes": "Multimídia de 12,9\" com CarPlay/Android Auto sem fio, painel digital, ar de 3 zonas, bancos dianteiros elétricos com memória, aquecimento e massagem, teto panorâmico, 7 airbags, ACC, AEB, permanência em faixa, ponto cego, câmera 360° e Memory Park Assist. O 'seatClimate' é true por aquecimento; ventilação não foi confirmada.",
+  "unverified": [
+    "tech.wirelessCharger",
+    "tech.connectedApp",
+    "tech.keyless",
+    "comfort.rearVents",
+    "comfort.leather",
+    "safety.rearCrossTraffic"
+  ]
+}

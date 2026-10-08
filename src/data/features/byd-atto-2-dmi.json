@@ -1,0 +1,70 @@
+{
+  "id": "byd-atto-2-dmi",
+  "version": "BYD Atto 2 DM-i GL 2027",
+  "researchedAt": "2026-10",
+  "tech": {
+    "screen10": true,
+    "wirelessMirroring": null,
+    "digitalCluster": true,
+    "wirelessCharger": null,
+    "camera360": null,
+    "adaptiveCruise": true,
+    "connectedApp": null,
+    "keyless": null
+  },
+  "comfort": {
+    "automatic": true,
+    "digitalAC": null,
+    "rearVents": null,
+    "leather": false,
+    "powerSeat": false,
+    "seatClimate": null,
+    "sunroof": false
+  },
+  "safety": {
+    "airbags6": true,
+    "aeb": true,
+    "laneKeep": null,
+    "blindSpot": null,
+    "rearCrossTraffic": null
+  },
+  "ncap": {
+    "stars": null,
+    "year": null,
+    "program": "Latin NCAP",
+    "note": "Sem teste Latin NCAP. Nenhum resultado Euro NCAP/ANCAP de colisão do Atto 2 confirmado (só Green NCAP 5 estrelas, que avalia eficiência, não segurança).",
+    "source": ""
+  },
+  "sources": [
+    {
+      "label": "Tribuna PR — Atto 2 entregas set/2026, preços GL R$ 166.660 / GS R$ 169.990, PCD",
+      "url": "https://www.tribunapr.com.br/noticias/byd-atto-2-para-pcd-tem-21-mil-de-desconto-veja-precos-e-versoes/"
+    },
+    {
+      "label": "Primo Auto — preços, versões e ficha técnica",
+      "url": "https://primoauto.com.br/byd-atto-2-dm-i-flex-precos-versoes-e-ficha-tecnica-do-inedito-hibrido-plug-in-flex"
+    },
+    {
+      "label": "Bem Paraná — equipamentos (indução 50 W, NFC, câmera 360°)",
+      "url": "https://www.bemparana.com.br/carros/byd-atto-2-o-primeiro-suv-compacto-hibrido-plug-in-flex-da-marca-no-mundo/"
+    },
+    {
+      "label": "Auto+ TV — Atto 2 estreia como primeiro híbrido flex",
+      "url": "https://www.automaistv.com.br/novidades/byd-atto-2-estreia-como-primeiro-hibrido-flex-da-marca-e-mira-toyota-yaris-cross/"
+    }
+  ],
+  "notes": "GL: multimídia DiLink 10,1\" com Apple CarPlay/Android Auto (sem fio não confirmado), painel digital 8,8\", tecido premium (couro ecológico só na GS), teto panorâmico e banco do motorista elétrico só na GS. 6 airbags (frontais, laterais e de cortina) e ADAS nível 2 com ACC e AEB citados como de série nas duas versões. Câmera 360° e indução 50 W citadas para o modelo sem indicar versão.",
+  "unverified": [
+    "tech.wirelessMirroring",
+    "tech.wirelessCharger",
+    "tech.camera360",
+    "tech.connectedApp",
+    "tech.keyless",
+    "comfort.digitalAC",
+    "comfort.rearVents",
+    "comfort.seatClimate",
+    "safety.laneKeep",
+    "safety.blindSpot",
+    "safety.rearCrossTraffic"
+  ]
+}

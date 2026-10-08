@@ -1,0 +1,158 @@
+{
+  "catalogSeed": {
+    "brand": "Caoa Changan",
+    "model": "CS55",
+    "version": "Infinity 1.5 TGDi flex",
+    "category": "suv-medio",
+    "powertrain": "flex",
+    "seats": 5,
+    "trunkL": 525,
+    "refPriceNew": 154990,
+    "consumption": {
+      "cityKmL": 10.4,
+      "roadKmL": 12.1,
+      "cityKmLEthanol": 7.3,
+      "roadKmLEthanol": 8.3,
+      "cityKmKWh": null,
+      "roadKmKWh": null
+    },
+    "evShareNote": null,
+    "fipeBrand": "CAOA CHANGAN",
+    "fipeInclude": [
+      "cs55",
+      "infinity"
+    ],
+    "since": 2027
+  },
+  "id": "changan-cs55",
+  "researchedAt": "2026-10",
+  "displayName": "Caoa Changan CS55",
+  "summary": "SUV médio de 4,55 m montado pela Caoa em Anápolis (GO), lançado em set/2026. Versões flex Prime e Infinity com motor 1.5 turbo flex de 180 cv e câmbio DCT de 7 marchas, e versão PHEV flex importada (286 cv). Preço de lançamento a partir de R$ 144.990, abaixo de Compass, Corolla Cross e Taos.",
+  "generation": "CS55 Plus 2ª geração (China, 2021/reestilizado); no Brasil desde set/2026 (linha 2027), flex montado em Anápolis (GO) e PHEV importado da China.",
+  "timeline": [
+    {
+      "modelYear": "2027",
+      "change": "Lançamento em 15-16/set/2026: Prime R$ 144.990 (pré-venda), Infinity R$ 154.990 (pronta entrega) e PHEV R$ 189.990 (pré-venda) — preços de lançamento; ~3 mil pedidos em 3 dias."
+    }
+  ],
+  "highlights": [
+    "Porte médio (4,55 m, porta-malas de 525 L) com preço de SUV compacto.",
+    "Infinity: teto panorâmico, bancos dianteiros aquecidos e ventilados, ar de duas zonas, som Pioneer, tampa elétrica e ADAS nível 2+.",
+    "Câmeras 540°, 6 airbags, monitor de ponto cego, alerta de colisão e assistente de faixa citados como de série.",
+    "Garantia de 7 anos/150 mil km.",
+    "Infinity com pronta entrega no lançamento."
+  ],
+  "watchOuts": [
+    "Não é eletrificado: consumo Inmetro de 10,4/12,1 km/l (gasolina), bem pior que híbridos.",
+    "Preços são de lançamento e a imprensa espera aumento.",
+    "Caoa Changan é marca nova (rede e revenda sem histórico); FIPE Infinity 2027 já em R$ 146.166 (out/2026).",
+    "Sem teste Latin NCAP; nenhum Euro NCAP/ANCAP do CS55 encontrado.",
+    "Fila de espera de cerca de 60 dias relatada para algumas versões."
+  ],
+  "specs": {
+    "version": "CS55 Infinity 1.5 TGDi flex (linha 2027)",
+    "engine": "1.5 turbo flex 4 cil., 180 cv",
+    "powerCv": "180",
+    "torqueKgfm": null,
+    "transmission": "DCT de 7 marchas",
+    "trunkL": 525,
+    "lengthMm": 4550,
+    "wheelbaseMm": 2660,
+    "safety": "6 airbags; sem NCAP",
+    "warranty": "7 anos/150 mil km"
+  },
+  "inmetro": {
+    "version": "CS55 1.5 TGDi flex",
+    "cityGas": 10.4,
+    "roadGas": 12.1,
+    "cityEth": 7.3,
+    "roadEth": 8.3,
+    "cityKmKWh": null,
+    "roadKmKWh": null,
+    "year": "PBEV 2026 (conforme imprensa)",
+    "source": "https://www.carrosegaragem.com.br/caoa-changan-cs55-2027/"
+  },
+  "price0km": {
+    "version": "Infinity",
+    "price": 154990,
+    "date": "set/2026 (lançamento)",
+    "source": "https://www.vrum.com.br/mercado/2026/09/7501381-caoa-changan-lanca-cs55-a-partir-de-rs-144-mil-para-destronar-jeep-compass.html"
+  },
+  "versionsAndPrices": [
+    {
+      "version": "Prime",
+      "price": 144990,
+      "date": "set/2026",
+      "source": "https://diariodonordeste.verdesmares.com.br/ultima-hora/automovel/caoa-changan-cs55-chega-com-preco-competitivo-e-tres-versoes-1.3792955"
+    },
+    {
+      "version": "Infinity",
+      "price": 154990,
+      "date": "set/2026",
+      "source": "https://www.itatiaia.com.br/auto/caoa-changan-cs55-chega-com-preco-de-tera-e-maior-que-o-compass/"
+    },
+    {
+      "version": "PHEV",
+      "price": 189990,
+      "date": "set/2026",
+      "source": "https://diariodonordeste.verdesmares.com.br/ultima-hora/automovel/caoa-changan-cs55-chega-com-preco-competitivo-e-tres-versoes-1.3792955"
+    }
+  ],
+  "launchModelYearBR": 2027,
+  "catalogCheck": "Modelo ausente do catálogo (o app tem o Uni-T). FIPE: 'CS55 INFINITY 1.5 16V TGDI' 2027 Flex = R$ 146.166 (out/2026), marca 'Caoa Changan'. Sugere-se a Infinity (pronta entrega; Prime estava em pré-venda).",
+  "wikipedia": {
+    "lang": "en",
+    "title": "Changan CS55"
+  },
+  "officialUrl": "https://caoachangan.com.br/novo-cs55",
+  "sources": [
+    {
+      "label": "Vrum — Caoa Changan lança CS55 a partir de R$ 144 mil (set/2026)",
+      "url": "https://www.vrum.com.br/mercado/2026/09/7501381-caoa-changan-lanca-cs55-a-partir-de-rs-144-mil-para-destronar-jeep-compass.html"
+    },
+    {
+      "label": "Carros e Garagem — CS55 2027: preço, equipamentos, consumo Inmetro",
+      "url": "https://www.carrosegaragem.com.br/caoa-changan-cs55-2027/"
+    },
+    {
+      "label": "Autoentusiastas — CS55 (ficha técnica e preços)",
+      "url": "https://autoentusiastas.com.br/2026/09/caoa-changan-cs55/"
+    },
+    {
+      "label": "Hoje em Dia — CS55 porte médio, porta-malas 525 L",
+      "url": "https://www.hojeemdia.com.br/veiculos/caoa-changan-cs55-tem-porte-medio-e-preco-de-compacto-abaixo-dos-r-200-mil-1.1133836"
+    },
+    {
+      "label": "Diário do Nordeste — CS55 três versões, garantia 7 anos",
+      "url": "https://diariodonordeste.verdesmares.com.br/ultima-hora/automovel/caoa-changan-cs55-chega-com-preco-competitivo-e-tres-versoes-1.3792955"
+    },
+    {
+      "label": "Itatiaia — CS55 preço de Tera e maior que Compass",
+      "url": "https://www.itatiaia.com.br/auto/caoa-changan-cs55-chega-com-preco-de-tera-e-maior-que-o-compass/"
+    },
+    {
+      "label": "AutoPapo — CS55 Infinity: positivos e negativos",
+      "url": "https://autopapo.com.br/noticia/caoa-changan-cs55-infinity-positivos-e-negativos/"
+    },
+    {
+      "label": "Tabela FIPE Brasil — CS55 Infinity 1.5 16V TGDI 2027",
+      "url": "https://www.tabelafipebrasil.com/carros/CAOA-CHANGAN/CS55-INFINITY-15-16V-TGDI/2027-Flex"
+    },
+    {
+      "label": "Caoa Changan — Novo CS55",
+      "url": "https://caoachangan.com.br/novo-cs55"
+    },
+    {
+      "label": "Mixvale — fila de espera de 60 dias",
+      "url": "https://www.mixvale.com.br/2026/09/17/caoa-changan-cs55-tem-fila-de-espera-de-60-dias-no-brasil/"
+    }
+  ],
+  "unverified": [
+    "Torque do 1.5 turbo flex.",
+    "Entre-eixos 2.660 mm x 2.650 mm conforme fonte.",
+    "Etanol estrada 8,3 km/l numa fonte; preço pode ter subido após o fim das condições de lançamento.",
+    "Se ACC está incluído no ADAS da Infinity.",
+    "Material dos bancos da Infinity.",
+    "Pesquisa feita por resumos de busca das fontes listadas (páginas não abertas diretamente); confira os valores na fonte."
+  ]
+}

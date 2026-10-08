@@ -1,0 +1,69 @@
+{
+  "id": "omoda-e5",
+  "version": "Omoda E5 FWD 2026",
+  "researchedAt": "2026-10",
+  "tech": {
+    "screen10": true,
+    "wirelessMirroring": true,
+    "digitalCluster": true,
+    "wirelessCharger": null,
+    "camera360": true,
+    "adaptiveCruise": true,
+    "connectedApp": null,
+    "keyless": true
+  },
+  "comfort": {
+    "automatic": true,
+    "digitalAC": true,
+    "rearVents": null,
+    "leather": true,
+    "powerSeat": true,
+    "seatClimate": true,
+    "sunroof": true
+  },
+  "safety": {
+    "airbags6": true,
+    "aeb": true,
+    "laneKeep": true,
+    "blindSpot": null,
+    "rearCrossTraffic": null
+  },
+  "ncap": {
+    "stars": 5,
+    "year": 2024,
+    "program": "Euro NCAP",
+    "note": "Euro NCAP 5 estrelas (2024): adulto 87%, criança 88% (outra fonte: 87%), assistência 88%. ANCAP também 5 estrelas (adulto 87%, criança 88%, assistência 83%).",
+    "source": "https://www.wapcar.my/news/chery-omoda-e5-earns-5star-ratings-in-ancap-and-euro-ncap-tests-82908",
+    "counts": true
+  },
+  "sources": [
+    {
+      "label": "AutoData — operação Omoda & Jaecoo começa com dois modelos (abr/2025)",
+      "url": "https://www.autodata.com.br/noticias/2025/04/16/operacao-da-omoda-jaecoo-no-brasil-comeca-com-dois-modelos/86924/"
+    },
+    {
+      "label": "Conexão TO — E5 por R$ 209.990 (abr/2025)",
+      "url": "https://conexaoto.com.br/2025/04/24/omoda-e5-silencioso-veloz-e-conectado-por-r-209-990-00"
+    },
+    {
+      "label": "Folha PE — E5 e Jaecoo 7 chegam ao Brasil (equipamentos)",
+      "url": "https://www.folhape.com.br/colunistas/fmotors/omoda-e5-e-jaecoo-7-chegam-ao-brasil-para-disputar-o-mercado-de-suvs-eletrificados/50292/"
+    },
+    {
+      "label": "Wapcar — Omoda E5 5 estrelas ANCAP e Euro NCAP",
+      "url": "https://www.wapcar.my/news/chery-omoda-e5-earns-5star-ratings-in-ancap-and-euro-ncap-tests-82908"
+    },
+    {
+      "label": "Eletricos.app — Omoda E5 2026",
+      "url": "https://www.eletricos.app/veiculo/omoda-e5-2026"
+    }
+  ],
+  "notes": "Versão única: duas telas de 12,3\" (painel e multimídia), CarPlay/Android Auto sem fio, câmeras 360°, ACC, AEB, assistente de faixa, teto solar elétrico, ar digital dual zone, bancos dianteiros elétricos, aquecidos e ventilados (couro ou couro sintético, conforme fonte), chave presencial, rodas 18\", 6 airbags.",
+  "unverified": [
+    "tech.wirelessCharger",
+    "tech.connectedApp",
+    "comfort.rearVents",
+    "safety.blindSpot",
+    "safety.rearCrossTraffic"
+  ]
+}

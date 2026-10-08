@@ -1,0 +1,176 @@
+{
+  "catalogSeed": {
+    "brand": "GAC",
+    "model": "GS3",
+    "version": "Premium 1.5 Turbo WDCT",
+    "category": "suv-compacto",
+    "powertrain": "gasolina",
+    "seats": 5,
+    "trunkL": 341,
+    "refPriceNew": 139990,
+    "consumption": {
+      "cityKmL": 10.2,
+      "roadKmL": 11.6,
+      "cityKmLEthanol": null,
+      "roadKmLEthanol": null,
+      "cityKmKWh": null,
+      "roadKmKWh": null
+    },
+    "evShareNote": "Só gasolina, sem eletrificação (primeiro GAC a combustão no Brasil). A marca diz que o motor deve ganhar versão flex no futuro.",
+    "fipeBrand": "GAC",
+    "fipeInclude": [
+      "GS3",
+      "PREMIUM",
+      "1,5 16V Turbo Aut."
+    ],
+    "since": 2026
+  },
+  "id": "gac-gs3",
+  "researchedAt": "2026-10",
+  "displayName": "GAC GS3",
+  "summary": "SUV compacto (4,41 m) da GAC, 2ª geração do GS3 (Yingsu/Emzoom em outros mercados), importado da China e com montagem prevista na HPE de Catalão (GO) a partir de 2027. Motor 1.5 turbo a gasolina (170–177 cv conforme a fonte) com câmbio de dupla embreagem de 7 marchas. Duas versões: Premium e Elite. Rival de Creta, T-Cross e Tiggo 5X.",
+  "generation": "2ª geração (lançada na China em fev/2023 como Trumpchi GS3 Yingsu; GS3 Emzoom em outros mercados). Lançado no Brasil em mar/2026.",
+  "timeline": [
+    {
+      "modelYear": "2026",
+      "change": "Pré-venda com sinal a partir de 06/03/2026 e lançamento em 18/03/2026. Premium a R$ 129.990 (promoção para o 1º lote de 1.000 unidades) e Elite a R$ 159.990."
+    },
+    {
+      "modelYear": "2026",
+      "change": "Encerrada a promoção, a Premium foi para R$ 139.990 (preço cheio de tabela); a Elite segue a R$ 159.990 (Webmotors, FIPE 0 km jul–set/2026)."
+    },
+    {
+      "modelYear": "2027",
+      "change": "Linha 2027 já na FIPE (Premium 2027 = R$ 127.577 em set/2026). Não foram encontradas mudanças de produto."
+    }
+  ],
+  "highlights": [
+    "Preço de entrada de SUV compacto (R$ 139.990) com motor turbo de 170+ cv e 0–100 km/h em 8,1 s (dado da imprensa).",
+    "A Premium já traz multimídia de 14,6\" com CarPlay/Android Auto sem fio, painel digital de 7\", ar automático com saídas traseiras, 6 airbags, rodas 18\", chave presencial e câmera de ré.",
+    "A Elite (R$ 159.990) acrescenta ADAS (frenagem autônoma, ACC), câmeras 360°, teto panorâmico, carregador por indução e banco do motorista elétrico e ventilado.",
+    "Garantia de 5 anos sem limite de km, primeira revisão gratuita e 2 anos de assistência 24 h (Vrum).",
+    "5 estrelas no ASEAN NCAP (protocolo 2021–2025, ago/2024) para o GS3 Emzoom."
+  ],
+  "watchOuts": [
+    "Só gasolina: não é flex nem híbrido. É o mais gastador dos três pesquisados (Inmetro 10,2 km/l na cidade e 11,6 km/l na estrada).",
+    "Porta-malas pequeno: 341 L, citado só pela Autoo (não confirmado por segunda fonte).",
+    "A Premium não tem frenagem autônoma de emergência nem ACC; o pacote ADAS é exclusivo da Elite.",
+    "Teste da Motorshow aponta que a mecânica e a suspensão ainda pedem aprimoramentos.",
+    "Marca GAC nova no Brasil (rede em expansão); revenda sem histórico. A FIPE do 2027 (R$ 127,6 mil) já está cerca de R$ 12 mil abaixo do preço de 0 km.",
+    "Nenhum recall nem padrão de reclamações foi encontrado no Brasil (só notícias de lançamento e fila de espera de até 60 dias)."
+  ],
+  "specs": {
+    "version": "GS3 Premium 1.5 Turbo (linha 2026/2027)",
+    "engine": "1.5 turbo gasolina 4 cil. 16V, injeção direta",
+    "powerCv": "170 (imprensa no lançamento) / 177 (homologação, Vrum)",
+    "torqueKgfm": "25,5 (250 Nm) / 27,5 conforme a fonte",
+    "transmission": "WDCT dupla embreagem banhada a óleo, 7 marchas; tração dianteira",
+    "trunkL": 341,
+    "lengthMm": 4410,
+    "wheelbaseMm": 2650,
+    "safety": "6 airbags, ESC/TCS, TPMS; sem Latin NCAP; ASEAN NCAP 5 estrelas (GS3 Emzoom, 2024)",
+    "warranty": "5 anos sem limite de km"
+  },
+  "inmetro": {
+    "version": "GS3 1.5 Turbo (gasolina)",
+    "cityGas": 10.2,
+    "roadGas": 11.6,
+    "cityEth": null,
+    "roadEth": null,
+    "cityKmKWh": null,
+    "roadKmKWh": null,
+    "year": "PBEV 2026 (conforme imprensa)",
+    "source": "https://www.automaistv.com.br/novidades/consumo-e-versoes-do-gac-gs3-sao-revelados-pela-tabela-do-inmetro/"
+  },
+  "price0km": {
+    "version": "Premium",
+    "price": 139990,
+    "date": "set/2026",
+    "source": "https://www.tabelafipebrasil.com/carros/GAC/GS3-PREMIUM-1-5-16V-TURBO-AUT/Zero-Km-a-gasolina"
+  },
+  "versionsAndPrices": [
+    {
+      "version": "Premium",
+      "price": 139990,
+      "date": "jul–set/2026 (preço cheio; promoção de lançamento de R$ 129.990 no 1º lote)",
+      "source": "https://www.webmotors.com.br/gac/gs3/2027"
+    },
+    {
+      "version": "Elite",
+      "price": 159990,
+      "date": "mar–set/2026",
+      "source": "https://www.webmotors.com.br/gac/gs3/2027"
+    }
+  ],
+  "launchModelYearBR": 2026,
+  "catalogCheck": "Não está no catálogo (já existem GS4 HEV, Aion V, Hyptec HT e GS9 da GAC). FIPE: 'GS3 PREMIUM 1,5 16V Turbo Aut.' código 304009-7; 0 km = R$ 139.990 (set/2026); 2027 = R$ 127.577 (set/2026). A FIPE não lista ano-modelo 2026 separado, só 0 km e 2027. Os anúncios da Webmotors trazem 2026/2027.",
+  "wikipedia": {
+    "lang": "en",
+    "title": "Trumpchi GS3"
+  },
+  "officialUrl": null,
+  "sources": [
+    {
+      "label": "AutoPapo — GS3 estreia por R$ 130 mil (18/03/2026)",
+      "url": "https://autopapo.com.br/noticia/gac-gs3-130-mil/"
+    },
+    {
+      "label": "Vrum — GAC confirma fábrica e lança GS3 (mar/2026)",
+      "url": "https://www.vrum.com.br/mercado/2026/03/7378251-gac-confirma-fabrica-no-brasil-e-lanca-gs3-a-partir-de-rs-129-mil.html"
+    },
+    {
+      "label": "Vrum — GS3 homologado (177 cv, jan/2026)",
+      "url": "https://www.vrum.com.br/noticias/2026/01/7337529-gac-gs3-suv-compacto-de-177-cv-ja-esta-homologado-no-brasil-e-mira-t-cross.html"
+    },
+    {
+      "label": "Motorshow — GS3 preço, equipamentos, motor",
+      "url": "https://motorshow.com.br/gac-gs3-preco-equipamentos-motor"
+    },
+    {
+      "label": "Auto+ TV — consumo Inmetro do GS3",
+      "url": "https://www.automaistv.com.br/novidades/consumo-e-versoes-do-gac-gs3-sao-revelados-pela-tabela-do-inmetro/"
+    },
+    {
+      "label": "Webmotors — GAC GS3 2027 (R$ 139.990 – R$ 159.990)",
+      "url": "https://www.webmotors.com.br/gac/gs3/2027"
+    },
+    {
+      "label": "Tabela Carros — GS3 chega por R$ 139.990",
+      "url": "https://tabelacarros.com/post/gac-gs3-chega-por-r-139990-para-desafiar-creta-e-t-cross"
+    },
+    {
+      "label": "Autoo — GS3 preços, consumo, porta-malas",
+      "url": "https://www.autoo.com.br/gac-gs3-veja-precos-pecas-consumo-e-equipamentos-do-suv-chines/"
+    },
+    {
+      "label": "Tabela FIPE Brasil — GS3 Premium 0 km",
+      "url": "https://www.tabelafipebrasil.com/carros/GAC/GS3-PREMIUM-1-5-16V-TURBO-AUT/Zero-Km-a-gasolina"
+    },
+    {
+      "label": "Tabela FIPE Brasil — GS3 Premium 2027",
+      "url": "https://www.tabelafipebrasil.com/carros/GAC/GS3-PREMIUM-1-5-16V-TURBO-AUT/2027-Gasolina"
+    },
+    {
+      "label": "CarGuide PH — GS3 Emzoom 5 estrelas ASEAN NCAP (ago/2024)",
+      "url": "https://carguide.ph/2024/08/gac-gs3-emzoom-joins-5-star-asean-ncap.html"
+    },
+    {
+      "label": "Jornal do Brás — equipamentos da Elite",
+      "url": "https://jornaldobras.com.br/noticia/113167/gac-lanca-suv-gs3-em-salvador-com-condicoes-especiais-e-duas-versoes-tecnologicas"
+    },
+    {
+      "label": "Motorshow — teste rápido GS3 2026",
+      "url": "https://motorshow.com.br/teste-rapido-gac-gs3-2026"
+    }
+  ],
+  "unverified": [
+    "Potência e torque: 170 cv/25,5 kgfm (imprensa) contra 177 cv/27,5 kgfm (homologação).",
+    "Porta-malas de 341 L citado só pela Autoo.",
+    "Ano do PBEV dos números Inmetro (10,2/11,6).",
+    "Ano-modelo inicial: a FIPE lista só 0 km e 2027. 'since: 2026' segue os anúncios 2026/2027 e a matéria do AutoPapo ('GS3 Elite 2026').",
+    "Nenhum reajuste encontrado para out/2026. R$ 139.990 é o último preço visto (FIPE 0 km set/2026).",
+    "officialUrl: a página oficial não apareceu nos resultados.",
+    "Todos os dados vêm de resumos de busca: as páginas não puderam ser abertas (WebFetch falhou com erro de DNS).",
+    "Pesquisa feita por resumos de busca das fontes listadas (páginas não abertas diretamente); confira os valores na fonte."
+  ]
+}

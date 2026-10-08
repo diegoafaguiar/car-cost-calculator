@@ -1,0 +1,145 @@
+{
+  "catalogSeed": {
+    "brand": "GWM",
+    "model": "Haval H7",
+    "version": "1.5 Turbo PHEV Flex AWD",
+    "category": "suv-grande",
+    "powertrain": "hibrido-plugin",
+    "seats": 5,
+    "trunkL": 586,
+    "refPriceNew": 261000,
+    "consumption": {
+      "cityKmL": 10.7,
+      "roadKmL": 10.7,
+      "cityKmLEthanol": 7.4,
+      "roadKmLEthanol": 7.4,
+      "cityKmKWh": 3.3,
+      "roadKmKWh": 3.3
+    },
+    "evShareNote": "Híbrido plug-in flex com tração integral (1.5 turbo flex + 2 motores elétricos); bateria LFP de 27,5 kWh, 92 km elétricos (Inmetro).",
+    "fipeBrand": "GWM",
+    "fipeInclude": [
+      "h7"
+    ],
+    "since": 2027
+  },
+  "id": "gwm-haval-h7",
+  "researchedAt": "2026-10",
+  "displayName": "GWM Haval H7",
+  "summary": "SUV de visual quadrado/aventureiro posicionado entre o H6 e o H9, lançado no Brasil em 7/out/2026 por R$ 261 mil em versão única. Híbrido plug-in flex: motor 1.5 turbo flex + dois motores elétricos (um por eixo), 370 cv e 77 kgfm, tração integral e transmissão DHT de 4 marchas. Bateria LFP de 27,5 kWh com 92 km de autonomia elétrica (Inmetro).",
+  "generation": "2ª geração do nome H7 (nova, 2024/2025 na China); no Brasil desde out/2026.",
+  "timeline": [
+    {
+      "modelYear": "2027",
+      "change": "Pré-venda a partir de 5/out/2026 (clientes GWM) e 7/out/2026 (público) com sinal de R$ 9 mil; lançamento oficial em 7/out/2026 por R$ 261.000, versão única com pacote Black Pack."
+    }
+  ],
+  "highlights": [
+    "370 cv e 77 kgfm combinados, 0-100 km/h em 5,7 s, tração integral.",
+    "Bateria de 27,5 kWh: 92 km elétricos (Inmetro), 130 km (WLTP); DC 41 kW (30-80% em ~20 min), AC 6,6 kW, V2L 6 kW.",
+    "Porta-malas de 586 L (1.404 L com bancos rebatidos); 220 mm de vão livre e travessia de 580 mm.",
+    "Teto panorâmico, rodas 19\", bancos dianteiros ventilados e elétricos, ar de duas zonas, indução 50 W e multimídia de 15,6\" citados como de série.",
+    "ANCAP 5 estrelas (dez/2025), para o H7 australiano."
+  ],
+  "watchOuts": [
+    "Lançado em out/2026: sem histórico de confiabilidade, FIPE ou revenda no Brasil.",
+    "Consumo sem carga na bateria não publicado: o Inmetro dá 32/24,3 km/l (gasolina), mas esse número inclui energia da bateria; na prática, com a bateria vazia, o consumo deve ser bem pior.",
+    "Grande e pesado (4,80 m, 1,95 m de largura): pode ser difícil de manobrar e estacionar na cidade.",
+    "ANCAP: o encosto de cabeça do motorista se soltou no teste de impacto frontal; a GWM abriu recall voluntário (Austrália). Não foi encontrado recall no Brasil.",
+    "Garantia do H7 no Brasil não confirmada nas fontes vistas.",
+    "Preço R$ 261 mil fica no limite da isenção de IPVA de SP para híbridos flex (R$ 261.154,45 em 2026); fontes divergem sobre a elegibilidade."
+  ],
+  "specs": {
+    "version": "Haval H7 PHEV Flex AWD (versão única, Black Pack)",
+    "engine": "1.5 turbo flex + 2 motores elétricos (um por eixo), híbrido plug-in; bateria LFP 27,5 kWh",
+    "powerCv": "370 (combinada, G/E)",
+    "torqueKgfm": "77 (760 Nm combinado)",
+    "transmission": "DHT de 4 marchas, tração integral",
+    "trunkL": 586,
+    "lengthMm": 4800,
+    "wheelbaseMm": 2738,
+    "safety": "ANCAP 5 estrelas (dez/2025, H7 australiano); sem Latin NCAP",
+    "warranty": null
+  },
+  "inmetro": {
+    "version": "Haval H7 PHEV Flex",
+    "cityGas": 32.0,
+    "roadGas": 24.3,
+    "cityEth": 20.6,
+    "roadEth": 16.7,
+    "cityKmKWh": null,
+    "roadKmKWh": null,
+    "year": "PBEV 2026 (conforme imprensa; valores ponderados de plug-in, incluem energia da bateria)",
+    "source": "https://mundodoautomovelparapcd.com.br/gwm-haval-h7-hibrido-plug-in-lancamento/"
+  },
+  "price0km": {
+    "version": "Versão única",
+    "price": 261000,
+    "date": "out/2026",
+    "source": "https://www.autoindustria.com.br/2026/10/07/em-versao-unica-haval-h7-chega-por-r-261-mil-com-sistema-hibrido-plug-in-flex/"
+  },
+  "versionsAndPrices": [
+    {
+      "version": "Versão única (PHEV Flex AWD, Black Pack)",
+      "price": 261000,
+      "date": "out/2026",
+      "source": "https://www.autoindustria.com.br/2026/10/07/em-versao-unica-haval-h7-chega-por-r-261-mil-com-sistema-hibrido-plug-in-flex/"
+    }
+  ],
+  "launchModelYearBR": null,
+  "catalogCheck": "Modelo ausente do catálogo. Versão única por R$ 261.000 (out/2026). Ainda não aparece na FIPE (lançado em 7/out/2026); fipe include ['h7'] provisório. Ano-modelo de lançamento não confirmado (since 2027 é estimado).",
+  "wikipedia": {
+    "lang": "en",
+    "title": "Haval H7"
+  },
+  "officialUrl": null,
+  "sources": [
+    {
+      "label": "Car.Blog.br — Haval H7 chega por R$ 261 mil (out/2026)",
+      "url": "https://www.car.blog.br/2026/10/novo-gwm-haval-h7-brasil-preco-ficha-tecnica-fotos.html"
+    },
+    {
+      "label": "AutoPapo — lançamento Haval H7",
+      "url": "https://autopapo.com.br/noticia/gwm-haval-h7-lancamento/"
+    },
+    {
+      "label": "O Tempo — H7 370 cv, 0-100 em 5,7 s, R$ 261 mil",
+      "url": "https://www.otempo.com.br/autotempo/2026/10/7/haval-h7-chega-com-370-cv-e-tracao-4x4-por-r-261-mil"
+    },
+    {
+      "label": "Mundo do Automóvel para PCD — ficha (Inmetro 92 km, 27,5 kWh, consumo PBEV)",
+      "url": "https://mundodoautomovelparapcd.com.br/gwm-haval-h7-hibrido-plug-in-lancamento/"
+    },
+    {
+      "label": "Tribuna PR — versão única, Black Pack, equipamentos",
+      "url": "https://www.tribunapr.com.br/noticias/automoveis/gwm-haval-h7-suv-hibrido-plug-in-brasil/"
+    },
+    {
+      "label": "AutoIndústria — versão única R$ 261 mil",
+      "url": "https://www.autoindustria.com.br/2026/10/07/em-versao-unica-haval-h7-chega-por-r-261-mil-com-sistema-hibrido-plug-in-flex/"
+    },
+    {
+      "label": "Revista Carro — H7 PHEV flex 370 cv",
+      "url": "https://revistacarro.com.br/gwm-lanca-haval-h7-phev-flex-com-370-cv-por-r-261-mil/"
+    },
+    {
+      "label": "Carro.Blog.br — desembarque, porta-malas 586 L",
+      "url": "https://carro.blog.br/carros/gwm/gwm-haval-h7-desembarca-no-brasil-com-porta-malas-de-586-litros-e-visual-de-jipao-lancamento-e-esperado-para-outubro.html"
+    },
+    {
+      "label": "ANCAP — Haval H7 (5 estrelas, dez/2025)",
+      "url": "https://www.ancap.com.au/safety-ratings/great-wall-motors/haval-h7/93729c"
+    }
+  ],
+  "unverified": [
+    "Consumo com bateria descarregada (não publicado). No catálogo usou-se como aproximação o do H6 PHEV35 Flex (10,7 km/l gasolina e 7,4 km/l etanol na estrada), que usa o mesmo conjunto 1.5 turbo flex + Hi4 + DHT de 4 marchas.",
+    "Consumo elétrico (estimado 92 km ÷ 27,5 kWh ≈ 3,3 km/kWh).",
+    "Ano-modelo de lançamento (2026 ou 2027).",
+    "Garantia do veículo e da bateria no Brasil.",
+    "Número de airbags e itens de ADAS da versão brasileira (6 airbags, ACC, AEB e assistente de faixa constam no H7 de outros mercados).",
+    "Categoria: tratado como SUV grande pelo porte (4,80 m), mas a GWM o posiciona contra o Compass.",
+    "Wikipedia 'Haval H7' descreve também a geração anterior (2015).",
+    "officialUrl não visto.",
+    "Pesquisa feita por resumos de busca das fontes listadas (páginas não abertas diretamente); confira os valores na fonte."
+  ]
+}

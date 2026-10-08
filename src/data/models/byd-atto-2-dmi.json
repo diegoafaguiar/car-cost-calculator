@@ -1,0 +1,163 @@
+{
+  "catalogSeed": {
+    "brand": "BYD",
+    "model": "Atto 2 DM-i",
+    "version": "GL 1.5 DM-i Flex (plug-in)",
+    "category": "suv-compacto",
+    "powertrain": "hibrido-plugin",
+    "seats": 5,
+    "trunkL": 455,
+    "refPriceNew": 166660,
+    "consumption": {
+      "cityKmL": 15.8,
+      "roadKmL": 13.5,
+      "cityKmLEthanol": 11.7,
+      "roadKmLEthanol": 10.5,
+      "cityKmKWh": 4.2,
+      "roadKmKWh": 4.2
+    },
+    "evShareNote": "Híbrido plug-in flex; bateria Blade LFP de 7,85 kWh na GL (33 km elétricos Inmetro), recarga só AC 3,3 kW. GS: 18,03 kWh, 75 km.",
+    "fipeBrand": "BYD",
+    "fipeInclude": [
+      "atto",
+      "gl"
+    ],
+    "since": 2027
+  },
+  "id": "byd-atto-2-dmi",
+  "researchedAt": "2026-10",
+  "displayName": "BYD Atto 2 DM-i Flex",
+  "summary": "SUV compacto híbrido plug-in flex, primeiro carro da BYD com motor flex no mundo, fabricado em Camaçari (BA). Motor 1.5 flex aspirado (98 cv) + motor elétrico; 177 cv combinados na GL e 197 cv na GS. Bateria Blade de 7,85 kWh (GL) ou 18,03 kWh (GS). Lançado em jun/2026, entregas desde set/2026.",
+  "generation": "1ª geração (Atto 2 / Yuan Up, 2025); versão DM-i Flex desenvolvida para o Brasil, linha 2027.",
+  "timeline": [
+    {
+      "modelYear": "2027",
+      "change": "Apresentado em jun/2026: GL R$ 149.990 (vendas diretas/lançamento) e GS R$ 169.990; entregas oficiais a partir de set/2026 com GL reajustada para R$ 166.660 (preço público) e GS mantida em R$ 169.990."
+    },
+    {
+      "modelYear": "2027",
+      "change": "Campanha até 30/set/2026: GL por R$ 149.990 para pessoa física; PCD: GL R$ 144.990 e GS R$ 162.970."
+    }
+  ],
+  "highlights": [
+    "Híbrido plug-in flex: roda com etanol, gasolina e eletricidade; feito na Bahia.",
+    "Inmetro (GL): 15,8 km/l cidade e 13,5 km/l estrada com gasolina; 11,7/10,5 km/l com etanol.",
+    "Porta-malas de 455 L — grande para um SUV compacto de 4,33 m.",
+    "6 airbags e pacote ADAS de nível 2 (ACC e frenagem autônoma) citados como de série nas duas versões.",
+    "Autonomia total declarada de até 1.000 km (GL, NEDC, gasolina)."
+  ],
+  "watchOuts": [
+    "Na GL a bateria é pequena (7,85 kWh): só 33 km elétricos pelo Inmetro (NEDC promete 45 km) e recarga apenas AC de 3,3 kW, sem DC.",
+    "Preço oscilou: R$ 149.990 no lançamento, R$ 166.660 de tabela em set/2026 e campanhas pontuais de R$ 149.990 — confirme na concessionária.",
+    "Modelo novíssimo (entregas desde set/2026): sem histórico de confiabilidade, revenda ou FIPE.",
+    "Motor a combustão aspirado de apenas 98 cv; desempenho depende da bateria.",
+    "Sem teste Latin NCAP; nenhum teste de colisão Euro NCAP/ANCAP do Atto 2 foi confirmado (só Green NCAP, que mede eficiência)."
+  ],
+  "specs": {
+    "version": "Atto 2 DM-i Flex GL (linha 2027)",
+    "engine": "1.5 flex aspirado 4 cil. (98 cv, 12,6 kgfm) + motor elétrico; híbrido plug-in; bateria Blade LFP 7,85 kWh (GL) / 18,03 kWh (GS)",
+    "powerCv": "177 (combinada, GL) / 197 (GS)",
+    "torqueKgfm": null,
+    "transmission": "E-CVT/DHT (sistema DM-i)",
+    "trunkL": 455,
+    "lengthMm": 4330,
+    "wheelbaseMm": 2620,
+    "safety": "6 airbags; sem Latin NCAP; sem Euro NCAP/ANCAP confirmado",
+    "warranty": null
+  },
+  "inmetro": {
+    "version": "Atto 2 DM-i GL",
+    "cityGas": 15.8,
+    "roadGas": 13.5,
+    "cityEth": 11.7,
+    "roadEth": 10.5,
+    "cityKmKWh": null,
+    "roadKmKWh": null,
+    "year": "PBEV 2026 (conforme imprensa, ago/2026)",
+    "source": "https://gurudoscarros.com.br/2026/08/15/byd-atto-2-autonomia-eletrica-oficial-no-brasil-vai-de-33-a-75-km/"
+  },
+  "price0km": {
+    "version": "GL",
+    "price": 166660,
+    "date": "set/2026",
+    "source": "https://www.tribunapr.com.br/noticias/byd-atto-2-para-pcd-tem-21-mil-de-desconto-veja-precos-e-versoes/"
+  },
+  "versionsAndPrices": [
+    {
+      "version": "GL",
+      "price": 166660,
+      "date": "set/2026",
+      "source": "https://www.webmotors.com.br/byd/atto-2/2027/1-5-dm-i-flex-phev-gl-automatico/388347"
+    },
+    {
+      "version": "GS",
+      "price": 169990,
+      "date": "set/2026",
+      "source": "https://www.tribunapr.com.br/noticias/byd-atto-2-para-pcd-tem-21-mil-de-desconto-veja-precos-e-versoes/"
+    },
+    {
+      "version": "GL (promoção pessoa física até 30/set/2026)",
+      "price": 149990,
+      "date": "set/2026",
+      "source": "https://diariodamidia.com.br/byd-atto-2-volta-a-r-149990-e-vira-opcao-entre-suvs"
+    }
+  ],
+  "launchModelYearBR": 2027,
+  "catalogCheck": "Modelo ausente do catálogo (o app tem Yuan Pro elétrico, que é outro modelo). Sugere-se a GL (R$ 166.660, preço público set/2026). FIPE: nenhuma entrada encontrada até out/2026 (modelo recém-lançado); o include ['atto','gl'] deve ser revisado quando a FIPE publicar o nome.",
+  "wikipedia": {
+    "lang": "en",
+    "title": "BYD Atto 2"
+  },
+  "officialUrl": "https://www.byd.com/br/car/atto2",
+  "sources": [
+    {
+      "label": "Tribuna PR — Atto 2 entregas set/2026, preços GL R$ 166.660 / GS R$ 169.990, PCD",
+      "url": "https://www.tribunapr.com.br/noticias/byd-atto-2-para-pcd-tem-21-mil-de-desconto-veja-precos-e-versoes/"
+    },
+    {
+      "label": "Webmotors — Atto 2 1.5 DM-i Flex PHEV GL 2027 (preço sugerido R$ 166.660)",
+      "url": "https://www.webmotors.com.br/byd/atto-2/2027/1-5-dm-i-flex-phev-gl-automatico/388347"
+    },
+    {
+      "label": "AutoData — lançamento jun/2026 (R$ 149.990 GL / R$ 169.990 GS)",
+      "url": "https://www.autodata.com.br/noticias/2026/06/10/nacional-e-hibrido-flex-byd-atto-2-chega-ao-mercado-por-r-150-mil/105860/"
+    },
+    {
+      "label": "Guru dos Carros — autonomia elétrica Inmetro 33 km (GL) / 75 km (GS)",
+      "url": "https://gurudoscarros.com.br/2026/08/15/byd-atto-2-autonomia-eletrica-oficial-no-brasil-vai-de-33-a-75-km/"
+    },
+    {
+      "label": "Terra — consumo Inmetro até 15,8 km/l",
+      "url": "https://www.terra.com.br/mobilidade/economico-na-cidade-byd-atto-2-faz-ate-158-kml,226c8d453d9fff9f9e5fe81ba19669cdm0pzn5u6.html"
+    },
+    {
+      "label": "Primo Auto — preços, versões e ficha técnica",
+      "url": "https://primoauto.com.br/byd-atto-2-dm-i-flex-precos-versoes-e-ficha-tecnica-do-inedito-hibrido-plug-in-flex"
+    },
+    {
+      "label": "BYD Brasil — página do Atto 2 DM-i",
+      "url": "https://www.byd.com/br/car/atto2"
+    },
+    {
+      "label": "BYD Brasil — ficha técnica PDF Atto 2 DM-i Flex",
+      "url": "https://www.byd.com/material/byd-site/br/product/atto-2-dmi/Ficha%20Tecnica%20-%20BYD%20Atto%202%20DM-i%20Flex%20-%20v1.pdf"
+    },
+    {
+      "label": "Bem Paraná — equipamentos (indução 50 W, NFC, câmera 360°)",
+      "url": "https://www.bemparana.com.br/carros/byd-atto-2-o-primeiro-suv-compacto-hibrido-plug-in-flex-da-marca-no-mundo/"
+    },
+    {
+      "label": "Diário da Mídia — campanha R$ 149.990 até 30/set/2026",
+      "url": "https://diariodamidia.com.br/byd-atto-2-volta-a-r-149990-e-vira-opcao-entre-suvs"
+    }
+  ],
+  "unverified": [
+    "Consumo elétrico em km/kWh (estimado: 33 km ÷ 7,85 kWh ≈ 4,2 km/kWh; PBEV oficial não visto).",
+    "Etanol GL: 11,7/10,5 km/l numa fonte e 11,8/10,7 km/l em outra (versão não informada).",
+    "Torque combinado e garantia (veículo/bateria) não encontrados nas fontes vistas.",
+    "Se a câmera 360° e o ar automático são de série na GL.",
+    "Preço vigente em out/2026 (campanha de R$ 149.990 terminou em 30/set).",
+    "Rodas 16\" ou 17\" na GL.",
+    "Pesquisa feita por resumos de busca das fontes listadas (páginas não abertas diretamente); confira os valores na fonte."
+  ]
+}

@@ -1,0 +1,64 @@
+{
+  "id": "changan-cs55",
+  "version": "Caoa Changan CS55 Infinity 1.5 TGDi 2027",
+  "researchedAt": "2026-10",
+  "tech": {
+    "screen10": null,
+    "wirelessMirroring": null,
+    "digitalCluster": true,
+    "wirelessCharger": true,
+    "camera360": true,
+    "adaptiveCruise": null,
+    "connectedApp": null,
+    "keyless": true
+  },
+  "comfort": {
+    "automatic": true,
+    "digitalAC": true,
+    "rearVents": null,
+    "leather": null,
+    "powerSeat": null,
+    "seatClimate": true,
+    "sunroof": true
+  },
+  "safety": {
+    "airbags6": true,
+    "aeb": null,
+    "laneKeep": true,
+    "blindSpot": true,
+    "rearCrossTraffic": null
+  },
+  "ncap": {
+    "stars": null,
+    "year": null,
+    "program": "Latin NCAP",
+    "note": "Sem teste Latin NCAP; nenhum Euro NCAP/ANCAP do CS55 encontrado.",
+    "source": ""
+  },
+  "sources": [
+    {
+      "label": "Carros e Garagem — CS55 2027: preço, equipamentos, consumo Inmetro",
+      "url": "https://www.carrosegaragem.com.br/caoa-changan-cs55-2027/"
+    },
+    {
+      "label": "AutoPapo — CS55 Infinity: positivos e negativos",
+      "url": "https://autopapo.com.br/noticia/caoa-changan-cs55-infinity-positivos-e-negativos/"
+    },
+    {
+      "label": "Vrum — Caoa Changan lança CS55 a partir de R$ 144 mil (set/2026)",
+      "url": "https://www.vrum.com.br/mercado/2026/09/7501381-caoa-changan-lanca-cs55-a-partir-de-rs-144-mil-para-destronar-jeep-compass.html"
+    }
+  ],
+  "notes": "Prime (base) já traz rodas 19\", ar digital, chave presencial, câmeras 540°, carregador sem fio e painel digital 10,3\"; Infinity soma teto panorâmico, bancos dianteiros aquecidos e ventilados, ar automático de duas zonas, som Pioneer de 8 alto-falantes, tampa elétrica e ADAS nível 2+. Segurança citada sem separar versões: 6 airbags, alerta de colisão frontal e traseira, câmera 360°, ponto cego, alerta de abertura de portas e assistente de faixa com centralização.",
+  "unverified": [
+    "tech.screen10",
+    "tech.wirelessMirroring",
+    "tech.adaptiveCruise",
+    "tech.connectedApp",
+    "comfort.rearVents",
+    "comfort.leather",
+    "comfort.powerSeat",
+    "safety.aeb",
+    "safety.rearCrossTraffic"
+  ]
+}

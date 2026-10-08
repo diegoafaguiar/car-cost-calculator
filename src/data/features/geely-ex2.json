@@ -1,0 +1,80 @@
+{
+  "id": "geely-ex2",
+  "version": "Geely EX2 Pro 2026",
+  "researchedAt": "2026-10",
+  "tech": {
+    "screen10": true,
+    "wirelessMirroring": null,
+    "digitalCluster": true,
+    "wirelessCharger": false,
+    "camera360": false,
+    "adaptiveCruise": false,
+    "connectedApp": null,
+    "keyless": null
+  },
+  "comfort": {
+    "automatic": true,
+    "digitalAC": true,
+    "rearVents": true,
+    "leather": null,
+    "powerSeat": false,
+    "seatClimate": null,
+    "sunroof": null
+  },
+  "safety": {
+    "airbags6": true,
+    "aeb": false,
+    "laneKeep": false,
+    "blindSpot": null,
+    "rearCrossTraffic": null
+  },
+  "ncap": {
+    "stars": 5,
+    "year": 2026,
+    "program": "Euro NCAP",
+    "note": "Euro NCAP 5 estrelas (protocolo 2026, 02/09/2026) para o Geely E2 (= EX2); ANCAP 5 estrelas também. Pontuação: pós-colisão 95%, proteção 86%, condução segura 79%, prevenção 72%; pernas do motorista marcadas como inadequadas. Atenção: o carro europeu tem ADAS (AEB, faixa), que o EX2 Pro brasileiro não tem.",
+    "source": "https://news.euroncap.com/safercars/choose-a-car/geely-e2---euro-ncap-2026-results---5-stars/s/7bf4f43b-164d-442c-841e-152868ca88d4",
+    "counts": true
+  },
+  "sources": [
+    {
+      "label": "Canal VE — ficha técnica EX2 Pro",
+      "url": "https://canalve.com.br/ficha-tecnica/geely/tudo-sobre-ex2-pro/"
+    },
+    {
+      "label": "Canal VE — ficha técnica EX2 Max",
+      "url": "https://canalve.com.br/ficha-tecnica/geely/tudo-sobre-ex2-max/"
+    },
+    {
+      "label": "O Povo — hatch elétrico com front-malas (17/11/2025)",
+      "url": "https://www.opovo.com.br/noticias/veiculos/2025/11/17/geely-ex2-o-hatch-eletrico-com-front-malas-e-forca-na-traseira.html"
+    },
+    {
+      "label": "Auto+ TV — EX2 Pro, a versão de entrada",
+      "url": "https://www.automaistv.com.br/novidades/geely-ex2-pro-e-a-versao-pe-de-boi-com-calota-e-preco-de-byd-dolphin-mini/"
+    },
+    {
+      "label": "Vrum — avaliação EX2 (jul/2026)",
+      "url": "https://www.vrum.com.br/avaliacoes/2026/07/7470350-geely-ex2-acerta-na-receita-mas-ainda-tem-detalhes-a-corrigir.html"
+    },
+    {
+      "label": "AutoPapo — Android Auto/CarPlay liberados na concessionária",
+      "url": "https://autopapo.com.br/curta/geely-libera-android-auto-e-carplay-gratuitamente-para-o-ex2-mas-exige-ida-a-concessionaria/"
+    },
+    {
+      "label": "Euro NCAP — Geely E2 2026, 5 estrelas",
+      "url": "https://news.euroncap.com/safercars/choose-a-car/geely-e2---euro-ncap-2026-results---5-stars/s/7bf4f43b-164d-442c-841e-152868ca88d4"
+    }
+  ],
+  "notes": "Pro: multimídia de 14,6\" (Flyme Auto; CarPlay/Android Auto liberados por atualização na concessionária desde fev/2026, sem confirmação de que sejam sem fio), painel digital de 8,8\", ar digital com saída traseira, câmera de ré, piloto automático comum, banco do motorista manual (6 vias), 6 airbags, freio de estacionamento eletrônico, rodas de aço 15\" com calota e 4 alto-falantes. Exclusivos da Max: AEB, alerta de faixa, ACC, farol alto automático, câmera 540°, banco do motorista elétrico, carregador por indução e rodas de liga 16\". Entrada/partida sem chave na Pro: O Povo diz que sim, uma fonte colombiana diz que só na Max.",
+  "unverified": [
+    "tech.wirelessMirroring",
+    "tech.connectedApp",
+    "tech.keyless",
+    "comfort.leather",
+    "comfort.seatClimate",
+    "comfort.sunroof",
+    "safety.blindSpot",
+    "safety.rearCrossTraffic"
+  ]
+}

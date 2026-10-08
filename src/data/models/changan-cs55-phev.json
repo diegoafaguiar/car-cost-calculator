@@ -1,0 +1,163 @@
+{
+  "catalogSeed": {
+    "brand": "Caoa Changan",
+    "model": "CS55 PHEV",
+    "version": "1.5 Turbo PHEV flex",
+    "category": "suv-medio",
+    "powertrain": "hibrido-plugin",
+    "seats": 5,
+    "trunkL": null,
+    "refPriceNew": 189990,
+    "consumption": {
+      "cityKmL": 10.4,
+      "roadKmL": 12.1,
+      "cityKmLEthanol": 7.3,
+      "roadKmLEthanol": 8.3,
+      "cityKmKWh": 4.1,
+      "roadKmKWh": 4.1
+    },
+    "evShareNote": "Híbrido plug-in flex importado da China; bateria de 18,4 kWh, 76 km elétricos (Inmetro), AC 6,6 kW.",
+    "fipeBrand": "CAOA CHANGAN",
+    "fipeInclude": [
+      "cs55",
+      "phev|hibrido"
+    ],
+    "since": 2027
+  },
+  "id": "changan-cs55-phev",
+  "researchedAt": "2026-10",
+  "displayName": "Caoa Changan CS55 PHEV",
+  "summary": "Versão híbrida plug-in flex do SUV médio CS55, importada da China. Motor 1.5 turbo flex + motor elétrico, 286 cv e 47 kgfm, bateria de 18,4 kWh com 76 km elétricos (Inmetro). Lançada em set/2026 por R$ 189.990 em pré-venda; entregas previstas a partir de out/2026 (fontes divergem: até o fim de 2026).",
+  "generation": "CS55 Plus 2ª geração (China, 2021/reestilizado); no Brasil desde set/2026 (linha 2027), flex montado em Anápolis (GO) e PHEV importado da China.",
+  "timeline": [
+    {
+      "modelYear": "2027",
+      "change": "Lançamento em 15-16/set/2026: Prime R$ 144.990 (pré-venda), Infinity R$ 154.990 (pronta entrega) e PHEV R$ 189.990 (pré-venda) — preços de lançamento; ~3 mil pedidos em 3 dias."
+    }
+  ],
+  "highlights": [
+    "Híbrido plug-in flex de 286 cv e 47 kgfm por R$ 189.990, 0-100 km/h em 7,2 s.",
+    "76 km de autonomia elétrica (Inmetro); modo elétrico em cidade até 70 km/h.",
+    "Inmetro (ponderado de plug-in): 42,2 km/l cidade e 33,5 km/l estrada; autonomia total de até 1.200 km (fabricante).",
+    "Garantia de 7 anos/150 mil km e 8 anos/150 mil km para a bateria.",
+    "Porte médio (4,55 m) e lista de série ampla na linha CS55."
+  ],
+  "watchOuts": [
+    "Em pré-venda: entregas previstas para out-dez/2026, com espera de ~60 dias relatada.",
+    "Os 42,2 km/l incluem a energia da bateria; sem carga o consumo real não foi publicado.",
+    "Recarga só AC (6,6 kW) nas fontes vistas; DC não confirmado.",
+    "Marca nova; preço de lançamento pode subir; sem FIPE ainda.",
+    "Sem teste Latin NCAP/Euro NCAP/ANCAP encontrado."
+  ],
+  "specs": {
+    "version": "CS55 PHEV flex (linha 2027)",
+    "engine": "1.5 turbo flex + motor elétrico, híbrido plug-in; bateria 18,4 kWh",
+    "powerCv": "286 (combinada)",
+    "torqueKgfm": "47 (combinado)",
+    "transmission": "Híbrida dedicada (não detalhada nas fontes)",
+    "trunkL": null,
+    "lengthMm": 4550,
+    "wheelbaseMm": 2660,
+    "safety": "6 airbags (linha CS55); sem NCAP",
+    "warranty": "7 anos/150 mil km (veículo); 8 anos/150 mil km (bateria)"
+  },
+  "inmetro": {
+    "version": "CS55 PHEV",
+    "cityGas": 42.2,
+    "roadGas": 33.5,
+    "cityEth": null,
+    "roadEth": null,
+    "cityKmKWh": null,
+    "roadKmKWh": null,
+    "year": "Divulgado pela marca/imprensa (set/2026); tabela pública do Inmetro de 31/ago/2026 ainda não listava o CS55. Valores ponderados de plug-in.",
+    "source": "https://www.automaistv.com.br/novidades/confira-como-ficou-o-consumo-do-caoa-changan-cs55/"
+  },
+  "price0km": {
+    "version": "PHEV",
+    "price": 189990,
+    "date": "set/2026 (lançamento, pré-venda)",
+    "source": "https://diariodonordeste.verdesmares.com.br/ultima-hora/automovel/caoa-changan-cs55-chega-com-preco-competitivo-e-tres-versoes-1.3792955"
+  },
+  "versionsAndPrices": [
+    {
+      "version": "PHEV",
+      "price": 189990,
+      "date": "set/2026",
+      "source": "https://diariodonordeste.verdesmares.com.br/ultima-hora/automovel/caoa-changan-cs55-chega-com-preco-competitivo-e-tres-versoes-1.3792955"
+    }
+  ],
+  "launchModelYearBR": 2027,
+  "catalogCheck": "Modelo ausente do catálogo. Pré-venda desde set/2026 (R$ 189.990; uma fonte cita R$ 185 mil). Ainda sem FIPE; include ['cs55','phev|hibrido'] provisório.",
+  "wikipedia": {
+    "lang": "en",
+    "title": "Changan CS55"
+  },
+  "officialUrl": "https://caoachangan.com.br/novo-cs55",
+  "sources": [
+    {
+      "label": "Vrum — Caoa Changan lança CS55 a partir de R$ 144 mil (set/2026)",
+      "url": "https://www.vrum.com.br/mercado/2026/09/7501381-caoa-changan-lanca-cs55-a-partir-de-rs-144-mil-para-destronar-jeep-compass.html"
+    },
+    {
+      "label": "Carros e Garagem — CS55 2027: preço, equipamentos, consumo Inmetro",
+      "url": "https://www.carrosegaragem.com.br/caoa-changan-cs55-2027/"
+    },
+    {
+      "label": "Autoentusiastas — CS55 (ficha técnica e preços)",
+      "url": "https://autoentusiastas.com.br/2026/09/caoa-changan-cs55/"
+    },
+    {
+      "label": "Hoje em Dia — CS55 porte médio, porta-malas 525 L",
+      "url": "https://www.hojeemdia.com.br/veiculos/caoa-changan-cs55-tem-porte-medio-e-preco-de-compacto-abaixo-dos-r-200-mil-1.1133836"
+    },
+    {
+      "label": "Diário do Nordeste — CS55 três versões, garantia 7 anos",
+      "url": "https://diariodonordeste.verdesmares.com.br/ultima-hora/automovel/caoa-changan-cs55-chega-com-preco-competitivo-e-tres-versoes-1.3792955"
+    },
+    {
+      "label": "Itatiaia — CS55 preço de Tera e maior que Compass",
+      "url": "https://www.itatiaia.com.br/auto/caoa-changan-cs55-chega-com-preco-de-tera-e-maior-que-o-compass/"
+    },
+    {
+      "label": "AutoPapo — CS55 Infinity: positivos e negativos",
+      "url": "https://autopapo.com.br/noticia/caoa-changan-cs55-infinity-positivos-e-negativos/"
+    },
+    {
+      "label": "Tabela FIPE Brasil — CS55 Infinity 1.5 16V TGDI 2027",
+      "url": "https://www.tabelafipebrasil.com/carros/CAOA-CHANGAN/CS55-INFINITY-15-16V-TGDI/2027-Flex"
+    },
+    {
+      "label": "Caoa Changan — Novo CS55",
+      "url": "https://caoachangan.com.br/novo-cs55"
+    },
+    {
+      "label": "Mixvale — fila de espera de 60 dias",
+      "url": "https://www.mixvale.com.br/2026/09/17/caoa-changan-cs55-tem-fila-de-espera-de-60-dias-no-brasil/"
+    },
+    {
+      "label": "Auto+ TV — consumo do CS55 (PHEV 42,2/33,5 km/l, 76 km elétricos)",
+      "url": "https://www.automaistv.com.br/novidades/confira-como-ficou-o-consumo-do-caoa-changan-cs55/"
+    },
+    {
+      "label": "Mobiauto — CS55 PHEV só chega às lojas em outubro",
+      "url": "https://www.mobiauto.com.br/revista/amp/caoa-changan-cs55-phev-so-chega-as-lojas-em-outubro/11674"
+    },
+    {
+      "label": "Autoo — CS55 chega às lojas e pode fazer até 42,2 km/l",
+      "url": "https://www.autoo.com.br/caoa-changan-cs55-chega-as-lojas-e-pode-fazer-ate-422-kml-veja-precos-e-detalhes/"
+    },
+    {
+      "label": "Automotive Business — CS55 tem versão híbrida flex",
+      "url": "https://www.automotivebusiness.com.br/noticias/caoa-changan-cs55-hibrida-flex-precos-competitivos"
+    }
+  ],
+  "unverified": [
+    "Consumo com bateria descarregada não publicado: no catálogo usou-se, como aproximação conservadora, o Inmetro do CS55 1.5 turbo flex não híbrido (10,4/12,1 km/l gasolina; 7,3/8,3 km/l etanol). Um PHEV no modo híbrido costuma gastar menos que isso.",
+    "Consumo elétrico (estimado 76 km ÷ 18,4 kWh ≈ 4,1 km/kWh).",
+    "Porta-malas da PHEV (a bateria pode reduzir os 525 L da versão flex).",
+    "Data real de início das entregas.",
+    "Equipamentos específicos da PHEV.",
+    "Preço R$ 189.990 x R$ 185 mil conforme fonte.",
+    "Pesquisa feita por resumos de busca das fontes listadas (páginas não abertas diretamente); confira os valores na fonte."
+  ]
+}

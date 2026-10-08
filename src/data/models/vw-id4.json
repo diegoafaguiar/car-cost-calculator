@@ -1,0 +1,138 @@
+{
+  "catalogSeed": {
+    "brand": "Volkswagen",
+    "model": "ID.4",
+    "version": "Pro (elétrico, 286 cv)",
+    "category": "suv-medio",
+    "powertrain": "eletrico",
+    "seats": 5,
+    "trunkL": 533,
+    "refPriceNew": 299990,
+    "consumption": {
+      "cityKmL": 0,
+      "roadKmL": 0,
+      "cityKmLEthanol": null,
+      "roadKmLEthanol": null,
+      "cityKmKWh": 4.6,
+      "roadKmKWh": 4.6
+    },
+    "evShareNote": "100% elétrico; bateria de 84 kWh brutos; 389 km PBEV; AC 11 kW / DC ~175–185 kW.",
+    "fipeBrand": "VW - VOLKSWAGEN",
+    "fipeInclude": [
+      "ID.4"
+    ],
+    "since": 2027
+  },
+  "id": "vw-id4",
+  "researchedAt": "2026-10",
+  "displayName": "Volkswagen ID.4",
+  "summary": "SUV médio 100% elétrico da Volkswagen (plataforma MEB), importado da Alemanha (Emden). É o primeiro elétrico da VW vendido em concessionárias no Brasil, desde out/2026; antes só existia por assinatura (Sign&Drive). Versão única Pro 2027: motor traseiro de 286 cv e 55,6 kgfm, bateria de 84 kWh brutos e 389 km pelo Inmetro, por R$ 299.990.",
+  "generation": "1ª geração (MEB, 2020), atualização 2024+ (motor APP550 de 286 cv). Deve ser substituído pelo ID. Tiguan (Europa 2027).",
+  "timeline": [
+    {
+      "modelYear": "2023",
+      "change": "Jun/2023: chega ao Brasil só por assinatura (Sign&Drive); cerca de 255 emplacamentos até 2026."
+    },
+    {
+      "modelYear": "2027",
+      "change": "Set/2026: VW anuncia venda nas concessionárias a partir de out/2026, ID.4 Pro por R$ 299.990 (igual ao Tiguan R-Line 2027)."
+    }
+  ],
+  "highlights": [
+    "286 cv e 55,6 kgfm, tração traseira, 0–100 km/h em cerca de 6,7 s.",
+    "389 km de autonomia Inmetro; AC de 11 kW em casa; DC 10→80% em cerca de 25 min (estação de 180 kW).",
+    "Porta-malas de 533 L, muito acima da média dos SUVs médios elétricos.",
+    "Pacote completo: 7 airbags, ACC, AEB, faixa, ponto cego, câmera 360°, teto panorâmico, bancos com aquecimento, massagem e memória.",
+    "Euro NCAP 5 estrelas (2021)."
+  ],
+  "watchOuts": [
+    "Caro para o porte: custa R$ 299.990, no limite do orçamento de R$ 300 mil, contra rivais chineses de R$ 200–250 mil.",
+    "Vida curta prevista: o ID. Tiguan deve substituí-lo, o que é um risco para a revenda.",
+    "A VW não divulgou garantia da bateria, preço das revisões, volume para o Brasil nem se o wallbox vem incluso.",
+    "Ainda não está na FIPE: não há histórico de revenda.",
+    "Bateria de 84 kWh é a capacidade bruta (a útil é menor), por isso o km/kWh do catálogo é estimado."
+  ],
+  "specs": {
+    "version": "ID.4 Pro 2027",
+    "engine": "Motor elétrico traseiro; bateria de 84 kWh (bruta)",
+    "powerCv": "286",
+    "torqueKgfm": "55,6",
+    "transmission": "Redução única",
+    "trunkL": 533,
+    "lengthMm": 4580,
+    "wheelbaseMm": 2770,
+    "safety": "7 airbags; Euro NCAP 5 estrelas (2021)",
+    "warranty": null
+  },
+  "inmetro": {
+    "version": "ID.4 Pro 2027",
+    "cityGas": null,
+    "roadGas": null,
+    "cityEth": null,
+    "roadEth": null,
+    "cityKmKWh": null,
+    "roadKmKWh": null,
+    "year": "PBEV: autonomia de 389 km (km/kWh não publicado nas fontes)",
+    "source": "https://autopapo.com.br/noticia/volkswagen-id-4-chega-por-r-299-990-e-e-a-primeira-ameaca-real-aos-carros-chineses/"
+  },
+  "price0km": {
+    "version": "Pro",
+    "price": 299990,
+    "date": "set/2026",
+    "source": "https://autopapo.com.br/noticia/volkswagen-id-4-chega-por-r-299-990-e-e-a-primeira-ameaca-real-aos-carros-chineses/"
+  },
+  "versionsAndPrices": [
+    {
+      "version": "Pro (versão única)",
+      "price": 299990,
+      "date": "set/2026",
+      "source": "https://www.autoo.com.br/volkswagen-id4-passa-a-ser-vendido-no-brasil-por-r-299990-preo-suficiente-para-enfrentar-os-chineses/"
+    }
+  ],
+  "launchModelYearBR": 2027,
+  "catalogCheck": "Não está no catálogo. Ainda não aparece na FIPE (lançamento de varejo em out/2026); conferir o nome quando entrar. Provável 'ID.4 ... (Elétrico)' na marca VW - VolksWagen. Unidades de assinatura de 2023–2025 (204 cv, outra especificação) podem existir no mercado de usados.",
+  "wikipedia": {
+    "lang": "en",
+    "title": "Volkswagen ID.4"
+  },
+  "officialUrl": null,
+  "sources": [
+    {
+      "label": "AutoPapo — ID.4 chega por R$ 299.990",
+      "url": "https://autopapo.com.br/noticia/volkswagen-id-4-chega-por-r-299-990-e-e-a-primeira-ameaca-real-aos-carros-chineses/"
+    },
+    {
+      "label": "Autoo — ID.4 por R$ 299.990",
+      "url": "https://www.autoo.com.br/volkswagen-id4-passa-a-ser-vendido-no-brasil-por-r-299990-preo-suficiente-para-enfrentar-os-chineses/"
+    },
+    {
+      "label": "Vrum — ID.4 mais potente, R$ 299 mil",
+      "url": "https://www.vrum.com.br/mercado/2026/09/7494644-volkswagen-id-4-chega-ao-brasil-mais-potente-e-com-preco-de-rs-299-mil.html"
+    },
+    {
+      "label": "Folha Vitória — origem e equipamentos",
+      "url": "https://www.folhavitoria.com.br/folha-motor/volkswagen-id4-preco-brasil/"
+    },
+    {
+      "label": "Autoentusiastas — preço ousado",
+      "url": "https://autoentusiastas.com.br/2026/09/novo-vw-id-4-preco-ousado-e-o-peso-do-logotipo/"
+    },
+    {
+      "label": "Mecânica Online — fim da assinatura",
+      "url": "https://mecanicaonline.com.br/?p=236053"
+    },
+    {
+      "label": "VW Newsroom — Euro NCAP 5 estrelas",
+      "url": "https://www.volkswagen-newsroom.com/en/press-releases/top-marks-for-the-id4-five-stars-in-the-euro-ncap-test-7020/download"
+    }
+  ],
+  "unverified": [
+    "Consumo em km/kWh: 4,6 é estimativa (389 km ÷ 84 kWh brutos); com a capacidade útil (não informada) daria um pouco mais.",
+    "Porta-malas: 533 L (maioria) × 543 L.",
+    "Recarga DC: 175 × 185 kW.",
+    "Garantia do veículo e da bateria não divulgada.",
+    "FIPE: modelo ainda não listado.",
+    "since 2027: o varejo começa com a linha 2027; unidades de assinatura 2023+ não entram no catálogo.",
+    "Pesquisa feita por resumos de busca das fontes listadas (páginas não abertas diretamente); confira os valores na fonte."
+  ]
+}

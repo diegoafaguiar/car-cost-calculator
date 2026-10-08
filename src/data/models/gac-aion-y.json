@@ -1,0 +1,150 @@
+{
+  "catalogSeed": {
+    "brand": "GAC",
+    "model": "Aion Y",
+    "version": "Premium 63,2 kWh (elétrico)",
+    "category": "suv-medio",
+    "powertrain": "eletrico",
+    "seats": 5,
+    "trunkL": 361,
+    "refPriceNew": 175990,
+    "consumption": {
+      "cityKmL": 0,
+      "roadKmL": 0,
+      "cityKmLEthanol": null,
+      "roadKmLEthanol": null,
+      "cityKmKWh": 5.0,
+      "roadKmKWh": 5.0
+    },
+    "evShareNote": "100% elétrico; bateria LFP de 63,2 kWh, 318 km (Inmetro).",
+    "fipeBrand": "GAC",
+    "fipeInclude": [
+      "aion",
+      "y",
+      "premium"
+    ],
+    "since": 2025
+  },
+  "id": "gac-aion-y",
+  "researchedAt": "2026-10",
+  "displayName": "GAC Aion Y",
+  "summary": "Crossover/SUV elétrico de visual de minivan, com cabine muito espaçosa (entre-eixos de 2,75 m). Motor dianteiro de 204 cv (150 kW), bateria LFP de 63,2 kWh e 318 km de autonomia (Inmetro). À venda desde o início da GAC no Brasil (2025) nas versões Premium e Elite.",
+  "generation": "1ª geração (Aion Y, 2021; reestilizado como Aion Y Plus); no Brasil desde 2025 (linha 2025).",
+  "timeline": [
+    {
+      "modelYear": "2025",
+      "change": "Lançado com a chegada da GAC ao Brasil (2025) nas versões Premium e Elite."
+    },
+    {
+      "modelYear": "2027",
+      "change": "Linha 2027 mantém Premium e Elite sem mudanças; preço sugerido R$ 175.990 (Premium) a R$ 187.990 (Elite)."
+    }
+  ],
+  "highlights": [
+    "Espaço interno de minivan (4,535 m e entre-eixos de 2,75 m).",
+    "Bateria LFP de 63,2 kWh, 318 km (Inmetro).",
+    "Premium já traz teto panorâmico, ar automático, couro, banco do motorista elétrico, chave presencial, 6 airbags e câmera 360°.",
+    "Multimídia de 14,6\" com CarPlay/Android Auto.",
+    "Campanhas frequentes (ex.: bônus de R$ 25 mil ou taxa zero)."
+  ],
+  "watchOuts": [
+    "Porta-malas de só 361 L.",
+    "Premium tem piloto automático comum: ACC, frenagem autônoma e assistente de faixa só na Elite.",
+    "Recarga DC modesta (75-90 kW conforme fonte; 30-80% em ~55 min).",
+    "Marca nova no Brasil (2025): rede pequena, revenda incerta; FIPE do 2026 (R$ 160.747) já fica abaixo do preço sugerido.",
+    "Velocidade máxima de 150 km/h.",
+    "Nenhum teste Latin NCAP/Euro NCAP/ANCAP encontrado."
+  ],
+  "specs": {
+    "version": "Aion Y Premium (linha 2026/2027)",
+    "engine": "Motor elétrico dianteiro 150 kW; bateria LFP 63,2 kWh",
+    "powerCv": "204",
+    "torqueKgfm": "22,9 (225 Nm)",
+    "transmission": "Redução única (elétrico)",
+    "trunkL": 361,
+    "lengthMm": 4535,
+    "wheelbaseMm": 2750,
+    "safety": "6 airbags; sem NCAP encontrado",
+    "warranty": null
+  },
+  "inmetro": {
+    "version": "Aion Y",
+    "cityGas": null,
+    "roadGas": null,
+    "cityEth": null,
+    "roadEth": null,
+    "cityKmKWh": null,
+    "roadKmKWh": null,
+    "year": "PBEV: autonomia 318 km (segundo a GAC; km/kWh não divulgado nas fontes)",
+    "source": "https://www.gacgroup.com/pt-br/configuration/aion-y/2024"
+  },
+  "price0km": {
+    "version": "Premium",
+    "price": 175990,
+    "date": "2026 (Webmotors linha 2027)",
+    "source": "https://www.webmotors.com.br/gac/aion-y/2027"
+  },
+  "versionsAndPrices": [
+    {
+      "version": "Premium",
+      "price": 175990,
+      "date": "2026",
+      "source": "https://www.webmotors.com.br/gac/aion-y/2027"
+    },
+    {
+      "version": "Elite",
+      "price": 187990,
+      "date": "2026",
+      "source": "https://www.webmotors.com.br/wm1/testes/gac-aion-y-suv/"
+    }
+  ],
+  "launchModelYearBR": 2025,
+  "catalogCheck": "Modelo ausente do catálogo (o app tem Aion V). FIPE: 'AION Y Premium (Elétrico)', código 304007-0 (2027); 2027 = R$ 166.404 e 2026 = R$ 160.747 (set/2026); Elite 2027 = R$ 175.854.",
+  "wikipedia": {
+    "lang": "en",
+    "title": "Aion Y"
+  },
+  "officialUrl": "https://www.gacgroup.com/pt-br/suv/aion-y",
+  "sources": [
+    {
+      "label": "Webmotors — teste GAC Aion Y (preços, porta-malas 361 L, equipamentos)",
+      "url": "https://www.webmotors.com.br/wm1/testes/gac-aion-y-suv/"
+    },
+    {
+      "label": "Webmotors — Aion Y 2027 (preço sugerido R$ 175.990 – R$ 187.990)",
+      "url": "https://www.webmotors.com.br/gac/aion-y/2027"
+    },
+    {
+      "label": "GAC Brasil — Aion Y",
+      "url": "https://www.gacgroup.com/pt-br/suv/aion-y"
+    },
+    {
+      "label": "GAC Brasil — especificação Aion Y",
+      "url": "https://www.gacgroup.com/pt-br/configuration/aion-y/2024"
+    },
+    {
+      "label": "Mundo do Automóvel para PCD — Aion Y Premium (equipamentos, bônus)",
+      "url": "https://mundodoautomovelparapcd.com.br/aion-y-premium-suv-eletrico-da-gac-e-oferecido-com-bonus-de-r-25-mil-ou-taxa-zero-em-36-vezes/"
+    },
+    {
+      "label": "JK Carros — Aion Y Premium 2026 (318 km)",
+      "url": "https://jkcarros.com.br/gac-aion-y-premium-2026-eletrico-autonomia-bateria/"
+    },
+    {
+      "label": "Tabela FIPE Brasil — AION Y Premium 2026",
+      "url": "https://www.tabelafipebrasil.com/carros/GAC/AION-Y-PREMIUM-ELETRICO/2026-Eletrico"
+    },
+    {
+      "label": "Tabela FIPE Brasil — AION Y Premium 2027",
+      "url": "https://www.tabelafipebrasil.com/carros/GAC/AION-Y-PREMIUM-ELETRICO/2027-Eletrico"
+    }
+  ],
+  "unverified": [
+    "Consumo em km/kWh (estimado 318 km ÷ 63,2 kWh ≈ 5,0 km/kWh).",
+    "Preço da Elite: R$ 187.990 x R$ 184.990 conforme fonte; preço vigente pode ter bônus.",
+    "Garantia.",
+    "Categoria: tratado como SUV médio pelo porte (4,535 m); o desenho é de crossover/minivan.",
+    "0-100 km/h (8,5 s na ficha da GAC x 7,3 s em outra fonte).",
+    "Pesquisa feita por resumos de busca das fontes listadas (páginas não abertas diretamente); confira os valores na fonte."
+  ]
+}

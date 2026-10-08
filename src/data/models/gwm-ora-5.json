@@ -1,0 +1,143 @@
+{
+  "catalogSeed": {
+    "brand": "GWM",
+    "model": "Ora 5",
+    "version": "BEV 58,3 kWh (versão única)",
+    "category": "suv-medio",
+    "powertrain": "eletrico",
+    "seats": 5,
+    "trunkL": 362,
+    "refPriceNew": 163990,
+    "consumption": {
+      "cityKmL": 0,
+      "roadKmL": 0,
+      "cityKmLEthanol": null,
+      "roadKmLEthanol": null,
+      "cityKmKWh": 6.0,
+      "roadKmKWh": 6.0
+    },
+    "evShareNote": "100% elétrico; bateria LFP de 58,3 kWh, 349 km (PBEV/Inmetro).",
+    "fipeBrand": "GWM",
+    "fipeInclude": [
+      "ora",
+      "05"
+    ],
+    "since": 2027
+  },
+  "id": "gwm-ora-5",
+  "researchedAt": "2026-10",
+  "displayName": "GWM Ora 5",
+  "summary": "Primeiro SUV 100% elétrico da GWM no Brasil, lançado em 23-24/jun/2026 em versão única. Motor dianteiro de 204 cv e 26,5 kgfm, bateria LFP de 58,3 kWh com 349 km de autonomia (Inmetro). Mede 4,47 m, entre o tamanho de SUVs compactos e médios. Preço atual R$ 163.990 (ago/2026).",
+  "generation": "1ª geração (Ora 5, China 2025); no Brasil desde jun/2026.",
+  "timeline": [
+    {
+      "modelYear": "2027",
+      "change": "Lançamento em jun/2026 por R$ 159.000 (preço especial); reajuste para R$ 159.900/159.990 em jul/2026 e para R$ 163.990 em ago/2026."
+    }
+  ],
+  "highlights": [
+    "Preço baixo para um SUV elétrico desse porte: R$ 163.990.",
+    "349 km de autonomia pelo Inmetro (435 km WLTP); DC até 120 kW (30-80% em ~20 min).",
+    "204 cv, 0-100 km/h em 7,7 s.",
+    "Bem equipado: câmeras 360°, bancos de couro sintético ventilados e elétricos, teto panorâmico fixo, ar automático, indução 50 W, porta-malas elétrico, rodas 18\".",
+    "ADAS de nível 2+ e 6 airbags."
+  ],
+  "watchOuts": [
+    "Porta-malas de apenas 362 L para 4,47 m de comprimento.",
+    "Dois reajustes em dois meses (R$ 159 mil → R$ 163.990).",
+    "Modelo recém-lançado: sem histórico de revenda; FIPE de usado 2027 (R$ 143.683, set/2026) já fica ~10% abaixo do 0 km.",
+    "Teto panorâmico é fixo (não abre).",
+    "Sem teste de colisão Latin NCAP/Euro NCAP/ANCAP encontrado para o Ora 5 (o 5 estrelas da marca é do Ora 03, hatch)."
+  ],
+  "specs": {
+    "version": "Ora 5 BEV (versão única)",
+    "engine": "Motor elétrico dianteiro 150 kW; bateria LFP 58,3 kWh",
+    "powerCv": "204",
+    "torqueKgfm": "26,5",
+    "transmission": "Redução única (elétrico)",
+    "trunkL": 362,
+    "lengthMm": 4471,
+    "wheelbaseMm": 2720,
+    "safety": "6 airbags; sem NCAP encontrado",
+    "warranty": null
+  },
+  "inmetro": {
+    "version": "Ora 5",
+    "cityGas": null,
+    "roadGas": null,
+    "cityEth": null,
+    "roadEth": null,
+    "cityKmKWh": null,
+    "roadKmKWh": null,
+    "year": "PBEV 2026: autonomia 349 km (km/kWh não divulgado nas fontes)",
+    "source": "https://canalve.com.br/gwm-lanca-ora-5-349-km-autonomia-r-159-mil/"
+  },
+  "price0km": {
+    "version": "Versão única",
+    "price": 163990,
+    "date": "ago/2026",
+    "source": "https://mecanicaonline.com.br/2026/08/gwm-ora-5-sofre-novo-reajuste-de-preco-e-encarece-r-4-000-no-mercado-nacional/"
+  },
+  "versionsAndPrices": [
+    {
+      "version": "Versão única",
+      "price": 163990,
+      "date": "ago/2026",
+      "source": "https://www.vrum.com.br/mercado/2026/08/7480397-gwm-ora-5-sobe-de-preco-mas-segue-mais-barato-que-a-concorrencia.html"
+    }
+  ],
+  "launchModelYearBR": 2027,
+  "catalogCheck": "Modelo ausente do catálogo. FIPE grafa 'Ora 05' (código 096018-7): 0 km R$ 159.720 e 2027 R$ 143.683 (set/2026). Só há ano-modelo 2027 na FIPE, por isso since 2027.",
+  "wikipedia": {
+    "lang": "en",
+    "title": "Ora 5"
+  },
+  "officialUrl": null,
+  "sources": [
+    {
+      "label": "Mecânica Online — Ora 5 reajuste de R$ 4.000 (ago/2026)",
+      "url": "https://mecanicaonline.com.br/2026/08/gwm-ora-5-sofre-novo-reajuste-de-preco-e-encarece-r-4-000-no-mercado-nacional/"
+    },
+    {
+      "label": "Vrum — Ora 5 sobe de preço (ago/2026)",
+      "url": "https://www.vrum.com.br/mercado/2026/08/7480397-gwm-ora-5-sobe-de-preco-mas-segue-mais-barato-que-a-concorrencia.html"
+    },
+    {
+      "label": "AutoPapo — Ora 5 preço, equipamentos, autonomia",
+      "url": "https://autopapo.com.br/noticia/gwm-ora-5-preco-equipamentos-autonomia/"
+    },
+    {
+      "label": "AutoData — lançamento Ora 5 (jun/2026)",
+      "url": "https://www.autodata.com.br/noticias/2026/06/24/gwm-ataca-os-suvs-compactos-com-o-eletrico-ora-5/107037/"
+    },
+    {
+      "label": "Canal VE — 349 km de autonomia por R$ 159 mil",
+      "url": "https://canalve.com.br/gwm-lanca-ora-5-349-km-autonomia-r-159-mil/"
+    },
+    {
+      "label": "Tabela FIPE Brasil — GWM Ora 05 Zero Km (set/2026)",
+      "url": "https://www.tabelafipebrasil.com/carros/GWM/ORA-05/Zero-Km-a-eletrico"
+    },
+    {
+      "label": "Tabela FIPE Brasil — GWM Ora 05 2027",
+      "url": "https://www.tabelafipebrasil.com/carros/GWM/ORA-05/2027-Eletrico"
+    },
+    {
+      "label": "GWM Media Center — reservas do Ora 5",
+      "url": "https://www.gwmmotors.com.br/pt/media-center/news/2026/gwm-inicia-reservas-antecipadas-do-ora-5-primeiro-suv-100-eletrico-da-marca"
+    },
+    {
+      "label": "Despachante Dok — pontos fortes e fracos (porta-malas 362 L)",
+      "url": "https://www.despachantedok.com.br/blog/?p=35644"
+    }
+  ],
+  "unverified": [
+    "Consumo em km/kWh (estimado 349 km ÷ 58,3 kWh ≈ 6,0 km/kWh; MJ/km do PBEV não encontrado).",
+    "Valor intermediário de jul/2026 (R$ 159.900 x R$ 159.990 conforme fonte).",
+    "Categoria: imprensa trata como SUV compacto ou médio; classificado como médio pelo porte (4,47 m, igual ao Yuan Plus do catálogo).",
+    "Garantia (não vista nas fontes).",
+    "Título da Wikipedia 'Ora 5' não verificado.",
+    "officialUrl não visto.",
+    "Pesquisa feita por resumos de busca das fontes listadas (páginas não abertas diretamente); confira os valores na fonte."
+  ]
+}

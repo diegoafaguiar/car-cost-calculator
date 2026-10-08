@@ -1,0 +1,185 @@
+{
+  "catalogSeed": {
+    "brand": "Avatr",
+    "model": "11",
+    "version": "AWD 5 lugares (elétrico, 116 kWh)",
+    "category": "suv-grande",
+    "powertrain": "eletrico",
+    "seats": 5,
+    "trunkL": 470,
+    "refPriceNew": 599990,
+    "consumption": {
+      "cityKmL": 0,
+      "roadKmL": 0,
+      "cityKmLEthanol": null,
+      "roadKmLEthanol": null,
+      "cityKmKWh": 4.3,
+      "roadKmKWh": 4.3
+    },
+    "evShareNote": "100% elétrico no Brasil (a versão EREV existe só na China). km/kWh estimado: 497 km (Inmetro, segundo a Tribuna PR) ÷ 116 kWh ≈ 4,3.",
+    "fipeBrand": "CAOA CHANGAN",
+    "fipeInclude": [
+      "AVATR11"
+    ],
+    "since": 2026
+  },
+  "id": "avatr-11",
+  "researchedAt": "2026-10",
+  "displayName": "Avatr 11",
+  "summary": "SUV grande (4,88 m) cupê 100% elétrico de luxo da Avatr (Changan + Huawei + CATL), vendido no Brasil pela Caoa Changan. Dois motores (AWD) com 578–585 cv, 0–100 km/h em 3,9 s, bateria CATL de 116 kWh e cabine HarmonyOS 4 da Huawei. Configurações de 5 e de 4 lugares. Concorre com BMW iX, Audi Q8 e-tron e Porsche Macan elétrico.",
+  "generation": "1ª geração (lançada na China em 2022, com reestilização posterior); apresentado no Brasil no Salão de SP em nov/2025 e com preços desde mar/2026.",
+  "timeline": [
+    {
+      "modelYear": "2026",
+      "change": "Nov/2025: apresentado no Salão do Automóvel de SP como primeiro modelo da Caoa Changan."
+    },
+    {
+      "modelYear": "2026",
+      "change": "Mar/2026: preços oficiais de R$ 599.990 (5 lugares) e R$ 619.990 (4 lugares); a empresa diz ter vendido mais de 20 unidades."
+    },
+    {
+      "modelYear": "2027",
+      "change": "A FIPE já lista o AVATR11 2027 (R$ 568.541 em jul/2026, verificarauto). Mudanças da linha não encontradas."
+    }
+  ],
+  "highlights": [
+    "585 cv (578 cv na ficha oficial, segundo a Tribuna PR), tração integral e 0–100 km/h em 3,9 s.",
+    "Bateria CATL de 116 kWh: 710 km CLTC e 497 km Inmetro (Tribuna PR).",
+    "Couro semi-anilina, bancos dianteiros Zero Gravity com ventilação, aquecimento e massagem; teto panorâmico.",
+    "ADAS de nível 2+ (ACC, AEB, faixa, ponto cego, tráfego cruzado traseiro) com câmeras 360° e radares; HarmonyOS 4 com tela de 15,6\".",
+    "Recarga DC de até 240 kW (Ficha Completa, dado estimado)."
+  ],
+  "watchOuts": [
+    "Muito acima do orçamento e do perfil do usuário (R$ 600 mil); incluído só porque o usuário pediu.",
+    "Volume mínimo (cerca de 20 unidades vendidas até mar/2026) e marca nova com rede própria pequena. Há fontes que ainda falam em chegada às lojas no fim de 2026.",
+    "Depreciação: na FIPE o 2026 usado vale R$ 540.347 contra R$ 621.995 do 0 km (set/2026, tabelacarros), cerca de 13% a menos.",
+    "Garantia oficial no Brasil não encontrada (5 anos só em ficha 'estimada').",
+    "Consumo/autonomia Inmetro com divergência: 497 km (Tribuna PR) × 437 km (Webmotors/Ficha Completa) × 'não divulgada' (Paraíba Business).",
+    "Sem teste de colisão Latin/Euro NCAP/ANCAP encontrado.",
+    "Nenhum recall nem reclamação encontrado no Brasil."
+  ],
+  "specs": {
+    "version": "Avatr 11 AWD 5 lugares (linha 2026)",
+    "engine": "Dois motores elétricos (AWD); bateria CATL de 116 kWh",
+    "powerCv": "585 (578 na ficha oficial, segundo a Tribuna PR)",
+    "torqueKgfm": "61,1 / 66,1 / 66,3 conforme a fonte",
+    "transmission": "Redução única; tração integral",
+    "trunkL": 470,
+    "lengthMm": 4880,
+    "wheelbaseMm": null,
+    "safety": "6 airbags (Webmotors) ou 8 (eletricos.app); ADAS L2+; sem NCAP Latin/Euro/ANCAP encontrado",
+    "warranty": null
+  },
+  "inmetro": {
+    "version": "Avatr 11 AWD",
+    "cityGas": null,
+    "roadGas": null,
+    "cityEth": null,
+    "roadEth": null,
+    "cityKmKWh": null,
+    "roadKmKWh": null,
+    "year": "Autonomia de 497 km 'pelo Inmetro' segundo a Tribuna PR; consumo em MJ/km não encontrado",
+    "source": "https://www.tribunapr.com.br/noticias/automoveis/luxo-e-design-espacial-avatr-11-custa-r-599-mil-e-acelera-em-39-segundos/"
+  },
+  "price0km": {
+    "version": "5 lugares",
+    "price": 599990,
+    "date": "mar/2026",
+    "source": "https://www.vrum.com.br/noticias/2026/03/7371629-caoa-changan-avatr-11-chega-ao-brasil-por-600-mil-reais.html"
+  },
+  "versionsAndPrices": [
+    {
+      "version": "5 lugares",
+      "price": 599990,
+      "date": "mar/2026",
+      "source": "https://www.vrum.com.br/noticias/2026/03/7371629-caoa-changan-avatr-11-chega-ao-brasil-por-600-mil-reais.html"
+    },
+    {
+      "version": "4 lugares (2+2, bancos VIP)",
+      "price": 619990,
+      "date": "mar/2026",
+      "source": "https://www.vrum.com.br/noticias/2026/03/7371629-caoa-changan-avatr-11-chega-ao-brasil-por-600-mil-reais.html"
+    }
+  ],
+  "launchModelYearBR": 2026,
+  "catalogCheck": "Não está no catálogo. Na FIPE a marca é 'Caoa Changan', modelo 'AVATR11' (versão única, código 308002-1): 0 km = R$ 621.995 e 2026 = R$ 540.347 (set/2026, tabelacarros); tabelafipebrasil (jul/2026) = R$ 609.997 (0 km) e R$ 542.897 (2026). A FIPE não separa 5 e 4 lugares. No app a marca é 'Avatr', mas o fipe.brand deve ser 'caoa changan'.",
+  "wikipedia": {
+    "lang": "en",
+    "title": "Avatr 11"
+  },
+  "officialUrl": null,
+  "sources": [
+    {
+      "label": "AutoData — Avatr 11 chega por R$ 600 mil (09/03/2026)",
+      "url": "https://www.autodata.com.br/noticias/2026/03/09/caoa-changan-avatr11-chega-por-r-600-mil/100587/"
+    },
+    {
+      "label": "Vrum — Avatr 11 chega por R$ 600 mil (mar/2026)",
+      "url": "https://www.vrum.com.br/noticias/2026/03/7371629-caoa-changan-avatr-11-chega-ao-brasil-por-600-mil-reais.html"
+    },
+    {
+      "label": "AutoPapo — Avatr 11 custa R$ 599.900",
+      "url": "https://autopapo.com.br/curta/avatr-11-suv-eletrico-de-luxo-custa-r-599-900-e-marca-estreia-da-caoa-changan-no-brasil/"
+    },
+    {
+      "label": "Tribuna PR — Avatr 11 custa R$ 599 mil (497 km Inmetro)",
+      "url": "https://www.tribunapr.com.br/noticias/automoveis/luxo-e-design-espacial-avatr-11-custa-r-599-mil-e-acelera-em-39-segundos/"
+    },
+    {
+      "label": "Paraíba Business — anúncio do Avatr 11 (mais de 20 vendidos)",
+      "url": "https://paraibabusiness.com.br/caoa-changan-anuncia-avatr-11-no-brasil-com-preco-a-partir-de-r-599-mil/"
+    },
+    {
+      "label": "Revista Carro — preços do Avatr 11",
+      "url": "https://revistacarro.com.br/caoa-changan-anuncia-precos-do-avatr-11-no-brasil-suv-eletrico-de-luxo-parte-de-r-599-mil/"
+    },
+    {
+      "label": "Bem Paraná — Avatr 11 chega no final de 2026",
+      "url": "https://www.bemparana.com.br/carros/avatr11-da-caoa-changan-chega-no-final-de-2026/"
+    },
+    {
+      "label": "Webmotors — Caoa Changan Avatr 11 2026",
+      "url": "https://www.webmotors.com.br/caoa-changan/avatr-11/2026"
+    },
+    {
+      "label": "Motorshow — Avatr 11 preços, equipamentos, motor",
+      "url": "https://motorshow.com.br/changan-avatr-11-precos-equipamentos-motor"
+    },
+    {
+      "label": "eletricos.app — Avatr 11 2026",
+      "url": "https://www.eletricos.app/veiculo/avatr-11-2026"
+    },
+    {
+      "label": "Ficha Completa — Avatr 11 AWD 2026 (dados marcados como estimados)",
+      "url": "https://www.fichacompleta.com.br/carros/changan/avatr-11-awd-2026"
+    },
+    {
+      "label": "Canal VE — Avatr 11 chega ao Brasil",
+      "url": "https://canalve.com.br/avatr-11-chega-ao-brasil-ia-interpreta-sinais-usuario/"
+    },
+    {
+      "label": "Tabela Carros — FIPE AVATR11 2026 elétrico",
+      "url": "https://tabelacarros.com/carros/caoa-changan/AVATR11/2026-Eletrico"
+    },
+    {
+      "label": "Tabela FIPE Brasil — AVATR11 0 km",
+      "url": "https://www.tabelafipebrasil.com/carros/CAOA-CHANGAN/AVATR11/Zero-Km-eletrico"
+    },
+    {
+      "label": "Gasgoo — estreia da Avatr no Brasil",
+      "url": "https://autonews.gasgoo.com/articles/ev/avatr-marks-latin-america-debut-in-brazil-with-launch-of-avatr-11-70039790"
+    }
+  ],
+  "unverified": [
+    "Status de venda: preços oficiais e mais de 20 unidades vendidas (mar/2026), e a FIPE tem 2026 usado. Uma matéria (Bem Paraná, data incerta) fala em chegada no 4º tri/2026.",
+    "Autonomia Inmetro de 497 km (só Tribuna PR); outras fontes dizem 437 km ou 'não divulgada'. O km/kWh (4,3) é estimado a partir dela.",
+    "Porta-malas de 470 L e garantia vêm de ficha marcada como 'dados estimados' (Ficha Completa).",
+    "Entre-eixos não confirmado em fonte brasileira.",
+    "Torque: 61,1, 66,1 ou 66,3 kgfm conforme a fonte.",
+    "Número de airbags: 6 (Webmotors) × 8 (eletricos.app).",
+    "Preço de out/2026: nenhum reajuste encontrado; o último preço oficial visto é de mar/2026. A Webmotors grafa R$ 599.900–619.900.",
+    "officialUrl: a página oficial não apareceu nos resultados.",
+    "Todos os dados vêm de resumos de busca: as páginas não puderam ser abertas (WebFetch falhou com erro de DNS).",
+    "Pesquisa feita por resumos de busca das fontes listadas (páginas não abertas diretamente); confira os valores na fonte."
+  ]
+}

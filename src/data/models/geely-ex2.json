@@ -1,0 +1,201 @@
+{
+  "catalogSeed": {
+    "brand": "Geely",
+    "model": "EX2",
+    "version": "Pro (elétrico, 39,4 kWh)",
+    "category": "hatch",
+    "powertrain": "eletrico",
+    "seats": 5,
+    "trunkL": 375,
+    "refPriceNew": 124600,
+    "consumption": {
+      "cityKmL": 0,
+      "roadKmL": 0,
+      "cityKmLEthanol": null,
+      "roadKmLEthanol": null,
+      "cityKmKWh": 9.2,
+      "roadKmKWh": 9.2
+    },
+    "evShareNote": "100% elétrico. PBEV 0,39 MJ/km = 0,108 kWh/km ≈ 9,2 km/kWh (conversão ÷3,6, valor combinado); autonomia PBEV de 289 km.",
+    "fipeBrand": "GEELY",
+    "fipeInclude": [
+      "EX2",
+      "PRO"
+    ],
+    "since": 2026
+  },
+  "id": "geely-ex2",
+  "researchedAt": "2026-10",
+  "displayName": "Geely EX2",
+  "summary": "Hatch compacto 100% elétrico (4,135 m) da Geely, versão global do Xingyuan, o carro mais vendido da China em 2025. Motor traseiro de 116 cv e 15,3 kgfm, bateria LFP de 39,4 kWh e autonomia PBEV de 289 km. Lançado no Brasil em nov/2025 e produzido pela Renault no Paraná desde jun/2026. Versões Pro e Max. Rival direto do BYD Dolphin e do Dolphin Mini.",
+  "generation": "1ª geração (Xingyuan, set/2024 na China); EX2 global lançado no Brasil em nov/2025 (linha 2026).",
+  "timeline": [
+    {
+      "modelYear": "2026",
+      "change": "Lançamento em nov/2025: Pro R$ 119.990 e Max R$ 135.100 (preços de lançamento)."
+    },
+    {
+      "modelYear": "2026",
+      "change": "Fev/2026: atualização gratuita na concessionária com Apple CarPlay e Android Auto (o carro chegou sem eles)."
+    },
+    {
+      "modelYear": "2026",
+      "change": "Tabela subiu para Pro R$ 123.800 e Max R$ 136.800. Produção nacional (Renault, PR) começou em jun/2026."
+    },
+    {
+      "modelYear": "2026",
+      "change": "Out/2026: Pro R$ 124.600 e Max R$ 137.800 (tabela do site oficial, válida até 31/10/2026)."
+    }
+  ],
+  "highlights": [
+    "Elétrico mais em conta entre os três: R$ 124.600 (Pro, out/2026).",
+    "Consumo PBEV de 0,39 MJ/km (≈ 9,2 km/kWh), muito eficiente para quem carrega em casa.",
+    "Porta-malas de 375 L mais um frunk de cerca de 70 L; entre-eixos de 2,65 m.",
+    "Euro NCAP e ANCAP 5 estrelas (protocolo 2026, set/2026) para o Geely E2/EX2.",
+    "Garantia de 6 anos do veículo e 8 anos da bateria.",
+    "Fabricado no Brasil (Renault, São José dos Pinhais-PR) desde jun/2026."
+  ],
+  "watchOuts": [
+    "É hatch, não SUV, e fica abaixo da categoria do Corolla Cross do usuário (incluído porque o usuário pediu).",
+    "A Pro não tem ADAS: sem frenagem autônoma, alerta de faixa, ACC, câmera 540° e carregador por indução (só na Max). A nota Euro NCAP considera um carro com esses assistentes.",
+    "CarPlay/Android Auto exigiram atualização na concessionária (fev/2026). Em mar/2026 só cerca de 30% da frota estava atualizada.",
+    "A garantia de 6 anos tem limite de quilometragem, motivo de reclamação pública. O limite exato não foi encontrado.",
+    "Autonomia modesta (289 km PBEV) e fila de espera/estoque curto no início das vendas.",
+    "Reajustes seguidos (R$ 119.990 → R$ 124.600). FIPE do 2026 usado: R$ 115.404 (set/2026).",
+    "Nenhum recall foi encontrado no Brasil."
+  ],
+  "specs": {
+    "version": "EX2 Pro (linha 2026)",
+    "engine": "Motor elétrico traseiro de 85 kW (116 cv); bateria LFP de 39,4 kWh",
+    "powerCv": "116",
+    "torqueKgfm": "15,3 (150 Nm)",
+    "transmission": "Redução única; tração traseira",
+    "trunkL": 375,
+    "lengthMm": 4135,
+    "wheelbaseMm": 2650,
+    "safety": "6 airbags, ESC; Euro NCAP 5 estrelas e ANCAP 5 estrelas (protocolo 2026, Geely E2)",
+    "warranty": "6 anos (veículo, com limite de km não confirmado); 8 anos (bateria)"
+  },
+  "inmetro": {
+    "version": "EX2 Pro/Max",
+    "cityGas": null,
+    "roadGas": null,
+    "cityEth": null,
+    "roadEth": null,
+    "cityKmKWh": 9.2,
+    "roadKmKWh": 9.2,
+    "year": "PBEV 2026 — 0,39 MJ/km combinado, 289 km (conversão para km/kWh feita aqui)",
+    "source": "https://canalve.com.br/ficha-tecnica/geely/tudo-sobre-ex2-pro/"
+  },
+  "price0km": {
+    "version": "Pro",
+    "price": 124600,
+    "date": "out/2026",
+    "source": "https://acritica.net/automoveis/geely-ex2-preco-sobe-reajuste-producao-nacional-parana/"
+  },
+  "versionsAndPrices": [
+    {
+      "version": "Pro",
+      "price": 124600,
+      "date": "out/2026",
+      "source": "https://acritica.net/automoveis/geely-ex2-preco-sobe-reajuste-producao-nacional-parana/"
+    },
+    {
+      "version": "Max",
+      "price": 137800,
+      "date": "out/2026",
+      "source": "https://acritica.net/automoveis/geely-ex2-preco-sobe-reajuste-producao-nacional-parana/"
+    }
+  ],
+  "launchModelYearBR": 2026,
+  "catalogCheck": "Não está no catálogo (só o Geely EX5 EM-i, e o EX5 elétrico na pesquisa c). FIPE: 'EX2 PRO' código 088005-1; 2026 = R$ 115.404 e 0 km = R$ 125.468 (set/2026, tabelacarros). 'EX2 MAX' 2026 = R$ 132.036 (set/2026). Categoria: a imprensa e o Euro NCAP o chamam de hatch compacto; 4,135 m, menor que o BYD Dolphin.",
+  "wikipedia": {
+    "lang": "en",
+    "title": "Geely EX2"
+  },
+  "officialUrl": null,
+  "sources": [
+    {
+      "label": "AutoPapo — EX2 chega por R$ 119.990",
+      "url": "https://autopapo.com.br/noticia/geely-ex2-119-990/"
+    },
+    {
+      "label": "O Povo — hatch elétrico com front-malas (17/11/2025)",
+      "url": "https://www.opovo.com.br/noticias/veiculos/2025/11/17/geely-ex2-o-hatch-eletrico-com-front-malas-e-forca-na-traseira.html"
+    },
+    {
+      "label": "Canal VE — ficha técnica EX2 Pro",
+      "url": "https://canalve.com.br/ficha-tecnica/geely/tudo-sobre-ex2-pro/"
+    },
+    {
+      "label": "Canal VE — ficha técnica EX2 Max",
+      "url": "https://canalve.com.br/ficha-tecnica/geely/tudo-sobre-ex2-max/"
+    },
+    {
+      "label": "Canal VE — reajuste após lançamento",
+      "url": "https://canalve.com.br/geely-reajusta-precos-ex2-fica-mais-caro-apos-lancamento/"
+    },
+    {
+      "label": "A Crítica — EX2 sobe para R$ 124.600 (out/2026)",
+      "url": "https://acritica.net/automoveis/geely-ex2-preco-sobe-reajuste-producao-nacional-parana/"
+    },
+    {
+      "label": "Click Petróleo e Gás — tabela out/2026 (05/10/2026)",
+      "url": "https://clickpetroleoegas.com.br/geely-ex2-passa-a-custar-r-124-600-e-reajuste-chega-a-r-2-000-no-ex5-veja-a-tabela-por-versao-btl96/"
+    },
+    {
+      "label": "A Tarde — ofertas de out/2026",
+      "url": "https://atarde.com.br/autos/geely-mexe-no-preco-de-modelos-100-eletrico-veja-valores-1404631"
+    },
+    {
+      "label": "Auto+ TV — EX2 Pro, a versão de entrada",
+      "url": "https://www.automaistv.com.br/novidades/geely-ex2-pro-e-a-versao-pe-de-boi-com-calota-e-preco-de-byd-dolphin-mini/"
+    },
+    {
+      "label": "Vrum — avaliação EX2 (jul/2026)",
+      "url": "https://www.vrum.com.br/avaliacoes/2026/07/7470350-geely-ex2-acerta-na-receita-mas-ainda-tem-detalhes-a-corrigir.html"
+    },
+    {
+      "label": "AutoPapo — Android Auto/CarPlay liberados na concessionária",
+      "url": "https://autopapo.com.br/curta/geely-libera-android-auto-e-carplay-gratuitamente-para-o-ex2-mas-exige-ida-a-concessionaria/"
+    },
+    {
+      "label": "Garagem360 — EX2 custo-benefício e ausências",
+      "url": "https://garagem360.com.br/?p=315506"
+    },
+    {
+      "label": "Tabela FIPE Brasil — EX2 PRO 2026 elétrico",
+      "url": "https://www.tabelafipebrasil.com/carros/GEELY/EX2-PRO/2026-Eletrico"
+    },
+    {
+      "label": "Tabela Carros — EX2 PRO 0 km",
+      "url": "https://tabelacarros.com/carros/geely/EX2-PRO/Zero-Km-a-gasolina"
+    },
+    {
+      "label": "Euro NCAP — Geely E2 2026, 5 estrelas",
+      "url": "https://news.euroncap.com/safercars/choose-a-car/geely-e2---euro-ncap-2026-results---5-stars/s/7bf4f43b-164d-442c-841e-152868ca88d4"
+    },
+    {
+      "label": "Geely newsroom — E2 (EX2) 5 estrelas Euro NCAP e ANCAP 2026",
+      "url": "https://newsroom.geely.com/geely-e2-earns-five-star-safety-ratings-euro-ncap-ancap-2026"
+    },
+    {
+      "label": "Electrive — Renault inicia produção do EX2 no Brasil (jun/2026)",
+      "url": "https://www.electrive.com/es/2026/06/12/renault-starts-production-of-geely-ex2-in-brazil/"
+    },
+    {
+      "label": "Vrum — custo de carregar o EX2 em casa (set/2026)",
+      "url": "https://www.vrum.com.br/bom-negocio/2026/09/7494097-quanto-custa-carregar-o-geely-ex2-em-casa.html"
+    }
+  ],
+  "unverified": [
+    "km/kWh: o PBEV dá só o valor combinado (0,39 MJ/km). Cidade e estrada recebem o mesmo 9,2 km/kWh, obtido por conversão. Outra fonte usa 0,136 kWh/km (≈ 7,4 km/kWh) no cálculo de custo de recarga.",
+    "Porta-malas: 375 L na maioria das fontes; uma página cita 280 L.",
+    "Comprimento: 4.135 mm × 4.130 mm entre fontes.",
+    "Limite de km da garantia de 6 anos.",
+    "Data exata do reajuste de out/2026 (dia 2 ou 5, conforme a fonte); os valores coincidem.",
+    "officialUrl: a página oficial não apareceu nos resultados.",
+    "Todos os dados vêm de resumos de busca: as páginas não puderam ser abertas (WebFetch falhou com erro de DNS).",
+    "Pesquisa feita por resumos de busca das fontes listadas (páginas não abertas diretamente); confira os valores na fonte."
+  ]
+}

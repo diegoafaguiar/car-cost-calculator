@@ -1,0 +1,66 @@
+{
+  "id": "volvo-ex30",
+  "version": "EX30 Plus 2026",
+  "researchedAt": "2026-10",
+  "tech": {
+    "screen10": true,
+    "wirelessMirroring": null,
+    "digitalCluster": false,
+    "wirelessCharger": null,
+    "camera360": null,
+    "adaptiveCruise": true,
+    "connectedApp": null,
+    "keyless": null
+  },
+  "comfort": {
+    "automatic": true,
+    "digitalAC": null,
+    "rearVents": null,
+    "leather": null,
+    "powerSeat": null,
+    "seatClimate": null,
+    "sunroof": false
+  },
+  "safety": {
+    "airbags6": null,
+    "aeb": true,
+    "laneKeep": null,
+    "blindSpot": null,
+    "rearCrossTraffic": null
+  },
+  "ncap": {
+    "stars": 5,
+    "year": 2024,
+    "program": "Euro NCAP",
+    "counts": true,
+    "note": "Adulto 86%, criança 85%, vulneráveis 79%, assistência 80%.",
+    "source": "https://volvocars.com/ie/news/safety/the-ex30-scores-maximum-five-star-rating-in-latest-euro-ncap-safety-tests"
+  },
+  "sources": [
+    {
+      "label": "Revista Carro — EX30 versões e equipamentos",
+      "url": "https://revistacarro.com.br/volvo-lanca-eletrico-ex30-a-partir-de-r-2199-mil-veja-versoes-e-equipamentos/amp/"
+    },
+    {
+      "label": "Garagem360 — EX30 Plus 2025",
+      "url": "https://garagem360.com.br/volvo-ex30-plus-2025"
+    }
+  ],
+  "notes": "Plus: tela central vertical de 12,3\" (sem painel atrás do volante, por isso digitalCluster = false), som Harman Kardon de 9 alto-falantes, controle de cruzeiro adaptativo e pacote de segurança com AEB. O teto panorâmico é da Ultra. Os bancos aquecidos só aparecem em anúncios do Reino Unido, então não foram confirmados para o Brasil. Os itens da Plus vêm da linha 2025; a lista 2026 (51 kWh) não foi vista.",
+  "unverified": [
+    "tech.wirelessMirroring",
+    "tech.wirelessCharger",
+    "tech.camera360",
+    "tech.connectedApp",
+    "tech.keyless",
+    "comfort.digitalAC",
+    "comfort.rearVents",
+    "comfort.leather",
+    "comfort.powerSeat",
+    "comfort.seatClimate",
+    "safety.airbags6",
+    "safety.laneKeep",
+    "safety.blindSpot",
+    "safety.rearCrossTraffic"
+  ]
+}

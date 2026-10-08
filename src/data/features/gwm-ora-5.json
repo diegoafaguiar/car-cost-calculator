@@ -1,0 +1,66 @@
+{
+  "id": "gwm-ora-5",
+  "version": "GWM Ora 5 BEV 2027",
+  "researchedAt": "2026-10",
+  "tech": {
+    "screen10": null,
+    "wirelessMirroring": null,
+    "digitalCluster": null,
+    "wirelessCharger": true,
+    "camera360": true,
+    "adaptiveCruise": null,
+    "connectedApp": null,
+    "keyless": null
+  },
+  "comfort": {
+    "automatic": true,
+    "digitalAC": true,
+    "rearVents": null,
+    "leather": true,
+    "powerSeat": true,
+    "seatClimate": true,
+    "sunroof": true
+  },
+  "safety": {
+    "airbags6": true,
+    "aeb": null,
+    "laneKeep": null,
+    "blindSpot": null,
+    "rearCrossTraffic": null
+  },
+  "ncap": {
+    "stars": null,
+    "year": null,
+    "program": "Latin NCAP",
+    "note": "Nenhum teste Latin NCAP, Euro NCAP ou ANCAP encontrado para o Ora 5 (o 5 estrelas Euro NCAP/ANCAP da marca é do Ora 03, outro modelo).",
+    "source": ""
+  },
+  "sources": [
+    {
+      "label": "Vrum — Ora 5 sobe de preço (ago/2026)",
+      "url": "https://www.vrum.com.br/mercado/2026/08/7480397-gwm-ora-5-sobe-de-preco-mas-segue-mais-barato-que-a-concorrencia.html"
+    },
+    {
+      "label": "AutoPapo — Ora 5 preço, equipamentos, autonomia",
+      "url": "https://autopapo.com.br/noticia/gwm-ora-5-preco-equipamentos-autonomia/"
+    },
+    {
+      "label": "AutoData — lançamento Ora 5 (jun/2026)",
+      "url": "https://www.autodata.com.br/noticias/2026/06/24/gwm-ataca-os-suvs-compactos-com-o-eletrico-ora-5/107037/"
+    }
+  ],
+  "notes": "Versão única: câmeras 360°, bancos em couro sintético ventilados com ajustes elétricos (motorista e passageiro), teto panorâmico de vidro fixo com cortina elétrica (marcado como sunroof=true, mas não abre), ar automático com filtro N95, indução 50 W, faróis full LED, porta-malas elétrico, rodas 18\", B-Call/E-Call, ADAS nível 2+ (itens individuais não listados) e 6 airbags.",
+  "unverified": [
+    "tech.screen10",
+    "tech.wirelessMirroring",
+    "tech.digitalCluster",
+    "tech.adaptiveCruise",
+    "tech.connectedApp",
+    "tech.keyless",
+    "comfort.rearVents",
+    "safety.aeb",
+    "safety.laneKeep",
+    "safety.blindSpot",
+    "safety.rearCrossTraffic"
+  ]
+}

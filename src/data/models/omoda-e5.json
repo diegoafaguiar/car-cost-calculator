@@ -1,0 +1,155 @@
+{
+  "catalogSeed": {
+    "brand": "Omoda",
+    "model": "E5",
+    "version": "FWD 61 kWh (elétrico, versão única)",
+    "category": "suv-compacto",
+    "powertrain": "eletrico",
+    "seats": 5,
+    "trunkL": 380,
+    "refPriceNew": 209990,
+    "consumption": {
+      "cityKmL": 0,
+      "roadKmL": 0,
+      "cityKmLEthanol": null,
+      "roadKmLEthanol": null,
+      "cityKmKWh": 5.6,
+      "roadKmKWh": 5.6
+    },
+    "evShareNote": "100% elétrico; bateria de 61,1 kWh, 345 km (Inmetro).",
+    "fipeBrand": "OMODA",
+    "fipeInclude": [
+      "e5"
+    ],
+    "since": 2026
+  },
+  "id": "omoda-e5",
+  "researchedAt": "2026-10",
+  "displayName": "Omoda E5",
+  "summary": "Versão 100% elétrica do SUV compacto Omoda 5 (grupo Chery), importada da China e à venda desde abr/2025 em versão única. Motor dianteiro de 204 cv (150 kW) e 340 Nm, bateria de 61,1 kWh com 345 km de autonomia (Inmetro). Preço de R$ 209.990; a marca prepara uma versão de entrada de cerca de R$ 149.900.",
+  "generation": "1ª geração (Omoda 5/C5 EV, 2023); no Brasil desde abr/2025 (linha 2026).",
+  "timeline": [
+    {
+      "modelYear": "2026",
+      "change": "Lançamento em abr/2025 por R$ 209.990, versão única, com o início da operação Omoda & Jaecoo no Brasil."
+    },
+    {
+      "modelYear": "2026",
+      "change": "Jul/2026: imprensa informa versão de entrada de ~R$ 149.900 prevista para o fim de 2026 (ainda não à venda em out/2026); vendas baixas, pouco mais de 500 unidades desde a estreia."
+    }
+  ],
+  "highlights": [
+    "Euro NCAP e ANCAP 5 estrelas (2024).",
+    "345 km de autonomia (Inmetro), 430 km WLTP; DC 80 kW (30-80% em ~30 min), AC 9,9 kW.",
+    "204 cv e 34,7 kgfm, 0-100 km/h em ~7,6 s.",
+    "Duas telas de 12,3\", espelhamento sem fio, ACC, frenagem autônoma, assistente de faixa, teto solar, bancos ventilados e aquecidos.",
+    "Garantia de 7 anos/150 mil km (veículo) e 8 anos/150 mil km (bateria)."
+  ],
+  "watchOuts": [
+    "Preço alto para o porte (R$ 209.990) e vendas muito baixas; uma versão ~R$ 60 mil mais barata é esperada, o que deve derrubar a revenda.",
+    "Usados 2025/2026 anunciados por R$ 173-180 mil com poucos km — depreciação forte.",
+    "Porta-malas pequeno (~380 L).",
+    "Marca nova no Brasil (abr/2025): rede e valor de revenda sem histórico.",
+    "Recalls do Omoda 5 em outros mercados (eixo traseiro, tubo de freio); nenhum recall do E5 encontrado no Brasil."
+  ],
+  "specs": {
+    "version": "Omoda E5 FWD (versão única)",
+    "engine": "Motor elétrico dianteiro 150 kW; bateria 61,1 kWh",
+    "powerCv": "204",
+    "torqueKgfm": "34,7 (340 Nm)",
+    "transmission": "Redução única (elétrico)",
+    "trunkL": 380,
+    "lengthMm": 4424,
+    "wheelbaseMm": null,
+    "safety": "Euro NCAP e ANCAP 5 estrelas (2024); 6 airbags",
+    "warranty": "7 anos/150 mil km (veículo); 8 anos/150 mil km (bateria)"
+  },
+  "inmetro": {
+    "version": "Omoda E5",
+    "cityGas": null,
+    "roadGas": null,
+    "cityEth": null,
+    "roadEth": null,
+    "cityKmKWh": null,
+    "roadKmKWh": null,
+    "year": "PBEV: autonomia 345 km (km/kWh não divulgado nas fontes)",
+    "source": "https://jkcarros.com.br/omoda-e5-ev-2026-carros-hibridos-eletricos/"
+  },
+  "price0km": {
+    "version": "Versão única",
+    "price": 209990,
+    "date": "out/2026 (Webmotors)",
+    "source": "https://www.webmotors.com.br/omoda/e5/2026"
+  },
+  "versionsAndPrices": [
+    {
+      "version": "Versão única",
+      "price": 209990,
+      "date": "out/2026",
+      "source": "https://www.webmotors.com.br/omoda/e5/2026"
+    }
+  ],
+  "launchModelYearBR": 2026,
+  "catalogCheck": "Modelo ausente do catálogo. FIPE grafa 'E5 FWD (Elétrico)'; 0 km = R$ 205.366 (out/2026).",
+  "wikipedia": {
+    "lang": "en",
+    "title": "Omoda C5"
+  },
+  "officialUrl": null,
+  "sources": [
+    {
+      "label": "Webmotors — Omoda E5 2026 (preço sugerido R$ 209.990)",
+      "url": "https://www.webmotors.com.br/omoda/e5/2026"
+    },
+    {
+      "label": "A Revista — E5 2026: 204 cv, 345 km, R$ 209.990",
+      "url": "https://arevista.com.br/automotivo/omoda-e5-2026-combina-204-cv-autonomia-de-345-km-e-preco-de-r-209-990/"
+    },
+    {
+      "label": "JK Carros — E5 EV 2026: 345 km, 61,1 kWh, garantia",
+      "url": "https://jkcarros.com.br/omoda-e5-ev-2026-carros-hibridos-eletricos/"
+    },
+    {
+      "label": "Tabela FIPE Brasil — Omoda E5 FWD Zero Km",
+      "url": "https://www.tabelafipebrasil.com/carros/OMODA/E5-FWD-ELETRICO/Zero-Km-a-eletrico"
+    },
+    {
+      "label": "AutoData — operação Omoda & Jaecoo começa com dois modelos (abr/2025)",
+      "url": "https://www.autodata.com.br/noticias/2025/04/16/operacao-da-omoda-jaecoo-no-brasil-comeca-com-dois-modelos/86924/"
+    },
+    {
+      "label": "Conexão TO — E5 por R$ 209.990 (abr/2025)",
+      "url": "https://conexaoto.com.br/2025/04/24/omoda-e5-silencioso-veloz-e-conectado-por-r-209-990-00"
+    },
+    {
+      "label": "Folha PE — E5 e Jaecoo 7 chegam ao Brasil (equipamentos)",
+      "url": "https://www.folhape.com.br/colunistas/fmotors/omoda-e5-e-jaecoo-7-chegam-ao-brasil-para-disputar-o-mercado-de-suvs-eletrificados/50292/"
+    },
+    {
+      "label": "AutoPapo — Omoda prepara E5 R$ 60 mil mais barato",
+      "url": "https://autopapo.com.br/curta/omoda-prepara-e5-eletrico-r-60-mil-mais-barato-para-ser-o-eletrico-com-melhor-custo-beneficio-do-brasil/"
+    },
+    {
+      "label": "Band — E5 terá versão mais barata; ~500 emplacamentos",
+      "url": "https://www.band.com.br/bandmotor/noticias/omoda-e5-tera-versao-mais-barata-para-enfrentar-dolphin-ora-e-mg4-202607121517"
+    },
+    {
+      "label": "Wapcar — Omoda E5 5 estrelas ANCAP e Euro NCAP",
+      "url": "https://www.wapcar.my/news/chery-omoda-e5-earns-5star-ratings-in-ancap-and-euro-ncap-tests-82908"
+    },
+    {
+      "label": "Canal VE — ficha técnica Omoda E5",
+      "url": "https://canalve.com.br/ficha-tecnica/omoda-jaecoo/tudo-sobre-e5/"
+    }
+  ],
+  "unverified": [
+    "Consumo em km/kWh (estimado 345 km ÷ 61,1 kWh ≈ 5,6 km/kWh; MJ/km do PBEV não encontrado).",
+    "Porta-malas (~380 L, uma fonte).",
+    "Entre-eixos.",
+    "Couro natural x sintético (fontes divergem).",
+    "Monitor de ponto cego (citado por uma só fonte).",
+    "Data de lançamento da versão de entrada de R$ 149.900.",
+    "officialUrl não visto.",
+    "Pesquisa feita por resumos de busca das fontes listadas (páginas não abertas diretamente); confira os valores na fonte."
+  ]
+}

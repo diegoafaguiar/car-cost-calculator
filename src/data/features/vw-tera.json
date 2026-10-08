@@ -1,0 +1,65 @@
+{
+  "id": "vw-tera",
+  "version": "Tera Comfort 170 TSI Aut. 2026",
+  "researchedAt": "2026-10",
+  "tech": {
+    "screen10": true,
+    "wirelessMirroring": null,
+    "digitalCluster": true,
+    "wirelessCharger": null,
+    "camera360": null,
+    "adaptiveCruise": true,
+    "connectedApp": null,
+    "keyless": null
+  },
+  "comfort": {
+    "automatic": true,
+    "digitalAC": null,
+    "rearVents": null,
+    "leather": null,
+    "powerSeat": false,
+    "seatClimate": false,
+    "sunroof": false
+  },
+  "safety": {
+    "airbags6": true,
+    "aeb": null,
+    "laneKeep": null,
+    "blindSpot": null,
+    "rearCrossTraffic": null
+  },
+  "ncap": {
+    "stars": 5,
+    "year": 2025,
+    "program": "Latin NCAP",
+    "counts": true,
+    "note": "Adulto 89,88%, criança 87,25%, pedestre 75,77%, assistência 84,76%. ADAS opcional na avaliação; ponto cego e faixa não pontuaram por disponibilidade.",
+    "source": "https://www.autoblog.com.uy/2025/06/latin-ncap-volkswagen-tera-consigue-las.html"
+  },
+  "sources": [
+    {
+      "label": "Motor Agora — Tera Comfort",
+      "url": "https://www.motoragora.com.br/tera-comfort-2026-novidades/"
+    },
+    {
+      "label": "Motorshow — versões e equipamentos",
+      "url": "https://motorshow.com.br/volkswagen-tera-chega-as-lojas-veja-versoes-precos-e-equipamentos"
+    }
+  ],
+  "notes": "Comfort: VW Play de 10\", painel digital, faróis LED, ACC e 6 airbags (Motor Agora). AEB, faixa e ponto cego fazem parte de um pacote ADAS opcional/por versão, não confirmados de série na Comfort. Os itens de conforto premium (couro, banco elétrico, teto) não aparecem em versão nenhuma do Tera; false por ser SUV de entrada, mas sem fonte explícita.",
+  "unverified": [
+    "tech.wirelessMirroring",
+    "tech.wirelessCharger",
+    "tech.camera360",
+    "tech.connectedApp",
+    "tech.keyless",
+    "comfort.digitalAC",
+    "comfort.rearVents",
+    "comfort.leather",
+    "safety.aeb",
+    "safety.laneKeep",
+    "safety.blindSpot",
+    "safety.rearCrossTraffic",
+    "comfort.powerSeat/seatClimate/sunroof (false inferido)"
+  ]
+}

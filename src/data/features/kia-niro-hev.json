@@ -1,0 +1,67 @@
+{
+  "id": "kia-niro-hev",
+  "version": "Niro EX 2026",
+  "researchedAt": "2026-10",
+  "tech": {
+    "screen10": true,
+    "wirelessMirroring": null,
+    "digitalCluster": true,
+    "wirelessCharger": null,
+    "camera360": false,
+    "adaptiveCruise": null,
+    "connectedApp": null,
+    "keyless": true
+  },
+  "comfort": {
+    "automatic": true,
+    "digitalAC": true,
+    "rearVents": null,
+    "leather": null,
+    "powerSeat": null,
+    "seatClimate": null,
+    "sunroof": null
+  },
+  "safety": {
+    "airbags6": true,
+    "aeb": true,
+    "laneKeep": true,
+    "blindSpot": null,
+    "rearCrossTraffic": null
+  },
+  "ncap": {
+    "stars": 4,
+    "year": 2022,
+    "program": "Euro NCAP",
+    "counts": true,
+    "note": "4 estrelas com o equipamento de série e 5 com o pacote de segurança opcional (adulto 91%, criança 84%, pedestre 75%, assistência 79%). Não se sabe se a EX brasileira tem o pacote.",
+    "source": "https://news.euroncap.com/safercars/kia-niro---euro-ncap-2022-results---standard-equipment-4-stars-and-with-safety-pack-5-stars/s/0b1e4652-586e-456d-a124-bdc2acff7434"
+  },
+  "sources": [
+    {
+      "label": "Webmotors — Niro 2026",
+      "url": "https://www.webmotors.com.br/kia/niro/2026"
+    },
+    {
+      "label": "Bem Paraná — Niro 2026",
+      "url": "https://www.bemparana.com.br/publicacao/blogs/autosecia/kia-niro-2026-chega-as-lojas/"
+    },
+    {
+      "label": "Motorshow — Niro 2026",
+      "url": "https://motorshow.com.br/promocao-kia-niro-hibrido-2026"
+    }
+  ],
+  "notes": "EX: multimídia de 10,25\", painel digital de 10,2\", ar digital de 2 zonas, câmera de ré (não 360°), sensores dianteiros e traseiros, chave presencial, AEB, alerta de saída de faixa e detector de fadiga, 6 airbags (ou 7). Bancos: couro sintético segundo uma fonte; a Webmotors diz couro só na SX Prestige. O espelhamento sem fio aparece em uma avaliação, mas sem confirmar a versão.",
+  "unverified": [
+    "tech.wirelessMirroring",
+    "tech.wirelessCharger",
+    "tech.adaptiveCruise",
+    "tech.connectedApp",
+    "comfort.rearVents",
+    "comfort.leather",
+    "comfort.powerSeat",
+    "comfort.seatClimate",
+    "comfort.sunroof",
+    "safety.blindSpot",
+    "safety.rearCrossTraffic"
+  ]
+}

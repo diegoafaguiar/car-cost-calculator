@@ -1,0 +1,65 @@
+{
+  "id": "chevrolet-captiva-ev",
+  "version": "Captiva EV Premier 2026",
+  "researchedAt": "2026-10",
+  "tech": {
+    "screen10": true,
+    "wirelessMirroring": null,
+    "digitalCluster": true,
+    "wirelessCharger": false,
+    "camera360": true,
+    "adaptiveCruise": true,
+    "connectedApp": null,
+    "keyless": true
+  },
+  "comfort": {
+    "automatic": true,
+    "digitalAC": true,
+    "rearVents": null,
+    "leather": null,
+    "powerSeat": null,
+    "seatClimate": null,
+    "sunroof": true
+  },
+  "safety": {
+    "airbags6": true,
+    "aeb": true,
+    "laneKeep": true,
+    "blindSpot": null,
+    "rearCrossTraffic": null
+  },
+  "ncap": {
+    "stars": null,
+    "year": null,
+    "program": "Latin NCAP",
+    "counts": false,
+    "note": "Não foi encontrado teste Latin NCAP nem Euro NCAP para o Captiva EV/Wuling Starlight S.",
+    "source": ""
+  },
+  "sources": [
+    {
+      "label": "O POVO — teste",
+      "url": "https://www.opovo.com.br/noticias/veiculos/2026/02/10/o-povo-testou-o-chevrolet-captiva-suv-eletrico-com-dna-urbano.html"
+    },
+    {
+      "label": "Encontra Carros — equipamentos",
+      "url": "https://www.encontracarros.com.br/?p=72743"
+    },
+    {
+      "label": "Canal VE — ficha",
+      "url": "https://canalve.com.br/ficha-tecnica/chevrolet/tudo-sobre-captiva-ev/"
+    }
+  ],
+  "notes": "Multimídia de 15,1\" ou 15,6\", câmera 360°, chave presencial com partida por botão, teto solar panorâmico elétrico, ACC, AEB, alerta e correção de faixa, 6 airbags e sensores dianteiros e traseiros. Ar digital de uma zona. O POVO diz que não há carregador por indução; um anúncio de usado diz que há (fica false pela fonte de imprensa). O painel digital aparece nas fotos/fichas, mas o tamanho não foi confirmado. Bancos aquecidos só aparecem em anúncio de usado, não confirmado.",
+  "unverified": [
+    "tech.wirelessMirroring",
+    "tech.connectedApp",
+    "comfort.rearVents",
+    "comfort.leather",
+    "comfort.powerSeat",
+    "comfort.seatClimate",
+    "safety.blindSpot",
+    "safety.rearCrossTraffic",
+    "tech.digitalCluster (presença citada em fichas; não verificado em fonte principal)"
+  ]
+}

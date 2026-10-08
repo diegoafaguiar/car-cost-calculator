@@ -1,0 +1,71 @@
+{
+  "id": "avatr-11",
+  "version": "Avatr 11 AWD 5 lugares 2026",
+  "researchedAt": "2026-10",
+  "tech": {
+    "screen10": true,
+    "wirelessMirroring": null,
+    "digitalCluster": true,
+    "wirelessCharger": null,
+    "camera360": true,
+    "adaptiveCruise": true,
+    "connectedApp": null,
+    "keyless": null
+  },
+  "comfort": {
+    "automatic": true,
+    "digitalAC": null,
+    "rearVents": null,
+    "leather": true,
+    "powerSeat": null,
+    "seatClimate": true,
+    "sunroof": true
+  },
+  "safety": {
+    "airbags6": true,
+    "aeb": true,
+    "laneKeep": true,
+    "blindSpot": true,
+    "rearCrossTraffic": true
+  },
+  "ncap": {
+    "stars": null,
+    "year": null,
+    "program": null,
+    "note": "Nenhum teste Latin NCAP, Euro NCAP ou ANCAP encontrado para o Avatr 11.",
+    "source": ""
+  },
+  "sources": [
+    {
+      "label": "Webmotors — Caoa Changan Avatr 11 2026",
+      "url": "https://www.webmotors.com.br/caoa-changan/avatr-11/2026"
+    },
+    {
+      "label": "eletricos.app — Avatr 11 2026",
+      "url": "https://www.eletricos.app/veiculo/avatr-11-2026"
+    },
+    {
+      "label": "Tribuna PR — Avatr 11 custa R$ 599 mil (497 km Inmetro)",
+      "url": "https://www.tribunapr.com.br/noticias/automoveis/luxo-e-design-espacial-avatr-11-custa-r-599-mil-e-acelera-em-39-segundos/"
+    },
+    {
+      "label": "Ficha Completa — Avatr 11 AWD 2026 (dados marcados como estimados)",
+      "url": "https://www.fichacompleta.com.br/carros/changan/avatr-11-awd-2026"
+    },
+    {
+      "label": "Canal VE — Avatr 11 chega ao Brasil",
+      "url": "https://canalve.com.br/avatr-11-chega-ao-brasil-ia-interpreta-sinais-usuario/"
+    }
+  ],
+  "notes": "Tela panorâmica de 15,6\" e painel de 12,3\" (eletricos.app), HarmonyOS 4; câmeras 360°, ACC L2+, AEB, permanência em faixa, ponto cego, alerta de tráfego cruzado traseiro, estacionamento semiautomático e detector de fadiga (Webmotors/eletricos.app); couro semi-anilina, bancos dianteiros com ventilação, aquecimento e massagem, e teto panorâmico (Tribuna PR). Airbags: 6 (Webmotors) ou 8 (eletricos.app), ou seja, pelo menos 6. O ajuste elétrico dos bancos é provável, mas não foi confirmado nas fontes vistas.",
+  "unverified": [
+    "tech.wirelessMirroring",
+    "tech.wirelessCharger",
+    "tech.connectedApp",
+    "tech.keyless",
+    "comfort.digitalAC",
+    "comfort.rearVents",
+    "comfort.powerSeat",
+    "ncap"
+  ]
+}

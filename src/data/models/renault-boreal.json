@@ -1,0 +1,164 @@
+{
+  "catalogSeed": {
+    "brand": "Renault",
+    "model": "Boreal",
+    "version": "Evolution 1.3 TCe Turbo EDC",
+    "category": "suv-medio",
+    "powertrain": "flex",
+    "seats": 5,
+    "trunkL": 522,
+    "refPriceNew": 182990,
+    "consumption": {
+      "cityKmL": 11.2,
+      "roadKmL": 13.6,
+      "cityKmLEthanol": 7.8,
+      "roadKmLEthanol": 9.4,
+      "cityKmKWh": null,
+      "roadKmKWh": null
+    },
+    "evShareNote": null,
+    "fipeBrand": "RENAULT",
+    "fipeInclude": [
+      "BOREAL",
+      "Evolution"
+    ],
+    "since": 2026
+  },
+  "id": "renault-boreal",
+  "researchedAt": "2026-10",
+  "displayName": "Renault Boreal",
+  "summary": "SUV médio flex da Renault, produzido em São José dos Pinhais (PR) e lançado em out/nov 2025. Motor 1.3 TCe turbo flex de 163 cv e 27,5 kgfm, câmbio de dupla embreagem banhada a óleo de 6 marchas. Versões Evolution, Techno e Iconic. Rivaliza com Jeep Compass, Corolla Cross e Taos e tem um dos maiores porta-malas da categoria (522 L VDA).",
+  "generation": "1ª geração (projeto global Renault International Game Plan, aparentado do Dacia Bigster); linha 2026.",
+  "timeline": [
+    {
+      "modelYear": "2026",
+      "change": "Out/2025: pré-venda e lançamento — Evolution R$ 179.990, Techno R$ 199.990, Iconic R$ 214.990."
+    },
+    {
+      "modelYear": "2026",
+      "change": "Mar/2026: apenas 1.272 emplacamentos (24º do mês). Jun–ago/2026: descontos de até R$ 22 mil (Techno a R$ 177.990 no Mercado Livre)."
+    },
+    {
+      "modelYear": "2026",
+      "change": "Set/2026: primeiro reajuste — Evolution R$ 182.990, Techno R$ 204.990, Iconic R$ 219.990."
+    }
+  ],
+  "highlights": [
+    "Porta-malas de 522 L (VDA), que vai a 1.770 L com o banco rebatido.",
+    "163 cv e 27,5 kgfm; câmbio de dupla embreagem banhada a óleo (mais robusto que embreagem a seco).",
+    "Evolution já traz 6 airbags, ACC, AEB (frontal e em curva), assistente de faixa, multimídia com espelhamento sem fio e carregador por indução.",
+    "Nacional e flex (roda com etanol)."
+  ],
+  "watchOuts": [
+    "Consumo modesto e não é eletrificado: 11,2/13,6 km/l na gasolina e 7,8/9,4 km/l no etanol (Inmetro), bem pior que o Corolla Cross Hybrid do usuário.",
+    "Vendas fracas no início de 2026 e descontos altos: risco de revenda.",
+    "Ainda sem Latin NCAP (o Kardian tem 5 estrelas, mas é outro modelo).",
+    "Porta-malas: 522 L (VDA) × 586 L citado em algumas fichas."
+  ],
+  "specs": {
+    "version": "Boreal Evolution / Techno / Iconic (linha 2026)",
+    "engine": "1.3 TCe turbo flex, 4 cil.",
+    "powerCv": "163",
+    "torqueKgfm": "27,5",
+    "transmission": "Dupla embreagem banhada a óleo, 6 marchas (EDC)",
+    "trunkL": 522,
+    "lengthMm": null,
+    "wheelbaseMm": null,
+    "safety": "6 airbags em todas as versões; sem NCAP",
+    "warranty": null
+  },
+  "inmetro": {
+    "version": "Boreal 1.3 TCe",
+    "cityGas": 11.2,
+    "roadGas": 13.6,
+    "cityEth": 7.8,
+    "roadEth": 9.4,
+    "cityKmKWh": null,
+    "roadKmKWh": null,
+    "year": "PBEV (conforme imprensa, linha 2026)",
+    "source": "https://autopapo.com.br/noticia/renault-boreal-techno-e-a-melhor-opcao-do-suv-frances/"
+  },
+  "price0km": {
+    "version": "Evolution",
+    "price": 182990,
+    "date": "set/2026",
+    "source": "https://garagem360.com.br/?p=320908"
+  },
+  "versionsAndPrices": [
+    {
+      "version": "Evolution",
+      "price": 182990,
+      "date": "set/2026",
+      "source": "https://garagem360.com.br/?p=320908"
+    },
+    {
+      "version": "Techno",
+      "price": 204990,
+      "date": "set/2026",
+      "source": "https://garagem360.com.br/?p=320908"
+    },
+    {
+      "version": "Iconic",
+      "price": 219990,
+      "date": "set/2026",
+      "source": "https://www.vrum.com.br/mercado/2026/09/7510065-renault-boreal-ja-encosta-nos-rs-220-mil-apos-reajuste-de-precos.html"
+    }
+  ],
+  "launchModelYearBR": 2026,
+  "catalogCheck": "Não está no catálogo. Sugere-se a Evolution (R$ 182.990, set/2026); a Techno (R$ 204.990) é apontada pela imprensa como a melhor compra. Nomes na FIPE: 'BOREAL EVOLUTION 1.3 TURBO 16V 5p Aut.', 'BOREAL TECHNO 1.3 TURBO 16V 5p Aut.' e 'BOREAL ICONIC ...'. Em set/2026, a FIPE 2026 dava Evolution R$ 153.899, Techno R$ 170.708 e Iconic R$ 176.400 (tabelacarros); outro site trazia a Techno a R$ 182.273 em jul/2026.",
+  "wikipedia": {
+    "lang": "en",
+    "title": "Renault Boreal"
+  },
+  "officialUrl": null,
+  "sources": [
+    {
+      "label": "Garagem360 — reajuste set/2026",
+      "url": "https://garagem360.com.br/?p=320908"
+    },
+    {
+      "label": "Vrum — Boreal encosta nos R$ 220 mil",
+      "url": "https://www.vrum.com.br/mercado/2026/09/7510065-renault-boreal-ja-encosta-nos-rs-220-mil-apos-reajuste-de-precos.html"
+    },
+    {
+      "label": "AutoPapo — lançamento R$ 179.990",
+      "url": "https://autopapo.com.br/noticia/renault-boreal-r-179-990-confira-versoes/"
+    },
+    {
+      "label": "AutoPapo — Boreal Techno (consumo)",
+      "url": "https://autopapo.com.br/noticia/renault-boreal-techno-e-a-melhor-opcao-do-suv-frances/"
+    },
+    {
+      "label": "O POVO — versões e equipamentos",
+      "url": "https://www.opovo.com.br/noticias/veiculos/2025/11/06/renault-boreal-suv-feito-no-brasil-estreia-em-tres-versoes-a-partir-de-rs-1799-mil.html"
+    },
+    {
+      "label": "Revista Carro — pré-venda e equipamentos",
+      "url": "https://revistacarro.com.br/renault-boreal-inicia-pre-venda-no-brasil-e-tera-3-versoes-a-partir-de-r-1799-mil/"
+    },
+    {
+      "label": "Vrum — descontos ago/2026",
+      "url": "https://www.vrum.com.br/bom-negocio/2026/08/7481556-renault-boreal-tem-desconto-de-ate-rs-22-mil-veja-valores.html"
+    },
+    {
+      "label": "Garagem360 — 1.272 unidades em mar/2026",
+      "url": "https://garagem360.com.br/?p=309470"
+    },
+    {
+      "label": "Tabela Carros — FIPE Boreal 2026",
+      "url": "https://tabelacarros.com/modelo/carros/renault/boreal/2026-Flex"
+    },
+    {
+      "label": "Autoweb (AR) — sem Latin NCAP",
+      "url": "https://www.autoweb.com.ar/2026/06/29/prueba-renault-boreal-iconic/"
+    }
+  ],
+  "unverified": [
+    "Dimensões (comprimento/entre-eixos) não vistas nas fontes.",
+    "Porta-malas: 522 L (VDA) × 586 L.",
+    "Tamanho do painel digital da Evolution (7\" × 10\").",
+    "Garantia e preço das revisões não vistos.",
+    "Vendas de set/2026 não encontradas.",
+    "Pesquisa feita por resumos de busca das fontes listadas (páginas não abertas diretamente); confira os valores na fonte."
+  ]
+}

@@ -1,0 +1,57 @@
+{
+  "id": "gac-aion-y",
+  "version": "GAC Aion Y Premium 2027",
+  "researchedAt": "2026-10",
+  "tech": {
+    "screen10": true,
+    "wirelessMirroring": null,
+    "digitalCluster": null,
+    "wirelessCharger": false,
+    "camera360": true,
+    "adaptiveCruise": false,
+    "connectedApp": null,
+    "keyless": true
+  },
+  "comfort": {
+    "automatic": true,
+    "digitalAC": true,
+    "rearVents": null,
+    "leather": true,
+    "powerSeat": true,
+    "seatClimate": false,
+    "sunroof": true
+  },
+  "safety": {
+    "airbags6": true,
+    "aeb": false,
+    "laneKeep": false,
+    "blindSpot": null,
+    "rearCrossTraffic": null
+  },
+  "ncap": {
+    "stars": null,
+    "year": null,
+    "program": "Latin NCAP",
+    "note": "Nenhum teste Latin NCAP, Euro NCAP ou ANCAP encontrado para o Aion Y.",
+    "source": ""
+  },
+  "sources": [
+    {
+      "label": "Webmotors — teste GAC Aion Y (preços, porta-malas 361 L, equipamentos)",
+      "url": "https://www.webmotors.com.br/wm1/testes/gac-aion-y-suv/"
+    },
+    {
+      "label": "Mundo do Automóvel para PCD — Aion Y Premium (equipamentos, bônus)",
+      "url": "https://mundodoautomovelparapcd.com.br/aion-y-premium-suv-eletrico-da-gac-e-oferecido-com-bonus-de-r-25-mil-ou-taxa-zero-em-36-vezes/"
+    }
+  ],
+  "notes": "Premium: teto panorâmico, ar automático, bancos de couro com ajuste elétrico para o motorista, chave presencial, 6 airbags, câmera 360°, piloto automático comum, faróis LED, sensor de chuva, multimídia 14,6\". Exclusivos da Elite (por isso false na Premium): ACC, AEB, assistente de faixa, indução, banco do motorista ventilado, porta-malas elétrico, rodas 18\".",
+  "unverified": [
+    "tech.wirelessMirroring",
+    "tech.digitalCluster",
+    "tech.connectedApp",
+    "comfort.rearVents",
+    "safety.blindSpot",
+    "safety.rearCrossTraffic"
+  ]
+}

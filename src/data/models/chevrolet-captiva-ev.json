@@ -1,0 +1,156 @@
+{
+  "catalogSeed": {
+    "brand": "Chevrolet",
+    "model": "Captiva EV",
+    "version": "Premier (elétrico, 60 kWh)",
+    "category": "suv-medio",
+    "powertrain": "eletrico",
+    "seats": 5,
+    "trunkL": 403,
+    "refPriceNew": 219990,
+    "consumption": {
+      "cityKmL": 0,
+      "roadKmL": 0,
+      "cityKmLEthanol": null,
+      "roadKmLEthanol": null,
+      "cityKmKWh": 5.1,
+      "roadKmKWh": 5.1
+    },
+    "evShareNote": "100% elétrico; bateria LFP de 60 kWh; 304 km PBEV; AC 6,6 kW / DC 120 kW.",
+    "fipeBrand": "GM - CHEVROLET",
+    "fipeInclude": [
+      "CAPTIVA",
+      "EV"
+    ],
+    "since": 2026
+  },
+  "id": "chevrolet-captiva-ev",
+  "researchedAt": "2026-10",
+  "displayName": "Chevrolet Captiva EV",
+  "summary": "SUV médio 100% elétrico da Chevrolet, derivado do Wuling Starlight S (SAIC-GM-Wuling). Lançado em nov/2025 e montado no Ceará (PACE) em 2026. Versão única Premier: motor dianteiro de 201 cv e 31,6 kgfm, bateria LFP de 60 kWh e 304 km de autonomia PBEV. Tem 4,75 m de comprimento e 2,80 m de entre-eixos, muito espaço pelo preço.",
+  "generation": "1ª geração (Wuling Starlight S); lançado no Brasil em nov/2025 como linha 2026.",
+  "timeline": [
+    {
+      "modelYear": "2026",
+      "change": "Nov/2025: lançamento a R$ 199.990 (preço sugerido de tabela de R$ 219.990 segundo Webmotors/Garagem360)."
+    },
+    {
+      "modelYear": "2026",
+      "change": "Mar/2026: Chevrolet mantém R$ 199.990 promocional até 31/03; desconto para CNPJ."
+    },
+    {
+      "modelYear": "2026",
+      "change": "Montagem no Ceará em SKD; versão PHEV anunciada para o fim de 2026."
+    }
+  ],
+  "highlights": [
+    "Espaço de SUV médio (4.745 mm, entre-eixos de 2.800 mm) por cerca de R$ 200–220 mil.",
+    "Bateria LFP de 60 kWh, com garantia de 8 anos ou 160 mil km; DC de 120 kW (30→80% em cerca de 30 min).",
+    "Câmera 360°, ACC, AEB, assistente de faixa, 6 airbags e teto solar panorâmico.",
+    "Marca tradicional, com rede Chevrolet grande, o que ajuda na revenda frente às marcas chinesas novas."
+  ],
+  "watchOuts": [
+    "Autonomia PBEV de 304 km, modesta para o tamanho. Em teste do O POVO, o consumo em estrada ficou um pouco pior que o oficial.",
+    "Não tem carregador por indução nem ar de 2 zonas (O POVO); o porta-malas fica sem tampão.",
+    "Sem teste Latin NCAP/Euro NCAP.",
+    "Preço confuso: tabela de R$ 219.990 contra R$ 199.990 praticado; a FIPE do 2026 está em R$ 190.726 (set/2026).",
+    "A chegada do Captiva PHEV (fim de 2026) pode pressionar a revenda do EV."
+  ],
+  "specs": {
+    "version": "Captiva EV Premier 2026",
+    "engine": "Motor elétrico dianteiro; bateria LFP de 60 kWh",
+    "powerCv": "201",
+    "torqueKgfm": "31,6",
+    "transmission": "Redução única",
+    "trunkL": 403,
+    "lengthMm": 4745,
+    "wheelbaseMm": 2800,
+    "safety": "6 airbags; sem NCAP",
+    "warranty": "Bateria 8 anos/160 mil km; garantia do veículo não confirmada"
+  },
+  "inmetro": {
+    "version": "Captiva EV Premier",
+    "cityGas": null,
+    "roadGas": null,
+    "cityEth": null,
+    "roadEth": null,
+    "cityKmKWh": null,
+    "roadKmKWh": null,
+    "year": "PBEV: autonomia de 304 km (km/kWh oficial não encontrado)",
+    "source": "https://autopapo.com.br/noticia/chevrolet-captiva-ev-premier-destaca-pelo-espaco-interno-e-estilo/"
+  },
+  "price0km": {
+    "version": "Premier",
+    "price": 219990,
+    "date": "2026 (tabela sugerida)",
+    "source": "https://www.webmotors.com.br/chevrolet/captiva-ev/2026"
+  },
+  "versionsAndPrices": [
+    {
+      "version": "Premier (preço sugerido)",
+      "price": 219990,
+      "date": "2026",
+      "source": "https://www.webmotors.com.br/chevrolet/captiva-ev/2026"
+    },
+    {
+      "version": "Premier (preço de lançamento/promocional)",
+      "price": 199990,
+      "date": "nov/2025–mar/2026",
+      "source": "https://garagem360.com.br/?p=306097"
+    }
+  ],
+  "launchModelYearBR": 2026,
+  "catalogCheck": "Não está no catálogo. Sugere-se cadastrar a Premier, versão única. O refPriceNew usa a tabela de R$ 219.990; anúncios de 0 km no RJ aparecem a R$ 199.990. Nome na FIPE: 'CAPTIVA EV Premier' (marca GM - Chevrolet); 2026 = R$ 190.726 (set/2026). A Captiva antiga (2008–2017, a combustão) também está na FIPE; o include 'ev' a exclui.",
+  "wikipedia": {
+    "lang": "en",
+    "title": "Chevrolet Captiva"
+  },
+  "officialUrl": null,
+  "sources": [
+    {
+      "label": "AutoPapo — Captiva EV Premier (304 km, 60 kWh)",
+      "url": "https://autopapo.com.br/noticia/chevrolet-captiva-ev-premier-destaca-pelo-espaco-interno-e-estilo/"
+    },
+    {
+      "label": "Garagem360 — lançamento R$ 199.990",
+      "url": "https://garagem360.com.br/?p=302557"
+    },
+    {
+      "label": "Garagem360 — promoção mantida até 31/03; tabela R$ 219.990",
+      "url": "https://garagem360.com.br/?p=306097"
+    },
+    {
+      "label": "Webmotors — preço sugerido R$ 219.990",
+      "url": "https://www.webmotors.com.br/chevrolet/captiva-ev/2026"
+    },
+    {
+      "label": "O POVO — teste (equipamentos, consumo real)",
+      "url": "https://www.opovo.com.br/noticias/veiculos/2026/02/10/o-povo-testou-o-chevrolet-captiva-suv-eletrico-com-dna-urbano.html"
+    },
+    {
+      "label": "Encontra Carros — equipamentos",
+      "url": "https://www.encontracarros.com.br/?p=72743"
+    },
+    {
+      "label": "Vrum — avaliação jul/2026 (dimensões)",
+      "url": "https://www.vrum.com.br/avaliacoes/2026/07/7456775-captiva-ev-mostra-agilidade-da-gm-para-comecar-nova-fase-no-brasil.html"
+    },
+    {
+      "label": "Tabela Carros — FIPE Captiva EV Premier 2026",
+      "url": "https://tabelacarros.com/carros/gm---chevrolet/CAPTIVA-EV-PREMIER/2026-Eletrico"
+    },
+    {
+      "label": "Autoo — Captiva PHEV no Ceará",
+      "url": "https://www.autoo.com.br/gm-confirma-que-captiva-hibrido-plug-in-sera-fabricado-no-ceara-ate-o-fim-de-2026/"
+    }
+  ],
+  "unverified": [
+    "Consumo em km/kWh: não há valor oficial; 5,1 km/kWh é estimativa (304 km ÷ 60 kWh).",
+    "Preço vigente em out/2026: tabela de R$ 219.990 × R$ 199.990 praticado/promocional.",
+    "Potência: 201 cv (maioria) × 204 cv (algumas fontes).",
+    "Porta-malas: 403 L (maioria) × 475/532 L em fontes isoladas.",
+    "Garantia do veículo (fora a bateria).",
+    "Tamanho da multimídia: 15,1\" × 15,6\".",
+    "Pesquisa feita por resumos de busca das fontes listadas (páginas não abertas diretamente); confira os valores na fonte."
+  ]
+}

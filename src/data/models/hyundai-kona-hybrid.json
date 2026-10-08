@@ -1,0 +1,153 @@
+{
+  "catalogSeed": {
+    "brand": "Hyundai",
+    "model": "Kona Hybrid",
+    "version": "Ultimate 1.6 GDI HEV",
+    "category": "suv-compacto",
+    "powertrain": "hibrido",
+    "seats": 5,
+    "trunkL": 407,
+    "refPriceNew": 219990,
+    "consumption": {
+      "cityKmL": 18.4,
+      "roadKmL": 16.0,
+      "cityKmLEthanol": null,
+      "roadKmLEthanol": null,
+      "cityKmKWh": null,
+      "roadKmKWh": null
+    },
+    "evShareNote": "Híbrido pleno (não recarrega na tomada); bateria de 1,32 kWh; só gasolina.",
+    "fipeBrand": "HYUNDAI",
+    "fipeInclude": [
+      "KONA",
+      "Ultimate"
+    ],
+    "since": 2026
+  },
+  "id": "hyundai-kona-hybrid",
+  "researchedAt": "2026-10",
+  "displayName": "Hyundai Kona Hybrid",
+  "summary": "SUV compacto híbrido pleno (HEV) da Hyundai, importado da Coreia do Sul, já na 2ª geração. Motor 1.6 GDI aspirado a gasolina com motor elétrico, 141 cv e 27 kgfm combinados, e câmbio de dupla embreagem de 6 marchas. No Brasil é vendido só como híbrido, nas versões Ultimate e Signature. Pelo PBEV, faz 18,4 km/l na cidade, entre os melhores números de consumo de SUV.",
+  "generation": "2ª geração (SX2, revelada em 2022); lançada no Brasil em mai/2025 como linha 2026. A 1ª geração também teve versão híbrida no Brasil (2023, estoque limitado).",
+  "timeline": [
+    {
+      "modelYear": "2026",
+      "change": "Lançamento em mai/2025: Ultimate R$ 214.990 e Signature R$ 234.990."
+    },
+    {
+      "modelYear": "2026",
+      "change": "Tabela subiu para Ultimate R$ 219.990 e Signature R$ 239.990 (citada em mai e set/2026)."
+    },
+    {
+      "modelYear": "2026",
+      "change": "Promoção de set/2026: Ultimate a R$ 179.990 e Signature a R$ 218.990 à vista, até 07/10/2026."
+    }
+  ],
+  "highlights": [
+    "PBEV: 18,4 km/l na cidade e 16,0 km/l na estrada (gasolina); classe A entre os médios.",
+    "Garantia de 5 anos para o veículo e de 8 anos ou 160 mil km para o sistema híbrido e a bateria.",
+    "Ultimate já traz ADAS completo: ACC, AEB, faixa, ponto cego, tráfego cruzado traseiro e alerta de saída segura.",
+    "Telas de 12,3\" (painel e multimídia), espelhamento sem fio, carregador por indução e ar digital de 2 zonas com saída traseira."
+  ],
+  "watchOuts": [
+    "Porta-malas de 407 L, médio para a categoria.",
+    "Euro NCAP de 2023: 4 estrelas, com nota baixa em assistência à segurança (60%). A ANCAP repetiu as 4 estrelas e diz que a nota vale para as versões híbridas.",
+    "Promoções agressivas e frequentes (até −R$ 40 mil) indicam vendas fracas e pressionam a revenda. A FIPE do 2026 caiu 3,5% em set/2026.",
+    "Só gasolina (não é flex) e não é plug-in.",
+    "Importado e de volume baixo: peças e rede ficam a cargo da Hyundai Motor Brasil/CAOA. Não foi encontrado recall no Brasil."
+  ],
+  "specs": {
+    "version": "Kona Hybrid Ultimate / Signature (linha 2026)",
+    "engine": "1.6 GDI aspirado a gasolina, 4 cil., + motor elétrico; híbrido pleno; bateria de 1,32 kWh",
+    "powerCv": "141 (combinada)",
+    "torqueKgfm": "27 (combinado)",
+    "transmission": "Dupla embreagem de 6 marchas",
+    "trunkL": 407,
+    "lengthMm": 4350,
+    "wheelbaseMm": 2660,
+    "safety": "6 airbags; Euro NCAP 4 estrelas (2023)",
+    "warranty": "5 anos (veículo); 8 anos/160 mil km (sistema híbrido e bateria)"
+  },
+  "inmetro": {
+    "version": "Kona Hybrid",
+    "cityGas": 18.4,
+    "roadGas": 16.0,
+    "cityEth": null,
+    "roadEth": null,
+    "cityKmKWh": null,
+    "roadKmKWh": null,
+    "year": "PBEV (ano da edição não confirmado; citado pela imprensa em 2025–2026)",
+    "source": "https://autopapo.com.br/noticia/hyundai-kona-hybrid-2026/"
+  },
+  "price0km": {
+    "version": "Ultimate",
+    "price": 219990,
+    "date": "set/2026",
+    "source": "https://garagem360.com.br/?p=320365"
+  },
+  "versionsAndPrices": [
+    {
+      "version": "Ultimate",
+      "price": 219990,
+      "date": "set/2026",
+      "source": "https://garagem360.com.br/?p=320365"
+    },
+    {
+      "version": "Signature",
+      "price": 239990,
+      "date": "set/2026",
+      "source": "https://garagem360.com.br/?p=319917"
+    },
+    {
+      "version": "Ultimate (promoção à vista até 07/10/2026)",
+      "price": 179990,
+      "date": "set/2026",
+      "source": "https://garagem360.com.br/?p=320365"
+    }
+  ],
+  "launchModelYearBR": 2026,
+  "catalogCheck": "Não está no catálogo. Sugere-se cadastrar a Ultimate (R$ 219.990 de tabela, set/2026). Nome na FIPE: 'KONA Ultimate GDI 1.6 16V Aut. (Hibrido)', código 015253-6; 2026 = R$ 176.806 (set/2026); 0 km = R$ 197.650. A Signature 2026 vale R$ 185.654. A 1ª geração híbrida (2023) tem outro nome na FIPE; o include 'ultimate' a exclui.",
+  "wikipedia": {
+    "lang": "en",
+    "title": "Hyundai Kona"
+  },
+  "officialUrl": null,
+  "sources": [
+    {
+      "label": "AutoPapo — lançamento, R$ 214.990",
+      "url": "https://autopapo.com.br/noticia/hyundai-kona-hybrid-2026/"
+    },
+    {
+      "label": "Garagem360 — Ultimate R$ 179.990 (promo) / tabela R$ 219.990",
+      "url": "https://garagem360.com.br/?p=320365"
+    },
+    {
+      "label": "Garagem360 — Signature R$ 239.990",
+      "url": "https://garagem360.com.br/?p=319917"
+    },
+    {
+      "label": "Comprecar — início das vendas e equipamentos",
+      "url": "https://www.comprecar.com.br/revista/hyundai-inicia-vendas-do-suv-novo-kona-hybrid-no-brasil"
+    },
+    {
+      "label": "Tabela Carros — FIPE Ultimate 2026",
+      "url": "https://tabelacarros.com/carros/hyundai/KONA-ULTIMATE-GDI-1-6-16V-AUT---HIBRIDO-/2026-Hibrido"
+    },
+    {
+      "label": "Rushlane — Euro NCAP 2023 4 estrelas",
+      "url": "https://www.rushlane.com/hyundai-kona-4-star-safety-rating-real-disappointment-says-euro-ncap-12483741.html"
+    },
+    {
+      "label": "4x4 Australia — ANCAP 4 estrelas (todas as versões)",
+      "url": "https://4x4australia.com.au/news/2024-hyundai-kona-rated-4-stars-in-ancap-safety-testing"
+    }
+  ],
+  "unverified": [
+    "Câmera 360° na Ultimate: uma fonte cita o botão da câmera 360° no console da Ultimate; o AutoPapo lista a câmera como exclusiva da Signature.",
+    "Ano da edição do PBEV dos 18,4/16,0 km/l.",
+    "Chave presencial e bancos aquecidos/ventilados na Ultimate.",
+    "Página oficial (officialUrl) não consultada.",
+    "Preço depois de 07/10/2026 (fim da promoção).",
+    "Pesquisa feita por resumos de busca das fontes listadas (páginas não abertas diretamente); confira os valores na fonte."
+  ]
+}
