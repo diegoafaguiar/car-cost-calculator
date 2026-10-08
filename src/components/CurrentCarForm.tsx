@@ -2,12 +2,12 @@ import { useState } from 'react'
 import { CATEGORY_LABEL, POWERTRAIN_LABEL } from '../lib/catalog'
 import { yearOf, ZERO_KM_YEAR } from '../lib/fipe'
 import { money } from '../lib/format'
-import { currentCarValue, depreciationRate, mileagePenalty, revisionSchedule } from '../lib/tco'
+import { currentCarValue, depreciationRate, mileagePenalty, revisionCalibration, revisionSchedule, revisionTablePrice } from '../lib/tco'
 import { DEFAULT_CAR } from '../lib/defaults'
 import type { Assumptions } from '../lib/types'
 import type { Category, CurrentCar, PlannedCost, Powertrain } from '../lib/types'
 import { FipePicker } from './FipePicker'
-import { Button, Collapsible, NumberField, SelectField, TextField } from './ui'
+import { Button, Collapsible, NumberField, Segmented, SelectField, TextField } from './ui'
 
 interface Props {
   car: CurrentCar
@@ -211,6 +211,7 @@ function RevisionsEditor({ car, onChange, kmPerYear }: { car: CurrentCar; onChan
   const rp = car.revisions
   const schedule = revisionSchedule(car, kmPerYear, 60)
   const next = schedule[0]
+  const cal = rp ? revisionCalibration(rp) : null
   const total = (months: number) => schedule.filter((r) => r.month <= months).reduce((s, r) => s + r.price, 0)
   const setRp = (patch: Partial<NonNullable<CurrentCar['revisions']>>) => rp && onChange({ ...car, revisions: { ...rp, ...patch } })
 
@@ -234,11 +235,56 @@ function RevisionsEditor({ car, onChange, kmPerYear }: { car: CurrentCar; onChan
         </div>
       ) : (
         <>
+          <div className="space-y-2 rounded-lg border border-line p-3">
+            <span className="block text-sm font-medium">Quanto custou de verdade a última revisão?</span>
+            <p className="text-xs text-muted">
+              A tabela de preço fixo cobre só o pacote básico. Itens adicionais da concessionária (fluidos, filtros extras, alinhamento,
+              higienização, desgaste) costumam encarecer bastante. Informe a nota da última revisão para calibrar todas as próximas.
+            </p>
+            <div className="grid grid-cols-2 gap-2">
+              <NumberField
+                label="Revisão de"
+                suffix="km"
+                step={rp.intervalKm}
+                value={rp.actual?.km ?? 0}
+                onChange={(v) => setRp({ actual: { km: v, price: rp.actual?.price ?? 0, mode: rp.actual?.mode ?? 'fator', note: rp.actual?.note } })}
+              />
+              <NumberField
+                label="Valor pago"
+                prefix="R$"
+                step={100}
+                value={rp.actual?.price ?? 0}
+                onChange={(v) => setRp({ actual: { km: rp.actual?.km ?? 0, price: v, mode: rp.actual?.mode ?? 'fator', note: undefined } })}
+                hint="0 = usar só a tabela"
+              />
+            </div>
+            {cal && (
+              <>
+                <Segmented<'fator' | 'fixo'>
+                  label="Como aplicar"
+                  value={cal.mode}
+                  options={[
+                    { value: 'fator', label: `Proporcional (× ${cal.factor.toLocaleString('pt-BR', { maximumFractionDigits: 2 })})` },
+                    { value: 'fixo', label: `Valor fixo (${cal.extra >= 0 ? '+' : '−'} ${money(Math.abs(cal.extra))})` },
+                  ]}
+                  onChange={(m) => rp.actual && setRp({ actual: { ...rp.actual, mode: m } })}
+                />
+                <p className="text-xs text-ink-2">
+                  Tabela da revisão de {(cal.k * rp.intervalKm).toLocaleString('pt-BR')} km: {money(cal.table)} · você pagou {money(rp.actual!.price)}.{' '}
+                  {cal.mode === 'fator'
+                    ? 'Cada revisão futura custa a tabela multiplicada por esse fator (revisões grandes ficam mais caras).'
+                    : 'Cada revisão futura custa a tabela mais essa diferença fixa.'}
+                  {rp.actual?.note && <span className="block text-muted">Origem: {rp.actual.note}.</span>}
+                </p>
+              </>
+            )}
+          </div>
           {next && (
             <div className="rounded-lg bg-accent-soft p-3 text-sm">
               <span className="block text-xs font-medium text-accent">Próxima revisão</span>
               <span className="block font-semibold">
                 {next.km.toLocaleString('pt-BR')} km · {money(next.price)}
+                {cal && <span className="ml-1 text-xs font-normal text-ink-2">(tabela {money(revisionTablePrice(rp, Math.round(next.km / rp.intervalKm)))})</span>}
               </span>
               <span className="block text-xs text-ink-2">
                 em cerca de {next.month} {next.month === 1 ? 'mês' : 'meses'} (rodando {kmPerYear.toLocaleString('pt-BR')} km/ano)

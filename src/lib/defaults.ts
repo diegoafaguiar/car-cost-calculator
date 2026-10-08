@@ -25,6 +25,9 @@ export const DEFAULT_CAR: CurrentCar = {
     prices: [543, 1062, 765, 1452, 753, 1359, 681, 1314, 672, 1750],
     surcharge: 177.6,
     reference: 'Tabela de revisões com preço fixo Toyota, válida até set/2025',
+    // Informado na conversa: a última revisão (80 mil km) custou "quase 5×" os R$ 850 da tabela da próxima.
+    // Valor aproximado — troque pelo da nota fiscal.
+    actual: { km: 80000, price: 4000, mode: 'fator', note: 'valor aproximado informado por você; use o da nota fiscal' },
   },
   // FIPE caiu de R$ 150.129 (ago/2025) para R$ 139.427 (set/2026): ~7% a.a.
   depreciationYear: 0.07,

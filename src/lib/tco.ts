@@ -21,6 +21,7 @@ import type {
   Powertrain,
   PriceSource,
   RankRow,
+  RevisionPlan,
   Scenario,
   ScenarioResult,
 } from './types'
@@ -351,7 +352,7 @@ export function simulate(s: Scenario, ctx: SimContext): Omit<ScenarioResult, 'br
         const odoStart = (car.odometerKm || 0) + kmMonth * m
         const odoEnd = odoStart + kmMonth
         for (let k = Math.floor(odoStart / rp.intervalKm) + 1; k * rp.intervalKm <= odoEnd; k++) {
-          const price = (rp.prices[(k - 1) % rp.prices.length] + rp.surcharge) * infl
+          const price = revisionPrice(rp, k) * infl
           sums.maintenance += price
           out += price
         }
@@ -447,6 +448,29 @@ export function breakEven(option: number[], keep: number[]): number | null {
 }
 
 /** Próximas revisões do carro atual dentro de `months` meses, com mês e preço (sem inflação). */
+/** Preço de tabela da k-ésima revisão (k = 1 → primeiro intervalo), com o acréscimo da versão. */
+export function revisionTablePrice(rp: RevisionPlan, k: number): number {
+  return rp.prices[(k - 1) % rp.prices.length] + rp.surcharge
+}
+
+/** Calibração pela revisão real informada: fator multiplicador e acréscimo fixo resultantes. */
+export function revisionCalibration(rp: RevisionPlan) {
+  const a = rp.actual
+  if (!a || a.price <= 0 || a.km <= 0 || rp.intervalKm <= 0 || !rp.prices.length) return null
+  const k = Math.max(1, Math.round(a.km / rp.intervalKm))
+  const table = revisionTablePrice(rp, k)
+  if (table <= 0) return null
+  return { k, table, factor: a.price / table, extra: a.price - table, mode: a.mode }
+}
+
+/** Preço esperado da k-ésima revisão: tabela ajustada pela revisão real, quando informada. */
+export function revisionPrice(rp: RevisionPlan, k: number): number {
+  const base = revisionTablePrice(rp, k)
+  const c = revisionCalibration(rp)
+  if (!c) return base
+  return c.mode === 'fixo' ? Math.max(0, base + c.extra) : base * c.factor
+}
+
 export function revisionSchedule(car: CurrentCar, kmPerYear: number, months = 60) {
   const rp = car.revisions
   if (!rp || rp.intervalKm <= 0 || !rp.prices.length || kmPerYear <= 0) return []
@@ -457,7 +481,7 @@ export function revisionSchedule(car: CurrentCar, kmPerYear: number, months = 60
     const km = k * rp.intervalKm
     const month = Math.max(1, Math.ceil((km - odo) / kmMonth))
     if (month > months) break
-    list.push({ km, month, price: rp.prices[(k - 1) % rp.prices.length] + rp.surcharge })
+    list.push({ km, month, price: revisionPrice(rp, k) })
   }
   return list
 }

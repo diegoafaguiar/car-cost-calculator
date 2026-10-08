@@ -91,6 +91,12 @@ export interface RevisionPlan {
   /** Acréscimo por revisão (ex.: versão híbrida). */
   surcharge: number
   reference: string
+  /**
+   * Custo real de uma revisão já feita, para calibrar a tabela (itens adicionais, mão de obra extra).
+   * 'fator' multiplica todas as revisões pela razão real/tabela; 'fixo' soma a diferença a cada revisão.
+   * null = usar só a tabela.
+   */
+  actual?: { km: number; price: number; mode: 'fator' | 'fixo'; note?: string } | null
 }
 
 export interface PlannedCost {

@@ -13,6 +13,7 @@ import {
   modelYearOf,
   pmt,
   projectValue,
+  revisionPrice,
   runAll,
   simulate,
   tradeInFor,
@@ -203,16 +204,18 @@ describe('dados de mercado', () => {
 })
 
 describe('revisões', () => {
+  // Tabela pura (sem a calibração pela revisão real, testada à parte).
+  const TABLE_CAR = { ...DEFAULT_CAR, revisions: { ...DEFAULT_CAR.revisions!, actual: null } }
   it('agenda as revisões pela quilometragem', async () => {
     const { revisionSchedule } = await import('./tco')
-    const s = revisionSchedule(DEFAULT_CAR, 12000, 60)
+    const s = revisionSchedule(TABLE_CAR, 12000, 60)
     expect(s[0]).toEqual({ km: 90000, month: 1, price: 672 + 177.6 })
     expect(s[1]).toEqual({ km: 100000, month: 11, price: 1750 + 177.6 })
     expect(s.length).toBe(6) // 90 a 140 mil km em 60 meses (12 mil km/ano a partir de 89 mil)
   })
 
   it('soma as revisões na manutenção do carro atual', () => {
-    const withRev = { ...DEFAULT_CAR, plannedCosts: [] }
+    const withRev = { ...TABLE_CAR, plannedCosts: [] }
     const noRev = { ...withRev, revisions: null }
     const aa = { ...a, kmPerYear: 12000 }
     const k1 = simulate(buildScenarios({ car: withRev, assumptions: aa, usedAges: [], prices: {}, year: 2026 })[0], { ...ctx, car: withRev, assumptions: aa })
@@ -332,5 +335,22 @@ describe('câmbio', () => {
     expect(transmissionFromFipeName('ONIX SEDAN Plus LTZ 1.0 12V TB Flex Aut.')).toBe('automatico')
     expect(transmissionFromFipeName('ONIX HATCH LT 1.0 12V Flex 5p Mec.')).toBe('manual')
     expect(transmissionFromFipeName('COROLLA CROSS XRX 1.8 16V HYBRID')).toBeNull()
+  })
+})
+
+describe('revisões calibradas pela nota real', () => {
+  const rp = { intervalKm: 10000, prices: [500, 1000], surcharge: 0, reference: 't' }
+  it('sem revisão real, usa a tabela', () => {
+    expect(revisionPrice(rp, 1)).toBe(500)
+    expect(revisionPrice({ ...rp, actual: null }, 2)).toBe(1000)
+  })
+  it('fator: multiplica todas pela razão real/tabela', () => {
+    const c = { ...rp, actual: { km: 20000, price: 3000, mode: 'fator' as const } }
+    expect(revisionPrice(c, 1)).toBeCloseTo(1500)
+    expect(revisionPrice(c, 2)).toBeCloseTo(3000)
+  })
+  it('fixo: soma a diferença a cada revisão', () => {
+    const c = { ...rp, actual: { km: 20000, price: 3000, mode: 'fixo' as const } }
+    expect(revisionPrice(c, 1)).toBeCloseTo(2500)
   })
 })

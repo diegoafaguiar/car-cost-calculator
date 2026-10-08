@@ -111,7 +111,14 @@ export default function App() {
   const modelRoute = route.match(/^#\/carro\/([\w-]+)/)?.[1]
   const [car, setCar] = usePersisted('ccc:car', DEFAULT_CAR, (s) => {
     // Versões anteriores não separavam as revisões: os R$ 4.200/ano já as incluíam.
-    if (s.revisions !== undefined) return s
+    if (s.revisions !== undefined) {
+      // Plano Toyota padrão sem calibração: aplica a revisão real informada (uma vez; null = o usuário removeu).
+      const rp = s.revisions as { reference?: string; actual?: unknown } | null
+      if (rp && rp.actual === undefined && rp.reference === DEFAULT_CAR.revisions?.reference) {
+        return { ...s, revisions: { ...rp, actual: DEFAULT_CAR.revisions?.actual } }
+      }
+      return s
+    }
     return s.maintenanceYear === 4200
       ? { ...s, maintenanceYear: DEFAULT_CAR.maintenanceYear, revisions: DEFAULT_CAR.revisions }
       : { ...s, revisions: null }
