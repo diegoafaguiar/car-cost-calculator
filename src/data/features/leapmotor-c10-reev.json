@@ -1,0 +1,68 @@
+{
+  "id": "leapmotor-c10-reev",
+  "version": "Leapmotor C10 Ultra-Híbrido REEV 2026",
+  "researchedAt": "2026-10",
+  "tech": {
+    "screen10": true,
+    "wirelessMirroring": false,
+    "digitalCluster": null,
+    "wirelessCharger": null,
+    "camera360": null,
+    "adaptiveCruise": true,
+    "connectedApp": true,
+    "keyless": null
+  },
+  "comfort": {
+    "automatic": true,
+    "digitalAC": null,
+    "rearVents": null,
+    "leather": null,
+    "powerSeat": true,
+    "seatClimate": true,
+    "sunroof": true
+  },
+  "safety": {
+    "airbags6": true,
+    "aeb": true,
+    "laneKeep": true,
+    "blindSpot": true,
+    "rearCrossTraffic": true
+  },
+  "ncap": {
+    "stars": 5,
+    "year": 2024,
+    "program": "Euro NCAP",
+    "note": "Euro NCAP 5 estrelas (dez/2024) para o C10 elétrico: adulto 89%, criança 85%, vulneráveis 77%, assistência 76%. Não confirmado para o REEV. Sem Latin NCAP.",
+    "source": "https://vision-mobility.de/en/news/leapmotor-c10-chinese-electric-suv-receives-five-stars-in-euro-ncap-355347.html",
+    "counts": false
+  },
+  "sources": [
+    {
+      "label": "Autoo - C10 preços, peças e equipamentos",
+      "url": "https://www.autoo.com.br/leapmotor-c10-precos-pecas-consumo-e-equipamentos-do-suv-/"
+    },
+    {
+      "label": "Encontracarros - lançamento C10",
+      "url": "https://www.encontracarros.com.br/leapmotor-c10-e-lancado-no-brasil-por-r-189-990/"
+    },
+    {
+      "label": "Autoo - C10 sem CarPlay/Android Auto",
+      "url": "https://www.autoo.com.br/leapmotor-c10-suv-eletrico-de-luxo-pode-chegar-sem-um-importante-item/"
+    },
+    {
+      "label": "Vision Mobility - Euro NCAP C10",
+      "url": "https://vision-mobility.de/en/news/leapmotor-c10-chinese-electric-suv-receives-five-stars-in-euro-ncap-355347.html"
+    }
+  ],
+  "notes": "Versão única (BEV e REEV com a mesma lista, segundo a Autoo). Central de 14,6\" com Leapmotor OS, sem Android Auto/CarPlay nativos na linha 2026 (a Stellantis disse que falta hardware; só há espelhamento Android por app). App Leapmotor. Ar automático; teto panorâmico de 2,1 m²; bancos dianteiros elétricos com memória, aquecimento e ventilação; ACC, AEB, assistente de faixa, ponto cego e tráfego cruzado traseiro (Autoo). 6 ou 7 airbags conforme a fonte (pelo menos 6). Painel digital, câmera 360°, carregador por indução e chave presencial não foram confirmados nas fontes brasileiras.",
+  "unverified": [
+    "tech.digitalCluster",
+    "tech.wirelessCharger",
+    "tech.camera360",
+    "tech.keyless",
+    "comfort.digitalAC",
+    "comfort.rearVents",
+    "comfort.leather",
+    "ncap"
+  ]
+}

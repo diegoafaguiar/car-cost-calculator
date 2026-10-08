@@ -1,0 +1,188 @@
+{
+  "catalogSeed": {
+    "brand": "Zeekr",
+    "model": "X",
+    "version": "Premium RWD (elétrico)",
+    "category": "suv-compacto",
+    "powertrain": "eletrico",
+    "seats": 5,
+    "trunkL": 362,
+    "refPriceNew": 298000,
+    "consumption": {
+      "cityKmL": 0,
+      "roadKmL": 0,
+      "cityKmLEthanol": null,
+      "roadKmLEthanol": null,
+      "cityKmKWh": 5.0,
+      "roadKmKWh": 5.0
+    },
+    "evShareNote": "100% elétrico. km/kWh estimado = autonomia PBEV 332 km ÷ bateria 66 kWh (o PBEV não foi visto em MJ/km).",
+    "fipeBrand": "ZEEKR",
+    "fipeInclude": [
+      "X",
+      "Premium"
+    ],
+    "since": 2025
+  },
+  "id": "zeekr-x",
+  "researchedAt": "2026-10",
+  "displayName": "Zeekr X",
+  "summary": "SUV compacto 100% elétrico da Zeekr (marca premium do grupo Geely, primo de luxo do Volvo EX30), importado da China. No Brasil desde nov/2024 em duas versões: Premium (tração traseira, 272 cv) e Flagship (AWD, 428 cv). Bateria de 66 kWh e autonomia PBEV de 332 km (Premium) e 304 km (Flagship). Muito equipado e rápido, mas caro para o tamanho e com porta-malas pequeno.",
+  "generation": "1ª geração (lançada na China em 2023); no Brasil desde nov/2024 (linha 2025).",
+  "timeline": [
+    {
+      "modelYear": "2025",
+      "change": "Lançamento em nov/2024 com pré-venda: Premium R$ 272.000 e Flagship R$ 298.000."
+    },
+    {
+      "modelYear": "2025",
+      "change": "Reajuste (Auto+ TV): Premium subiu R$ 26 mil, para R$ 298.000; Flagship R$ 338.000."
+    },
+    {
+      "modelYear": "2025",
+      "change": "FIPE (set/2026) só lista ano-modelo 2025 e 0 km; nenhuma linha 2026/2027 do X foi encontrada."
+    }
+  ],
+  "highlights": [
+    "272 cv e tração traseira na Premium; 0–100 km/h em 5,6 s.",
+    "Autonomia PBEV/Inmetro de 332 km (Premium) — a maior das duas versões.",
+    "Equivalência Inmetro de 39,5 km/l (cidade) e 34,7 km/l (estrada) na Premium (Canaltech).",
+    "Premium traz teto panorâmico, câmera 360°, ACC, 6 airbags, carregador por indução e banco com ventilação.",
+    "Central de 14,6\" com Snapdragon 8155 e AR-HUD; CarPlay/Android Auto sem fio (segundo a imprensa).",
+    "Euro NCAP 5 estrelas (2024); garantia de 5 anos (carro) e 8 anos (bateria)."
+  ],
+  "watchOuts": [
+    "Preço alto para um SUV compacto de 4,43 m: R$ 298 mil na Premium.",
+    "Porta-malas pequeno: 362 L (uma fonte diz 382 L), mais frunk.",
+    "Desvalorização forte: FIPE do Premium 2025 usado em R$ 234.409 (set/2026) contra R$ 298.000 do 0 km, com queda mensal.",
+    "Rede pequena (10 lojas em 6 estados + DF no lançamento) e relatos no Reclame Aqui de demora de peças (suspensão, peça de carregamento).",
+    "Bateria da Premium: a maioria das fontes diz 66 kWh, mas Vrum/Autoentusiastas citam 51 kWh.",
+    "Não foi encontrado recall do Zeekr X no Brasil (site não oficial de consulta, jul/2026)."
+  ],
+  "specs": {
+    "version": "Zeekr X Premium RWD (linha 2025)",
+    "engine": "Motor elétrico traseiro; bateria de 66 kWh (conflito: 51 kWh em algumas fontes)",
+    "powerCv": "272",
+    "torqueKgfm": "39,1 (384 Nm) segundo Canal VE; ~35 segundo Vrum/Autoentusiastas",
+    "transmission": "Redução fixa (1 marcha)",
+    "trunkL": 362,
+    "lengthMm": 4432,
+    "wheelbaseMm": 2750,
+    "safety": "6 airbags; Euro NCAP 5 estrelas (2024)",
+    "warranty": "5 anos (veículo) e 8 anos (bateria)"
+  },
+  "inmetro": {
+    "version": "X Premium RWD",
+    "cityGas": null,
+    "roadGas": null,
+    "cityEth": null,
+    "roadEth": null,
+    "cityKmKWh": null,
+    "roadKmKWh": null,
+    "year": "PBEV (homologação 2024): autonomia 332 km; equivalência 39,5/34,7 km/l; km/kWh não publicado nas fontes vistas",
+    "source": "https://canaltech.com.br/carros/zeekr-ja-tem-2-carros-eletricos-homologados-no-brasil/"
+  },
+  "price0km": {
+    "version": "Premium RWD",
+    "price": 298000,
+    "date": "set/2026 (FIPE 0 km = R$ 298.000; preço após reajuste segundo Auto+ TV/Webmotors)",
+    "source": "https://www.automaistv.com.br/vendas-e-precos/zeekr-x-premium-sofre-aumento-de-r-26-mil-e-beira-os-r-300-mil/"
+  },
+  "versionsAndPrices": [
+    {
+      "version": "Premium RWD",
+      "price": 298000,
+      "date": "set/2026 (FIPE 0 km igual)",
+      "source": "https://www.automaistv.com.br/vendas-e-precos/zeekr-x-premium-sofre-aumento-de-r-26-mil-e-beira-os-r-300-mil/"
+    },
+    {
+      "version": "Flagship AWD",
+      "price": 338000,
+      "date": "2025 (Auto+ TV/Canaltech); FIPE 0 km set/2026 = R$ 322.178",
+      "source": "https://www.automaistv.com.br/vendas-e-precos/zeekr-x-premium-sofre-aumento-de-r-26-mil-e-beira-os-r-300-mil/"
+    }
+  ],
+  "launchModelYearBR": 2025,
+  "catalogCheck": "Modelo não está no catálogo. Sugere-se a versão Premium RWD (R$ 298.000). FIPE: 'X Premium (Elétrico)' código 301003-1 — 0 km R$ 298.000 e 2025 R$ 234.409 (set/2026); 'X Flagship AWD (Elétrico)' código 301004-0 — 0 km R$ 322.178. Marca na FIPE: ZEEKR.",
+  "wikipedia": {
+    "lang": "en",
+    "title": "Zeekr X"
+  },
+  "officialUrl": "https://www.zeekrlife.com/pt-br/models/x",
+  "sources": [
+    {
+      "label": "Autoentusiastas — lançamento do Zeekr X no Brasil (14/nov/2024)",
+      "url": "https://autoentusiastas.com.br/?p=226068"
+    },
+    {
+      "label": "Canal VE — Zeekr X lançado com versões a partir de R$ 272 mil (dimensões, motor)",
+      "url": "https://canalve.com.br/zeekr-x-e-lancado-no-brasil-com-versoes-a-partir-de-r-272-mil/"
+    },
+    {
+      "label": "Auto+ TV — Zeekr X Premium sobe R$ 26 mil, para R$ 298 mil",
+      "url": "https://www.automaistv.com.br/vendas-e-precos/zeekr-x-premium-sofre-aumento-de-r-26-mil-e-beira-os-r-300-mil/"
+    },
+    {
+      "label": "Canaltech — Zeekr homologado no Brasil (PBEV 332 km; 39,5/34,7 km/l equivalente)",
+      "url": "https://canaltech.com.br/carros/zeekr-ja-tem-2-carros-eletricos-homologados-no-brasil/"
+    },
+    {
+      "label": "Canaltech — 5 tecnologias do Zeekr X (tela 14,6\", AR-HUD)",
+      "url": "https://canaltech.com.br/carros/5-tecnologias-impressionantes-do-zeekr-x/"
+    },
+    {
+      "label": "Webmotors — Zeekr X 2025, preço e itens por versão",
+      "url": "https://www.webmotors.com.br/zeekr/x/2025"
+    },
+    {
+      "label": "Nona Marcha — Zeekr X Premium RWD: ficha e equipamentos",
+      "url": "https://nonamarcha.com.br/zeekr-x-premium-rwd-2025-ficha-tecnica-autonomia-desempenho-e-preco-no-brasil/"
+    },
+    {
+      "label": "Tabela FIPE Brasil — Zeekr X Premium (Elétrico) 0 km",
+      "url": "https://www.tabelafipebrasil.com/carros/ZEEKR/X-PREMIUM-ELETRICO/Zero-Km-eletrico"
+    },
+    {
+      "label": "Tabela FIPE Brasil — Zeekr X Premium (Elétrico) 2025",
+      "url": "https://www.tabelafipebrasil.com/carros/ZEEKR/X-PREMIUM-ELETRICO/2025-Eletrico"
+    },
+    {
+      "label": "Zeekr Brasil — página oficial do X (PBEV 332/304 km)",
+      "url": "https://www.zeekrlife.com/pt-br/models/x"
+    },
+    {
+      "label": "Zeekr — Euro NCAP 5 estrelas para 001 e X (mai/2024)",
+      "url": "https://zeekrglobal.com/posts/zeekr-001-and-zeekr-x-get-5-star-euro-ncap-and-green-ncap-ratings"
+    },
+    {
+      "label": "Conexão TO — Zeekr X: CarPlay/Android Auto sem fio, 5G",
+      "url": "https://conexaoto.com.br/2024/11/21/zeekr-x-quer-publico-que-valoriza-inovacao-e-sustentabilidade"
+    },
+    {
+      "label": "Terra — avaliação do Zeekr X (consumo medido 4,3–5,8 km/kWh)",
+      "url": "https://www.terra.com.br/mobilidade/carros/avaliacao-zeekr-x-eletrico-e-o-carro-de-amanha-hoje-e-e-bom-se-acostumar,99ae030b248e5e2b3c73a0d5109a7f586qufrtlp.html"
+    },
+    {
+      "label": "Reclame Aqui — Zeekr X: defeito de suspensão e demora de peças",
+      "url": "https://www.reclameaqui.com.br/zeekr-brasil-oficial/zeekr-x-defeito-grave-de-suspensao-risco-a-seguranca-e-pos-venda-inexistente-no-brasil_LW4PYdgEVNvw0ffS/"
+    },
+    {
+      "label": "Reclame Aqui — Zeekr X: falha na peça de carregamento, demora na reposição",
+      "url": "https://www.reclameaqui.com.br/zeekr-brasil-oficial/zeekr-x-com-falha-na-peca-de-carregamento-e-descaso-da-montadora-com-a-demora-na-reposicao_ZENdnXoW5EWFSNJa/"
+    },
+    {
+      "label": "AutoData — Zeekr inaugura 1ª concessionária e apresenta o X (nov/2024)",
+      "url": "https://www.autodata.com.br/noticias/2024/11/12/zeekr-inaugura-primeira-concessionaria-e-apresenta-o-x/80558/"
+    }
+  ],
+  "unverified": [
+    "km/kWh oficial (MJ/km) do PBEV: não encontrado; usado 332 km ÷ 66 kWh ≈ 5,0 km/kWh para cidade e estrada.",
+    "Capacidade da bateria da Premium (66 kWh x 51 kWh).",
+    "Torque da Premium (384 Nm x ~35 kgfm).",
+    "Preço atual da Flagship (R$ 338 mil em 2025; FIPE 0 km R$ 322.178).",
+    "Se há linha 2026/2027 do X à venda (FIPE e anúncios só mostram 2025).",
+    "Porta-malas 362 L x 382 L.",
+    "Preço das revisões.",
+    "Pesquisa feita por resumos de busca das fontes listadas (páginas não abertas diretamente); confira os valores na fonte."
+  ]
+}

@@ -1,0 +1,65 @@
+{
+  "id": "jetour-t2-phev",
+  "version": "Jetour T2 Advance 4x2 2026",
+  "researchedAt": "2026-10",
+  "tech": {
+    "screen10": null,
+    "wirelessMirroring": null,
+    "digitalCluster": null,
+    "wirelessCharger": true,
+    "camera360": true,
+    "adaptiveCruise": true,
+    "connectedApp": null,
+    "keyless": true
+  },
+  "comfort": {
+    "automatic": true,
+    "digitalAC": true,
+    "rearVents": true,
+    "leather": null,
+    "powerSeat": null,
+    "seatClimate": null,
+    "sunroof": true
+  },
+  "safety": {
+    "airbags6": true,
+    "aeb": true,
+    "laneKeep": true,
+    "blindSpot": true,
+    "rearCrossTraffic": null
+  },
+  "ncap": {
+    "stars": 5,
+    "year": 2026,
+    "program": "ASEAN NCAP",
+    "note": "ASEAN NCAP 5 estrelas (protocolo 2021-2025, jan/2026): 86,50 pontos, adulto 29,74/32. Carro do mercado da Malásia (motorização possivelmente diferente); o programa não é Latin/Euro NCAP/ANCAP. Sem Latin NCAP.",
+    "source": "https://www.carz.com.my/2026/01/jetour-t2-secures-5-star-asean-ncap-rating",
+    "counts": false
+  },
+  "sources": [
+    {
+      "label": "Rádio Itatiaia - T2 equipamentos",
+      "url": "https://www.itatiaia.com.br/auto/jetour-t2-suv-hibrido-tem-tres-motores-e-detecta-alagamentos"
+    },
+    {
+      "label": "Tribuna PR - ficha T2",
+      "url": "https://www.tribunapr.com.br/noticias/automoveis/jetour-t2-preco-ficha-tecnica-rivais-byd-gwm-haval/"
+    },
+    {
+      "label": "Motor Show - lançamento T2",
+      "url": "https://motorshow.com.br/jetour-t2-lancamento-brasil"
+    }
+  ],
+  "notes": "R$ 289.900. 6 airbags, ar digital de duas zonas com saída traseira, chave presencial, carregador por indução de 50 W, teto panorâmico (Itatiaia); câmera 360°, ACC, LKA, AEB; ponto cego e sensores dianteiro e traseiro (lista da Tribuna PR). O Premium acrescenta rodas de 20\", som Sony e cobertura do porta-malas. Tamanho da tela, espelhamento sem fio, painel digital e revestimento dos bancos não foram confirmados.",
+  "unverified": [
+    "tech.screen10",
+    "tech.wirelessMirroring",
+    "tech.digitalCluster",
+    "tech.connectedApp",
+    "comfort.leather",
+    "comfort.powerSeat",
+    "comfort.seatClimate",
+    "safety.rearCrossTraffic",
+    "ncap"
+  ]
+}

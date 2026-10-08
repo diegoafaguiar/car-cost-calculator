@@ -1,0 +1,74 @@
+{
+  "id": "mg-s5",
+  "version": "MG S5 Comfort 2026/2027 (sugerido R$ 218.800)",
+  "researchedAt": "2026-10",
+  "tech": {
+    "screen10": true,
+    "wirelessMirroring": null,
+    "digitalCluster": true,
+    "wirelessCharger": null,
+    "camera360": false,
+    "adaptiveCruise": true,
+    "connectedApp": null,
+    "keyless": true
+  },
+  "comfort": {
+    "automatic": true,
+    "digitalAC": true,
+    "rearVents": true,
+    "leather": null,
+    "powerSeat": false,
+    "seatClimate": null,
+    "sunroof": false
+  },
+  "safety": {
+    "airbags6": true,
+    "aeb": null,
+    "laneKeep": true,
+    "blindSpot": false,
+    "rearCrossTraffic": false
+  },
+  "ncap": {
+    "stars": 5,
+    "year": 2025,
+    "program": "Euro NCAP",
+    "counts": true,
+    "note": "Euro NCAP 2025: 90% adulto, 82% criança, 82% vulneráveis, 78% assistências; ANCAP também 5 estrelas. Sem teste Latin NCAP.",
+    "source": "https://www.carlist.my/news/mg-s5-ev-earns-5-star-safety-rating-from-euro-ncap-and-ancap/143162/amp/"
+  },
+  "sources": [
+    {
+      "label": "MG Brasil — página do MG S5",
+      "url": "https://mgmotoroficial.com.br/model/mgs5"
+    },
+    {
+      "label": "Webmotors — MG S5 2026",
+      "url": "https://www.webmotors.com.br/mg/s5/2026"
+    },
+    {
+      "label": "MG Tecar — itens do S5",
+      "url": "https://mgmotor.grupotecar.com.br/modelos/mg-motor-s5"
+    },
+    {
+      "label": "Auto+ TV — lançamento S5",
+      "url": "https://www.automaistv.com.br/novidades/mg-s5-chega-com-duas-versoes-com-mais-de-200-cv-abaixo-dos-r-200-mil/"
+    },
+    {
+      "label": "Verificar Auto — MG S5",
+      "url": "https://verificarauto.com.br/mg-s5-preco-ficha-tecnica-vale-a-pena/"
+    },
+    {
+      "label": "Hibridos y Electricos — Euro NCAP S5",
+      "url": "https://www.hibridosyelectricos.com/coches/llegara-espana-verano-pero-sustituto-mg-zs-ya-ha-machacado-peugeot-3008-renault-4_80192_102.html"
+    }
+  ],
+  "notes": "Comfort: multimídia 12,8\", painel digital 10,25\", ACC (MG Pilot), 6 airbags, assistente de faixa, ar automático digital com saída traseira, câmera de ré, chave presencial (MG Tecar). Câmera 360°, teto panorâmico, banco elétrico, BSD/RCTA e airbag central são da Luxury (site oficial). Carregador por indução: Tecar lista na Comfort, Webmotors/Verificar Auto só na Luxury. Bancos em tecido + couro artificial (Tecar).",
+  "unverified": [
+    "tech.wirelessMirroring",
+    "tech.wirelessCharger",
+    "tech.connectedApp",
+    "comfort.leather",
+    "comfort.seatClimate",
+    "safety.aeb"
+  ]
+}

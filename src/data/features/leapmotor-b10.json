@@ -1,0 +1,72 @@
+{
+  "id": "leapmotor-b10",
+  "version": "Leapmotor B10 Elétrico 2026",
+  "researchedAt": "2026-10",
+  "tech": {
+    "screen10": true,
+    "wirelessMirroring": true,
+    "digitalCluster": true,
+    "wirelessCharger": true,
+    "camera360": true,
+    "adaptiveCruise": true,
+    "connectedApp": null,
+    "keyless": true
+  },
+  "comfort": {
+    "automatic": true,
+    "digitalAC": null,
+    "rearVents": null,
+    "leather": null,
+    "powerSeat": true,
+    "seatClimate": true,
+    "sunroof": true
+  },
+  "safety": {
+    "airbags6": true,
+    "aeb": true,
+    "laneKeep": true,
+    "blindSpot": true,
+    "rearCrossTraffic": null
+  },
+  "ncap": {
+    "stars": 5,
+    "year": 2025,
+    "program": "Euro NCAP",
+    "note": "Euro NCAP 5 estrelas (nov/2025): adulto 93%, criança 93%, vulneráveis 84%, assistência 85%. Sem Latin NCAP.",
+    "source": "https://cdn.euroncap.com/en/press-media/press-releases/euro-ncap-announces-test-results-for-23-new-cars"
+  },
+  "sources": [
+    {
+      "label": "CNN Brasil - B10 REEV",
+      "url": "https://www.cnnbrasil.com.br/auto/leapmotor-b10-reev-chega-ao-brasil-por-r-179-990-conheca-o-carro/"
+    },
+    {
+      "label": "Mundo do Automóvel para PCD - B10 Ultra-Híbrido",
+      "url": "https://mundodoautomovelparapcd.com.br/leapmotor-b10-ultra-hibrido-reev-lancamento/"
+    },
+    {
+      "label": "Mundo do Automóvel para PCD - B10 elétrico",
+      "url": "https://mundodoautomovelparapcd.com.br/leapmotor-b10/"
+    },
+    {
+      "label": "Concessionária Strada - itens B10 elétrico",
+      "url": "https://www.leapmotorstrada.com.br/veiculos/leapmotor-b10"
+    },
+    {
+      "label": "AutoPapo - B10 REEV mesmo pacote do elétrico",
+      "url": "https://autopapo.com.br/noticia/leapmotor-b10-reev-festival-interlagos/"
+    },
+    {
+      "label": "Euro NCAP - resultados nov/2025",
+      "url": "https://cdn.euroncap.com/en/press-media/press-releases/euro-ncap-announces-test-results-for-23-new-cars"
+    }
+  ],
+  "notes": "Versão única. Rodas de 18\", 7 airbags, câmera 360°, faróis LED, teto panorâmico, central de 14,6\" e painel digital de 8,8\"; Android Auto/CarPlay com e sem fio por atualização remota (fev/2026, segundo a GoAuto); ar automático, banco do motorista elétrico com ventilação, tampa traseira motorizada, chave presencial e carregador por indução (concessionária). ACC, AEB, assistente de faixa e ponto cego (Leap Pilot). Tráfego cruzado traseiro não confirmado.",
+  "unverified": [
+    "tech.connectedApp",
+    "comfort.digitalAC",
+    "comfort.rearVents",
+    "comfort.leather",
+    "safety.rearCrossTraffic"
+  ]
+}

@@ -1,0 +1,78 @@
+{
+  "id": "denza-b5",
+  "version": "Denza B5 GS 2026/2027",
+  "researchedAt": "2026-10",
+  "tech": {
+    "screen10": true,
+    "wirelessMirroring": null,
+    "digitalCluster": true,
+    "wirelessCharger": null,
+    "camera360": true,
+    "adaptiveCruise": true,
+    "connectedApp": null,
+    "keyless": null
+  },
+  "comfort": {
+    "automatic": true,
+    "digitalAC": null,
+    "rearVents": null,
+    "leather": true,
+    "powerSeat": true,
+    "seatClimate": true,
+    "sunroof": true
+  },
+  "safety": {
+    "airbags6": true,
+    "aeb": null,
+    "laneKeep": true,
+    "blindSpot": null,
+    "rearCrossTraffic": null
+  },
+  "ncap": {
+    "stars": 5,
+    "year": 2025,
+    "program": "ANCAP",
+    "counts": true,
+    "note": "Denza B5 PHEV (Austrália), dez/2025: 86% adulto, 95% criança, 74% vulneráveis, 78% assistências; penalidade de 8 pontos na estrutura dianteira.",
+    "source": "https://carnewschina.com/2025/12/18/byds-denza-b5-body-on-frame-suv-scored-five-stars-in-ancap-crash-test/"
+  },
+  "sources": [
+    {
+      "label": "Webmotors — Denza B5 2026, ficha e itens",
+      "url": "https://www.webmotors.com.br/denza/b5/2026"
+    },
+    {
+      "label": "Heycar — ficha técnica do Denza B5 1.5 PHEV 2026",
+      "url": "https://heycar.com.br/ficha-tecnica/ficha-tecnica-completa-do-denza-b5-1-5-phev-2026-com-potencia-consumo-e-muito-mais"
+    },
+    {
+      "label": "Autoesporte via Grupo Sentinela — teste do Denza B5",
+      "url": "https://www.gruposentinela.com.br/teste-denza-b5-e-jipao-da-byd-com-luxo-de-land-rover-a-preco-de-toyota/"
+    },
+    {
+      "label": "Denza Brasil — página oficial do B5",
+      "url": "https://www.denza.com/br/B5.html"
+    },
+    {
+      "label": "Mixvale — B5 por R$ 405 mil (GL) e R$ 449 mil (GS), set/2026",
+      "url": "https://www.mixvale.com.br/2026/09/21/byd-lanca-denza-b5-por-r-405-mil-com-motor-hibrido-de-677-cv/"
+    },
+    {
+      "label": "CarNewsChina — Denza B5 recebe 5 estrelas no ANCAP (dez/2025)",
+      "url": "https://carnewschina.com/2025/12/18/byds-denza-b5-body-on-frame-suv-scored-five-stars-in-ancap-crash-test/"
+    }
+  ],
+  "notes": "GS: 11 airbags (site oficial; Webmotors mostra 6 numa lista e 11 em outra; um anúncio cita 9), câmeras 360° com transparência (Autoesporte chama de 540°), ACC com stop & go e centralização em faixa, teto panorâmico que abre até a metade, bancos de couro Nappa com ventilação, aquecimento, memória e massagem. Tela grande e painel digital são citados nas fichas, sem tamanho confirmado.",
+  "unverified": [
+    "tech.wirelessMirroring",
+    "tech.wirelessCharger",
+    "tech.connectedApp",
+    "tech.keyless",
+    "tech.screen10/digitalCluster (sem tamanho confirmado)",
+    "comfort.digitalAC",
+    "comfort.rearVents",
+    "safety.aeb",
+    "safety.blindSpot",
+    "safety.rearCrossTraffic"
+  ]
+}

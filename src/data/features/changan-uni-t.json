@@ -1,0 +1,76 @@
+{
+  "id": "changan-uni-t",
+  "version": "Caoa Changan Uni-T Infinity 2026",
+  "researchedAt": "2026-10",
+  "tech": {
+    "screen10": true,
+    "wirelessMirroring": true,
+    "digitalCluster": true,
+    "wirelessCharger": null,
+    "camera360": true,
+    "adaptiveCruise": true,
+    "connectedApp": null,
+    "keyless": null
+  },
+  "comfort": {
+    "automatic": true,
+    "digitalAC": null,
+    "rearVents": null,
+    "leather": null,
+    "powerSeat": null,
+    "seatClimate": true,
+    "sunroof": true
+  },
+  "safety": {
+    "airbags6": true,
+    "aeb": true,
+    "laneKeep": true,
+    "blindSpot": true,
+    "rearCrossTraffic": null
+  },
+  "ncap": {
+    "stars": 5,
+    "year": 2021,
+    "program": "C-NCAP",
+    "counts": false,
+    "note": "Só foi encontrado o C-NCAP (China) de 2021, da geração anterior e de outro programa; não há Latin NCAP, Euro NCAP nem ANCAP do Uni-T.",
+    "source": "https://nepaldrives.com/changan-uni-t-crossover-five-star-ratings-cncap"
+  },
+  "sources": [
+    {
+      "label": "Car.Blog.br — Caoa Changan Uni-T 2026: R$ 169.990, consumo e ficha",
+      "url": "https://www.car.blog.br/2026/03/caoa-changan-uni-t-2026-preco-r-169990.html"
+    },
+    {
+      "label": "Verificar Auto — Uni-T 2026: ficha, consumo (Inmetro) e preço",
+      "url": "https://verificarauto.com.br/caoa-changan-uni-t-2026-preco-ficha-tecnica/"
+    },
+    {
+      "label": "FichasCar — Uni-T 2026",
+      "url": "https://www.fichascar.com.br/ficha/caoa-changan-uni-t-2026"
+    },
+    {
+      "label": "Mundo do Automóvel PcD — Uni-T (ADAS, produção em Anápolis)",
+      "url": "https://mundodoautomovelparapcd.com.br/caoa-changan-uni-t-e-liberado-para-pcd/"
+    },
+    {
+      "label": "Webmotors — Caoa Changan Uni-T 2026",
+      "url": "https://www.webmotors.com.br/caoa-changan/uni-t/2026"
+    },
+    {
+      "label": "Vrum — Uni-T sobe de preço (20/abr/2026)",
+      "url": "https://www.vrum.com.br/mercado/2026/04/7401784-caoa-changan-uni-t-sobe-de-preco-no-brasil-e-encosta-em-rivais-diretos.html"
+    }
+  ],
+  "notes": "Versão única: 6 airbags, ACC stop & go, frenagem autônoma, alerta de colisão, ponto cego, permanência em faixa, câmera 360° com sensores dianteiros e traseiros, teto panorâmico fixo, bancos com ventilação e aquecimento, som de 11 alto-falantes, central de 12,8\" com CarPlay/Android Auto sem fio e painel de 12,3\" (Car.Blog.br; outra fonte cita 10,1\"/7\").",
+  "unverified": [
+    "tech.wirelessCharger",
+    "tech.connectedApp",
+    "tech.keyless",
+    "comfort.digitalAC",
+    "comfort.rearVents (só uma fonte duvidosa)",
+    "comfort.leather",
+    "comfort.powerSeat",
+    "safety.rearCrossTraffic"
+  ]
+}

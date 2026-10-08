@@ -1,0 +1,176 @@
+{
+  "catalogSeed": {
+    "brand": "Jetour",
+    "model": "T1 PHEV",
+    "version": "Advance 1.5 TGDI PHEV DHT",
+    "category": "suv-medio",
+    "powertrain": "hibrido-plugin",
+    "seats": 5,
+    "trunkL": 574,
+    "refPriceNew": 249900,
+    "consumption": {
+      "cityKmL": 13.6,
+      "roadKmL": 12.2,
+      "cityKmLEthanol": null,
+      "roadKmLEthanol": null,
+      "cityKmKWh": 3.3,
+      "roadKmKWh": 3.3
+    },
+    "evShareNote": "Híbrido plug-in com bateria LFP de 26,7 kWh e 88 km elétricos (PBEV, segundo a maioria das fontes). Só gasolina, tanque de 70 L. Recarga DC de até 40 kW.",
+    "fipeBrand": "JETOUR",
+    "fipeInclude": [
+      "T1",
+      "Advance"
+    ],
+    "since": 2026
+  },
+  "id": "jetour-t1-phev",
+  "researchedAt": "2026-10",
+  "displayName": "Jetour T1 PHEV",
+  "summary": "SUV médio de visual off-road (4,71 m) da Jetour, híbrido plug-in importado da China e sem tração 4x4. Motor 1.5 turbo com motor elétrico de 204 cv (315 cv combinados), câmbio DHT de uma marcha e tração dianteira. Bateria de 26,7 kWh com 88 km elétricos (Inmetro) e tanque de 70 L; a marca anuncia 1.200 km de autonomia total. Duas versões: Advance (R$ 249.900) e Premium (R$ 264.900). A imprensa o chama de 'anti-Compass'.",
+  "generation": "1ª geração (T1/Traveller C-DM, 2024); no Brasil desde fev/mar de 2026 (linha 2026). Concessionárias já anunciam 2026/2027.",
+  "timeline": [
+    {
+      "modelYear": "2026",
+      "change": "Pré-venda em jan/2026: Advance R$ 249.900 e Premium R$ 264.900 (promocional, prorrogado até abr/2026)."
+    },
+    {
+      "modelYear": "2026",
+      "change": "Um site cita reajuste para R$ 254.900 e R$ 274.900, mas os valores de venda direta de out/2026 (R$ 224.910 e R$ 238.410 = -10%) indicam tabela de R$ 249.900 e R$ 264.900."
+    },
+    {
+      "modelYear": "2026",
+      "change": "Out/2026: venda direta para CNPJ e produtor rural com 10% de desconto."
+    }
+  ],
+  "highlights": [
+    "Porta-malas grande: 574 L (1.455 L com o banco rebatido).",
+    "88 km elétricos no Inmetro: dá para rodar quase tudo na cidade sem gasolina, se carregar em casa.",
+    "315 cv e 520 Nm combinados, 0 a 100 km/h em 8,7 s.",
+    "Segundo Autoo e Motor Show, o Advance já tem ACC, frenagem autônoma, assistente de faixa, ponto cego e tráfego cruzado.",
+    "5 estrelas no ASEAN NCAP (T1, 2026), protocolo que não é Latin/Euro NCAP.",
+    "Garantia de 7 anos/150 mil km; 8 anos/160 mil km para bateria e motor elétrico."
+  ],
+  "watchOuts": [
+    "Consumo só com gasolina de 13,6/12,2 km/l (Inmetro), pior que o de um híbrido pleno como o Corolla Cross.",
+    "Visual de jipe, mas sem 4x4 (tração dianteira).",
+    "As fontes divergem sobre os itens do Advance (ADAS e teto solar).",
+    "Marca nova (estreou em mar/2026): rede em formação e revenda sem histórico.",
+    "Recarga DC de só 40 kW.",
+    "Nenhum recall ativo no Brasil, segundo a página oficial."
+  ],
+  "specs": {
+    "version": "T1 Advance (linha 2026)",
+    "engine": "1.5 turbo gasolina (135 cv) + motor elétrico de 204 cv; bateria LFP de 26,7 kWh",
+    "powerCv": "315 (combinada)",
+    "torqueKgfm": "53 (520 Nm combinados)",
+    "transmission": "DHT de uma marcha, tração dianteira",
+    "trunkL": 574,
+    "lengthMm": 4705,
+    "wheelbaseMm": 2800,
+    "safety": "ASEAN NCAP 5 estrelas (2026, mercado da Malásia). Sem Latin NCAP, Euro NCAP ou ANCAP.",
+    "warranty": "7 anos/150 mil km (veículo); 8 anos/160 mil km (bateria e motor elétrico)"
+  },
+  "inmetro": {
+    "version": "T1 PHEV",
+    "cityGas": 13.6,
+    "roadGas": 12.2,
+    "cityEth": null,
+    "roadEth": null,
+    "cityKmKWh": null,
+    "roadKmKWh": null,
+    "year": "PBEV 2026 (conforme a imprensa). Elétrico equivalente: 34,7 km/l (cidade) e 26,8 km/l (estrada). 88 km elétricos (outras fontes: 80 ou 115 km).",
+    "source": "https://www.dgabc.com.br/Noticia/4344711/jetour-t1-encara-rivais-com-porte-potencia-e-alcance-de-1-200-km"
+  },
+  "price0km": {
+    "version": "Advance",
+    "price": 249900,
+    "date": "out/2026",
+    "source": "https://mecanicaonline.com.br/2026/09/jetour-s06-pcd-fica-r-36-700-mais-barato-e-passa-a-custar-r-163-200/"
+  },
+  "versionsAndPrices": [
+    {
+      "version": "Advance",
+      "price": 249900,
+      "date": "out/2026 (derivado: venda direta de R$ 224.910 = -10%)",
+      "source": "https://mecanicaonline.com.br/2026/09/jetour-s06-pcd-fica-r-36-700-mais-barato-e-passa-a-custar-r-163-200/"
+    },
+    {
+      "version": "Premium",
+      "price": 264900,
+      "date": "set/2026",
+      "source": "https://mundodoautomovelparapcd.com.br/jetour-t1-para-cnpj-em-setembro-de-2026/"
+    },
+    {
+      "version": "Advance (venda direta, CNPJ e produtor rural)",
+      "price": 224910,
+      "date": "out/2026",
+      "source": "https://mecanicaonline.com.br/2026/09/jetour-s06-pcd-fica-r-36-700-mais-barato-e-passa-a-custar-r-163-200/"
+    },
+    {
+      "version": "Premium (venda direta)",
+      "price": 238410,
+      "date": "out/2026",
+      "source": "https://mecanicaonline.com.br/2026/09/jetour-s06-pcd-fica-r-36-700-mais-barato-e-passa-a-custar-r-163-200/"
+    }
+  ],
+  "launchModelYearBR": 2026,
+  "catalogCheck": "Modelo ainda não está no catálogo. FIPE: 'T1 Advance' (307001-8) e 'T1 Premium' (307002-6). T1 Advance 2026 = R$ 229.586 (mai/2026); faixa do T1 2026 = R$ 229.908 a R$ 243.443 (carzin).",
+  "wikipedia": {
+    "lang": "en",
+    "title": "Jetour T1"
+  },
+  "officialUrl": "https://jetourbr.com/",
+  "sources": [
+    {
+      "label": "Motor Show: T1, preço, equipamentos e motor",
+      "url": "https://motorshow.com.br/jetour-t1-preco-equipamentos-motor"
+    },
+    {
+      "label": "Motor Show: lançamento do T1",
+      "url": "https://motorshow.com.br/jetour-t1-lancamento-brasil"
+    },
+    {
+      "label": "Autoo: T1, preços, peças e equipamentos",
+      "url": "https://www.autoo.com.br/jetour-t1-precos-pecas-consumo-e-equipamentos/"
+    },
+    {
+      "label": "Rádio Itatiaia: T1, preços e equipamentos",
+      "url": "https://www.itatiaia.com.br/auto/jetour-t1-veja-os-precos-e-equipamentos-do-suv-hibrido-com-pegada-off-road"
+    },
+    {
+      "label": "DGABC: T1 com alcance de 1.200 km",
+      "url": "https://www.dgabc.com.br/Noticia/4344711/jetour-t1-encara-rivais-com-porte-potencia-e-alcance-de-1-200-km"
+    },
+    {
+      "label": "Motor Show: impressões ao dirigir o T1",
+      "url": "https://motorshow.com.br/impressoes-ao-dirigir-jetour-t1"
+    },
+    {
+      "label": "Mundo do Automóvel para PCD: T1 para CNPJ",
+      "url": "https://mundodoautomovelparapcd.com.br/jetour-t1-para-cnpj-em-setembro-de-2026/"
+    },
+    {
+      "label": "Mecânica Online: venda direta da Jetour",
+      "url": "https://mecanicaonline.com.br/2026/09/jetour-s06-pcd-fica-r-36-700-mais-barato-e-passa-a-custar-r-163-200/"
+    },
+    {
+      "label": "Carzin: FIPE do T1 2026",
+      "url": "https://carzin.com.br/tabela-fipe/carros/jetour/t1/2026/"
+    },
+    {
+      "label": "Carz.my: T1 com 5 estrelas no ASEAN NCAP",
+      "url": "https://www.carz.com.my/2026/01/new-jetour-t1-earns-5-star-asean-ncap-crash-test-rating"
+    }
+  ],
+  "unverified": [
+    "km/kWh: estimativa de 3,3 (88 km ÷ 26,7 kWh); Inmetro em km/kWh não encontrado.",
+    "Autonomia elétrica: 88 km x 80 km x 115 km entre as fontes.",
+    "Preço do Advance em out/2026: derivado dos valores de venda direta (-10%); um site cita R$ 254.900.",
+    "Itens do Advance: ADAS e teto solar divergem entre fontes.",
+    "Número de airbags na versão brasileira (6 em outros mercados).",
+    "Torque combinado: 52 kgfm x 520 Nm.",
+    "Custo das revisões: não encontrado.",
+    "Pesquisa feita por resumos de busca das fontes listadas (páginas não abertas diretamente); confira os valores na fonte."
+  ]
+}

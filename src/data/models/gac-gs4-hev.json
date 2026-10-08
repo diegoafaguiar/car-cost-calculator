@@ -1,0 +1,179 @@
+{
+  "catalogSeed": {
+    "brand": "GAC",
+    "model": "GS4 HEV",
+    "version": "Premium 2.0 HEV",
+    "category": "suv-medio",
+    "powertrain": "hibrido",
+    "seats": 5,
+    "trunkL": 638,
+    "refPriceNew": 191990,
+    "consumption": {
+      "cityKmL": 14.1,
+      "roadKmL": 11.8,
+      "cityKmLEthanol": null,
+      "roadKmLEthanol": null,
+      "cityKmKWh": null,
+      "roadKmKWh": null
+    },
+    "evShareNote": "Híbrido pleno (não recarrega na tomada); bateria de 2,1 kWh; só gasolina.",
+    "fipeBrand": "GAC",
+    "fipeInclude": [
+      "GS4 Premium (Híbrido)"
+    ],
+    "since": 2026
+  },
+  "id": "gac-gs4-hev",
+  "researchedAt": "2026-10",
+  "displayName": "GAC GS4 HEV",
+  "summary": "SUV médio híbrido pleno (HEV) da chinesa GAC, importado da China (é a versão de exportação do GAC Emkoo). Motor 2.0 aspirado de injeção direta (140 cv) e motor elétrico de 182 cv, com 235 cv combinados; não recarrega na tomada. Duas versões: Premium e Elite. Porta-malas grande, de 638 L.",
+  "generation": "Nova geração (base Emkoo/GS4 Max, apresentada em 2024); lançado no Brasil em mai/2025 como linha 2026.",
+  "timeline": [
+    {
+      "modelYear": "2026",
+      "change": "Lançamento em mai/2025: Premium R$ 189.990 e Elite R$ 199.990."
+    },
+    {
+      "modelYear": "2026",
+      "change": "Reajuste: Premium R$ 191.990 e Elite R$ 209.990."
+    },
+    {
+      "modelYear": "2026/2027",
+      "change": "Jun/2026: ação para taxistas e PcD com Premium a R$ 154.990. Set/2026: venda direta (CPF e CNPJ) com Premium a R$ 169.990 até 30/09/2026."
+    }
+  ],
+  "highlights": [
+    "235 cv combinados (2.0 de 140 cv + elétrico de 182 cv e 30,6 kgfm).",
+    "Inmetro: 14,1 km/l na cidade e 11,8 km/l na estrada (gasolina).",
+    "Porta-malas de 638 L e 4,68 m de comprimento — maior que a média dos SUVs médios.",
+    "Premium já tem piloto automático adaptativo, frenagem autônoma e 6 airbags.",
+    "Descontos frequentes: R$ 169.990 em set/2026 (venda direta)."
+  ],
+  "watchOuts": [
+    "Só gasolina (não é flex) e não é plug-in; consumo Inmetro na estrada (11,8 km/l) é modesto para um híbrido.",
+    "Garantia menor que a dos elétricos da marca: 5 anos/150 mil km (garantia separada da bateria não confirmada).",
+    "Premium não tem câmera 360°, teto panorâmico nem carregador por indução (itens da Elite).",
+    "Sem limpador do vidro traseiro e com maçanetas escamoteáveis (crítica da Autoo).",
+    "Marca nova no Brasil (mai/2025): rede pequena; FIPE do 2026 caiu para R$ 159.533 (set/2026), contra R$ 191.990 de tabela — desvalorização alta.",
+    "Reclame Aqui da GAC Brasil (jan-jun/2026): nota 7,0/10, 156 reclamações, 79,7% resolvidas; nenhuma reclamação específica do GS4 encontrada.",
+    "Sem teste Latin NCAP/Euro NCAP; só ASEAN NCAP 5 estrelas do Emkoo (2025)."
+  ],
+  "specs": {
+    "version": "GAC GS4 Premium 2.0 HEV (linha 2026/2027)",
+    "engine": "2.0 aspirado gasolina, injeção direta, ciclo Atkinson (140 cv) + motor elétrico de 182 cv; bateria de 2,1 kWh",
+    "powerCv": "235 (combinada)",
+    "torqueKgfm": "30,6 (motor elétrico)",
+    "transmission": "Automática (híbrida; citada como CVT/e-CVT pela Webmotors)",
+    "trunkL": 638,
+    "lengthMm": 4680,
+    "wheelbaseMm": 2750,
+    "safety": "6 airbags; sem teste Latin NCAP ou Euro NCAP; ASEAN NCAP 5 estrelas (GAC Emkoo, 2025)",
+    "warranty": "5 anos/150 mil km (híbridos GAC)"
+  },
+  "inmetro": {
+    "version": "GS4 HEV",
+    "cityGas": 14.1,
+    "roadGas": 11.8,
+    "cityEth": null,
+    "roadEth": null,
+    "cityKmKWh": null,
+    "roadKmKWh": null,
+    "year": "PBEV (conforme imprensa; ano não informado)",
+    "source": "https://atarde.com.br/autos/gac-gs4-hybrid-no-brasil-preco-ficha-tecnica-e-autonomia-1396408"
+  },
+  "price0km": {
+    "version": "Premium",
+    "price": 191990,
+    "date": "set/2026",
+    "source": "https://garagem360.com.br/gac-gs4-hibrido-cai-r-22-mil-vai-a-r-169-990-e-entrega-235-cv/"
+  },
+  "versionsAndPrices": [
+    {
+      "version": "Premium (preço sugerido)",
+      "price": 191990,
+      "date": "set/2026",
+      "source": "https://garagem360.com.br/gac-gs4-hibrido-cai-r-22-mil-vai-a-r-169-990-e-entrega-235-cv/"
+    },
+    {
+      "version": "Premium (venda direta CPF/CNPJ até 30/09/2026)",
+      "price": 169990,
+      "date": "set/2026",
+      "source": "https://www.mixvale.com.br/2026/09/30/gac-gs4-hybrid-premium-recebe-desconto-de-r-22-mil-no-brasil/"
+    },
+    {
+      "version": "Elite (preço sugerido)",
+      "price": 209990,
+      "date": "set/2026",
+      "source": "https://mundodoautomovelparapcd.com.br/gac-gs4-para-cnpj-em-setembro-de-2026/"
+    }
+  ],
+  "launchModelYearBR": 2026,
+  "catalogCheck": "Modelo ainda não está no catálogo. Sugere-se a Premium (sugerido R$ 191.990). FIPE: marca 'GAC', modelo 'GS4 Premium (Híbrido)' código 304001-1 (categoria SUV médio); há também 'GS4 Elite (Híbrido)'. FIPE set/2026: Premium 2026 = R$ 159.533; zero km = R$ 191.990.",
+  "wikipedia": {
+    "lang": "en",
+    "title": "GAC Emkoo"
+  },
+  "officialUrl": "https://www.gacgroup.com/pt-br/suv/gac-gs4-hybrid",
+  "sources": [
+    {
+      "label": "GAC Brasil — GS4 Hybrid",
+      "url": "https://www.gacgroup.com/pt-br/suv/gac-gs4-hybrid"
+    },
+    {
+      "label": "A Tarde — preço, ficha e consumo Inmetro",
+      "url": "https://atarde.com.br/autos/gac-gs4-hybrid-no-brasil-preco-ficha-tecnica-e-autonomia-1396408"
+    },
+    {
+      "label": "Terra — GS4 fica até R$ 10 mil mais caro",
+      "url": "https://www.terra.com.br/mobilidade/gac-gs4-hibrido-fica-ate-r-10-mil-mais-caro-e-ja-passa-de-r-200-mil,7359fd03f6991a8accf4701fc5fe47720knxggo9.html"
+    },
+    {
+      "label": "Garagem 360 — desconto de R$ 22 mil (set/2026)",
+      "url": "https://garagem360.com.br/gac-gs4-hibrido-cai-r-22-mil-vai-a-r-169-990-e-entrega-235-cv/"
+    },
+    {
+      "label": "Mix Vale — GS4 Premium com desconto (30/09/2026)",
+      "url": "https://www.mixvale.com.br/2026/09/30/gac-gs4-hybrid-premium-recebe-desconto-de-r-22-mil-no-brasil/"
+    },
+    {
+      "label": "Mundo do Automóvel para PCD — GS4 CNPJ set/2026",
+      "url": "https://mundodoautomovelparapcd.com.br/gac-gs4-para-cnpj-em-setembro-de-2026/"
+    },
+    {
+      "label": "Auto+ TV — GAC derruba preço do GS4 (taxi/PcD)",
+      "url": "https://www.automaistv.com.br/vendas-e-precos/gac-derruba-preco-do-gs4-e-outros-carros-em-quase-r-40-mil/"
+    },
+    {
+      "label": "Webmotors — GAC GS4 2026",
+      "url": "https://www.webmotors.com.br/gac/gs4/2026"
+    },
+    {
+      "label": "Autoo — avaliação do GS4",
+      "url": "https://www.autoo.com.br/gac-gs4-se-mostra-uma-grata-surpresa-no-dia-a-dia-saiba-como-anda/"
+    },
+    {
+      "label": "Tabela Carros — FIPE GS4 Premium 2026",
+      "url": "https://tabelacarros.com/carros/gac/GS4-PREMIUM--HIBRIDO-/2026-Hibrido"
+    },
+    {
+      "label": "ASEAN NCAP — GAC Emkoo 5 estrelas",
+      "url": "https://www.aseancap.org/v4/?p=12379"
+    },
+    {
+      "label": "Reclame Aqui — GAC Brasil",
+      "url": "https://www.reclameaqui.com.br/empresa/gac-motor-brasil/lista-reclamacoes"
+    },
+    {
+      "label": "Autoo — garantia dos modelos GAC",
+      "url": "https://www.autoo.com.br/gac-chega-ao-brasil-com-5-modelos-entre-eletricos-e-hibridos-veja-precos/"
+    }
+  ],
+  "unverified": [
+    "Ano do PBEV dos números 14,1/11,8 km/l (vistos na imprensa, não na tabela do Inmetro).",
+    "Preço público vigente em out/2026 (último visto: R$ 191.990 sugerido, set/2026; campanha de R$ 169.990 terminou em 30/09).",
+    "Tipo exato de transmissão (Webmotors cita CVT).",
+    "Garantia específica da bateria híbrida.",
+    "Altura: 1,66 m x 1,67 m entre fontes.",
+    "Pesquisa feita por resumos de busca das fontes listadas (páginas não abertas diretamente); confira os valores na fonte."
+  ]
+}

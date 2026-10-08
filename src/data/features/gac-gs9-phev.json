@@ -1,0 +1,74 @@
+{
+  "id": "gac-gs9-phev",
+  "version": "GAC GS9 Ultra 2027 (R$ 399.990)",
+  "researchedAt": "2026-10",
+  "tech": {
+    "screen10": null,
+    "wirelessMirroring": null,
+    "digitalCluster": null,
+    "wirelessCharger": true,
+    "camera360": true,
+    "adaptiveCruise": null,
+    "connectedApp": null,
+    "keyless": null
+  },
+  "comfort": {
+    "automatic": null,
+    "digitalAC": null,
+    "rearVents": null,
+    "leather": null,
+    "powerSeat": null,
+    "seatClimate": null,
+    "sunroof": null
+  },
+  "safety": {
+    "airbags6": true,
+    "aeb": true,
+    "laneKeep": null,
+    "blindSpot": true,
+    "rearCrossTraffic": null
+  },
+  "ncap": {
+    "stars": null,
+    "year": null,
+    "program": null,
+    "note": "Nenhum teste NCAP encontrado para o GS9/Trumpchi Xiangwang S9.",
+    "source": ""
+  },
+  "sources": [
+    {
+      "label": "Autoo — GS9 lançamento e equipamentos",
+      "url": "https://www.autoo.com.br/gac-lanca-suv-de-luxo-gs9-no-brasil-com-porsche-e-mercedes-na-mira-veja-precos/"
+    },
+    {
+      "label": "DGABC — GS9 estreia no Brasil",
+      "url": "https://www.dgabc.com.br/Noticia/4341847/gac-gs9-estreia-no-brasil-por-r%24-379-990-suv-tem-500-cv-e-6-lugares"
+    },
+    {
+      "label": "Webmotors — ficha GS9 2027",
+      "url": "https://www.webmotors.com.br/catalogo/comparativo-de-carros/gac-gs9-2027-44-5-kw-plug-in-hybrid-reev-ultra-awd-388564"
+    },
+    {
+      "label": "Motor Show — impressões GS9",
+      "url": "https://motorshow.com.br/impressoes-gac-gs9"
+    }
+  ],
+  "notes": "Versão única Ultra. Confirmados: 9 airbags, câmeras 360°/540° com estacionamento automático, frenagem autônoma, monitor de ponto cego, head-up display, 2 carregadores sem fio de 50 W, som de 21 alto-falantes com cancelamento ativo de ruído, bancos da 3ª fileira com rebatimento elétrico. Demais itens (ACC, telas, ar, bancos) não vistos em fonte brasileira nesta pesquisa.",
+  "unverified": [
+    "tech.screen10",
+    "tech.wirelessMirroring",
+    "tech.digitalCluster",
+    "tech.adaptiveCruise",
+    "tech.connectedApp",
+    "tech.keyless",
+    "comfort.automatic",
+    "comfort.digitalAC",
+    "comfort.rearVents",
+    "comfort.leather",
+    "comfort.powerSeat",
+    "comfort.seatClimate",
+    "comfort.sunroof",
+    "safety.laneKeep",
+    "safety.rearCrossTraffic"
+  ]
+}

@@ -1,0 +1,182 @@
+{
+  "catalogSeed": {
+    "brand": "Jetour",
+    "model": "S06 PHEV",
+    "version": "Advance 1.5 TGDI PHEV DHT",
+    "category": "suv-medio",
+    "powertrain": "hibrido-plugin",
+    "seats": 5,
+    "trunkL": 416,
+    "refPriceNew": 199900,
+    "consumption": {
+      "cityKmL": 14.0,
+      "roadKmL": 12.6,
+      "cityKmLEthanol": null,
+      "roadKmLEthanol": null,
+      "cityKmKWh": 3.6,
+      "roadKmKWh": 3.6
+    },
+    "evShareNote": "Híbrido plug-in com bateria de 19,43 kWh e cerca de 70 km elétricos (homologação). Só gasolina, tanque de 60 L.",
+    "fipeBrand": "JETOUR",
+    "fipeInclude": [
+      "S06",
+      "Advance"
+    ],
+    "since": 2026
+  },
+  "id": "jetour-s06-phev",
+  "researchedAt": "2026-10",
+  "displayName": "Jetour S06 PHEV",
+  "summary": "SUV médio híbrido plug-in da Jetour (marca independente do grupo Chery), importado da China. Motor 1.5 turbo a gasolina e motor elétrico de 204 cv, com 315 cv e 520 Nm combinados, câmbio DHT e tração dianteira. Bateria de 19,4 kWh com cerca de 70 km elétricos e tanque de 60 L; a marca anuncia 1.200 km de autonomia total. É o modelo de entrada da marca no Brasil, com duas versões: Advance (R$ 199.900) e Premium (R$ 229.900).",
+  "generation": "1ª geração; mesma família do Soueast S06 DM (derivado do Jetour Dashing). Lançado no Brasil em fev/mar de 2026 (linha 2026); concessionárias já anunciam 2026/2027.",
+  "timeline": [
+    {
+      "modelYear": "2026",
+      "change": "Pré-venda e estreia (fev/mar de 2026): Advance R$ 199.900 e Premium R$ 229.900 (preço promocional até abr/2026, depois mantido)."
+    },
+    {
+      "modelYear": "2026",
+      "change": "Out/2026: Advance para PCD por R$ 163.200; venda direta (CNPJ com 2 ou mais unidades, produtor rural) com 10% de desconto: Advance R$ 179.910 e Premium R$ 206.910."
+    },
+    {
+      "modelYear": "2027",
+      "change": "Concessionárias anunciam S06 2026/2027; mudanças não confirmadas."
+    }
+  ],
+  "highlights": [
+    "315 cv combinados e 0 a 100 km/h em 7,8 s, por preço de SUV compacto bem equipado.",
+    "Inmetro, modo híbrido: 14,0 km/l (cidade) e 12,6 km/l (estrada); cerca de 70 km elétricos.",
+    "Advance já traz câmera 360°, multimídia de 12,8\" com CarPlay/Android Auto sem fio, ar digital de duas zonas com saída traseira, banco do motorista elétrico, couro sintético, tampa traseira elétrica, carregador por indução e rodas de 18\".",
+    "Garantia de 7 anos/150 mil km (veículo) e 8 anos/160 mil km (bateria e motor elétrico)."
+  ],
+  "watchOuts": [
+    "O Advance não tem ACC, frenagem autônoma, assistente de faixa nem monitor de ponto cego: o pacote ADAS é só do Premium (R$ 229.900).",
+    "A Motor Show avaliou o S06 como inferior ao Jaecoo 7 PHEV.",
+    "O painel não mostra o consumo em kWh/100 km no modo elétrico, só o equivalente em litros (Motor Show).",
+    "Marca nova (estreou em mar/2026, com cerca de 1.291 emplacamentos de fev a abr): rede menor e revenda sem histórico.",
+    "Descontos fortes (PCD R$ 163.200, venda direta -10%) pressionam o valor de revenda.",
+    "Nenhum recall ativo no Brasil, segundo a página oficial de recall da Jetour."
+  ],
+  "specs": {
+    "version": "S06 Advance (linha 2026)",
+    "engine": "1.5 turbo gasolina com injeção direta (135 cv e 20,4 kgfm, conforme a imprensa) + motor elétrico de 204 cv e 31,6 kgfm; bateria de 19,43 kWh",
+    "powerCv": "315 (combinada)",
+    "torqueKgfm": "53 (520 Nm combinados)",
+    "transmission": "DHT (transmissão híbrida dedicada), tração dianteira",
+    "trunkL": 416,
+    "lengthMm": 4610,
+    "wheelbaseMm": 2720,
+    "safety": "Sem teste Latin NCAP, Euro NCAP ou ANCAP encontrado. Advance sem AEB.",
+    "warranty": "7 anos/150 mil km (veículo); 8 anos/160 mil km (bateria e motor elétrico)"
+  },
+  "inmetro": {
+    "version": "S06 PHEV",
+    "cityGas": 14.0,
+    "roadGas": 12.6,
+    "cityEth": null,
+    "roadEth": null,
+    "cityKmKWh": null,
+    "roadKmKWh": null,
+    "year": "PBEV 2026 (conforme a imprensa). Modo elétrico equivalente: 36,2 km/l (cidade) e 28,9 km/l (estrada); outra fonte cita 13,4 km/l híbrido e 35,9 km/l elétrico combinados.",
+    "source": "https://www.itatiaia.com.br/auto/jetour-s06-estreia-prometendo-autonomia-de-1-200-km-veja-os-precos-das-versoes"
+  },
+  "price0km": {
+    "version": "Advance",
+    "price": 199900,
+    "date": "out/2026",
+    "source": "https://www.vrum.com.br/bom-negocio/2026/10/7512245-jetour-s06-hibrido-plug-in-tem-versao-para-pcd-por-rs-163.html"
+  },
+  "versionsAndPrices": [
+    {
+      "version": "Advance",
+      "price": 199900,
+      "date": "out/2026",
+      "source": "https://www.vrum.com.br/bom-negocio/2026/10/7512245-jetour-s06-hibrido-plug-in-tem-versao-para-pcd-por-rs-163.html"
+    },
+    {
+      "version": "Premium",
+      "price": 229900,
+      "date": "out/2026",
+      "source": "https://www.vrum.com.br/bom-negocio/2026/10/7512245-jetour-s06-hibrido-plug-in-tem-versao-para-pcd-por-rs-163.html"
+    },
+    {
+      "version": "Advance (PCD)",
+      "price": 163200,
+      "date": "out/2026",
+      "source": "https://canalve.com.br/jetour-s06-advance-ganha-condicao-pcd-r-163-200/"
+    },
+    {
+      "version": "Advance (oferta de concessionária em SP, até 31/10/2026)",
+      "price": 179900,
+      "date": "out/2026",
+      "source": "https://www.carrera.com.br/carros/novos/jetour"
+    }
+  ],
+  "launchModelYearBR": 2026,
+  "catalogCheck": "Modelo ainda não está no catálogo. FIPE: 'S06 Advance' (código 307005-0) e 'S06 Premium' (307006-9). Valores: S06 Premium R$ 210.886 a R$ 229.900, conforme o ano (tabelafipebrasil, set/2026). Para o Advance, um site dá R$ 184.648 (mai/2026) e outro atribui esse valor ao Premium (conflito).",
+  "wikipedia": null,
+  "officialUrl": "https://jetourbr.com/",
+  "sources": [
+    {
+      "label": "Rádio Itatiaia: S06 estreia, preços e autonomia",
+      "url": "https://www.itatiaia.com.br/auto/jetour-s06-estreia-prometendo-autonomia-de-1-200-km-veja-os-precos-das-versoes"
+    },
+    {
+      "label": "Motor Show: avaliação do S06",
+      "url": "https://motorshow.com.br/avaliacao-jetour-s06"
+    },
+    {
+      "label": "Auto+ TV: avaliação do S06 Advance",
+      "url": "https://www.automaistv.com.br/avaliacao/jetour-s06-advance-avaliacao/"
+    },
+    {
+      "label": "Autoo: S06, preços e equipamentos",
+      "url": "https://www.autoo.com.br/jetour-s06-tem-desconto-de-quase-r-40-mil-para-pcd-veja-precos-e-equipamentos-do-suv/"
+    },
+    {
+      "label": "Verificar Auto: ficha dos SUVs Jetour",
+      "url": "https://verificarauto.com.br/jetour-no-brasil-2026-precos-versoes-e-tudo-sobre-os-suvs-s06-t1-e-t2/"
+    },
+    {
+      "label": "Vrum: S06 PCD (out/2026)",
+      "url": "https://www.vrum.com.br/bom-negocio/2026/10/7512245-jetour-s06-hibrido-plug-in-tem-versao-para-pcd-por-rs-163.html"
+    },
+    {
+      "label": "Canal VE: S06 PCD e venda direta",
+      "url": "https://canalve.com.br/jetour-s06-advance-ganha-condicao-pcd-r-163-200/"
+    },
+    {
+      "label": "Mecânica Online: venda direta com 10%",
+      "url": "https://mecanicaonline.com.br/2026/09/jetour-s06-pcd-fica-r-36-700-mais-barato-e-passa-a-custar-r-163-200/"
+    },
+    {
+      "label": "CNN Brasil: Jetour chega com o S06 PHEV",
+      "url": "https://www.cnnbrasil.com.br/auto/especializada-em-suvs-jetour-chega-ao-brasil-com-s06-phev/"
+    },
+    {
+      "label": "Tabela FIPE: S06 Premium",
+      "url": "https://www.tabelafipebrasil.com/carros/JETOUR/S06-PREMIUM"
+    },
+    {
+      "label": "Jetour Brasil: recall",
+      "url": "https://jetourbr.com/recall/"
+    },
+    {
+      "label": "Portal N10: emplacamentos da Jetour",
+      "url": "https://portaln10.com.br/automoveis/crescimento-rapido-jetour-supera-mil-vendas-e-expande-atuacao-no-brasil-333559/"
+    }
+  ],
+  "unverified": [
+    "km/kWh: estimativa de 3,6 (70 km ÷ 19,43 kWh); a Motor Show estimou cerca de 5 km/kWh em teste. Inmetro em km/kWh não encontrado.",
+    "Autonomia elétrica de 70 km: não foi confirmado se é do PBEV.",
+    "Números do Inmetro vêm da imprensa; a etiqueta não foi vista. Há divergência (14,0/12,6 x 13,4 combinado).",
+    "Porta-malas: 416 L (fabricante) x 420 L (medido pela Motor Show).",
+    "Potência do motor a combustão (135 cv) citada só por um site.",
+    "Número de airbags.",
+    "FIPE do S06 Advance (conflito entre sites).",
+    "Wikipedia: não há artigo 'Jetour S06'; foi usado 'Soueast S06' (mesma família, não confirmado como o mesmo carro).",
+    "Custo das revisões: não encontrado.",
+    "Foto: não há artigo da Wikipédia do Jetour S06 (o Soueast S06 é parente, não confirmado como o mesmo carro).",
+    "Pesquisa feita por resumos de busca das fontes listadas (páginas não abertas diretamente); confira os valores na fonte."
+  ]
+}

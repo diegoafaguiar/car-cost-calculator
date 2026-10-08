@@ -1,0 +1,75 @@
+{
+  "id": "jetour-t1-phev",
+  "version": "Jetour T1 Advance 2026",
+  "researchedAt": "2026-10",
+  "tech": {
+    "screen10": null,
+    "wirelessMirroring": null,
+    "digitalCluster": null,
+    "wirelessCharger": null,
+    "camera360": null,
+    "adaptiveCruise": true,
+    "connectedApp": null,
+    "keyless": null
+  },
+  "comfort": {
+    "automatic": null,
+    "digitalAC": null,
+    "rearVents": null,
+    "leather": null,
+    "powerSeat": null,
+    "seatClimate": null,
+    "sunroof": false
+  },
+  "safety": {
+    "airbags6": null,
+    "aeb": true,
+    "laneKeep": true,
+    "blindSpot": true,
+    "rearCrossTraffic": true
+  },
+  "ncap": {
+    "stars": 5,
+    "year": 2026,
+    "program": "ASEAN NCAP",
+    "note": "ASEAN NCAP 5 estrelas (protocolo 2021-2025, jan/2026): 87,67 pontos, adulto 30,47/32. O carro testado é do mercado da Malásia (motorização possivelmente diferente) e o programa não é Latin/Euro NCAP/ANCAP. Sem Latin NCAP.",
+    "source": "https://www.carz.com.my/2026/01/new-jetour-t1-earns-5-star-asean-ncap-crash-test-rating",
+    "counts": false
+  },
+  "sources": [
+    {
+      "label": "Motor Show - T1 preço e equipamentos",
+      "url": "https://motorshow.com.br/jetour-t1-preco-equipamentos-motor"
+    },
+    {
+      "label": "Autoo - T1 equipamentos",
+      "url": "https://www.autoo.com.br/jetour-t1-precos-pecas-consumo-e-equipamentos/"
+    },
+    {
+      "label": "Rádio Itatiaia - T1 equipamentos",
+      "url": "https://www.itatiaia.com.br/auto/jetour-t1-veja-os-precos-e-equipamentos-do-suv-hibrido-com-pegada-off-road"
+    },
+    {
+      "label": "Mobiauto - T1 e T2 itens de série",
+      "url": "https://www.mobiauto.com.br/revista/jetour-t1-e-t2-precos-itens-de-serie-e-diferencas-entre-versoes/10218"
+    }
+  ],
+  "notes": "R$ 249.900. Autoo e Motor Show dão ao Advance ACC, AEB, assistente de faixa, alertas de colisão frontal e traseira, tráfego cruzado traseiro e ponto cego; a Itatiaia sugere que o ADAS nível 2 é do Premium (conflito). Teto panorâmico só no Premium segundo Autoo, Motor Show e Mobiauto (a Itatiaia o lista no Advance). Também são do Premium: carregador sem fio de 50 W, memória no banco, som Sony, luz ambiente e tampa traseira elétrica. Airbags: 6 em outros mercados; não confirmado no Brasil.",
+  "unverified": [
+    "tech.screen10",
+    "tech.wirelessMirroring",
+    "tech.digitalCluster",
+    "tech.wirelessCharger",
+    "tech.camera360",
+    "tech.connectedApp",
+    "tech.keyless",
+    "comfort.automatic",
+    "comfort.digitalAC",
+    "comfort.rearVents",
+    "comfort.leather",
+    "comfort.powerSeat",
+    "comfort.seatClimate",
+    "safety.airbags6",
+    "ncap"
+  ]
+}

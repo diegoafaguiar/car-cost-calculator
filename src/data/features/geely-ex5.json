@@ -1,0 +1,71 @@
+{
+  "id": "geely-ex5",
+  "version": "Geely EX5 Pro elétrico 2026 (R$ 207.800 tabela / R$ 197.800 com bônus)",
+  "researchedAt": "2026-10",
+  "tech": {
+    "screen10": true,
+    "wirelessMirroring": true,
+    "digitalCluster": true,
+    "wirelessCharger": null,
+    "camera360": true,
+    "adaptiveCruise": null,
+    "connectedApp": null,
+    "keyless": null
+  },
+  "comfort": {
+    "automatic": true,
+    "digitalAC": true,
+    "rearVents": null,
+    "leather": null,
+    "powerSeat": true,
+    "seatClimate": true,
+    "sunroof": null
+  },
+  "safety": {
+    "airbags6": true,
+    "aeb": null,
+    "laneKeep": null,
+    "blindSpot": null,
+    "rearCrossTraffic": null
+  },
+  "ncap": {
+    "stars": 5,
+    "year": 2025,
+    "program": "Euro NCAP (e ANCAP 5 estrelas)",
+    "note": "Euro NCAP 2025 do Geely EX5 elétrico: adulto 86%, criança 87%, vulneráveis 83%, assistência 83%. ANCAP 5 estrelas (2025). Sem Latin NCAP.",
+    "source": "https://www.euroncap.com/en/results/geely/ex5/54531",
+    "counts": true
+  },
+  "sources": [
+    {
+      "label": "Webmotors — EX5 2026 equipamentos",
+      "url": "https://www.webmotors.com.br/geely/ex5/2026"
+    },
+    {
+      "label": "Car.blog.br — EX5 Max 2026",
+      "url": "https://www.car.blog.br/2026/09/geely-ex5-max-precos-detalhes.html"
+    },
+    {
+      "label": "Euro NCAP — Geely EX5",
+      "url": "https://www.euroncap.com/en/results/geely/ex5/54531"
+    },
+    {
+      "label": "paultan.org — EX5 Euro NCAP e ANCAP",
+      "url": "https://paultan.org/2025/04/11/geely-ex5-gets-5-stars-from-euro-ncap-and-ancap/"
+    }
+  ],
+  "notes": "Pro: 6 airbags, câmeras 360°, multimídia 15,4\" com CarPlay/Android Auto sem fio, painel digital, ar automático duas zonas, banco do motorista elétrico com memória e ventilação, controle de descida, sensor de estacionamento traseiro, TPMS, faróis LED, rodas 18\". Teto panorâmico, head-up display, banco do passageiro elétrico, retrovisor eletrocrômico, som Flyme 16 alto-falantes e pacote ADAS (ACC, AEB, permanência em faixa) citados na Max. 'seatClimate' = ventilação no banco do motorista.",
+  "unverified": [
+    "tech.wirelessCharger",
+    "tech.adaptiveCruise",
+    "tech.connectedApp",
+    "tech.keyless",
+    "comfort.rearVents",
+    "comfort.leather",
+    "comfort.sunroof",
+    "safety.aeb",
+    "safety.laneKeep",
+    "safety.blindSpot",
+    "safety.rearCrossTraffic"
+  ]
+}

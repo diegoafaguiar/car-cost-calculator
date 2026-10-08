@@ -1,0 +1,177 @@
+{
+  "catalogSeed": {
+    "brand": "Caoa Changan",
+    "model": "Uni-T",
+    "version": "Infinity 1.5 TGDi flex",
+    "category": "suv-medio",
+    "powertrain": "flex",
+    "seats": 5,
+    "trunkL": 425,
+    "refPriceNew": 174990,
+    "consumption": {
+      "cityKmL": 10.5,
+      "roadKmL": 12.4,
+      "cityKmLEthanol": 7.3,
+      "roadKmLEthanol": 8.7,
+      "cityKmKWh": null,
+      "roadKmKWh": null
+    },
+    "evShareNote": "Sem eletrificação: 1.5 turbo flex, câmbio de dupla embreagem.",
+    "fipeBrand": "CAOA CHANGAN",
+    "fipeInclude": [
+      "UNI-T"
+    ],
+    "since": 2026
+  },
+  "id": "changan-uni-t",
+  "researchedAt": "2026-10",
+  "displayName": "Caoa Changan Uni-T",
+  "summary": "SUV cupê médio (4,54 m) da Changan, montado pela Caoa em Anápolis (GO) e lançado em mar/2026, após a estreia oficial da Changan no Brasil no Salão de São Paulo (nov/2025). Versão única Infinity com motor 1.5 turbo flex de 180 cv e câmbio 7DCT, muito equipada (ADAS, câmera 360°, teto panorâmico, bancos ventilados) por R$ 174.990. Não é híbrido.",
+  "generation": "Geração atual do UNI-T chinês; no Brasil desde mar/2026 (linha 2026), nacional (CKD/Anápolis).",
+  "timeline": [
+    {
+      "modelYear": "2026",
+      "change": "Lançamento em mar/2026 por R$ 169.990 (versão única Infinity)."
+    },
+    {
+      "modelYear": "2026",
+      "change": "Reajuste de R$ 5–7 mil em abr/2026: R$ 174.990 (preto sólido) a R$ 176.990 conforme a cor."
+    },
+    {
+      "modelYear": "2027",
+      "change": "Linha 2027 já na FIPE (R$ 169.550 em set/2026) e em anúncios 0 km 2026/2027."
+    }
+  ],
+  "highlights": [
+    "180 cv e 29,2 kgfm, flex; câmbio de dupla embreagem de 7 marchas.",
+    "Versão única cheia de itens: câmera 360°, ACC stop & go, frenagem autônoma, ponto cego, faixa, teto panorâmico, bancos ventilados e aquecidos.",
+    "Multimídia de 12,8\" com CarPlay/Android Auto sem fio e painel digital de 12,3\" (Car.Blog.br).",
+    "Garantia de 7 anos ou 150 mil km.",
+    "Produção nacional (Caoa, Anápolis/GO); aceito para PcD com isenção de IPI (jul/2026)."
+  ],
+  "watchOuts": [
+    "Não é híbrido: consumo Inmetro modesto (10,5/12,4 km/l gasolina; 7,3/8,7 km/l etanol).",
+    "Porta-malas: 425 L na maioria das fontes, mas 332 L (Inmetro, segundo Verificar Auto) e 350 L em outras.",
+    "Terra critica a direção ('decepcionante').",
+    "Marca recém-relançada (via Caoa): revenda sem histórico; FIPE do 2026 usado já em R$ 152.235 (set/2026).",
+    "Reajuste logo após o lançamento (abr/2026).",
+    "Sem teste de colisão Latin/Euro NCAP; só C-NCAP 2021 (geração anterior, China)."
+  ],
+  "specs": {
+    "version": "Caoa Changan Uni-T Infinity 1.5 TGDi flex 2026",
+    "engine": "1.5 turbo flex 4 cil., injeção direta",
+    "powerCv": "180",
+    "torqueKgfm": "29,2",
+    "transmission": "Dupla embreagem de 7 marchas (7DCT), tração dianteira",
+    "trunkL": 425,
+    "lengthMm": 4535,
+    "wheelbaseMm": 2710,
+    "safety": "6 airbags; sem Latin NCAP; C-NCAP 5 estrelas (2021, geração anterior)",
+    "warranty": "7 anos ou 150 mil km"
+  },
+  "inmetro": {
+    "version": "Uni-T 1.5 TGDi",
+    "cityGas": 10.5,
+    "roadGas": 12.4,
+    "cityEth": 7.3,
+    "roadEth": 8.7,
+    "cityKmKWh": null,
+    "roadKmKWh": null,
+    "year": "PBEV 2026 (conforme Verificar Auto; Terra cita etanol 7,1/8,6)",
+    "source": "https://verificarauto.com.br/caoa-changan-uni-t-2026-preco-ficha-tecnica/"
+  },
+  "price0km": {
+    "version": "Infinity",
+    "price": 174990,
+    "date": "abr/2026 (Vrum; Webmotors mantém R$ 174.990)",
+    "source": "https://www.vrum.com.br/mercado/2026/04/7401784-caoa-changan-uni-t-sobe-de-preco-no-brasil-e-encosta-em-rivais-diretos.html"
+  },
+  "versionsAndPrices": [
+    {
+      "version": "Infinity (preto sólido)",
+      "price": 174990,
+      "date": "abr/2026",
+      "source": "https://www.vrum.com.br/mercado/2026/04/7401784-caoa-changan-uni-t-sobe-de-preco-no-brasil-e-encosta-em-rivais-diretos.html"
+    },
+    {
+      "version": "Infinity (demais cores)",
+      "price": 176990,
+      "date": "abr/2026",
+      "source": "https://www.vrum.com.br/mercado/2026/04/7401784-caoa-changan-uni-t-sobe-de-preco-no-brasil-e-encosta-em-rivais-diretos.html"
+    }
+  ],
+  "launchModelYearBR": 2026,
+  "catalogCheck": "Modelo não está no catálogo. Versão única Infinity (R$ 174.990). FIPE: marca 'Caoa Changan', modelo 'UNI-T 1.5 16V TGDi' código 308001-3 — 2026 = R$ 152.235, 2027 = R$ 169.550, 0 km = R$ 178.356 (set/2026). Usar a marca 'caoa changan' (a busca por substring evita confundir com 'Caoa Chery' ou com uma eventual marca 'Changan' antiga).",
+  "wikipedia": {
+    "lang": "en",
+    "title": "Changan UNI-T"
+  },
+  "officialUrl": "https://caoachangan.com.br/novos/uni-t",
+  "sources": [
+    {
+      "label": "Car.Blog.br — Caoa Changan Uni-T 2026: R$ 169.990, consumo e ficha",
+      "url": "https://www.car.blog.br/2026/03/caoa-changan-uni-t-2026-preco-r-169990.html"
+    },
+    {
+      "label": "Vrum — Uni-T sobe de preço (20/abr/2026)",
+      "url": "https://www.vrum.com.br/mercado/2026/04/7401784-caoa-changan-uni-t-sobe-de-preco-no-brasil-e-encosta-em-rivais-diretos.html"
+    },
+    {
+      "label": "Vrum — Uni-T chega por R$ 169 mil, produção nacional (mar/2026)",
+      "url": "https://www.vrum.com.br/mercado/2026/03/7384622-caoa-changan-uni-t-chega-por-rs-169-mil-e-producao-nacional.html"
+    },
+    {
+      "label": "Autos Segredos — Uni-T fica mais caro após estreia",
+      "url": "https://www.autossegredos.com.br/marcas/caoa-changan/caoa-changan-uni-t-ja-fica-mais-caro-no-brasil-apos-estreia/"
+    },
+    {
+      "label": "Webmotors — Caoa Changan Uni-T 2026",
+      "url": "https://www.webmotors.com.br/caoa-changan/uni-t/2026"
+    },
+    {
+      "label": "Verificar Auto — Uni-T 2026: ficha, consumo (Inmetro) e preço",
+      "url": "https://verificarauto.com.br/caoa-changan-uni-t-2026-preco-ficha-tecnica/"
+    },
+    {
+      "label": "FichasCar — Uni-T 2026",
+      "url": "https://www.fichascar.com.br/ficha/caoa-changan-uni-t-2026"
+    },
+    {
+      "label": "Mundo do Automóvel PcD — Uni-T (ADAS, produção em Anápolis)",
+      "url": "https://mundodoautomovelparapcd.com.br/caoa-changan-uni-t-e-liberado-para-pcd/"
+    },
+    {
+      "label": "Terra — Uni-T custa R$ 170 mil, mas tem direção decepcionante",
+      "url": "https://www.terra.com.br/mobilidade/carros/caoa-changan-uni-t-custa-r-170-mil-e-estaciona-sozinho-mas-tem-direcao-decepcionante,64eee91b977c8c06b187c0f837a0f69caqi5i9u9.html"
+    },
+    {
+      "label": "AutoData — Uni-T por R$ 170 mil (27/mar/2026)",
+      "url": "https://www.autodata.com.br/noticias/2026/03/27/caoa-changan-uni-t-por-r-170-mil-promete-o-melhor-custo-beneficio-no-segmento-premium/101447/"
+    },
+    {
+      "label": "Auto Show — teste completo do Uni-T",
+      "url": "https://www.autoshow.com.br/noticias/2026/03/27/changan-uni-t-teste-completo-do-suv-cupe-com-motor-1-5-turbo.html"
+    },
+    {
+      "label": "Tabela Carros — FIPE Uni-T 1.5 16V TGDi 2027 (308001-3)",
+      "url": "https://tabelacarros.com/carros/caoa-changan/UNI-T-1-5-16V-TGDI/2027-Flex"
+    },
+    {
+      "label": "Nepal Drives — Uni-T 5 estrelas no C-NCAP (2021)",
+      "url": "https://nepaldrives.com/changan-uni-t-crossover-five-star-ratings-cncap"
+    },
+    {
+      "label": "Business Wire — Changan estreia oficialmente no Brasil (Salão SP, nov/2025)",
+      "url": "https://www.businesswire.com/news/home/20251125071853/en/Changan-Makes-Official-Debut-at-So-Paulo-Auto-Show-Launches-Brand-in-Brazil"
+    }
+  ],
+  "unverified": [
+    "Porta-malas 425 L x 350 L x 332 L.",
+    "Consumo com etanol 7,3/8,7 x 7,1/8,6 km/l; ano do PBEV.",
+    "'5 estrelas NCAP 2025' citado pela Auto Show sem dizer qual programa; só foi confirmado o C-NCAP 2021.",
+    "Tamanho das telas (12,8\"/12,3\" x 10,1\"/7\" em outra fonte).",
+    "Preço das revisões Caoa Changan.",
+    "officialUrl: site citado nos resultados, mas não aberto (sem acesso).",
+    "Pesquisa feita por resumos de busca das fontes listadas (páginas não abertas diretamente); confira os valores na fonte."
+  ]
+}

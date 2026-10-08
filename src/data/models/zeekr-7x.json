@@ -1,0 +1,183 @@
+{
+  "catalogSeed": {
+    "brand": "Zeekr",
+    "model": "7X",
+    "version": "Premium RWD (elétrico)",
+    "category": "suv-grande",
+    "powertrain": "eletrico",
+    "seats": 5,
+    "trunkL": 539,
+    "refPriceNew": 378000,
+    "consumption": {
+      "cityKmL": 0,
+      "roadKmL": 0,
+      "cityKmLEthanol": null,
+      "roadKmLEthanol": null,
+      "cityKmKWh": 4.91,
+      "roadKmKWh": 4.91
+    },
+    "evShareNote": "100% elétrico. km/kWh estimado = autonomia PBEV 491 km ÷ bateria 100 kWh.",
+    "fipeBrand": "ZEEKR",
+    "fipeInclude": [
+      "7X"
+    ],
+    "since": 2026
+  },
+  "id": "zeekr-7x",
+  "researchedAt": "2026-10",
+  "displayName": "Zeekr 7X",
+  "summary": "SUV elétrico de 4,78 m e 2,90 m de entre-eixos da Zeekr (grupo Geely), plataforma SEA de 800 V. Estreou no Brasil em ago/2025 só na Flagship AWD (646 cv, R$ 448 mil); em jun/2026 ganhou a Premium 2027, com um motor traseiro de 421 cv, bateria de 100 kWh, autonomia PBEV de 491 km e preço de R$ 378 mil.",
+  "generation": "1ª geração; no Brasil desde ago/2025 (linha 2026).",
+  "timeline": [
+    {
+      "modelYear": "2026",
+      "change": "Lançamento em ago/2025: versão única Flagship AWD, 646 cv, PBEV 423 km, R$ 448 mil (1º lote)."
+    },
+    {
+      "modelYear": "2027",
+      "change": "Pré-venda da Premium RWD em 22/jun/2026: 421 cv, 100 kWh, PBEV 491 km, R$ 378.000. Flagship citada a R$ 448 mil (AB/Perfil) ou R$ 468 mil (A Tarde; FIPE 0 km set/2026 = R$ 468.000)."
+    }
+  ],
+  "highlights": [
+    "Autonomia PBEV de 491 km na Premium, a maior entre as versões do 7X.",
+    "Arquitetura de 800 V: 10–80% em cerca de 13 min em carregador compatível (dado da Flagship).",
+    "Porta-malas de 539 L + frunk de 62 L (Automotive Business/Autoesporte).",
+    "Premium mantém bancos dianteiros com aquecimento, ventilação e massagem, teto panorâmico, 7 airbags e ADAS com 12 câmeras.",
+    "Euro NCAP 5 estrelas (2025).",
+    "Garantia de 5 anos (carro) e 8 anos (bateria); revisões com preço fixo."
+  ],
+  "watchOuts": [
+    "Preço de SUV de luxo (R$ 378 mil) e categoria acima do Corolla Cross.",
+    "Premium é nova (jun/2026): na FIPE só aparece a Flagship AWD; seminovos disponíveis são Flagship.",
+    "Rede Zeekr pequena e relatos no Reclame Aqui de demora de peças e de ADAS/IA do 7X sem funcionar após 1 mês.",
+    "Proprietária relatou alta no preço da 1ª revisão (R$ 660 → R$ 856).",
+    "Porta-malas: 539 L x 616 L (este incluiria o compartimento sob o assoalho) entre fontes.",
+    "Flagship 2026 já vale R$ 411.855 na FIPE (set/2026) contra R$ 448–468 mil novo."
+  ],
+  "specs": {
+    "version": "Zeekr 7X Premium RWD 2027",
+    "engine": "Motor elétrico traseiro de 310 kW; bateria de 100 kWh; arquitetura 800 V",
+    "powerCv": "421",
+    "torqueKgfm": "44,9",
+    "transmission": "Redução fixa (1 marcha)",
+    "trunkL": 539,
+    "lengthMm": 4780,
+    "wheelbaseMm": 2900,
+    "safety": "7 airbags; Euro NCAP 5 estrelas (2025)",
+    "warranty": "5 anos (veículo) e 8 anos (bateria)"
+  },
+  "inmetro": {
+    "version": "7X Premium RWD",
+    "cityGas": null,
+    "roadGas": null,
+    "cityEth": null,
+    "roadEth": null,
+    "cityKmKWh": null,
+    "roadKmKWh": null,
+    "year": "PBEV: autonomia 491 km (Premium) e 423 km (Flagship); km/kWh não publicado nas fontes vistas",
+    "source": "https://evdrops.com.br/zeekr-7x-premium-pre-venda-brasil/"
+  },
+  "price0km": {
+    "version": "Premium RWD",
+    "price": 378000,
+    "date": "jun/2026",
+    "source": "https://www.autodata.com.br/noticias/2026/06/23/zeekr-7x-premium-entra-em-pre-venda-no-brasil-por-r-378-mil/106966/"
+  },
+  "versionsAndPrices": [
+    {
+      "version": "Premium RWD",
+      "price": 378000,
+      "date": "jun/2026",
+      "source": "https://www.autodata.com.br/noticias/2026/06/23/zeekr-7x-premium-entra-em-pre-venda-no-brasil-por-r-378-mil/106966/"
+    },
+    {
+      "version": "Flagship AWD",
+      "price": 468000,
+      "date": "set/2026 (A Tarde e FIPE 0 km; Automotive Business e Perfil citam R$ 448 mil)",
+      "source": "https://atarde.com.br/autos/zeekr-7x-no-brasil-precos-versoes-e-ficha-tecnica-1395860"
+    }
+  ],
+  "launchModelYearBR": 2026,
+  "catalogCheck": "Modelo não está no catálogo. Sugere-se a Premium RWD (R$ 378.000). FIPE: '7X Flagship AWD' código 301005-8 — 2026 = R$ 411.855 (set/2026; outro site R$ 397.928 em ago), 2027 = R$ 430.594 (ago/2026), 0 km R$ 468.000. A Premium RWD não foi encontrada na FIPE.",
+  "wikipedia": {
+    "lang": "en",
+    "title": "Zeekr 7X"
+  },
+  "officialUrl": "https://www.zeekrlife.com/pt-br/models/7x",
+  "sources": [
+    {
+      "label": "AutoData — 7X Premium entra em pré-venda por R$ 378 mil (23/jun/2026)",
+      "url": "https://www.autodata.com.br/noticias/2026/06/23/zeekr-7x-premium-entra-em-pre-venda-no-brasil-por-r-378-mil/106966/"
+    },
+    {
+      "label": "Vrum — 7X Premium pré-venda a partir de R$ 378 mil",
+      "url": "https://www.vrum.com.br/bom-negocio/2026/06/7445970-zeekr-7x-premium-tem-pre-venda-no-brasil-a-partir-de-rs-378-mil.html"
+    },
+    {
+      "label": "Automotive Business — 7X ganha versão com mais autonomia e menor preço (dimensões, porta-malas)",
+      "url": "https://www.automotivebusiness.com.br/noticias/zeekr-7x-ganha-nova-versao-com-mais-autonomia-e-menor-preco"
+    },
+    {
+      "label": "EV Drops — 7X Premium: 491 km pelo Inmetro",
+      "url": "https://evdrops.com.br/zeekr-7x-premium-pre-venda-brasil/"
+    },
+    {
+      "label": "Troca de Carro (citando Quatro Rodas) — PBEV 491 km x 423 km",
+      "url": "https://trocadecarro.com.br/noticias/zeekr-7x-premium-faz-rio-sp-sem-recarregar-e-custa-menos-que-suvs-europeus-a-gasolina"
+    },
+    {
+      "label": "Autoesporte via Grupo Sentinela — teste do 7X Premium",
+      "url": "https://www.gruposentinela.com.br/teste-zeekr-7x-premium-abre-as-portas-sozinho-e-ate-cuida-do-seu-pet/"
+    },
+    {
+      "label": "Perfil Brasil — 7X Premium, preço e itens",
+      "url": "https://brasil.perfil.com/carros/zeekr-7x-premium-chega-ao-brasil-com-preco-agressivo-para-balancar-mercado-de-rivais-de-peso.phtml"
+    },
+    {
+      "label": "A Tarde — Zeekr 7X no Brasil: preços e versões",
+      "url": "https://atarde.com.br/autos/zeekr-7x-no-brasil-precos-versoes-e-ficha-tecnica-1395860"
+    },
+    {
+      "label": "Auto Show — 7X estreia no Brasil (ago/2025, 646 cv, PBEV 423 km)",
+      "url": "https://www.autoshow.com.br/noticias/2025/08/15/zeekr-7x-estreia-no-brasil-com-dois-motores-e-646cv.html"
+    },
+    {
+      "label": "Revista Carro — 7X estreia por R$ 448 mil; garantia 5/8 anos",
+      "url": "https://revistacarro.com.br/zeekr-7x-estreia-no-brasil-com-646-cv-e-preco-de-r-448-mil/"
+    },
+    {
+      "label": "Zeekr Brasil — página oficial do 7X",
+      "url": "https://www.zeekrlife.com/pt-br/models/7x"
+    },
+    {
+      "label": "Tabela FIPE Brasil — 7X Flagship AWD 2027",
+      "url": "https://www.tabelafipebrasil.com/carros/ZEEKR/7X-FLAGSHIP-AWD/2027-Eletrico"
+    },
+    {
+      "label": "Tabela Carros — FIPE 7X Flagship AWD 2026 (301005-8)",
+      "url": "https://tabelacarros.com/carros/zeekr/7X-FLAGSHIP-AWD/2026-Eletrico"
+    },
+    {
+      "label": "Zeekr — 7X recebe 5 estrelas no Euro NCAP (jul/2025)",
+      "url": "https://www.zeekrlife.com/en-ae/posts/zeekr-7x-awarded-5-star-euro-ncap-rating"
+    },
+    {
+      "label": "JK Carros — 7X Premium 2027 (itens, câmera 360°)",
+      "url": "https://jkcarros.com.br/zeekr-7x-premium-2027-pcd-preco-isencoes-tco/"
+    },
+    {
+      "label": "Reclame Aqui — ADAS e IA do 7X não funcionam após 1 mês",
+      "url": "https://www.reclameaqui.com.br/zeekr-brasil-oficial/sistema-adas-e-ia-do-zeekr-7x-nao-funcionam-apos-1-mes-da-compra_PxYb1mXBWYXmgCzl/"
+    }
+  ],
+  "unverified": [
+    "km/kWh oficial do PBEV: não encontrado; usado 491 km ÷ 100 kWh ≈ 4,9 km/kWh.",
+    "Dimensões vistas só arredondadas (4,78 m e 2,90 m, Automotive Business).",
+    "Preço atual da Flagship (R$ 448 mil x R$ 468 mil).",
+    "Porta-malas 539 L x 616 L.",
+    "Câmera 360° e HUD na Premium.",
+    "Categoria: 4,78 m pode ser 'suv-medio' ou 'suv-grande' — escolhido 'suv-grande' pelo porte (maior que Song Plus/Sealion 7).",
+    "Preço das revisões (só relato de 1ª revisão a R$ 856).",
+    "Pesquisa feita por resumos de busca das fontes listadas (páginas não abertas diretamente); confira os valores na fonte."
+  ]
+}

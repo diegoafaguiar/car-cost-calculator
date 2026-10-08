@@ -1,0 +1,186 @@
+{
+  "catalogSeed": {
+    "brand": "Caoa Chery",
+    "model": "Tiggo 7 Pro PHEV",
+    "version": "1.5 TGDI PHEV DHT (linha 2027)",
+    "category": "suv-medio",
+    "powertrain": "hibrido-plugin",
+    "seats": 5,
+    "trunkL": 484,
+    "refPriceNew": 209990,
+    "consumption": {
+      "cityKmL": null,
+      "roadKmL": null,
+      "cityKmLEthanol": null,
+      "roadKmLEthanol": null,
+      "cityKmKWh": null,
+      "roadKmKWh": null
+    },
+    "evShareNote": "Plug-in: bateria de 18,4 kWh, 68 km elétricos (PBEV). O Inmetro divulgado pela imprensa é o consumo 'equivalente' com bateria carregada (38,6/30,3 km/l); consumo só a gasolina (bateria no mínimo) não encontrado.",
+    "fipeBrand": "CAOA CHERY",
+    "fipeInclude": [
+      "TIGGO 7 PRO",
+      "1.5 Turbo (Híbrido)"
+    ],
+    "since": 2025
+  },
+  "id": "caoa-chery-tiggo-7-phev",
+  "researchedAt": "2026-10",
+  "displayName": "Caoa Chery Tiggo 7 Pro PHEV",
+  "summary": "SUV médio híbrido plug-in da Caoa Chery. A linha 2027 (jun/2026) adotou o conjunto Super Hybrid da Chery — o mesmo do Jaecoo 7 e do Omoda 7: motor 1.5 turbo GDI a gasolina (135 cv) + motor elétrico de 204 cv, 279 cv combinados, transmissão DHT e bateria de 18,4 kWh com 68 km de autonomia elétrica (PBEV). Versão única, R$ 209.990 desde jul/2026.",
+  "generation": "Tiggo 7 Pro PHEV lançado em fev/2025 (317 cv, bateria 19,27 kWh); nova geração Super Hybrid na linha 2027 (jun/2026).",
+  "timeline": [
+    {
+      "modelYear": "2025",
+      "change": "Lançamento do Tiggo 7 PRO Plug-in Hybrid em fev/2025, a partir de R$ 239.990 (CAOA Chery)."
+    },
+    {
+      "modelYear": "2026",
+      "change": "Preço passou a R$ 219.990 ao longo do ano, segundo a imprensa."
+    },
+    {
+      "modelYear": "2027",
+      "change": "Jun/2026: novo conjunto 1.5 TGDI + DHT, 279 cv, bateria 18,4 kWh, recarga DC e V2L; pré-venda a R$ 189.990 (lote promocional)."
+    },
+    {
+      "modelYear": "2027",
+      "change": "Jul/2026: preço de tabela fixado em R$ 209.990 (cor preta sólida; demais cores + R$ 2.000)."
+    }
+  ],
+  "highlights": [
+    "Mesmo conjunto Super Hybrid do Jaecoo 7/Omoda 7 por preço menor: 279 cv e 37,2 kgfm (uma fonte diz 37,5).",
+    "68 km elétricos no PBEV; consumo equivalente de 38,6 km/l (cidade) e 30,3 km/l (estrada) com bateria carregada.",
+    "Equipado: painel curvo de 24,6\", head-up display, câmera 540°, bancos dianteiros com ajuste elétrico, ventilação e aquecimento, teto panorâmico, indução de 50 W, som Sony.",
+    "Pacote ADAS com ACC, frenagem autônoma e assistente de permanência em faixa.",
+    "Porta-malas de 484 L (site oficial)."
+  ],
+  "watchOuts": [
+    "Só gasolina (não flex). O consumo sem recarregar não foi publicado — o número de 38,6 km/l só vale com bateria carregada.",
+    "Preço instável: R$ 239.990 (2025) → R$ 219.990 → R$ 189.990 (pré-venda) → R$ 209.990 em ~18 meses; isso derruba a revenda (FIPE do 2025 caiu ~21% em 11 meses).",
+    "A FIPE usa o mesmo nome 'Tiggo 7 PRO 1.5 Turbo (Híbrido)' também para o antigo Tiggo 7 Pro híbrido leve (2022–2024): cuidado ao comparar usados.",
+    "Recall da Caoa Chery por risco de incêndio atingiu Tiggo 5X e Tiggo 7 (a imprensa diz que a versão PHEV não foi incluída).",
+    "Reclamação no Reclame Aqui de dono de Tiggo 8 PHEV (geração anterior) com 9,5 km/l na cidade sem recarga — vale para PHEVs da marca em geral."
+  ],
+  "specs": {
+    "version": "Tiggo 7 Pro PHEV 1.5 TGDI DHT (linha 2027)",
+    "engine": "1.5 turbo GDI gasolina (135 cv, 20,4 kgfm) + motor elétrico de 204 cv; bateria de 18,4 kWh",
+    "powerCv": "279 (combinada)",
+    "torqueKgfm": "37,2 (combinado; uma fonte cita 37,5)",
+    "transmission": "DHT (transmissão híbrida dedicada)",
+    "trunkL": 484,
+    "lengthMm": 4550,
+    "wheelbaseMm": 2670,
+    "safety": "7 airbags (outra fonte cita 6); sem Latin NCAP; Euro NCAP 2025 5 estrelas para o Chery Tiggo 7 europeu (CSH) — equivalência com o carro brasileiro não confirmada",
+    "warranty": "Não confirmada para o Tiggo 7 PHEV 2027 (o Tiggo 8 Pro PHEV 2027 tem 7 anos/150 mil km e bateria 8 anos/150 mil km)"
+  },
+  "inmetro": {
+    "version": "Tiggo 7 Pro PHEV 2027",
+    "cityGas": null,
+    "roadGas": null,
+    "cityEth": null,
+    "roadEth": null,
+    "cityKmKWh": null,
+    "roadKmKWh": null,
+    "year": "PBEV (conforme imprensa, jun/2026): só o consumo 'equivalente' com bateria carregada foi divulgado — 38,6 km/l cidade e 30,3 km/l estrada (não comparável a carro a gasolina); 68 km elétricos; gasolina pura e km/kWh não publicados",
+    "source": "https://www.car.blog.br/2026/06/caoa-chery-tiggo-7-pro-phev-2027-preco.html"
+  },
+  "price0km": {
+    "version": "1.5 TGDI PHEV DHT (única)",
+    "price": 209990,
+    "date": "jul/2026 (confirmado em ago/2026)",
+    "source": "https://mecanicaonline.com.br/2026/07/caoa-chery-reduz-preco-do-tiggo-7-phev-2027-para-r-209-990/"
+  },
+  "versionsAndPrices": [
+    {
+      "version": "1.5 TGDI PHEV DHT — cor preta sólida",
+      "price": 209990,
+      "date": "ago/2026",
+      "source": "https://www.autoshow.com.br/noticias/2026/08/25/novo-tiggo-7-fica-mais-equipado-e-com-novo-visual-a-partir-de-r-139-9-mil.html"
+    },
+    {
+      "version": "1.5 TGDI PHEV DHT — demais cores",
+      "price": 211990,
+      "date": "out/2026 (site oficial: + R$ 2.000)",
+      "source": "https://caoachery.com.br/novos/tiggo-7-pro-plug-in-hybrid"
+    },
+    {
+      "version": "Pré-venda/lote promocional (encerrado)",
+      "price": 189990,
+      "date": "jun/2026",
+      "source": "https://www.automaistv.com.br/novidades/tiggo-7-phev-2027-sai-por-r-189-990-com-visual-de-tiggo-8-e-motor-de-jaecoo-7/"
+    }
+  ],
+  "launchModelYearBR": 2025,
+  "catalogCheck": "Modelo ainda não está no catálogo. Sugere-se a versão única 1.5 TGDI PHEV DHT (R$ 209.990). FIPE: 'Caoa Chery Tiggo 7 PRO 1.5 Turbo (Híbrido)'; 2027 = R$ 182.632 (ago/2026); 2026 = R$ 171.401 (ago/2026); 2025 = R$ 160.698 (jul/2026). O mesmo nome FIPE existe para 2022–2024 (Tiggo 7 Pro híbrido leve, não plug-in). O Tiggo 7 Pro HEV aparece como 'Tiggo 7 Pro Max Drive 1.5 TB (Hibrido)' e deve ser excluído.",
+  "wikipedia": {
+    "lang": "en",
+    "title": "Chery Tiggo 7"
+  },
+  "officialUrl": "https://caoachery.com.br/novos/tiggo-7-pro-plug-in-hybrid",
+  "sources": [
+    {
+      "label": "Mecânica Online — Tiggo 7 PHEV 2027 cai para R$ 209.990 (jul/2026)",
+      "url": "https://mecanicaonline.com.br/2026/07/caoa-chery-reduz-preco-do-tiggo-7-phev-2027-para-r-209-990/"
+    },
+    {
+      "label": "Autos Segredos — redução de preço do Tiggo 7 PHEV 2027",
+      "url": "https://www.autossegredos.com.br/marcas/caoa-chery/caoa-chery-reduz-preco-do-tiggo-7-phev-2027-e-adiciona-recarga-mais-rapida/"
+    },
+    {
+      "label": "Auto Show — linha Tiggo 7 2027, PHEV a R$ 209.990 (ago/2026)",
+      "url": "https://www.autoshow.com.br/noticias/2026/08/25/novo-tiggo-7-fica-mais-equipado-e-com-novo-visual-a-partir-de-r-139-9-mil.html"
+    },
+    {
+      "label": "CAOA Chery — página oficial Tiggo 7 PRO PHEV",
+      "url": "https://caoachery.com.br/novos/tiggo-7-pro-plug-in-hybrid"
+    },
+    {
+      "label": "CAOA Chery — nota de lançamento Super Hybrid (jun/2026)",
+      "url": "https://caoachery.com.br/noticia/caoa-chery-assume-protagonismo-nos-eletrificados-com-nova-geracao-super-hybrid"
+    },
+    {
+      "label": "Auto+ TV — Tiggo 7 PHEV 2027 por R$ 189.990 (pré-venda)",
+      "url": "https://www.automaistv.com.br/novidades/tiggo-7-phev-2027-sai-por-r-189-990-com-visual-de-tiggo-8-e-motor-de-jaecoo-7/"
+    },
+    {
+      "label": "Car.blog.br — Tiggo 7 Pro PHEV 2027, 38,6 km/l",
+      "url": "https://www.car.blog.br/2026/06/caoa-chery-tiggo-7-pro-phev-2027-preco.html"
+    },
+    {
+      "label": "Mundo do Automóvel PCD — Tiggo 7 PHEV 2027 (68 km elétricos, 484 L)",
+      "url": "https://mundodoautomovelparapcd.com.br/tiggo-7-phev-2027/"
+    },
+    {
+      "label": "Webmotors — ficha Tiggo 7 Pro 1.5 TGDI PHEV DHT 2027",
+      "url": "https://www.webmotors.com.br/caoa-chery/tiggo-7-pro/2027/1-5-tgdi-phev-dht/388284"
+    },
+    {
+      "label": "Tabela FIPE Brasil — Tiggo 7 PRO 1.5 Turbo (Híbrido) 2027",
+      "url": "https://www.tabelafipebrasil.com/carros/CAOA-CHERY/TIGGO-7-PRO-15-TURBO-HIBRIDO/2027-Hibrido"
+    },
+    {
+      "label": "CAOA Chery — lançamento Tiggo 7 PRO PHEV 2025 (fev/2025)",
+      "url": "https://caoachery.com.br/noticia/CAOA-Chery-Tiggo-7-PRO-Plug-in-Hybrid"
+    },
+    {
+      "label": "Euro NCAP — Chery Tiggo 7 (2025)",
+      "url": "https://www.euroncap.com/en/results/chery/tiggo+7/55574"
+    },
+    {
+      "label": "Auto+ TV — recall Tiggo 5X e Tiggo 7 (risco de incêndio)",
+      "url": "https://www.automaistv.com.br/manutencao/caoa-chery-convoca-recall-por-risco-de-incendio-em-tiggo-5x-e-tiggo-7/"
+    }
+  ],
+  "unverified": [
+    "Consumo só a gasolina (bateria em nível mínimo) — não publicado; catálogo usa proxy do Jaecoo 7 PHEV.",
+    "Consumo elétrico em km/kWh — não publicado; estimado 68 km ÷ 18,4 kWh ≈ 3,7 km/kWh (capacidade bruta).",
+    "Comprimento: 4.550 mm (Webmotors) x 4.513 mm (iCarros/Canal VE, possivelmente geração anterior).",
+    "Porta-malas: 484 L (site oficial) x 475 L (fichas antigas).",
+    "Airbags: 7 x 6 entre fontes.",
+    "Torque combinado 37,2 x 37,5 kgfm.",
+    "Garantia específica do Tiggo 7 PHEV 2027.",
+    "Equivalência do Euro NCAP (Tiggo 7 europeu) com o carro brasileiro.",
+    "Revestimento dos bancos (couro/sintético) não confirmado.",
+    "Pesquisa feita por resumos de busca das fontes listadas (páginas não abertas diretamente); confira os valores na fonte."
+  ]
+}

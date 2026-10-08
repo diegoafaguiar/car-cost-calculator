@@ -1,0 +1,79 @@
+{
+  "id": "zeekr-7x",
+  "version": "Zeekr 7X Premium RWD 2027",
+  "researchedAt": "2026-10",
+  "tech": {
+    "screen10": null,
+    "wirelessMirroring": null,
+    "digitalCluster": null,
+    "wirelessCharger": null,
+    "camera360": null,
+    "adaptiveCruise": null,
+    "connectedApp": null,
+    "keyless": null
+  },
+  "comfort": {
+    "automatic": true,
+    "digitalAC": null,
+    "rearVents": null,
+    "leather": null,
+    "powerSeat": null,
+    "seatClimate": true,
+    "sunroof": true
+  },
+  "safety": {
+    "airbags6": true,
+    "aeb": null,
+    "laneKeep": true,
+    "blindSpot": null,
+    "rearCrossTraffic": null
+  },
+  "ncap": {
+    "stars": 5,
+    "year": 2025,
+    "program": "Euro NCAP",
+    "counts": true,
+    "note": "Zeekr 7X, protocolo 2025: 91% adulto, 90% criança, 83% assistências (comunicado da Zeekr). Testada a versão europeia.",
+    "source": "https://www.zeekrlife.com/en-ae/posts/zeekr-7x-awarded-5-star-euro-ncap-rating"
+  },
+  "sources": [
+    {
+      "label": "Automotive Business — 7X ganha versão com mais autonomia e menor preço (dimensões, porta-malas)",
+      "url": "https://www.automotivebusiness.com.br/noticias/zeekr-7x-ganha-nova-versao-com-mais-autonomia-e-menor-preco"
+    },
+    {
+      "label": "Autoesporte via Grupo Sentinela — teste do 7X Premium",
+      "url": "https://www.gruposentinela.com.br/teste-zeekr-7x-premium-abre-as-portas-sozinho-e-ate-cuida-do-seu-pet/"
+    },
+    {
+      "label": "Perfil Brasil — 7X Premium, preço e itens",
+      "url": "https://brasil.perfil.com/carros/zeekr-7x-premium-chega-ao-brasil-com-preco-agressivo-para-balancar-mercado-de-rivais-de-peso.phtml"
+    },
+    {
+      "label": "JK Carros — 7X Premium 2027 (itens, câmera 360°)",
+      "url": "https://jkcarros.com.br/zeekr-7x-premium-2027-pcd-preco-isencoes-tco/"
+    },
+    {
+      "label": "Zeekr — 7X recebe 5 estrelas no Euro NCAP (jul/2025)",
+      "url": "https://www.zeekrlife.com/en-ae/posts/zeekr-7x-awarded-5-star-euro-ncap-rating"
+    }
+  ],
+  "notes": "Premium: ADAS com 12 câmeras, 7 airbags, controle de descida, sensores dianteiro e traseiro, monitor de fadiga, assistente de permanência em faixa; bancos dianteiros com aquecimento, ventilação e massagem; teto panorâmico (Autoesporte). Perde para a Flagship a abertura elétrica das portas, a suspensão pneumática e as rodas 20\" (fica com 19\"). Câmera 360° citada só pelo JK Carros. Telas não confirmadas para a Premium.",
+  "unverified": [
+    "tech.wirelessMirroring",
+    "tech.wirelessCharger",
+    "tech.camera360",
+    "tech.adaptiveCruise",
+    "tech.connectedApp",
+    "tech.keyless",
+    "tech.screen10",
+    "tech.digitalCluster",
+    "comfort.digitalAC",
+    "comfort.rearVents",
+    "comfort.leather",
+    "comfort.powerSeat",
+    "safety.aeb",
+    "safety.blindSpot",
+    "safety.rearCrossTraffic"
+  ]
+}

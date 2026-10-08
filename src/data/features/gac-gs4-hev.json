@@ -1,0 +1,71 @@
+{
+  "id": "gac-gs4-hev",
+  "version": "GAC GS4 Premium 2.0 HEV 2026/2027 (R$ 191.990)",
+  "researchedAt": "2026-10",
+  "tech": {
+    "screen10": true,
+    "wirelessMirroring": null,
+    "digitalCluster": true,
+    "wirelessCharger": false,
+    "camera360": false,
+    "adaptiveCruise": true,
+    "connectedApp": null,
+    "keyless": null
+  },
+  "comfort": {
+    "automatic": true,
+    "digitalAC": true,
+    "rearVents": true,
+    "leather": false,
+    "powerSeat": true,
+    "seatClimate": null,
+    "sunroof": false
+  },
+  "safety": {
+    "airbags6": true,
+    "aeb": true,
+    "laneKeep": null,
+    "blindSpot": null,
+    "rearCrossTraffic": null
+  },
+  "ncap": {
+    "stars": 5,
+    "year": 2025,
+    "program": "ASEAN NCAP (GAC Emkoo)",
+    "counts": false,
+    "note": "Único teste encontrado: ASEAN NCAP 2025 do GAC Emkoo (84,96 pontos). Não é Latin/Euro NCAP/ANCAP e o motor testado não foi confirmado como o híbrido; fora da nota.",
+    "source": "https://www.aseancap.org/v4/?p=12379"
+  },
+  "sources": [
+    {
+      "label": "Webmotors — GAC GS4 2026",
+      "url": "https://www.webmotors.com.br/gac/gs4/2026"
+    },
+    {
+      "label": "Webmotors — GAC GS4 2027",
+      "url": "https://www.webmotors.com.br/gac/gs4/2027"
+    },
+    {
+      "label": "A Revista — GS4 Premium, o que oferece",
+      "url": "https://arevista.com.br/mercados/gac-gs4-premium-tem-235-cv-e-porta-malas-de-638-litros-veja-o-que-ele-oferece/"
+    },
+    {
+      "label": "Auto+ TV — avaliação GS4",
+      "url": "https://www.automaistv.com.br/avaliacao/gac-aprendeu-com-a-toyota-e-fez-o-gs4-melhor-que-o-corolla-cross-avaliacao/"
+    },
+    {
+      "label": "Mundo do Automóvel para PCD — GS4 set/2026",
+      "url": "https://mundodoautomovelparapcd.com.br/gac-gs4-para-cnpj-em-setembro-de-2026/"
+    }
+  ],
+  "notes": "Premium: ACC e frenagem autônoma, 6 airbags, ar digital de uma zona com saída traseira, banco do motorista elétrico, câmera de ré. Telas: fontes citam multimídia de 10,1\" a 12,3\" e painel digital de 10,25\" a 12,3\" (ambas >= 10\"). Couro, carregador por indução, câmera 360° e teto panorâmico são da Elite. Ventilação de banco citada só pela Webmotors.",
+  "unverified": [
+    "tech.wirelessMirroring",
+    "tech.connectedApp",
+    "tech.keyless",
+    "comfort.seatClimate",
+    "safety.laneKeep",
+    "safety.blindSpot",
+    "safety.rearCrossTraffic"
+  ]
+}

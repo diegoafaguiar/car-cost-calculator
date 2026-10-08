@@ -1,0 +1,69 @@
+{
+  "id": "caoa-chery-tiggo-8-phev",
+  "version": "Caoa Chery Tiggo 8 Pro PHEV 1.5 TGDI DHT 2027 (R$ 249.990)",
+  "researchedAt": "2026-10",
+  "tech": {
+    "screen10": null,
+    "wirelessMirroring": null,
+    "digitalCluster": null,
+    "wirelessCharger": true,
+    "camera360": true,
+    "adaptiveCruise": true,
+    "connectedApp": null,
+    "keyless": null
+  },
+  "comfort": {
+    "automatic": true,
+    "digitalAC": null,
+    "rearVents": null,
+    "leather": null,
+    "powerSeat": true,
+    "seatClimate": true,
+    "sunroof": true
+  },
+  "safety": {
+    "airbags6": true,
+    "aeb": true,
+    "laneKeep": true,
+    "blindSpot": true,
+    "rearCrossTraffic": null
+  },
+  "ncap": {
+    "stars": 5,
+    "year": 2025,
+    "program": "Euro NCAP (Chery Tiggo 8 europeu)",
+    "note": "Euro NCAP 2025: 4 estrelas (jul/2025) revisado para 5 (out/2025), avaliação baseada no Tiggo 7 europeu. O Tiggo 8 europeu não é o Tiggo 8 Pro brasileiro. Sem Latin NCAP.",
+    "source": "https://www.euroncap.com/assessments/chery/tiggo+8/1223ra/",
+    "counts": false
+  },
+  "sources": [
+    {
+      "label": "CAOA Chery — nota de lançamento Super Hybrid",
+      "url": "https://caoachery.com.br/noticia/caoa-chery-assume-protagonismo-nos-eletrificados-com-nova-geracao-super-hybrid"
+    },
+    {
+      "label": "JK Carros — ficha Tiggo 8 Pro PHEV 2027",
+      "url": "https://jkcarros.com.br/tiggo-8-pro-phev-2027-ficha-tecnica-tco/"
+    },
+    {
+      "label": "Car.blog.br — Tiggo 8 Pro PHEV 2027",
+      "url": "https://www.car.blog.br/2026/06/tiggo-8-pro-phev-2027-preco-consumo.html"
+    },
+    {
+      "label": "Euro NCAP — Tiggo 8",
+      "url": "https://www.euroncap.com/assessments/chery/tiggo+8/1223ra/"
+    }
+  ],
+  "notes": "Versão única. Câmera 540° (inclui 360°), head-up display, ACC, frenagem automática de emergência, ponto cego, permanência em faixa, bancos dianteiros com ajuste elétrico, memória, aquecimento e ventilação (massagem/gravidade zero no passageiro), teto panorâmico, indução 50 W, Sony 12 alto-falantes, 9 airbags segundo a marca (Webmotors: 6; ambos ≥6). Tamanho das telas e ar digital não confirmados nas fontes vistas.",
+  "unverified": [
+    "tech.screen10",
+    "tech.wirelessMirroring",
+    "tech.digitalCluster",
+    "tech.connectedApp",
+    "tech.keyless",
+    "comfort.digitalAC",
+    "comfort.rearVents",
+    "comfort.leather",
+    "safety.rearCrossTraffic"
+  ]
+}

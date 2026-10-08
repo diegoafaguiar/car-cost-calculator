@@ -1,0 +1,175 @@
+{
+  "catalogSeed": {
+    "brand": "Geely",
+    "model": "EX5",
+    "version": "Pro (elétrico, 60,22 kWh)",
+    "category": "suv-medio",
+    "powertrain": "eletrico",
+    "seats": 5,
+    "trunkL": 461,
+    "refPriceNew": 207800,
+    "consumption": {
+      "cityKmL": 0,
+      "roadKmL": 0,
+      "cityKmLEthanol": null,
+      "roadKmLEthanol": null,
+      "cityKmKWh": null,
+      "roadKmKWh": null
+    },
+    "evShareNote": "100% elétrico, bateria LFP 60,22 kWh; autonomia PBEV de 349 km citada para a Max; 413 km da Pro é WLTP segundo o Car.blog.br (revendas atribuem ao Inmetro). km/kWh Inmetro não encontrado.",
+    "fipeBrand": "GEELY",
+    "fipeInclude": [
+      "EX5 PRO",
+      "(Elétrico)"
+    ],
+    "since": 2026
+  },
+  "id": "geely-ex5",
+  "researchedAt": "2026-10",
+  "displayName": "Geely EX5 (elétrico)",
+  "summary": "SUV médio 100% elétrico, primeiro modelo da Geely no Brasil (jul/2025, linha 2026). Motor de 218 cv e 32,6 kgfm, 0–100 km/h em 6,9 s, bateria LFP de 60,22 kWh, recarga DC de 100 kW. Versões Pro e Max; a Pro aparece no site oficial por R$ 197.800 com bônus de R$ 10 mil (tabela R$ 207.800) e a Max subiu para R$ 227.800 em out/2026.",
+  "generation": "1ª geração (Geely EX5/E5, 2024); no Brasil desde jul/2025 (ano-modelo 2026).",
+  "timeline": [
+    {
+      "modelYear": "2026",
+      "change": "Lançamento em jul/2025: pré-venda R$ 195.800 (Pro) e R$ 205.800 (Max); preços sugeridos R$ 205.800 e R$ 225.800."
+    },
+    {
+      "modelYear": "2026",
+      "change": "Set/2026: Max ganha opção de interior Ivory White sem custo."
+    },
+    {
+      "modelYear": "2026",
+      "change": "Out/2026: Max sobe para R$ 227.800 (+R$ 2.000); Pro no site oficial a R$ 197.800 com bônus de R$ 10.000."
+    }
+  ],
+  "highlights": [
+    "Elétrico de 218 cv com preço de SUV médio a combustão; 0–100 km/h em 6,9 s.",
+    "Euro NCAP e ANCAP 5 estrelas (2025) para o EX5 elétrico.",
+    "Pro já traz câmeras 360°, 6 airbags, multimídia de 15,4\" com CarPlay/Android Auto sem fio, banco do motorista elétrico com memória e ventilação, ar automático duas zonas.",
+    "Recarga DC 100 kW (30–80% em ~20 min); wallbox 11 kW (10–100% em ~6 h).",
+    "Porta-malas de 461 L (avaliação)."
+  ],
+  "watchOuts": [
+    "Autonomia real modesta: PBEV de 349 km (Max); teste de imprensa rodou 260 km com 93% da bateria.",
+    "Na China a linha 2026 já tem bateria de 68,4 kWh; o modelo brasileiro ficou defasado (AutoPapo).",
+    "ACC e pacote ADAS confirmados só na Max; Pro sem ACC nas fontes vistas.",
+    "Desvalorização: FIPE do EX5 Pro 2026 = R$ 169.431 (set/2026, -3,5% no mês) contra R$ 207.800 de tabela.",
+    "Marca nova no Brasil (2025, parceria com a Renault): rede e revenda sem histórico; produção nacional prevista para dez/2026 no Paraná pode mexer nos preços."
+  ],
+  "specs": {
+    "version": "Geely EX5 Pro (elétrico) 2026",
+    "engine": "Motor elétrico dianteiro de 218 cv; bateria LFP de 60,22 kWh",
+    "powerCv": "218",
+    "torqueKgfm": "32,6",
+    "transmission": "Redução única (elétrico)",
+    "trunkL": 461,
+    "lengthMm": null,
+    "wheelbaseMm": null,
+    "safety": "6 airbags; Euro NCAP 5 estrelas (2025) e ANCAP 5 estrelas (2025); sem Latin NCAP",
+    "warranty": null
+  },
+  "inmetro": {
+    "version": "Geely EX5 (elétrico)",
+    "cityGas": null,
+    "roadGas": null,
+    "cityEth": null,
+    "roadEth": null,
+    "cityKmKWh": null,
+    "roadKmKWh": null,
+    "year": "PBEV: autonomia 349 km (Max) citada pela imprensa; km/kWh e MJ/km não encontrados",
+    "source": "https://diariodopoder.com.br/diario-motor/com-lista-de-equipamentos-superior-geely-ex5-eletrico-peca-na-autonomia"
+  },
+  "price0km": {
+    "version": "Pro",
+    "price": 207800,
+    "date": "out/2026 (tabela; à vista R$ 197.800 com bônus de R$ 10.000 no site oficial)",
+    "source": "https://www.cnnbrasil.com.br/blogs/jorge-moraes/auto/escassez-faz-geely-aumentar-preco-de-ex2-e-ex5-no-brasil-entenda/"
+  },
+  "versionsAndPrices": [
+    {
+      "version": "Pro — com bônus (site oficial)",
+      "price": 197800,
+      "date": "out/2026",
+      "source": "https://www.geelybrasil.com.br/ex5"
+    },
+    {
+      "version": "Pro — preço de tabela",
+      "price": 207800,
+      "date": "2026",
+      "source": "https://www.mercadolivre.com.br/blog/mo-lancamentos-geely-ex5-2026-preco-versoes-e-ficha-tecnica"
+    },
+    {
+      "version": "Max",
+      "price": 227800,
+      "date": "out/2026 (era R$ 225.800)",
+      "source": "https://www.mixvale.com.br/2026/10/03/geely-eleva-precos-dos-modelos-ex2-e-ex5-em-ate-r-2-mil-no-brasil/"
+    }
+  ],
+  "launchModelYearBR": 2026,
+  "catalogCheck": "O app já tem o EX5 EM-i (plug-in); o EX5 elétrico não está no catálogo. Sugere-se a Pro. FIPE: 'Geely EX5 PRO (Elétrico)', código 088003-5; 2026 = R$ 169.431 (set/2026); 0 km = R$ 194.068 (set/2026). Max = 'EX5 MAX (Elétrico)', código 088004-3, R$ 207.130 (set/2026). Excluir 'em-i'.",
+  "wikipedia": {
+    "lang": "en",
+    "title": "Geely EX5"
+  },
+  "officialUrl": "https://www.geelybrasil.com.br/ex5",
+  "sources": [
+    {
+      "label": "Geely Brasil — EX5",
+      "url": "https://www.geelybrasil.com.br/ex5"
+    },
+    {
+      "label": "CNN Brasil — Geely aumenta preços de EX2 e EX5 (out/2026)",
+      "url": "https://www.cnnbrasil.com.br/blogs/jorge-moraes/auto/escassez-faz-geely-aumentar-preco-de-ex2-e-ex5-no-brasil-entenda/"
+    },
+    {
+      "label": "Mixvale — Geely eleva preços EX2 e EX5 (03/out/2026)",
+      "url": "https://www.mixvale.com.br/2026/10/03/geely-eleva-precos-dos-modelos-ex2-e-ex5-em-ate-r-2-mil-no-brasil/"
+    },
+    {
+      "label": "Car.blog.br — EX5 Max 2026 novo acabamento (set/2026)",
+      "url": "https://www.car.blog.br/2026/09/geely-ex5-max-precos-detalhes.html"
+    },
+    {
+      "label": "CNN Brasil — EX5 chega ao Brasil (2025)",
+      "url": "https://www.cnnbrasil.com.br/auto/geely-ex5-suv-eletrico-chega-ao-brasil-mais-barato-que-honda-hr-v/"
+    },
+    {
+      "label": "Autoo — EX5 estreia com 413 km",
+      "url": "https://www.autoo.com.br/geely-ex5-estreia-no-brasil-com-autonomia-de-413-km-veja-precos-e-detalhes/"
+    },
+    {
+      "label": "Diário do Poder — EX5 peca na autonomia (349 km PBEV)",
+      "url": "https://diariodopoder.com.br/diario-motor/com-lista-de-equipamentos-superior-geely-ex5-eletrico-peca-na-autonomia"
+    },
+    {
+      "label": "Diário do Comércio — teste de consumo EX5",
+      "url": "https://diariodocomercio.com.br/veiculos/geely-ex5-eletrico-veiculo-confortavel/"
+    },
+    {
+      "label": "Webmotors — EX5 2026 ficha e equipamentos",
+      "url": "https://www.webmotors.com.br/geely/ex5/2026"
+    },
+    {
+      "label": "AutoPapo — EX5 defasado após atualização na China",
+      "url": "https://autopapo.com.br/noticia/geely-ex5-2026-china/"
+    },
+    {
+      "label": "Tabela Carros — FIPE EX5 PRO (Elétrico) 2026",
+      "url": "https://tabelacarros.com/carros/geely/EX5-PRO--ELETRICO-/2026-Eletrico"
+    },
+    {
+      "label": "Euro NCAP — Geely EX5",
+      "url": "https://www.euroncap.com/en/results/geely/ex5/54531"
+    }
+  ],
+  "unverified": [
+    "Consumo Inmetro em km/kWh/MJ/km — não encontrado; catálogo estima 349 km ÷ 60,22 kWh ≈ 5,8 km/kWh.",
+    "Autonomia PBEV da Pro (413 km atribuído ao Inmetro por revendas e ao WLTP pelo Car.blog.br; 349 km PBEV citado para a Max).",
+    "Preço de tabela da Pro: R$ 205.800 (lançamento) x R$ 207.800 (após reajuste) — o site oficial mostra R$ 197.800 com bônus de R$ 10.000.",
+    "Comprimento e entre-eixos não vistos em fonte brasileira.",
+    "Garantia (veículo/bateria) não vista.",
+    "ACC na versão Pro.",
+    "Pesquisa feita por resumos de busca das fontes listadas (páginas não abertas diretamente); confira os valores na fonte."
+  ]
+}

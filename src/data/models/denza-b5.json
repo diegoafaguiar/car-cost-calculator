@@ -1,0 +1,197 @@
+{
+  "catalogSeed": {
+    "brand": "Denza",
+    "model": "B5",
+    "version": "GS 1.5 Turbo PHEV 4WD",
+    "category": "suv-grande",
+    "powertrain": "hibrido-plugin",
+    "seats": 5,
+    "trunkL": 470,
+    "refPriceNew": 449000,
+    "consumption": {
+      "cityKmL": 8.4,
+      "roadKmL": 7.9,
+      "cityKmLEthanol": null,
+      "roadKmLEthanol": null,
+      "cityKmKWh": 2.33,
+      "roadKmKWh": 2.33
+    },
+    "evShareNote": "Plug-in: bateria de 31,8 kWh, 74 km elétricos pelo Inmetro; km/kWh estimado = 74 km ÷ 31,8 kWh. Só gasolina.",
+    "fipeBrand": "DENZA",
+    "fipeInclude": [
+      "B5",
+      "GS"
+    ],
+    "since": 2026
+  },
+  "id": "denza-b5",
+  "researchedAt": "2026-10",
+  "displayName": "Denza B5",
+  "summary": "SUV off-road de luxo híbrido plug-in da Denza (marca premium da BYD), chassi sobre longarinas, 4,89 m. Motor 1.5 turbo a gasolina e dois motores elétricos (até 677 cv e 77,5 kgfm), tração 4x4, bateria Blade de 31,8 kWh. Chegou em nov/2025 na versão GS (R$ 436 mil, hoje R$ 449 mil); em set/2026 ganhou a GL, mais simples, por R$ 405 mil. Líder do segmento premium em jun/2026 (566 emplacamentos).",
+  "generation": "1ª geração (parente do Fangchengbao Bao 5 chinês); no Brasil desde nov/2025 (linha 2026).",
+  "timeline": [
+    {
+      "modelYear": "2026",
+      "change": "Estreia no Salão de São Paulo (nov/2025); GS à venda por R$ 436.000 e 1ª concessionária em São Paulo (dez/2025)."
+    },
+    {
+      "modelYear": "2027",
+      "change": "GS 2026/2027 citada a R$ 449 mil (Carro.Blog.br; FIPE 0 km ago/2026 R$ 449.276)."
+    },
+    {
+      "modelYear": "2027",
+      "change": "Versão GL (rodas 18\", sem suspensão Di-SUS, 22 cm de vão livre) lançada por R$ 405 mil em set/2026, focada em vendas diretas/CNPJ."
+    }
+  ],
+  "highlights": [
+    "Até 677 cv e 77,5 kgfm; 0–100 km/h em 4,8 s; reboca 2.500 kg.",
+    "74 km de autonomia elétrica pelo Inmetro; recarga DC de 100 kW.",
+    "GS: suspensão inteligente Di-SUS, 31 cm de vão livre, rodas 20\".",
+    "Luxo: 11 airbags, câmera 360°/540°, ACC com stop & go, teto panorâmico, bancos ventilados/aquecidos com massagem.",
+    "5 estrelas no ANCAP (2025).",
+    "Garantia de 6 anos (veículo) e 8 anos (bateria) segundo concessionária."
+  ],
+  "watchOuts": [
+    "Consumo alto sem carga na bateria: 8,4 km/l (cidade) e 7,9 km/l (estrada) pelo Inmetro.",
+    "Pesado (~2.900–3.050 kg) e grande: 4,89 m x 1,97 m.",
+    "Preço de R$ 405–449 mil, muito acima do Corolla Cross.",
+    "Marca nova com rede pequena: 5 pontos de venda em jul/2026 (meta de 22 até o fim de 2026).",
+    "FIPE da GS 2027 já em R$ 424.184 (out/2026) contra R$ 449 mil novo; FIPE 2026 em torno de R$ 391–396 mil.",
+    "ANCAP aplicou penalidade de 8 pontos pela agressividade da estrutura dianteira a outros veículos.",
+    "Não foi encontrado recall do B5 no Brasil."
+  ],
+  "specs": {
+    "version": "Denza B5 GS 1.5 Turbo PHEV 4WD (linha 2026/2027)",
+    "engine": "1.5 turbo gasolina + 2 motores elétricos (dianteiro 272 cv, traseiro 350 cv); bateria Blade LFP de 31,8 kWh; tanque de 83 L",
+    "powerCv": "677 (combinada)",
+    "torqueKgfm": "77,5 (combinado)",
+    "transmission": "Híbrida (motores elétricos + 1.5 turbo), tração 4x4",
+    "trunkL": 470,
+    "lengthMm": 4890,
+    "wheelbaseMm": 2800,
+    "safety": "11 airbags; ANCAP 5 estrelas (2025)",
+    "warranty": "6 anos (veículo) e 8 anos (bateria), segundo concessionária; uma fonte cita limite de 200 mil km"
+  },
+  "inmetro": {
+    "version": "Denza B5",
+    "cityGas": 8.4,
+    "roadGas": 7.9,
+    "cityEth": null,
+    "roadEth": null,
+    "cityKmKWh": null,
+    "roadKmKWh": null,
+    "year": "PBEV 2026 (conforme AutoPapo); autonomia elétrica 74 km",
+    "source": "https://autopapo.com.br/noticia/denza-b5-consumo-inmetro/"
+  },
+  "price0km": {
+    "version": "GS",
+    "price": 449000,
+    "date": "2026 (Carro.Blog.br/Mixvale set/2026; FIPE 0 km ago/2026 R$ 449.276)",
+    "source": "https://carro.blog.br/carros/denza/denza-b5-gs-2026-custa-r-449-mil-tem-677-cv-tracao-4x4-geladeira-suspensao-inteligente-e-acelera-de-0-a-100-km-h-em-cinco-segundos.html"
+  },
+  "versionsAndPrices": [
+    {
+      "version": "GL",
+      "price": 405000,
+      "date": "set/2026",
+      "source": "https://www.mixvale.com.br/2026/09/21/byd-lanca-denza-b5-por-r-405-mil-com-motor-hibrido-de-677-cv/"
+    },
+    {
+      "version": "GS",
+      "price": 449000,
+      "date": "set/2026",
+      "source": "https://www.mixvale.com.br/2026/09/21/byd-lanca-denza-b5-por-r-405-mil-com-motor-hibrido-de-677-cv/"
+    }
+  ],
+  "launchModelYearBR": 2026,
+  "catalogCheck": "Modelo não está no catálogo. Sugere-se a GS (R$ 449 mil), versão vendida desde o lançamento; a GL (R$ 405 mil) é a de entrada. FIPE: 'B5 GS 4WD' 2027 = R$ 424.184 e 'B5 GL 4WD' 2027 = R$ 361.067 (out/2026, Carro SP); B5 2026 '1.5 Turbo PHEV AWD' código 306001-2 = R$ 391.105 (Webmotors) / R$ 396.250 (Mobiauto, set/2026). Nomes FIPE divergem entre sites — conferir.",
+  "wikipedia": {
+    "lang": "en",
+    "title": "Denza B5"
+  },
+  "officialUrl": "https://www.denza.com/br/B5.html",
+  "sources": [
+    {
+      "label": "Bem Paraná — Denza B5 estreia no Brasil por R$ 436 mil",
+      "url": "https://www.bemparana.com.br/carros/denza-b5-estreia-no-brasil-por-r-436-mil/"
+    },
+    {
+      "label": "Vrum — Denza anuncia seus preços no Brasil (nov/2025)",
+      "url": "https://www.vrum.com.br/noticias/2025/11/7299629-veja-denza-marca-de-luxo-da-byd-anuncia-seus-precos-no-brasil.html"
+    },
+    {
+      "label": "Carro.Blog.br — Denza B5 GS 2026 custa R$ 449 mil",
+      "url": "https://carro.blog.br/carros/denza/denza-b5-gs-2026-custa-r-449-mil-tem-677-cv-tracao-4x4-geladeira-suspensao-inteligente-e-acelera-de-0-a-100-km-h-em-cinco-segundos.html"
+    },
+    {
+      "label": "Carros e Garagem — Denza B5 GL 2026, R$ 44 mil mais barata",
+      "url": "https://www.carrosegaragem.com.br/denza-b5-gl-2026/"
+    },
+    {
+      "label": "Mixvale — B5 por R$ 405 mil (GL) e R$ 449 mil (GS), set/2026",
+      "url": "https://www.mixvale.com.br/2026/09/21/byd-lanca-denza-b5-por-r-405-mil-com-motor-hibrido-de-677-cv/"
+    },
+    {
+      "label": "AutoPapo — Denza B5 bebe mais que V8 segundo o Inmetro",
+      "url": "https://autopapo.com.br/noticia/denza-b5-consumo-inmetro/"
+    },
+    {
+      "label": "Canal VE — ficha técnica do Denza B5",
+      "url": "https://canalve.com.br/ficha-tecnica/denza/tudo-sobre-b5/"
+    },
+    {
+      "label": "Motor Show — lançamento do Denza B5",
+      "url": "https://motorshow.com.br/denza-b5-lancamento"
+    },
+    {
+      "label": "Webmotors — Denza B5 2026, ficha e itens",
+      "url": "https://www.webmotors.com.br/denza/b5/2026"
+    },
+    {
+      "label": "Heycar — ficha técnica do Denza B5 1.5 PHEV 2026",
+      "url": "https://heycar.com.br/ficha-tecnica/ficha-tecnica-completa-do-denza-b5-1-5-phev-2026-com-potencia-consumo-e-muito-mais"
+    },
+    {
+      "label": "Autoesporte via Grupo Sentinela — teste do Denza B5",
+      "url": "https://www.gruposentinela.com.br/teste-denza-b5-e-jipao-da-byd-com-luxo-de-land-rover-a-preco-de-toyota/"
+    },
+    {
+      "label": "Denza Brasil — página oficial do B5",
+      "url": "https://www.denza.com/br/B5.html"
+    },
+    {
+      "label": "Tabela FIPE Brasil — Denza B5 GS 4WD 0 km",
+      "url": "https://www.tabelafipebrasil.com/carros/DENZA/B5-GS-4WD/Zero-Km-hibrido"
+    },
+    {
+      "label": "Carro SP — FIPE B5 GS 4WD 2027 (out/2026)",
+      "url": "https://carrosp.com.br/tabela-fipe/carros/denza/2027-6/b5-gs-4wd/"
+    },
+    {
+      "label": "CarNewsChina — Denza B5 recebe 5 estrelas no ANCAP (dez/2025)",
+      "url": "https://carnewschina.com/2025/12/18/byds-denza-b5-body-on-frame-suv-scored-five-stars-in-ancap-crash-test/"
+    },
+    {
+      "label": "AutoIndústria — Denza terá 22 concessionárias em 2026",
+      "url": "https://www.autoindustria.com.br/2025/11/26/denza-tera-rede-de-22-concessionarias-em-2026/"
+    },
+    {
+      "label": "LIDE — Denza acelera expansão no Brasil (rede em jul/2026)",
+      "url": "https://www.noticias.lide.com.br/noticias-lide/economia-negocios/denza-acelera-expansao-no-brasil-para-disputar-mercado-com-marcas-de-luxo"
+    },
+    {
+      "label": "Grand Brasil (concessionária) — Denza B5, garantia",
+      "url": "https://grandbrasil.com.br/denza/denza-b5/"
+    }
+  ],
+  "unverified": [
+    "km/kWh elétrico: o PBEV não publica para plug-in nas fontes vistas; usado 74 km ÷ 31,8 kWh ≈ 2,3 km/kWh.",
+    "Preço exato da GS (R$ 449 mil na imprensa; anúncios 0 km R$ 442.990–459.000).",
+    "Porta-malas 470 L x 430 L.",
+    "Garantia: limite de km e prazo da bateria só em fontes de concessionária/imprensa.",
+    "Recarga AC: 6 kW x 11 kW entre fontes.",
+    "Ano do PBEV.",
+    "Preço das revisões.",
+    "Pesquisa feita por resumos de busca das fontes listadas (páginas não abertas diretamente); confira os valores na fonte."
+  ]
+}

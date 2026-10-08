@@ -1,0 +1,60 @@
+{
+  "id": "jetour-s06-phev",
+  "version": "Jetour S06 Advance 2026",
+  "researchedAt": "2026-10",
+  "tech": {
+    "screen10": true,
+    "wirelessMirroring": true,
+    "digitalCluster": null,
+    "wirelessCharger": true,
+    "camera360": true,
+    "adaptiveCruise": false,
+    "connectedApp": null,
+    "keyless": true
+  },
+  "comfort": {
+    "automatic": true,
+    "digitalAC": true,
+    "rearVents": true,
+    "leather": true,
+    "powerSeat": true,
+    "seatClimate": false,
+    "sunroof": false
+  },
+  "safety": {
+    "airbags6": null,
+    "aeb": false,
+    "laneKeep": false,
+    "blindSpot": false,
+    "rearCrossTraffic": null
+  },
+  "ncap": {
+    "stars": null,
+    "year": null,
+    "program": null,
+    "note": "Nenhum teste Latin NCAP, Euro NCAP ou ANCAP encontrado para o S06.",
+    "source": ""
+  },
+  "sources": [
+    {
+      "label": "Motor Show - avaliação S06",
+      "url": "https://motorshow.com.br/avaliacao-jetour-s06"
+    },
+    {
+      "label": "Autoo - S06 preços e equipamentos",
+      "url": "https://www.autoo.com.br/jetour-s06-tem-desconto-de-quase-r-40-mil-para-pcd-veja-precos-e-equipamentos-do-suv/"
+    },
+    {
+      "label": "Auto+ TV - S06 Advance",
+      "url": "https://www.automaistv.com.br/avaliacao/jetour-s06-advance-avaliacao/"
+    }
+  ],
+  "notes": "R$ 199.900. Multimídia de 12,8\" com Android Auto/CarPlay sem fio, carregador por indução, câmera 360°, sensor traseiro, 5 USB, chave presencial e partida remota; ar digital de duas zonas com saída traseira; banco do motorista elétrico de 6 posições; couro sintético; tampa traseira elétrica; LED; rodas de 18\". Sem ACC, AEB, assistente de faixa e ponto cego (só no Premium: ACC, AEB, LKA, FCW, RCW, BSD, TJA). Teto panorâmico e bancos aquecidos/ventilados só no Premium. Número de airbags não encontrado.",
+  "unverified": [
+    "tech.digitalCluster",
+    "tech.connectedApp",
+    "safety.airbags6",
+    "safety.rearCrossTraffic",
+    "ncap"
+  ]
+}

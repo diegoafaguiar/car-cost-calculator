@@ -1,0 +1,68 @@
+{
+  "id": "jaecoo-5-hev",
+  "version": "Jaecoo 5 HEV Comfort 2027 (R$ 159.990)",
+  "researchedAt": "2026-10",
+  "tech": {
+    "screen10": false,
+    "wirelessMirroring": true,
+    "digitalCluster": null,
+    "wirelessCharger": null,
+    "camera360": false,
+    "adaptiveCruise": null,
+    "connectedApp": null,
+    "keyless": null
+  },
+  "comfort": {
+    "automatic": true,
+    "digitalAC": true,
+    "rearVents": null,
+    "leather": null,
+    "powerSeat": null,
+    "seatClimate": null,
+    "sunroof": false
+  },
+  "safety": {
+    "airbags6": true,
+    "aeb": null,
+    "laneKeep": null,
+    "blindSpot": null,
+    "rearCrossTraffic": null
+  },
+  "ncap": {
+    "stars": null,
+    "year": null,
+    "program": "Euro NCAP/ANCAP",
+    "note": "Nenhum resultado oficial do Jaecoo 5/J5 encontrado; sem Latin NCAP.",
+    "source": ""
+  },
+  "sources": [
+    {
+      "label": "Autoo — Jaecoo 5 2027 equipamentos",
+      "url": "https://www.autoo.com.br/jaecoo-5-2027-veja-preco-consumo-e-equipamentos-do-rival-de-t-cross-creta-e-outros/"
+    },
+    {
+      "label": "Motor Show — Jaecoo 5 estreia",
+      "url": "https://motorshow.com.br/jaecoo-5-estreia-no-brasil-por-r-154-990"
+    },
+    {
+      "label": "AutoPapo — Jaecoo 5 HEV",
+      "url": "https://autopapo.com.br/noticia/jaecoo-5-lancamento-preco-versoes/"
+    }
+  ],
+  "notes": "Comfort: multimídia de 9\" com CarPlay/Android Auto sem fio, ar digital duas zonas, rodas 18\", 6 airbags, freio de estacionamento eletrônico com Auto Hold, câmera de ré, piloto automático (não adaptativo confirmado) e assistente de frenagem (BAS). Câmera 540°, teto panorâmico de 1,45 m² e tela de 13,2\" só na Prestige. ADAS (ACC/AEB) citado sem atribuição clara por versão.",
+  "unverified": [
+    "tech.digitalCluster",
+    "tech.wirelessCharger",
+    "tech.adaptiveCruise",
+    "tech.connectedApp",
+    "tech.keyless",
+    "comfort.rearVents",
+    "comfort.leather",
+    "comfort.powerSeat",
+    "comfort.seatClimate",
+    "safety.aeb",
+    "safety.laneKeep",
+    "safety.blindSpot",
+    "safety.rearCrossTraffic"
+  ]
+}

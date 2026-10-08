@@ -1,0 +1,151 @@
+{
+  "catalogSeed": {
+    "brand": "Leapmotor",
+    "model": "B10 REEV",
+    "version": "Ultra-Híbrido 1.5 REEV 18,8 kWh",
+    "category": "suv-medio",
+    "powertrain": "hibrido-plugin",
+    "seats": 5,
+    "trunkL": 350,
+    "refPriceNew": 179990,
+    "consumption": {
+      "cityKmL": 13.5,
+      "roadKmL": 12.3,
+      "cityKmLEthanol": null,
+      "roadKmLEthanol": null,
+      "cityKmKWh": 3.6,
+      "roadKmKWh": 3.6
+    },
+    "evShareNote": "Elétrico com extensor de autonomia (REEV): motor 1.5 a gasolina só como gerador. Bateria LFP de 18,8 kWh, 68 km elétricos (Inmetro). Recarrega na tomada (AC e DC). Só gasolina.",
+    "fipeBrand": "LEAPMOTOR",
+    "fipeInclude": [
+      "B10",
+      "(Híbrido)"
+    ],
+    "since": 2027
+  },
+  "id": "leapmotor-b10-reev",
+  "researchedAt": "2026-10",
+  "displayName": "Leapmotor B10 Ultra-Híbrido (REEV)",
+  "summary": "SUV de 4,52 m da Leapmotor (Stellantis), na versão com extensor de autonomia (REEV). O motor elétrico traseiro de 218 cv move o carro, e o 1.5 a gasolina só gera energia. Bateria de 18,8 kWh com 68 km elétricos (Inmetro) e tanque de 50 L. Foi lançado no Festival Interlagos (26/ago/2026) por R$ 179.990, em versão única e como linha 2027, e chega às lojas entre set e out/2026. Rival direto do BYD Song Pro e do Jaecoo 7 PHEV.",
+  "generation": "1ª geração (B10, 2025); versão REEV lançada no Brasil em ago/2026 (linha 2027).",
+  "timeline": [
+    {
+      "modelYear": "2027",
+      "change": "Lançamento em 26/ago/2026 (Festival Interlagos) por R$ 179.990, versão única; a Stellantis informou que será montado em Goiana (PE), ao lado do C10."
+    }
+  ],
+  "highlights": [
+    "Preço de R$ 179.990, abaixo do próprio B10 elétrico (R$ 182.990).",
+    "Inmetro: 13,5 km/l na cidade e 12,3 km/l na estrada só com gasolina; 68 km elétricos.",
+    "Android Auto e Apple CarPlay sem fio na central de 14,6\".",
+    "Pacote Leap Pilot (ACC, frenagem autônoma, assistente de faixa, ponto cego), 7 airbags, câmera 360°.",
+    "Bancos dianteiros elétricos com memória e ventilação, teto panorâmico.",
+    "B10 elétrico tem 5 estrelas no Euro NCAP (2025), com 93% para adultos."
+  ],
+  "watchOuts": [
+    "Autonomia elétrica curta (68 km) para um plug-in; o Song Pro GS faz 72 km.",
+    "Porta-malas de 350 L, pequeno para o porte.",
+    "Lançamento recente, sem dados de uso no Brasil; ainda não aparece na FIPE.",
+    "Marca nova (nov/2025): revenda e rede ainda sem histórico.",
+    "As fontes divergem em potência e autonomia (Folha Vitória cita 286 cv e 389 km, números que parecem errados)."
+  ],
+  "specs": {
+    "version": "B10 Ultra-Híbrido REEV (linha 2027)",
+    "engine": "Motor elétrico traseiro de 218 cv + 1.5 a gasolina que só gera energia; bateria LFP de 18,8 kWh",
+    "powerCv": "218 (motor elétrico de tração)",
+    "torqueKgfm": "24,5",
+    "transmission": "Redução fixa (elétrico), tração traseira",
+    "trunkL": 350,
+    "lengthMm": 4515,
+    "wheelbaseMm": 2735,
+    "safety": "Euro NCAP 5 estrelas (B10 elétrico, 2025): adulto 93%, criança 93%. Sem Latin NCAP. 7 airbags.",
+    "warranty": "6 anos (veículo); 8 anos para bateria, motor elétrico e alta tensão (CNN Brasil)"
+  },
+  "inmetro": {
+    "version": "B10 REEV",
+    "cityGas": 13.5,
+    "roadGas": 12.3,
+    "cityEth": null,
+    "roadEth": null,
+    "cityKmKWh": null,
+    "roadKmKWh": null,
+    "year": "PBEV 2026/2027 (conforme a imprensa): 68 km elétricos",
+    "source": "https://www.cnnbrasil.com.br/auto/leapmotor-b10-reev-chega-ao-brasil-por-r-179-990-conheca-o-carro/"
+  },
+  "price0km": {
+    "version": "Ultra-Híbrido REEV",
+    "price": 179990,
+    "date": "ago/2026",
+    "source": "https://www.cnnbrasil.com.br/auto/leapmotor-b10-reev-chega-ao-brasil-por-r-179-990-conheca-o-carro/"
+  },
+  "versionsAndPrices": [
+    {
+      "version": "Ultra-Híbrido REEV",
+      "price": 179990,
+      "date": "set/2026",
+      "source": "https://www.car.blog.br/2026/09/leapmotor-b10-suv-ultra-hibrido-preco-r.html"
+    },
+    {
+      "version": "Elétrico BEV 56,2 kWh (comparação)",
+      "price": 182990,
+      "date": "out/2026",
+      "source": "https://www.jornaldocomercio.com/colunas/automotor/2026/10/1265359-leapmotor-estende-o-conceito-ultra-hibrido-para-o-b10.html"
+    }
+  ],
+  "launchModelYearBR": 2027,
+  "catalogCheck": "Modelo ainda não está no catálogo. Ainda não aparece na FIPE (só existe 'B10 (Elétrico)', código 305003-3). Quando entrar, o nome provável é 'B10 (Híbrido)', como no C10, mas isso não foi confirmado. A FIPE classifica o B10 elétrico como SUV compacto; aqui ele foi posto em suv-medio pelo porte (4,52 m, maior que o Corolla Cross) e pelos rivais (Song Pro, Jaecoo 7).",
+  "wikipedia": {
+    "lang": "en",
+    "title": "Leapmotor B10"
+  },
+  "officialUrl": "https://www.leapmotor.com.br/",
+  "sources": [
+    {
+      "label": "CNN Brasil: B10 REEV por R$ 179.990",
+      "url": "https://www.cnnbrasil.com.br/auto/leapmotor-b10-reev-chega-ao-brasil-por-r-179-990-conheca-o-carro/"
+    },
+    {
+      "label": "Car.Blog.br: B10 Ultra-Híbrido",
+      "url": "https://www.car.blog.br/2026/09/leapmotor-b10-suv-ultra-hibrido-preco-r.html"
+    },
+    {
+      "label": "Mundo do Automóvel para PCD: B10 Ultra-Híbrido",
+      "url": "https://mundodoautomovelparapcd.com.br/leapmotor-b10-ultra-hibrido-reev-lancamento/"
+    },
+    {
+      "label": "Perfil Brasil: B10 REEV",
+      "url": "https://brasil.perfil.com/carros/rival-do-byd-song-pro-leapmotor-lanca-o-suv-b10-ultra-hibrido-por-r-179-990.phtml"
+    },
+    {
+      "label": "AutoPapo: B10 REEV no Festival Interlagos",
+      "url": "https://autopapo.com.br/noticia/leapmotor-b10-reev-festival-interlagos/"
+    },
+    {
+      "label": "Campo Grande News: porta-malas e autonomia",
+      "url": "https://www.campograndenews.com.br/veiculos/leapmotor-b10-hibrido-chega-por-r-179-990-e-promete-ate-900-km-de-autonomia"
+    },
+    {
+      "label": "Folha PE: montagem em Goiana",
+      "url": "https://www.folhape.com.br/colunistas/fmotors/leapmotor-b10-hibrido-chega-em-setembro-com-tecnologia-reev-e-mira-rivais-chineses/59329/"
+    },
+    {
+      "label": "Jornal do Comércio: Ultra-Híbrido no B10 (out/2026)",
+      "url": "https://www.jornaldocomercio.com/colunas/automotor/2026/10/1265359-leapmotor-estende-o-conceito-ultra-hibrido-para-o-b10.html"
+    },
+    {
+      "label": "Euro NCAP: 23 carros, nov/2025",
+      "url": "https://cdn.euroncap.com/en/press-media/press-releases/euro-ncap-announces-test-results-for-23-new-cars"
+    }
+  ],
+  "unverified": [
+    "km/kWh: estimativa de 3,6 (68 km ÷ 18,8 kWh); valor do Inmetro não encontrado.",
+    "Consumo de 13,5/12,3 km/l: CNN/Perfil dizem que é do Inmetro, mas o Mundo do Automóvel para PCD diz que a marca não informou consumo. A etiqueta PBEV não foi vista.",
+    "Porta-malas de 350 L: não foi confirmado se é o mesmo do B10 elétrico (cerca de 420 L, segundo uma concessionária).",
+    "Entre-eixos de 2.735 mm vem da Wikipedia (modelo global).",
+    "Garantia em km do veículo (a linha toda: 6 anos/150 mil km, segundo a Autoo).",
+    "Custo das revisões: não encontrado.",
+    "Euro NCAP: testado o B10 elétrico; não vale automaticamente para o REEV.",
+    "Pesquisa feita por resumos de busca das fontes listadas (páginas não abertas diretamente); confira os valores na fonte."
+  ]
+}

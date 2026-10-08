@@ -1,0 +1,147 @@
+{
+  "catalogSeed": {
+    "brand": "Leapmotor",
+    "model": "C10",
+    "version": "Elétrico BEV 69,9 kWh",
+    "category": "suv-medio",
+    "powertrain": "eletrico",
+    "seats": 5,
+    "trunkL": 465,
+    "refPriceNew": 204990,
+    "consumption": {
+      "cityKmL": 0,
+      "roadKmL": 0,
+      "cityKmLEthanol": null,
+      "roadKmLEthanol": null,
+      "cityKmKWh": 4.8,
+      "roadKmKWh": 4.8
+    },
+    "evShareNote": "100% elétrico, com bateria LFP de 69,9 kWh e 338 km de autonomia no Inmetro (PBEV).",
+    "fipeBrand": "LEAPMOTOR",
+    "fipeInclude": [
+      "C10",
+      "(Elétrico)"
+    ],
+    "since": 2026
+  },
+  "id": "leapmotor-c10",
+  "researchedAt": "2026-10",
+  "displayName": "Leapmotor C10 Elétrico (BEV)",
+  "summary": "SUV médio 100% elétrico da Leapmotor (Stellantis), importado da China. Motor traseiro de 218 cv e 32,6 kgfm, bateria LFP de 69,9 kWh e 338 km de autonomia no Inmetro. Tem 4,74 m de comprimento, versão única e a mesma lista de equipamentos do C10 Ultra-Híbrido (REEV). Segundo a imprensa, a versão elétrica seguirá importada mesmo depois que a produção em Goiana (PE) começar.",
+  "generation": "1ª geração (C10, 2023); vendido no Brasil desde nov/2025 como linha 2026.",
+  "timeline": [
+    {
+      "modelYear": "2026",
+      "change": "Lançamento em 4/nov/2025 por R$ 189.990 (preço especial de lançamento)."
+    },
+    {
+      "modelYear": "2026",
+      "change": "Preço sugerido sobe para R$ 204.990 (Webmotors; FIPE 0 km de set/2026)."
+    },
+    {
+      "modelYear": "2027",
+      "change": "FIPE já lista o 2027 elétrico. A linha 2027 global tem 224 cv, recarga DC de 120 kW e CarPlay sem fio, mas isso não foi confirmado para o Brasil."
+    }
+  ],
+  "highlights": [
+    "338 km de autonomia (Inmetro); em teste urbano da CNN, rodou 334 km de 90% a 10%.",
+    "218 cv, 0 a 100 km/h em 8,3 s, velocidade máxima de 170 km/h.",
+    "Porta-malas de 465 L + 32 L no compartimento dianteiro (ficha da Stellantis).",
+    "Teto panorâmico, bancos dianteiros com aquecimento e ventilação, pacote ADAS completo.",
+    "5 estrelas no Euro NCAP (2024): adulto 89%, criança 85%."
+  ],
+  "watchOuts": [
+    "Sem Android Auto/Apple CarPlay nativos na linha 2026 (falta hardware); há só espelhamento Android por aplicativo.",
+    "A autonomia do Inmetro (338 km) é bem menor que a do Chile (480 km), mesmo com a mesma bateria.",
+    "Recarga DC de 84 kW na linha 2026, modesta para uma bateria de 70 kWh.",
+    "Marca nova (nov/2025): FIPE do 2026 usado = R$ 182.484 (set/2026), já bem abaixo do 0 km.",
+    "Nenhum recall encontrado no Brasil (consulta indireta, jul/2026)."
+  ],
+  "specs": {
+    "version": "C10 Elétrico BEV (linha 2026)",
+    "engine": "Motor elétrico traseiro; bateria LFP de 69,9 kWh",
+    "powerCv": "218",
+    "torqueKgfm": "32,6",
+    "transmission": "Redução fixa, tração traseira",
+    "trunkL": 465,
+    "lengthMm": 4739,
+    "wheelbaseMm": 2825,
+    "safety": "Euro NCAP 5 estrelas (2024): adulto 89%, criança 85%, vulneráveis 77%, assistência 76%. Sem Latin NCAP.",
+    "warranty": "6 anos/150 mil km (veículo); 8 anos para bateria, motor elétrico e inversor"
+  },
+  "inmetro": {
+    "version": "C10 BEV",
+    "cityGas": null,
+    "roadGas": null,
+    "cityEth": null,
+    "roadEth": null,
+    "cityKmKWh": null,
+    "roadKmKWh": null,
+    "year": "PBEV 2026: autonomia de 338 km. MJ/km não encontrado.",
+    "source": "https://www.cnnbrasil.com.br/auto/leapmotor-c10-bev-conheca-os-pontos-positivos-e-negativos-do-suv/"
+  },
+  "price0km": {
+    "version": "Elétrico BEV 69,9 kWh",
+    "price": 204990,
+    "date": "set/2026",
+    "source": "https://www.webmotors.com.br/leapmotor/c10/2026"
+  },
+  "versionsAndPrices": [
+    {
+      "version": "Elétrico BEV 69,9 kWh",
+      "price": 204990,
+      "date": "set/2026",
+      "source": "https://www.webmotors.com.br/leapmotor/c10/2026"
+    },
+    {
+      "version": "Ultra-Híbrido REEV",
+      "price": 219990,
+      "date": "set/2026",
+      "source": "https://www.webmotors.com.br/leapmotor/c10/2026"
+    }
+  ],
+  "launchModelYearBR": 2026,
+  "catalogCheck": "Modelo ainda não está no catálogo. FIPE: 'C10 (Elétrico)', código 305001-7. 2026 usado = R$ 182.484 e 0 km = R$ 204.990 (set/2026, tabelacarros.com); tabelafipebrasil.com cita R$ 205.620 para o 0 km em out/2026.",
+  "wikipedia": {
+    "lang": "en",
+    "title": "Leapmotor C10"
+  },
+  "officialUrl": "https://www.leapmotor.com.br/c10.html",
+  "sources": [
+    {
+      "label": "Ficha técnica Stellantis: C10 BEV (PDF)",
+      "url": "https://www.media.stellantis.com/uploads/br/attachment/6039/fichatecnicaleapmotorc10eletricobev1-690b81efb991a.pdf"
+    },
+    {
+      "label": "CNN Brasil: C10 BEV, pontos positivos e negativos",
+      "url": "https://www.cnnbrasil.com.br/auto/leapmotor-c10-bev-conheca-os-pontos-positivos-e-negativos-do-suv/"
+    },
+    {
+      "label": "Autoo: dados Inmetro C10 e B10",
+      "url": "https://www.autoo.com.br/leapmotor-c10-e-b10-tem-dados-de-consumo-e-autonomia-divulgados-pelo-inmetro/"
+    },
+    {
+      "label": "Webmotors: C10 2026",
+      "url": "https://www.webmotors.com.br/leapmotor/c10/2026"
+    },
+    {
+      "label": "Tabela FIPE: C10 (Elétrico) 2026",
+      "url": "https://tabelacarros.com/carros/leapmotor/C10--ELETRICO-/2026-Eletrico"
+    },
+    {
+      "label": "Euro NCAP C10 (Vision Mobility)",
+      "url": "https://vision-mobility.de/en/news/leapmotor-c10-chinese-electric-suv-receives-five-stars-in-euro-ncap-355347.html"
+    },
+    {
+      "label": "Autoo: C10 pode chegar sem CarPlay",
+      "url": "https://www.autoo.com.br/leapmotor-c10-suv-eletrico-de-luxo-pode-chegar-sem-um-importante-item/"
+    }
+  ],
+  "unverified": [
+    "km/kWh: Inmetro (MJ/km) não encontrado; 4,8 km/kWh é estimativa (338 km ÷ 69,9 kWh), repetida para cidade e estrada.",
+    "Preço de out/2026: o site oficial mostrou R$ 214.990, sem dizer a versão; Webmotors e FIPE dão R$ 204.990.",
+    "Custo das revisões (preço fixo, a cada 12 meses ou 20 mil km): valores não encontrados.",
+    "Porta-malas: 465 L (ficha oficial) x 400 L ou 517 L (outros sites).",
+    "Pesquisa feita por resumos de busca das fontes listadas (páginas não abertas diretamente); confira os valores na fonte."
+  ]
+}

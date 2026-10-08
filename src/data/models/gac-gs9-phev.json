@@ -1,0 +1,163 @@
+{
+  "catalogSeed": {
+    "brand": "GAC",
+    "model": "GS9",
+    "version": "Ultra 1.5 Turbo AWD (plug-in/REEV, 6 lugares)",
+    "category": "suv-grande",
+    "powertrain": "hibrido-plugin",
+    "seats": 6,
+    "trunkL": 255,
+    "refPriceNew": 399990,
+    "consumption": {
+      "cityKmL": 12.7,
+      "roadKmL": 13.5,
+      "cityKmLEthanol": null,
+      "roadKmLEthanol": null,
+      "cityKmKWh": 2.6,
+      "roadKmKWh": 2.6
+    },
+    "evShareNote": "Plug-in com extensor de autonomia (PHEV/REEV): 1.5 turbo gasolina + gerador + 2 motores elétricos; bateria de 44,5 kWh e 114 km elétricos Inmetro. km/kWh estimado = 114 ÷ 44,5.",
+    "fipeBrand": "GAC",
+    "fipeInclude": [
+      "GS9 Ultra 1.5 16V AWD Turbo Aut."
+    ],
+    "since": 2027
+  },
+  "id": "gac-gs9-phev",
+  "researchedAt": "2026-10",
+  "displayName": "GAC GS9",
+  "summary": "SUV grande de três fileiras (6 lugares, 2+2+2) e 5,06 m, topo de linha da GAC no Brasil. Primeiro plug-in da marca no país, com arquitetura PHEV com extensor de autonomia (REEV): motor 1.5 turbo a gasolina, gerador e dois motores elétricos (tração integral), 500 cv combinados, bateria de 44,5 kWh e 114 km de autonomia elétrica pelo Inmetro. Versão única Ultra.",
+  "generation": "1ª geração (Trumpchi Xiangwang S9, apresentado em abr/2025 na China); no Brasil desde ago/2026 (linha 2027).",
+  "timeline": [
+    {
+      "modelYear": "2027",
+      "change": "Lançamento em 18/ago/2026: preço oficial R$ 399.990, com condição de lançamento de R$ 379.990 + bônus de R$ 10 mil até 31/08/2026."
+    },
+    {
+      "modelYear": "2027",
+      "change": "A partir de 01/09/2026: R$ 399.990 (algumas lojas ainda anunciam R$ 379.990)."
+    }
+  ],
+  "highlights": [
+    "500 cv combinados e 613 Nm, tração integral, 0-100 km/h em 5,9 s.",
+    "114 km de autonomia elétrica Inmetro (bateria de 44,5 kWh); autonomia total declarada acima de 1.000 km.",
+    "Inmetro (conforme imprensa): 12,7 km/l na cidade e 13,5 km/l na estrada (gasolina).",
+    "9 airbags, câmeras 360°/540°, frenagem autônoma, ponto cego, head-up display, 2 carregadores sem fio de 50 W.",
+    "Garantia de 5 anos/150 mil km (veículo) e 8 anos/150 mil km (bateria)."
+  ],
+  "watchOuts": [
+    "Muito caro (R$ 399.990) e pesado (2.365 kg).",
+    "Porta-malas de só 255 L com as três fileiras (1.005 L com bancos rebatidos).",
+    "Lançamento recente (ago/2026), sem histórico de confiabilidade nem de revenda no Brasil; FIPE 2027 já em R$ 354.795 (set/2026).",
+    "Sem teste NCAP encontrado.",
+    "Fontes divergem sobre combustível (uma cita números de etanol) e sobre potência de recarga AC (6 x 14 kW)."
+  ],
+  "specs": {
+    "version": "GAC GS9 Ultra (linha 2027)",
+    "engine": "1.5 turbo gasolina + gerador + 2 motores elétricos (um por eixo), PHEV/REEV; bateria de 44,5 kWh; tanque de 60 L",
+    "powerCv": "500 (combinada)",
+    "torqueKgfm": "62,5 (613 Nm)",
+    "transmission": "Automática (híbrida; DHT segundo a maioria das fontes)",
+    "trunkL": 255,
+    "lengthMm": 5060,
+    "wheelbaseMm": 2930,
+    "safety": "9 airbags; sem teste NCAP encontrado",
+    "warranty": "5 anos/150 mil km (veículo); 8 anos/150 mil km (bateria e sistema elétrico)"
+  },
+  "inmetro": {
+    "version": "GS9 Ultra",
+    "cityGas": 12.7,
+    "roadGas": 13.5,
+    "cityEth": null,
+    "roadEth": null,
+    "cityKmKWh": null,
+    "roadKmKWh": null,
+    "year": "PBEV (conforme imprensa); autonomia elétrica Inmetro de 114 km",
+    "source": "https://www.autoo.com.br/gac-gs9-ultra-grande-e-pesado-porem-agil-confira-rapida-avaliacao/"
+  },
+  "price0km": {
+    "version": "Ultra",
+    "price": 399990,
+    "date": "set/2026",
+    "source": "https://arevista.com.br/consumo/gac-gs9-sobe-para-r-399-990-mas-ainda-desafia-suvs-de-luxo-com-500-cv-e-seis-lugares/"
+  },
+  "versionsAndPrices": [
+    {
+      "version": "Ultra",
+      "price": 399990,
+      "date": "set/2026",
+      "source": "https://arevista.com.br/consumo/gac-gs9-sobe-para-r-399-990-mas-ainda-desafia-suvs-de-luxo-com-500-cv-e-seis-lugares/"
+    },
+    {
+      "version": "Ultra (condição de lançamento até 31/08/2026)",
+      "price": 379990,
+      "date": "ago/2026",
+      "source": "https://www.vrum.com.br/mercado/2026/08/7482125-gac-gs9-estreia-com-500-cv-114-km-de-autonomia-eletrica-por-rs-379.html"
+    }
+  ],
+  "launchModelYearBR": 2027,
+  "catalogCheck": "Modelo ainda não está no catálogo. Versão única Ultra (R$ 399.990 desde set/2026). FIPE: marca 'GAC', modelo 'GS9 Ultra 1.5 16V AWD Turbo Aut.' código 304013-5. FIPE set/2026: 2027 = R$ 354.795; zero km = R$ 399.995.",
+  "wikipedia": {
+    "lang": "en",
+    "title": "Trumpchi Xiangwang S9"
+  },
+  "officialUrl": "https://www.gacgroup.com/pt-br/configuration/gac-gs9/2026",
+  "sources": [
+    {
+      "label": "GAC Brasil — especificações GS9",
+      "url": "https://www.gacgroup.com/pt-br/configuration/gac-gs9/2026"
+    },
+    {
+      "label": "Vrum — GS9 estreia por R$ 379.990 (ago/2026)",
+      "url": "https://www.vrum.com.br/mercado/2026/08/7482125-gac-gs9-estreia-com-500-cv-114-km-de-autonomia-eletrica-por-rs-379.html"
+    },
+    {
+      "label": "O Tempo — GS9 chega ao Brasil",
+      "url": "https://www.otempo.com.br/autotempo/2026/8/18/gac-gs9-novo-suv-hibrido-plug-in-de-500-cv-chega-ao-brasil-por-r-379-990"
+    },
+    {
+      "label": "A Revista — GS9 sobe para R$ 399.990",
+      "url": "https://arevista.com.br/consumo/gac-gs9-sobe-para-r-399-990-mas-ainda-desafia-suvs-de-luxo-com-500-cv-e-seis-lugares/"
+    },
+    {
+      "label": "All Connected — GS9 REEV, preço oficial",
+      "url": "https://allconnected.media/gac-gs9-traz-sistema-hibrido-reev-ao-brasil/"
+    },
+    {
+      "label": "Autos Segredos — 500 cv, 6 lugares, 114 km",
+      "url": "https://www.autossegredos.com.br/eletricos-hibridos/gac-gs9-ultra-suv-hibrido-500-cv-autonomia-114-km/"
+    },
+    {
+      "label": "Autoo — avaliação rápida GS9 Ultra",
+      "url": "https://www.autoo.com.br/gac-gs9-ultra-grande-e-pesado-porem-agil-confira-rapida-avaliacao/"
+    },
+    {
+      "label": "Guru dos Carros — coluna Fernando Calmon",
+      "url": "https://gurudoscarros.com.br/2026/08/22/coluna-fernando-calmon-gac-gs9-ultra-grande-e-pesado-porem-agil/"
+    },
+    {
+      "label": "Motor Show — impressões GS9",
+      "url": "https://motorshow.com.br/impressoes-gac-gs9"
+    },
+    {
+      "label": "Autoo — GS9 lançamento e equipamentos",
+      "url": "https://www.autoo.com.br/gac-lanca-suv-de-luxo-gs9-no-brasil-com-porsche-e-mercedes-na-mira-veja-precos/"
+    },
+    {
+      "label": "Tabela FIPE Brasil — código 304013-5",
+      "url": "https://www.tabelafipebrasil.com/FIPE/304013-5"
+    },
+    {
+      "label": "Tabela Carros — FIPE GS9 2027",
+      "url": "https://tabelacarros.com/carros/gac/GS9-ULTRA-1-5-16V-AWD-TURBO-AUT-/2027-Hibrido"
+    }
+  ],
+  "unverified": [
+    "Consumo Inmetro 12,7/13,5 km/l visto só na imprensa (coluna/avaliação), não na tabela do PBEV; uma fonte cita também 8,8/9,4 km/l com etanol (G/E), mas as demais descrevem o motor como só a gasolina — combustível flex não confirmado.",
+    "Consumo elétrico: 2,6 km/kWh é estimativa (114 km ÷ 44,5 kWh), valor baixo que pode refletir o método do Inmetro para plug-in.",
+    "Potência de recarga AC (6 kW x 14 kW).",
+    "Torque combinado: 61,3 x 62,3 kgfm entre fontes (613 Nm = 62,5 kgfm).",
+    "Ficha da Webmotors cita 7 lugares; imprensa unânime em 6 (2+2+2).",
+    "Pesquisa feita por resumos de busca das fontes listadas (páginas não abertas diretamente); confira os valores na fonte."
+  ]
+}

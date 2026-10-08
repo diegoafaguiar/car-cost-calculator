@@ -1,0 +1,159 @@
+{
+  "catalogSeed": {
+    "brand": "Leapmotor",
+    "model": "B10",
+    "version": "Elétrico BEV 56,2 kWh",
+    "category": "suv-medio",
+    "powertrain": "eletrico",
+    "seats": 5,
+    "trunkL": 420,
+    "refPriceNew": 182990,
+    "consumption": {
+      "cityKmL": 0,
+      "roadKmL": 0,
+      "cityKmLEthanol": null,
+      "roadKmLEthanol": null,
+      "cityKmKWh": 5.1,
+      "roadKmKWh": 5.1
+    },
+    "evShareNote": "100% elétrico, com bateria de 56,2 kWh e 288 km de autonomia no Inmetro (PBEV).",
+    "fipeBrand": "LEAPMOTOR",
+    "fipeInclude": [
+      "B10",
+      "(Elétrico)"
+    ],
+    "since": 2026
+  },
+  "id": "leapmotor-b10",
+  "researchedAt": "2026-10",
+  "displayName": "Leapmotor B10 Elétrico",
+  "summary": "SUV elétrico de 4,52 m da Leapmotor (Stellantis), importado da China. Motor traseiro de 218 cv, bateria de 56,2 kWh e 288 km de autonomia no Inmetro. Foi lançado em abr/2026 por R$ 182.990, em versão única. Tem Android Auto/CarPlay (atualização remota de fev/2026), 7 airbags e 5 estrelas no Euro NCAP (2025).",
+  "generation": "1ª geração (B10, 2025); vendido no Brasil desde abr/2026 (linha 2026).",
+  "timeline": [
+    {
+      "modelYear": "2026",
+      "change": "Pré-venda por R$ 172.990 (promocional); lançamento oficial em abr/2026 por R$ 182.990."
+    },
+    {
+      "modelYear": "2026",
+      "change": "Mai/2026: descontos de até R$ 29.510 para PCD, táxi, locadoras e CNPJ (a partir de R$ 153.480; iCarros)."
+    },
+    {
+      "modelYear": "2027",
+      "change": "FIPE já lista o 2027 elétrico. Em ago/2026 chegou a versão Ultra-Híbrida (REEV)."
+    }
+  ],
+  "highlights": [
+    "Inmetro: 288 km de autonomia; 218 cv, 0 a 100 km/h em 8 s.",
+    "Euro NCAP 5 estrelas (2025): adulto 93%, criança 93%, vulneráveis 84%, assistência 85%.",
+    "7 airbags, câmera 360°, ACC, teto panorâmico, banco do motorista elétrico com ventilação, tampa traseira motorizada.",
+    "Cesta de peças estimada em R$ 11.107 (Garagem360)."
+  ],
+  "watchOuts": [
+    "Autonomia de 288 km no Inmetro, curta para viagens.",
+    "Porta-malas: cerca de 420 L segundo uma concessionária, sem confirmação oficial.",
+    "Marca nova: o 2026 usado vale R$ 162.999 na FIPE (set/2026), cerca de R$ 20 mil abaixo do 0 km em poucos meses.",
+    "Descontos fortes para venda direta pressionam a revenda."
+  ],
+  "specs": {
+    "version": "B10 Elétrico (linha 2026)",
+    "engine": "Motor elétrico traseiro; bateria de 56,2 kWh",
+    "powerCv": "218",
+    "torqueKgfm": "24,4",
+    "transmission": "Redução fixa, tração traseira",
+    "trunkL": 420,
+    "lengthMm": 4515,
+    "wheelbaseMm": 2735,
+    "safety": "Euro NCAP 5 estrelas (2025). Sem Latin NCAP. 7 airbags.",
+    "warranty": "6 anos/150 mil km (veículo, linha toda desde 2026); 8 anos para bateria, motor e inversor. Sites de concessionárias ainda citam 4 anos/100 mil km."
+  },
+  "inmetro": {
+    "version": "B10 BEV",
+    "cityGas": null,
+    "roadGas": null,
+    "cityEth": null,
+    "roadEth": null,
+    "cityKmKWh": null,
+    "roadKmKWh": null,
+    "year": "PBEV 2026: 288 km de autonomia. MJ/km não encontrado.",
+    "source": "https://www.cnnbrasil.com.br/auto/leapmotor-b10-sera-nacional-e-suv-eletrico-parte-de-r-182-990/"
+  },
+  "price0km": {
+    "version": "Elétrico (versão única)",
+    "price": 182990,
+    "date": "out/2026",
+    "source": "https://www.jornaldocomercio.com/colunas/automotor/2026/10/1265359-leapmotor-estende-o-conceito-ultra-hibrido-para-o-b10.html"
+  },
+  "versionsAndPrices": [
+    {
+      "version": "Elétrico (público geral)",
+      "price": 182990,
+      "date": "out/2026",
+      "source": "https://www.jornaldocomercio.com/colunas/automotor/2026/10/1265359-leapmotor-estende-o-conceito-ultra-hibrido-para-o-b10.html"
+    },
+    {
+      "version": "Elétrico (PCD, lançamento)",
+      "price": 161390,
+      "date": "abr/2026",
+      "source": "https://www.cnnbrasil.com.br/auto/leapmotor-b10-sera-nacional-e-suv-eletrico-parte-de-r-182-990/"
+    },
+    {
+      "version": "Elétrico (táxi, lançamento)",
+      "price": 141190,
+      "date": "abr/2026",
+      "source": "https://www.cnnbrasil.com.br/auto/leapmotor-b10-sera-nacional-e-suv-eletrico-parte-de-r-182-990/"
+    }
+  ],
+  "launchModelYearBR": 2026,
+  "catalogCheck": "Modelo ainda não está no catálogo. FIPE: 'B10 (Elétrico)', código 305003-3, categoria SUV compacto na FIPE. 2026 = R$ 162.999 e 2027 = R$ 167.748 (set/2026); 0 km = R$ 181.850 (set/2026). Aqui foi posto em suv-medio pelo porte (4,52 m).",
+  "wikipedia": {
+    "lang": "en",
+    "title": "Leapmotor B10"
+  },
+  "officialUrl": "https://www.leapmotor.com.br/",
+  "sources": [
+    {
+      "label": "CNN Brasil: B10 parte de R$ 182.990",
+      "url": "https://www.cnnbrasil.com.br/auto/leapmotor-b10-sera-nacional-e-suv-eletrico-parte-de-r-182-990/"
+    },
+    {
+      "label": "Auto Show: B10 estreia por R$ 182 mil",
+      "url": "https://www.autoshow.com.br/noticias/2026/04/06/leapmotor-b10-estreia-com-motor-eletrico-por-r-182-mil.html"
+    },
+    {
+      "label": "iCarros: descontos de até R$ 30 mil",
+      "url": "https://www.icarros.com.br/noticias/geral/leapmotor-b10-tem-ate-r$-30-mil-de-desconto-em-promocao/31709.html"
+    },
+    {
+      "label": "Concessionária Allma: B10 elétrico",
+      "url": "https://www.allmaleapmotor.com.br/veiculos/leapmotor-b10"
+    },
+    {
+      "label": "Concessionária Strada: itens de série",
+      "url": "https://www.leapmotorstrada.com.br/veiculos/leapmotor-b10"
+    },
+    {
+      "label": "Leapmotor Saga: ficha do B10",
+      "url": "https://www.leapmotorsaga.com.br/blog/leapmotor-b10-ficha-tecnica"
+    },
+    {
+      "label": "Tabela FIPE: B10 (Elétrico) 2026",
+      "url": "https://tabelacarros.com/carros/leapmotor/B10--ELETRICO-/2026-Eletrico"
+    },
+    {
+      "label": "Euro NCAP: resultados de nov/2025",
+      "url": "https://cdn.euroncap.com/en/press-media/press-releases/euro-ncap-announces-test-results-for-23-new-cars"
+    },
+    {
+      "label": "Garagem360: cesta de peças do B10",
+      "url": "https://garagem360.com.br/?p=316913"
+    }
+  ],
+  "unverified": [
+    "km/kWh: estimativa de 5,1 (288 km ÷ 56,2 kWh); MJ/km do Inmetro não encontrado.",
+    "Porta-malas de 420 L (blog de concessionária); 430 L no modelo global não confirmado.",
+    "Entre-eixos de 2.735 mm vem da Wikipedia.",
+    "Custo das revisões: não encontrado (um site cita R$ 5.310 até 60 mil km sem fonte verificável).",
+    "Pesquisa feita por resumos de busca das fontes listadas (páginas não abertas diretamente); confira os valores na fonte."
+  ]
+}

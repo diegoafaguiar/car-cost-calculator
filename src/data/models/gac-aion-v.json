@@ -1,0 +1,162 @@
+{
+  "catalogSeed": {
+    "brand": "GAC",
+    "model": "Aion V",
+    "version": "Elite (elétrico)",
+    "category": "suv-medio",
+    "powertrain": "eletrico",
+    "seats": 5,
+    "trunkL": 427,
+    "refPriceNew": 219990,
+    "consumption": {
+      "cityKmL": 0,
+      "roadKmL": 0,
+      "cityKmLEthanol": null,
+      "roadKmLEthanol": null,
+      "cityKmKWh": 5.2,
+      "roadKmKWh": 5.2
+    },
+    "evShareNote": "100% elétrico; bateria LFP de 75,3 kWh; 389 km de autonomia Inmetro. km/kWh estimado = 389 ÷ 75,3.",
+    "fipeBrand": "GAC",
+    "fipeInclude": [
+      "AION V Elite (Elétrico)"
+    ],
+    "since": 2025
+  },
+  "id": "gac-aion-v",
+  "researchedAt": "2026-10",
+  "displayName": "GAC Aion V",
+  "summary": "SUV médio 100% elétrico da GAC (marca Aion), importado da China. Motor dianteiro de 204 cv (150 kW) e 240 Nm, bateria LFP de 75,3 kWh e 389 km de autonomia pelo Inmetro. Versão única Elite, bem equipada (ADAS completo, câmera 360°, teto panorâmico, bancos ventilados e geladeira). Tem estepe temporário.",
+  "generation": "2ª geração do Aion V (lançada em 2024); no Brasil desde jun/2025 (FIPE lista ano 2025).",
+  "timeline": [
+    {
+      "modelYear": "2025/2026",
+      "change": "Estreia da GAC no Brasil (mai-jun/2025): Aion V a partir de R$ 214.990."
+    },
+    {
+      "modelYear": "2026",
+      "change": "Preço sugerido passa a R$ 219.990 (GAC Brasil/Webmotors)."
+    },
+    {
+      "modelYear": "2027",
+      "change": "Linha 2027 listada na Webmotors e na FIPE, mantendo R$ 219.990; mudanças não confirmadas."
+    }
+  ],
+  "highlights": [
+    "389 km de autonomia Inmetro com bateria LFP de 75,3 kWh.",
+    "Recarga DC de até 180 kW (30-80% em ~16 min, segundo a GAC).",
+    "ADAS completo: ACC com stop&go, frenagem autônoma, faixa, ponto cego e tráfego cruzado traseiro.",
+    "Bancos dianteiros elétricos e ventilados, geladeira no console, teto panorâmico, central de 14,6\".",
+    "5 estrelas no Euro NCAP 2025 e no ANCAP.",
+    "Garantia de 8 anos/160 mil km (elétricos GAC)."
+  ],
+  "watchOuts": [
+    "Multimídia criticada: tradução em português de Portugal, comando de voz em inglês e conexão do CarPlay instável; fontes divergem sobre Android Auto e conexão sem fio.",
+    "Porta-malas de 427 L, menor que o do Corolla Cross.",
+    "Desvalorização: FIPE do 2026 em R$ 196.262 (set/2026) contra R$ 219.990 de tabela.",
+    "Marca nova (mai/2025) e rede em formação; Reclame Aqui da GAC (jan-jun/2026): nota 7,0/10, com reclamações de atraso de peças (Aion Y).",
+    "Fontes divergem em entre-eixos (2.775 x 2.830 mm), largura, peso e número de airbags (6 ou 7)."
+  ],
+  "specs": {
+    "version": "GAC Aion V Elite (linha 2026/2027)",
+    "engine": "Motor elétrico dianteiro de 150 kW (204 cv) e 240 Nm; bateria LFP de 75,3 kWh",
+    "powerCv": "204",
+    "torqueKgfm": "24,5 (240 Nm)",
+    "transmission": "Redução fixa (elétrico)",
+    "trunkL": 427,
+    "lengthMm": 4605,
+    "wheelbaseMm": 2775,
+    "safety": "Euro NCAP 2025: 5 estrelas; ANCAP 5 estrelas; sem teste Latin NCAP. 6 ou 7 airbags conforme a fonte.",
+    "warranty": "8 anos/160 mil km (elétricos GAC; bateria citada com até 200 mil km)"
+  },
+  "inmetro": {
+    "version": "Aion V Elite",
+    "cityGas": null,
+    "roadGas": null,
+    "cityEth": null,
+    "roadEth": null,
+    "cityKmKWh": null,
+    "roadKmKWh": null,
+    "year": "Autonomia Inmetro de 389 km (GAC); consumo energético do PBEV não encontrado",
+    "source": "https://www.gacgroup.com/pt-br/suv/aion-v"
+  },
+  "price0km": {
+    "version": "Elite",
+    "price": 219990,
+    "date": "set/2026",
+    "source": "https://www.webmotors.com.br/gac/aion-v/2026"
+  },
+  "versionsAndPrices": [
+    {
+      "version": "Elite",
+      "price": 219990,
+      "date": "set/2026",
+      "source": "https://www.webmotors.com.br/gac/aion-v/2026"
+    }
+  ],
+  "launchModelYearBR": 2025,
+  "catalogCheck": "Modelo ainda não está no catálogo. Versão única Elite (R$ 219.990). FIPE: marca 'GAC', modelo 'AION V Elite (Elétrico)', código 304006-2. FIPE set/2026: 2026 = R$ 196.262; 2027 = R$ 204.020; zero km = R$ 219.990. Há ano 2025 na FIPE.",
+  "wikipedia": {
+    "lang": "en",
+    "title": "Aion V"
+  },
+  "officialUrl": "https://www.gacgroup.com/pt-br/suv/aion-v",
+  "sources": [
+    {
+      "label": "GAC Brasil — Aion V",
+      "url": "https://www.gacgroup.com/pt-br/suv/aion-v"
+    },
+    {
+      "label": "GAC Brasil — especificações Aion V",
+      "url": "https://www.gacgroup.com/pt-br/configuration/aion-v/2024"
+    },
+    {
+      "label": "Webmotors — Aion V 2026",
+      "url": "https://www.webmotors.com.br/gac/aion-v/2026"
+    },
+    {
+      "label": "AutoPapo — GAC inicia operações (preços de estreia)",
+      "url": "https://autopapo.com.br/noticia/gac-modelos-precos/"
+    },
+    {
+      "label": "Motor Show — avaliação Aion V",
+      "url": "https://motorshow.com.br/avaliacao-gac-aion-v"
+    },
+    {
+      "label": "Autoentusiastas — Aion V (abr/2026)",
+      "url": "https://autoentusiastas.com.br/2026/04/gac-aion-v-equilibrio-tecnico-e-maturidade-no-uso/"
+    },
+    {
+      "label": "Auto+ TV — avaliação Aion V",
+      "url": "https://www.automaistv.com.br/avaliacao/gac-aion-v-vale-mais-a-pena-que-muito-carro-de-luxo-avaliacao/"
+    },
+    {
+      "label": "GAC Jorlan — Aion V",
+      "url": "https://gacjorlanmotors.com.br/df/novos/aion-v"
+    },
+    {
+      "label": "Virgola — Aion V 2026",
+      "url": "https://virgola.com.br/gac/aion-v-2026"
+    },
+    {
+      "label": "Tabela FIPE Brasil — código 304006-2",
+      "url": "https://www.tabelafipebrasil.com/FIPE/304006-2"
+    },
+    {
+      "label": "GAC Global — Aion V 5 estrelas Euro NCAP",
+      "url": "https://www.gacgroup.com/en/news/article/gac-aion-achieved-a-five-star-safety-rating-from-euro-ncap--deepening-its-global-automotive-safety-commitment-180"
+    },
+    {
+      "label": "Reclame Aqui — GAC Brasil",
+      "url": "https://www.reclameaqui.com.br/empresa/gac-motor-brasil/lista-reclamacoes"
+    }
+  ],
+  "unverified": [
+    "Consumo energético oficial do PBEV não encontrado; 5,2 km/kWh é estimativa (389 km ÷ 75,3 kWh). Uma ficha de terceiros cita 5,2 km/kWh; o EVBlog cita 7,0 km/kWh e 500 km (inconsistente com o Inmetro).",
+    "Preço de estreia: R$ 214.990 x R$ 219.990 entre fontes (atual R$ 219.990).",
+    "Entre-eixos 2.775 x 2.830 mm; largura 1.854 x 1.876 mm.",
+    "Número de airbags (6 ou 7).",
+    "Mudanças da linha 2027.",
+    "Pesquisa feita por resumos de busca das fontes listadas (páginas não abertas diretamente); confira os valores na fonte."
+  ]
+}

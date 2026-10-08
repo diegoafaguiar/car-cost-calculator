@@ -1,0 +1,67 @@
+{
+  "id": "omoda-7-phev",
+  "version": "Omoda 7 SHS-P Luxury 2026 (R$ 254.990)",
+  "researchedAt": "2026-10",
+  "tech": {
+    "screen10": true,
+    "wirelessMirroring": null,
+    "digitalCluster": true,
+    "wirelessCharger": null,
+    "camera360": true,
+    "adaptiveCruise": true,
+    "connectedApp": null,
+    "keyless": null
+  },
+  "comfort": {
+    "automatic": true,
+    "digitalAC": true,
+    "rearVents": null,
+    "leather": null,
+    "powerSeat": true,
+    "seatClimate": true,
+    "sunroof": true
+  },
+  "safety": {
+    "airbags6": true,
+    "aeb": true,
+    "laneKeep": true,
+    "blindSpot": true,
+    "rearCrossTraffic": null
+  },
+  "ncap": {
+    "stars": null,
+    "year": null,
+    "program": "Euro NCAP",
+    "note": "Fontes conflitantes: The Car Expert lista 5 estrelas (jul/2025) numa página e 'não avaliado até abr/2026' em outra. Irmão Jaecoo 7 SHS-P tem 5 estrelas Euro NCAP 2025 e ANCAP 2025. Sem Latin NCAP.",
+    "source": "https://www.thecarexpert.co.uk/omoda-7-review-2026/",
+    "counts": false
+  },
+  "sources": [
+    {
+      "label": "Motor Show — Omoda 7 PHEV equipamentos",
+      "url": "https://motorshow.com.br/omoda-7-phev-preco-motorizacao-equipamentos"
+    },
+    {
+      "label": "Canal VE — ficha Omoda 7 PHEV",
+      "url": "https://canalve.com.br/ficha-tecnica/omoda-jaecoo/tudo-sobre-7-phev/"
+    },
+    {
+      "label": "Encontracarros — Omoda 7 PHEV",
+      "url": "https://www.encontracarros.com.br/omoda-7-phev/"
+    },
+    {
+      "label": "Guia Automotivo — lançamento Omoda 5 e 7",
+      "url": "https://guiaautomotivo.com/2025/10/30/omoda-lanca-5-hev-e-7-phev-suvs-hibridos-tem-precos-partindo-de-r-159-990/"
+    }
+  ],
+  "notes": "Luxury: duas telas de 12,3\" (painel + multimídia), ar digital dual zone, banco do motorista elétrico 6 vias, bancos dianteiros ventilados (uma fonte diz ventilados e aquecidos), teto solar panorâmico elétrico, faróis full-LED, câmera 360° e sensores dianteiros/traseiros, ACC, AEB (4–160 km/h), alerta de saída de faixa, ponto cego, 7 airbags; rodas 19\". Prestige: rodas 20\", head-up display, tampa com sensor de presença, 8 airbags. Couro não confirmado na Luxury.",
+  "unverified": [
+    "tech.wirelessMirroring",
+    "tech.wirelessCharger",
+    "tech.connectedApp",
+    "tech.keyless",
+    "comfort.rearVents",
+    "comfort.leather",
+    "safety.rearCrossTraffic"
+  ]
+}

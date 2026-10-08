@@ -1,0 +1,177 @@
+{
+  "catalogSeed": {
+    "brand": "Caoa Chery",
+    "model": "Tiggo 8 Pro PHEV",
+    "version": "1.5 TGDI PHEV DHT 7 lugares (linha 2027)",
+    "category": "suv-grande",
+    "powertrain": "hibrido-plugin",
+    "seats": 7,
+    "trunkL": 193,
+    "refPriceNew": 249990,
+    "consumption": {
+      "cityKmL": null,
+      "roadKmL": null,
+      "cityKmLEthanol": null,
+      "roadKmLEthanol": null,
+      "cityKmKWh": null,
+      "roadKmKWh": null
+    },
+    "evShareNote": "Plug-in: bateria de 18,4 kWh, até 70 km elétricos (padrão brasileiro). Inmetro 'equivalente' 36,1/29,6 km/l com bateria carregada; consumo só a gasolina não publicado.",
+    "fipeBrand": "CAOA CHERY",
+    "fipeInclude": [
+      "TIGGO 8 PRO",
+      "1.5 Turbo (Híbrido)"
+    ],
+    "since": 2024
+  },
+  "id": "caoa-chery-tiggo-8-phev",
+  "researchedAt": "2026-10",
+  "displayName": "Caoa Chery Tiggo 8 Pro PHEV",
+  "summary": "SUV grande de 7 lugares, híbrido plug-in, topo da Caoa Chery. Na linha 2027 (jun/2026) passou ao conjunto Super Hybrid: 1.5 turbo GDI + motor elétrico, 279 cv e 37,2 kgfm, DHT, tração dianteira e bateria de 18,4 kWh com até 70 km elétricos. Site oficial anuncia a partir de R$ 249.990 (cor preta sólida).",
+  "generation": "Tiggo 8 Pro Plug-in Hybrid (geração anterior 317 cv, bateria 19,27 kWh; FIPE lista desde 2024); nova geração Super Hybrid na linha 2027 (jun/2026).",
+  "timeline": [
+    {
+      "modelYear": "2024",
+      "change": "Tiggo 8 PRO 1.5 Turbo (Híbrido) já aparece na FIPE como 2024 (geração anterior, 317 cv)."
+    },
+    {
+      "modelYear": "2025",
+      "change": "Atualização em fev/2025 (CAOA Chery); preço citado entre R$ 249.990 e R$ 279.990 conforme a fonte."
+    },
+    {
+      "modelYear": "2027",
+      "change": "Jun/2026: nova geração Super Hybrid, 279 cv, 18,4 kWh, 70 km elétricos; lote promocional a R$ 229.990."
+    },
+    {
+      "modelYear": "2027",
+      "change": "Site oficial (out/2026): a partir de R$ 249.990 na cor preta sólida (+ R$ 3.000 nas demais)."
+    }
+  ],
+  "highlights": [
+    "7 lugares com plug-in por preço de SUV médio premium.",
+    "Até 70 km elétricos; consumo equivalente PBEV de 36,1 km/l (cidade) e 29,6 km/l (estrada) com bateria carregada.",
+    "Garantia de 7 anos/150 mil km e bateria de tração com 8 anos/150 mil km.",
+    "Muito equipado: câmera 540°, head-up display, bancos ventilados/aquecidos, teto panorâmico, indução 50 W, som Sony 12 alto-falantes, 9 airbags (nota oficial).",
+    "ADAS: ACC, frenagem automática, ponto cego e permanência em faixa."
+  ],
+  "watchOuts": [
+    "Só gasolina (não flex). Sem recarga o consumo cai muito: dono de Tiggo 8 PHEV da geração anterior relatou 9,5 km/l na cidade no Reclame Aqui.",
+    "Porta-malas mínimo com 7 lugares: ~193 L (650 L com a 3ª fileira rebatida).",
+    "Preço oscila muito entre campanhas (R$ 229.990 a R$ 269.990 citados em 2026).",
+    "Tração apenas dianteira na linha 2027 (o anterior tinha 317 cv e mais torque).",
+    "FIPE usa o mesmo nome 'Tiggo 8 PRO 1.5 Turbo (Híbrido)' para todas as gerações; não confundir com o Tiggo 8 Pro 1.6 TGDI a gasolina."
+  ],
+  "specs": {
+    "version": "Tiggo 8 Pro PHEV 1.5 TGDI DHT (linha 2027)",
+    "engine": "1.5 turbo GDI gasolina + motor(es) elétrico(s); bateria de 18,4 kWh",
+    "powerCv": "279 (combinada)",
+    "torqueKgfm": "37,2 (combinado)",
+    "transmission": "DHT (transmissão híbrida dedicada), tração dianteira",
+    "trunkL": 193,
+    "lengthMm": 4725,
+    "wheelbaseMm": 2710,
+    "safety": "9 airbags (nota oficial; Webmotors lista 6); sem Latin NCAP; Euro NCAP 2025 5 estrelas para o Chery Tiggo 8 europeu (modelo diferente)",
+    "warranty": "7 anos ou 150.000 km; bateria de tração 8 anos ou 150.000 km"
+  },
+  "inmetro": {
+    "version": "Tiggo 8 Pro PHEV 2027",
+    "cityGas": null,
+    "roadGas": null,
+    "cityEth": null,
+    "roadEth": null,
+    "cityKmKWh": null,
+    "roadKmKWh": null,
+    "year": "PBEV (conforme imprensa, jun/2026): só o consumo 'equivalente' com bateria carregada foi divulgado — 36,1 km/l cidade e 29,6 km/l estrada; 70 km elétricos; gasolina pura e km/kWh não publicados",
+    "source": "https://recarregados.com/blog/tiggo-8-pro-phev-2027-review-brasil"
+  },
+  "price0km": {
+    "version": "1.5 TGDI PHEV DHT — cor preta sólida",
+    "price": 249990,
+    "date": "out/2026 (site oficial)",
+    "source": "https://caoachery.com.br/novos/tiggo-8-pro-plug-in-hybrid"
+  },
+  "versionsAndPrices": [
+    {
+      "version": "1.5 TGDI PHEV DHT — cor preta sólida",
+      "price": 249990,
+      "date": "out/2026",
+      "source": "https://caoachery.com.br/novos/tiggo-8-pro-plug-in-hybrid"
+    },
+    {
+      "version": "1.5 TGDI PHEV DHT — demais cores",
+      "price": 252990,
+      "date": "out/2026 (+ R$ 3.000)",
+      "source": "https://caoachery.com.br/novos/tiggo-8-pro-plug-in-hybrid"
+    },
+    {
+      "version": "Concessionária D21 (à vista, promoção)",
+      "price": 239990,
+      "date": "2026",
+      "source": "https://d21motors.com.br/novos/tiggo-8-pro-plug-in-hybrid"
+    },
+    {
+      "version": "Lote promocional de lançamento (encerrado)",
+      "price": 229990,
+      "date": "jun/2026",
+      "source": "https://www.car.blog.br/2026/06/tiggo-8-pro-phev-2027-preco-consumo.html"
+    }
+  ],
+  "launchModelYearBR": 2024,
+  "catalogCheck": "Modelo ainda não está no catálogo. Sugere-se a versão única 1.5 TGDI PHEV DHT (R$ 249.990, site oficial). FIPE: 'Caoa Chery Tiggo 8 PRO 1.5 Turbo (Híbrido)', código 093010-5; 2027 = R$ 232.790 (set/2026; outra fonte R$ 225.452 em ago/2026). Excluir 'Tiggo 8 PRO 1.6 TGDI' (gasolina, código 093018-0).",
+  "wikipedia": {
+    "lang": "en",
+    "title": "Chery Tiggo 8"
+  },
+  "officialUrl": "https://caoachery.com.br/novos/tiggo-8-pro-plug-in-hybrid",
+  "sources": [
+    {
+      "label": "CAOA Chery — página oficial Tiggo 8 PRO PHEV",
+      "url": "https://caoachery.com.br/novos/tiggo-8-pro-plug-in-hybrid"
+    },
+    {
+      "label": "CAOA Chery — nota de lançamento Super Hybrid (jun/2026)",
+      "url": "https://caoachery.com.br/noticia/caoa-chery-assume-protagonismo-nos-eletrificados-com-nova-geracao-super-hybrid"
+    },
+    {
+      "label": "Car.blog.br — Tiggo 8 Pro PHEV 2027 R$ 229.990",
+      "url": "https://www.car.blog.br/2026/06/tiggo-8-pro-phev-2027-preco-consumo.html"
+    },
+    {
+      "label": "Recarregados — review Tiggo 8 Pro PHEV 2027 (36,1/29,6 km/l, 70 km)",
+      "url": "https://recarregados.com/blog/tiggo-8-pro-phev-2027-review-brasil"
+    },
+    {
+      "label": "JK Carros — Tiggo 8 Pro PHEV 2027 ficha (dimensões, porta-malas)",
+      "url": "https://jkcarros.com.br/tiggo-8-pro-phev-2027-ficha-tecnica-tco/"
+    },
+    {
+      "label": "D21 Motors — preço concessionária",
+      "url": "https://d21motors.com.br/novos/tiggo-8-pro-plug-in-hybrid"
+    },
+    {
+      "label": "Tabela FIPE (aggregator) — Tiggo 8 PRO 1.5 Turbo (Híbrido)",
+      "url": "https://www.tabelafipebrasil.com/carros/CAOA-CHERY/TIGGO-8-PRO-15-TURBO-HIBRIDO"
+    },
+    {
+      "label": "Tabela FIPE Brasil — Tiggo 8 PRO Híbrido 2024",
+      "url": "https://www.tabelafipebrasil.com/carros/CAOA-CHERY/TIGGO-8-PRO-15-TURBO-HIBRIDO/2024-Hibrido"
+    },
+    {
+      "label": "Reclame Aqui — consumo Tiggo 8 PRO PHEV 9,5 km/l",
+      "url": "https://www.reclameaqui.com.br/chery-brasil/consumo-tiggo-8-pro-plug-in-hybrid-e-de-9-5-km-por-litro-o-que-vc-deveria_p3KoPsp_RZqVCinf/"
+    },
+    {
+      "label": "Euro NCAP — Chery Tiggo 8",
+      "url": "https://www.euroncap.com/assessments/chery/tiggo+8/1223ra/"
+    }
+  ],
+  "unverified": [
+    "Consumo só a gasolina (bateria mínima) — não publicado; catálogo usa proxy do Omoda 7 SHS-P (mesmo conjunto, carro grande).",
+    "Consumo elétrico km/kWh — estimado 70 km ÷ 18,4 kWh ≈ 3,8 km/kWh.",
+    "since 2024: baseado em listagem FIPE 2024 do 'Tiggo 8 PRO 1.5 Turbo (Híbrido)'; data exata da 1ª chegada do PHEV ao Brasil não confirmada (há fontes de lançamento em fev/2025).",
+    "Airbags: 9 (nota oficial) x 6 (Webmotors).",
+    "Porta-malas: 193 L (7 lugares) / 650 L (5 lugares) para 2027; fichas antigas citam 889/1.930 L.",
+    "Preço de R$ 269.990 citado por iCarros/Virgola (provavelmente anterior).",
+    "Pesquisa feita por resumos de busca das fontes listadas (páginas não abertas diretamente); confira os valores na fonte."
+  ]
+}

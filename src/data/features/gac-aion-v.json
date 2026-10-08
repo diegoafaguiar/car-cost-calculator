@@ -1,0 +1,71 @@
+{
+  "id": "gac-aion-v",
+  "version": "GAC Aion V Elite 2026/2027 (R$ 219.990)",
+  "researchedAt": "2026-10",
+  "tech": {
+    "screen10": true,
+    "wirelessMirroring": null,
+    "digitalCluster": true,
+    "wirelessCharger": true,
+    "camera360": true,
+    "adaptiveCruise": true,
+    "connectedApp": null,
+    "keyless": true
+  },
+  "comfort": {
+    "automatic": true,
+    "digitalAC": null,
+    "rearVents": true,
+    "leather": true,
+    "powerSeat": true,
+    "seatClimate": true,
+    "sunroof": true
+  },
+  "safety": {
+    "airbags6": true,
+    "aeb": true,
+    "laneKeep": true,
+    "blindSpot": true,
+    "rearCrossTraffic": true
+  },
+  "ncap": {
+    "stars": 5,
+    "year": 2025,
+    "program": "Euro NCAP",
+    "counts": true,
+    "note": "Euro NCAP 2025: 5 estrelas (também ANCAP 5 estrelas, segundo a GAC). Sem teste Latin NCAP.",
+    "source": "https://www.gacgroup.com/en/news/article/gac-aion-achieved-a-five-star-safety-rating-from-euro-ncap--deepening-its-global-automotive-safety-commitment-180"
+  },
+  "sources": [
+    {
+      "label": "GAC Brasil — Aion V",
+      "url": "https://www.gacgroup.com/pt-br/suv/aion-v"
+    },
+    {
+      "label": "Motor Show — avaliação Aion V",
+      "url": "https://motorshow.com.br/avaliacao-gac-aion-v"
+    },
+    {
+      "label": "Auto+ TV — avaliação Aion V",
+      "url": "https://www.automaistv.com.br/avaliacao/gac-aion-v-vale-mais-a-pena-que-muito-carro-de-luxo-avaliacao/"
+    },
+    {
+      "label": "GAC Santa Emilia — itens Aion V",
+      "url": "https://www.gac.santaemilia.com.br/modelos/gac-aion-v"
+    },
+    {
+      "label": "Virgola — Aion V 2026",
+      "url": "https://virgola.com.br/gac/aion-v-2026"
+    },
+    {
+      "label": "JK Carros — Aion V Elite",
+      "url": "https://jkcarros.com.br/gac-aion-v-elite-pcd-2026-suv-eletrico-analise-pericial/"
+    }
+  ],
+  "notes": "Versão única Elite. Central 14,6\", painel digital 8,8\", carregador por indução, câmera 360°, ACC stop&go, AEB, faixa, BSD, RCTA, DOW; ar automático dual zone com saída traseira; bancos dianteiros elétricos e ventilados em couro artificial; teto panorâmico fixo com cortina elétrica; geladeira. CarPlay: uma fonte diz só com fio e sem Android Auto, outra diz sem fio e instável. Airbags: 6 ou 7 conforme a fonte.",
+  "unverified": [
+    "tech.wirelessMirroring",
+    "tech.connectedApp",
+    "comfort.digitalAC"
+  ]
+}

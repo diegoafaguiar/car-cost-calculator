@@ -1,0 +1,168 @@
+{
+  "catalogSeed": {
+    "brand": "Omoda",
+    "model": "7 PHEV",
+    "version": "Luxury 1.5 TGDI SHS-P",
+    "category": "suv-medio",
+    "powertrain": "hibrido-plugin",
+    "seats": 5,
+    "trunkL": 590,
+    "refPriceNew": 254990,
+    "consumption": {
+      "cityKmL": 14.0,
+      "roadKmL": 11.9,
+      "cityKmLEthanol": null,
+      "roadKmLEthanol": null,
+      "cityKmKWh": null,
+      "roadKmKWh": null
+    },
+    "evShareNote": "Plug-in: bateria de 18,4 kWh, 60 km elétricos (Inmetro). Gasolina 14,0/11,9 km/l só com motor a combustão (Encontracarros/Auto+; Motor Show inverte cidade/estrada).",
+    "fipeBrand": "OMODA",
+    "fipeInclude": [
+      "7 LUXURY",
+      "1.5 TB FWD"
+    ],
+    "since": 2026
+  },
+  "id": "omoda-7-phev",
+  "researchedAt": "2026-10",
+  "displayName": "Omoda 7 SHS-P",
+  "summary": "SUV médio híbrido plug-in da Omoda & Jaecoo (grupo Chery), importado da China e lançado no Brasil em 29/out/2025. Conjunto Super Hybrid: 1.5 turbo a gasolina (135 cv) + elétrico de 204 cv, 279 cv e 37,2 kgfm, DHT, bateria de 18,4 kWh e 60 km elétricos (Inmetro). Versões Luxury (R$ 254.990) e Prestige (R$ 279.990).",
+  "generation": "1ª geração (Omoda C7/7); lançamento no Brasil em out/2025, linha 2026.",
+  "timeline": [
+    {
+      "modelYear": "2026",
+      "change": "Lançamento em 29/out/2025 junto com o Omoda 5 HEV: Luxury R$ 254.990 e Prestige R$ 279.990; pré-venda com seguro, wallbox/recarga e IPVA grátis."
+    },
+    {
+      "modelYear": "2026",
+      "change": "Site oficial de ofertas mostra Luxury com preço riscado de R$ 254.990 por R$ 244.990 (promoção sem data de validade)."
+    }
+  ],
+  "highlights": [
+    "279 cv; mesmo conjunto Super Hybrid do Jaecoo 7 PHEV e do novo Tiggo 7 PHEV.",
+    "Porta-malas grande para o segmento: 590 L (marca).",
+    "Luxury já traz ACC, AEB, ponto cego, alerta de saída de faixa, câmera 360°, teto panorâmico, bancos dianteiros ventilados, duas telas de 12,3\" e 7 airbags.",
+    "Recarga AC 6,6 kW e DC 40 kW.",
+    "Garantia de 7 anos da marca (dado do grupo; não confirmado especificamente para o 7)."
+  ],
+  "watchOuts": [
+    "Só gasolina (não flex). Autonomia elétrica modesta: 60 km (Inmetro).",
+    "Consumo a combustão divulgado de forma conflitante: 14,0 cidade/11,9 estrada (Auto+, Encontracarros) x 11,9 cidade/14,0 estrada (Motor Show).",
+    "Marca nova no Brasil (abr/2025): rede pequena e revenda sem histórico; FIPE do 2026 caiu de R$ 224.397 (dez/2025) para R$ 218.541 (set/2026).",
+    "Recall do Jaecoo 7 PHEV (mesmo conjunto) confirmado só na China até jul/2026; nenhum recall do Omoda 7 encontrado no Brasil.",
+    "Prestige custa R$ 25 mil a mais (rodas 20\", head-up display, 8 airbags)."
+  ],
+  "specs": {
+    "version": "Omoda 7 SHS-P Luxury/Prestige (linha 2026)",
+    "engine": "1.5 turbo gasolina (135 cv) + motor elétrico de 204 cv; bateria de 18,4 kWh",
+    "powerCv": "279 (combinada; Motor Show cita ~280, outra fonte 278)",
+    "torqueKgfm": "37,2 (combinado)",
+    "transmission": "DHT (transmissão híbrida dedicada)",
+    "trunkL": 590,
+    "lengthMm": 4660,
+    "wheelbaseMm": 2720,
+    "safety": "7 airbags (Luxury), 8 (Prestige); sem Latin NCAP; Euro NCAP do Omoda 7 com informação conflitante",
+    "warranty": "Não confirmada especificamente para o Omoda 7"
+  },
+  "inmetro": {
+    "version": "Omoda 7 SHS-P",
+    "cityGas": 14.0,
+    "roadGas": 11.9,
+    "cityEth": null,
+    "roadEth": null,
+    "cityKmKWh": null,
+    "roadKmKWh": null,
+    "year": "Inmetro (conforme imprensa) — só motor a combustão; 60 km elétricos; km/kWh não publicado",
+    "source": "https://www.encontracarros.com.br/omoda-7-phev/"
+  },
+  "price0km": {
+    "version": "Luxury",
+    "price": 254990,
+    "date": "out/2025 (tabela mantida no site em 2026)",
+    "source": "https://omodajaecoo.com.br/noticias/omoda-jaecoo-brasil-lanca-modelos-omoda-5-shs-h-e-omoda-7-shs-p-no-mercado-brasileiro"
+  },
+  "versionsAndPrices": [
+    {
+      "version": "Luxury",
+      "price": 254990,
+      "date": "out/2025",
+      "source": "https://omodajaecoo.com.br/noticias/omoda-jaecoo-brasil-lanca-modelos-omoda-5-shs-h-e-omoda-7-shs-p-no-mercado-brasileiro"
+    },
+    {
+      "version": "Prestige",
+      "price": 279990,
+      "date": "out/2025",
+      "source": "https://omodajaecoo.com.br/noticias/omoda-jaecoo-brasil-lanca-modelos-omoda-5-shs-h-e-omoda-7-shs-p-no-mercado-brasileiro"
+    },
+    {
+      "version": "Luxury — oferta no site oficial (promocional, sem validade informada)",
+      "price": 244990,
+      "date": "2026",
+      "source": "https://omodajaecoo.com.br/ofertas"
+    }
+  ],
+  "launchModelYearBR": 2026,
+  "catalogCheck": "Modelo ainda não está no catálogo. Sugere-se a Luxury (R$ 254.990; promoção R$ 244.990). FIPE: 'Omoda 7 Luxury 1.5 TB FWD' (Híbrido); 2026 = R$ 218.541 (set/2026), R$ 217.548 (jul/2026); 0 km = R$ 252.786 (out/2026, tabelafipebrasil). Excluir '5' (Omoda 5 usa '5 ... 1.5 TB FWD').",
+  "wikipedia": {
+    "lang": "en",
+    "title": "Omoda C7"
+  },
+  "officialUrl": "https://omodajaecoo.com.br/ofertas",
+  "sources": [
+    {
+      "label": "Omoda & Jaecoo — nota de lançamento Omoda 5 SHS-H e 7 SHS-P",
+      "url": "https://omodajaecoo.com.br/noticias/omoda-jaecoo-brasil-lanca-modelos-omoda-5-shs-h-e-omoda-7-shs-p-no-mercado-brasileiro"
+    },
+    {
+      "label": "Omoda & Jaecoo — ofertas",
+      "url": "https://omodajaecoo.com.br/ofertas"
+    },
+    {
+      "label": "Motor Show — Omoda 7 PHEV preço e equipamentos",
+      "url": "https://motorshow.com.br/omoda-7-phev-preco-motorizacao-equipamentos"
+    },
+    {
+      "label": "Encontracarros — Omoda 7 PHEV x rivais (Inmetro 14 km/l)",
+      "url": "https://www.encontracarros.com.br/omoda-7-phev/"
+    },
+    {
+      "label": "Auto+ TV — avaliação Omoda 7 PHEV",
+      "url": "https://www.automaistv.com.br/avaliacao/omoda-7-phev-tem-o-molho-para-te-atrair-impressoes/"
+    },
+    {
+      "label": "Canal VE — ficha Omoda 7 PHEV",
+      "url": "https://canalve.com.br/ficha-tecnica/omoda-jaecoo/tudo-sobre-7-phev/"
+    },
+    {
+      "label": "Revista Carro — avaliação (out/2025)",
+      "url": "https://revistacarro.com.br/omoda-7-estreia-no-brasil-a-partir-de-r-2549-mil-e-pode-fazer-40-km-l-veja-avaliacao/"
+    },
+    {
+      "label": "Tabela FIPE Brasil — Omoda 7 Luxury 2026",
+      "url": "https://www.tabelafipebrasil.com/carros/OMODA/7-LUXURY-15-TB-FWD/2026-Hibrido"
+    },
+    {
+      "label": "Tabela Carros — FIPE Omoda 7 Luxury 2026 (set/2026)",
+      "url": "https://tabelacarros.com/carros/omoda/7-LUXURY-1-5-TB-FWD/2026-Hibrido"
+    },
+    {
+      "label": "Razão Automóvel — Omoda 7 SHS-P (dimensões, Portugal)",
+      "url": "https://www.razaoautomovel.com/noticias/lancamento-precos-omoda-7-shs-p-2026/"
+    },
+    {
+      "label": "The Car Expert — Omoda 7 review (Euro NCAP)",
+      "url": "https://www.thecarexpert.co.uk/omoda-7-review-2026/"
+    }
+  ],
+  "unverified": [
+    "Ordem cidade/estrada do consumo a gasolina (14,0/11,9 x 11,9/14,0).",
+    "Consumo elétrico km/kWh — estimado 60 km ÷ 18,4 kWh ≈ 3,3 km/kWh.",
+    "Dimensões (4.660/2.720 mm) de fonte portuguesa.",
+    "Porta-malas: 590 L (marca) x 550 L (avaliação Auto+).",
+    "Validade e vigência da oferta de R$ 244.990.",
+    "Garantia do veículo e da bateria para o Omoda 7.",
+    "Resultado Euro NCAP do Omoda 7 (fontes conflitantes).",
+    "Pesquisa feita por resumos de busca das fontes listadas (páginas não abertas diretamente); confira os valores na fonte."
+  ]
+}

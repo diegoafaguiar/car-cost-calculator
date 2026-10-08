@@ -1,0 +1,187 @@
+{
+  "catalogSeed": {
+    "brand": "MG",
+    "model": "S5",
+    "version": "Comfort (elétrico)",
+    "category": "suv-medio",
+    "powertrain": "eletrico",
+    "seats": 5,
+    "trunkL": 453,
+    "refPriceNew": 218800,
+    "consumption": {
+      "cityKmL": 0,
+      "roadKmL": 0,
+      "cityKmLEthanol": null,
+      "roadKmLEthanol": null,
+      "cityKmKWh": 5.5,
+      "roadKmKWh": 5.5
+    },
+    "evShareNote": "100% elétrico; bateria LFP de 64 kWh (62,1 kWh úteis segundo a Automotive Business); 351 km de autonomia Inmetro. km/kWh estimado = 351 km ÷ 64 kWh.",
+    "fipeBrand": "MG",
+    "fipeInclude": [
+      "S5 Comfort"
+    ],
+    "since": 2026
+  },
+  "id": "mg-s5",
+  "researchedAt": "2026-10",
+  "displayName": "MG S5 (MGS5 EV)",
+  "summary": "SUV médio 100% elétrico da MG Motor (grupo SAIC), que voltou ao Brasil em nov/2025 com linha só de elétricos. Motor traseiro de 205 cv e 35,7 kgfm, bateria LFP de 64 kWh e 351 km de autonomia pelo Inmetro. Duas versões: Comfort e Luxury. A marca anunciou montagem local (Horizonte-CE) do S5 junto com o MG4 Urban.",
+  "generation": "1ª geração (MGS5 EV, lançado na Europa em 2024/2025); vendido no Brasil desde nov/2025 (linha 2026).",
+  "timeline": [
+    {
+      "modelYear": "2026",
+      "change": "Lançamento no Salão de São Paulo (nov/2025): Comfort R$ 195.800 e Luxury R$ 219.800 como preço de lançamento até 30/nov; depois tabela de R$ 218.800 e R$ 238.800."
+    },
+    {
+      "modelYear": "2026",
+      "change": "Mar/2026: política pública com Comfort a R$ 199.800 promocional (R$ 185.800 com avaliação de usado), sobre sugerido de R$ 218.800."
+    },
+    {
+      "modelYear": "2026/2027",
+      "change": "Out/2026: site oficial anuncia Comfort MY 26/27 por R$ 179.800 (oferta de 01 a 31/10/2026, sugerido R$ 218.800)."
+    }
+  ],
+  "highlights": [
+    "205 cv e 35,7 kgfm, tração traseira, 0-100 km/h em 6,3 s.",
+    "351 km de autonomia Inmetro (480 km WLTP).",
+    "Recarga DC de até 140 kW (10-80% em cerca de 26-28 min, conforme a fonte).",
+    "Porta-malas de 453 L (1.440 L com banco rebatido).",
+    "Garantia de 7 anos/150 mil km no veículo e 8 anos/160 mil km na bateria.",
+    "Revisões a preço fixo baratas: R$ 440 / R$ 893 / R$ 440 (a cada 12 meses ou 24 mil km).",
+    "5 estrelas no Euro NCAP 2025 e no ANCAP."
+  ],
+  "watchOuts": [
+    "Preço de tabela (R$ 218.800) muito acima do praticado: ofertas de R$ 179.800 a R$ 199.800 e FIPE 2026 em R$ 179.925 (set/2026) indicam desvalorização forte.",
+    "Recall internacional (jul/2026) de 9.806 unidades fabricadas entre jan/2025 e jan/2026: ventoinha do radiador pode travar no frio e superaquecer o resistor, com risco de incêndio; correção por software. Não foi confirmado se atinge carros do Brasil.",
+    "Marca recém-chegada (nov/2025) com rede pequena; a MG passou a oferecer entrega gratuita em todo o país para compensar a falta de concessionárias.",
+    "Comfort não tem câmera 360°, teto panorâmico nem monitor de ponto cego (itens da Luxury segundo o site oficial).",
+    "Fontes divergem sobre bateria (62 x 64 kWh) e alguns itens da Comfort (carregador por indução)."
+  ],
+  "specs": {
+    "version": "MG S5 Comfort (linha 2026/2027)",
+    "engine": "Motor elétrico traseiro de 205 cv; bateria LFP de 64 kWh (62,1 kWh úteis segundo uma fonte)",
+    "powerCv": "205",
+    "torqueKgfm": "35,7",
+    "transmission": "Redução fixa (elétrico)",
+    "trunkL": 453,
+    "lengthMm": 4476,
+    "wheelbaseMm": 2730,
+    "safety": "Euro NCAP 2025: 5 estrelas (90% adulto, 82% criança); ANCAP 5 estrelas; sem teste Latin NCAP. Comfort com 6 airbags.",
+    "warranty": "7 anos/150 mil km (veículo); 8 anos/160 mil km (bateria de alta tensão)"
+  },
+  "inmetro": {
+    "version": "MG S5",
+    "cityGas": null,
+    "roadGas": null,
+    "cityEth": null,
+    "roadEth": null,
+    "cityKmKWh": null,
+    "roadKmKWh": null,
+    "year": "Autonomia Inmetro de 351 km (site oficial); consumo energético (MJ/km ou km/kWh) do PBEV não encontrado",
+    "source": "https://mgmotoroficial.com.br/model/mgs5"
+  },
+  "price0km": {
+    "version": "Comfort",
+    "price": 218800,
+    "date": "out/2026",
+    "source": "https://mgmotoroficial.com.br/oferta/mgs5"
+  },
+  "versionsAndPrices": [
+    {
+      "version": "Comfort (preço sugerido)",
+      "price": 218800,
+      "date": "out/2026",
+      "source": "https://mgmotoroficial.com.br/oferta/mgs5"
+    },
+    {
+      "version": "Comfort (oferta oficial 01-31/10/2026, MY 26/27)",
+      "price": 179800,
+      "date": "out/2026",
+      "source": "https://mgmotoroficial.com.br/oferta/mgs5"
+    },
+    {
+      "version": "Luxury (preço sugerido)",
+      "price": 238800,
+      "date": "jun/2026",
+      "source": "https://mundodoautomovelparapcd.com.br/mg-mgs5-para-cnpj-em-junho-de-2026/"
+    }
+  ],
+  "launchModelYearBR": 2026,
+  "catalogCheck": "Modelo ainda não está no catálogo. Sugere-se cadastrar a Comfort (sugerido R$ 218.800; oferta de out/2026 R$ 179.800). FIPE: marca 'MG', modelos 'S5 Comfort' (código 076004-8) e 'S5 Luxury' (076005-6). FIPE set/2026: S5 Comfort 2026 = R$ 179.925; S5 Luxury 2026 = R$ 194.442; Luxury 2027 = R$ 209.184.",
+  "wikipedia": {
+    "lang": "en",
+    "title": "MGS5 EV"
+  },
+  "officialUrl": "https://mgmotoroficial.com.br/model/mgs5",
+  "sources": [
+    {
+      "label": "MG Brasil — página do MG S5",
+      "url": "https://mgmotoroficial.com.br/model/mgs5"
+    },
+    {
+      "label": "MG Brasil — ofertas MG S5 (out/2026)",
+      "url": "https://mgmotoroficial.com.br/oferta/mgs5"
+    },
+    {
+      "label": "Auto+ TV — lançamento com preços",
+      "url": "https://www.automaistv.com.br/novidades/mg-s5-chega-com-duas-versoes-com-mais-de-200-cv-abaixo-dos-r-200-mil/"
+    },
+    {
+      "label": "CNN Brasil — S5 será montado no Ceará",
+      "url": "https://www.cnnbrasil.com.br/blogs/jorge-moraes/auto/suv-s5-eletrico-sera-feito-pela-inglesa-mg-no-ceara-ao-lado-do-mg4-urban/"
+    },
+    {
+      "label": "Automotive Business — avaliação MGS5",
+      "url": "https://www.automotivebusiness.com.br/noticias/mgs5-vende-origem-britanica-mas-repete-receita-de-outros-chineses"
+    },
+    {
+      "label": "MG Tecar — ficha do S5",
+      "url": "https://mgmotor.grupotecar.com.br/modelos/mg-motor-s5"
+    },
+    {
+      "label": "Webmotors — MG S5 2026",
+      "url": "https://www.webmotors.com.br/mg/s5/2026"
+    },
+    {
+      "label": "Mundo do Automóvel para PCD — preços jun/2026",
+      "url": "https://mundodoautomovelparapcd.com.br/mg-mgs5-para-cnpj-em-junho-de-2026/"
+    },
+    {
+      "label": "Tabela FIPE Brasil — MG S5 2026",
+      "url": "https://www.tabelafipebrasil.com/carros/MG/modelo/S5/2026"
+    },
+    {
+      "label": "Tabela FIPE Brasil — código 076004-8",
+      "url": "https://www.tabelafipebrasil.com/FIPE/076004-8"
+    },
+    {
+      "label": "Vrum — pacote de revisões MG",
+      "url": "https://www.vrum.com.br/bom-negocio/2026/01/7344522-mg-motor-lanca-pacote-de-revisoes-no-brasil-veja-precos.html"
+    },
+    {
+      "label": "Webmotors — revisões MG",
+      "url": "https://www.webmotors.com.br/wm1/servicos-e-manutencao/mg-motor-pacote-de-revisoes-programadas"
+    },
+    {
+      "label": "Electrive — recall S5 EV (jul/2026)",
+      "url": "https://electrive.com/2026/07/20/mg-recalls-s5-ev-due-to-potential-fire-risk"
+    },
+    {
+      "label": "Carlist — Euro NCAP e ANCAP 5 estrelas",
+      "url": "https://www.carlist.my/news/mg-s5-ev-earns-5-star-safety-rating-from-euro-ncap-and-ancap/143162/amp/"
+    },
+    {
+      "label": "AutoPapo — entrega gratuita MG",
+      "url": "https://autopapo.com.br/curta/mg-motor-anuncia-entrega-gratuita-em-todo-o-brasil-e-suporte-tecnico-nacional/"
+    }
+  ],
+  "unverified": [
+    "Consumo energético oficial do PBEV (km/kWh ou MJ/km) não encontrado; 5,5 km/kWh é estimativa (351 km ÷ 64 kWh; com 62,1 kWh úteis daria 5,65).",
+    "Capacidade da bateria: 64 kWh (maioria) x 62/62,1 kWh (Automotive Business, Toriba).",
+    "Entre-eixos: 2.730 mm x 2.734 mm (MG Tecar).",
+    "Se o recall internacional da ventoinha atinge unidades brasileiras.",
+    "Preço sugerido da Luxury em out/2026 (último visto: R$ 238.800, jun/2026).",
+    "Pesquisa feita por resumos de busca das fontes listadas (páginas não abertas diretamente); confira os valores na fonte."
+  ]
+}

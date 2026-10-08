@@ -1,0 +1,67 @@
+{
+  "id": "gac-hyptec-ht",
+  "version": "GAC Hyptec HT Elite 2027 (R$ 314.990)",
+  "researchedAt": "2026-10",
+  "tech": {
+    "screen10": true,
+    "wirelessMirroring": true,
+    "digitalCluster": true,
+    "wirelessCharger": null,
+    "camera360": null,
+    "adaptiveCruise": true,
+    "connectedApp": null,
+    "keyless": null
+  },
+  "comfort": {
+    "automatic": true,
+    "digitalAC": true,
+    "rearVents": true,
+    "leather": null,
+    "powerSeat": true,
+    "seatClimate": null,
+    "sunroof": null
+  },
+  "safety": {
+    "airbags6": true,
+    "aeb": true,
+    "laneKeep": true,
+    "blindSpot": true,
+    "rearCrossTraffic": null
+  },
+  "ncap": {
+    "stars": null,
+    "year": null,
+    "program": null,
+    "note": "Sem teste NCAP encontrado; só C-IASI (China), nota 'Good' no impacto frontal de 25%.",
+    "source": "https://auto.katadata.co.id/car/hyptech-ht-electric-car-undergoes-crash-test-here-are-the-results-19057"
+  },
+  "sources": [
+    {
+      "label": "AutoPapo — Hyptec HT 2027",
+      "url": "https://autopapo.com.br/noticia/gac-lanca-hyptec-ht-2027-com-bateria-ampliada-a-partir-de-r-314-990/"
+    },
+    {
+      "label": "Guru dos Carros — Hyptec HT 2027",
+      "url": "https://gurudoscarros.com.br/2026/04/15/gac-lanca-hyptec-ht-2027-no-brasil-com-ate-431-km-de-autonomia-e-recarga-ultrarrapida/"
+    },
+    {
+      "label": "Autoentusiastas — Hyptec HT 2027",
+      "url": "https://autoentusiastas.com.br/2026/04/hyptec-ht-2027-evolui-em-desempenho-e-alcance/"
+    },
+    {
+      "label": "Grupo Sentinela — Hyptec HT 2027",
+      "url": "https://www.gruposentinela.com.br/gac-hyptec-ht-2027-tem-autonomia-maior-de-431-km-e-recarga-em-15-minutos/"
+    }
+  ],
+  "notes": "Itens de série citados para a linha: multimídia 14,6\" com CarPlay/Android Auto sem fio, painel digital 8,8\", ADAS nível 2 com 11 funções (ACC, faixa, AEB, ponto cego), 6 airbags, OTA, ar automático de duas zonas com saída traseira, bancos dianteiros elétricos. Câmera 360°, teto panorâmico, couro Nappa, bancos ventilados/aquecidos/massagem e som de 22 alto-falantes aparecem na lista geral sem separar Elite x Ultra (som de 22 alto-falantes atribuído à Ultra).",
+  "unverified": [
+    "tech.wirelessCharger",
+    "tech.camera360",
+    "tech.connectedApp",
+    "tech.keyless",
+    "comfort.leather",
+    "comfort.seatClimate",
+    "comfort.sunroof",
+    "safety.rearCrossTraffic"
+  ]
+}

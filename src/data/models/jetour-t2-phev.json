@@ -1,0 +1,179 @@
+{
+  "catalogSeed": {
+    "brand": "Jetour",
+    "model": "T2 PHEV",
+    "version": "Advance 1.5 TGDI PHEV 4x2",
+    "category": "suv-grande",
+    "powertrain": "hibrido-plugin",
+    "seats": 5,
+    "trunkL": 580,
+    "refPriceNew": 289900,
+    "consumption": {
+      "cityKmL": 11.4,
+      "roadKmL": 10.5,
+      "cityKmLEthanol": null,
+      "roadKmLEthanol": null,
+      "cityKmKWh": 2.8,
+      "roadKmKWh": 2.8
+    },
+    "evShareNote": "Híbrido plug-in com bateria LFP de 26,7 kWh e 75 km elétricos (Inmetro). Só gasolina. Versão 4x2; o T2 XWD 4x4 (597 cv, bateria de 43,2 kWh) é outra configuração.",
+    "fipeBrand": "JETOUR",
+    "fipeInclude": [
+      "T2",
+      "Advance"
+    ],
+    "since": 2026
+  },
+  "id": "jetour-t2-phev",
+  "researchedAt": "2026-10",
+  "displayName": "Jetour T2 PHEV",
+  "summary": "SUV grande de estilo jipe (4,79 m), topo de linha da Jetour no Brasil, importado da China. As versões 4x2 (Advance e Premium) usam motor 1.5 turbo e dois motores elétricos, com cerca de 320 cv, câmbio 3-DHT e bateria de 26,7 kWh (75 km elétricos no Inmetro). Desde jul/2026 há também o T2 XWD 4x4 Premium, com 597 cv e bateria de 43,2 kWh. Concorre com o GWM Tank 300.",
+  "generation": "1ª geração (T2/Traveller, 2023); no Brasil desde jan/fev de 2026 (linha 2026).",
+  "timeline": [
+    {
+      "modelYear": "2026",
+      "change": "Apresentação em 28/jan/2026: Advance R$ 289.900 e Premium R$ 299.900 (4x2)."
+    },
+    {
+      "modelYear": "2026",
+      "change": "Jul/2026: T2 XWD 4x4 Premium com 597 cv e 900 Nm, por R$ 339.900 (promocional, primeiras 599 unidades; tabela de R$ 349.900)."
+    },
+    {
+      "modelYear": "2026",
+      "change": "Out/2026: venda direta 4x2 com 10% de desconto (Advance R$ 260.910, Premium R$ 269.910)."
+    }
+  ],
+  "highlights": [
+    "Advance de série: 6 airbags, câmera 360°, ACC, frenagem autônoma, assistente de faixa, ponto cego, ar digital de duas zonas com saída traseira, teto panorâmico, carregador por indução de 50 W e chave presencial.",
+    "Porta-malas de 580 L (1.494 L com o banco rebatido) com abertura lateral.",
+    "75 km elétricos (Inmetro); a marca anuncia 1.100 km de autonomia total.",
+    "5 estrelas no ASEAN NCAP (T2, 2026), protocolo que não é Latin/Euro NCAP.",
+    "Garantia de 7 anos/150 mil km; 8 anos/160 mil km para bateria e motores elétricos."
+  ],
+  "watchOuts": [
+    "Gasta muito só com gasolina: 11,4 km/l (cidade) e 10,5 km/l (estrada) no Inmetro.",
+    "O Advance e o Premium são 4x2; o 4x4 só existe no XWD Premium (R$ 349.900).",
+    "Preço alto (R$ 289.900) e marca nova: depreciação provável. A FIPE do T2 Advance 2026 está em R$ 263.765 (set/2026), R$ 26 mil abaixo da tabela.",
+    "As fontes divergem em potência e torque (320 cv/62,2 kgfm x 315 cv/52 kgfm) e no porta-malas (580 x 574 L).",
+    "Nenhum recall ativo no Brasil, segundo a página oficial."
+  ],
+  "specs": {
+    "version": "T2 Advance 4x2 (linha 2026)",
+    "engine": "1.5 turbo gasolina com injeção direta (135 cv) + dois motores elétricos (102 cv e 122 cv, conforme a fonte); bateria LFP de 26,7 kWh",
+    "powerCv": "320 (combinada; algumas fontes dizem 315)",
+    "torqueKgfm": "62,2 (combinado, conforme a fonte)",
+    "transmission": "3-DHT (três marchas), tração dianteira",
+    "trunkL": 580,
+    "lengthMm": 4785,
+    "wheelbaseMm": 2800,
+    "safety": "ASEAN NCAP 5 estrelas (2026, mercado da Malásia). Sem Latin NCAP, Euro NCAP ou ANCAP. 6 airbags.",
+    "warranty": "7 anos/150 mil km (veículo); 8 anos/160 mil km (bateria e motores elétricos)"
+  },
+  "inmetro": {
+    "version": "T2 PHEV 4x2",
+    "cityGas": 11.4,
+    "roadGas": 10.5,
+    "cityEth": null,
+    "roadEth": null,
+    "cityKmKWh": null,
+    "roadKmKWh": null,
+    "year": "PBEV 2026 (conforme a Motor Show). Elétrico equivalente: 27,6 km/l (cidade), 23,4 km/l (estrada) e 25,7 km/l (combinado). 75 km elétricos.",
+    "source": "https://motorshow.com.br/jetour-t2-lancamento-brasil"
+  },
+  "price0km": {
+    "version": "Advance 4x2",
+    "price": 289900,
+    "date": "out/2026",
+    "source": "https://www.carrera.com.br/carros/novos/jetour"
+  },
+  "versionsAndPrices": [
+    {
+      "version": "Advance 4x2",
+      "price": 289900,
+      "date": "out/2026",
+      "source": "https://www.carrera.com.br/carros/novos/jetour"
+    },
+    {
+      "version": "Premium 4x2",
+      "price": 299900,
+      "date": "out/2026",
+      "source": "https://www.carrera.com.br/carros/novos/jetour"
+    },
+    {
+      "version": "XWD 4x4 Premium",
+      "price": 349900,
+      "date": "out/2026",
+      "source": "https://www.carrera.com.br/carros/novos/jetour"
+    },
+    {
+      "version": "XWD 4x4 Premium (lançamento, primeiras 599 unidades)",
+      "price": 339900,
+      "date": "jul/2026",
+      "source": "https://www.otempo.com.br/autotempo/2026/7/24/jetour-t2-xwd-4x4-estreia-no-brasil-com-motor-hibrido-plug-in-de-597-cv"
+    },
+    {
+      "version": "Advance 4x2 (venda direta)",
+      "price": 260910,
+      "date": "out/2026",
+      "source": "https://mecanicaonline.com.br/2026/09/jetour-s06-pcd-fica-r-36-700-mais-barato-e-passa-a-custar-r-163-200/"
+    }
+  ],
+  "launchModelYearBR": 2026,
+  "catalogCheck": "Modelo ainda não está no catálogo. FIPE: 'T2 Advance' (307003-4) = R$ 263.765 (set/2026); 'T2 Premium' (307004-2) = R$ 267.385; 'T2 Premium XWD' (307007-7). A Webmotors cita também uma versão Dark Knight por R$ 303.400 (não confirmada).",
+  "wikipedia": {
+    "lang": "en",
+    "title": "Jetour T2"
+  },
+  "officialUrl": "https://jetourbr.com/carro/t2/",
+  "sources": [
+    {
+      "label": "Motor Show: lançamento do T2 no Brasil",
+      "url": "https://motorshow.com.br/jetour-t2-lancamento-brasil"
+    },
+    {
+      "label": "Motor Show: impressões ao dirigir o T2",
+      "url": "https://motorshow.com.br/impressoes-ao-dirigir-jetour-t2"
+    },
+    {
+      "label": "Rádio Itatiaia: T2 com três motores",
+      "url": "https://www.itatiaia.com.br/auto/jetour-t2-suv-hibrido-tem-tres-motores-e-detecta-alagamentos"
+    },
+    {
+      "label": "Auto Segredos: T2 com 320 cv",
+      "url": "https://www.autossegredos.com.br/lancamentos/jetour-t2-chega-ao-brasil-com-visual-de-jipe-de-luxo-e-desempenho-de-esportivo/"
+    },
+    {
+      "label": "O Tempo: T2 XWD 4x4",
+      "url": "https://www.otempo.com.br/autotempo/2026/7/24/jetour-t2-xwd-4x4-estreia-no-brasil-com-motor-hibrido-plug-in-de-597-cv"
+    },
+    {
+      "label": "Tribuna PR: ficha do T2",
+      "url": "https://www.tribunapr.com.br/noticias/automoveis/jetour-t2-preco-ficha-tecnica-rivais-byd-gwm-haval/"
+    },
+    {
+      "label": "Carrera (concessionária): ofertas até 31/10/2026",
+      "url": "https://www.carrera.com.br/carros/novos/jetour"
+    },
+    {
+      "label": "Tabela FIPE: T2 Advance (307003-4)",
+      "url": "https://www.tabelafipebrasil.com/FIPE/307003-4"
+    },
+    {
+      "label": "Jetour Brasil: T2",
+      "url": "https://jetourbr.com/carro/t2/"
+    },
+    {
+      "label": "Carz.my: T2 com 5 estrelas no ASEAN NCAP",
+      "url": "https://www.carz.com.my/2026/01/jetour-t2-secures-5-star-asean-ncap-rating"
+    }
+  ],
+  "unverified": [
+    "km/kWh: estimativa de 2,8 (75 km ÷ 26,7 kWh); Inmetro em km/kWh não encontrado.",
+    "Potência e torque combinados (320 cv/62,2 kgfm x 315 cv/52 kgfm).",
+    "Porta-malas: 580 L x 574 L.",
+    "Versão Dark Knight (R$ 303.400) citada só pela Webmotors.",
+    "Preço de out/2026 vem de uma concessionária em SP (Carrera) e bate com o lançamento; não vi uma tabela oficial.",
+    "Custo das revisões: não encontrado.",
+    "Pesquisa feita por resumos de busca das fontes listadas (páginas não abertas diretamente); confira os valores na fonte."
+  ]
+}

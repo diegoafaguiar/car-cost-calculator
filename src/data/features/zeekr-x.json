@@ -1,0 +1,74 @@
+{
+  "id": "zeekr-x",
+  "version": "Zeekr X Premium RWD 2025",
+  "researchedAt": "2026-10",
+  "tech": {
+    "screen10": true,
+    "wirelessMirroring": true,
+    "digitalCluster": true,
+    "wirelessCharger": true,
+    "camera360": true,
+    "adaptiveCruise": true,
+    "connectedApp": null,
+    "keyless": null
+  },
+  "comfort": {
+    "automatic": true,
+    "digitalAC": null,
+    "rearVents": null,
+    "leather": null,
+    "powerSeat": true,
+    "seatClimate": true,
+    "sunroof": true
+  },
+  "safety": {
+    "airbags6": true,
+    "aeb": null,
+    "laneKeep": null,
+    "blindSpot": null,
+    "rearCrossTraffic": null
+  },
+  "ncap": {
+    "stars": 5,
+    "year": 2024,
+    "program": "Euro NCAP",
+    "counts": true,
+    "note": "Zeekr X elétrico, protocolo 2024: 91% adulto, 90% criança, 84% vulneráveis, 83% assistências (comunicado da Zeekr).",
+    "source": "https://zeekrglobal.com/posts/zeekr-001-and-zeekr-x-get-5-star-euro-ncap-and-green-ncap-ratings"
+  },
+  "sources": [
+    {
+      "label": "Webmotors — Zeekr X 2025, preço e itens por versão",
+      "url": "https://www.webmotors.com.br/zeekr/x/2025"
+    },
+    {
+      "label": "Nona Marcha — Zeekr X Premium RWD: ficha e equipamentos",
+      "url": "https://nonamarcha.com.br/zeekr-x-premium-rwd-2025-ficha-tecnica-autonomia-desempenho-e-preco-no-brasil/"
+    },
+    {
+      "label": "Canaltech — 5 tecnologias do Zeekr X (tela 14,6\", AR-HUD)",
+      "url": "https://canaltech.com.br/carros/5-tecnologias-impressionantes-do-zeekr-x/"
+    },
+    {
+      "label": "Conexão TO — Zeekr X: CarPlay/Android Auto sem fio, 5G",
+      "url": "https://conexaoto.com.br/2024/11/21/zeekr-x-quer-publico-que-valoriza-inovacao-e-sustentabilidade"
+    },
+    {
+      "label": "Zeekr — Euro NCAP 5 estrelas para 001 e X (mai/2024)",
+      "url": "https://zeekrglobal.com/posts/zeekr-001-and-zeekr-x-get-5-star-euro-ncap-and-green-ncap-ratings"
+    }
+  ],
+  "notes": "Premium: central de 14,6\", painel digital, AR-HUD, teto panorâmico, câmera 360°, piloto automático adaptativo, 6 airbags, carregador por indução, banco do motorista com ajustes elétricos, memória, aquecimento e ventilação (Webmotors) — Nona Marcha diz bancos dianteiros. CarPlay/Android Auto sem fio segundo Conexão TO (na Nova Zelândia o Android Auto é com fio). Revestimento dos bancos não confirmado.",
+  "unverified": [
+    "tech.connectedApp",
+    "tech.keyless",
+    "comfort.digitalAC",
+    "comfort.rearVents",
+    "comfort.leather",
+    "safety.aeb",
+    "safety.laneKeep",
+    "safety.blindSpot",
+    "safety.rearCrossTraffic",
+    "tech.wirelessMirroring (Android Auto sem fio só por uma fonte)"
+  ]
+}

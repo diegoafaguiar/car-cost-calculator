@@ -1,0 +1,166 @@
+{
+  "catalogSeed": {
+    "brand": "GWM",
+    "model": "Tank 300",
+    "version": "2.0 Hi4-T PHEV Flex 4x4",
+    "category": "suv-grande",
+    "powertrain": "hibrido-plugin",
+    "seats": 5,
+    "trunkL": 360,
+    "refPriceNew": 342000,
+    "consumption": {
+      "cityKmL": 7.5,
+      "roadKmL": 7.6,
+      "cityKmLEthanol": 5.4,
+      "roadKmLEthanol": 5.7,
+      "cityKmKWh": null,
+      "roadKmKWh": null
+    },
+    "evShareNote": "Plug-in flex 4x4: bateria 37,1 kWh, 74 km elétricos (Inmetro). Modo híbrido sem carga: 7,5/7,6 km/l gasolina e 5,4/5,7 km/l etanol (Car.blog.br). Combinado com elétrico: 18,3/18,8 km/l (G) e 13,1/14,1 (E).",
+    "fipeBrand": "GWM",
+    "fipeInclude": [
+      "Tank 300",
+      "2.0 16V AWD Aut.(Hibrido)"
+    ],
+    "since": 2025
+  },
+  "id": "gwm-tank-300",
+  "researchedAt": "2026-10",
+  "displayName": "GWM Tank 300 PHEV",
+  "summary": "SUV off-road grande (4,76 m), híbrido plug-in com tração 4x4, chassi sobre longarinas. Desde abr/2026 é vendido só como PHEV flex (primeiro plug-in flex do mundo, segundo a GWM): 2.0 turbo (245 cv) + elétrico de 163 cv, 394 cv combinados, câmbio de 9 marchas, bateria de 37,1 kWh e 74 km elétricos (Inmetro). R$ 342.000.",
+  "generation": "1ª geração (Tank 300, 2020); PHEV no Brasil desde abr/2025; versão flex desde abr/2026 (linha 2027).",
+  "timeline": [
+    {
+      "modelYear": "2025",
+      "change": "Lançamento em abr/2025 como PHEV a gasolina por R$ 333.000 (preço de abril); FIPE lista 2025 Híbrido."
+    },
+    {
+      "modelYear": "2026",
+      "change": "Preço sugerido R$ 339.000 (Webmotors/Motor Show)."
+    },
+    {
+      "modelYear": "2027",
+      "change": "Abr/2026: Tank 300 PHEV Flex por R$ 342.000 (R$ 3 mil acima do gasolina, que saiu de linha); 74 km elétricos Inmetro."
+    }
+  ],
+  "highlights": [
+    "394 cv, 0–100 km/h em 6,8 s, tração integral e 9 modos de condução — 4x4 de verdade.",
+    "Flex: pode usar etanol também no modo híbrido.",
+    "74 km elétricos (Inmetro) com bateria de 37,1 kWh; recarga AC 6,6 kW e DC 50 kW (30–80% em ~24 min).",
+    "Bancos dianteiros com ajuste elétrico, aquecimento, ventilação (e massagem, segundo concessionária); teto solar; ADAS com ACC stop & go, AEB, faixa e tráfego cruzado traseiro.",
+    "Volume crescente: GWM subiu no ranking de SUVs grandes em 2026."
+  ],
+  "watchOuts": [
+    "Consumo alto sem recarga: 7,5 km/l (cidade) e 7,6 km/l (estrada) com gasolina, 5,4/5,7 km/l com etanol (Car.blog.br).",
+    "Porta-malas pequeno para o tamanho: 360 L até o encosto (836 ou 863 L até o teto, conforme a fonte); tampa lateral pesada.",
+    "ANCAP 5 estrelas (2022) foi do Tank 300 híbrido HEV; com penalidade máxima por agressividade da frente contra outro carro e proteção fraca do passageiro traseiro.",
+    "FIPE do 2026 (R$ 298.492) bem abaixo do 0 km (R$ 342.000).",
+    "Carroceria sobre chassi e 4x4: rodar na cidade é menos confortável e mais caro que num SUV monobloco."
+  ],
+  "specs": {
+    "version": "Tank 300 2.0 Hi4-T PHEV Flex 4x4 9HAT (linha 2027)",
+    "engine": "2.0 turbo flex (245 cv, 38,7 kgfm) + motor elétrico de 163 cv; bateria de 37,1 kWh",
+    "powerCv": "394 (combinada)",
+    "torqueKgfm": null,
+    "transmission": "Automática híbrida de 9 marchas (9HAT/DHT), tração integral",
+    "trunkL": 360,
+    "lengthMm": 4760,
+    "wheelbaseMm": 2750,
+    "safety": "6 airbags (ficha oficial GWM); ANCAP 5 estrelas 2022 do Tank 300 HEV (outro conjunto); sem Latin NCAP",
+    "warranty": null
+  },
+  "inmetro": {
+    "version": "Tank 300 PHEV Flex 2027",
+    "cityGas": 7.5,
+    "roadGas": 7.6,
+    "cityEth": 5.4,
+    "roadEth": 5.7,
+    "cityKmKWh": null,
+    "roadKmKWh": null,
+    "year": "PBEV (conforme Car.blog.br) — modo híbrido sem carga; combinado com elétrico 18,3/18,8 (G) e 13,1/14,1 (E); 74 km elétricos",
+    "source": "https://www.car.blog.br/2026/04/gwm-tank-300-phev-flex-2027-preco-detalhes.html"
+  },
+  "price0km": {
+    "version": "2.0 Hi4-T PHEV Flex 4x4",
+    "price": 342000,
+    "date": "abr/2026",
+    "source": "https://www.vrum.com.br/noticias/2026/04/7406792-novo-gwm-tank-300-flex-ja-esta-a-venda-no-brasil-por-rs-342-mil.html"
+  },
+  "versionsAndPrices": [
+    {
+      "version": "2.0 Hi4-T PHEV Flex 4x4 (única)",
+      "price": 342000,
+      "date": "abr/2026",
+      "source": "https://www.encontracarros.com.br/gwm-tank-300-phev-flex"
+    }
+  ],
+  "launchModelYearBR": 2025,
+  "catalogCheck": "Modelo ainda não está no catálogo. Versão única PHEV Flex (R$ 342.000). FIPE: 'GWM Tank 300 2.0 16V AWD Aut.(Hibrido)'; 2026 = R$ 298.492 (set/2026; R$ 295.695 em jul/2026); 2027 = R$ 319.764–323.201 (set/2026, tabelacarros) / R$ 311.215 (jul/2026). Nenhuma outra versão Tank 300 na FIPE vista.",
+  "wikipedia": {
+    "lang": "en",
+    "title": "GWM Tank 300"
+  },
+  "officialUrl": "https://www.gwmmotors.com.br/pt/modelos/tank-300/specification",
+  "sources": [
+    {
+      "label": "Vrum — Tank 300 Flex à venda por R$ 342 mil (abr/2026)",
+      "url": "https://www.vrum.com.br/noticias/2026/04/7406792-novo-gwm-tank-300-flex-ja-esta-a-venda-no-brasil-por-rs-342-mil.html"
+    },
+    {
+      "label": "Encontracarros — Tank 300 PHEV ganha motor flex por R$ 342.000",
+      "url": "https://www.encontracarros.com.br/gwm-tank-300-phev-flex"
+    },
+    {
+      "label": "Car.blog.br — Tank 300 PHEV Flex 2027 (consumo híbrido)",
+      "url": "https://www.car.blog.br/2026/04/gwm-tank-300-phev-flex-2027-preco-detalhes.html"
+    },
+    {
+      "label": "Autoo — Tank 300 2027 flex",
+      "url": "https://www.autoo.com.br/gwm-tank-300-2027-veja-precos-pecas-consumo-e-equipamentos-do-novo-suv-flex/"
+    },
+    {
+      "label": "GWM — ficha técnica Tank 300 Hi4-T",
+      "url": "https://www.gwmmotors.com.br/pt/modelos/tank-300/specification"
+    },
+    {
+      "label": "Webmotors — Tank 300 2.0 Hi4-T PHEV 2026",
+      "url": "https://www.webmotors.com.br/gwm/tank-300/2026/2-0-hi4-t-phev-automatico/387127"
+    },
+    {
+      "label": "Motor Show — avaliação Tank 300",
+      "url": "https://motorshow.com.br/avaliacao-gwm-tank-300"
+    },
+    {
+      "label": "Webmotors — teste Tank 300 na cidade",
+      "url": "https://www.webmotors.com.br/wm1/testes/gwm-tank-300-um-gigante-na-cidade"
+    },
+    {
+      "label": "AutoPapo — lançamento R$ 333.000 (2025)",
+      "url": "https://autopapo.com.br/noticia/gwm-tank-300-lancamento/"
+    },
+    {
+      "label": "Tabela FIPE Brasil — Tank 300 2026",
+      "url": "https://www.tabelafipebrasil.com/carros/GWM/TANK-300-20-16V-AWD-AUT-HIBRIDO/2026-Hibrido"
+    },
+    {
+      "label": "Tabela Carros — FIPE Tank 300 2026 (set/2026)",
+      "url": "https://tabelacarros.com/modelo/carros/gwm/tank-300/2026-Hibrido"
+    },
+    {
+      "label": "GoAuto — ANCAP 5 estrelas Tank 300 Hybrid",
+      "url": "https://goauto.com.au/amp/90057/five-star-safety-for-gwm-tank-300.html"
+    }
+  ],
+  "unverified": [
+    "Consumo no modo híbrido (7,5/7,6 G e 5,4/5,7 E) aparece só no Car.blog.br e, para gasolina, na Webmotors (7,5/7,7, com rótulos confusos); demais fontes só citam o combinado.",
+    "Consumo elétrico km/kWh — estimado 74 km ÷ 37,1 kWh ≈ 2,0 km/kWh.",
+    "Torque combinado não visto.",
+    "Porta-malas: 360 L (até o encosto) x 836/863 L (até o teto).",
+    "Airbags: 6 (ficha oficial) x 10 (JK Carros).",
+    "Preço vigente em out/2026 (último visto: R$ 342.000 em abr/2026; concessionária em Sorocaba anuncia 0 km por R$ 335.900).",
+    "Versões Hi4-Z/entre-eixos maior apresentadas em mar/2026: preço/venda no Brasil não confirmados.",
+    "Garantia não vista.",
+    "Ano-modelo 2025 na FIPE (since).",
+    "Pesquisa feita por resumos de busca das fontes listadas (páginas não abertas diretamente); confira os valores na fonte."
+  ]
+}

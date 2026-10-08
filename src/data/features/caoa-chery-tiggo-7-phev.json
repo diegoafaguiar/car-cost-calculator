@@ -1,0 +1,70 @@
+{
+  "id": "caoa-chery-tiggo-7-phev",
+  "version": "Caoa Chery Tiggo 7 Pro PHEV 1.5 TGDI DHT 2027 (R$ 209.990)",
+  "researchedAt": "2026-10",
+  "tech": {
+    "screen10": true,
+    "wirelessMirroring": null,
+    "digitalCluster": true,
+    "wirelessCharger": true,
+    "camera360": true,
+    "adaptiveCruise": true,
+    "connectedApp": null,
+    "keyless": null
+  },
+  "comfort": {
+    "automatic": true,
+    "digitalAC": true,
+    "rearVents": null,
+    "leather": null,
+    "powerSeat": true,
+    "seatClimate": true,
+    "sunroof": true
+  },
+  "safety": {
+    "airbags6": true,
+    "aeb": true,
+    "laneKeep": true,
+    "blindSpot": null,
+    "rearCrossTraffic": true
+  },
+  "ncap": {
+    "stars": 5,
+    "year": 2025,
+    "program": "Euro NCAP (Chery Tiggo 7 europeu, CSH)",
+    "note": "Euro NCAP 2025: primeiro 4 estrelas (jul/2025), revisado para 5 estrelas em 15/out/2025 após correção do airbag de cortina (adulto 82%, criança 85%). Carro europeu; equivalência de carroceria com o Tiggo 7 Pro PHEV brasileiro não confirmada. Sem Latin NCAP.",
+    "source": "https://www.euroncap.com/en/results/chery/tiggo+7/55574",
+    "counts": false
+  },
+  "sources": [
+    {
+      "label": "Mundo do Automóvel PCD — equipamentos Tiggo 7 PHEV 2027",
+      "url": "https://mundodoautomovelparapcd.com.br/tiggo-7-phev-2027/"
+    },
+    {
+      "label": "Auto Show — linha Tiggo 7 2027",
+      "url": "https://www.autoshow.com.br/noticias/2026/08/25/novo-tiggo-7-fica-mais-equipado-e-com-novo-visual-a-partir-de-r-139-9-mil.html"
+    },
+    {
+      "label": "CAOA Chery — Tiggo 7 PRO PHEV",
+      "url": "https://caoachery.com.br/novos/tiggo-7-pro-plug-in-hybrid"
+    },
+    {
+      "label": "Autoo — Tiggo 7 equipamentos e ADAS",
+      "url": "https://www.autoo.com.br/caoa-chery-tiggo-7-precos-consumo-equipamentos-rival-jeep-compass/"
+    },
+    {
+      "label": "Euro NCAP — Tiggo 7",
+      "url": "https://www.euroncap.com/en/results/chery/tiggo+7/55574"
+    }
+  ],
+  "notes": "Versão única. Painel curvo de 24,6\" (multimídia + quadro), head-up display, câmera 540° (inclui 360°), ACC, AEB, permanência em faixa, alerta de tráfego cruzado traseiro com frenagem (Autoo), ar digital duas zonas, bancos dianteiros elétricos com ventilação, aquecimento e memória, teto panorâmico, indução 50 W, som Sony 8 alto-falantes, 7 airbags (Autoo cita 6 — ambos ≥6).",
+  "unverified": [
+    "tech.wirelessMirroring",
+    "tech.connectedApp",
+    "tech.keyless",
+    "comfort.rearVents",
+    "comfort.leather",
+    "safety.blindSpot"
+  ]
+}

@@ -1,0 +1,71 @@
+{
+  "id": "gwm-tank-300",
+  "version": "GWM Tank 300 2.0 Hi4-T PHEV Flex 4x4 2027 (R$ 342.000)",
+  "researchedAt": "2026-10",
+  "tech": {
+    "screen10": null,
+    "wirelessMirroring": null,
+    "digitalCluster": null,
+    "wirelessCharger": null,
+    "camera360": null,
+    "adaptiveCruise": true,
+    "connectedApp": null,
+    "keyless": null
+  },
+  "comfort": {
+    "automatic": true,
+    "digitalAC": null,
+    "rearVents": null,
+    "leather": null,
+    "powerSeat": true,
+    "seatClimate": true,
+    "sunroof": true
+  },
+  "safety": {
+    "airbags6": true,
+    "aeb": true,
+    "laneKeep": true,
+    "blindSpot": null,
+    "rearCrossTraffic": true
+  },
+  "ncap": {
+    "stars": 5,
+    "year": 2022,
+    "program": "ANCAP",
+    "note": "ANCAP dez/2022 do Tank 300 híbrido HEV (adulto 88%, criança 89%, vulneráveis 81%, assistência 85%), com penalidade máxima de compatibilidade frontal e proteção fraca do passageiro traseiro. Conjunto diferente do PHEV flex brasileiro. ASEAN NCAP 5 estrelas citado sem fonte primária. Sem Latin NCAP.",
+    "source": "https://goauto.com.au/amp/90057/five-star-safety-for-gwm-tank-300.html",
+    "counts": false
+  },
+  "sources": [
+    {
+      "label": "GWM — ficha técnica Tank 300 Hi4-T",
+      "url": "https://www.gwmmotors.com.br/pt/modelos/tank-300/specification"
+    },
+    {
+      "label": "Motor Show — avaliação Tank 300",
+      "url": "https://motorshow.com.br/avaliacao-gwm-tank-300"
+    },
+    {
+      "label": "GWM Tozzo — Tank 300",
+      "url": "https://gwmtozzo.com.br/tank-300"
+    },
+    {
+      "label": "GoAuto — ANCAP Tank 300",
+      "url": "https://goauto.com.au/amp/90057/five-star-safety-for-gwm-tank-300.html"
+    }
+  ],
+  "notes": "Versão única. Ficha oficial: 6 airbags, bancos dianteiros com ajuste elétrico, aquecimento e ventilação; 12 sensores, 5 câmeras e 4 radares (concessionária diz 5 radares). Motor Show: AEB, alerta de tráfego cruzado traseiro, estacionamento automático, ACC stop & go, leitura de placas, permanência em faixa, teto solar. Câmera 360° provável (5 câmeras) mas não descrita explicitamente.",
+  "unverified": [
+    "tech.screen10",
+    "tech.wirelessMirroring",
+    "tech.digitalCluster",
+    "tech.wirelessCharger",
+    "tech.camera360",
+    "tech.connectedApp",
+    "tech.keyless",
+    "comfort.digitalAC",
+    "comfort.rearVents",
+    "comfort.leather",
+    "safety.blindSpot"
+  ]
+}

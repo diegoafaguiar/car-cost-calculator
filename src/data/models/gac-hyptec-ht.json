@@ -1,0 +1,152 @@
+{
+  "catalogSeed": {
+    "brand": "GAC",
+    "model": "Hyptec HT",
+    "version": "Elite (elétrico, linha 2027)",
+    "category": "suv-grande",
+    "powertrain": "eletrico",
+    "seats": 5,
+    "trunkL": 670,
+    "refPriceNew": 314990,
+    "consumption": {
+      "cityKmL": 0,
+      "roadKmL": 0,
+      "cityKmLEthanol": null,
+      "roadKmLEthanol": null,
+      "cityKmKWh": 5.2,
+      "roadKmKWh": 5.2
+    },
+    "evShareNote": "100% elétrico; linha 2027 com bateria LFP de 83 kWh e 431 km Inmetro (2025/2026: 72,7 kWh e 362 km). km/kWh estimado = 431 ÷ 83.",
+    "fipeBrand": "GAC",
+    "fipeInclude": [
+      "HYPTEC HT Elite (Elétrico)"
+    ],
+    "since": 2025
+  },
+  "id": "gac-hyptec-ht",
+  "researchedAt": "2026-10",
+  "displayName": "GAC Hyptec HT",
+  "summary": "SUV grande 100% elétrico da marca premium Hyptec (GAC), com 4,94 m de comprimento. A linha 2027 (abr/2026) trouxe bateria LFP de 83 kWh, 340 cv, tração traseira e 431 km de autonomia Inmetro. Versões Elite e Ultra; a Ultra se diferencia pelas portas traseiras de abertura vertical (asa de gaivota).",
+  "generation": "1ª geração (Hyptec HT, lançado na China em 2023); no Brasil desde 2025; linha 2027 renovada em abr/2026.",
+  "timeline": [
+    {
+      "modelYear": "2025/2026",
+      "change": "Estreia em 2025: Elite R$ 299.990 e Ultra R$ 349.990; bateria de 72,7 kWh e 362 km Inmetro (245 cv segundo fontes de lançamento)."
+    },
+    {
+      "modelYear": "2027",
+      "change": "15/abr/2026: linha 2027 com bateria de 83 kWh, 340 cv e 431 km Inmetro; Elite R$ 314.990 e Ultra R$ 369.990."
+    }
+  ],
+  "highlights": [
+    "340 cv e 430 Nm, 0-100 km/h em 5,8 s (linha 2027).",
+    "431 km de autonomia Inmetro com bateria LFP de 83 kWh.",
+    "Recarga DC de até 280 kW (30-80% em ~15 min).",
+    "Porta-malas de 670 L + 55 L dianteiro; entre-eixos de 2,935 m.",
+    "Multimídia de 14,6\" com CarPlay/Android Auto sem fio, ADAS nível 2 com 11 funções, 6 airbags."
+  ],
+  "watchOuts": [
+    "Caro (R$ 314.990) e com desvalorização forte: FIPE do Elite 2027 em R$ 273.669 (set/2026).",
+    "Sem teste NCAP; só teste C-IASI (China) com nota 'Good' no impacto frontal de 25%.",
+    "Unidades 2025/2026 usadas têm bateria menor (72,7 kWh, 362 km).",
+    "Fontes divergem no porta-malas (600, 670, 690 ou 725 L somando o dianteiro) e na autonomia (413 x 431 km).",
+    "Marca premium nova e pouco conhecida no Brasil; rede GAC ainda pequena."
+  ],
+  "specs": {
+    "version": "GAC Hyptec HT Elite (linha 2027)",
+    "engine": "Motor elétrico traseiro de 340 cv e 430 Nm; bateria LFP de 83 kWh",
+    "powerCv": "340",
+    "torqueKgfm": "43,8 (430 Nm)",
+    "transmission": "Redução fixa (elétrico)",
+    "trunkL": 670,
+    "lengthMm": 4935,
+    "wheelbaseMm": 2935,
+    "safety": "6 airbags; sem teste NCAP; C-IASI 'Good' (frontal 25%)",
+    "warranty": "8 anos/160 mil km (elétricos GAC)"
+  },
+  "inmetro": {
+    "version": "Hyptec HT 2027",
+    "cityGas": null,
+    "roadGas": null,
+    "cityEth": null,
+    "roadEth": null,
+    "cityKmKWh": null,
+    "roadKmKWh": null,
+    "year": "Autonomia Inmetro de 431 km (linha 2027, imprensa); consumo energético do PBEV não encontrado",
+    "source": "https://autopapo.com.br/noticia/gac-lanca-hyptec-ht-2027-com-bateria-ampliada-a-partir-de-r-314-990/"
+  },
+  "price0km": {
+    "version": "Elite",
+    "price": 314990,
+    "date": "abr/2026",
+    "source": "https://autopapo.com.br/noticia/gac-lanca-hyptec-ht-2027-com-bateria-ampliada-a-partir-de-r-314-990/"
+  },
+  "versionsAndPrices": [
+    {
+      "version": "Elite",
+      "price": 314990,
+      "date": "abr/2026",
+      "source": "https://autopapo.com.br/noticia/gac-lanca-hyptec-ht-2027-com-bateria-ampliada-a-partir-de-r-314-990/"
+    },
+    {
+      "version": "Ultra",
+      "price": 369990,
+      "date": "abr/2026",
+      "source": "https://autopapo.com.br/noticia/gac-lanca-hyptec-ht-2027-com-bateria-ampliada-a-partir-de-r-314-990/"
+    }
+  ],
+  "launchModelYearBR": 2025,
+  "catalogCheck": "Modelo ainda não está no catálogo. Sugere-se a Elite 2027 (R$ 314.990). FIPE: marca 'GAC', modelo 'HYPTEC HT Elite (Elétrico)' código 304004-6 (Ultra: 304005-4). FIPE set/2026: Elite 2027 = R$ 273.669; Ultra 2027 = R$ 323.885. Há anos 2025 e 2026 na FIPE.",
+  "wikipedia": {
+    "lang": "en",
+    "title": "Hyptec HT"
+  },
+  "officialUrl": null,
+  "sources": [
+    {
+      "label": "AutoPapo — Hyptec HT 2027 a partir de R$ 314.990",
+      "url": "https://autopapo.com.br/noticia/gac-lanca-hyptec-ht-2027-com-bateria-ampliada-a-partir-de-r-314-990/"
+    },
+    {
+      "label": "Guru dos Carros — lançamento HT 2027 (15/abr/2026)",
+      "url": "https://gurudoscarros.com.br/2026/04/15/gac-lanca-hyptec-ht-2027-no-brasil-com-ate-431-km-de-autonomia-e-recarga-ultrarrapida/"
+    },
+    {
+      "label": "Autoentusiastas — HT 2027",
+      "url": "https://autoentusiastas.com.br/2026/04/hyptec-ht-2027-evolui-em-desempenho-e-alcance/"
+    },
+    {
+      "label": "Instacarro — HT 2027 até 431 km",
+      "url": "https://www.instacarro.com/blog/lancamentos/hyptec-ht-2027-estreia-no-brasil-com-ate-431-km-de-autonomia"
+    },
+    {
+      "label": "GAC Lider — Hyptec HT (72,7 kWh/362 km)",
+      "url": "https://www.gaclider.com.br/modelos/gac-ht"
+    },
+    {
+      "label": "AutoPapo — GAC inicia operações (preços 2025)",
+      "url": "https://autopapo.com.br/noticia/gac-modelos-precos/"
+    },
+    {
+      "label": "Tabela Carros — FIPE HT Elite 2027",
+      "url": "https://tabelacarros.com/carros/gac/HYPTEC-HT-ELITE--ELETRICO-/2027-Eletrico"
+    },
+    {
+      "label": "Tabela FIPE Brasil — Hyptec 2027",
+      "url": "https://www.tabelafipebrasil.com/carros/GAC/modelo/HYPTEC/2027"
+    },
+    {
+      "label": "Katadata — teste C-IASI do Hyptec HT",
+      "url": "https://auto.katadata.co.id/car/hyptech-ht-electric-car-undergoes-crash-test-here-are-the-results-19057"
+    }
+  ],
+  "unverified": [
+    "Consumo energético oficial do PBEV não encontrado; 5,2 km/kWh é estimativa (431 km ÷ 83 kWh).",
+    "Autonomia 2027: 431 km (maioria) x 413 km (Canal VE).",
+    "Porta-malas: 670 L (+55 L dianteiro) x 600/690 L entre fontes.",
+    "Preço atual (out/2026): último preço visto é o de lançamento (abr/2026); oferta de concessionária com wallbox grátis cita 'a partir de R$ 314.990'.",
+    "officialUrl: página oficial do HT no site da GAC Brasil não vista.",
+    "Garantia específica do Hyptec (assumida igual à dos elétricos GAC).",
+    "Pesquisa feita por resumos de busca das fontes listadas (páginas não abertas diretamente); confira os valores na fonte."
+  ]
+}

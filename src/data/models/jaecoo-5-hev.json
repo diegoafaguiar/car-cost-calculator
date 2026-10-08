@@ -1,0 +1,152 @@
+{
+  "catalogSeed": {
+    "brand": "Jaecoo",
+    "model": "5 HEV",
+    "version": "Comfort 1.5 TGDI HEV",
+    "category": "suv-compacto",
+    "powertrain": "hibrido",
+    "seats": 5,
+    "trunkL": 410,
+    "refPriceNew": 159990,
+    "consumption": {
+      "cityKmL": 15.5,
+      "roadKmL": 13.7,
+      "cityKmLEthanol": null,
+      "roadKmLEthanol": null,
+      "cityKmKWh": null,
+      "roadKmKWh": null
+    },
+    "evShareNote": "Híbrido pleno (não recarrega na tomada); bateria de 1,83 kWh, só gasolina.",
+    "fipeBrand": "JAECOO",
+    "fipeInclude": [
+      "5"
+    ],
+    "since": 2027
+  },
+  "id": "jaecoo-5-hev",
+  "researchedAt": "2026-10",
+  "displayName": "Jaecoo 5 HEV",
+  "summary": "SUV compacto híbrido pleno (HEV) da Omoda & Jaecoo, lançado no Brasil em 30/set/2026 (vendas desde 1º/out). Usa o mesmo conjunto do Omoda 5 HEV: 1.5 turbo a gasolina (135 cv) + elétrico de 204 cv, 224 cv e 30,1 kgfm, bateria de 1,83 kWh. Inmetro 15,5 km/l cidade e 13,7 km/l estrada. Versões Comfort e Prestige.",
+  "generation": "1ª geração (Jaecoo J5); estreia no Brasil em set/2026 como linha 2027.",
+  "timeline": [
+    {
+      "modelYear": "2027",
+      "change": "Lançamento em 30/set/2026: lote inicial de 3.600 unidades a R$ 154.990 (Comfort) e R$ 179.990 (Prestige); depois R$ 159.990 e R$ 184.990."
+    }
+  ],
+  "highlights": [
+    "Híbrido pleno mais barato do Brasil na estreia (AutoPapo), com 224 cv.",
+    "Inmetro: 15,5 km/l na cidade e 13,7 km/l na estrada — um pouco melhor que o Omoda 5 HEV.",
+    "0 a 100 km/h em 7,9 s.",
+    "Garantia de 7 anos (veículo) e 8 anos (baterias).",
+    "Porta-malas de 410 L (VDA), maior que o do Omoda 5."
+  ],
+  "watchOuts": [
+    "Só gasolina (não flex) e não é plug-in.",
+    "Comfort é básica para o preço: multimídia de 9\", câmera de ré (sem 360°), sem teto solar; ACC e frenagem autônoma não confirmados nela.",
+    "Comfort sem estepe (segundo a imprensa).",
+    "Recém-lançado (out/2026): ainda sem FIPE, sem histórico de confiabilidade e de revenda; marca nova no Brasil.",
+    "Preço de lote promocional (R$ 154.990) acaba após 3.600 unidades."
+  ],
+  "specs": {
+    "version": "Jaecoo 5 HEV Comfort/Prestige (linha 2027)",
+    "engine": "1.5 turbo gasolina (135 cv) + motor elétrico de 204 cv, híbrido pleno; bateria de 1,83 kWh",
+    "powerCv": "224 (combinada)",
+    "torqueKgfm": "30,1 (combinado)",
+    "transmission": "DHT (transmissão híbrida dedicada)",
+    "trunkL": 410,
+    "lengthMm": 4380,
+    "wheelbaseMm": 2620,
+    "safety": "6 airbags (Comfort); sem Latin NCAP; Euro NCAP/ANCAP do Jaecoo 5 não encontrado",
+    "warranty": "7 anos (veículo) e 8 anos (sistema de baterias)"
+  },
+  "inmetro": {
+    "version": "Jaecoo 5 HEV",
+    "cityGas": 15.5,
+    "roadGas": 13.7,
+    "cityEth": null,
+    "roadEth": null,
+    "cityKmKWh": null,
+    "roadKmKWh": null,
+    "year": "PBEV (conforme imprensa, set/2026)",
+    "source": "https://www.otempo.com.br/autotempo/2026/9/30/jaecoo-5-chega-ao-brasil-a-partir-de-r-154-990-com-motor-hibrido-de-224-cv"
+  },
+  "price0km": {
+    "version": "Comfort",
+    "price": 159990,
+    "date": "out/2026 (após o lote promocional)",
+    "source": "https://autopapo.com.br/noticia/jaecoo-5-lancamento-preco-versoes/"
+  },
+  "versionsAndPrices": [
+    {
+      "version": "Comfort — lote de lançamento (3.600 un.)",
+      "price": 154990,
+      "date": "out/2026",
+      "source": "https://www.otempo.com.br/autotempo/2026/9/30/jaecoo-5-chega-ao-brasil-a-partir-de-r-154-990-com-motor-hibrido-de-224-cv"
+    },
+    {
+      "version": "Comfort",
+      "price": 159990,
+      "date": "out/2026",
+      "source": "https://autopapo.com.br/noticia/jaecoo-5-lancamento-preco-versoes/"
+    },
+    {
+      "version": "Prestige — lote de lançamento",
+      "price": 179990,
+      "date": "out/2026",
+      "source": "https://www.otempo.com.br/autotempo/2026/9/30/jaecoo-5-chega-ao-brasil-a-partir-de-r-154-990-com-motor-hibrido-de-224-cv"
+    },
+    {
+      "version": "Prestige",
+      "price": 184990,
+      "date": "out/2026",
+      "source": "https://autopapo.com.br/noticia/jaecoo-5-lancamento-preco-versoes/"
+    }
+  ],
+  "launchModelYearBR": 2027,
+  "catalogCheck": "Modelo ainda não está no catálogo. Sugere-se a Comfort (R$ 159.990 cheio; R$ 154.990 no lote inicial). FIPE: não encontrado (lançado em out/2026, provavelmente ainda não cadastrado). Regra FIPE sugerida provisória: marca 'jaecoo', incluir '5', excluir '7' e '8' — conferir quando aparecer.",
+  "wikipedia": {
+    "lang": "en",
+    "title": "Jaecoo J5"
+  },
+  "officialUrl": null,
+  "sources": [
+    {
+      "label": "O Tempo — Jaecoo 5 chega a partir de R$ 154.990 (30/set/2026)",
+      "url": "https://www.otempo.com.br/autotempo/2026/9/30/jaecoo-5-chega-ao-brasil-a-partir-de-r-154-990-com-motor-hibrido-de-224-cv"
+    },
+    {
+      "label": "AutoPapo — Jaecoo 5 HEV lançamento, preços e versões",
+      "url": "https://autopapo.com.br/noticia/jaecoo-5-lancamento-preco-versoes/"
+    },
+    {
+      "label": "Motor Show — Jaecoo 5 estreia por R$ 154.990",
+      "url": "https://motorshow.com.br/jaecoo-5-estreia-no-brasil-por-r-154-990"
+    },
+    {
+      "label": "Autoo — Jaecoo 5 2027 preços, consumo e equipamentos",
+      "url": "https://www.autoo.com.br/jaecoo-5-2027-veja-preco-consumo-e-equipamentos-do-rival-de-t-cross-creta-e-outros/"
+    },
+    {
+      "label": "Webmotors — preço Jaecoo 5",
+      "url": "https://www.webmotors.com.br/wm1/carros/lancamentos/preco-jaecoo-5"
+    },
+    {
+      "label": "Recarregados — review Jaecoo 5 HEV",
+      "url": "https://recarregados.com/blog/jaecoo-5-hev-review-brasil"
+    },
+    {
+      "label": "Encontracarros — análise Jaecoo 5",
+      "url": "https://www.encontracarros.com.br/jaecoo-5-chega-ao-brasil-2"
+    }
+  ],
+  "unverified": [
+    "Preço de tabela x promocional (algumas fontes tratam R$ 159.990 como tabela e R$ 154.990 como lote de lançamento).",
+    "Porta-malas: 410 L (VDA, Autoesporte via imprensa) x 480 L (especificação internacional).",
+    "Entrada na FIPE e nomenclatura.",
+    "Ano-modelo 2027 (inferido de 'Jaecoo 5 2027' na Autoo).",
+    "Resultado de crash test do Jaecoo 5.",
+    "officialUrl: página oficial do modelo não vista.",
+    "Pesquisa feita por resumos de busca das fontes listadas (páginas não abertas diretamente); confira os valores na fonte."
+  ]
+}
