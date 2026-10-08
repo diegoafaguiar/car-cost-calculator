@@ -38,10 +38,10 @@
     "roadGas": null,
     "cityEth": null,
     "roadEth": null,
-    "cityKmKWh": 4.36,
-    "roadKmKWh": 4.36,
-    "year": "PBEV 2026",
-    "source": "https://canalve.com.br/byd-lanca-suv-eletrico-sealion-7-brasil-r-r-339-990/",
+    "cityKmKWh": 5.45,
+    "roadKmKWh": 5.45,
+    "year": "PBEV 2026 (0.66 MJ/km)",
+    "source": "https://www.byd.com/material/__CN/byd-site/br/fichas-tecnicas-2026/update-13-07-2026/07-13-2026---ficha-txiunica/BYD_Sealion7_V2.pdf ; https://www.car.blog.br/2026/05/byd-sealion-7-preco-r-339990-531-cv-e.html",
     "note": "ESTIMATIVA: 360 km PBEV ÷ 82,5 kWh = 4,36 km/kWh; MJ/km não encontrado."
   },
   "price0km": {
@@ -85,6 +85,10 @@
     {
       "label": "FIPE Sealion 7 AWD",
       "url": "https://www.tabelafipebrasil.com/carros/BYD/SEALION-7-AWD-ELETRICO/Zero-Km-a-eletrico"
+    },
+    {
+      "label": "PBEV/Inmetro — consumo energético",
+      "url": "https://www.byd.com/material/__CN/byd-site/br/fichas-tecnicas-2026/update-13-07-2026/07-13-2026---ficha-txiunica/BYD_Sealion7_V2.pdf ; https://www.car.blog.br/2026/05/byd-sealion-7-preco-r-339990-531-cv-e.html"
     }
   ],
   "unverified": [

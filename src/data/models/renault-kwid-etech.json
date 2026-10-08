@@ -44,10 +44,10 @@
     "roadGas": null,
     "cityEth": null,
     "roadEth": null,
-    "cityKmKWh": null,
-    "roadKmKWh": null,
-    "year": "PBEV 2026",
-    "source": "https://jkcarros.com.br/?p=31005",
+    "cityKmKWh": 8.18,
+    "roadKmKWh": 8.18,
+    "year": "PBEV 2026 (0.44 MJ/km)",
+    "source": "https://www.gov.br/inmetro/pt-br/assuntos/avaliacao-da-conformidade/programa-brasileiro-de-etiquetagem/tabelas-de-eficiencia-energetica/veiculos-automotivos-pbe-veicular/mascara-pbev-2026_19_jan-rev01.pdf ; https://clickpetroleoegas.com.br/novo-carro-eletrico-da-renault-2026-ja-esta-disponivel-no-brasil-por-menos-de-r-100-mil-com-consumo-equivalente-a-527-km-l-na-cidade-e-396-km-l-na-estrada-segundo-o-inmetro-vml97/",
     "note": "PBEV publica 0,44 MJ/km combinado (= 8,18 km/kWh) e equivalência 52,7 km/l (cidade) / 39,6 km/l (estrada) / 45,0 km/l (combinado). Estimativa derivada (não oficial) por proporção: ≈9,6 km/kWh cidade e ≈7,2 km/kWh estrada."
   },
   "price0km": {
@@ -91,6 +91,10 @@
     {
       "label": "Motorshow – lançamento 2022",
       "url": "https://motorshow.com.br/renault-lanca-kwid-e-tech-que-se-torna-o-eletrico-mais-barato-do-brasil/"
+    },
+    {
+      "label": "PBEV/Inmetro — consumo energético",
+      "url": "https://www.gov.br/inmetro/pt-br/assuntos/avaliacao-da-conformidade/programa-brasileiro-de-etiquetagem/tabelas-de-eficiencia-energetica/veiculos-automotivos-pbe-veicular/mascara-pbev-2026_19_jan-rev01.pdf ; https://clickpetroleoegas.com.br/novo-carro-eletrico-da-renault-2026-ja-esta-disponivel-no-brasil-por-menos-de-r-100-mil-com-consumo-equivalente-a-527-km-l-na-cidade-e-396-km-l-na-estrada-segundo-o-inmetro-vml97/"
     }
   ],
   "unverified": [

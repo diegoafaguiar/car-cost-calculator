@@ -67,10 +67,10 @@
     "roadGas": null,
     "cityEth": null,
     "roadEth": null,
-    "cityKmKWh": null,
-    "roadKmKWh": null,
-    "year": "PBEV 2026: autonomia 349 km (km/kWh não divulgado nas fontes)",
-    "source": "https://canalve.com.br/gwm-lanca-ora-5-349-km-autonomia-r-159-mil/"
+    "cityKmKWh": 7.35,
+    "roadKmKWh": 7.35,
+    "year": "PBEV 2026 (0.49 MJ/km)",
+    "source": "https://recarregados.com/blog/gwm-ora-5-review-brasil"
   },
   "price0km": {
     "version": "Versão única",
@@ -129,6 +129,10 @@
     {
       "label": "Despachante Dok — pontos fortes e fracos (porta-malas 362 L)",
       "url": "https://www.despachantedok.com.br/blog/?p=35644"
+    },
+    {
+      "label": "PBEV/Inmetro — consumo energético",
+      "url": "https://recarregados.com/blog/gwm-ora-5-review-brasil"
     }
   ],
   "unverified": [

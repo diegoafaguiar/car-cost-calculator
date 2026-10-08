@@ -49,8 +49,8 @@
     "roadEth": null,
     "cityKmKWh": 7.06,
     "roadKmKWh": 7.06,
-    "year": "PBEV 2025 (homologação mantida na linha 2026)",
-    "source": "https://canaltech.com.br/carros/byd-yuan-pro-suv-eletrico-de-entrada-chega-ao-brasil-por-r-182800/",
+    "year": "PBEV 2026 (0.51 MJ/km)",
+    "source": "https://www.byd.com/material/__CN/byd-site/br/fichas-tecnicas-2026/update-13-07-2026/07-13-2026---ficha-txiunica/BYD_YuanPro_V2.pdf ; https://canalve.com.br/byd-yuan-pro-e-apresentado-no-brasil-com-o-preco-de-r-182-800/",
     "note": "Conversão: km/kWh = 3,6 ÷ MJ/km → 3,6/0,51 = 7,06 km/kWh (combinado PBEV). Valores separados cidade/estrada não encontrados; repetido nos dois campos. Fontes divergem no km/l-equivalente (35,7 vs 56 km/le)."
   },
   "price0km": {
@@ -120,6 +120,10 @@
     {
       "label": "Olhar Digital – BYD aumenta garantia no Brasil",
       "url": "https://olhardigital.com.br/2024/05/08/carros-e-tecnologia/byd-aumenta-garantia-para-carros-eletricos-e-hibridos-no-brasil/"
+    },
+    {
+      "label": "PBEV/Inmetro — consumo energético",
+      "url": "https://www.byd.com/material/__CN/byd-site/br/fichas-tecnicas-2026/update-13-07-2026/07-13-2026---ficha-txiunica/BYD_YuanPro_V2.pdf ; https://canalve.com.br/byd-yuan-pro-e-apresentado-no-brasil-com-o-preco-de-r-182-800/"
     }
   ],
   "unverified": [

@@ -55,8 +55,8 @@
     "roadEth": null,
     "cityKmKWh": 6.21,
     "roadKmKWh": 6.21,
-    "year": "PBEV 2026",
-    "source": "https://canalve.com.br/ficha-tecnica/byd/tudo-sobre-yuan-plus-2027/",
+    "year": "PBEV 2026 (0.58 MJ/km)",
+    "source": "https://www.byd.com/material/__CN/byd-site/br/fichas-tecnicas-2026/update-13-07-2026/07-13-2026---ficha-txiunica/BYD_YuanPlusAWD_V2.pdf ; https://olhardigital.com.br/2024/01/15/carros-e-tecnologia/os-carros-eletricos-mais-economicos-do-brasil/",
     "note": "Conversão: km/kWh = 3,6 ÷ MJ/km → 3,6/0,58 = 6,21 km/kWh. É o valor combinado PBEV; não foram encontrados valores separados cidade/estrada, por isso o mesmo número foi repetido nos dois campos."
   },
   "price0km": {
@@ -130,6 +130,10 @@
     {
       "label": "Olhar Digital – BYD aumenta garantia no Brasil",
       "url": "https://olhardigital.com.br/2024/05/08/carros-e-tecnologia/byd-aumenta-garantia-para-carros-eletricos-e-hibridos-no-brasil/"
+    },
+    {
+      "label": "PBEV/Inmetro — consumo energético",
+      "url": "https://www.byd.com/material/__CN/byd-site/br/fichas-tecnicas-2026/update-13-07-2026/07-13-2026---ficha-txiunica/BYD_YuanPlusAWD_V2.pdf ; https://olhardigital.com.br/2024/01/15/carros-e-tecnologia/os-carros-eletricos-mais-economicos-do-brasil/"
     }
   ],
   "unverified": [

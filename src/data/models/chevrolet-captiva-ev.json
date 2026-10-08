@@ -74,10 +74,10 @@
     "roadGas": null,
     "cityEth": null,
     "roadEth": null,
-    "cityKmKWh": null,
-    "roadKmKWh": null,
-    "year": "PBEV: autonomia de 304 km (km/kWh oficial não encontrado)",
-    "source": "https://autopapo.com.br/noticia/chevrolet-captiva-ev-premier-destaca-pelo-espaco-interno-e-estilo/"
+    "cityKmKWh": 5.81,
+    "roadKmKWh": 5.81,
+    "year": "PBEV 2026 (0.62 MJ/km)",
+    "source": "https://www.gov.br/inmetro/pt-br/assuntos/avaliacao-da-conformidade/programa-brasileiro-de-etiquetagem/tabelas-de-eficiencia-energetica/veiculos-automotivos-pbe-veicular/mascara-pbev-2026_19_jan-rev01.pdf"
   },
   "price0km": {
     "version": "Premier",
@@ -142,6 +142,10 @@
     {
       "label": "Autoo — Captiva PHEV no Ceará",
       "url": "https://www.autoo.com.br/gm-confirma-que-captiva-hibrido-plug-in-sera-fabricado-no-ceara-ate-o-fim-de-2026/"
+    },
+    {
+      "label": "PBEV/Inmetro — consumo energético",
+      "url": "https://www.gov.br/inmetro/pt-br/assuntos/avaliacao-da-conformidade/programa-brasileiro-de-etiquetagem/tabelas-de-eficiencia-energetica/veiculos-automotivos-pbe-veicular/mascara-pbev-2026_19_jan-rev01.pdf"
     }
   ],
   "unverified": [

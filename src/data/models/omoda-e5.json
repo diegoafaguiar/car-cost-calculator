@@ -70,10 +70,10 @@
     "roadGas": null,
     "cityEth": null,
     "roadEth": null,
-    "cityKmKWh": null,
-    "roadKmKWh": null,
-    "year": "PBEV: autonomia 345 km (km/kWh não divulgado nas fontes)",
-    "source": "https://jkcarros.com.br/omoda-e5-ev-2026-carros-hibridos-eletricos/"
+    "cityKmKWh": 7.06,
+    "roadKmKWh": 7.06,
+    "year": "PBEV 2026 (0.51 MJ/km)",
+    "source": "https://www.gov.br/inmetro/pt-br/assuntos/avaliacao-da-conformidade/programa-brasileiro-de-etiquetagem/tabelas-de-eficiencia-energetica/veiculos-automotivos-pbe-veicular/mascara-pbev-2026_19_jan-rev01.pdf"
   },
   "price0km": {
     "version": "Versão única",
@@ -140,6 +140,10 @@
     {
       "label": "Canal VE — ficha técnica Omoda E5",
       "url": "https://canalve.com.br/ficha-tecnica/omoda-jaecoo/tudo-sobre-e5/"
+    },
+    {
+      "label": "PBEV/Inmetro — consumo energético",
+      "url": "https://www.gov.br/inmetro/pt-br/assuntos/avaliacao-da-conformidade/programa-brasileiro-de-etiquetagem/tabelas-de-eficiencia-energetica/veiculos-automotivos-pbe-veicular/mascara-pbev-2026_19_jan-rev01.pdf"
     }
   ],
   "unverified": [

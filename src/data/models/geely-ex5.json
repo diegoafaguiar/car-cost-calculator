@@ -75,10 +75,10 @@
     "roadGas": null,
     "cityEth": null,
     "roadEth": null,
-    "cityKmKWh": null,
-    "roadKmKWh": null,
-    "year": "PBEV: autonomia 349 km (Max) citada pela imprensa; km/kWh e MJ/km não encontrados",
-    "source": "https://diariodopoder.com.br/diario-motor/com-lista-de-equipamentos-superior-geely-ex5-eletrico-peca-na-autonomia"
+    "cityKmKWh": 8.57,
+    "roadKmKWh": 8.57,
+    "year": "PBEV 2026 (0.42 MJ/km)",
+    "source": "https://www.gov.br/inmetro/pt-br/assuntos/avaliacao-da-conformidade/programa-brasileiro-de-etiquetagem/tabelas-de-eficiencia-energetica/veiculos-automotivos-pbe-veicular/mascara-pbev-2026_19_jan-rev01.pdf"
   },
   "price0km": {
     "version": "Pro",
@@ -161,6 +161,10 @@
     {
       "label": "Euro NCAP — Geely EX5",
       "url": "https://www.euroncap.com/en/results/geely/ex5/54531"
+    },
+    {
+      "label": "PBEV/Inmetro — consumo energético",
+      "url": "https://www.gov.br/inmetro/pt-br/assuntos/avaliacao-da-conformidade/programa-brasileiro-de-etiquetagem/tabelas-de-eficiencia-energetica/veiculos-automotivos-pbe-veicular/mascara-pbev-2026_19_jan-rev01.pdf"
     }
   ],
   "unverified": [

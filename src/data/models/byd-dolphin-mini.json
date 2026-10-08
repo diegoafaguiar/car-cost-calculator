@@ -51,8 +51,8 @@
     "roadEth": null,
     "cityKmKWh": 8.78,
     "roadKmKWh": 8.78,
-    "year": "PBEV 2026",
-    "source": "https://www.mercadolivre.com.br/blog/mo-consumo-byd-dolphin-mini-2026-consumo-autonomia-e-desempenho-por-versao",
+    "year": "PBEV 2026 (0.41 MJ/km)",
+    "source": "https://www.gov.br/inmetro/pt-br/assuntos/avaliacao-da-conformidade/programa-brasileiro-de-etiquetagem/tabelas-de-eficiencia-energetica/veiculos-automotivos-pbe-veicular/mascara-pbev-2026_19_jan-rev01.pdf ; https://www.byd.com/material/__CN/byd-site/br/fichas-tecnicas-2026/update-02-07-2026/BYD_DolphinMini_FichaTecnica_2026.pdf",
     "note": "3,6 ÷ 0,41 = 8,78 km/kWh (valor combinado PBEV repetido em cidade e estrada). Pela autonomia ÷ bateria (280 km ÷ 38 kWh) daria ~7,4 km/kWh."
   },
   "price0km": {
@@ -112,6 +112,10 @@
     {
       "label": "Mix Vale – promoção",
       "url": "https://www.mixvale.com.br/2026/09/25/byd-dolphin-mini-2027-mantem-duas-versoes-e-entra-em-promocao-por-r-109-990/"
+    },
+    {
+      "label": "PBEV/Inmetro — consumo energético",
+      "url": "https://www.gov.br/inmetro/pt-br/assuntos/avaliacao-da-conformidade/programa-brasileiro-de-etiquetagem/tabelas-de-eficiencia-energetica/veiculos-automotivos-pbe-veicular/mascara-pbev-2026_19_jan-rev01.pdf ; https://www.byd.com/material/__CN/byd-site/br/fichas-tecnicas-2026/update-02-07-2026/BYD_DolphinMini_FichaTecnica_2026.pdf"
     }
   ],
   "unverified": [

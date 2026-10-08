@@ -76,10 +76,10 @@
     "roadGas": null,
     "cityEth": null,
     "roadEth": null,
-    "cityKmKWh": null,
-    "roadKmKWh": null,
-    "year": "Autonomia Inmetro de 351 km (site oficial); consumo energético (MJ/km ou km/kWh) do PBEV não encontrado",
-    "source": "https://mgmotoroficial.com.br/model/mgs5"
+    "cityKmKWh": 7.06,
+    "roadKmKWh": 7.06,
+    "year": "PBEV 2025 (0.51 MJ/km)",
+    "source": "https://www.automaistv.com.br/novidades/inmetro-revela-dados-tecnicos-de-tres-modelos-da-mg-quando-ela-chegara/ ; https://carro.blog.br/carros/mg4-suv-s5-e-conversivel-cyberster-tem-consumo-e-autonomia-revelados-no-brasil-pelo-inmetro.html"
   },
   "price0km": {
     "version": "Comfort",
@@ -174,6 +174,10 @@
     {
       "label": "AutoPapo — entrega gratuita MG",
       "url": "https://autopapo.com.br/curta/mg-motor-anuncia-entrega-gratuita-em-todo-o-brasil-e-suporte-tecnico-nacional/"
+    },
+    {
+      "label": "PBEV/Inmetro — consumo energético",
+      "url": "https://www.automaistv.com.br/novidades/inmetro-revela-dados-tecnicos-de-tres-modelos-da-mg-quando-ela-chegara/ ; https://carro.blog.br/carros/mg4-suv-s5-e-conversivel-cyberster-tem-consumo-e-autonomia-revelados-no-brasil-pelo-inmetro.html"
     }
   ],
   "unverified": [

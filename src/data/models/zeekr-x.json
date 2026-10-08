@@ -77,10 +77,10 @@
     "roadGas": null,
     "cityEth": null,
     "roadEth": null,
-    "cityKmKWh": null,
-    "roadKmKWh": null,
-    "year": "PBEV (homologação 2024): autonomia 332 km; equivalência 39,5/34,7 km/l; km/kWh não publicado nas fontes vistas",
-    "source": "https://canaltech.com.br/carros/zeekr-ja-tem-2-carros-eletricos-homologados-no-brasil/"
+    "cityKmKWh": 6.55,
+    "roadKmKWh": 6.55,
+    "year": "PBEV 2026 (0.55 MJ/km)",
+    "source": "https://www.gov.br/inmetro/pt-br/assuntos/regulamentacao/avaliacao-da-conformidade/programa-brasileiro-de-etiquetagem/tabelas-de-eficiencia-energetica/veiculos-automotivos-pbe-veicular/mascara-pbev-2026_19_jan-rev01.pdf/@@download/file"
   },
   "price0km": {
     "version": "Premium RWD",
@@ -173,6 +173,10 @@
     {
       "label": "AutoData — Zeekr inaugura 1ª concessionária e apresenta o X (nov/2024)",
       "url": "https://www.autodata.com.br/noticias/2024/11/12/zeekr-inaugura-primeira-concessionaria-e-apresenta-o-x/80558/"
+    },
+    {
+      "label": "PBEV/Inmetro — consumo energético",
+      "url": "https://www.gov.br/inmetro/pt-br/assuntos/regulamentacao/avaliacao-da-conformidade/programa-brasileiro-de-etiquetagem/tabelas-de-eficiencia-energetica/veiculos-automotivos-pbe-veicular/mascara-pbev-2026_19_jan-rev01.pdf/@@download/file"
     }
   ],
   "unverified": [

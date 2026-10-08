@@ -72,10 +72,10 @@
     "roadGas": null,
     "cityEth": null,
     "roadEth": null,
-    "cityKmKWh": null,
-    "roadKmKWh": null,
-    "year": "PBEV: autonomia 491 km (Premium) e 423 km (Flagship); km/kWh não publicado nas fontes vistas",
-    "source": "https://evdrops.com.br/zeekr-7x-premium-pre-venda-brasil/"
+    "cityKmKWh": 6.55,
+    "roadKmKWh": 6.55,
+    "year": "PBEV 2026 (0.55 MJ/km)",
+    "source": "https://www.gov.br/inmetro/pt-br/assuntos/avaliacao-da-conformidade/programa-brasileiro-de-etiquetagem/tabelas-de-eficiencia-energetica/veiculos-automotivos-pbe-veicular/mascara-pbev-2026_19_jan-rev01.pdf"
   },
   "price0km": {
     "version": "Premium RWD",
@@ -168,6 +168,10 @@
     {
       "label": "Reclame Aqui — ADAS e IA do 7X não funcionam após 1 mês",
       "url": "https://www.reclameaqui.com.br/zeekr-brasil-oficial/sistema-adas-e-ia-do-zeekr-7x-nao-funcionam-apos-1-mes-da-compra_PxYb1mXBWYXmgCzl/"
+    },
+    {
+      "label": "PBEV/Inmetro — consumo energético",
+      "url": "https://www.gov.br/inmetro/pt-br/assuntos/avaliacao-da-conformidade/programa-brasileiro-de-etiquetagem/tabelas-de-eficiencia-energetica/veiculos-automotivos-pbe-veicular/mascara-pbev-2026_19_jan-rev01.pdf"
     }
   ],
   "unverified": [

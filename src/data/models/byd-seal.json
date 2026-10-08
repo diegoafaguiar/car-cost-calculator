@@ -49,8 +49,8 @@
     "roadEth": null,
     "cityKmKWh": 5.81,
     "roadKmKWh": 5.81,
-    "year": "PBEV 2025",
-    "source": "https://www.mercadolivre.com.br/blog/mo-consumo-consumo-do-byd-seal-autonomia-das-diferentes-versoes",
+    "year": "PBEV 2026 (0.62 MJ/km)",
+    "source": "https://www.byd.com/material/__CN/byd-site/br/fichas-tecnicas-2026/update-13-07-2026/07-13-2026---ficha-txiunica/BYD_Seal_V2.pdf ; https://www.byd.com/content/dam/byd-site/br/flyer/SPEC_SEAL_EV_PBEV_AG23_ago23-2.pdf",
     "note": "3,6 ÷ 0,62 = 5,81 km/kWh (combinado, repetido). A mesma fonte cita 21,1 kWh/100 km, que não bate com 0,62 MJ/km."
   },
   "price0km": {
@@ -100,6 +100,10 @@
     {
       "label": "Mercado Livre – consumo",
       "url": "https://www.mercadolivre.com.br/blog/mo-consumo-consumo-do-byd-seal-autonomia-das-diferentes-versoes"
+    },
+    {
+      "label": "PBEV/Inmetro — consumo energético",
+      "url": "https://www.byd.com/material/__CN/byd-site/br/fichas-tecnicas-2026/update-13-07-2026/07-13-2026---ficha-txiunica/BYD_Seal_V2.pdf ; https://www.byd.com/content/dam/byd-site/br/flyer/SPEC_SEAL_EV_PBEV_AG23_ago23-2.pdf"
     }
   ],
   "unverified": [

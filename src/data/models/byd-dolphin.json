@@ -49,8 +49,8 @@
     "roadEth": null,
     "cityKmKWh": 8.57,
     "roadKmKWh": 8.57,
-    "year": "PBEV 2025/2026",
-    "source": "https://canalve.com.br/ficha-tecnica/byd/tudo-sobre-dolphin-gs-2026/",
+    "year": "PBEV 2026 (0.42 MJ/km)",
+    "source": "https://www.gov.br/inmetro/pt-br/assuntos/avaliacao-da-conformidade/programa-brasileiro-de-etiquetagem/tabelas-de-eficiencia-energetica/veiculos-automotivos-pbe-veicular/mascara-pbev-2026_19_jan-rev01.pdf ; https://www.byd.com/material/__CN/byd-site/br/fichas-tecnicas-2026/update-13-07-2026/07-13-2026---ficha-txiunica/BYD_DolphinGS_V2.pdf",
     "note": "3,6 ÷ 0,42 = 8,57 km/kWh (combinado, repetido). Outra fonte (evblog) cita 6,8 km/kWh, que bate com autonomia ÷ bateria (291/44,9 = 6,5)."
   },
   "price0km": {
@@ -106,6 +106,10 @@
     {
       "label": "FIPE Dolphin EV GS 2027",
       "url": "https://www.tabelafipebrasil.com/carros/BYD/DOLPHIN-EV-GS-ELETRICO/2027-Eletrico"
+    },
+    {
+      "label": "PBEV/Inmetro — consumo energético",
+      "url": "https://www.gov.br/inmetro/pt-br/assuntos/avaliacao-da-conformidade/programa-brasileiro-de-etiquetagem/tabelas-de-eficiencia-energetica/veiculos-automotivos-pbe-veicular/mascara-pbev-2026_19_jan-rev01.pdf ; https://www.byd.com/material/__CN/byd-site/br/fichas-tecnicas-2026/update-13-07-2026/07-13-2026---ficha-txiunica/BYD_DolphinGS_V2.pdf"
     }
   ],
   "unverified": [

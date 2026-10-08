@@ -74,10 +74,10 @@
     "roadGas": null,
     "cityEth": null,
     "roadEth": null,
-    "cityKmKWh": null,
-    "roadKmKWh": null,
-    "year": "PBEV 2024: autonomia de 250 km (km/kWh não publicado nas fontes)",
-    "source": "https://www.gruposentinela.com.br/?p=10050"
+    "cityKmKWh": 6.55,
+    "roadKmKWh": 6.55,
+    "year": "PBEV 2026 (0.55 MJ/km)",
+    "source": "https://www.gov.br/inmetro/pt-br/assuntos/regulamentacao/avaliacao-da-conformidade/programa-brasileiro-de-etiquetagem/tabelas-de-eficiencia-energetica/veiculos-automotivos-pbe-veicular/mascara-pbev-2026_19_jan-rev01.pdf/@@download/file"
   },
   "price0km": {
     "version": "Plus",
@@ -152,6 +152,10 @@
     {
       "label": "LitoralCar — FIPE EX30 2026",
       "url": "https://www.litoralcar.com.br/tabela-fipe/volvo/ex30"
+    },
+    {
+      "label": "PBEV/Inmetro — consumo energético",
+      "url": "https://www.gov.br/inmetro/pt-br/assuntos/regulamentacao/avaliacao-da-conformidade/programa-brasileiro-de-etiquetagem/tabelas-de-eficiencia-energetica/veiculos-automotivos-pbe-veicular/mascara-pbev-2026_19_jan-rev01.pdf/@@download/file"
     }
   ],
   "unverified": [

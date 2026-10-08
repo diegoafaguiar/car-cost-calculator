@@ -73,10 +73,10 @@
     "roadGas": null,
     "cityEth": null,
     "roadEth": null,
-    "cityKmKWh": null,
-    "roadKmKWh": null,
-    "year": "PBEV: autonomia 318 km (segundo a GAC; km/kWh não divulgado nas fontes)",
-    "source": "https://www.gacgroup.com/pt-br/configuration/aion-y/2024"
+    "cityKmKWh": 6.32,
+    "roadKmKWh": 6.32,
+    "year": "PBEV 2026 (0.57 MJ/km)",
+    "source": "https://www.gov.br/inmetro/pt-br/assuntos/avaliacao-da-conformidade/programa-brasileiro-de-etiquetagem/tabelas-de-eficiencia-energetica/veiculos-automotivos-pbe-veicular/mascara-pbev-2026_19_jan-rev01.pdf"
   },
   "price0km": {
     "version": "Premium",
@@ -137,6 +137,10 @@
     {
       "label": "Tabela FIPE Brasil — AION Y Premium 2027",
       "url": "https://www.tabelafipebrasil.com/carros/GAC/AION-Y-PREMIUM-ELETRICO/2027-Eletrico"
+    },
+    {
+      "label": "PBEV/Inmetro — consumo energético",
+      "url": "https://www.gov.br/inmetro/pt-br/assuntos/avaliacao-da-conformidade/programa-brasileiro-de-etiquetagem/tabelas-de-eficiencia-energetica/veiculos-automotivos-pbe-veicular/mascara-pbev-2026_19_jan-rev01.pdf"
     }
   ],
   "unverified": [

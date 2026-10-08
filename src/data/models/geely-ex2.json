@@ -82,10 +82,10 @@
     "roadGas": null,
     "cityEth": null,
     "roadEth": null,
-    "cityKmKWh": 9.2,
-    "roadKmKWh": 9.2,
-    "year": "PBEV 2026 — 0,39 MJ/km combinado, 289 km (conversão para km/kWh feita aqui)",
-    "source": "https://canalve.com.br/ficha-tecnica/geely/tudo-sobre-ex2-pro/"
+    "cityKmKWh": 9.23,
+    "roadKmKWh": 9.23,
+    "year": "PBEV 2026 (0.39 MJ/km)",
+    "source": "https://garagem360.com.br/ex2-abaixo-de-r-100-mil-entrega-289-km-e-melhor-eficiencia-do-brasil-byd-em-alerta/"
   },
   "price0km": {
     "version": "Pro",
@@ -186,6 +186,10 @@
     {
       "label": "Vrum — custo de carregar o EX2 em casa (set/2026)",
       "url": "https://www.vrum.com.br/bom-negocio/2026/09/7494097-quanto-custa-carregar-o-geely-ex2-em-casa.html"
+    },
+    {
+      "label": "PBEV/Inmetro — consumo energético",
+      "url": "https://garagem360.com.br/ex2-abaixo-de-r-100-mil-entrega-289-km-e-melhor-eficiencia-do-brasil-byd-em-alerta/"
     }
   ],
   "unverified": [

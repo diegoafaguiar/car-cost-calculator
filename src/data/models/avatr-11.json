@@ -76,10 +76,10 @@
     "roadGas": null,
     "cityEth": null,
     "roadEth": null,
-    "cityKmKWh": null,
-    "roadKmKWh": null,
-    "year": "Autonomia de 497 km 'pelo Inmetro' segundo a Tribuna PR; consumo em MJ/km não encontrado",
-    "source": "https://www.tribunapr.com.br/noticias/automoveis/luxo-e-design-espacial-avatr-11-custa-r-599-mil-e-acelera-em-39-segundos/"
+    "cityKmKWh": 6.0,
+    "roadKmKWh": 6.0,
+    "year": "PBEV 2026 (0.6 MJ/km)",
+    "source": "https://www.gov.br/inmetro/pt-br/assuntos/avaliacao-da-conformidade/programa-brasileiro-de-etiquetagem/tabelas-de-eficiencia-energetica/veiculos-automotivos-pbe-veicular/mascara-pbev-2026_19_jan-rev01.pdf"
   },
   "price0km": {
     "version": "5 lugares",
@@ -168,6 +168,10 @@
     {
       "label": "Gasgoo — estreia da Avatr no Brasil",
       "url": "https://autonews.gasgoo.com/articles/ev/avatr-marks-latin-america-debut-in-brazil-with-launch-of-avatr-11-70039790"
+    },
+    {
+      "label": "PBEV/Inmetro — consumo energético",
+      "url": "https://www.gov.br/inmetro/pt-br/assuntos/avaliacao-da-conformidade/programa-brasileiro-de-etiquetagem/tabelas-de-eficiencia-energetica/veiculos-automotivos-pbe-veicular/mascara-pbev-2026_19_jan-rev01.pdf"
     }
   ],
   "unverified": [
