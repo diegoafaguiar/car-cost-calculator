@@ -6,7 +6,7 @@
     "screen10": true,
     "wirelessMirroring": true,
     "digitalCluster": true,
-    "wirelessCharger": null,
+    "wirelessCharger": true,
     "camera360": null,
     "adaptiveCruise": true,
     "connectedApp": null,
@@ -24,7 +24,7 @@
   "safety": {
     "airbags6": true,
     "aeb": true,
-    "laneKeep": null,
+    "laneKeep": true,
     "blindSpot": null,
     "rearCrossTraffic": null
   },
@@ -51,6 +51,18 @@
     {
       "label": "AutoPapo - Compass nota máxima Euro NCAP",
       "url": "https://autopapo.com.br/noticia/jeep-compass-nota-maxima-seguranca-euroncap/"
+    },
+    {
+      "label": "Carro.Blog.br – Compass Longitude 1.3 2026 ficha e equipamentos",
+      "url": "https://carro.blog.br/jeep-compass-longitude-1-3-2026-preco-ficha-tecnica-consumo-equipamentos-e-fotos-suv-flex-com-176-cv-entrega-conforto-urbano-e-autonomia-rodoviaria.html"
+    },
+    {
+      "label": "Motoragora – Compass PCD (indução, 6 airbags)",
+      "url": "https://www.motoragora.com.br/?p=195015"
+    },
+    {
+      "label": "Autoo – Compass 2026 chega quase sem mudanças",
+      "url": "https://www.autoo.com.br/jeep-compass-2026-chega-quase-sem-mudancas-e-ate-r-20-mil-mais-em-conta/"
     }
   ],
   "unverified": [
@@ -64,5 +76,5 @@
     "blindSpot",
     "rearCrossTraffic"
   ],
-  "notes": "Confirmados: multimídia 10,1\" com CarPlay/AA sem fio, painel 100% digital 10,25\", ar dual zone com saída traseira, keyless, couro, ACC Stop&Go, AEB (pedestres/ciclistas), 6 airbags. Carregador por indução e ponto cego aparecem só em anúncios de anos anteriores — não confirmados para a 2026. Limite de buscas atingido antes de confirmar banco elétrico, assistente de faixa e RCTA."
+  "notes": "Confirmados: multimídia 10,1\" com CarPlay/AA sem fio, painel 100% digital 10,25\", ar dual zone com saída traseira, keyless, couro, ACC Stop&Go, AEB (pedestres/ciclistas), 6 airbags. Carregador por indução e ponto cego aparecem só em anúncios de anos anteriores — não confirmados para a 2026. Limite de buscas atingido antes de confirmar banco elétrico, assistente de faixa e RCTA. | Confirmados: multimídia 10,1\" com CarPlay/AA sem fio, painel 100% digital 10,25\", ar dual zone com saída traseira, keyless, couro, ACC Stop&Go, AEB (pedestres/ciclistas), 6 airbags. Carregador por indução e ponto cego aparecem só em anúncios de anos anteriores — não confirmados para a 2026. Limite de buscas atingido antes de confirmar banco elétrico, assistente de faixa e RCTA. Out/2026: Longitude 2026 tem carregador por indução e pacote ADAS com ACC, AEB com detecção de pedestres/ciclistas e assistente de permanência em faixa (Motor Show). Ponto cego, RCTA e teto panorâmico aparecem nas fontes só para a Série S; mantidos null."
 }

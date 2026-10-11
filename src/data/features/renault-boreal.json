@@ -10,12 +10,12 @@
     "camera360": false,
     "adaptiveCruise": true,
     "connectedApp": null,
-    "keyless": null
+    "keyless": true
   },
   "comfort": {
     "automatic": true,
-    "digitalAC": null,
-    "rearVents": null,
+    "digitalAC": true,
+    "rearVents": true,
     "leather": null,
     "powerSeat": false,
     "seatClimate": false,
@@ -25,8 +25,8 @@
     "airbags6": true,
     "aeb": true,
     "laneKeep": true,
-    "blindSpot": null,
-    "rearCrossTraffic": null
+    "blindSpot": false,
+    "rearCrossTraffic": false
   },
   "ncap": {
     "stars": null,
@@ -48,17 +48,28 @@
     {
       "label": "Garagem360 — diferenças entre versões",
       "url": "https://garagem360.com.br/?p=320908"
+    },
+    {
+      "label": "Motor Show — Renault Boreal 2026 preços, equipamentos e motor",
+      "url": "https://motorshow.com.br/renault-boreal-2026-precos-equipamentos-e-motor"
+    },
+    {
+      "label": "Auto+ TV — Boreal: como são e qual versão comprar",
+      "url": "https://www.automaistv.com.br/novidades/renault-boreal-como-sao-e-qual-versao-comprar-do-suv-medio/"
+    },
+    {
+      "label": "O Povo — Boreal estreia em três versões",
+      "url": "https://www.opovo.com.br/noticias/veiculos/2025/11/06/amp/renault-boreal-suv-feito-no-brasil-estreia-em-tres-versoes-a-partir-de-rs-1799-mil.html"
+    },
+    {
+      "label": "autotijd.be — Renault Boreal dimensions",
+      "url": "https://autotijd.be/en/dimensions/renault/boreal"
     }
   ],
-  "notes": "Evolution: multimídia Open R de 10\" com CarPlay/Android Auto sem fio, painel digital (7\" segundo uma fonte; 10\" só na Techno), carregador por indução, 4 USB-C, 6 airbags e ADAS com 13 funções: ACC, AEB frontal e em curva, alerta e assistente de faixa, reconhecimento de placas, sensor de fadiga, câmera de ré e sensor traseiro. Teto panorâmico, massagem e memória do banco, tampa elétrica e 24 ADAS só na Iconic. Uma fonte cita 'bancos em couro' sem deixar clara a versão.",
+  "notes": "Evolution: multimídia Open R de 10\" com CarPlay/Android Auto sem fio, painel digital (7\" segundo uma fonte; 10\" só na Techno), carregador por indução, 4 USB-C, 6 airbags e ADAS com 13 funções: ACC, AEB frontal e em curva, alerta e assistente de faixa, reconhecimento de placas, sensor de fadiga, câmera de ré e sensor traseiro. Teto panorâmico, massagem e memória do banco, tampa elétrica e 24 ADAS só na Iconic. Uma fonte cita 'bancos em couro' sem deixar clara a versão. | Evolution: multimídia Open R de 10\" com CarPlay/Android Auto sem fio, painel digital (7\" segundo uma fonte; 10\" só na Techno), carregador por indução, 4 USB-C, 6 airbags e ADAS com 13 funções: ACC, AEB frontal e em curva, alerta e assistente de faixa, reconhecimento de placas, sensor de fadiga, câmera de ré e sensor traseiro. Teto panorâmico, massagem e memória do banco, tampa elétrica e 24 ADAS só na Iconic. Uma fonte cita 'bancos em couro' sem deixar clara a versão. Evolution: ar digital duas zonas com saída traseira e cartão presencial hands-free (Motor Show); acabamento 'preto premium com costura cinza' sem menção a couro (leather null; Autoweb argentina cita couro na Evolution de lá). Ponto cego e tráfego cruzado traseiro entram na Techno. [Out/2026, lote 3: páginas não puderam ser abertas (proxy bloqueou); dados abaixo vêm de trechos de resultados de busca cruzados.]",
   "unverified": [
     "tech.connectedApp",
-    "tech.keyless",
-    "comfort.digitalAC",
-    "comfort.rearVents",
     "comfort.leather",
-    "safety.blindSpot",
-    "safety.rearCrossTraffic",
     "comfort.powerSeat/seatClimate (false inferido: só citados na Iconic)"
   ]
 }

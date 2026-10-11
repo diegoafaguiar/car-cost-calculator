@@ -4,13 +4,13 @@
   "researchedAt": "2026-10",
   "tech": {
     "screen10": true,
-    "wirelessMirroring": null,
-    "digitalCluster": true,
+    "wirelessMirroring": true,
+    "digitalCluster": null,
     "wirelessCharger": false,
     "camera360": false,
     "adaptiveCruise": true,
     "connectedApp": null,
-    "keyless": null
+    "keyless": true
   },
   "comfort": {
     "automatic": true,
@@ -24,9 +24,9 @@
   "safety": {
     "airbags6": true,
     "aeb": true,
-    "laneKeep": null,
+    "laneKeep": true,
     "blindSpot": null,
-    "rearCrossTraffic": null
+    "rearCrossTraffic": false
   },
   "ncap": {
     "stars": 5,
@@ -56,16 +56,21 @@
     {
       "label": "Mundo do Automóvel para PCD — GS4 set/2026",
       "url": "https://mundodoautomovelparapcd.com.br/gac-gs4-para-cnpj-em-setembro-de-2026/"
+    },
+    {
+      "label": "JK Carros — ficha GS4 Premium 2.0 HEV 2026 (ACC, AEB, assistente de permanência em faixa, chave presencial com partida por botão)",
+      "url": "https://jkcarros.com.br/ficha-tecnica-carros-hibridos-gac-gs4-premium-2-0-hev-ano-2026/"
+    },
+    {
+      "label": "GAC Brasil — especificação GS4 Hybrid (CarPlay sem fio nas duas versões; LDW nas duas)",
+      "url": "https://www.gacgroup.com/pt-br/configuration/gac-gs4/2024"
     }
   ],
-  "notes": "Premium: ACC e frenagem autônoma, 6 airbags, ar digital de uma zona com saída traseira, banco do motorista elétrico, câmera de ré. Telas: fontes citam multimídia de 10,1\" a 12,3\" e painel digital de 10,25\" a 12,3\" (ambas >= 10\"). Couro, carregador por indução, câmera 360° e teto panorâmico são da Elite. Ventilação de banco citada só pela Webmotors.",
+  "notes": "Premium: ACC e frenagem autônoma, 6 airbags, ar digital de uma zona com saída traseira, banco do motorista elétrico, câmera de ré. Telas: fontes citam multimídia de 10,1\" a 12,3\" e painel digital de 10,25\" a 12,3\" (ambas >= 10\"). Couro, carregador por indução, câmera 360° e teto panorâmico são da Elite. Ventilação de banco citada só pela Webmotors. | Premium: ACC e frenagem autônoma, 6 airbags, ar digital de uma zona com saída traseira, banco do motorista elétrico, câmera de ré. Telas: fontes citam multimídia de 10,1\" a 12,3\" e painel digital de 10,25\" a 12,3\" (ambas >= 10\"). Couro, carregador por indução, câmera 360° e teto panorâmico são da Elite. Ventilação de banco citada só pela Webmotors. Out/2026 (trechos de busca): CarPlay/AA sem fio e chave presencial confirmados para a Premium; assistente de permanência em faixa citado para a Premium por mais de uma fonte; tráfego cruzado traseiro listado pela Webmotors como exclusivo da Elite (false). Ponto cego: fontes conflitam (Terra diz que a Premium tem; Webmotors diz só Elite) → null. Atenção: uma fonte diz que painel digital de 10,25\" é só da Elite — digitalCluster=true da Premium merece reconferência.",
   "unverified": [
-    "tech.wirelessMirroring",
     "tech.connectedApp",
-    "tech.keyless",
     "comfort.seatClimate",
-    "safety.laneKeep",
     "safety.blindSpot",
-    "safety.rearCrossTraffic"
+    "tech.digitalCluster"
   ]
 }

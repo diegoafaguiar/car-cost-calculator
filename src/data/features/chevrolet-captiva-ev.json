@@ -4,7 +4,7 @@
   "researchedAt": "2026-10",
   "tech": {
     "screen10": true,
-    "wirelessMirroring": null,
+    "wirelessMirroring": false,
     "digitalCluster": true,
     "wirelessCharger": false,
     "camera360": true,
@@ -16,17 +16,17 @@
     "automatic": true,
     "digitalAC": true,
     "rearVents": null,
-    "leather": null,
-    "powerSeat": null,
-    "seatClimate": null,
+    "leather": true,
+    "powerSeat": true,
+    "seatClimate": false,
     "sunroof": true
   },
   "safety": {
     "airbags6": true,
     "aeb": true,
     "laneKeep": true,
-    "blindSpot": null,
-    "rearCrossTraffic": null
+    "blindSpot": true,
+    "rearCrossTraffic": true
   },
   "ncap": {
     "stars": null,
@@ -48,18 +48,28 @@
     {
       "label": "Canal VE — ficha",
       "url": "https://canalve.com.br/ficha-tecnica/chevrolet/tudo-sobre-captiva-ev/"
+    },
+    {
+      "label": "AutoEntusiastas — primeiras impressões Captiva EV",
+      "url": "https://autoentusiastas.com.br/2026/02/chevrolet-captiva-ev/"
+    },
+    {
+      "label": "Carros na Web — ficha Captiva EV Premier",
+      "url": "https://www.carrosnaweb.com.br/fichadetalhe.asp?codigo=41578"
+    },
+    {
+      "label": "DGABC — teste Captiva EV",
+      "url": "https://www.dgabc.com.br/Noticia/4345913/teste-chevrolet-captiva-ev-nao-surpreende-mas-agrada-bastante-"
+    },
+    {
+      "label": "CNN Brasil — teste Captiva EV",
+      "url": "https://www.cnnbrasil.com.br/auto/testamos-o-chevrolet-captiva-ev-conheca-os-pontos-fortes-e-fracos-do-suv/"
     }
   ],
-  "notes": "Multimídia de 15,1\" ou 15,6\", câmera 360°, chave presencial com partida por botão, teto solar panorâmico elétrico, ACC, AEB, alerta e correção de faixa, 6 airbags e sensores dianteiros e traseiros. Ar digital de uma zona. O POVO diz que não há carregador por indução; um anúncio de usado diz que há (fica false pela fonte de imprensa). O painel digital aparece nas fotos/fichas, mas o tamanho não foi confirmado. Bancos aquecidos só aparecem em anúncio de usado, não confirmado.",
+  "notes": "Multimídia de 15,1\" ou 15,6\", câmera 360°, chave presencial com partida por botão, teto solar panorâmico elétrico, ACC, AEB, alerta e correção de faixa, 6 airbags e sensores dianteiros e traseiros. Ar digital de uma zona. O POVO diz que não há carregador por indução; um anúncio de usado diz que há (fica false pela fonte de imprensa). O painel digital aparece nas fotos/fichas, mas o tamanho não foi confirmado. Bancos aquecidos só aparecem em anúncio de usado, não confirmado. | Multimídia de 15,1\" ou 15,6\", câmera 360°, chave presencial com partida por botão, teto solar panorâmico elétrico, ACC, AEB, alerta e correção de faixa, 6 airbags e sensores dianteiros e traseiros. Ar digital de uma zona. O POVO diz que não há carregador por indução; um anúncio de usado diz que há (fica false pela fonte de imprensa). O painel digital aparece nas fotos/fichas, mas o tamanho não foi confirmado. Bancos aquecidos só aparecem em anúncio de usado, não confirmado. Out/2026: espelhamento só com cabo (AutoEntusiastas); bancos em material sintético; banco do motorista elétrico e do passageiro manual (CNN); sem aquecimento de bancos (DGABC). Ponto cego e tráfego cruzado traseiro de série pela ficha do Carros na Web. Saídas de ar traseiras e app remoto não confirmados. Páginas não abertas; dados de trechos de busca.",
   "unverified": [
-    "tech.wirelessMirroring",
     "tech.connectedApp",
     "comfort.rearVents",
-    "comfort.leather",
-    "comfort.powerSeat",
-    "comfort.seatClimate",
-    "safety.blindSpot",
-    "safety.rearCrossTraffic",
     "tech.digitalCluster (presença citada em fichas; não verificado em fonte principal)"
   ]
 }

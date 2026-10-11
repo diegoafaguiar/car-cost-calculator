@@ -13,10 +13,10 @@
     "keyless": null
   },
   "comfort": {
-    "automatic": null,
+    "automatic": false,
     "digitalAC": null,
     "rearVents": null,
-    "leather": null,
+    "leather": false,
     "powerSeat": null,
     "seatClimate": null,
     "sunroof": null
@@ -47,6 +47,22 @@
     {
       "label": "Motorshow - HB20 3 estrelas",
       "url": "https://motorshow.com.br/hyundai-hb20-recebe-3-estrelas-de-5-em-teste-de-colisao"
+    },
+    {
+      "label": "iCarros — HB20 1.0 Comfort 2026 (câmbio manual de 5 marchas)",
+      "url": "https://www.icarros.com.br/catalogo/marcas/hyundai/hb20/1.0-comfort-2026-2026"
+    },
+    {
+      "label": "Mobiauto — HB20 2026: itens de série e diferenças (Comfort 1.0 aspirado com manual de 5 marchas)",
+      "url": "https://www.mobiauto.com.br/revista/hyundai-hb20-2026-precos-itens-de-serie-e-diferencas-entre-versoes/8181"
+    },
+    {
+      "label": "Saga Hyundai — comparativo versões HB20 2026 (Comfort com revestimento em tecido premium)",
+      "url": "https://sagahyundai.com.br/blog/comparativo-hb20-hb20s"
+    },
+    {
+      "label": "Monitor do Mercado — HB20 com garantia de 5 anos (2026)",
+      "url": "https://monitordomercado.com.br/noticias/340445-esse-hatch-virou-sinonimo-de-conforto-garantia-longa-e-tranquilidade-para-quem-compra-em-2026/"
     }
   ],
   "unverified": [
@@ -55,10 +71,8 @@
     "tech.camera360",
     "tech.adaptiveCruise",
     "tech.keyless",
-    "comfort.automatic",
     "comfort.digitalAC",
     "comfort.rearVents",
-    "comfort.leather",
     "comfort.powerSeat",
     "comfort.seatClimate",
     "comfort.sunroof",
@@ -67,5 +81,5 @@
     "safety.blindSpot",
     "safety.rearCrossTraffic"
   ],
-  "notes": "Comfort: multimídia 8\" com CarPlay/AA sem fio, Bluelink de série (comandos pelo app, rastreamento, imobilização; 5 anos grátis), 6 airbags, piloto automático convencional com limitador. ADAS (FCA/LFA) citados para versões superiores, não confirmados na Comfort. Câmbio da Comfort 1.0 (manual e/ou automático) não confirmado."
+  "notes": "Comfort: multimídia 8\" com CarPlay/AA sem fio, Bluelink de série (comandos pelo app, rastreamento, imobilização; 5 anos grátis), 6 airbags, piloto automático convencional com limitador. ADAS (FCA/LFA) citados para versões superiores, não confirmados na Comfort. Câmbio da Comfort 1.0 (manual e/ou automático) não confirmado. | Comfort: multimídia 8\" com CarPlay/AA sem fio, Bluelink de série (comandos pelo app, rastreamento, imobilização; 5 anos grátis), 6 airbags, piloto automático convencional com limitador. ADAS (FCA/LFA) citados para versões superiores, não confirmados na Comfort. Câmbio da Comfort 1.0 (manual e/ou automático) não confirmado. Out/2026: Comfort 1.0 é manual de 5 marchas (automatic=false) e tem bancos de tecido. Demais itens não confirmados."
 }

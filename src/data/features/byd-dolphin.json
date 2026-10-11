@@ -5,7 +5,7 @@
   "tech": {
     "screen10": true,
     "wirelessMirroring": true,
-    "digitalCluster": null,
+    "digitalCluster": true,
     "wirelessCharger": true,
     "camera360": true,
     "adaptiveCruise": false,
@@ -55,10 +55,13 @@
     {
       "label": "Acelera Tudo - Dolphin 2026 (CarPlay/AA sem fio em todas as versões)",
       "url": "https://aceleratudo.com.br/blog/byd-dolphin-2026-preco-ficha-tecnica-versoes-mini-plus"
+    },
+    {
+      "label": "JK Carros — Dolphin GS PCD 2026 (painel LCD 5\", bancos em material premium sustentável)",
+      "url": "https://jkcarros.com.br/byd-dolphin-gs-pcd-2026-preco-acessibilidade-isencoes-garantia/"
     }
   ],
   "unverified": [
-    "tech.digitalCluster",
     "tech.connectedApp",
     "tech.keyless",
     "comfort.rearVents",
@@ -67,5 +70,6 @@
     "comfort.sunroof",
     "safety.blindSpot",
     "safety.rearCrossTraffic"
-  ]
+  ],
+  "notes": "Out/2026: quadro de instrumentos é uma tela LCD de 5\" (sem mostradores analógicos) → digitalCluster=true, embora pequeno. Chave digital NFC/Bluetooth citada (keyless null). Revestimento dos bancos: \"material premium sustentável\" (couro sintético só confirmado no teste da versão SE) → null."
 }

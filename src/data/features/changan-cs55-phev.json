@@ -8,25 +8,25 @@
     "digitalCluster": true,
     "wirelessCharger": true,
     "camera360": true,
-    "adaptiveCruise": null,
-    "connectedApp": null,
-    "keyless": null
+    "adaptiveCruise": true,
+    "connectedApp": true,
+    "keyless": true
   },
   "comfort": {
     "automatic": true,
     "digitalAC": true,
-    "rearVents": null,
-    "leather": null,
-    "powerSeat": null,
+    "rearVents": true,
+    "leather": true,
+    "powerSeat": true,
     "seatClimate": true,
     "sunroof": true
   },
   "safety": {
     "airbags6": true,
-    "aeb": null,
-    "laneKeep": null,
-    "blindSpot": null,
-    "rearCrossTraffic": null
+    "aeb": true,
+    "laneKeep": true,
+    "blindSpot": true,
+    "rearCrossTraffic": true
   },
   "ncap": {
     "stars": null,
@@ -59,19 +59,29 @@
     {
       "label": "Autos Segredos — CS55 PHEV Flex por R$ 189.990",
       "url": "https://www.autossegredos.com.br/eletricos-hibridos/caoa-changan-cs55-phev-flex-r-189-990/"
+    },
+    {
+      "label": "Guru dos Carros — CS55 preços e versões (PHEV mantém o pacote mais completo e adiciona vidros acústicos, reconhecimento de placas e V2L)",
+      "url": "https://gurudoscarros.com.br/2026/09/15/caoa-changan-cs55-precos-versoes-hibrido-flex-brasil/"
+    },
+    {
+      "label": "Autodata — Infinity com teto solar, bancos aquecidos e ventilados e ADAS nível 2+",
+      "url": "https://www.autodata.com.br/mobility/2026/09/16/caoa-changan-mira-a-lideranca-dos-suvs-medios-com-o-c55/135558/"
+    },
+    {
+      "label": "Mundo do Automóvel para PCD — CS55 Prime de série (6 airbags, chave presencial, banco do motorista elétrico, saída de ar traseira)",
+      "url": "https://mundodoautomovelparapcd.com.br/caoa-changan-cs55-prime-2027/"
+    },
+    {
+      "label": "Diário do Nordeste — CS55: porta-malas de 525 l (1.415 l rebatido), Changan Connect",
+      "url": "https://diariodonordeste.verdesmares.com.br/ultima-hora/automovel/caoa-changan-cs55-chega-com-preco-competitivo-e-tres-versoes-1.3792955"
     }
   ],
-  "notes": "A ficha da PHEV (eletricos.app) e a imprensa (Motor Show/Autos Segredos) descrevem a Ultra Hybrid como o pacote da Infinity + conjunto PHEV + vidros acústicos, logo iluminado e V2L. Confirmados para a PHEV: Smart Cockpit 24,9\" (central 14,6\" + painel 10,3\"), CarPlay/Android Auto sem fio (linha CS55), câmera 540°, carregador por indução, ar digital de 2 zonas, bancos dianteiros aquecidos e ventilados, teto panorâmico com abertura elétrica, Caoa Changan Vision System (14+ funções ADAS). 6 airbags. ACC, AEB, faixa e ponto cego são confirmados na Infinity, mas não foram citados nominalmente para a PHEV.",
+  "notes": "A ficha da PHEV (eletricos.app) e a imprensa (Motor Show/Autos Segredos) descrevem a Ultra Hybrid como o pacote da Infinity + conjunto PHEV + vidros acústicos, logo iluminado e V2L. Confirmados para a PHEV: Smart Cockpit 24,9\" (central 14,6\" + painel 10,3\"), CarPlay/Android Auto sem fio (linha CS55), câmera 540°, carregador por indução, ar digital de 2 zonas, bancos dianteiros aquecidos e ventilados, teto panorâmico com abertura elétrica, Caoa Changan Vision System (14+ funções ADAS). 6 airbags. ACC, AEB, faixa e ponto cego são confirmados na Infinity, mas não foram citados nominalmente para a PHEV. | A ficha da PHEV (eletricos.app) e a imprensa (Motor Show/Autos Segredos) descrevem a Ultra Hybrid como o pacote da Infinity + conjunto PHEV + vidros acústicos, logo iluminado e V2L. Confirmados para a PHEV: Smart Cockpit 24,9\" (central 14,6\" + painel 10,3\"), CarPlay/Android Auto sem fio (linha CS55), câmera 540°, carregador por indução, ar digital de 2 zonas, bancos dianteiros aquecidos e ventilados, teto panorâmico com abertura elétrica, Caoa Changan Vision System (14+ funções ADAS). 6 airbags. ACC, AEB, faixa e ponto cego são confirmados na Infinity, mas não foram citados nominalmente para a PHEV. Out/2026 (pesquisa só por trechos de busca; páginas não abriram): as fontes descrevem a PHEV como a Infinity + conjunto plug-in (e extras: vidros acústicos, V2L, reconhecimento de placas), e a Infinity como a Prime + ADAS, teto panorâmico, ar dual zone, bancos aquecidos/ventilados. Itens herdados da Prime: chave presencial, banco do motorista elétrico, saída de ar traseira, couro (Motor Show cita bancos em couro; outra fonte diz couro sintético). Changan Connect (app com climatização remota) citado para todas as versões. Câmera 540° citada na lista da PHEV.",
   "unverified": [
     "tech.adaptiveCruise (só confirmado na Infinity)",
-    "tech.connectedApp",
-    "tech.keyless",
-    "comfort.rearVents",
-    "comfort.leather",
-    "comfort.powerSeat",
     "safety.aeb (só confirmado na Infinity)",
     "safety.laneKeep (só confirmado na Infinity)",
-    "safety.blindSpot (só confirmado na Infinity)",
-    "safety.rearCrossTraffic"
+    "safety.blindSpot (só confirmado na Infinity)"
   ]
 }

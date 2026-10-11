@@ -3,21 +3,21 @@
   "version": "Toyota Corolla Altis Premium Hybrid 2026",
   "researchedAt": "2026-10",
   "tech": {
-    "screen10": null,
-    "wirelessMirroring": null,
-    "digitalCluster": null,
-    "wirelessCharger": null,
+    "screen10": true,
+    "wirelessMirroring": true,
+    "digitalCluster": true,
+    "wirelessCharger": true,
     "camera360": null,
     "adaptiveCruise": true,
     "connectedApp": null,
-    "keyless": null
+    "keyless": true
   },
   "comfort": {
     "automatic": true,
     "digitalAC": true,
-    "rearVents": null,
+    "rearVents": true,
     "leather": true,
-    "powerSeat": null,
+    "powerSeat": true,
     "seatClimate": null,
     "sunroof": true
   },
@@ -25,8 +25,8 @@
     "airbags6": true,
     "aeb": true,
     "laneKeep": true,
-    "blindSpot": null,
-    "rearCrossTraffic": null
+    "blindSpot": true,
+    "rearCrossTraffic": true
   },
   "ncap": {
     "stars": 5,
@@ -51,20 +51,40 @@
     {
       "label": "Latin NCAP - Corolla",
       "url": "https://www.latinncap.com/en/result/137/toyota-new-corolla-+-7-airbags"
+    },
+    {
+      "label": "Toyota Brasil — Corolla Hybrid (central 10\" com Android Auto/CarPlay sem fio, carregador sem fio)",
+      "url": "https://www.toyota.com.br/modelos/corolla-hybrid"
+    },
+    {
+      "label": "Mercado Livre Blog — Corolla 2026 (painel digital 12,3\" na Altis Hybrid Premium)",
+      "url": "https://www.mercadolivre.com.br/blog/mo-toyota-corolla-2026-o-que-mudou-sedan"
+    },
+    {
+      "label": "EVPlace — avaliação de compra Corolla Altis Hybrid Premium (Smart Entry, partida por botão, banco elétrico 8 ajustes, BSM e RCTA)",
+      "url": "https://evplace.com.br/avaliacao-de-compra-toyota-corolla-altis-hybrid-premium/"
+    },
+    {
+      "label": "Garagem360 — Corolla Altis Hybrid Premium 2025 (ar digital duas zonas com saída traseira; ponto cego)",
+      "url": "https://garagem360.com.br/toyota-corolla-altis-hybrid-premium-2025/"
+    },
+    {
+      "label": "Revista Carro — Corolla Altis Hybrid 2024 (passa a ter saída de ar traseira)",
+      "url": "https://revistacarro.com.br/corolla-altis-hybrid-2024-tudo-sobre-as-mudancas-do-seda-lider-em-vendas/amp/"
+    },
+    {
+      "label": "Mecânica Online — Corolla estreia motor 2.0 com 177 cv (177/169 cv, 21,4 kgfm)",
+      "url": "https://mecanicaonline.com.br/2019/09/corolla-2020-estreia-novo-propulsor-2-0-com-177-cv"
+    },
+    {
+      "label": "Ficha Completa — comparativo Corolla Altis Premium Hybrid 2026 x Altis 2.0 2026 (entre-eixos 2.700 mm)",
+      "url": "https://www.fichacompleta.com.br/en/carros/comparativo/corolla-altis-premium-hybrid-1-8-2026-vs-corolla-altis-2-0-2026"
     }
   ],
   "unverified": [
-    "tech.screen10",
-    "tech.wirelessMirroring",
-    "tech.digitalCluster",
-    "tech.wirelessCharger",
     "tech.camera360",
     "tech.connectedApp",
-    "tech.keyless",
-    "comfort.rearVents",
-    "comfort.powerSeat",
-    "comfort.seatClimate",
-    "safety.blindSpot",
-    "safety.rearCrossTraffic"
-  ]
+    "comfort.seatClimate"
+  ],
+  "notes": "Out/2026: Altis Premium Hybrid com central 10\" com CarPlay/AA sem fio (site Toyota), painel digital 12,3\", carregador sem fio, Smart Entry + partida por botão, banco do motorista elétrico, ar digital duas zonas com saída traseira, BSM e RCTA. Câmera 360°, app remoto e aquecimento/ventilação não confirmados."
 }

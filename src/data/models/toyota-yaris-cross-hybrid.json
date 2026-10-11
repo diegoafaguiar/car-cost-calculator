@@ -32,7 +32,7 @@
     "trunkL": 391,
     "lengthMm": 4310,
     "wheelbaseMm": 2620,
-    "safety": "Latin NCAP: 2 estrelas (unidade feita na Tailândia; ano do teste não confirmado)",
+    "safety": "Latin NCAP dez/2025 (protocolo atual): 2 estrelas (adulto 77%, criança 69%, vulneráveis 56%, assistência 58%)",
     "warranty": "Programa Toyota 10 (5 anos de fábrica, extensível até 10 anos com revisões na rede); sistema híbrido com 8 anos ou 200 mil km"
   },
   "inmetro": {
@@ -127,6 +127,10 @@
     {
       "label": "Terra – XRX Hybrid R$ 20 mil mais barato em oferta",
       "url": "https://www.terra.com.br/mobilidade/carros/toyota-yaris-cross-hibrido-fica-r-20-mil-mais-barato-em-oferta,3a11a6a8c1d175950a469115e2bfd975r4cjzfxz.html"
+    },
+    {
+      "label": "Latin NCAP – Yaris Cross 2 estrelas (dez/2025)",
+      "url": "https://www.latinncap.com/en/media-area/new/8693ab868cabc9/top-safety-for-kia-ev4-and-volkswagen-new-tiguan-while-toyota-disappoints-with-only-two-stars-for-yaris-cross-and-yaris-sedanhatchback"
     }
   ],
   "unverified": [

@@ -10,13 +10,13 @@
     "camera360": null,
     "adaptiveCruise": true,
     "connectedApp": true,
-    "keyless": null
+    "keyless": true
   },
   "comfort": {
     "automatic": true,
-    "digitalAC": null,
-    "rearVents": null,
-    "leather": null,
+    "digitalAC": true,
+    "rearVents": true,
+    "leather": true,
     "powerSeat": false,
     "seatClimate": null,
     "sunroof": false
@@ -51,6 +51,26 @@
     {
       "label": "A Revista - Corolla Cross XRE 2027 (pacote base da XRV)",
       "url": "https://arevista.com.br/mercados/corolla-cross-xre-2027-parte-de-r-194-790-ganha-conectividade-e-painel-digital/"
+    },
+    {
+      "label": "AutoPapo – Corolla Cross XRV Hybrid R$ 213.990 (7 airbags, BSM, RCTA)",
+      "url": "https://autopapo.com.br/curta/toyota-corolla-cross-ganha-versao-hibrida-xrv-por-r-213-990/"
+    },
+    {
+      "label": "Webmotors – Corolla Cross híbrida mais barata (base XRE)",
+      "url": "https://www.webmotors.com.br/wm1/lancamentos/toyota-corolla-cross-versao-hibrida-mais-barata"
+    },
+    {
+      "label": "Revista Carro – Corolla Cross XRV Hybrid (bancos parcialmente em couro)",
+      "url": "https://revistacarro.com.br/novo-toyota-corolla-cross-xrv-hybrid-chega-por-r-213-mil/"
+    },
+    {
+      "label": "Bem Paraná – Corolla Cross 2026 (XR: ar digital com saída traseira; XRE: smart entry, couro)",
+      "url": "https://www.bemparana.com.br/carros/toyota-corolla-cross-ja-estaem-2026-com-novidades/"
+    },
+    {
+      "label": "Webmotors – Corolla Cross 2026 versões",
+      "url": "https://www.webmotors.com.br/toyota/corolla-cross/2026"
     }
   ],
   "unverified": [
@@ -62,5 +82,5 @@
     "leather",
     "seatClimate"
   ],
-  "notes": "XRV = pacote da XRE + trem híbrido da XRX. Fonte lista como exclusivos da XRX Hybrid Premium: ar dual zone, banco do motorista elétrico, computador de bordo 7\" e teto solar (por isso powerSeat/sunroof = false). Carregador por indução e Serviços Conectados vêm do pacote XRE 2027. 7 airbags, Toyota Safety Sense, BSM e RCTA confirmados."
+  "notes": "XRV = pacote da XRE + trem híbrido da XRX. Fonte lista como exclusivos da XRX Hybrid Premium: ar dual zone, banco do motorista elétrico, computador de bordo 7\" e teto solar (por isso powerSeat/sunroof = false). Carregador por indução e Serviços Conectados vêm do pacote XRE 2027. 7 airbags, Toyota Safety Sense, BSM e RCTA confirmados. | XRV = pacote da XRE + trem híbrido da XRX. Fonte lista como exclusivos da XRX Hybrid Premium: ar dual zone, banco do motorista elétrico, computador de bordo 7\" e teto solar (por isso powerSeat/sunroof = false). Carregador por indução e Serviços Conectados vêm do pacote XRE 2027. 7 airbags, Toyota Safety Sense, BSM e RCTA confirmados. Out/2026: XRV usa a base de itens da XRE. Na linha 2026 a XR (abaixo da XRE) já tinha ar digital automático com saída para a 2ª fileira; a XRE tinha smart entry com partida por botão e revestimento de couro; imprensa da XRV cita bancos parcialmente revestidos de couro. Painel digital mantido null por conflito de fontes."
 }

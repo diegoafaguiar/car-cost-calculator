@@ -5,18 +5,18 @@
   "tech": {
     "screen10": true,
     "wirelessMirroring": false,
-    "digitalCluster": null,
-    "wirelessCharger": null,
-    "camera360": null,
+    "digitalCluster": true,
+    "wirelessCharger": true,
+    "camera360": true,
     "adaptiveCruise": true,
     "connectedApp": true,
     "keyless": null
   },
   "comfort": {
     "automatic": true,
-    "digitalAC": null,
-    "rearVents": null,
-    "leather": null,
+    "digitalAC": true,
+    "rearVents": true,
+    "leather": true,
     "powerSeat": true,
     "seatClimate": true,
     "sunroof": true
@@ -32,8 +32,8 @@
     "stars": 5,
     "year": 2024,
     "program": "Euro NCAP",
-    "note": "Euro NCAP 5 estrelas (dez/2024) para o C10 elétrico: adulto 89%, criança 85%, vulneráveis 77%, assistência 76%. Não confirmado para o REEV. Sem Latin NCAP.",
-    "source": "https://vision-mobility.de/en/news/leapmotor-c10-chinese-electric-suv-receives-five-stars-in-euro-ncap-355347.html",
+    "note": "Euro NCAP 5 estrelas (dez/2024) para o C10 elétrico (unidade testada BEV): adulto 89%, criança 85%, vulneráveis 77%, assistência 76%. A datasheet indica que a nota se aplica a 'todos os C10', mas o teste é anterior ao lançamento do REEV e nenhuma fonte cita o REEV explicitamente; por isso counts=false. Sem Latin NCAP.",
+    "source": "https://cdn.euroncap.com/media/85203/euroncap-2024-leapmotor-c10-datasheet.pdf",
     "counts": false
   },
   "sources": [
@@ -52,17 +52,31 @@
     {
       "label": "Vision Mobility - Euro NCAP C10",
       "url": "https://vision-mobility.de/en/news/leapmotor-c10-chinese-electric-suv-receives-five-stars-in-euro-ncap-355347.html"
+    },
+    {
+      "label": "Diário do Comércio – C10 REEV (painel 10,25\", chave-cartão, ar duas zonas, câmera 360)",
+      "url": "https://diariodocomercio.com.br/veiculos/leapmotor-c10-reev-traz-melhor-dois-mundos/"
+    },
+    {
+      "label": "Motoragora – Leapmotor C10 chega ao Brasil (indução, saídas traseiras)",
+      "url": "https://www.motoragora.com.br/?p=196865"
+    },
+    {
+      "label": "Canal VE – Leapmotor C10 ficha (bancos revestidos em couro)",
+      "url": "https://canalve.com.br/ficha-tecnica/leapmotor/tudo-sobre-c10/"
+    },
+    {
+      "label": "Ficha técnica Leapmotor C10 Ultra-Híbrido REEV (concessionária, PDF)",
+      "url": "https://carroscomcamanzi.com.br/wp-content/uploads/2025/11/Ficha-Tecnica-Leapmotor-C10-Ultra-hibrido-REEV.pdf"
+    },
+    {
+      "label": "Euro NCAP – datasheet Leapmotor C10 2024",
+      "url": "https://cdn.euroncap.com/media/85203/euroncap-2024-leapmotor-c10-datasheet.pdf"
     }
   ],
-  "notes": "Versão única (BEV e REEV com a mesma lista, segundo a Autoo). Central de 14,6\" com Leapmotor OS, sem Android Auto/CarPlay nativos na linha 2026 (a Stellantis disse que falta hardware; só há espelhamento Android por app). App Leapmotor. Ar automático; teto panorâmico de 2,1 m²; bancos dianteiros elétricos com memória, aquecimento e ventilação; ACC, AEB, assistente de faixa, ponto cego e tráfego cruzado traseiro (Autoo). 6 ou 7 airbags conforme a fonte (pelo menos 6). Painel digital, câmera 360°, carregador por indução e chave presencial não foram confirmados nas fontes brasileiras.",
+  "notes": "Versão única (BEV e REEV com a mesma lista, segundo a Autoo). Central de 14,6\" com Leapmotor OS, sem Android Auto/CarPlay nativos na linha 2026 (a Stellantis disse que falta hardware; só há espelhamento Android por app). App Leapmotor. Ar automático; teto panorâmico de 2,1 m²; bancos dianteiros elétricos com memória, aquecimento e ventilação; ACC, AEB, assistente de faixa, ponto cego e tráfego cruzado traseiro (Autoo). 6 ou 7 airbags conforme a fonte (pelo menos 6). Painel digital, câmera 360°, carregador por indução e chave presencial não foram confirmados nas fontes brasileiras. | Versão única (BEV e REEV com a mesma lista, segundo a Autoo). Central de 14,6\" com Leapmotor OS, sem Android Auto/CarPlay nativos na linha 2026 (a Stellantis disse que falta hardware; só há espelhamento Android por app). App Leapmotor. Ar automático; teto panorâmico de 2,1 m²; bancos dianteiros elétricos com memória, aquecimento e ventilação; ACC, AEB, assistente de faixa, ponto cego e tráfego cruzado traseiro (Autoo). 6 ou 7 airbags conforme a fonte (pelo menos 6). Painel digital, câmera 360°, carregador por indução e chave presencial não foram confirmados nas fontes brasileiras. Out/2026: painel digital 10,25\", chave-cartão, ar digital de duas zonas e câmera 360 citados para o REEV (Diário do Comércio); indução e saídas traseiras no guia de lançamento do C10 (Motoragora).",
   "unverified": [
-    "tech.digitalCluster",
-    "tech.wirelessCharger",
-    "tech.camera360",
     "tech.keyless",
-    "comfort.digitalAC",
-    "comfort.rearVents",
-    "comfort.leather",
     "ncap"
   ]
 }

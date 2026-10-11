@@ -9,8 +9,8 @@
     "wirelessCharger": true,
     "camera360": true,
     "adaptiveCruise": true,
-    "connectedApp": null,
-    "keyless": null
+    "connectedApp": true,
+    "keyless": true
   },
   "comfort": {
     "automatic": true,
@@ -29,11 +29,12 @@
     "rearCrossTraffic": false
   },
   "ncap": {
-    "stars": null,
-    "year": null,
-    "program": null,
-    "note": "Sem teste Latin NCAP/Euro NCAP encontrado para o Song Pro.",
-    "source": ""
+    "stars": 3,
+    "year": 2026,
+    "program": "ANCAP",
+    "note": "ANCAP 3 estrelas (set/2026, protocolo 2026-2028) do BYD Sealion 5, nome do Song Pro DM-i na Austrália/NZ: Safe Driving 48%, Crash Avoidance 51%, Crash Protection 79%, Post-Crash 74%. Mesmo modelo e arquitetura PHEV DM-i; o brasileiro 2027 é flex (DM-i 5.0). Sem Latin NCAP.",
+    "source": "https://www.drive.com.au/news/byd-sealion-5-hit-with-three-star-safety-rating-from-ancap/",
+    "counts": true
   },
   "sources": [
     {
@@ -51,6 +52,30 @@
     {
       "label": "Carro.blog.br Song Pro flex 2027",
       "url": "https://www.car.blog.br/2026/08/novo-byd-song-pro-flex-2027-preco-r.html"
+    },
+    {
+      "label": "Nona Marcha — Song Pro GL 2027 itens de série",
+      "url": "https://nonamarcha.com.br/byd-song-pro-gl-2027-preco-tecnologias-itens-de-serie-e-desempenho-do-suv-hibrido-de-entrada/"
+    },
+    {
+      "label": "Eletricos.app — comparativo Song Pro GL x GS",
+      "url": "https://www.eletricos.app/comparativo/ate-300mil-song-pro-gl-vs-song-pro-gs-vs-tiggo-7-pro-phev-2026"
+    },
+    {
+      "label": "Webmotors — Song Pro 2027",
+      "url": "https://www.webmotors.com.br/byd/song-pro/2027"
+    },
+    {
+      "label": "Drive.com.au — ANCAP Sealion 5 (3 estrelas)",
+      "url": "https://www.drive.com.au/news/byd-sealion-5-hit-with-three-star-safety-rating-from-ancap/"
+    },
+    {
+      "label": "Autotrader NZ — ANCAP Sealion 5",
+      "url": "https://autotrader.co.nz/news/byd-sealion-5-gets-three-star-ancap-rating-as-m9-earns-five"
+    },
+    {
+      "label": "AutoPapo — Song Pro vai mal em teste de segurança",
+      "url": "https://autopapo.com.br/curta/byd-song-pro-vai-mal-em-teste-que-avalia-seguranca-em-acidentes/"
     }
   ],
   "unverified": [
@@ -58,5 +83,6 @@
     "keyless",
     "seatClimate",
     "ncap"
-  ]
+  ],
+  "notes": "Bancos ventilados aparecem citados só para a GS; ausência na GL não confirmada (seatClimate segue null). ANCAP testou o Song Pro com o nome Sealion 5 (PHEV DM-i a gasolina, Austrália/NZ) em set/2026: 3 estrelas no protocolo 2026-2028 (Safe Driving 48%, Crash Avoidance 51%, Crash Protection 79%, Post-Crash 74%); o carro brasileiro é a versão flex reestilizada (DM-i 5.0) do mesmo modelo. Páginas não puderam ser abertas; dados de trechos de resultados de busca."
 }

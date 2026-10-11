@@ -63,13 +63,13 @@
     "version": "Tera Comfort 170 TSI Aut. (linha 2026)",
     "engine": "1.0 TSI turbo flex, 3 cil.",
     "powerCv": "116 (E) / 109 (G)",
-    "torqueKgfm": null,
+    "torqueKgfm": "16,8 (E/G)",
     "transmission": "Automático de 6 marchas (Aisin)",
     "trunkL": 350,
-    "lengthMm": null,
-    "wheelbaseMm": null,
+    "lengthMm": 4151,
+    "wheelbaseMm": 2566,
     "safety": "6 airbags; Latin NCAP 5 estrelas (2025)",
-    "warranty": null
+    "warranty": "3 anos (loja oficial VW no Mercado Livre; não confirmado no site vw.com.br)"
   },
   "inmetro": {
     "version": "Tera 170 TSI AT",

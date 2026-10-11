@@ -3,20 +3,20 @@
   "version": "Caoa Chery Tiggo 8 Pro PHEV 1.5 TGDI DHT 2027 (R$ 249.990)",
   "researchedAt": "2026-10",
   "tech": {
-    "screen10": null,
-    "wirelessMirroring": null,
-    "digitalCluster": null,
+    "screen10": true,
+    "wirelessMirroring": true,
+    "digitalCluster": true,
     "wirelessCharger": true,
     "camera360": true,
     "adaptiveCruise": true,
     "connectedApp": null,
-    "keyless": null
+    "keyless": true
   },
   "comfort": {
     "automatic": true,
-    "digitalAC": null,
-    "rearVents": null,
-    "leather": null,
+    "digitalAC": true,
+    "rearVents": true,
+    "leather": true,
     "powerSeat": true,
     "seatClimate": true,
     "sunroof": true
@@ -26,7 +26,7 @@
     "aeb": true,
     "laneKeep": true,
     "blindSpot": true,
-    "rearCrossTraffic": null
+    "rearCrossTraffic": true
   },
   "ncap": {
     "stars": 5,
@@ -52,18 +52,30 @@
     {
       "label": "Euro NCAP — Tiggo 8",
       "url": "https://www.euroncap.com/assessments/chery/tiggo+8/1223ra/"
+    },
+    {
+      "label": "Webmotors — Tiggo 8 Pro 2027",
+      "url": "https://www.webmotors.com.br/caoa-chery/tiggo-8-pro/2027"
+    },
+    {
+      "label": "Autos Segredos — Tiggo 7/8 Pro PHEV 2027",
+      "url": "https://www.autossegredos.com.br/lancamentos/caoa-chery-tiggo-7-pro-phev-e-tiggo-8-pro-phev-2027-tem-ate-1-200-km-de-autonomia/"
+    },
+    {
+      "label": "MobiEV — Tiggo 8 Pro PHEV 2027",
+      "url": "https://mobiev.com.br/caoa-chery-tiggo-8-pro-phev-2027-autonomia-ficha-tecnica-brasil/"
+    },
+    {
+      "label": "Canal VE — ficha Tiggo 8 Pro PHEV",
+      "url": "https://canalve.com.br/ficha-tecnica/caoa-chery/tudo-sobre-8-pro-phev/"
+    },
+    {
+      "label": "Eletricos.app — Tiggo 8 Pro PHEV 2027",
+      "url": "https://www.eletricos.app/veiculo/chery-tiggo-8-pro-phev-2027"
     }
   ],
-  "notes": "Versão única. Câmera 540° (inclui 360°), head-up display, ACC, frenagem automática de emergência, ponto cego, permanência em faixa, bancos dianteiros com ajuste elétrico, memória, aquecimento e ventilação (massagem/gravidade zero no passageiro), teto panorâmico, indução 50 W, Sony 12 alto-falantes, 9 airbags segundo a marca (Webmotors: 6; ambos ≥6). Tamanho das telas e ar digital não confirmados nas fontes vistas.",
+  "notes": "Versão única. Câmera 540° (inclui 360°), head-up display, ACC, frenagem automática de emergência, ponto cego, permanência em faixa, bancos dianteiros com ajuste elétrico, memória, aquecimento e ventilação (massagem/gravidade zero no passageiro), teto panorâmico, indução 50 W, Sony 12 alto-falantes, 9 airbags segundo a marca (Webmotors: 6; ambos ≥6). Tamanho das telas e ar digital não confirmados nas fontes vistas. | Versão única. Câmera 540° (inclui 360°), head-up display, ACC, frenagem automática de emergência, ponto cego, permanência em faixa, bancos dianteiros com ajuste elétrico, memória, aquecimento e ventilação (massagem/gravidade zero no passageiro), teto panorâmico, indução 50 W, Sony 12 alto-falantes, 9 airbags segundo a marca (Webmotors: 6; ambos ≥6). Tamanho das telas e ar digital não confirmados nas fontes vistas. Out/2026: multimídia 15,6\", painel 10,25\", CarPlay/Android Auto sem fio, ar digital 2 zonas com saída traseira, couro, chave presencial e alerta de tráfego cruzado traseiro (A Revista sugere que este é parte de pacote; demais fontes dizem de série na versão única). App remoto não confirmado. Páginas não abertas; dados de trechos de busca.",
   "unverified": [
-    "tech.screen10",
-    "tech.wirelessMirroring",
-    "tech.digitalCluster",
-    "tech.connectedApp",
-    "tech.keyless",
-    "comfort.digitalAC",
-    "comfort.rearVents",
-    "comfort.leather",
-    "safety.rearCrossTraffic"
+    "tech.connectedApp"
   ]
 }

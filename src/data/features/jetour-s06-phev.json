@@ -5,7 +5,7 @@
   "tech": {
     "screen10": true,
     "wirelessMirroring": true,
-    "digitalCluster": null,
+    "digitalCluster": true,
     "wirelessCharger": true,
     "camera360": true,
     "adaptiveCruise": false,
@@ -22,11 +22,11 @@
     "sunroof": false
   },
   "safety": {
-    "airbags6": null,
+    "airbags6": true,
     "aeb": false,
     "laneKeep": false,
     "blindSpot": false,
-    "rearCrossTraffic": null
+    "rearCrossTraffic": false
   },
   "ncap": {
     "stars": null,
@@ -47,14 +47,23 @@
     {
       "label": "Auto+ TV - S06 Advance",
       "url": "https://www.automaistv.com.br/avaliacao/jetour-s06-advance-avaliacao/"
+    },
+    {
+      "label": "Webmotors — Jetour S06 2027",
+      "url": "https://www.webmotors.com.br/jetour/s06/2027"
+    },
+    {
+      "label": "Motor Show — S06 preço e equipamentos",
+      "url": "https://motorshow.com.br/jetour-s06-preco-equipamentos-motor"
+    },
+    {
+      "label": "Mundo do Automóvel para PCD — S06 Advance",
+      "url": "https://mundodoautomovelparapcd.com.br/jetour-s06-para-pcd-em-outubro-de-2026/"
     }
   ],
-  "notes": "R$ 199.900. Multimídia de 12,8\" com Android Auto/CarPlay sem fio, carregador por indução, câmera 360°, sensor traseiro, 5 USB, chave presencial e partida remota; ar digital de duas zonas com saída traseira; banco do motorista elétrico de 6 posições; couro sintético; tampa traseira elétrica; LED; rodas de 18\". Sem ACC, AEB, assistente de faixa e ponto cego (só no Premium: ACC, AEB, LKA, FCW, RCW, BSD, TJA). Teto panorâmico e bancos aquecidos/ventilados só no Premium. Número de airbags não encontrado.",
+  "notes": "R$ 199.900. Multimídia de 12,8\" com Android Auto/CarPlay sem fio, carregador por indução, câmera 360°, sensor traseiro, 5 USB, chave presencial e partida remota; ar digital de duas zonas com saída traseira; banco do motorista elétrico de 6 posições; couro sintético; tampa traseira elétrica; LED; rodas de 18\". Sem ACC, AEB, assistente de faixa e ponto cego (só no Premium: ACC, AEB, LKA, FCW, RCW, BSD, TJA). Teto panorâmico e bancos aquecidos/ventilados só no Premium. Número de airbags não encontrado. | R$ 199.900. Multimídia de 12,8\" com Android Auto/CarPlay sem fio, carregador por indução, câmera 360°, sensor traseiro, 5 USB, chave presencial e partida remota; ar digital de duas zonas com saída traseira; banco do motorista elétrico de 6 posições; couro sintético; tampa traseira elétrica; LED; rodas de 18\". Sem ACC, AEB, assistente de faixa e ponto cego (só no Premium: ACC, AEB, LKA, FCW, RCW, BSD, TJA). Teto panorâmico e bancos aquecidos/ventilados só no Premium. Número de airbags não encontrado. Out/2026: 6 airbags (Motor Show/Webmotors; Autoo diz 7), painel digital 9,2\". Tráfego cruzado traseiro aparece só na Premium (false pela lista completa da Advance). App remoto não confirmado (a partida remota é pela chave). Páginas não abertas; dados de trechos de busca.",
   "unverified": [
-    "tech.digitalCluster",
     "tech.connectedApp",
-    "safety.airbags6",
-    "safety.rearCrossTraffic",
     "ncap"
   ]
 }

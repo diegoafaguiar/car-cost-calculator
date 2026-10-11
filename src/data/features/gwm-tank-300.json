@@ -3,9 +3,9 @@
   "version": "GWM Tank 300 2.0 Hi4-T PHEV Flex 4x4 2027 (R$ 342.000)",
   "researchedAt": "2026-10",
   "tech": {
-    "screen10": null,
-    "wirelessMirroring": null,
-    "digitalCluster": null,
+    "screen10": true,
+    "wirelessMirroring": true,
+    "digitalCluster": true,
     "wirelessCharger": null,
     "camera360": null,
     "adaptiveCruise": true,
@@ -16,7 +16,7 @@
     "automatic": true,
     "digitalAC": null,
     "rearVents": null,
-    "leather": null,
+    "leather": true,
     "powerSeat": true,
     "seatClimate": true,
     "sunroof": true
@@ -52,20 +52,28 @@
     {
       "label": "GoAuto — ANCAP Tank 300",
       "url": "https://goauto.com.au/amp/90057/five-star-safety-for-gwm-tank-300.html"
+    },
+    {
+      "label": "Autodata — Tank 300 PHEV flex à venda no Brasil (abr/2026)",
+      "url": "https://www.autodata.com.br/noticias/2026/04/27/tank-300-primeiro-phev-flex-do-mundo-esta-a-venda-no-brasil/102687/"
+    },
+    {
+      "label": "Itatiaia — Tank 300 é o 1º híbrido plug-in flex",
+      "url": "https://www.itatiaia.com.br/auto/gwm-tank-300-e-o-1o-hibrido-plug-in-flex-do-mundo-veja-quanto-custa/"
+    },
+    {
+      "label": "Autodata — lançamento Tank 300 (2025, telas e conectividade)",
+      "url": "https://www.autodata.com.br/noticias/2025/04/04/gwm-lanca-o-tank-300-com-preco-agressivo-e-conteudo-exclusivo/86350/"
     }
   ],
-  "notes": "Versão única. Ficha oficial: 6 airbags, bancos dianteiros com ajuste elétrico, aquecimento e ventilação; 12 sensores, 5 câmeras e 4 radares (concessionária diz 5 radares). Motor Show: AEB, alerta de tráfego cruzado traseiro, estacionamento automático, ACC stop & go, leitura de placas, permanência em faixa, teto solar. Câmera 360° provável (5 câmeras) mas não descrita explicitamente.",
+  "notes": "Versão única. Ficha oficial: 6 airbags, bancos dianteiros com ajuste elétrico, aquecimento e ventilação; 12 sensores, 5 câmeras e 4 radares (concessionária diz 5 radares). Motor Show: AEB, alerta de tráfego cruzado traseiro, estacionamento automático, ACC stop & go, leitura de placas, permanência em faixa, teto solar. Câmera 360° provável (5 câmeras) mas não descrita explicitamente. | Versão única. Ficha oficial: 6 airbags, bancos dianteiros com ajuste elétrico, aquecimento e ventilação; 12 sensores, 5 câmeras e 4 radares (concessionária diz 5 radares). Motor Show: AEB, alerta de tráfego cruzado traseiro, estacionamento automático, ACC stop & go, leitura de placas, permanência em faixa, teto solar. Câmera 360° provável (5 câmeras) mas não descrita explicitamente. 394 cv e 750 Nm combinados. Autodata: a versão PHEV flex 'preserva integralmente o conjunto de equipamentos' do Tank 300 anterior, incluindo bancos em couro Nappa com massagem, ventilação e aquecimento; o Tank 300 de 2025 tinha duas telas de 12,3\" com CarPlay/Android Auto sem fio (telas/espelhamento assumidos por essa afirmação de equivalência). [Out/2026, lote 3: páginas não puderam ser abertas (proxy bloqueou); dados abaixo vêm de trechos de resultados de busca cruzados.]",
   "unverified": [
-    "tech.screen10",
-    "tech.wirelessMirroring",
-    "tech.digitalCluster",
     "tech.wirelessCharger",
     "tech.camera360",
     "tech.connectedApp",
     "tech.keyless",
     "comfort.digitalAC",
     "comfort.rearVents",
-    "comfort.leather",
     "safety.blindSpot"
   ]
 }

@@ -4,8 +4,8 @@
   "researchedAt": "2026-10",
   "tech": {
     "screen10": true,
-    "wirelessMirroring": null,
-    "digitalCluster": null,
+    "wirelessMirroring": false,
+    "digitalCluster": true,
     "wirelessCharger": false,
     "camera360": true,
     "adaptiveCruise": false,
@@ -43,12 +43,22 @@
     {
       "label": "Mundo do Automóvel para PCD — Aion Y Premium (equipamentos, bônus)",
       "url": "https://mundodoautomovelparapcd.com.br/aion-y-premium-suv-eletrico-da-gac-e-oferecido-com-bonus-de-r-25-mil-ou-taxa-zero-em-36-vezes/"
+    },
+    {
+      "label": "Vrum — avaliação Aion Y: tropeça na conectividade (CarPlay só com cabo)",
+      "url": "https://www.vrum.com.br/avaliacoes/2025/11/7285455-gac-aion-y-surpreende-pelo-conforto-e-espaco-mas-tropeca-na-conectividade.html"
+    },
+    {
+      "label": "eletricos.app — GAC Aion Y Premium 2026",
+      "url": "https://www.eletricos.app/veiculo/gac-aion-y-premium-2026"
+    },
+    {
+      "label": "Motor Show — GAC estreia no Brasil (garantia 8 anos/160 mil km para elétricos)",
+      "url": "https://motorshow.com.br/gac-estreia-no-brasil-veja-como-sao-os-carros-e-os-planos-da-marca-chinesa"
     }
   ],
-  "notes": "Premium: teto panorâmico, ar automático, bancos de couro com ajuste elétrico para o motorista, chave presencial, 6 airbags, câmera 360°, piloto automático comum, faróis LED, sensor de chuva, multimídia 14,6\". Exclusivos da Elite (por isso false na Premium): ACC, AEB, assistente de faixa, indução, banco do motorista ventilado, porta-malas elétrico, rodas 18\".",
+  "notes": "Premium: teto panorâmico, ar automático, bancos de couro com ajuste elétrico para o motorista, chave presencial, 6 airbags, câmera 360°, piloto automático comum, faróis LED, sensor de chuva, multimídia 14,6\". Exclusivos da Elite (por isso false na Premium): ACC, AEB, assistente de faixa, indução, banco do motorista ventilado, porta-malas elétrico, rodas 18\". | Premium: teto panorâmico, ar automático, bancos de couro com ajuste elétrico para o motorista, chave presencial, 6 airbags, câmera 360°, piloto automático comum, faróis LED, sensor de chuva, multimídia 14,6\". Exclusivos da Elite (por isso false na Premium): ACC, AEB, assistente de faixa, indução, banco do motorista ventilado, porta-malas elétrico, rodas 18\". Painel digital 10,25\". Vrum: CarPlay apenas com cabo (sem Android Auto citado) — wirelessMirroring=false. Saída de ar traseira listada pelo eletricos.app sem indicar versão (null). Ponto cego atribuído à Elite pela Vrum (null na Premium). [Out/2026, lote 3: páginas não puderam ser abertas (proxy bloqueou); dados abaixo vêm de trechos de resultados de busca cruzados.]",
   "unverified": [
-    "tech.wirelessMirroring",
-    "tech.digitalCluster",
     "tech.connectedApp",
     "comfort.rearVents",
     "safety.blindSpot",

@@ -9,14 +9,14 @@
     "wirelessCharger": true,
     "camera360": true,
     "adaptiveCruise": true,
-    "connectedApp": null,
+    "connectedApp": true,
     "keyless": true
   },
   "comfort": {
     "automatic": true,
     "digitalAC": true,
     "rearVents": true,
-    "leather": null,
+    "leather": true,
     "powerSeat": true,
     "seatClimate": true,
     "sunroof": true
@@ -51,6 +51,22 @@
     {
       "label": "BYD ficha técnica Atto 8 (PDF)",
       "url": "https://www.byd.com/material/__CN/byd-site/br/fichas-tecnicas-2026/update-02-07-2026/BYD_ATTO8_FichaTecnica_2026.pdf"
+    },
+    {
+      "label": "BYD Brasil — Atto 8 (acabamentos em couro em todas as fileiras; aquecimento, ventilação e massagem)",
+      "url": "https://www.byd.com/br/car/atto-8"
+    },
+    {
+      "label": "Ficha Completa — BYD Atto 8 1.5 PHEV 2026 (bancos em couro; acionamento remoto do motor e destravamento remoto; chave digital NFC/Bluetooth)",
+      "url": "https://www.fichacompleta.com.br/carros/byd/atto-8-1-5-phev-2026"
+    },
+    {
+      "label": "Comprecar TV — BYD Atto 8: App BYD e central multimídia",
+      "url": "https://www.comprecar.com.br/comprecar-tv/byd-atto-8-app-byd-e-central-multimidia"
+    },
+    {
+      "label": "Webmotors — BYD Atto 8 2026 (7 airbags)",
+      "url": "https://www.webmotors.com.br/byd/atto-8/2026"
     }
   ],
   "unverified": [
@@ -58,5 +74,6 @@
     "connectedApp",
     "leather",
     "ncap"
-  ]
+  ],
+  "notes": "Out/2026: couro confirmado pela página oficial; funções remotas (partida, destravamento) via app BYD. Espelhamento sem fio não confirmado para o carro brasileiro (null)."
 }

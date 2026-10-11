@@ -4,17 +4,17 @@
   "researchedAt": "2026-10",
   "tech": {
     "screen10": true,
-    "wirelessMirroring": null,
+    "wirelessMirroring": true,
     "digitalCluster": true,
-    "wirelessCharger": null,
+    "wirelessCharger": false,
     "camera360": null,
     "adaptiveCruise": true,
     "connectedApp": null,
-    "keyless": null
+    "keyless": true
   },
   "comfort": {
     "automatic": true,
-    "digitalAC": null,
+    "digitalAC": false,
     "rearVents": null,
     "leather": null,
     "powerSeat": false,
@@ -23,10 +23,10 @@
   },
   "safety": {
     "airbags6": true,
-    "aeb": null,
-    "laneKeep": null,
-    "blindSpot": null,
-    "rearCrossTraffic": null
+    "aeb": true,
+    "laneKeep": false,
+    "blindSpot": false,
+    "rearCrossTraffic": false
   },
   "ncap": {
     "stars": 5,
@@ -44,22 +44,38 @@
     {
       "label": "Motorshow — versões e equipamentos",
       "url": "https://motorshow.com.br/volkswagen-tera-chega-as-lojas-veja-versoes-precos-e-equipamentos"
+    },
+    {
+      "label": "VW News — VW estreia Tera (Comfort e High com VW Play Connect 10,1\" com Android Auto/CarPlay sem fio)",
+      "url": "https://www.vwnews.com.br/news/2428"
+    },
+    {
+      "label": "Vrum — Tera será menos seguro na Argentina (no Brasil, AEB de série em todas as configurações)",
+      "url": "https://www.vrum.com.br/noticias/2025/08/7223264-volkswagen-tera-sera-menos-seguro-na-argentina.html"
+    },
+    {
+      "label": "AutoPapo — VW Tera estreia (pacote Conforto R$ 1.400 com Climatronic e indução na Comfort; pacote ADAS com Lane Assist, ponto cego e saída de vaga na High)",
+      "url": "https://autopapo.com.br/noticia/vw-tera-preco/"
+    },
+    {
+      "label": "Ficha técnica Tera 1.0 170 TSI AT (165 Nm/16,8 kgfm; 4.151 mm; 2.566 mm)",
+      "url": "https://carroscomcamanzi.com.br/wp-content/uploads/2025/05/Ficha-Tecnica-VW-Tera-1.0-170-TSI-AT.pdf"
+    },
+    {
+      "label": "Revista Carro — Raio-X do Tera (170 TSI até 116 cv e 16,8 kgfm)",
+      "url": "https://revistacarro.com.br/novo-volkswagen-tera-veja-o-raio-x-completo-do-lancamento/"
+    },
+    {
+      "label": "Mercado Livre (loja oficial VW) — Tera com garantia total de 3 anos",
+      "url": "https://www.mercadolivre.com.br/vpp/MLB-5997658540-tera-high-_JM"
     }
   ],
-  "notes": "Comfort: VW Play de 10\", painel digital, faróis LED, ACC e 6 airbags (Motor Agora). AEB, faixa e ponto cego fazem parte de um pacote ADAS opcional/por versão, não confirmados de série na Comfort. Os itens de conforto premium (couro, banco elétrico, teto) não aparecem em versão nenhuma do Tera; false por ser SUV de entrada, mas sem fonte explícita.",
+  "notes": "Comfort: VW Play de 10\", painel digital, faróis LED, ACC e 6 airbags (Motor Agora). AEB, faixa e ponto cego fazem parte de um pacote ADAS opcional/por versão, não confirmados de série na Comfort. Os itens de conforto premium (couro, banco elétrico, teto) não aparecem em versão nenhuma do Tera; false por ser SUV de entrada, mas sem fonte explícita. | Comfort: VW Play de 10\", painel digital, faróis LED, ACC e 6 airbags (Motor Agora). AEB, faixa e ponto cego fazem parte de um pacote ADAS opcional/por versão, não confirmados de série na Comfort. Os itens de conforto premium (couro, banco elétrico, teto) não aparecem em versão nenhuma do Tera; false por ser SUV de entrada, mas sem fonte explícita. Out/2026: Comfort com VW Play 10,1\" com espelhamento sem fio, chave presencial, ACC e AEB (série no Brasil). Ar digital Climatronic e indução só no pacote Conforto opcional (false no padrão). Lane Assist, ponto cego e assistente de saída de vaga (tráfego cruzado) só no pacote ADAS da High (false na Comfort). Saída de ar traseira citada só pelo catálogo Mobiauto (mantido null).",
   "unverified": [
-    "tech.wirelessMirroring",
-    "tech.wirelessCharger",
     "tech.camera360",
     "tech.connectedApp",
-    "tech.keyless",
-    "comfort.digitalAC",
     "comfort.rearVents",
     "comfort.leather",
-    "safety.aeb",
-    "safety.laneKeep",
-    "safety.blindSpot",
-    "safety.rearCrossTraffic",
     "comfort.powerSeat/seatClimate/sunroof (false inferido)"
   ]
 }

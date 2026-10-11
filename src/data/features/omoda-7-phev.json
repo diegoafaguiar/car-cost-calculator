@@ -4,19 +4,19 @@
   "researchedAt": "2026-10",
   "tech": {
     "screen10": true,
-    "wirelessMirroring": null,
+    "wirelessMirroring": true,
     "digitalCluster": true,
-    "wirelessCharger": null,
+    "wirelessCharger": true,
     "camera360": true,
     "adaptiveCruise": true,
     "connectedApp": null,
-    "keyless": null
+    "keyless": true
   },
   "comfort": {
     "automatic": true,
     "digitalAC": true,
-    "rearVents": null,
-    "leather": null,
+    "rearVents": true,
+    "leather": true,
     "powerSeat": true,
     "seatClimate": true,
     "sunroof": true
@@ -26,7 +26,7 @@
     "aeb": true,
     "laneKeep": true,
     "blindSpot": true,
-    "rearCrossTraffic": null
+    "rearCrossTraffic": true
   },
   "ncap": {
     "stars": null,
@@ -52,16 +52,26 @@
     {
       "label": "Guia Automotivo — lançamento Omoda 5 e 7",
       "url": "https://guiaautomotivo.com/2025/10/30/omoda-lanca-5-hev-e-7-phev-suvs-hibridos-tem-precos-partindo-de-r-159-990/"
+    },
+    {
+      "label": "Alpha Autos — Omoda 7 conectividade e segurança",
+      "url": "https://alphaautos.com.br/2026/08/omoda-7-aposta-em-eletrificacao-conectividade-e-seguranca"
+    },
+    {
+      "label": "Webmotors — Omoda 7 2026",
+      "url": "https://www.webmotors.com.br/omoda/7/2026"
+    },
+    {
+      "label": "Geração Omoda Jaecoo — Omoda 7 SHS-P",
+      "url": "https://geracaoomodajaecoo.com.br/novos/omoda-7-shs-p"
+    },
+    {
+      "label": "Mercado Livre — Omoda 7 2026 ficha",
+      "url": "https://www.mercadolivre.com.br/blog/mo-lancamentos-omoda-7-2026-preco-versoes-e-ficha-tecnica"
     }
   ],
-  "notes": "Luxury: duas telas de 12,3\" (painel + multimídia), ar digital dual zone, banco do motorista elétrico 6 vias, bancos dianteiros ventilados (uma fonte diz ventilados e aquecidos), teto solar panorâmico elétrico, faróis full-LED, câmera 360° e sensores dianteiros/traseiros, ACC, AEB (4–160 km/h), alerta de saída de faixa, ponto cego, 7 airbags; rodas 19\". Prestige: rodas 20\", head-up display, tampa com sensor de presença, 8 airbags. Couro não confirmado na Luxury.",
+  "notes": "Luxury: duas telas de 12,3\" (painel + multimídia), ar digital dual zone, banco do motorista elétrico 6 vias, bancos dianteiros ventilados (uma fonte diz ventilados e aquecidos), teto solar panorâmico elétrico, faróis full-LED, câmera 360° e sensores dianteiros/traseiros, ACC, AEB (4–160 km/h), alerta de saída de faixa, ponto cego, 7 airbags; rodas 19\". Prestige: rodas 20\", head-up display, tampa com sensor de presença, 8 airbags. Couro não confirmado na Luxury. | Luxury: duas telas de 12,3\" (painel + multimídia), ar digital dual zone, banco do motorista elétrico 6 vias, bancos dianteiros ventilados (uma fonte diz ventilados e aquecidos), teto solar panorâmico elétrico, faróis full-LED, câmera 360° e sensores dianteiros/traseiros, ACC, AEB (4–160 km/h), alerta de saída de faixa, ponto cego, 7 airbags; rodas 19\". Prestige: rodas 20\", head-up display, tampa com sensor de presença, 8 airbags. Couro não confirmado na Luxury. Out/2026: CarPlay/Android Auto sem fio, indução 50 W refrigerada, chave presencial, saída de ar traseira, bancos em material sintético e alerta de tráfego cruzado traseiro confirmados por fontes de imprensa/concessionária. Uma fonte cita multimídia de 15,6\" (não 12,3\"). App remoto não confirmado. Euro NCAP: The Car Expert (abr/2026) diz que o Omoda 7 ainda não foi avaliado. Páginas não abertas; dados de trechos de busca.",
   "unverified": [
-    "tech.wirelessMirroring",
-    "tech.wirelessCharger",
-    "tech.connectedApp",
-    "tech.keyless",
-    "comfort.rearVents",
-    "comfort.leather",
-    "safety.rearCrossTraffic"
+    "tech.connectedApp"
   ]
 }

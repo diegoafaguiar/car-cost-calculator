@@ -3,21 +3,21 @@
   "version": "Toyota Yaris Cross XRX Hybrid 2026",
   "researchedAt": "2026-10",
   "tech": {
-    "screen10": null,
-    "wirelessMirroring": null,
-    "digitalCluster": null,
-    "wirelessCharger": null,
+    "screen10": true,
+    "wirelessMirroring": true,
+    "digitalCluster": true,
+    "wirelessCharger": true,
     "camera360": true,
     "adaptiveCruise": true,
-    "connectedApp": null,
-    "keyless": null
+    "connectedApp": true,
+    "keyless": true
   },
   "comfort": {
     "automatic": true,
-    "digitalAC": null,
-    "rearVents": null,
-    "leather": null,
-    "powerSeat": null,
+    "digitalAC": true,
+    "rearVents": true,
+    "leather": true,
+    "powerSeat": true,
     "seatClimate": null,
     "sunroof": true
   },
@@ -29,11 +29,12 @@
     "rearCrossTraffic": true
   },
   "ncap": {
-    "stars": null,
-    "year": null,
+    "stars": 2,
+    "year": 2025,
     "program": "Latin NCAP",
-    "note": "Não pesquisado/encontrado (limite de buscas).",
-    "source": ""
+    "counts": true,
+    "note": "Latin NCAP dez/2025 (protocolo atual): 2 estrelas; adulto 77,01%, criança 69,29%, vulneráveis 55,60%, assistência 58,14%. Imprensa diz que a unidade testada é a de Sorocaba (Carzin aponta que a entidade não especificou a origem). Penalizado pela falta de desativação do airbag do passageiro e de ponto cego de série.",
+    "source": "https://www.latinncap.com/en/media-area/new/8693ab868cabc9/top-safety-for-kia-ev4-and-volkswagen-new-tiguan-while-toyota-disappoints-with-only-two-stars-for-yaris-cross-and-yaris-sedanhatchback"
   },
   "sources": [
     {
@@ -51,20 +52,38 @@
     {
       "label": "Autoo - Yaris Cross XRX Hybrid",
       "url": "https://www.autoo.com.br/toyota-yaris-cross-xrx-15-flex-confira-as-primeiras-impressoes-do-suv/"
+    },
+    {
+      "label": "Latin NCAP – Yaris Cross e Yaris 2 estrelas (dez/2025)",
+      "url": "https://www.latinncap.com/en/media-area/new/8693ab868cabc9/top-safety-for-kia-ev4-and-volkswagen-new-tiguan-while-toyota-disappoints-with-only-two-stars-for-yaris-cross-and-yaris-sedanhatchback"
+    },
+    {
+      "label": "Autoblog Uruguay – Latin NCAP Yaris Cross (percentuais)",
+      "url": "https://www.autoblog.com.uy/2025/12/latin-ncap-toyota-yaris-y-yaris-cross.html"
+    },
+    {
+      "label": "Carzin – Yaris Cross 2 estrelas",
+      "url": "https://carzin.com.br/seguranca/toyota-yaris-cross-consegue-apenas-2-estrelas-testes-colisao.html"
+    },
+    {
+      "label": "Revista Carro – Yaris Cross XRX Hybrid (Toyota Play 10\", 360°, ponto cego)",
+      "url": "https://revistacarro.com.br/primeiro-hibrido-compacto-toyota-yaris-cross-xrx-promete-ate-179km-l/amp/"
+    },
+    {
+      "label": "Autoo – Yaris Cross preços e itens de série",
+      "url": "https://www.autoo.com.br/toyota-yaris-cross-precos-consumo-e-itens-de-serie-do-suv-compacto/"
+    },
+    {
+      "label": "AutoPapo – Yaris Cross Hybrid lançamento",
+      "url": "https://autopapo.com.br/noticia/toyota-yaris-cross-lancamento/"
+    },
+    {
+      "label": "Carro.Blog.br – Yaris Cross Hybrid (couro, ar com saída traseira)",
+      "url": "https://carro.blog.br/toyota-yaris-cross-xls-hybrid-1-5-2026-preco-ficha-tecnica-consumo-equipamentos-e-fotos-do-novo-suv-hibrido.html?tipo=amp"
     }
   ],
-  "notes": "R$ 189.990. Toyota Safety Sense em todas as versões (ACC, pré-colisão, permanência em faixa, farol alto automático); XRX acrescenta teto panorâmico, câmera 360°, ponto cego, tráfego cruzado traseiro, porta-malas elétrico. Itens de multimídia, quadro, indução, couro e chave presencial não confirmados: o único resultado com esses itens misturava dados do Corolla Cross e foi descartado.",
+  "notes": "R$ 189.990. Toyota Safety Sense em todas as versões (ACC, pré-colisão, permanência em faixa, farol alto automático); XRX acrescenta teto panorâmico, câmera 360°, ponto cego, tráfego cruzado traseiro, porta-malas elétrico. Itens de multimídia, quadro, indução, couro e chave presencial não confirmados: o único resultado com esses itens misturava dados do Corolla Cross e foi descartado. | R$ 189.990. Toyota Safety Sense em todas as versões (ACC, pré-colisão, permanência em faixa, farol alto automático); XRX acrescenta teto panorâmico, câmera 360°, ponto cego, tráfego cruzado traseiro, porta-malas elétrico. Itens de multimídia, quadro, indução, couro e chave presencial não confirmados: o único resultado com esses itens misturava dados do Corolla Cross e foi descartado. Pesquisa out/2026 (só trechos de busca; WebFetch falhou por DNS): XRX Hybrid = mesmos itens da XRX a combustão (fonte de imprensa). Tela 10\" Toyota Play 2.0 com Android Auto/CarPlay sem fio desde a XRE; indução, comandos remotos por app e saída de ar traseira citados na avaliação Autoo do XRX Hybrid; banco do motorista elétrico citado para a XRX; bancos em couro citados para o híbrido e para a XRX. Bancos ventilados/aquecidos não encontrados (mantido null). NCAP: Latin NCAP dez/2025 2 estrelas.",
   "unverified": [
-    "tech.screen10",
-    "tech.wirelessMirroring",
-    "tech.digitalCluster",
-    "tech.wirelessCharger",
-    "tech.connectedApp",
-    "tech.keyless",
-    "comfort.digitalAC",
-    "comfort.rearVents",
-    "comfort.leather",
-    "comfort.powerSeat",
     "comfort.seatClimate"
   ]
 }

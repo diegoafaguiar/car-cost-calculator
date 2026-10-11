@@ -6,27 +6,27 @@
     "screen10": true,
     "wirelessMirroring": true,
     "digitalCluster": true,
-    "wirelessCharger": null,
+    "wirelessCharger": true,
     "camera360": true,
-    "adaptiveCruise": null,
-    "connectedApp": null,
+    "adaptiveCruise": false,
+    "connectedApp": true,
     "keyless": null
   },
   "comfort": {
     "automatic": true,
     "digitalAC": true,
-    "rearVents": null,
-    "leather": null,
+    "rearVents": true,
+    "leather": true,
     "powerSeat": true,
-    "seatClimate": true,
-    "sunroof": null
+    "seatClimate": null,
+    "sunroof": false
   },
   "safety": {
     "airbags6": true,
-    "aeb": null,
-    "laneKeep": null,
-    "blindSpot": null,
-    "rearCrossTraffic": null
+    "aeb": false,
+    "laneKeep": false,
+    "blindSpot": false,
+    "rearCrossTraffic": false
   },
   "ncap": {
     "stars": 5,
@@ -52,20 +52,43 @@
     {
       "label": "paultan.org — EX5 Euro NCAP e ANCAP",
       "url": "https://paultan.org/2025/04/11/geely-ex5-gets-5-stars-from-euro-ncap-and-ancap/"
+    },
+    {
+      "label": "Vrum – Geely EX5 chega ao Brasil (equipamentos Pro x Max)",
+      "url": "https://www.vrum.com.br/avaliacoes/2025/07/7213430-geely-ex5-chega-ao-brasil-com-bom-pacote-de-equipamentos-e-preco-competitivo.html"
+    },
+    {
+      "label": "Motor Show – Geely desembarca no Brasil com EX5 (ADAS e teto só na Max)",
+      "url": "https://motorshow.com.br/geely-desembarca-no-brasil-com-suv-eletrico-de-r-205-800-veja-detalhes"
+    },
+    {
+      "label": "Automais – Geely EX5 impressões (ADAS só na Max)",
+      "url": "https://www.automaistv.com.br/avaliacao/geely-ex5-e-um-comeco-fraco-para-uma-marca-tao-forte-impressoes/"
+    },
+    {
+      "label": "Encontra Carros – Geely EX5 2026 em detalhes",
+      "url": "https://www.encontracarros.com.br/geely-ex5-2026/amp/"
+    },
+    {
+      "label": "Comprecar – Geely EX5 (lista da Pro: indução, ar com acionamento remoto e saídas traseiras)",
+      "url": "https://www.comprecar.com.br/revista/geely-ex5-ganha-nova-opcao-de-acabamento-premium"
+    },
+    {
+      "label": "Geely Brasil – ficha técnica EX5 (PDF)",
+      "url": "https://static.autoforce.com/plugins/files/clientes/geely-brasil/produtos/ws/ficha-tecnica-geely-ex5.pdf"
+    },
+    {
+      "label": "Canal VE – Geely EX5 Pro ficha",
+      "url": "https://canalve.com.br/ficha-tecnica/geely/tudo-sobre-ex5-pro/"
+    },
+    {
+      "label": "Gazeta SP – acabamento Ivory White só na Max (preços mantidos, set/2026)",
+      "url": "https://www.gazetasp.com.br/automotor/geely-ex5-oferece-nova-opcao-de-acabamento-da-cabine-na-versao-max-sem-custo-adicional/"
     }
   ],
-  "notes": "Pro: 6 airbags, câmeras 360°, multimídia 15,4\" com CarPlay/Android Auto sem fio, painel digital, ar automático duas zonas, banco do motorista elétrico com memória e ventilação, controle de descida, sensor de estacionamento traseiro, TPMS, faróis LED, rodas 18\". Teto panorâmico, head-up display, banco do passageiro elétrico, retrovisor eletrocrômico, som Flyme 16 alto-falantes e pacote ADAS (ACC, AEB, permanência em faixa) citados na Max. 'seatClimate' = ventilação no banco do motorista.",
+  "notes": "Pro: 6 airbags, câmeras 360°, multimídia 15,4\" com CarPlay/Android Auto sem fio, painel digital, ar automático duas zonas, banco do motorista elétrico com memória e ventilação, controle de descida, sensor de estacionamento traseiro, TPMS, faróis LED, rodas 18\". Teto panorâmico, head-up display, banco do passageiro elétrico, retrovisor eletrocrômico, som Flyme 16 alto-falantes e pacote ADAS (ACC, AEB, permanência em faixa) citados na Max. 'seatClimate' = ventilação no banco do motorista. | Pro: 6 airbags, câmeras 360°, multimídia 15,4\" com CarPlay/Android Auto sem fio, painel digital, ar automático duas zonas, banco do motorista elétrico com memória e ventilação, controle de descida, sensor de estacionamento traseiro, TPMS, faróis LED, rodas 18\". Teto panorâmico, head-up display, banco do passageiro elétrico, retrovisor eletrocrômico, som Flyme 16 alto-falantes e pacote ADAS (ACC, AEB, permanência em faixa) citados na Max. 'seatClimate' = ventilação no banco do motorista. Out/2026: várias fontes (Vrum, Motor Show, Automais, Webmotors) dizem que o pacote ADAS (ACC, AEB, manutenção de faixa, ponto cego, RCTA) e o teto panorâmico são exclusivos da Max; a Pro não tem ADAS — por isso adaptiveCruise/aeb/laneKeep/blindSpot/rearCrossTraffic/sunroof = false. Nenhuma fonte de 2026 indica que a Pro ganhou ADAS (set/2026 só mudou acabamento da Max). Pro tem bancos em couro, indução, câmeras 360 e ar com acionamento remoto e saídas traseiras. Atenção: seatClimate=true (já existente) conflita com a ficha oficial.",
   "unverified": [
-    "tech.wirelessCharger",
-    "tech.adaptiveCruise",
-    "tech.connectedApp",
     "tech.keyless",
-    "comfort.rearVents",
-    "comfort.leather",
-    "comfort.sunroof",
-    "safety.aeb",
-    "safety.laneKeep",
-    "safety.blindSpot",
-    "safety.rearCrossTraffic"
+    "comfort.seatClimate"
   ]
 }

@@ -61,13 +61,13 @@
     "version": "Tank 300 2.0 Hi4-T PHEV Flex 4x4 9HAT (linha 2027)",
     "engine": "2.0 turbo flex (245 cv, 38,7 kgfm) + motor elétrico de 163 cv; bateria de 37,1 kWh",
     "powerCv": "394 (combinada)",
-    "torqueKgfm": null,
+    "torqueKgfm": "76,5 (750 Nm combinados)",
     "transmission": "Automática híbrida de 9 marchas (9HAT/DHT), tração integral",
     "trunkL": 360,
     "lengthMm": 4760,
     "wheelbaseMm": 2750,
     "safety": "6 airbags (ficha oficial GWM); ANCAP 5 estrelas 2022 do Tank 300 HEV (outro conjunto); sem Latin NCAP",
-    "warranty": null
+    "warranty": "5 anos sem limite de km (política geral GWM Brasil citada pela Autodata; não confirmada especificamente para o Tank 300 PHEV)"
   },
   "inmetro": {
     "version": "Tank 300 PHEV Flex 2027",

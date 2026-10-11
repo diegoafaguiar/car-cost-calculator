@@ -6,11 +6,11 @@
     "screen10": false,
     "wirelessMirroring": null,
     "digitalCluster": true,
-    "wirelessCharger": null,
-    "camera360": null,
-    "adaptiveCruise": null,
+    "wirelessCharger": false,
+    "camera360": false,
+    "adaptiveCruise": false,
     "connectedApp": null,
-    "keyless": null
+    "keyless": false
   },
   "comfort": {
     "automatic": true,
@@ -24,7 +24,7 @@
   "safety": {
     "airbags6": true,
     "aeb": false,
-    "laneKeep": null,
+    "laneKeep": false,
     "blindSpot": false,
     "rearCrossTraffic": null
   },
@@ -51,22 +51,37 @@
     {
       "label": "Olhar Digital - Latin NCAP",
       "url": "https://olhardigital.com.br/2025/11/27/carros-e-tecnologia/renault-kardian-obtem-nota-maxima-no-teste-de-seguranca-do-latin-ncap/"
+    },
+    {
+      "label": "Auto+ TV — Kardian 2026: preços, versões e equipamentos (Evolution EDC = lista da manual; openR link opcional)",
+      "url": "https://www.automaistv.com.br/novidades/renault-kardian-2026-precos-versoes-e-equipamentos/"
+    },
+    {
+      "label": "Autoo — Kardian 2026 (Techno acrescenta ACC, AEB, indução, central 10\", cartão presencial)",
+      "url": "https://www.autoo.com.br/renault-kardian-2026-precos-pecas-consumo-e-equipamentos/"
+    },
+    {
+      "label": "AutoPapo — avaliação Kardian Evolution 2026 (sem ponto cego, alerta de colisão, permanência em faixa e AEB)",
+      "url": "https://autopapo.com.br/noticia/avaliacao-renault-kardian-evolution-2026-manual/"
+    },
+    {
+      "label": "Notícias Automotivas — avaliação Kardian Techno (câmera 360° só na Iconic)",
+      "url": "https://www.noticiasautomotivas.com.br/avaliacao-renault-kardian-techno-a-versao-intermediaria-com-acc-central-de-10-e-rodas-de-17-polegadas-por-r-139-mil/"
+    },
+    {
+      "label": "Correio 24 Horas — Kardian: garantia de 3 anos",
+      "url": "https://www.correio24horas.com.br/economia/autos/bem-equipado-renault-kardian-tem-qualidades-e-concorre-com-fiat-pulse-e-vw-nivus-0524"
     }
   ],
-  "notes": "R$ 124.690. Multimídia openR link 10\" + câmera de ré é opcional (pack R$ 1.200) na Evolution, por isso screen10=false (padrão). Quadro digital 7\". Cruise control convencional + limitador (ACC não citado). AEB a partir da Techno; ponto cego só na Iconic.",
+  "notes": "R$ 124.690. Multimídia openR link 10\" + câmera de ré é opcional (pack R$ 1.200) na Evolution, por isso screen10=false (padrão). Quadro digital 7\". Cruise control convencional + limitador (ACC não citado). AEB a partir da Techno; ponto cego só na Iconic. | R$ 124.690. Multimídia openR link 10\" + câmera de ré é opcional (pack R$ 1.200) na Evolution, por isso screen10=false (padrão). Quadro digital 7\". Cruise control convencional + limitador (ACC não citado). AEB a partir da Techno; ponto cego só na Iconic. Out/2026: carregador por indução, cartão presencial e ACC chegam na Techno (false na Evolution); câmera 360° só na Iconic; avaliação da Evolution diz que não há permanência em faixa. Espelhamento sem fio depende da central openR link opcional (null para o padrão).",
   "unverified": [
     "tech.wirelessMirroring",
-    "tech.wirelessCharger",
-    "tech.camera360",
-    "tech.adaptiveCruise",
     "tech.connectedApp",
-    "tech.keyless",
     "comfort.rearVents",
     "comfort.leather",
     "comfort.powerSeat",
     "comfort.seatClimate",
     "comfort.sunroof",
-    "safety.laneKeep",
     "safety.rearCrossTraffic"
   ]
 }

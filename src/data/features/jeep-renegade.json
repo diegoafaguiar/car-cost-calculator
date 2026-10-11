@@ -10,22 +10,22 @@
     "camera360": null,
     "adaptiveCruise": null,
     "connectedApp": null,
-    "keyless": null
+    "keyless": true
   },
   "comfort": {
     "automatic": true,
-    "digitalAC": null,
+    "digitalAC": true,
     "rearVents": true,
-    "leather": null,
+    "leather": true,
     "powerSeat": false,
     "seatClimate": null,
-    "sunroof": null
+    "sunroof": false
   },
   "safety": {
     "airbags6": true,
     "aeb": true,
-    "laneKeep": null,
-    "blindSpot": null,
+    "laneKeep": true,
+    "blindSpot": true,
     "rearCrossTraffic": null
   },
   "ncap": {
@@ -51,21 +51,35 @@
     {
       "label": "Autoo - Renegade 2026",
       "url": "https://www.autoo.com.br/jeep-renegade-2026-estreia-com-mais-equipamentos-e-ate-r-15-mil-mais-barato/"
+    },
+    {
+      "label": "Auto+ TV — Renegade 2027 (Longitude com bancos e volante em couro e alerta de ponto cego)",
+      "url": "https://www.automaistv.com.br/novidades/jeep-renegade-2027-aposta-em-visual-atual-sistema-semi-hibrido-e-precos-agressivos-para-voltar-ao-topo/"
+    },
+    {
+      "label": "A Crítica — Renegade 2027 (ar digital dual zone de série em todas as versões)",
+      "url": "https://acritica.net/automoveis/jeep-renegade-2027-e-lancado-com-visual-renovado-e-sistema-hibrido-leve/"
+    },
+    {
+      "label": "Portal N10 — Renegade Longitude MHEV 2027 (assistente de permanência em faixa)",
+      "url": "https://portaln10.com.br/fipecarros/jeep-renegade-longitude-mhev-2027-preco-ficha-tecnica-e-equipamentos/"
+    },
+    {
+      "label": "Jeep Viviani (concessionária) — Novo Renegade (teto panorâmico só Sahara/Willys)",
+      "url": "https://www.jeepviviani.com.br/novos/novo-renegade"
+    },
+    {
+      "label": "Vrum — Jeep amplia para 5 anos a garantia de Renegade, Compass e Commander nacionais",
+      "url": "https://www.vrum.com.br/noticias/2024/04/6837029-jeep-amplia-garantia-de-modelos-nacionais-vendidos-a-partir-de-2021.html"
     }
   ],
-  "notes": "R$ 158.690. Linha 2027: multimídia 10,1\", quadro 7\" totalmente digital, console com saída de ar traseira; banco elétrico só Sahara/Willys. Indução herdada da Altitude. Na linha 2026 a Longitude tinha couro, keyless, ar digital duas zonas, ponto cego, AEB e permanência em faixa ativa, mas esses itens não foram reconfirmados para a 2027 MHEV (ficaram null, exceto AEB/6 airbags citados para todas as versões).",
+  "notes": "R$ 158.690. Linha 2027: multimídia 10,1\", quadro 7\" totalmente digital, console com saída de ar traseira; banco elétrico só Sahara/Willys. Indução herdada da Altitude. Na linha 2026 a Longitude tinha couro, keyless, ar digital duas zonas, ponto cego, AEB e permanência em faixa ativa, mas esses itens não foram reconfirmados para a 2027 MHEV (ficaram null, exceto AEB/6 airbags citados para todas as versões). | R$ 158.690. Linha 2027: multimídia 10,1\", quadro 7\" totalmente digital, console com saída de ar traseira; banco elétrico só Sahara/Willys. Indução herdada da Altitude. Na linha 2026 a Longitude tinha couro, keyless, ar digital duas zonas, ponto cego, AEB e permanência em faixa ativa, mas esses itens não foram reconfirmados para a 2027 MHEV (ficaram null, exceto AEB/6 airbags citados para todas as versões). Out/2026: reconfirmados para a Longitude 2027 MHEV: couro, chave presencial com partida por botão, ar digital dual zone, ponto cego e assistente de faixa ativo. Teto panorâmico só Sahara/Willys (false). ACC, CarPlay/AA sem fio na Longitude, câmera 360 e tráfego cruzado não confirmados.",
   "unverified": [
     "tech.wirelessMirroring",
     "tech.camera360",
     "tech.adaptiveCruise",
     "tech.connectedApp",
-    "tech.keyless",
-    "comfort.digitalAC",
-    "comfort.leather",
     "comfort.seatClimate",
-    "comfort.sunroof",
-    "safety.laneKeep",
-    "safety.blindSpot",
     "safety.rearCrossTraffic"
   ]
 }

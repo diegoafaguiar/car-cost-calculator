@@ -6,7 +6,7 @@
     "screen10": true,
     "wirelessMirroring": true,
     "digitalCluster": true,
-    "wirelessCharger": true,
+    "wirelessCharger": null,
     "camera360": null,
     "adaptiveCruise": null,
     "connectedApp": null,
@@ -25,7 +25,7 @@
     "airbags6": true,
     "aeb": false,
     "laneKeep": false,
-    "blindSpot": true,
+    "blindSpot": null,
     "rearCrossTraffic": null
   },
   "ncap": {
@@ -55,6 +55,14 @@
     {
       "label": "Motorshow - Latin NCAP Onix Plus",
       "url": "https://motorshow.com.br/novo-chevrolet-onix-plus-leva-nota-maxima-em-teste-de-colisao"
+    },
+    {
+      "label": "Revista Carro — GM amplia garantia para cinco anos (Onix, Onix Plus, Tracker nacionais)",
+      "url": "https://revistacarro.com.br/gm-lanca-onix-e-a-tracker-2026-e-spark-a-preco-de-dolphin/"
+    },
+    {
+      "label": "Automóvel Nacional — Onix Plus 2026: preço e lista de equipamentos por versão",
+      "url": "https://www.automovelnacional.com.br/chevrolet-onix-plus-2026-veja-o-preco-e-lista-de-equipamentos-de-cada-versao/"
     }
   ],
   "unverified": [
@@ -67,6 +75,9 @@
     "comfort.powerSeat",
     "comfort.seatClimate",
     "comfort.sunroof",
-    "safety.rearCrossTraffic"
-  ]
+    "safety.rearCrossTraffic",
+    "safety.blindSpot",
+    "tech.wirelessCharger"
+  ],
+  "notes": "Out/2026: LTZ com bancos de revestimento misto (couro + tecido) — leather mantido null; ar digital citado como destaque da Premier por uma fonte e como série em todas por outra (null). ATENÇÃO: fontes de busca atribuem alerta de ponto cego e carregador por indução à Premier, não à LTZ — os valores true atuais merecem reconferência."
 }

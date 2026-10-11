@@ -62,10 +62,10 @@
     "torqueKgfm": "27,5",
     "transmission": "Dupla embreagem banhada a óleo, 6 marchas (EDC)",
     "trunkL": 522,
-    "lengthMm": null,
-    "wheelbaseMm": null,
+    "lengthMm": 4556,
+    "wheelbaseMm": 2702,
     "safety": "6 airbags em todas as versões; sem NCAP",
-    "warranty": null
+    "warranty": "5 anos sem limite de quilometragem"
   },
   "inmetro": {
     "version": "Boreal 1.3 TCe",

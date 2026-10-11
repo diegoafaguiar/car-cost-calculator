@@ -8,7 +8,7 @@
     "digitalCluster": true,
     "wirelessCharger": true,
     "camera360": true,
-    "adaptiveCruise": true,
+    "adaptiveCruise": null,
     "connectedApp": null,
     "keyless": true
   },
@@ -23,17 +23,18 @@
   },
   "safety": {
     "airbags6": true,
-    "aeb": true,
+    "aeb": null,
     "laneKeep": null,
     "blindSpot": null,
     "rearCrossTraffic": null
   },
   "ncap": {
-    "stars": null,
-    "year": null,
-    "program": "Latin NCAP",
-    "note": "Não pesquisado/encontrado (limite de buscas).",
-    "source": ""
+    "stars": 5,
+    "year": 2022,
+    "program": "Euro NCAP",
+    "counts": false,
+    "note": "Euro NCAP 5 estrelas (dez/2022) do Omoda 5 a combustão (1.6 turbo): adulto 87%, criança 87%, vulneráveis 68%, assistências 88%. O HEV brasileiro tem outro conjunto mecânico, por isso não conta. Sem Latin NCAP.",
+    "source": "https://www.fleetnews.co.uk/news/manufacturer-news/2023/08/22/omoda-5-euro-ncap-safety-rating-published-ahead-of-uk-arrival"
   },
   "sources": [
     {
@@ -51,14 +52,28 @@
     {
       "label": "Mecânica Online - Omoda 5 HEV",
       "url": "https://mecanicaonline.com.br/2025/10/omoda-5-hev-o-novo-suv-hibrido-que-une-performance-2-0-turbo-e-autonomia-superior-a-1-000-km/"
+    },
+    {
+      "label": "Auto+ TV — Omoda 5 HEV será vendido por menos de R$ 170 mil",
+      "url": "https://www.automaistv.com.br/novidades/omoda-5-hev-sera-vendido-no-brasil-por-menos-de-r-170-mil/"
+    },
+    {
+      "label": "Motor Show — Omoda 5 HEV chega mais barato",
+      "url": "https://motorshow.com.br/omoda-5-hev-chega-mais-barato"
+    },
+    {
+      "label": "Fleet News — Omoda 5 Euro NCAP rating",
+      "url": "https://www.fleetnews.co.uk/news/manufacturer-news/2023/08/22/omoda-5-euro-ncap-safety-rating-published-ahead-of-uk-arrival"
     }
   ],
-  "notes": "R$ 159.990. Multimídia 12,3\" sem fio; painel digital 12,3\" (outra fonte diz 10,25\"); câmera 360°, ACC e AEB, teto solar, ar digital 2 zonas, chave presencial, indução. 6 ou 7 airbags conforme fonte (>=6 nos dois casos). Bancos de tecido; couro sintético, ajustes elétricos e bancos aquecidos/ventilados só na Prestige. Ponto cego e assistente de faixa citados na Prestige; não confirmados na Luxury.",
+  "notes": "R$ 159.990. Multimídia 12,3\" sem fio; painel digital 12,3\" (outra fonte diz 10,25\"); câmera 360°, ACC e AEB, teto solar, ar digital 2 zonas, chave presencial, indução. 6 ou 7 airbags conforme fonte (>=6 nos dois casos). Bancos de tecido; couro sintético, ajustes elétricos e bancos aquecidos/ventilados só na Prestige. Ponto cego e assistente de faixa citados na Prestige; não confirmados na Luxury. | R$ 159.990. Multimídia 12,3\" sem fio; painel digital 12,3\" (outra fonte diz 10,25\"); câmera 360°, ACC e AEB, teto solar, ar digital 2 zonas, chave presencial, indução. 6 ou 7 airbags conforme fonte (>=6 nos dois casos). Bancos de tecido; couro sintético, ajustes elétricos e bancos aquecidos/ventilados só na Prestige. Ponto cego e assistente de faixa citados na Prestige; não confirmados na Luxury. CONFLITO (out/2026): Auto+ TV descreve a Luxury com 'piloto automático regular', 7 airbags, câmera 360 e sensores; Motor Show cita só 'piloto automático'; Prestige 'agrega pacote ADAS 2.5'. Por isso ACC e AEB voltaram a null na Luxury até confirmação oficial. [Out/2026, lote 3: páginas não puderam ser abertas (proxy bloqueou); dados abaixo vêm de trechos de resultados de busca cruzados.]",
   "unverified": [
     "tech.connectedApp",
     "comfort.rearVents",
     "safety.laneKeep",
     "safety.blindSpot",
-    "safety.rearCrossTraffic"
+    "safety.rearCrossTraffic",
+    "tech.adaptiveCruise",
+    "safety.aeb"
   ]
 }

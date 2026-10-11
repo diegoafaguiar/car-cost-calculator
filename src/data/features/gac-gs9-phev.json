@@ -3,30 +3,30 @@
   "version": "GAC GS9 Ultra 2027 (R$ 399.990)",
   "researchedAt": "2026-10",
   "tech": {
-    "screen10": null,
-    "wirelessMirroring": null,
-    "digitalCluster": null,
+    "screen10": true,
+    "wirelessMirroring": true,
+    "digitalCluster": true,
     "wirelessCharger": true,
     "camera360": true,
-    "adaptiveCruise": null,
+    "adaptiveCruise": true,
     "connectedApp": null,
     "keyless": null
   },
   "comfort": {
-    "automatic": null,
-    "digitalAC": null,
-    "rearVents": null,
-    "leather": null,
-    "powerSeat": null,
-    "seatClimate": null,
-    "sunroof": null
+    "automatic": true,
+    "digitalAC": true,
+    "rearVents": true,
+    "leather": true,
+    "powerSeat": true,
+    "seatClimate": true,
+    "sunroof": true
   },
   "safety": {
     "airbags6": true,
     "aeb": true,
-    "laneKeep": null,
+    "laneKeep": true,
     "blindSpot": true,
-    "rearCrossTraffic": null
+    "rearCrossTraffic": true
   },
   "ncap": {
     "stars": null,
@@ -51,24 +51,31 @@
     {
       "label": "Motor Show — impressões GS9",
       "url": "https://motorshow.com.br/impressoes-gac-gs9"
+    },
+    {
+      "label": "Autos Segredos — GAC GS9 Ultra chega por R$ 379.990 (ACC, AEB, ponto cego, permanência e centralização em faixa, tráfego cruzado, 540°)",
+      "url": "https://www.autossegredos.com.br/lancamentos/gac-gs9-ultra-chega-por-r-379-990-em-promocao-para-enfrentar-byd-atto-8-e-gwm-wey-07/"
+    },
+    {
+      "label": "Auto+ TV — GAC lança GS9 Ultra (painel 10,25\", central 15,6\" com CarPlay/AA sem fio, couro Nappa, bancos aquecidos/ventilados/elétricos)",
+      "url": "https://www.automaistv.com.br/novidades/de-olho-no-segmento-de-luxo-gac-lanca-gs9-ultra-no-brasil-por-r-379-990/"
+    },
+    {
+      "label": "Car.Blog.br — GAC GS9 híbrido R$ 379.990 e 500 cv",
+      "url": "https://www.car.blog.br/2026/08/gac-gs9-hibrido-com-preco-r-379990-e.html"
+    },
+    {
+      "label": "Autoindústria — GAC intensifica atuação com o GS9 Ultra (ar automático de três zonas, saída traseira, acesso presencial)",
+      "url": "https://www.autoindustria.com.br/2026/08/18/gac-intensifica-atuacao-no-pais-com-o-suv-gs9-ultra/"
+    },
+    {
+      "label": "O Tempo — GAC GS9 Ultra 500 cv",
+      "url": "https://www.otempo.com.br/autotempo/2026/8/18/gac-gs9-novo-suv-hibrido-plug-in-de-500-cv-chega-ao-brasil-por-r-379-990"
     }
   ],
-  "notes": "Versão única Ultra. Confirmados: 9 airbags, câmeras 360°/540° com estacionamento automático, frenagem autônoma, monitor de ponto cego, head-up display, 2 carregadores sem fio de 50 W, som de 21 alto-falantes com cancelamento ativo de ruído, bancos da 3ª fileira com rebatimento elétrico. Demais itens (ACC, telas, ar, bancos) não vistos em fonte brasileira nesta pesquisa.",
+  "notes": "Versão única Ultra. Confirmados: 9 airbags, câmeras 360°/540° com estacionamento automático, frenagem autônoma, monitor de ponto cego, head-up display, 2 carregadores sem fio de 50 W, som de 21 alto-falantes com cancelamento ativo de ruído, bancos da 3ª fileira com rebatimento elétrico. Demais itens (ACC, telas, ar, bancos) não vistos em fonte brasileira nesta pesquisa. | Versão única Ultra. Confirmados: 9 airbags, câmeras 360°/540° com estacionamento automático, frenagem autônoma, monitor de ponto cego, head-up display, 2 carregadores sem fio de 50 W, som de 21 alto-falantes com cancelamento ativo de ruído, bancos da 3ª fileira com rebatimento elétrico. Demais itens (ACC, telas, ar, bancos) não vistos em fonte brasileira nesta pesquisa. Out/2026 (trechos de busca): versão única Ultra com painel 10,25\", central 15,6\" com CarPlay/AA sem fio, ACC, assistentes de permanência e centralização em faixa, tráfego cruzado traseiro, ar automático de 3 zonas com saída traseira, couro Nappa, bancos dianteiros e 2ª fileira com ajuste elétrico, aquecimento, ventilação e massagem. Teto panorâmico listado (uma fonte diz que o teto duplo não abre). Acesso presencial confirmado, mas partida por botão não → keyless null. App remoto não confirmado. automatic=true (transmissão híbrida/elétrica, sem câmbio manual).",
   "unverified": [
-    "tech.screen10",
-    "tech.wirelessMirroring",
-    "tech.digitalCluster",
-    "tech.adaptiveCruise",
     "tech.connectedApp",
-    "tech.keyless",
-    "comfort.automatic",
-    "comfort.digitalAC",
-    "comfort.rearVents",
-    "comfort.leather",
-    "comfort.powerSeat",
-    "comfort.seatClimate",
-    "comfort.sunroof",
-    "safety.laneKeep",
-    "safety.rearCrossTraffic"
+    "tech.keyless"
   ]
 }

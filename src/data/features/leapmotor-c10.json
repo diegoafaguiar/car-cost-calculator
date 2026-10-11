@@ -5,17 +5,17 @@
   "tech": {
     "screen10": true,
     "wirelessMirroring": false,
-    "digitalCluster": null,
-    "wirelessCharger": null,
-    "camera360": null,
+    "digitalCluster": true,
+    "wirelessCharger": true,
+    "camera360": true,
     "adaptiveCruise": true,
     "connectedApp": true,
     "keyless": null
   },
   "comfort": {
     "automatic": true,
-    "digitalAC": null,
-    "rearVents": null,
+    "digitalAC": true,
+    "rearVents": true,
     "leather": null,
     "powerSeat": true,
     "seatClimate": true,
@@ -51,16 +51,19 @@
     {
       "label": "Vision Mobility - Euro NCAP C10",
       "url": "https://vision-mobility.de/en/news/leapmotor-c10-chinese-electric-suv-receives-five-stars-in-euro-ncap-355347.html"
+    },
+    {
+      "label": "Revista Carro — Leapmotor C10 chega a partir de R$ 189,9 mil (painel digital 10,25\", ar dual zone)",
+      "url": "https://revistacarro.com.br/leapmotor-c10-chega-a-partir-de-r-1899-mil-veja-versoes-precos-e-equipamentos/"
+    },
+    {
+      "label": "Stellantis Media — C10 chega ao Brasil (difusores exclusivos para a 2ª fileira)",
+      "url": "https://www.media.stellantis.com/br-pt/leapmotor/press/leapmotor-c10-chega-ao-brasil-como-unico-suv-com-versao-ultra-hibrida-com-tecnologia-reev"
     }
   ],
-  "notes": "Versão única (BEV e REEV com a mesma lista, segundo a Autoo). Central de 14,6\" com Leapmotor OS, sem Android Auto/CarPlay nativos na linha 2026 (a Stellantis disse que falta hardware; só há espelhamento Android por app). App Leapmotor. Ar automático; teto panorâmico de 2,1 m²; bancos dianteiros elétricos com memória, aquecimento e ventilação; ACC, AEB, assistente de faixa, ponto cego e tráfego cruzado traseiro (Autoo). 6 ou 7 airbags conforme a fonte (pelo menos 6). Painel digital, câmera 360°, carregador por indução e chave presencial não foram confirmados nas fontes brasileiras.",
+  "notes": "Versão única (BEV e REEV com a mesma lista, segundo a Autoo). Central de 14,6\" com Leapmotor OS, sem Android Auto/CarPlay nativos na linha 2026 (a Stellantis disse que falta hardware; só há espelhamento Android por app). App Leapmotor. Ar automático; teto panorâmico de 2,1 m²; bancos dianteiros elétricos com memória, aquecimento e ventilação; ACC, AEB, assistente de faixa, ponto cego e tráfego cruzado traseiro (Autoo). 6 ou 7 airbags conforme a fonte (pelo menos 6). Painel digital, câmera 360°, carregador por indução e chave presencial não foram confirmados nas fontes brasileiras. | Versão única (BEV e REEV com a mesma lista, segundo a Autoo). Central de 14,6\" com Leapmotor OS, sem Android Auto/CarPlay nativos na linha 2026 (a Stellantis disse que falta hardware; só há espelhamento Android por app). App Leapmotor. Ar automático; teto panorâmico de 2,1 m²; bancos dianteiros elétricos com memória, aquecimento e ventilação; ACC, AEB, assistente de faixa, ponto cego e tráfego cruzado traseiro (Autoo). 6 ou 7 airbags conforme a fonte (pelo menos 6). Painel digital, câmera 360°, carregador por indução e chave presencial não foram confirmados nas fontes brasileiras. Out/2026: painel digital 10,25\", indução, câmera 360° e ar digital dual zone com saída traseira confirmados (versão única). Acesso por chave digital NFC/cartão e celular — não é chave presencial clássica, keyless mantido null. Couro não confirmado (fontes falam em material OEKO-TEX).",
   "unverified": [
-    "tech.digitalCluster",
-    "tech.wirelessCharger",
-    "tech.camera360",
     "tech.keyless",
-    "comfort.digitalAC",
-    "comfort.rearVents",
     "comfort.leather"
   ]
 }

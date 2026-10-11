@@ -5,28 +5,28 @@
   "tech": {
     "screen10": true,
     "wirelessMirroring": null,
-    "digitalCluster": null,
+    "digitalCluster": true,
     "wirelessCharger": true,
-    "camera360": null,
-    "adaptiveCruise": null,
+    "camera360": true,
+    "adaptiveCruise": true,
     "connectedApp": null,
-    "keyless": null
+    "keyless": true
   },
   "comfort": {
     "automatic": true,
     "digitalAC": true,
-    "rearVents": null,
-    "leather": null,
+    "rearVents": true,
+    "leather": true,
     "powerSeat": true,
     "seatClimate": true,
     "sunroof": true
   },
   "safety": {
-    "airbags6": null,
-    "aeb": null,
-    "laneKeep": null,
-    "blindSpot": null,
-    "rearCrossTraffic": null
+    "airbags6": true,
+    "aeb": true,
+    "laneKeep": true,
+    "blindSpot": true,
+    "rearCrossTraffic": true
   },
   "ncap": {
     "stars": 5,
@@ -52,22 +52,39 @@
     {
       "label": "ANCAP — Haval H7 (5 estrelas, dez/2025)",
       "url": "https://www.ancap.com.au/safety-ratings/great-wall-motors/haval-h7/93729c"
+    },
+    {
+      "label": "Autos Segredos — avaliação Haval H7",
+      "url": "https://www.autossegredos.com.br/marcas/gwm-brasil/haval/gwm-haval-h7-avaliacao/"
+    },
+    {
+      "label": "Vrum — avaliação Haval H7",
+      "url": "https://www.vrum.com.br/avaliacoes/2026/10/7517512-gwm-haval-h7-surpreende-pelo-desempenho-e-custo-beneficio.html"
+    },
+    {
+      "label": "Encontracarros — lançamento Haval H7",
+      "url": "https://www.encontracarros.com.br/gwm-haval-h7-lancamento-oficial"
+    },
+    {
+      "label": "Webmotors — Haval H7 pré-venda",
+      "url": "https://www.webmotors.com.br/wm1/noticias/gwm-haval-h7-pre-venda-brasil"
+    },
+    {
+      "label": "Costa Norte — lançamento Haval H7",
+      "url": "https://costanorte.com.br/motor/gwm-lanca-haval-h7-no-brasil-com-sistema-hibrido-flex-e-370-cv.html"
+    },
+    {
+      "label": "Diário do Comércio — Haval H7 estreia",
+      "url": "https://diariodocomercio.com.br/veiculos/gwm-haval-h7-estreia-brasil/"
+    },
+    {
+      "label": "DGABC — Haval H7 por R$ 261 mil (garantia)",
+      "url": "https://www.dgabc.com.br/Noticia/4351427/por-rs-261-mil-gwm-haval-h7-mira-os-suvs-compass-bronco-e-t2"
     }
   ],
-  "notes": "Versão única com Black Pack: rodas 19\", teto panorâmico, bancos dianteiros ventilados com ajustes elétricos, ar de duas zonas, indução 50 W, multimídia 15,6\". Lista completa de ADAS e airbags do carro brasileiro não divulgada nas fontes vistas (na Argentina: câmera 360°, ACC, AEB, faixa, painel 12,3\" e HUD).",
+  "notes": "Versão única com Black Pack: rodas 19\", teto panorâmico, bancos dianteiros ventilados com ajustes elétricos, ar de duas zonas, indução 50 W, multimídia 15,6\". Lista completa de ADAS e airbags do carro brasileiro não divulgada nas fontes vistas (na Argentina: câmera 360°, ACC, AEB, faixa, painel 12,3\" e HUD). | Versão única com Black Pack: rodas 19\", teto panorâmico, bancos dianteiros ventilados com ajustes elétricos, ar de duas zonas, indução 50 W, multimídia 15,6\". Lista completa de ADAS e airbags do carro brasileiro não divulgada nas fontes vistas (na Argentina: câmera 360°, ACC, AEB, faixa, painel 12,3\" e HUD). Out/2026 (lançamento): 6 airbags, ADAS 2+ (ACC Stop&Go, AEB, permanência/centralização, ponto cego, tráfego cruzado traseiro), câmera 540°, painel 12,3\" + HUD 9\", couro ecológico, ar 2 zonas com saídas traseiras; chave presencial pela matéria de pré-venda da Webmotors. CarPlay/Android Auto sem fio só confirmado na especificação internacional; app não confirmado. O crash test de set/2026 é interno da GWM (não é NCAP). Páginas não abertas; dados de trechos de busca.",
   "unverified": [
     "tech.wirelessMirroring",
-    "tech.digitalCluster",
-    "tech.camera360",
-    "tech.adaptiveCruise",
-    "tech.connectedApp",
-    "tech.keyless",
-    "comfort.rearVents",
-    "comfort.leather",
-    "safety.airbags6",
-    "safety.aeb",
-    "safety.laneKeep",
-    "safety.blindSpot",
-    "safety.rearCrossTraffic"
+    "tech.connectedApp"
   ]
 }

@@ -6,7 +6,7 @@
     "screen10": true,
     "wirelessMirroring": null,
     "digitalCluster": true,
-    "wirelessCharger": null,
+    "wirelessCharger": true,
     "camera360": true,
     "adaptiveCruise": true,
     "connectedApp": null,
@@ -14,7 +14,7 @@
   },
   "comfort": {
     "automatic": true,
-    "digitalAC": null,
+    "digitalAC": true,
     "rearVents": null,
     "leather": true,
     "powerSeat": true,
@@ -55,14 +55,20 @@
     {
       "label": "BYD Europa - Euro NCAP",
       "url": "https://www.byd.com/eu/blog/BYD-DOLPHIN-and-SEAL-demonstrate-excellent-safety-levels-5-star-Euro-NCAP-rating"
+    },
+    {
+      "label": "ABC do ABC — lançamento e teste do BYD Seal",
+      "url": "https://www.abcdoabc.com.br/lancamento-nacional-e-teste-do-cupe-eletrico-byd-seal-ev-missil-certeiro/"
+    },
+    {
+      "label": "Verificar Auto — BYD Seal",
+      "url": "https://verificarauto.com.br/carros-eletricos/byd-seal/"
     }
   ],
   "unverified": [
     "tech.wirelessMirroring",
-    "tech.wirelessCharger",
     "tech.connectedApp",
     "tech.keyless",
-    "comfort.digitalAC",
     "comfort.rearVents",
     "safety.rearCrossTraffic"
   ]

@@ -9,8 +9,8 @@
     "wirelessCharger": true,
     "camera360": true,
     "adaptiveCruise": true,
-    "connectedApp": null,
-    "keyless": null
+    "connectedApp": true,
+    "keyless": true
   },
   "comfort": {
     "automatic": true,
@@ -51,6 +51,18 @@
     {
       "label": "CNN Brasil Song Pro 2027",
       "url": "https://www.cnnbrasil.com.br/blogs/jorge-moraes/auto/byd-song-pro-flex-e-hibrido-e-chega-como-2027-sem-aumentar-de-preco/"
+    },
+    {
+      "label": "Autoo – Song Pro flex 2027 preços e equipamentos (app remoto, chave presencial/NFC, 6 airbags, ADAS)",
+      "url": "https://www.autoo.com.br/byd-song-pro-flex-2027-veja-precos-pecas-consumo-e-equipamentos-do-suv/"
+    },
+    {
+      "label": "A Gazeta – primeiras impressões Song Pro (console com botão de partida)",
+      "url": "https://www.agazeta.com.br/motor/primeiras-impressoes-do-song-pro-o-novo-suv-hibrido-da-byd-0724"
+    },
+    {
+      "label": "Car.Blog.br – Song Pro flex 2027 ficha (6 airbags)",
+      "url": "https://www.car.blog.br/2026/08/novo-byd-song-pro-flex-2027-preco-r.html"
     }
   ],
   "unverified": [
@@ -58,5 +70,6 @@
     "keyless",
     "seatClimate",
     "ncap"
-  ]
+  ],
+  "notes": "Out/2026: app BYD com acesso/comandos remotos e partida remota citados na linha 2027; acesso por chave presencial ou NFC (Autoo) e botão de partida no console (A Gazeta, 2024). Nenhuma fonte cita bancos ventilados/aquecidos na GS (só ajuste elétrico motorista e passageiro); mantido null. Nenhum teste NCAP encontrado."
 }

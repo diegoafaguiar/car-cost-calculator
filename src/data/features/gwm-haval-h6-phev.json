@@ -5,7 +5,7 @@
   "tech": {
     "screen10": true,
     "wirelessMirroring": true,
-    "digitalCluster": null,
+    "digitalCluster": true,
     "wirelessCharger": true,
     "camera360": true,
     "adaptiveCruise": true,
@@ -14,8 +14,8 @@
   },
   "comfort": {
     "automatic": true,
-    "digitalAC": null,
-    "rearVents": null,
+    "digitalAC": true,
+    "rearVents": true,
     "leather": true,
     "powerSeat": true,
     "seatClimate": true,
@@ -23,17 +23,18 @@
   },
   "safety": {
     "airbags6": true,
-    "aeb": null,
-    "laneKeep": null,
-    "blindSpot": null,
-    "rearCrossTraffic": null
+    "aeb": true,
+    "laneKeep": true,
+    "blindSpot": true,
+    "rearCrossTraffic": true
   },
   "ncap": {
     "stars": 5,
     "year": 2022,
     "program": "ANCAP",
-    "note": "Teste ANCAP 2022 do Haval H6 (adulto 90%, criança 88%); versão PHEV flex brasileira não testada. Sem Latin NCAP.",
-    "source": "https://ancap.com.au/safety-ratings/haval/h6/b7830d"
+    "note": "ANCAP 5 estrelas (2022, protocolo 2020-2022; adulto 90%, criança 88%). A página atual da ANCAP diz que a nota vale para todas as variantes, incluindo os híbridos plug-in (carro testado: 2.0 turbo a gasolina). A PHEV flex brasileira não foi testada. Sem Latin NCAP.",
+    "source": "https://ancap.com.au/safety-ratings/haval/h6/b7830d",
+    "counts": true
   },
   "sources": [
     {
@@ -51,6 +52,26 @@
     {
       "label": "ANCAP Haval H6",
       "url": "https://ancap.com.au/safety-ratings/haval/h6/b7830d"
+    },
+    {
+      "label": "Autos Segredos — H6 PHEV35 2027 flex",
+      "url": "https://www.autossegredos.com.br/lancamentos/gwm-haval-h6-phev35-2027-estreia-sistema-hibrido-flex-com-autonomia-eletrica-de-126-km/"
+    },
+    {
+      "label": "Mobiauto — H6 PHEV35 2027 o que oferece",
+      "url": "https://www.mobiauto.com.br/revista/amp/gwm-haval-h6-phev35-2027-o-que-oferece-a-versao-mais-potente-agora-como-flex/11082"
+    },
+    {
+      "label": "Mundo Zero Km — comparativo H6 PHEV35 Flex 2027",
+      "url": "https://mundozerokm.com.br/comparative/review/gwm-haval-h6-1-5-phev-19-vs-gwm-haval-h6-phev-35-flex-vs-hyundai-hb-20-platinum-2026-2027-1"
+    },
+    {
+      "label": "GWM — ficha técnica Haval PHEV35 2026 (PDF)",
+      "url": "https://www.gwmmotors.com.br/content/dam/gwm/pages/br/pt/models/phev-35/Ficha%20T%C3%A9cnica%20-%20Novo%20Haval%20PHEV35%202026.pdf"
+    },
+    {
+      "label": "ANCAP — Haval H6 (classificação aplica-se a todas as variantes)",
+      "url": "https://www.ancap.com.au/safety-ratings/haval/h6/db8b8c"
     }
   ],
   "unverified": [
@@ -63,5 +84,6 @@
     "laneKeep",
     "blindSpot",
     "rearCrossTraffic"
-  ]
+  ],
+  "notes": "Out/2026: painel digital 10,25\", HUD, multimídia 14,6\", ar digital 2 zonas com saídas traseiras; ADAS nível 2 (AEB, permanência/centralização em faixa, ponto cego, tráfego cruzado traseiro). Chave presencial e app My GWM não confirmados para a versão. ANCAP: página mais recente diz que a nota de 2022 vale para todas as variantes, incluindo PHEV (carro testado: 2.0 a gasolina). Páginas não abertas; dados de trechos de busca."
 }

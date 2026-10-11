@@ -3,13 +3,13 @@
   "version": "GWM Ora 5 BEV 2027",
   "researchedAt": "2026-10",
   "tech": {
-    "screen10": null,
-    "wirelessMirroring": null,
-    "digitalCluster": null,
+    "screen10": true,
+    "wirelessMirroring": true,
+    "digitalCluster": true,
     "wirelessCharger": true,
     "camera360": true,
-    "adaptiveCruise": null,
-    "connectedApp": null,
+    "adaptiveCruise": true,
+    "connectedApp": true,
     "keyless": null
   },
   "comfort": {
@@ -23,10 +23,10 @@
   },
   "safety": {
     "airbags6": true,
-    "aeb": null,
-    "laneKeep": null,
-    "blindSpot": null,
-    "rearCrossTraffic": null
+    "aeb": true,
+    "laneKeep": true,
+    "blindSpot": true,
+    "rearCrossTraffic": true
   },
   "ncap": {
     "stars": null,
@@ -47,20 +47,27 @@
     {
       "label": "AutoData — lançamento Ora 5 (jun/2026)",
       "url": "https://www.autodata.com.br/noticias/2026/06/24/gwm-ataca-os-suvs-compactos-com-o-eletrico-ora-5/107037/"
+    },
+    {
+      "label": "GWM Media Center — lançamento do Ora 5",
+      "url": "https://www.gwmmotors.com.br/pt/media-center/news/2026/gwm-lanca-o-ora-5-seu-primeiro-suv-100-eletrico-que-combina-espaco-tecnologia-e-autonomia-de-ate-435-km"
+    },
+    {
+      "label": "GWM Media Center — reservas do Ora 5 (app My GWM)",
+      "url": "https://www.gwmmotors.com.br/pt/media-center/news/2026/gwm-inicia-reservas-antecipadas-do-ora-5-primeiro-suv-100-eletrico-da-marca"
+    },
+    {
+      "label": "Vrum — Ora 5 estreia por R$ 159 mil",
+      "url": "https://www.vrum.com.br/mercado/2026/06/7447763-gwm-ora-5-estreia-no-brasil-como-suv-eletrico-de-rs-159-mil.html"
+    },
+    {
+      "label": "Autodata — revista jul/2026 (garantia GWM 5 anos sem limite de km)",
+      "url": "https://www.autodata.com.br/revistas/flipbook/434-2026-07/80/"
     }
   ],
-  "notes": "Versão única: câmeras 360°, bancos em couro sintético ventilados com ajustes elétricos (motorista e passageiro), teto panorâmico de vidro fixo com cortina elétrica (marcado como sunroof=true, mas não abre), ar automático com filtro N95, indução 50 W, faróis full LED, porta-malas elétrico, rodas 18\", B-Call/E-Call, ADAS nível 2+ (itens individuais não listados) e 6 airbags.",
+  "notes": "Versão única: câmeras 360°, bancos em couro sintético ventilados com ajustes elétricos (motorista e passageiro), teto panorâmico de vidro fixo com cortina elétrica (marcado como sunroof=true, mas não abre), ar automático com filtro N95, indução 50 W, faróis full LED, porta-malas elétrico, rodas 18\", B-Call/E-Call, ADAS nível 2+ (itens individuais não listados) e 6 airbags. | Versão única: câmeras 360°, bancos em couro sintético ventilados com ajustes elétricos (motorista e passageiro), teto panorâmico de vidro fixo com cortina elétrica (marcado como sunroof=true, mas não abre), ar automático com filtro N95, indução 50 W, faróis full LED, porta-malas elétrico, rodas 18\", B-Call/E-Call, ADAS nível 2+ (itens individuais não listados) e 6 airbags. Versão única: painel 10,25\" + central 14,6\" com CarPlay/Android Auto sem fio; ADAS: AEB, ACC com função em curvas, permanência e centralização em faixa, ponto cego, alerta de tráfego cruzado dianteiro e traseiro (GWM). App My GWM com climatização remota, travamento, localização. [Out/2026, lote 3: páginas não puderam ser abertas (proxy bloqueou); dados abaixo vêm de trechos de resultados de busca cruzados.]",
   "unverified": [
-    "tech.screen10",
-    "tech.wirelessMirroring",
-    "tech.digitalCluster",
-    "tech.adaptiveCruise",
-    "tech.connectedApp",
     "tech.keyless",
-    "comfort.rearVents",
-    "safety.aeb",
-    "safety.laneKeep",
-    "safety.blindSpot",
-    "safety.rearCrossTraffic"
+    "comfort.rearVents"
   ]
 }

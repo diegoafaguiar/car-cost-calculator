@@ -5,7 +5,7 @@
   "tech": {
     "screen10": true,
     "wirelessMirroring": true,
-    "digitalCluster": null,
+    "digitalCluster": true,
     "wirelessCharger": true,
     "camera360": true,
     "adaptiveCruise": true,
@@ -16,7 +16,7 @@
     "automatic": true,
     "digitalAC": null,
     "rearVents": null,
-    "leather": null,
+    "leather": true,
     "powerSeat": true,
     "seatClimate": true,
     "sunroof": true
@@ -26,7 +26,7 @@
     "aeb": true,
     "laneKeep": true,
     "blindSpot": true,
-    "rearCrossTraffic": null
+    "rearCrossTraffic": true
   },
   "ncap": {
     "stars": 5,
@@ -51,6 +51,14 @@
     {
       "label": "Autodata Sealion 7",
       "url": "https://www.autodata.com.br/noticias/2026/05/26/suv-cupe-premium-byd-sealion-7-alcanca-531-cv-com-dois-motores-eletricos/104473/"
+    },
+    {
+      "label": "BYD Brasil – Sealion 7 chega ao Brasil (painel 10,25\", HUD, couro Nappa)",
+      "url": "https://www.byd.com/br/byd-Sealion-7-chega-ao-Brasil-com-performance-de-superesportivo"
+    },
+    {
+      "label": "Diário do Comércio – Sealion 7 chega ao Brasil",
+      "url": "https://diariodocomercio.com.br/veiculos/byd-sealion-7-chega-brasil/"
     }
   ],
   "unverified": [
@@ -61,5 +69,6 @@
     "rearVents",
     "leather",
     "rearCrossTraffic"
-  ]
+  ],
+  "notes": "Out/2026: painel de instrumentos digital de 10,25\" + HUD e acabamento em couro legítimo tipo Nappa (BYD Brasil); alerta e frenagem de tráfego cruzado traseiro na ficha do Canal VE."
 }

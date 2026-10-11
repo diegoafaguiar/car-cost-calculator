@@ -68,9 +68,17 @@
     {
       "label": "Motor Show — Uni-T chega com 180 cv",
       "url": "https://motorshow.com.br/caoa-changan-uni-t-lancamento-brasil"
+    },
+    {
+      "label": "AutoPapo – Caoa Changan Uni-T estreia (itens de série Infinity)",
+      "url": "https://autopapo.com.br/noticia/caoa-changan-uni-t-estreia/"
+    },
+    {
+      "label": "Revista Carro – Uni-T estreia com aumento de preço",
+      "url": "https://revistacarro.com.br/changan-uni-t-estreia-no-brasil-com-aumento-de-preco-semanas-apos-lancamento/"
     }
   ],
-  "notes": "Versão única: 6 airbags, ACC stop & go, frenagem autônoma, alerta de colisão, ponto cego, permanência em faixa, câmera 360° com sensores dianteiros e traseiros, teto panorâmico fixo, bancos com ventilação e aquecimento, som de 11 alto-falantes, central de 12,8\" com CarPlay/Android Auto sem fio e painel de 12,3\" (Car.Blog.br; outra fonte cita 10,1\"/7\"). Atualização: ar digital dual zone, carregador por indução, chave presencial, bancos dianteiros com ajuste elétrico (motorista com 6 ajustes), estacionamento autônomo pela chave ou pelo app e app Changan Connect com 2 anos de internet (FichasCar/Verificar Auto/Revista Cars, via resumo de busca). Material dos bancos (couro) citado de forma ambígua, mantido null.",
+  "notes": "Versão única: 6 airbags, ACC stop & go, frenagem autônoma, alerta de colisão, ponto cego, permanência em faixa, câmera 360° com sensores dianteiros e traseiros, teto panorâmico fixo, bancos com ventilação e aquecimento, som de 11 alto-falantes, central de 12,8\" com CarPlay/Android Auto sem fio e painel de 12,3\" (Car.Blog.br; outra fonte cita 10,1\"/7\"). Atualização: ar digital dual zone, carregador por indução, chave presencial, bancos dianteiros com ajuste elétrico (motorista com 6 ajustes), estacionamento autônomo pela chave ou pelo app e app Changan Connect com 2 anos de internet (FichasCar/Verificar Auto/Revista Cars, via resumo de busca). Material dos bancos (couro) citado de forma ambígua, mantido null. | Versão única: 6 airbags, ACC stop & go, frenagem autônoma, alerta de colisão, ponto cego, permanência em faixa, câmera 360° com sensores dianteiros e traseiros, teto panorâmico fixo, bancos com ventilação e aquecimento, som de 11 alto-falantes, central de 12,8\" com CarPlay/Android Auto sem fio e painel de 12,3\" (Car.Blog.br; outra fonte cita 10,1\"/7\"). Out/2026 (trechos de busca): Infinity tem bancos dianteiros elétricos, climatizados e com massagem, carregador sem fio e estacionamento autônomo acionado pela chave ou pelo app. Couro, ar digital, saídas traseiras, keyless e RCTA só aparecem em fontes de outros mercados (Filipinas/Oriente Médio); mantidos null.",
   "unverified": [
     "comfort.rearVents (só uma fonte duvidosa)",
     "comfort.leather",

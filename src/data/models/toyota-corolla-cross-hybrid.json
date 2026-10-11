@@ -51,7 +51,7 @@
     "trunkL": 440,
     "lengthMm": 4460,
     "wheelbaseMm": 2640,
-    "safety": null,
+    "safety": "7 airbags; Toyota Safety Sense; sem teste Latin NCAP; ANCAP 5 estrelas (2022) e Euro NCAP 5 estrelas (2022) para o Corolla Cross híbrido",
     "warranty": "5 anos sem limite de km para pessoa física (100 mil km para uso comercial); componentes híbridos (bateria, ECUs e inversor) com mais 36 meses: 8 anos/200 mil km. Toyota 10: renovação de 12 meses/10 mil km por revisão na rede até 10 anos/200 mil km, válido para veículos fabricados a partir de 2020. Segundo concessionária, a garantia acompanha o carro na revenda se as revisões estiverem em dia."
   },
   "inmetro": {
@@ -170,6 +170,10 @@
     {
       "label": "Reclame Aqui – garantia da bateria híbrida",
       "url": "https://www.reclameaqui.com.br/toyota/bateria-hybrida-garantia_WCdPJMSUcOnHtvi7/"
+    },
+    {
+      "label": "ANCAP – Corolla Cross 5 estrelas (2022)",
+      "url": "https://www.ancap.com.au/media-and-gallery/media-releases/93ae04"
     }
   ],
   "unverified": [

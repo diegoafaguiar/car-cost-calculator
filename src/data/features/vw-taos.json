@@ -7,19 +7,19 @@
     "wirelessMirroring": true,
     "digitalCluster": true,
     "wirelessCharger": true,
-    "camera360": null,
+    "camera360": false,
     "adaptiveCruise": true,
-    "connectedApp": null,
+    "connectedApp": true,
     "keyless": true
   },
   "comfort": {
     "automatic": true,
     "digitalAC": true,
-    "rearVents": null,
+    "rearVents": true,
     "leather": true,
     "powerSeat": true,
     "seatClimate": null,
-    "sunroof": null
+    "sunroof": false
   },
   "safety": {
     "airbags6": true,
@@ -51,6 +51,26 @@
     {
       "label": "O Povo - Taos 5 estrelas Latin NCAP",
       "url": "https://www.opovo.com.br/noticias/veiculos/2025/12/05/novo-volkswagen-taos-conquista-nota-maxima-em-seguranca-no-latin-ncap.html"
+    },
+    {
+      "label": "Webmotors — teste Taos 2026",
+      "url": "https://www.webmotors.com.br/wm1/testes/volkswagen-taos-2026"
+    },
+    {
+      "label": "Terra — Taos 2026 versões e equipamentos",
+      "url": "https://www.terra.com.br/mobilidade/carros/volkswagen-taos-2026-versoes-precos-consumo-e-equipamentos,1c6e243921bfc2181a4b5a3c2cf474f5wd7cdfba.html"
+    },
+    {
+      "label": "Band — Taos 2026 estreia",
+      "url": "https://www.band.com.br/bandmotor/noticias/volkswagen-taos-2026-estreia-com-visual-renovado-a-partir-de-r-199-mil-202601181055"
+    },
+    {
+      "label": "Click Auto — Taos 2026 preço",
+      "url": "https://clickauto.clickpb.com.br/testes-e-avaliacoes/vw-taos-2026-preco.html"
+    },
+    {
+      "label": "Jornal Dois Irmãos — Taos 2026",
+      "url": "https://www.jornaldoisirmaos.com.br/noticia/26012026-novo-volkswagen-taos-2026--precos-versoes-e-equipamentos"
     }
   ],
   "unverified": [
@@ -60,5 +80,5 @@
     "seatClimate",
     "sunroof"
   ],
-  "notes": "Highline: VW Play 10,1\", App-Connect sem fio, Active Info Display 10,25\", indução, Kessy, ACC Stop&Go, AEB, Lane Assist/Travel Assist, Side Assist + alerta de tráfego traseiro, 6 airbags, couro parcial, ar dual zone, banco elétrico. Teto panorâmico aparece como possível (opcional/pacote) — não confirmado como de série."
+  "notes": "Highline: VW Play 10,1\", App-Connect sem fio, Active Info Display 10,25\", indução, Kessy, ACC Stop&Go, AEB, Lane Assist/Travel Assist, Side Assist + alerta de tráfego traseiro, 6 airbags, couro parcial, ar dual zone, banco elétrico. Teto panorâmico aparece como possível (opcional/pacote) — não confirmado como de série. | Highline: VW Play 10,1\", App-Connect sem fio, Active Info Display 10,25\", indução, Kessy, ACC Stop&Go, AEB, Lane Assist/Travel Assist, Side Assist + alerta de tráfego traseiro, 6 airbags, couro parcial, ar dual zone, banco elétrico. Teto panorâmico aparece como possível (opcional/pacote) — não confirmado como de série. Out/2026: sem câmera 360° (Webmotors); teto panorâmico é opcional (fica false para a versão de série); saída de ar traseira e VW Play com acesso remoto confirmados. Bancos: Band fala em aquecimento e Mercado Livre em ventilação, sem confirmação (seatClimate segue null). Páginas não abertas; dados de trechos de busca."
 }

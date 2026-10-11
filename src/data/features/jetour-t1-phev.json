@@ -3,26 +3,26 @@
   "version": "Jetour T1 Advance 2026",
   "researchedAt": "2026-10",
   "tech": {
-    "screen10": null,
-    "wirelessMirroring": null,
-    "digitalCluster": null,
-    "wirelessCharger": null,
-    "camera360": null,
+    "screen10": true,
+    "wirelessMirroring": true,
+    "digitalCluster": true,
+    "wirelessCharger": false,
+    "camera360": true,
     "adaptiveCruise": true,
     "connectedApp": null,
-    "keyless": null
+    "keyless": true
   },
   "comfort": {
-    "automatic": null,
-    "digitalAC": null,
-    "rearVents": null,
+    "automatic": true,
+    "digitalAC": true,
+    "rearVents": true,
     "leather": null,
     "powerSeat": null,
-    "seatClimate": null,
+    "seatClimate": false,
     "sunroof": false
   },
   "safety": {
-    "airbags6": null,
+    "airbags6": true,
     "aeb": true,
     "laneKeep": true,
     "blindSpot": true,
@@ -52,24 +52,25 @@
     {
       "label": "Mobiauto - T1 e T2 itens de série",
       "url": "https://www.mobiauto.com.br/revista/jetour-t1-e-t2-precos-itens-de-serie-e-diferencas-entre-versoes/10218"
+    },
+    {
+      "label": "Webmotors — Jetour T1 2027 (itens por versão)",
+      "url": "https://www.webmotors.com.br/jetour/t1/2027"
+    },
+    {
+      "label": "AutoPapo — Jetour T1 e T2: versões e itens de série",
+      "url": "https://autopapo.com.br/noticia/jetour-t1-t2-precos-versoes-motores-autonomia-itens-de-serie/"
+    },
+    {
+      "label": "Auto+ TV — Jetour T1 chega por R$ 249.900",
+      "url": "https://www.automaistv.com.br/novidades/jetour-t1-chega-sem-4x4-por-r-249-900-para-brigar-com-ford-bronco-sport/"
     }
   ],
-  "notes": "R$ 249.900. Autoo e Motor Show dão ao Advance ACC, AEB, assistente de faixa, alertas de colisão frontal e traseira, tráfego cruzado traseiro e ponto cego; a Itatiaia sugere que o ADAS nível 2 é do Premium (conflito). Teto panorâmico só no Premium segundo Autoo, Motor Show e Mobiauto (a Itatiaia o lista no Advance). Também são do Premium: carregador sem fio de 50 W, memória no banco, som Sony, luz ambiente e tampa traseira elétrica. Airbags: 6 em outros mercados; não confirmado no Brasil.",
+  "notes": "R$ 249.900. Autoo e Motor Show dão ao Advance ACC, AEB, assistente de faixa, alertas de colisão frontal e traseira, tráfego cruzado traseiro e ponto cego; a Itatiaia sugere que o ADAS nível 2 é do Premium (conflito). Teto panorâmico só no Premium segundo Autoo, Motor Show e Mobiauto (a Itatiaia o lista no Advance). Também são do Premium: carregador sem fio de 50 W, memória no banco, som Sony, luz ambiente e tampa traseira elétrica. Airbags: 6 em outros mercados; não confirmado no Brasil. | R$ 249.900. Autoo e Motor Show dão ao Advance ACC, AEB, assistente de faixa, alertas de colisão frontal e traseira, tráfego cruzado traseiro e ponto cego; a Itatiaia sugere que o ADAS nível 2 é do Premium (conflito). Teto panorâmico só no Premium segundo Autoo, Motor Show e Mobiauto (a Itatiaia o lista no Advance). Também são do Premium: carregador sem fio de 50 W, memória no banco, som Sony, luz ambiente e tampa traseira elétrica. Airbags: 6 em outros mercados; não confirmado no Brasil. Advance (Webmotors diz que a 2027 repete a 2026): 6 airbags, chave presencial, partida remota, painel 10,2\", central 15,6\" sem fio, ar digital dual zone com saídas traseiras (trecho truncado na busca), câmera 540°/360°. Premium acrescenta bancos ventilados, memória, indução, teto, som Sony e tampa elétrica. Couro e ajuste elétrico na Advance não confirmados (fontes de outros mercados citam eco-couro e ajustes elétricos). [Out/2026, lote 3: páginas não puderam ser abertas (proxy bloqueou); dados abaixo vêm de trechos de resultados de busca cruzados.]",
   "unverified": [
-    "tech.screen10",
-    "tech.wirelessMirroring",
-    "tech.digitalCluster",
-    "tech.wirelessCharger",
-    "tech.camera360",
     "tech.connectedApp",
-    "tech.keyless",
-    "comfort.automatic",
-    "comfort.digitalAC",
-    "comfort.rearVents",
     "comfort.leather",
     "comfort.powerSeat",
-    "comfort.seatClimate",
-    "safety.airbags6",
     "ncap"
   ]
 }

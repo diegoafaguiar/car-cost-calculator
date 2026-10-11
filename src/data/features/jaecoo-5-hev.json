@@ -5,10 +5,10 @@
   "tech": {
     "screen10": false,
     "wirelessMirroring": true,
-    "digitalCluster": null,
-    "wirelessCharger": null,
+    "digitalCluster": true,
+    "wirelessCharger": false,
     "camera360": false,
-    "adaptiveCruise": null,
+    "adaptiveCruise": false,
     "connectedApp": null,
     "keyless": null
   },
@@ -16,16 +16,16 @@
     "automatic": true,
     "digitalAC": true,
     "rearVents": null,
-    "leather": null,
-    "powerSeat": null,
-    "seatClimate": null,
+    "leather": false,
+    "powerSeat": false,
+    "seatClimate": false,
     "sunroof": false
   },
   "safety": {
     "airbags6": true,
-    "aeb": null,
-    "laneKeep": null,
-    "blindSpot": null,
+    "aeb": false,
+    "laneKeep": false,
+    "blindSpot": false,
     "rearCrossTraffic": null
   },
   "ncap": {
@@ -47,22 +47,21 @@
     {
       "label": "AutoPapo — Jaecoo 5 HEV",
       "url": "https://autopapo.com.br/noticia/jaecoo-5-lancamento-preco-versoes/"
+    },
+    {
+      "label": "Auto+ TV — exclusivo: versões do Jaecoo 5 e itens de série",
+      "url": "https://www.automaistv.com.br/segredos/exclusivo-descobrimos-versoes-do-jaecoo-5-e-todos-os-itens-de-serie/"
+    },
+    {
+      "label": "Vrum — Jaecoo 5 lançado em duas versões (set/2026)",
+      "url": "https://www.vrum.com.br/mercado/2026/09/7510652-jaecoo-5-e-lancado-em-duas-versoes-tem-mais-de-mil-km-de-autonomia-e-custa-entre-rs-154-mil-rs-179-mil.html"
     }
   ],
-  "notes": "Comfort: multimídia de 9\" com CarPlay/Android Auto sem fio, ar digital duas zonas, rodas 18\", 6 airbags, freio de estacionamento eletrônico com Auto Hold, câmera de ré, piloto automático (não adaptativo confirmado) e assistente de frenagem (BAS). Câmera 540°, teto panorâmico de 1,45 m² e tela de 13,2\" só na Prestige. ADAS (ACC/AEB) citado sem atribuição clara por versão.",
+  "notes": "Comfort: multimídia de 9\" com CarPlay/Android Auto sem fio, ar digital duas zonas, rodas 18\", 6 airbags, freio de estacionamento eletrônico com Auto Hold, câmera de ré, piloto automático (não adaptativo confirmado) e assistente de frenagem (BAS). Câmera 540°, teto panorâmico de 1,45 m² e tela de 13,2\" só na Prestige. ADAS (ACC/AEB) citado sem atribuição clara por versão. | Comfort: multimídia de 9\" com CarPlay/Android Auto sem fio, ar digital duas zonas, rodas 18\", 6 airbags, freio de estacionamento eletrônico com Auto Hold, câmera de ré, piloto automático (não adaptativo confirmado) e assistente de frenagem (BAS). Câmera 540°, teto panorâmico de 1,45 m² e tela de 13,2\" só na Prestige. ADAS (ACC/AEB) citado sem atribuição clara por versão. Comfort: painel digital 8\", central 9\", bancos em tecido, câmera de ré, BAS. Pacote ADAS 2.5 (ACC, AEB, FCW, faixa, ponto cego), indução, bancos elétricos/ventilados, 540°, teto e central 13,2\" são exclusivos da Prestige. Chave presencial: Auto+ TV a lista na Prestige, ficha europeia cita keyless na base (conflito, null). [Out/2026, lote 3: páginas não puderam ser abertas (proxy bloqueou); dados abaixo vêm de trechos de resultados de busca cruzados.]",
   "unverified": [
-    "tech.digitalCluster",
-    "tech.wirelessCharger",
-    "tech.adaptiveCruise",
     "tech.connectedApp",
     "tech.keyless",
     "comfort.rearVents",
-    "comfort.leather",
-    "comfort.powerSeat",
-    "comfort.seatClimate",
-    "safety.aeb",
-    "safety.laneKeep",
-    "safety.blindSpot",
     "safety.rearCrossTraffic"
   ]
 }

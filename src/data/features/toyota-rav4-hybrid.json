@@ -10,14 +10,14 @@
     "camera360": true,
     "adaptiveCruise": true,
     "connectedApp": null,
-    "keyless": null
+    "keyless": true
   },
   "comfort": {
     "automatic": true,
     "digitalAC": null,
     "rearVents": null,
     "leather": null,
-    "powerSeat": null,
+    "powerSeat": true,
     "seatClimate": true,
     "sunroof": true
   },
@@ -51,6 +51,22 @@
     {
       "label": "Encontra Carros - Novo RAV4 2026",
       "url": "https://www.encontracarros.com.br/?p=76844"
+    },
+    {
+      "label": "Mecânica Online — novo RAV4 Hybrid 2026 estreia no Brasil",
+      "url": "https://mecanicaonline.com.br/2026/04/novo-toyota-rav4-hybrid-2026-estreia-no-brasil-com-239-cv-e-foco-em-eficiencia/"
+    },
+    {
+      "label": "ABC do ABC — nova geração do RAV4 chega ao Brasil",
+      "url": "https://abcdoabc.com.br/toyota-rav4-brasil/"
+    },
+    {
+      "label": "iCarros — RAV4 Hybrid 2.5 HEV SX AWD 2026 (ficha)",
+      "url": "https://www.icarros.com.br/catalogo/marcas/toyota/rav4-hybrid"
+    },
+    {
+      "label": "Verificar Auto — RAV4 2026 preços e ficha",
+      "url": "https://verificarauto.com.br/toyota-rav4-2026-precos/"
     }
   ],
   "unverified": [
@@ -61,5 +77,5 @@
     "leather",
     "powerSeat"
   ],
-  "notes": "SX: multimídia 12,9\", CarPlay/AA sem fio, painel digital 12,3\", dois carregadores sem fio, câmera 360, head-up display, teto panorâmico, bancos traseiros aquecidos, som premium, Toyota Safety Sense 4.0 (ACC, AEB, assistências de faixa), ponto cego + RCTA, 7 airbags, câmbio e-CVT. Limite de buscas atingido antes de confirmar couro, banco elétrico, ar digital/saídas traseiras, chave presencial e app."
+  "notes": "SX: multimídia 12,9\", CarPlay/AA sem fio, painel digital 12,3\", dois carregadores sem fio, câmera 360, head-up display, teto panorâmico, bancos traseiros aquecidos, som premium, Toyota Safety Sense 4.0 (ACC, AEB, assistências de faixa), ponto cego + RCTA, 7 airbags, câmbio e-CVT. Limite de buscas atingido antes de confirmar couro, banco elétrico, ar digital/saídas traseiras, chave presencial e app. | SX: multimídia 12,9\", CarPlay/AA sem fio, painel digital 12,3\", dois carregadores sem fio, câmera 360, head-up display, teto panorâmico, bancos traseiros aquecidos, som premium, Toyota Safety Sense 4.0 (ACC, AEB, assistências de faixa), ponto cego + RCTA, 7 airbags, câmbio e-CVT. Limite de buscas atingido antes de confirmar couro, banco elétrico, ar digital/saídas traseiras, chave presencial e app. SX: bancos ventilados/aquecidos com ajuste elétrico e memória para o motorista (Mecânica Online); chave inteligente com partida por botão (ABC do ABC). Couro não confirmado (anúncio cita 'couro e material sintético'). Torque oficial não encontrado (iCarros: N/D). [Out/2026, lote 3: páginas não puderam ser abertas (proxy bloqueou); dados abaixo vêm de trechos de resultados de busca cruzados.]"
 }

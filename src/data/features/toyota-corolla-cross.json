@@ -7,33 +7,34 @@
     "wirelessMirroring": true,
     "digitalCluster": true,
     "wirelessCharger": true,
-    "camera360": null,
+    "camera360": false,
     "adaptiveCruise": true,
     "connectedApp": true,
-    "keyless": null
+    "keyless": true
   },
   "comfort": {
     "automatic": true,
-    "digitalAC": null,
-    "rearVents": null,
+    "digitalAC": true,
+    "rearVents": true,
     "leather": true,
-    "powerSeat": null,
+    "powerSeat": false,
     "seatClimate": null,
-    "sunroof": null
+    "sunroof": false
   },
   "safety": {
     "airbags6": true,
     "aeb": true,
     "laneKeep": true,
-    "blindSpot": null,
-    "rearCrossTraffic": null
+    "blindSpot": false,
+    "rearCrossTraffic": false
   },
   "ncap": {
     "stars": 5,
     "year": 2022,
     "program": "ANCAP (Corolla Cross australiano; Latin NCAP não testou o Corolla Cross)",
     "note": "Não encontrado teste Latin NCAP do Corolla Cross; ANCAP 5 estrelas (nov/2022, critérios 2020-2022). Euro NCAP também atribuiu 5 estrelas (2022).",
-    "source": "https://www.ancap.com.au/media-and-gallery/media-releases/93ae04"
+    "source": "https://www.ancap.com.au/media-and-gallery/media-releases/93ae04",
+    "counts": true
   },
   "sources": [
     {
@@ -51,6 +52,14 @@
     {
       "label": "Webmotors - Corolla Cross XRE 2026",
       "url": "https://www.webmotors.com.br/toyota/corolla-cross/2026"
+    },
+    {
+      "label": "Guia do Carro — Corolla Cross 2027: XRE com ar digital com saídas traseiras e chave presencial; XRX acrescenta teto solar, banco elétrico, ponto cego e visão 360°",
+      "url": "https://guiadocarro.net.br/toyota-corolla-cross-2027-precos-versoes-consumo-e-equipamentos"
+    },
+    {
+      "label": "Autoo — Corolla Cross 2027 (XRX acrescenta banco do motorista elétrico e alerta de tráfego cruzado com ponto cego)",
+      "url": "https://www.autoo.com.br/toyota-corolla-cross-2027--confira-precos-pecas-consumo-e-equipamentos-do-suv/"
     }
   ],
   "unverified": [
@@ -64,5 +73,5 @@
     "blindSpot",
     "rearCrossTraffic"
   ],
-  "notes": "XRE 2027: quadro digital 12,3\", carregador por indução, Serviços Conectados Toyota (novidade na XRE), Toyota Safety Sense (pré-colisão, ACC, permanência em faixa), 7 airbags, TPMS. leather=true com base em listagem genérica (Webmotors). Ponto cego/RCTA não confirmados para a XRE."
+  "notes": "XRE 2027: quadro digital 12,3\", carregador por indução, Serviços Conectados Toyota (novidade na XRE), Toyota Safety Sense (pré-colisão, ACC, permanência em faixa), 7 airbags, TPMS. leather=true com base em listagem genérica (Webmotors). Ponto cego/RCTA não confirmados para a XRE. | XRE 2027: quadro digital 12,3\", carregador por indução, Serviços Conectados Toyota (novidade na XRE), Toyota Safety Sense (pré-colisão, ACC, permanência em faixa), 7 airbags, TPMS. leather=true com base em listagem genérica (Webmotors). Ponto cego/RCTA não confirmados para a XRE. Out/2026: XRE 2027 com ar digital com saídas traseiras e chave presencial; banco elétrico, ponto cego, tráfego cruzado, teto solar e visão 360° listados como acréscimos da XRX (por isso false na XRE). Aquecimento/ventilação de bancos não citado."
 }

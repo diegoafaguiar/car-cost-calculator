@@ -36,10 +36,10 @@
     "torqueKgfm": "25,5",
     "transmission": "automático Aisin de 8 marchas",
     "trunkL": 498,
-    "lengthMm": null,
-    "wheelbaseMm": null,
+    "lengthMm": 4461,
+    "wheelbaseMm": 2680,
     "safety": "Latin NCAP 5 estrelas (2021; renovado em dez/2025)",
-    "warranty": null
+    "warranty": "3 anos (garantia total VW Brasil para 0 km)"
   },
   "inmetro": {
     "version": "Taos 1.4 250 TSI 2026",

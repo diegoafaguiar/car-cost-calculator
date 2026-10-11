@@ -5,7 +5,7 @@
   "tech": {
     "screen10": false,
     "wirelessMirroring": false,
-    "digitalCluster": null,
+    "digitalCluster": false,
     "wirelessCharger": null,
     "camera360": null,
     "adaptiveCruise": null,
@@ -16,7 +16,7 @@
     "automatic": false,
     "digitalAC": false,
     "rearVents": null,
-    "leather": null,
+    "leather": false,
     "powerSeat": null,
     "seatClimate": null,
     "sunroof": null
@@ -47,16 +47,26 @@
     {
       "label": "Olhar Digital - C3 zero no Latin NCAP",
       "url": "https://olhardigital.com.br/2023/07/14/carros-e-tecnologia/citroen-c3-leva-zero-em-teste-de-seguranca-do-latin-ncap/"
+    },
+    {
+      "label": "Mobile Citroën (concessionária) — Novo C3 (Live Go com bancos dianteiros em tecido)",
+      "url": "https://www.mobilecitroen.com.br/novos/novo-c3"
+    },
+    {
+      "label": "Motor Show — Citroën C3 2026 (painel digital e ar digital automático exclusivos das versões topo)",
+      "url": "https://motorshow.com.br/citroen-c3-2026"
+    },
+    {
+      "label": "Motor Show — Citroën oferece garantia estendida (garantia padrão de 3 anos sem limite de km)",
+      "url": "https://motorshow.com.br/citroen-oferece-garantia-estendida-para-todos-os-carros-veja-como-funciona"
     }
   ],
   "unverified": [
-    "tech.digitalCluster",
     "tech.wirelessCharger",
     "tech.camera360",
     "tech.adaptiveCruise",
     "tech.connectedApp",
     "comfort.rearVents",
-    "comfort.leather",
     "comfort.powerSeat",
     "comfort.seatClimate",
     "comfort.sunroof",
@@ -65,5 +75,5 @@
     "safety.blindSpot",
     "safety.rearCrossTraffic"
   ],
-  "notes": "Live Go: som com USB/Bluetooth (sem central; espelhamento só a partir da Live Plus), ar manual, chave canivete, 2 airbags frontais, câmbio manual 5 marchas."
+  "notes": "Live Go: som com USB/Bluetooth (sem central; espelhamento só a partir da Live Plus), ar manual, chave canivete, 2 airbags frontais, câmbio manual 5 marchas. | Live Go: som com USB/Bluetooth (sem central; espelhamento só a partir da Live Plus), ar manual, chave canivete, 2 airbags frontais, câmbio manual 5 marchas. Out/2026: Live Go com bancos de tecido e painel não digital (painel digital só nas versões topo)."
 }

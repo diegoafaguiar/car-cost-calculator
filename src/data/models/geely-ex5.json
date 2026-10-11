@@ -64,10 +64,10 @@
     "torqueKgfm": "32,6",
     "transmission": "Redução única (elétrico)",
     "trunkL": 461,
-    "lengthMm": null,
-    "wheelbaseMm": null,
+    "lengthMm": 4615,
+    "wheelbaseMm": 2750,
     "safety": "6 airbags; Euro NCAP 5 estrelas (2025) e ANCAP 5 estrelas (2025); sem Latin NCAP",
-    "warranty": null
+    "warranty": "6 anos ou 150 mil km (veículo) e 8 anos ou 150 mil km (bateria de tração, com SOH ≥ 70%), segundo o manual de garantia Geely Brasil"
   },
   "inmetro": {
     "version": "Geely EX5 (elétrico)",
@@ -165,6 +165,14 @@
     {
       "label": "PBEV/Inmetro — consumo energético",
       "url": "https://www.gov.br/inmetro/pt-br/assuntos/avaliacao-da-conformidade/programa-brasileiro-de-etiquetagem/tabelas-de-eficiencia-energetica/veiculos-automotivos-pbe-veicular/mascara-pbev-2026_19_jan-rev01.pdf"
+    },
+    {
+      "label": "Geely Brasil – ficha técnica EX5 (PDF)",
+      "url": "https://static.autoforce.com/plugins/files/clientes/geely-brasil/produtos/ws/ficha-tecnica-geely-ex5.pdf"
+    },
+    {
+      "label": "Geely Brasil – manual de garantia EX5 (PDF)",
+      "url": "https://static.autoforce.com/plugins/files/clientes/geely-brasil/produtos/ws/GEELY_EX5_Manual_Garantia.pdf"
     }
   ],
   "unverified": [

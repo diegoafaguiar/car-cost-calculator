@@ -37,14 +37,14 @@
   "specs": {
     "version": "Corolla XEi 2.0 CVT 2026",
     "engine": "2.0 Dynamic Force flex 4 cil. 16V",
-    "powerCv": null,
-    "torqueKgfm": null,
+    "powerCv": "177 (E) / 169 (G)",
+    "torqueKgfm": "21,4 (E/G)",
     "transmission": "CVT (10 marchas simuladas não confirmado)",
     "trunkL": 470,
     "lengthMm": 4630,
-    "wheelbaseMm": null,
+    "wheelbaseMm": 2700,
     "safety": "5 estrelas Latin NCAP (teste da geração E210; ano não confirmado)",
-    "warranty": null
+    "warranty": "5 anos sem limite de km (pessoa física) + programa Toyota 10"
   },
   "inmetro": {
     "version": "Corolla XEi 2.0 2026",

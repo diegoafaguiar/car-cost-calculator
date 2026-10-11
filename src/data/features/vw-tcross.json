@@ -8,7 +8,7 @@
     "digitalCluster": true,
     "wirelessCharger": null,
     "camera360": null,
-    "adaptiveCruise": null,
+    "adaptiveCruise": true,
     "connectedApp": true,
     "keyless": null
   },
@@ -53,12 +53,11 @@
       "url": "https://motorshow.com.br/volkswagen-t%e2%80%91cross-recebe-5-estrelas-em-seguranca-no-latin-ncap-assista/"
     }
   ],
-  "notes": "Pouca informação específica da versão '200 TSI' (entre Sense e Comfortline; R$ 152.490-155.990 conforme fonte). Itens marcados vêm do que vale para todas as versões/Sense: VW Play Connect 10,1\" com app (travar/destravar, localização), painel digital 8\", 6 airbags, câmbio automático 6 marchas. Comfortline acrescenta ar digital, indução e painel 10,25\" sobre a Sense, mas não se confirmou o que a 200 TSI tem.",
+  "notes": "Pouca informação específica da versão '200 TSI' (entre Sense e Comfortline; R$ 152.490-155.990 conforme fonte). Itens marcados vêm do que vale para todas as versões/Sense: VW Play Connect 10,1\" com app (travar/destravar, localização), painel digital 8\", 6 airbags, câmbio automático 6 marchas. Comfortline acrescenta ar digital, indução e painel 10,25\" sobre a Sense, mas não se confirmou o que a 200 TSI tem. | Pouca informação específica da versão '200 TSI' (entre Sense e Comfortline; R$ 152.490-155.990 conforme fonte). Itens marcados vêm do que vale para todas as versões/Sense: VW Play Connect 10,1\" com app (travar/destravar, localização), painel digital 8\", 6 airbags, câmbio automático 6 marchas. Comfortline acrescenta ar digital, indução e painel 10,25\" sobre a Sense, mas não se confirmou o que a 200 TSI tem. A 200 TSI adiciona à Sense ACC, AEB, alerta de pressão dos pneus, frenagem pós-colisão, volante em couro, apoio de braço e alarme keyless (Vrum/BNews; 'alarme keyless' não é chave presencial com partida). Comfortline 200 TSI 2026 ganhou indução com resfriamento (Auto+ TV), o que sugere que a 200 TSI não tem, mas sem confirmação explícita. [Out/2026, lote 3: páginas não puderam ser abertas (proxy bloqueou); dados abaixo vêm de trechos de resultados de busca cruzados.]",
   "unverified": [
     "tech.wirelessMirroring",
     "tech.wirelessCharger",
     "tech.camera360",
-    "tech.adaptiveCruise",
     "tech.keyless",
     "comfort.digitalAC",
     "comfort.rearVents",
