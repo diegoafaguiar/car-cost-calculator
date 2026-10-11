@@ -1,7 +1,7 @@
 import { useMemo, useState, type ReactNode } from 'react'
 import { CATALOG, CATEGORY_LABEL, POWERTRAIN_LABEL, TRANSMISSION_LABEL } from '../lib/catalog'
 import { money, money2, months, normalize, number } from '../lib/format'
-import { MODEL_INFO, type ModelInfo } from '../lib/modelInfo'
+import { MODEL_INFO, type ModelInfoCore } from '../lib/modelInfo'
 import { COST_KEYS, COST_LABEL, energyCostPerKm } from '../lib/tco'
 import type { Assumptions, Horizon, ScenarioResult } from '../lib/types'
 import { HORIZONS } from '../lib/types'
@@ -28,7 +28,7 @@ interface Props {
   carModelYear?: number
 }
 
-const infoFor = (r: ScenarioResult, carModelId?: string): ModelInfo | undefined => {
+const infoFor = (r: ScenarioResult, carModelId?: string): ModelInfoCore | undefined => {
   const m = CATALOG.find((x) => x.id === (r.scenario.kind === 'keep' ? carModelId : r.scenario.modelId))
   return m ? MODEL_INFO[m.infoId ?? m.id] : undefined
 }

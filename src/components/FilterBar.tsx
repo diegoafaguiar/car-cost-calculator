@@ -77,7 +77,7 @@ export function FilterBar({ prefs, onPrefs, carCategory, onlySavings, onOnlySavi
                 <ul className="max-h-72 overflow-y-auto py-1">
                   {suggestions.map((m) => (
                     <li key={m.id}>
-                      <a href={`#/carro/${m.id}`} className="flex items-center justify-between gap-3 px-3 py-2 text-sm hover:bg-surface-2">
+                      <a href={`/carro/${m.id}`} className="flex items-center justify-between gap-3 px-3 py-2 text-sm hover:bg-surface-2">
                         <span>
                           <span className="font-medium">
                             {m.brand} {m.model}

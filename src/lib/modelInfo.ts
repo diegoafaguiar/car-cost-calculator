@@ -41,8 +41,38 @@ export interface ModelInfo {
   unverified: string[]
 }
 
-const files = import.meta.glob<{ default: ModelInfo }>('../data/models/*.json', { eager: true })
+/** Campos usados fora da página do modelo (fotos, preços, ficha resumida). O resto da ficha carrega sob demanda. */
+export type ModelInfoCore = Pick<ModelInfo, 'id' | 'researchedAt' | 'wikipedia' | 'price0km' | 'versionsAndPrices' | 'specs' | 'inmetro'>
 
-export const MODEL_INFO: Record<string, ModelInfo> = Object.fromEntries(
-  Object.values(files).map((m) => [m.default.id, m.default]),
+// Cada glob importa só uma chave do JSON: o bundle principal não leva resumos, histórico e fontes.
+const ids = import.meta.glob<string>('../data/models/*.json', { eager: true, import: 'id' })
+const researchedAt = import.meta.glob<string>('../data/models/*.json', { eager: true, import: 'researchedAt' })
+const wikipedia = import.meta.glob<ModelInfo['wikipedia']>('../data/models/*.json', { eager: true, import: 'wikipedia' })
+const price0km = import.meta.glob<ModelInfo['price0km']>('../data/models/*.json', { eager: true, import: 'price0km' })
+const versionsAndPrices = import.meta.glob<ModelInfo['versionsAndPrices']>('../data/models/*.json', { eager: true, import: 'versionsAndPrices' })
+const specs = import.meta.glob<ModelInfo['specs']>('../data/models/*.json', { eager: true, import: 'specs' })
+const inmetro = import.meta.glob<ModelInfo['inmetro']>('../data/models/*.json', { eager: true, import: 'inmetro' })
+
+export const MODEL_INFO: Record<string, ModelInfoCore> = Object.fromEntries(
+  Object.keys(ids).map((path) => [
+    ids[path],
+    {
+      id: ids[path],
+      researchedAt: researchedAt[path],
+      wikipedia: wikipedia[path] ?? null,
+      price0km: price0km[path],
+      versionsAndPrices: versionsAndPrices[path] ?? [],
+      specs: specs[path],
+      inmetro: inmetro[path],
+    },
+  ]),
 )
+
+const full = import.meta.glob<{ default: ModelInfo }>('../data/models/*.json')
+const pathOf = Object.fromEntries(Object.entries(ids).map(([path, id]) => [id, path]))
+
+/** Ficha completa (resumo, histórico, fontes), carregada só quando a página do modelo abre. */
+export async function loadModelInfo(id: string): Promise<ModelInfo | undefined> {
+  const path = pathOf[id]
+  return path ? (await full[path]()).default : undefined
+}

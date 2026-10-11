@@ -1,4 +1,4 @@
-import { useEffect, useMemo, useRef, useState } from 'react'
+import { lazy, Suspense, useEffect, useMemo, useRef, useState } from 'react'
 import { BreakdownBars } from './components/BreakdownBars'
 import { CarHero } from './components/CarHero'
 import { Comparator } from './components/Comparator'
@@ -8,7 +8,6 @@ import { DetailDrawer } from './components/DetailDrawer'
 import { ErrorBoundary } from './components/ErrorBoundary'
 import { ExportMenu } from './components/ExportMenu'
 import { FilterBar } from './components/FilterBar'
-import { ModelPage } from './components/ModelPage'
 import { KIND_LABEL, RankingTable, type SortKey } from './components/RankingTable'
 import { SettingsDrawer, type SettingsTab } from './components/SettingsDrawer'
 import { TopModels } from './components/TopModels'
@@ -21,6 +20,14 @@ import { money, normalize } from './lib/format'
 import { buildScenarios, currentCarValue, groupByModel, modelYearOf, tradeInFor, priceKey, runAll, type PriceEntry } from './lib/tco'
 import type { CustomCar, Horizon, Preferences, RankRow, ScenarioResult } from './lib/types'
 import { usePersisted } from './lib/usePersisted'
+import { navigate, paths, useRoute, usePageMeta } from './lib/router'
+
+// Páginas carregadas sob demanda: o painel abre sem baixar o código das fichas e listas.
+const ModelPage = lazy(() => import('./components/ModelPage').then((m) => ({ default: m.ModelPage })))
+const CatalogPage = lazy(() => import('./components/CatalogPage').then((m) => ({ default: m.CatalogPage })))
+const BrandsPage = lazy(() => import('./components/BrandPages').then((m) => ({ default: m.BrandsPage })))
+const BrandPage = lazy(() => import('./components/BrandPages').then((m) => ({ default: m.BrandPage })))
+const NotFound = lazy(() => import('./components/BrandPages').then((m) => ({ default: m.NotFound })))
 
 const YEAR = new Date().getFullYear()
 const START_MONTH = new Date().getMonth()
@@ -93,22 +100,10 @@ function sortValue(r: ScenarioResult, key: SortKey, horizon: Horizon, rank: numb
   }
 }
 
-function useHashRoute() {
-  const [hash, setHash] = useState(() => window.location.hash)
-  useEffect(() => {
-    const on = () => {
-      setHash(window.location.hash)
-      if (window.location.hash.startsWith('#/')) window.scrollTo(0, 0)
-    }
-    window.addEventListener('hashchange', on)
-    return () => window.removeEventListener('hashchange', on)
-  }, [])
-  return hash
-}
-
 export default function App() {
-  const route = useHashRoute()
-  const modelRoute = route.match(/^#\/carro\/([\w-]+)/)?.[1]
+  const route = useRoute()
+  const onPage = route.name !== 'home'
+
   const [car, setCar] = usePersisted('ccc:car', DEFAULT_CAR, (s) => {
     // Versões anteriores não separavam as revisões: os R$ 4.200/ano já as incluíam.
     if (s.revisions !== undefined) {
@@ -303,7 +298,7 @@ export default function App() {
     <div className="min-h-dvh">
       <header className="sticky top-0 z-30 border-b border-line bg-surface/85 backdrop-blur">
         <div className="mx-auto flex h-14 max-w-[1280px] items-center gap-3 px-4 sm:px-6">
-          <a href="#/" className="flex shrink-0 items-center gap-2.5" aria-label="Custo de Carro — início">
+          <a href="/" className="flex shrink-0 items-center gap-2.5" aria-label="Custo de Carro — início">
             <span className="grid size-8 place-items-center rounded-lg bg-accent text-accent-ink" aria-hidden>
               <svg viewBox="0 0 24 24" className="size-5">
                 <path d="M4 15l1.8-4.6A2.5 2.5 0 0 1 8.1 9h7.8a2.5 2.5 0 0 1 2.3 1.4L20 15v3a1 1 0 0 1-1 1h-1.2a1 1 0 0 1-1-1v-.8H7.2v.8a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1z" fill="currentColor" />
@@ -315,7 +310,13 @@ export default function App() {
             </span>
           </a>
           <nav className="ml-auto flex items-center gap-0.5 whitespace-nowrap sm:gap-1.5">
-            {!modelRoute && <ExportMenu ctx={exportCtx} />}
+            <a href={paths.cars()} className={`hidden rounded-lg px-3 py-1.5 text-sm font-medium hover:bg-surface-2 md:inline-block ${route.name === 'cars' || route.name === 'car' ? 'text-accent' : 'text-ink-2 hover:text-ink'}`}>
+              Carros
+            </a>
+            <a href={paths.brands()} className={`hidden rounded-lg px-3 py-1.5 text-sm font-medium hover:bg-surface-2 md:inline-block ${route.name === 'brands' || route.name === 'brand' ? 'text-accent' : 'text-ink-2 hover:text-ink'}`}>
+              Marcas
+            </a>
+            {!onPage && <ExportMenu ctx={exportCtx} />}
             <Button variant="ghost" onClick={() => setSettings('car')}>
               Meu carro
             </Button>
@@ -328,29 +329,54 @@ export default function App() {
       </header>
 
       <div className="mx-auto max-w-[1280px] px-4 py-6 sm:px-6 lg:py-8">
-        {modelRoute ? (
+        {onPage ? (
           <main>
-            <ErrorBoundary area="Ficha do carro">
-            <ModelPage
-              modelId={modelRoute}
-              results={results}
-              ranked={ranked}
-              keep={keep}
-              horizon={horizon}
-              onHorizon={(v) => setPrefs({ ...prefs, rankHorizon: v })}
-              assumptions={assumptions}
-              car={car}
-              maxCompare={MAX_COMPARE}
-              onCompare={(ids) => {
-                setCompare(ids)
-                window.location.hash = '#/'
-                setTimeout(() => document.getElementById('sec-compare')?.scrollIntoView({ behavior: 'smooth' }), 80)
-              }}
-            />
-            </ErrorBoundary>
+            <Suspense fallback={<PageSkeleton />}>
+              <ErrorBoundary area="Página">
+                {route.name === 'car' ? (
+                  <ModelPage
+                    key={route.id}
+                    modelId={route.id}
+                    year={route.year}
+                    results={results}
+                    ranked={ranked}
+                    keep={keep}
+                    horizon={horizon}
+                    onHorizon={(v) => setPrefs({ ...prefs, rankHorizon: v })}
+                    assumptions={assumptions}
+                    car={car}
+                    maxCompare={MAX_COMPARE}
+                    onCompare={(ids) => {
+                      setCompare(ids)
+                      goToSection('sec-compare')
+                    }}
+                  />
+                ) : route.name === 'cars' ? (
+                  <CatalogPage results={results} keep={keep} horizon={horizon} />
+                ) : route.name === 'brands' ? (
+                  <BrandsPage />
+                ) : route.name === 'brand' ? (
+                  <BrandPage
+                    key={route.slug}
+                    slug={route.slug}
+                    results={results}
+                    keep={keep}
+                    horizon={horizon}
+                    onShowInRanking={(brand) => {
+                      const cats = CATALOG.filter((m) => m.brand === brand).map((m) => m.category)
+                      setPrefs({ ...prefs, brands: [brand], categories: [...new Set([...prefs.categories, ...cats])] })
+                      goToSection('sec-ranking')
+                    }}
+                  />
+                ) : (
+                  <NotFound />
+                )}
+              </ErrorBoundary>
+            </Suspense>
           </main>
         ) : (
           <main className="space-y-6">
+            <HomeMeta />
             <SectionNav />
 
             {!hasValue && (
@@ -566,6 +592,37 @@ const SECTIONS = [
 ] as const
 
 /** Atalhos para as seções do painel. */
+/** Volta ao painel e rola até uma seção (depois que ela estiver na tela). */
+function goToSection(id: string) {
+  navigate(paths.home())
+  let tries = 0
+  const tick = () => {
+    const el = document.getElementById(id)
+    if (el) el.scrollIntoView({ behavior: 'smooth', block: 'start' })
+    else if (tries++ < 20) requestAnimationFrame(tick)
+  }
+  requestAnimationFrame(tick)
+}
+
+function HomeMeta() {
+  usePageMeta('Custo de Carro — manter, trocar ou assinar', 'Compare o custo total de manter seu carro com 0 km, seminovos e assinatura, usando a Tabela FIPE.')
+  return null
+}
+
+function PageSkeleton() {
+  return (
+    <div className="space-y-4" aria-busy="true" aria-label="Carregando">
+      <div className="h-4 w-48 animate-pulse rounded bg-surface-2" />
+      <div className="h-8 w-80 max-w-full animate-pulse rounded bg-surface-2" />
+      <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+        {[0, 1, 2].map((i) => (
+          <div key={i} className="h-64 animate-pulse rounded-2xl bg-surface-2" />
+        ))}
+      </div>
+    </div>
+  )
+}
+
 function SectionNav() {
   return (
     <nav aria-label="Seções" className="sticky top-14 z-20 -mx-4 -mt-6 border-b border-line bg-page/90 px-4 backdrop-blur sm:-mx-6 sm:px-6 lg:-mt-8">
@@ -581,6 +638,16 @@ function SectionNav() {
             </button>
           </li>
         ))}
+        <li className="ml-auto pl-2 md:hidden">
+          <a href={paths.cars()} className="block rounded-lg px-3 py-1.5 font-medium whitespace-nowrap text-accent hover:bg-surface">
+            Carros
+          </a>
+        </li>
+        <li className="md:hidden">
+          <a href={paths.brands()} className="block rounded-lg px-3 py-1.5 font-medium whitespace-nowrap text-accent hover:bg-surface">
+            Marcas
+          </a>
+        </li>
       </ul>
     </nav>
   )

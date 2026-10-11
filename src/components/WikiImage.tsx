@@ -1,8 +1,10 @@
-import { useEffect, useState } from 'react'
+import { useEffect, useRef, useState } from 'react'
 
 interface Summary {
   title: string
   image?: string
+  /** Miniatura (~320 px): usada nos cartões, bem mais leve que a original. */
+  thumb?: string
   page?: string
 }
 
@@ -21,6 +23,7 @@ function fetchSummary(lang: string, title: string) {
             ? {
                 title: d.title as string,
                 image: (d.originalimage?.source ?? d.thumbnail?.source) as string | undefined,
+                thumb: (d.thumbnail?.source ?? d.originalimage?.source) as string | undefined,
                 page: d.content_urls?.desktop?.page as string | undefined,
               }
             : null,
@@ -47,7 +50,7 @@ function searchImage(query: string) {
           const page = d?.query?.pages ? (Object.values(d.query.pages)[0] as Record<string, any>) : null
           if (!page) return null
           const image = page.original?.source ?? page.thumbnail?.source
-          return image ? { title: page.title as string, image, page: page.fullurl as string } : null
+          return image ? { title: page.title as string, image, thumb: page.thumbnail?.source ?? image, page: page.fullurl as string } : null
         })
         .catch(() => null),
     )
@@ -62,6 +65,7 @@ export function WikiImage({
   alt,
   compact,
   fallbackQuery,
+  deferred,
 }: {
   lang?: string
   title?: string
@@ -69,9 +73,23 @@ export function WikiImage({
   compact?: boolean
   /** Busca usada quando o artigo não existe ou não tem foto (ex.: "BYD Song Pro"). */
   fallbackQuery?: string
+  /** Só busca a foto quando o cartão aparece na tela (listas longas). */
+  deferred?: boolean
 }) {
   const [data, setData] = useState<Summary | null | undefined>(undefined)
+  const holder = useRef<HTMLDivElement>(null)
+  const [visible, setVisible] = useState(!deferred)
   useEffect(() => {
+    if (visible || !holder.current || typeof IntersectionObserver === 'undefined') {
+      if (!visible) setVisible(true)
+      return
+    }
+    const io = new IntersectionObserver((e) => e.some((x) => x.isIntersecting) && setVisible(true), { rootMargin: '300px' })
+    io.observe(holder.current)
+    return () => io.disconnect()
+  }, [visible])
+  useEffect(() => {
+    if (!visible) return
     let alive = true
     const first = lang && title ? fetchSummary(lang, title) : Promise.resolve(null)
     first
@@ -80,10 +98,10 @@ export function WikiImage({
     return () => {
       alive = false
     }
-  }, [lang, title, fallbackQuery])
+  }, [lang, title, fallbackQuery, visible])
 
   const box = compact ? 'aspect-[16/10] rounded-lg' : 'aspect-[16/9] rounded-xl'
-  if (data === undefined) return <div className={`${box} w-full animate-pulse bg-surface-2`} />
+  if (data === undefined) return <div ref={holder} className={`${box} w-full animate-pulse bg-surface-2`} />
   if (!data?.image)
     return (
       <div className={`${box} flex w-full items-center justify-center bg-surface-2 p-4 text-center text-xs text-muted`}>
@@ -92,7 +110,7 @@ export function WikiImage({
     )
   if (compact)
     return (
-      <img src={data.image} alt={alt} title={`Foto: Wikimedia Commons, via Wikipédia — ${data.title}`} loading="lazy" className={`${box} w-full bg-surface-2 object-cover`} />
+      <img src={data.thumb ?? data.image} alt={alt} title={`Foto: Wikimedia Commons, via Wikipédia — ${data.title}`} loading="lazy" decoding="async" className={`${box} w-full bg-surface-2 object-cover`} />
     )
   return (
     <figure>

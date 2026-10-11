@@ -228,7 +228,7 @@ function OptionCell({ result: r }: { result: ScenarioResult }) {
         )}
         {s.modelId && s.kind !== 'subscription' && (
           <a
-            href={`#/carro/${s.modelId}`}
+            href={`/carro/${s.modelId}`}
             onClick={(e) => e.stopPropagation()}
             className="ml-1 text-xs font-medium whitespace-nowrap text-accent hover:underline"
           >

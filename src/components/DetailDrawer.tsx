@@ -157,7 +157,7 @@ export function DetailDrawer({ result, keep, a, initialHorizon, override, onOver
         )}
 
         {model && s.kind !== 'subscription' && (
-          <a href={`#/carro/${model.id}`} onClick={() => ref.current?.close()} className="block rounded-lg border border-accent p-3 text-sm font-medium text-accent hover:bg-accent/8">
+          <a href={`/carro/${model.id}`} onClick={() => ref.current?.close()} className="block rounded-lg border border-accent p-3 text-sm font-medium text-accent hover:bg-accent/8">
             Ver ficha completa do {model.brand} {model.model} (versões, destaques, fotos e comparação) →
           </a>
         )}

@@ -44,7 +44,7 @@ export function TopModels({
           return (
             <li key={m.id} className="w-56 shrink-0 snap-start sm:w-auto">
               <a
-                href={`#/carro/${m.id}`}
+                href={`/carro/${m.id}`}
                 className="group flex h-full flex-col overflow-hidden rounded-xl border border-line bg-surface transition hover:border-accent/50 hover:shadow-card"
               >
                 <div className="relative">

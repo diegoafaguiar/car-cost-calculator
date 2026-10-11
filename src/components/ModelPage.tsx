@@ -1,7 +1,7 @@
-import type { ReactNode } from 'react'
+import { useEffect, useState, type ReactNode } from 'react'
 import { CATALOG, CATEGORY_LABEL, POWERTRAIN_LABEL } from '../lib/catalog'
 import { money, money2, months, number } from '../lib/format'
-import { MODEL_INFO, type ModelInfo } from '../lib/modelInfo'
+import { loadModelInfo, type ModelInfo } from '../lib/modelInfo'
 import { energyCostPerKm } from '../lib/tco'
 import type { Assumptions, Consumption, CurrentCar, Horizon, ScenarioResult } from '../lib/types'
 import { HORIZONS } from '../lib/types'
@@ -9,6 +9,9 @@ import { BreakdownBars } from './BreakdownBars'
 import { MarketListings } from './MarketListings'
 import { Badge, Button, Card, Segmented } from './ui'
 import { WikiImage } from './WikiImage'
+import { Breadcrumbs, ShareButton } from './Browse'
+import { NotFound } from './BrandPages'
+import { paths, usePageMeta } from '../lib/router'
 import { comfortScore, featuresFor, safetyScore, techScore } from '../lib/scores'
 import { ScoreBadge } from './ScoreBadge'
 
@@ -24,24 +27,55 @@ interface Props {
   /** Coloca estes cenários no comparador e volta ao painel. */
   onCompare?: (ids: string[]) => void
   maxCompare?: number
+  /** Ano-modelo vindo do link (?ano=2024): destaca a linha na análise. */
+  year?: number
 }
 
+const YEAR_NOW = new Date().getFullYear()
+
+/** Carrega as fichas completas pedidas (undefined enquanto carrega). */
+function useFullInfo(ids: (string | undefined)[]) {
+  const key = ids.join('|')
+  const [state, setState] = useState<{ key: string; infos: (ModelInfo | undefined)[] } | null>(null)
+  useEffect(() => {
+    let alive = true
+    Promise.all(ids.map((id) => (id ? loadModelInfo(id) : Promise.resolve(undefined)))).then((infos) => alive && setState({ key, infos }))
+    return () => {
+      alive = false
+    }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [key])
+  return state?.key === key ? state.infos : undefined
+}
+
+function ModelSkeleton() {
+  return (
+    <div className="space-y-6" aria-busy="true" aria-label="Carregando ficha">
+      <div className="h-4 w-64 animate-pulse rounded bg-surface-2" />
+      <div className="grid gap-6 lg:grid-cols-[1.1fr_1fr]">
+        <div className="aspect-[16/9] animate-pulse rounded-xl bg-surface-2" />
+        <div className="space-y-3">
+          <div className="h-8 w-2/3 animate-pulse rounded bg-surface-2" />
+          <div className="h-24 animate-pulse rounded bg-surface-2" />
+        </div>
+      </div>
+    </div>
+  )
+}
 const yearsLabel = (h: number) => `${h} ${h === 1 ? 'ano' : 'anos'}`
 
 /** Página de detalhes de um modelo: ficha pesquisada (com fontes) + análise comparativa calculada. */
-export function ModelPage({ modelId, results, ranked, keep, horizon, onHorizon, assumptions: a, car, onCompare, maxCompare = 5 }: Props) {
+export function ModelPage({ modelId, results, ranked, keep, horizon, onHorizon, assumptions: a, car, onCompare, maxCompare = 5, year }: Props) {
   const model = CATALOG.find((m) => m.id === modelId)
-  if (!model) {
-    return (
-      <Card title="Modelo não encontrado">
-        <a href="#/" className="text-accent underline">
-          Voltar ao painel
-        </a>
-      </Card>
-    )
-  }
-  const info = MODEL_INFO[model.infoId ?? modelId]
-  const mine = car.catalogModelId ? MODEL_INFO[car.catalogModelId] : undefined
+  const loaded = useFullInfo([model ? (model.infoId ?? model.id) : undefined, car.catalogModelId])
+  const info = loaded?.[0]
+  const mine = loaded?.[1]
+  usePageMeta(
+    model ? `${model.brand} ${model.model} ${model.version}: preço, ficha e custo | Custo de Carro` : 'Modelo não encontrado | Custo de Carro',
+    model ? (info?.summary ?? `${model.brand} ${model.model}: preço, consumo e custo total de ter.`).slice(0, 160) : undefined,
+  )
+  if (!model) return <NotFound what="Modelo" />
+  if (!loaded) return <ModelSkeleton />
   // Todas as versões do catálogo que compartilham esta ficha (ex.: Song Pro GL e GS).
   const family = new Set(CATALOG.filter((m) => (m.infoId ?? m.id) === (model.infoId ?? model.id)).map((m) => m.id))
   const versionOf = (id?: string) => CATALOG.find((m) => m.id === id)?.version ?? ''
@@ -55,9 +89,16 @@ export function ModelPage({ modelId, results, ranked, keep, horizon, onHorizon, 
 
   return (
     <div className="space-y-6">
-      <a href="#/" className="inline-flex items-center gap-1 text-sm text-ink-2 hover:text-ink">
-        ← Voltar ao ranking
-      </a>
+      <div className="flex flex-wrap items-center justify-between gap-3">
+        <Breadcrumbs
+          items={[
+            { label: 'Início', href: paths.home() },
+            { label: model.brand, href: paths.brand(model.brand) },
+            { label: `${model.model} ${model.version}` },
+          ]}
+        />
+        <ShareButton title={`${model.brand} ${model.model} — Custo de Carro`} text={`${model.brand} ${model.model} ${model.version}: preço, ficha técnica e custo de ter.`} />
+      </div>
 
       <div className="grid gap-6 lg:grid-cols-[1.1fr_1fr]">
         <div>
@@ -171,7 +212,11 @@ export function ModelPage({ modelId, results, ranked, keep, horizon, onHorizon, 
                 const h = o.horizons[horizon]
                 const pos = rankOf(o)
                 return (
-                  <tr key={o.scenario.id} className="border-t border-line">
+                  <tr
+                    key={o.scenario.id}
+                    className={`border-t border-line ${year && YEAR_NOW - o.scenario.ageAtStart === year ? 'bg-accent-soft' : ''}`}
+                    aria-current={year && YEAR_NOW - o.scenario.ageAtStart === year ? 'true' : undefined}
+                  >
                     <td className="px-3 py-2">
                       <span className="font-medium">{o.scenario.ageAtStart === 0 ? '0 km' : `Seminovo ${o.scenario.detail.split(' · ').pop()?.replace(' (seminovo)', '')}`}</span>
                       <span className="block text-xs text-ink-2">{versionOf(o.scenario.modelId)}</span>
@@ -342,7 +387,35 @@ export function ModelPage({ modelId, results, ranked, keep, horizon, onHorizon, 
           </Card>
         </>
       )}
+
+      <MoreFromBrand model={model} />
     </div>
+  )
+}
+
+/** Outros modelos da mesma marca, para continuar navegando. */
+function MoreFromBrand({ model }: { model: (typeof CATALOG)[number] }) {
+  const others = CATALOG.filter((m) => m.brand === model.brand && m.id !== model.id)
+  if (!others.length) return null
+  return (
+    <Card
+      title={`Outros modelos da ${model.brand}`}
+      actions={
+        <a href={paths.brand(model.brand)} className="text-sm font-medium text-accent hover:underline">
+          Ver página da marca →
+        </a>
+      }
+    >
+      <ul className="flex flex-wrap gap-2">
+        {others.map((m) => (
+          <li key={m.id}>
+            <a href={paths.car(m.id)} className="inline-flex items-center gap-1.5 rounded-lg border border-line px-3 py-1.5 text-sm hover:border-accent/40 hover:text-accent">
+              {m.model} <span className="text-xs text-muted">{m.version}</span>
+            </a>
+          </li>
+        ))}
+      </ul>
+    </Card>
   )
 }
 

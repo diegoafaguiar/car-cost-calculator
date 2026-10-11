@@ -51,6 +51,19 @@ npm run build   # type-check + build de produção em dist/
 Stack: React 19, TypeScript, Vite, Tailwind CSS v4. FIPE via [API Parallelum](https://fipe.parallelum.com.br)
 (500 consultas/dia sem token; token gratuito opcional em Premissas → Mercado).
 
+## Páginas e links
+
+| Rota | O que mostra |
+|---|---|
+| `/` | Painel: seu carro, ranking, comparador |
+| `/carros` | Todos os carros, com busca e filtros (ficam na URL: `?q=song&cat=suv-medio&mot=hibrido`) |
+| `/carro/<id>` | Ficha do modelo; `?ano=2024` destaca o ano na análise |
+| `/marcas` | Todas as marcas |
+| `/marca/<marca>` | Modelos de uma marca, por categoria, e a melhor opção para você |
+
+No build, um plugin (`vite.config.ts` + `scripts/route-meta.mjs`) gera um HTML por rota com título, descrição e
+Open Graph próprios, para o link compartilhado mostrar o carro certo. Links antigos (`/#/carro/x`) são redirecionados.
+
 ## Deploy na Vercel
 
 O projeto já está pronto para a Vercel (`vercel.json`: framework Vite, `npm run build`, saída em `dist/`).
