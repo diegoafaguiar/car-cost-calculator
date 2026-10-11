@@ -6,18 +6,18 @@
     "screen10": true,
     "wirelessMirroring": true,
     "digitalCluster": true,
-    "wirelessCharger": null,
+    "wirelessCharger": true,
     "camera360": true,
     "adaptiveCruise": true,
-    "connectedApp": null,
-    "keyless": null
+    "connectedApp": true,
+    "keyless": true
   },
   "comfort": {
     "automatic": true,
-    "digitalAC": null,
+    "digitalAC": true,
     "rearVents": null,
     "leather": null,
-    "powerSeat": null,
+    "powerSeat": true,
     "seatClimate": true,
     "sunroof": true
   },
@@ -60,17 +60,20 @@
     {
       "label": "Vrum — Uni-T sobe de preço (20/abr/2026)",
       "url": "https://www.vrum.com.br/mercado/2026/04/7401784-caoa-changan-uni-t-sobe-de-preco-no-brasil-e-encosta-em-rivais-diretos.html"
+    },
+    {
+      "label": "Revista Cars — Uni-T 2026 lançamento (equipamentos)",
+      "url": "https://revistacars.com.br/caoa-changan-uni-t-2026-lancamento-brasil-preco/"
+    },
+    {
+      "label": "Motor Show — Uni-T chega com 180 cv",
+      "url": "https://motorshow.com.br/caoa-changan-uni-t-lancamento-brasil"
     }
   ],
-  "notes": "Versão única: 6 airbags, ACC stop & go, frenagem autônoma, alerta de colisão, ponto cego, permanência em faixa, câmera 360° com sensores dianteiros e traseiros, teto panorâmico fixo, bancos com ventilação e aquecimento, som de 11 alto-falantes, central de 12,8\" com CarPlay/Android Auto sem fio e painel de 12,3\" (Car.Blog.br; outra fonte cita 10,1\"/7\").",
+  "notes": "Versão única: 6 airbags, ACC stop & go, frenagem autônoma, alerta de colisão, ponto cego, permanência em faixa, câmera 360° com sensores dianteiros e traseiros, teto panorâmico fixo, bancos com ventilação e aquecimento, som de 11 alto-falantes, central de 12,8\" com CarPlay/Android Auto sem fio e painel de 12,3\" (Car.Blog.br; outra fonte cita 10,1\"/7\"). Atualização: ar digital dual zone, carregador por indução, chave presencial, bancos dianteiros com ajuste elétrico (motorista com 6 ajustes), estacionamento autônomo pela chave ou pelo app e app Changan Connect com 2 anos de internet (FichasCar/Verificar Auto/Revista Cars, via resumo de busca). Material dos bancos (couro) citado de forma ambígua, mantido null.",
   "unverified": [
-    "tech.wirelessCharger",
-    "tech.connectedApp",
-    "tech.keyless",
-    "comfort.digitalAC",
     "comfort.rearVents (só uma fonte duvidosa)",
     "comfort.leather",
-    "comfort.powerSeat",
     "safety.rearCrossTraffic"
   ]
 }

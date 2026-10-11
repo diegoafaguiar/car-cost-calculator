@@ -1,0 +1,72 @@
+{
+  "id": "changan-cs55-prime",
+  "version": "Caoa Changan CS55 Prime 1.5 TGDi 2027",
+  "researchedAt": "2026-10",
+  "tech": {
+    "screen10": true,
+    "wirelessMirroring": true,
+    "digitalCluster": true,
+    "wirelessCharger": true,
+    "camera360": true,
+    "adaptiveCruise": null,
+    "connectedApp": null,
+    "keyless": true
+  },
+  "comfort": {
+    "automatic": true,
+    "digitalAC": true,
+    "rearVents": null,
+    "leather": null,
+    "powerSeat": null,
+    "seatClimate": false,
+    "sunroof": false
+  },
+  "safety": {
+    "airbags6": true,
+    "aeb": null,
+    "laneKeep": null,
+    "blindSpot": null,
+    "rearCrossTraffic": null
+  },
+  "ncap": {
+    "stars": null,
+    "year": null,
+    "program": "Latin NCAP",
+    "note": "Sem teste Latin NCAP; nenhum Euro NCAP/ANCAP do CS55 encontrado.",
+    "source": ""
+  },
+  "sources": [
+    {
+      "label": "Guru dos Carros — CS55 Prime: central 14,6\" CarPlay/AA sem fio, 6 airbags",
+      "url": "https://gurudoscarros.com.br/2026/09/15/caoa-changan-cs55-precos-versoes-hibrido-flex-brasil/"
+    },
+    {
+      "label": "Mundo Zerokm — CS55 Infinity x Prime",
+      "url": "https://mundozerokm.com.br/noticias/comparativos/cs-55-infinity-x-prime-vale-pagar-r-10-mil-a-mais"
+    },
+    {
+      "label": "Webmotors — Tiggo 7 ou CS55 Prime",
+      "url": "https://www.webmotors.com.br/wm1/mercado-automotivo/caoa-chery-tiggo7-ou-changan-cs55/"
+    },
+    {
+      "label": "AutoPapo — CS55: versões a partir de R$ 144.990",
+      "url": "https://autopapo.com.br/noticia/caoa-changan-cs55/"
+    },
+    {
+      "label": "Carros e Garagem — CS55 2027: equipamentos",
+      "url": "https://www.carrosegaragem.com.br/caoa-changan-cs55-2027/"
+    }
+  ],
+  "notes": "Prime (R$ 144.990, vendas por reserva): rodas 19\", ar digital, chave presencial, câmeras 540°, carregador sem fio, painel digital 10,3\", central 14,6\" com CarPlay/Android Auto sem fio, 6 airbags, ESC, Auto Hold. Teto panorâmico e bancos aquecidos/ventilados são itens que a Infinity acrescenta (logo false na Prime). ADAS divergente: AutoPapo e Radar364 dizem que a Prime já tem o ADAS nível 2+; Webmotors e Mundo Zerokm dizem que a Prime tem só piloto automático convencional e que ponto cego/pacote completo ficam na Infinity — por isso null.",
+  "unverified": [
+    "tech.adaptiveCruise (fontes divergem)",
+    "tech.connectedApp",
+    "comfort.rearVents",
+    "comfort.leather",
+    "comfort.powerSeat",
+    "safety.aeb (fontes divergem)",
+    "safety.laneKeep (fontes divergem)",
+    "safety.blindSpot (fontes divergem)",
+    "safety.rearCrossTraffic"
+  ]
+}

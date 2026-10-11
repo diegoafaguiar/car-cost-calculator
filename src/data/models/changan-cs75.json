@@ -1,0 +1,93 @@
+{
+  "catalogSeed": {
+    "brand": "Caoa Changan",
+    "model": "CS75",
+    "version": "Infinity 1.5 TGDi flex",
+    "category": "suv-grande",
+    "powertrain": "flex",
+    "seats": 5,
+    "trunkL": 610,
+    "refPriceNew": 179990,
+    "consumption": { "cityKmL": 10.5, "roadKmL": 12.3, "cityKmLEthanol": 7.2, "roadKmLEthanol": 8.5, "cityKmKWh": null, "roadKmKWh": null },
+    "evShareNote": "Sem eletrificação: 1.5 turbo flex com câmbio automático Aisin de 8 marchas. Versão plug-in só 'nos planos' para um segundo momento.",
+    "fipeBrand": "CAOA CHANGAN",
+    "fipeInclude": ["CS75"],
+    "since": 2027
+  },
+  "id": "changan-cs75",
+  "researchedAt": "2026-10",
+  "displayName": "Caoa Changan CS75",
+  "summary": "SUV de 4,77 m e entre-eixos de 2,80 m (porte de Commander, mas com 5 lugares), montado pela Caoa em Anápolis (GO). Lançado em meados de jun/2026 em versão única Infinity, com motor 1.5 turbo flex de 180 cv e câmbio automático Aisin de 8 marchas. Muito equipado (três telas, ADAS nível 2, bancos com ventilação e massagem, teto panorâmico). Lançado a R$ 199.990, teve corte de R$ 20 mil duas semanas depois e hoje é anunciado a partir de R$ 179.990. Não é híbrido.",
+  "generation": "Geração atual do CS75 (Plus) chinês; no Brasil desde jun/2026 (linha 2026/2027; FIPE só lista 2027), nacional (Anápolis/GO).",
+  "timeline": [
+    { "modelYear": "2027", "change": "Lançamento em ~16/jun/2026: versão única Infinity por R$ 199.990 (preço de lançamento)." },
+    { "modelYear": "2027", "change": "Fim de jun/2026: redução de R$ 20 mil para R$ 179.990 'por tempo limitado' (sem data de término), após a marca superar 5 mil vendas; quem pagou R$ 199.990 também receberia o benefício." },
+    { "modelYear": "2027", "change": "Out/2026: site oficial ainda anuncia 'a partir de R$ 179.990 à vista' (preto sólido, 2026/2027). FIPE 2027: R$ 188.933 (ago) → R$ 177.414 (set/2026); um agregador cita R$ 175.017 (out/2026)." }
+  ],
+  "highlights": [
+    "Porte grande (4,77 m, entre-eixos 2,80 m) e porta-malas de 610 L (VDA), até 725 L com o assoalho rebaixado.",
+    "180 cv e 29,2 kgfm, flex; câmbio automático Aisin de 8 marchas (convencional, não DCT).",
+    "Três telas (painel 10,3\", central 14,6\" e tela do passageiro), CarPlay/Android Auto sem fio e app Caoa Changan Connect.",
+    "Bancos dianteiros em couro com ajuste elétrico, aquecimento, ventilação e massagem; banco traseiro reclinável com aquecimento e ventilação; teto panorâmico; som Pioneer de 14 alto-falantes.",
+    "ADAS nível 2: ACC, frenagem autônoma, permanência em faixa, ponto cego, câmera 360°; 6 airbags.",
+    "Garantia de 7 anos ou 150 mil km."
+  ],
+  "watchOuts": [
+    "Não é eletrificado: Inmetro 10,5/12,3 km/l (gasolina) e 7,2/8,5 km/l (etanol) — bem pior que o Corolla Cross Hybrid do usuário.",
+    "O preço de R$ 179.990 é campanha 'por tempo limitado' sem data de término; o preço cheio de lançamento era R$ 199.990.",
+    "Corte de R$ 20 mil duas semanas após o lançamento e FIPE caindo 6% em um mês (set/2026): sinal de revenda fraca.",
+    "Marca nova (Caoa Changan, operação desde mar/2026): rede e revenda sem histórico.",
+    "Sem teste Latin NCAP, Euro NCAP ou ANCAP do CS75; só um teste encomendado pela própria Changan (2020, padrão americano), que não conta.",
+    "Porta-malas: 610 L (VDA) x 725 L (assoalho rebaixado) x 620 L (nota de pré-lançamento) conforme a fonte."
+  ],
+  "specs": {
+    "version": "Caoa Changan CS75 Infinity 1.5 TGDi flex 8AT (linha 2027)",
+    "engine": "1.5 turbo flex 4 cil., injeção direta (BlueCore)",
+    "powerCv": "180",
+    "torqueKgfm": "29,2",
+    "transmission": "Automático Aisin de 8 marchas, tração dianteira",
+    "trunkL": 610,
+    "lengthMm": 4770,
+    "wheelbaseMm": 2800,
+    "safety": "6 airbags; ADAS nível 2 (ACC, AEB, faixa, ponto cego); sem Latin/Euro NCAP/ANCAP",
+    "warranty": "7 anos ou 150 mil km"
+  },
+  "inmetro": { "version": "CS75 1.5 TGDi flex", "cityGas": 10.5, "roadGas": 12.3, "cityEth": 7.2, "roadEth": 8.5, "cityKmKWh": null, "roadKmKWh": null, "year": "PBEV 2026 (conforme imprensa: Vrum, Auto+ TV, Garagem360)", "source": "https://www.vrum.com.br/avaliacoes/2026/06/7442775-caoa-changan-cs75-o-preco-compensa-o-consumo-compare-os-numeros.html" },
+  "price0km": { "version": "Infinity", "price": 179990, "date": "out/2026 (site oficial; campanha desde fim de jun/2026, 'por tempo limitado')", "source": "https://caoachangan.com.br/novos/cs75" },
+  "versionsAndPrices": [
+    { "version": "Infinity (preço atual, campanha)", "price": 179990, "date": "jun–out/2026", "source": "https://www.cnnbrasil.com.br/auto/caoa-changan-cs75-reducao-de-r-20-mil-faz-suv-agora-custar-r-179-990/" },
+    { "version": "Infinity (preço de lançamento)", "price": 199990, "date": "jun/2026", "source": "https://autopapo.com.br/noticia/caoa-changan-cs75-2027-lancamento/" }
+  ],
+  "launchModelYearBR": 2027,
+  "catalogCheck": "Modelo ausente do catálogo. Versão única Infinity. FIPE: marca 'Caoa Changan', modelo 'CS75 1.5 16V TGDi', código 308003-0 — 2027 = R$ 177.414 (set/2026, tabelacarros/LitoralCar; ago/2026 era R$ 188.933); um agregador (Chaves na Mão) cita R$ 175.017 em out/2026; 0 km = R$ 184.744 (set/2026). Usar fipe brand 'caoa changan', include ['cs75'].",
+  "wikipedia": { "lang": "en", "title": "Changan CS75" },
+  "officialUrl": "https://caoachangan.com.br/novos/cs75",
+  "sources": [
+    { "label": "AutoPapo — CS75 estreia em versão única por R$ 199.990 (16/jun/2026)", "url": "https://autopapo.com.br/noticia/caoa-changan-cs75-2027-lancamento/" },
+    { "label": "CNN Brasil — redução de R$ 20 mil, CS75 agora custa R$ 179.990", "url": "https://www.cnnbrasil.com.br/auto/caoa-changan-cs75-reducao-de-r-20-mil-faz-suv-agora-custar-r-179-990/" },
+    { "label": "Band — Caoa Changan corta R$ 20 mil do CS75 após 5 mil vendas (27/jun/2026)", "url": "https://www.band.com.br/bandmotor/noticias/caoa-changan-corta-r-20-mil-do-cs75-apos-superar-5-mil-vendas-202606271555" },
+    { "label": "AutoPapo — CS75 fica R$ 20 mil mais barato; e quem pagou o preço cheio?", "url": "https://autopapo.com.br/curta/caoa-changan-cs75-fica-r-20-mil-mais-barato-logo-apos-ser-lancado-mas-e-quem-pagou-o-preco-cheio-na-pre-venda/" },
+    { "label": "Caoa Changan — Conheça o CS75 (a partir de R$ 179.990)", "url": "https://caoachangan.com.br/novos/cs75" },
+    { "label": "Vrum — CS75: o preço compensa o consumo? (Inmetro)", "url": "https://www.vrum.com.br/avaliacoes/2026/06/7442775-caoa-changan-cs75-o-preco-compensa-o-consumo-compare-os-numeros.html" },
+    { "label": "Garagem360 — CS75 perde para o Uni-T no consumo por 0,1 km/l", "url": "https://garagem360.com.br/?p=316081" },
+    { "label": "Autos Segredos — CS75 chega com 1.5 turbo flex por R$ 199.990", "url": "https://www.autossegredos.com.br/marcas/caoa-changan/caoa-changan-cs75-chega-ao-brasil-com-motor-1-5-turbo-flex-e-preco-de-r-199-990/" },
+    { "label": "Webmotors — Caoa Changan CS75 2027 (ficha Infinity)", "url": "https://www.webmotors.com.br/caoa-changan/cs75/2027" },
+    { "label": "Revista Carro — CS75 estreia com ADAS nível 2", "url": "https://revistacarro.com.br/caoa-changan-cs75-estreia-com-motor-turbo-flex-e-pacote-adas-de-nivel-2/" },
+    { "label": "CNN Brasil (Jorge Moraes) — SUV chinês CS75 é lançado", "url": "https://www.cnnbrasil.com.br/blogs/jorge-moraes/auto/suv-chines-cs75-e-lancado-pela-caoa-montadora-no-brasil/" },
+    { "label": "Revista Cars — CS75 2027 lançado: preço e recursos", "url": "https://revistacars.com.br/novo-caoa-changan-cs75-2027-lancado-preco-fotos-e-recursos/" },
+    { "label": "Carros e Garagem — CS75 2027: quanto custa e o que oferece", "url": "https://www.carrosegaragem.com.br/changan-cs75-preco-itens-motor/" },
+    { "label": "Mundo do Automóvel PcD — CS75 para PcD (R$ 170.323,48, ago/2026)", "url": "https://mundodoautomovelparapcd.com.br/caoa-changan-cs75-para-pcd-em-agosto-de-2026/" },
+    { "label": "Tabela Carros — FIPE CS75 1.5 16V TGDi 2027", "url": "https://tabelacarros.com/carros/caoa-changan/CS75-1-5-16V-TGDI/2027-Flex" },
+    { "label": "Chaves na Mão — FIPE CS75 2027 (308003-0)", "url": "https://www.chavesnamao.com.br/tabela-fipe/caoa-changan-cs75-1.5-16v-tgdi/2027/codigo-fipe-308003-0/" },
+    { "label": "Auto Show — CS75 PHEV nos planos para um segundo momento", "url": "https://www.autoshow.com.br/noticias/2026/04/04/changan-e-caoa-ja-preparam-novos-suvs-hibridos-para-o-brasil.html" }
+  ],
+  "unverified": [
+    "Prazo da campanha de R$ 179.990 (a marca não informou data de término; preço cheio R$ 199.990).",
+    "Porta-malas 610 L (VDA) x 725 L x 620 L conforme a fonte.",
+    "FIPE de out/2026 (R$ 175.017 visto só num agregador).",
+    "Peso e tanque não encontrados.",
+    "Ano do PBEV dos números Inmetro (citados pela imprensa).",
+    "Preço das revisões Caoa Changan não encontrado.",
+    "Pesquisa feita por resumos de busca das fontes listadas (WebFetch falhou com erro de DNS; páginas não abertas diretamente)."
+  ]
+}

@@ -1,25 +1,25 @@
 {
   "id": "changan-cs55-phev",
-  "version": "Caoa Changan CS55 PHEV 2027",
+  "version": "Caoa Changan CS55 Ultra Hybrid PHEV flex 2027",
   "researchedAt": "2026-10",
   "tech": {
-    "screen10": null,
-    "wirelessMirroring": null,
-    "digitalCluster": null,
-    "wirelessCharger": null,
-    "camera360": null,
+    "screen10": true,
+    "wirelessMirroring": true,
+    "digitalCluster": true,
+    "wirelessCharger": true,
+    "camera360": true,
     "adaptiveCruise": null,
     "connectedApp": null,
     "keyless": null
   },
   "comfort": {
     "automatic": true,
-    "digitalAC": null,
+    "digitalAC": true,
     "rearVents": null,
     "leather": null,
     "powerSeat": null,
-    "seatClimate": null,
-    "sunroof": null
+    "seatClimate": true,
+    "sunroof": true
   },
   "safety": {
     "airbags6": true,
@@ -47,27 +47,31 @@
     {
       "label": "AutoPapo — CS55 Infinity: positivos e negativos",
       "url": "https://autopapo.com.br/noticia/caoa-changan-cs55-infinity-positivos-e-negativos/"
+    },
+    {
+      "label": "eletricos.app — CS55 Ultra-Hybrid PHEV Flex 2027",
+      "url": "https://www.eletricos.app/veiculo/caoa-changan-cs55-ultra-hybrid-phev-flex-2027"
+    },
+    {
+      "label": "Motor Show — CS55 híbrido plug-in chega por R$ 189.990",
+      "url": "https://motorshow.com.br/caoa-changan-cs55-hibrido-plug-in-chega"
+    },
+    {
+      "label": "Autos Segredos — CS55 PHEV Flex por R$ 189.990",
+      "url": "https://www.autossegredos.com.br/eletricos-hibridos/caoa-changan-cs55-phev-flex-r-189-990/"
     }
   ],
-  "notes": "Lista de equipamentos específica da PHEV não encontrada; a imprensa só dá a da Infinity flex. 6 airbags citados para toda a linha CS55 (a Prime base também tem 6).",
+  "notes": "A ficha da PHEV (eletricos.app) e a imprensa (Motor Show/Autos Segredos) descrevem a Ultra Hybrid como o pacote da Infinity + conjunto PHEV + vidros acústicos, logo iluminado e V2L. Confirmados para a PHEV: Smart Cockpit 24,9\" (central 14,6\" + painel 10,3\"), CarPlay/Android Auto sem fio (linha CS55), câmera 540°, carregador por indução, ar digital de 2 zonas, bancos dianteiros aquecidos e ventilados, teto panorâmico com abertura elétrica, Caoa Changan Vision System (14+ funções ADAS). 6 airbags. ACC, AEB, faixa e ponto cego são confirmados na Infinity, mas não foram citados nominalmente para a PHEV.",
   "unverified": [
-    "tech.screen10",
-    "tech.wirelessMirroring",
-    "tech.digitalCluster",
-    "tech.wirelessCharger",
-    "tech.camera360",
-    "tech.adaptiveCruise",
+    "tech.adaptiveCruise (só confirmado na Infinity)",
     "tech.connectedApp",
     "tech.keyless",
-    "comfort.digitalAC",
     "comfort.rearVents",
     "comfort.leather",
     "comfort.powerSeat",
-    "comfort.seatClimate",
-    "comfort.sunroof",
-    "safety.aeb",
-    "safety.laneKeep",
-    "safety.blindSpot",
+    "safety.aeb (só confirmado na Infinity)",
+    "safety.laneKeep (só confirmado na Infinity)",
+    "safety.blindSpot (só confirmado na Infinity)",
     "safety.rearCrossTraffic"
   ]
 }

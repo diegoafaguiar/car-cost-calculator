@@ -1,0 +1,52 @@
+{
+  "id": "changan-cs75",
+  "version": "Caoa Changan CS75 Infinity 1.5 TGDi 2027",
+  "researchedAt": "2026-10",
+  "tech": {
+    "screen10": true,
+    "wirelessMirroring": true,
+    "digitalCluster": true,
+    "wirelessCharger": true,
+    "camera360": true,
+    "adaptiveCruise": true,
+    "connectedApp": true,
+    "keyless": true
+  },
+  "comfort": {
+    "automatic": true,
+    "digitalAC": true,
+    "rearVents": true,
+    "leather": true,
+    "powerSeat": true,
+    "seatClimate": true,
+    "sunroof": true
+  },
+  "safety": {
+    "airbags6": true,
+    "aeb": true,
+    "laneKeep": true,
+    "blindSpot": true,
+    "rearCrossTraffic": null
+  },
+  "ncap": {
+    "stars": null,
+    "year": null,
+    "program": "Latin NCAP",
+    "counts": false,
+    "note": "Sem teste Latin NCAP, Euro NCAP ou ANCAP do CS75. Só há um teste de colisão encomendado pela própria Changan em 2020 (padrão americano, CS75 Plus chinês), que não é avaliação NCAP independente.",
+    "source": "https://english.news18a.com/news/english_149827.html"
+  },
+  "sources": [
+    { "label": "Webmotors — CS75 2027 (ficha Infinity)", "url": "https://www.webmotors.com.br/caoa-changan/cs75/2027" },
+    { "label": "CNN Brasil (Jorge Moraes) — CS75: CarPlay/Android Auto sem fio, app Caoa Changan Connect", "url": "https://www.cnnbrasil.com.br/blogs/jorge-moraes/auto/suv-chines-cs75-e-lancado-pela-caoa-montadora-no-brasil/" },
+    { "label": "Revista Carro — CS75 ADAS nível 2, som Pioneer 14 alto-falantes", "url": "https://revistacarro.com.br/caoa-changan-cs75-estreia-com-motor-turbo-flex-e-pacote-adas-de-nivel-2/" },
+    { "label": "Revista Cars — CS75 2027: bancos com ventilação, aquecimento e massagem", "url": "https://revistacars.com.br/novo-caoa-changan-cs75-2027-lancado-preco-fotos-e-recursos/" },
+    { "label": "Autos Segredos — CS75 telas 10,3\" + 14,6\"", "url": "https://www.autossegredos.com.br/marcas/caoa-changan/caoa-changan-cs75-chega-ao-brasil-com-motor-1-5-turbo-flex-e-preco-de-r-199-990/" },
+    { "label": "Instacarro — CS75 por R$ 199.990 (ADAS, 6 airbags)", "url": "https://www.instacarro.com/blog/lancamentos/caoa-changan-cs75" },
+    { "label": "Falando de Carros — CS75 2027 por R$ 179.990: o que oferece", "url": "https://falandodecarros.com/caoa-changan-cs75-2027-custa-r-179-990-veja-o-que-o-suv-oferece-pelo-preco/" }
+  ],
+  "notes": "Versão única Infinity. Painel digital 10,3\", central 14,6\" e tela do passageiro; CarPlay/Android Auto sem fio; app Caoa Changan Connect para monitorar e controlar funções; carregador por indução; chave presencial com partida remota; câmera 360°. Ar automático de 2 zonas com saída para o banco traseiro; bancos em couro, dianteiros com ajuste elétrico, aquecimento, ventilação e massagem (passageiro com 14 ajustes elétricos); traseiro reclinável com aquecimento e ventilação; teto panorâmico. 6 airbags; ACC, frenagem autônoma, alerta de colisão, permanência em faixa, ponto cego. Uma fonte cita um 'assistente de tráfego' sem dizer se é o alerta de tráfego cruzado traseiro. Dados de resumos de busca (páginas não abertas).",
+  "unverified": [
+    "safety.rearCrossTraffic"
+  ]
+}

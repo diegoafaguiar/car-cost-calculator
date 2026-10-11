@@ -1,7 +1,7 @@
 {
   "catalogSeed": {
-    "brand": "Avatr",
-    "model": "11",
+    "brand": "Caoa Changan",
+    "model": "Avatr 11",
     "version": "AWD 5 lugares (elétrico, 116 kWh)",
     "category": "suv-grande",
     "powertrain": "eletrico",
@@ -13,10 +13,10 @@
       "roadKmL": 0,
       "cityKmLEthanol": null,
       "roadKmLEthanol": null,
-      "cityKmKWh": 4.3,
-      "roadKmKWh": 4.3
+      "cityKmKWh": 6.0,
+      "roadKmKWh": 6.0
     },
-    "evShareNote": "100% elétrico no Brasil (a versão EREV existe só na China). km/kWh estimado: 497 km (Inmetro, segundo a Tribuna PR) ÷ 116 kWh ≈ 4,3.",
+    "evShareNote": "100% elétrico no Brasil (a versão EREV existe só na China). PBEV 2026: 0,60 MJ/km = 6,0 km/kWh; autonomia Inmetro 497 km.",
     "fipeBrand": "CAOA CHANGAN",
     "fipeInclude": [
       "AVATR11"
@@ -44,7 +44,7 @@
   ],
   "highlights": [
     "585 cv (578 cv na ficha oficial, segundo a Tribuna PR), tração integral e 0–100 km/h em 3,9 s.",
-    "Bateria CATL de 116 kWh: 710 km CLTC e 497 km Inmetro (Tribuna PR).",
+    "Bateria CATL de 116 kWh: 710 km CLTC e 497 km Inmetro (tabela PBEV 2026: 0,60 MJ/km, classe A).",
     "Couro semi-anilina, bancos dianteiros Zero Gravity com ventilação, aquecimento e massagem; teto panorâmico.",
     "ADAS de nível 2+ (ACC, AEB, faixa, ponto cego, tráfego cruzado traseiro) com câmeras 360° e radares; HarmonyOS 4 com tela de 15,6\".",
     "Recarga DC de até 240 kW (Ficha Completa, dado estimado)."
@@ -54,7 +54,7 @@
     "Volume mínimo (cerca de 20 unidades vendidas até mar/2026) e marca nova com rede própria pequena. Há fontes que ainda falam em chegada às lojas no fim de 2026.",
     "Depreciação: na FIPE o 2026 usado vale R$ 540.347 contra R$ 621.995 do 0 km (set/2026, tabelacarros), cerca de 13% a menos.",
     "Garantia oficial no Brasil não encontrada (5 anos só em ficha 'estimada').",
-    "Consumo/autonomia Inmetro com divergência: 497 km (Tribuna PR) × 437 km (Webmotors/Ficha Completa) × 'não divulgada' (Paraíba Business).",
+    "Autonomia: a tabela PBEV 2026 dá 497 km (0,60 MJ/km); Webmotors/Ficha Completa citam 437 km.",
     "Sem teste de colisão Latin/Euro NCAP/ANCAP encontrado.",
     "Nenhum recall nem reclamação encontrado no Brasil."
   ],
@@ -66,7 +66,7 @@
     "transmission": "Redução única; tração integral",
     "trunkL": 470,
     "lengthMm": 4880,
-    "wheelbaseMm": null,
+    "wheelbaseMm": 2975,
     "safety": "6 airbags (Webmotors) ou 8 (eletricos.app); ADAS L2+; sem NCAP Latin/Euro/ANCAP encontrado",
     "warranty": null
   },
@@ -102,7 +102,7 @@
     }
   ],
   "launchModelYearBR": 2026,
-  "catalogCheck": "Não está no catálogo. Na FIPE a marca é 'Caoa Changan', modelo 'AVATR11' (versão única, código 308002-1): 0 km = R$ 621.995 e 2026 = R$ 540.347 (set/2026, tabelacarros); tabelafipebrasil (jul/2026) = R$ 609.997 (0 km) e R$ 542.897 (2026). A FIPE não separa 5 e 4 lugares. No app a marca é 'Avatr', mas o fipe.brand deve ser 'caoa changan'.",
+  "catalogCheck": "Não está no catálogo. Na FIPE a marca é 'Caoa Changan', modelo 'AVATR11' (versão única, código 308002-1): 0 km = R$ 621.995 e 2026 = R$ 540.347 (set/2026, tabelacarros); tabelafipebrasil (jul/2026) = R$ 609.997 (0 km) e R$ 542.897 (2026). A FIPE não separa 5 e 4 lugares. No app a marca é 'Caoa Changan' e o modelo 'Avatr 11' (catalogSeed corrigido); fipe.brand 'caoa changan', include ['avatr11']. FIPE 2027 = R$ 565.871 (tabelacarros).",
   "wikipedia": {
     "lang": "en",
     "title": "Avatr 11"
@@ -172,13 +172,20 @@
     {
       "label": "PBEV/Inmetro — consumo energético",
       "url": "https://www.gov.br/inmetro/pt-br/assuntos/avaliacao-da-conformidade/programa-brasileiro-de-etiquetagem/tabelas-de-eficiencia-energetica/veiculos-automotivos-pbe-veicular/mascara-pbev-2026_19_jan-rev01.pdf"
+    },
+    {
+      "label": "Click Petróleo e Gás — Avatr 11 (entre-eixos 2.975 mm)",
+      "url": "https://clickpetroleoegas.com.br/o-tesla-chines-que-chega-ao-brasil-com-sobrenome-caoa-changan-avatr-11-estreia-como-suv-eletrico-de-luxo-com-ate-710-km-de-autonomia-585-cv-3-telas-gigantes-no-painel-som-meridia-asaf04/"
+    },
+    {
+      "label": "Portal N10 — Avatr 11 (porta-malas 470 L)",
+      "url": "https://portaln10.com.br/fipecarros/caoa-changan-avatr-11-chega-ao-brasil-com-585-cv-autonomia-de-ate-710-km-e-preco-de-r-599-990/"
     }
   ],
   "unverified": [
+    "Garantia oficial (veículo e bateria) no Brasil não encontrada; 5 anos só em ficha estimada.",
+    "Porta-malas 470 L (Webmotors e Portal N10; antes só em ficha estimada).",
     "Status de venda: preços oficiais e mais de 20 unidades vendidas (mar/2026), e a FIPE tem 2026 usado. Uma matéria (Bem Paraná, data incerta) fala em chegada no 4º tri/2026.",
-    "Autonomia Inmetro de 497 km (só Tribuna PR); outras fontes dizem 437 km ou 'não divulgada'. O km/kWh (4,3) é estimado a partir dela.",
-    "Porta-malas de 470 L e garantia vêm de ficha marcada como 'dados estimados' (Ficha Completa).",
-    "Entre-eixos não confirmado em fonte brasileira.",
     "Torque: 61,1, 66,1 ou 66,3 kgfm conforme a fonte.",
     "Número de airbags: 6 (Webmotors) × 8 (eletricos.app).",
     "Preço de out/2026: nenhum reajuste encontrado; o último preço oficial visto é de mar/2026. A Webmotors grafa R$ 599.900–619.900.",

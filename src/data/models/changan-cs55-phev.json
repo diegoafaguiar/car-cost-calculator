@@ -2,37 +2,41 @@
   "catalogSeed": {
     "brand": "Caoa Changan",
     "model": "CS55 PHEV",
-    "version": "1.5 Turbo PHEV flex",
+    "version": "Ultra Hybrid 1.5 TGDi PHEV flex",
     "category": "suv-medio",
     "powertrain": "hibrido-plugin",
     "seats": 5,
-    "trunkL": null,
+    "trunkL": 525,
     "refPriceNew": 189990,
     "consumption": {
-      "cityKmL": 10.4,
-      "roadKmL": 12.1,
-      "cityKmLEthanol": 7.3,
-      "roadKmLEthanol": 8.3,
+      "cityKmL": 13.3,
+      "roadKmL": 11.3,
+      "cityKmLEthanol": 9.1,
+      "roadKmLEthanol": 9.1,
       "cityKmKWh": 4.1,
       "roadKmKWh": 4.1
     },
-    "evShareNote": "Híbrido plug-in flex importado da China; bateria de 18,4 kWh, 76 km elétricos (Inmetro), AC 6,6 kW.",
+    "evShareNote": "Híbrido plug-in flex importado da China; bateria de 18,4 kWh, 76 km elétricos (Inmetro), recarga AC 6,6 kW e DC até 43 kW. Consumo a combustão = \"modo híbrido\" publicado pela Mobiauto (fonte única).",
     "fipeBrand": "CAOA CHANGAN",
     "fipeInclude": [
-      "cs55",
-      "phev|hibrido"
+      "CS55",
+      "ULTRA"
     ],
     "since": 2027
   },
   "id": "changan-cs55-phev",
   "researchedAt": "2026-10",
   "displayName": "Caoa Changan CS55 PHEV",
-  "summary": "Versão híbrida plug-in flex do SUV médio CS55, importada da China. Motor 1.5 turbo flex + motor elétrico, 286 cv e 47 kgfm, bateria de 18,4 kWh com 76 km elétricos (Inmetro). Lançada em set/2026 por R$ 189.990 em pré-venda; entregas previstas a partir de out/2026 (fontes divergem: até o fim de 2026).",
+  "summary": "Versão híbrida plug-in flex (Ultra Hybrid PHEV Flex) do SUV médio CS55, importada da China. Motor 1.5 turbo flex + motor elétrico, 286 cv e 47 kgfm, bateria de 18,4 kWh com 76 km elétricos (Inmetro). Lançada em set/2026 por R$ 189.990 em pré-venda; entregas previstas a partir de out/2026 (fontes divergem: até o fim de 2026).",
   "generation": "CS55 Plus 2ª geração (China, 2021/reestilizado); no Brasil desde set/2026 (linha 2027), flex montado em Anápolis (GO) e PHEV importado da China.",
   "timeline": [
     {
       "modelYear": "2027",
       "change": "Lançamento em 15-16/set/2026: Prime R$ 144.990 (pré-venda), Infinity R$ 154.990 (pronta entrega) e PHEV R$ 189.990 (pré-venda) — preços de lançamento; ~3 mil pedidos em 3 dias."
+    },
+    {
+      "modelYear": "2027",
+      "change": "Preços de lançamento prorrogados até 30/set/2026; após 3 mil pedidos a marca desistiu de reajustar (Itatiaia). FIPE já lista o \"CS55 ULTRA 1.5 16V TGDi\" 2027 Híbrido (out/2026)."
     }
   ],
   "highlights": [
@@ -40,22 +44,24 @@
     "76 km de autonomia elétrica (Inmetro); modo elétrico em cidade até 70 km/h.",
     "Inmetro (ponderado de plug-in): 42,2 km/l cidade e 33,5 km/l estrada; autonomia total de até 1.200 km (fabricante).",
     "Garantia de 7 anos/150 mil km e 8 anos/150 mil km para a bateria.",
-    "Porte médio (4,55 m) e lista de série ampla na linha CS55."
+    "Porte médio (4,55 m) e lista de série ampla na linha CS55.",
+    "Modo híbrido (bateria no mínimo), segundo a Mobiauto: 13,3/11,3 km/l com gasolina e 9,1/9,1 km/l com etanol (cidade/estrada).",
+    "Itens da Infinity mais vidros acústicos, logo traseiro iluminado e V2L; recarga rápida DC de até 43 kW."
   ],
   "watchOuts": [
     "Em pré-venda: entregas previstas para out-dez/2026, com espera de ~60 dias relatada.",
     "Os 42,2 km/l incluem a energia da bateria; sem carga o consumo real não foi publicado.",
-    "Recarga só AC (6,6 kW) nas fontes vistas; DC não confirmado.",
-    "Marca nova; preço de lançamento pode subir; sem FIPE ainda.",
-    "Sem teste Latin NCAP/Euro NCAP/ANCAP encontrado."
+    "Sem teste Latin NCAP/Euro NCAP/ANCAP encontrado.",
+    "Marca nova; FIPE 2027 já em R$ 178.201 contra R$ 189.990 de tabela (out/2026), cerca de 6% abaixo.",
+    "Consumo em modo híbrido (13,3/11,3 km/l) visto numa única fonte (Mobiauto); outras fontes só trazem os valores ponderados de plug-in."
   ],
   "specs": {
-    "version": "CS55 PHEV flex (linha 2027)",
-    "engine": "1.5 turbo flex + motor elétrico, híbrido plug-in; bateria 18,4 kWh",
+    "version": "CS55 Ultra Hybrid PHEV flex (linha 2027)",
+    "engine": "1.5 turbo flex + motor elétrico, híbrido plug-in; bateria 18,4 kWh (uma fonte cita 143 cv a combustão e 234 cv elétrico)",
     "powerCv": "286 (combinada)",
     "torqueKgfm": "47 (combinado)",
-    "transmission": "Híbrida dedicada (não detalhada nas fontes)",
-    "trunkL": null,
+    "transmission": "DHT (transmissão híbrida dedicada)",
+    "trunkL": 525,
     "lengthMm": 4550,
     "wheelbaseMm": 2660,
     "safety": "6 airbags (linha CS55); sem NCAP",
@@ -65,11 +71,11 @@
     "version": "CS55 PHEV",
     "cityGas": 42.2,
     "roadGas": 33.5,
-    "cityEth": null,
-    "roadEth": null,
+    "cityEth": 28.9,
+    "roadEth": 22.7,
     "cityKmKWh": null,
     "roadKmKWh": null,
-    "year": "Divulgado pela marca/imprensa (set/2026); tabela pública do Inmetro de 31/ago/2026 ainda não listava o CS55. Valores ponderados de plug-in.",
+    "year": "Divulgado pela marca/imprensa (set/2026); tabela pública do Inmetro de 31/ago/2026 ainda não listava o CS55. Valores ponderados de plug-in. Etanol ponderado 28,9/22,7 km/l (Mobiauto). Modo híbrido: 13,3/11,3 km/l gasolina e 9,1/9,1 km/l etanol (Mobiauto). Algumas fontes invertem cidade/estrada (33,5/42,2).",
     "source": "https://www.automaistv.com.br/novidades/confira-como-ficou-o-consumo-do-caoa-changan-cs55/"
   },
   "price0km": {
@@ -80,14 +86,14 @@
   },
   "versionsAndPrices": [
     {
-      "version": "PHEV",
+      "version": "Ultra Hybrid PHEV flex",
       "price": 189990,
       "date": "set/2026",
       "source": "https://diariodonordeste.verdesmares.com.br/ultima-hora/automovel/caoa-changan-cs55-chega-com-preco-competitivo-e-tres-versoes-1.3792955"
     }
   ],
   "launchModelYearBR": 2027,
-  "catalogCheck": "Modelo ausente do catálogo. Pré-venda desde set/2026 (R$ 189.990; uma fonte cita R$ 185 mil). Ainda sem FIPE; include ['cs55','phev|hibrido'] provisório.",
+  "catalogCheck": "Modelo ausente do catálogo. FIPE (out/2026): marca \"Caoa Changan\", modelo \"CS55 ULTRA 1.5 16V TGDi\", código 308006-4 — 2027 Híbrido = R$ 178.201; 0 km = R$ 190.998 (tabelafipebrasil). O nome FIPE não contém \"PHEV\" nem \"híbrido\" (só o combustível): usar include [\"cs55\",\"ultra\"]. Preço de tabela R$ 189.990 (vendas por reserva; entregas a partir de out/2026).",
   "wikipedia": {
     "lang": "en",
     "title": "Changan CS55"
@@ -149,14 +155,35 @@
     {
       "label": "Automotive Business — CS55 tem versão híbrida flex",
       "url": "https://www.automotivebusiness.com.br/noticias/caoa-changan-cs55-hibrida-flex-precos-competitivos"
+    },
+    {
+      "label": "Tabela FIPE Brasil — CS55 ULTRA 1.5 16V TGDi 2027 Híbrido (308006-4)",
+      "url": "https://www.tabelafipebrasil.com/carros/CAOA-CHANGAN/CS55-ULTRA-15-16V-TGDI/2027-Hibrido"
+    },
+    {
+      "label": "Caoa Changan — Conheça o CS55 PHEV (porta-malas 525 L)",
+      "url": "https://caoachangan.com.br/novos/cs55-phev"
+    },
+    {
+      "label": "Itatiaia — 3 mil pedidos; marca desiste de aumentar preços do CS55",
+      "url": "https://www.itatiaia.com.br/auto/caoa-changan-recebe-3-mil-pedidos-e-desiste-de-aumentar-os-precos-do-cs55/"
+    },
+    {
+      "label": "eletricos.app — CS55 Ultra-Hybrid PHEV Flex 2027",
+      "url": "https://www.eletricos.app/veiculo/caoa-changan-cs55-ultra-hybrid-phev-flex-2027"
+    },
+    {
+      "label": "Motor Show — CS55 híbrido plug-in chega por R$ 189.990",
+      "url": "https://motorshow.com.br/caoa-changan-cs55-hibrido-plug-in-chega"
     }
   ],
   "unverified": [
-    "Consumo com bateria descarregada não publicado: no catálogo usou-se, como aproximação conservadora, o Inmetro do CS55 1.5 turbo flex não híbrido (10,4/12,1 km/l gasolina; 7,3/8,3 km/l etanol). Um PHEV no modo híbrido costuma gastar menos que isso.",
+    "Consumo em modo híbrido (13,3/11,3 km/l gasolina; 9,1/9,1 km/l etanol) só na Mobiauto; o etanol igual na cidade e na estrada pode ser erro de digitação da fonte.",
+    "Porta-malas 525 L da PHEV visto em resumo de busca da página oficial (cs55-phev).",
+    "Recarga DC de até 43 kW citada por uma fonte de imprensa.",
+    "Preço após 30/set/2026: nenhum reajuste encontrado (Itatiaia diz que a marca desistiu de aumentar).",
     "Consumo elétrico (estimado 76 km ÷ 18,4 kWh ≈ 4,1 km/kWh).",
-    "Porta-malas da PHEV (a bateria pode reduzir os 525 L da versão flex).",
     "Data real de início das entregas.",
-    "Equipamentos específicos da PHEV.",
     "Preço R$ 189.990 x R$ 185 mil conforme fonte.",
     "Pesquisa feita por resumos de busca das fontes listadas (páginas não abertas diretamente); confira os valores na fonte."
   ]

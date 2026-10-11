@@ -33,6 +33,10 @@
     {
       "modelYear": "2027",
       "change": "Lançamento em 15-16/set/2026: Prime R$ 144.990 (pré-venda), Infinity R$ 154.990 (pronta entrega) e PHEV R$ 189.990 (pré-venda) — preços de lançamento; ~3 mil pedidos em 3 dias."
+    },
+    {
+      "modelYear": "2027",
+      "change": "Preços de lançamento prorrogados até 30/set/2026; após 3 mil pedidos a marca desistiu de reajustar (Itatiaia). FIPE Infinity 2027 = R$ 146.166 (out/2026)."
     }
   ],
   "highlights": [
@@ -40,11 +44,12 @@
     "Infinity: teto panorâmico, bancos dianteiros aquecidos e ventilados, ar de duas zonas, som Pioneer, tampa elétrica e ADAS nível 2+.",
     "Câmeras 540°, 6 airbags, monitor de ponto cego, alerta de colisão e assistente de faixa citados como de série.",
     "Garantia de 7 anos/150 mil km.",
-    "Infinity com pronta entrega no lançamento."
+    "Infinity com pronta entrega no lançamento.",
+    "Infinity: central 14,6\" + painel 10,3\", CarPlay/Android Auto sem fio, ACC stop & go, frenagem autônoma, ponto cego, tráfego cruzado traseiro e centralização em faixa (Webmotors/CNN Brasil)."
   ],
   "watchOuts": [
     "Não é eletrificado: consumo Inmetro de 10,4/12,1 km/l (gasolina), bem pior que híbridos.",
-    "Preços são de lançamento e a imprensa espera aumento.",
+    "Preços eram de lançamento (válidos até 30/set/2026); a Itatiaia diz que a marca desistiu de aumentá-los após 3 mil pedidos, mas nenhuma tabela pós-setembro foi vista.",
     "Caoa Changan é marca nova (rede e revenda sem histórico); FIPE Infinity 2027 já em R$ 146.166 (out/2026).",
     "Sem teste Latin NCAP; nenhum Euro NCAP/ANCAP do CS55 encontrado.",
     "Fila de espera de cerca de 60 dias relatada para algumas versões."
@@ -53,7 +58,7 @@
     "version": "CS55 Infinity 1.5 TGDi flex (linha 2027)",
     "engine": "1.5 turbo flex 4 cil., 180 cv",
     "powerCv": "180",
-    "torqueKgfm": null,
+    "torqueKgfm": "29,2 (iCarros, etanol)",
     "transmission": "DCT de 7 marchas",
     "trunkL": 525,
     "lengthMm": 4550,
@@ -145,14 +150,24 @@
     {
       "label": "Mixvale — fila de espera de 60 dias",
       "url": "https://www.mixvale.com.br/2026/09/17/caoa-changan-cs55-tem-fila-de-espera-de-60-dias-no-brasil/"
+    },
+    {
+      "label": "iCarros — CS55 1.5T Infinity DCT 2027",
+      "url": "https://www.icarros.com.br/catalogo/marcas/caoa-changan/cs55"
+    },
+    {
+      "label": "Itatiaia — 3 mil pedidos; marca desiste de aumentar preços do CS55",
+      "url": "https://www.itatiaia.com.br/auto/caoa-changan-recebe-3-mil-pedidos-e-desiste-de-aumentar-os-precos-do-cs55/"
+    },
+    {
+      "label": "Webmotors — primeiras impressões CS55 (ADAS da Infinity)",
+      "url": "https://www.webmotors.com.br/wm1/carros/lancamentos/primeiras-impressoes-caoa-changan-cs55"
     }
   ],
   "unverified": [
-    "Torque do 1.5 turbo flex.",
+    "Torque 29,2 kgfm só no iCarros (etanol); a ficha uruguaia do CS55 Plus dá 300 Nm.",
     "Entre-eixos 2.660 mm x 2.650 mm conforme fonte.",
     "Etanol estrada 8,3 km/l numa fonte; preço pode ter subido após o fim das condições de lançamento.",
-    "Se ACC está incluído no ADAS da Infinity.",
-    "Material dos bancos da Infinity.",
     "Pesquisa feita por resumos de busca das fontes listadas (páginas não abertas diretamente); confira os valores na fonte."
   ]
 }

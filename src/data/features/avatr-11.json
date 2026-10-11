@@ -6,7 +6,7 @@
     "screen10": true,
     "wirelessMirroring": null,
     "digitalCluster": true,
-    "wirelessCharger": null,
+    "wirelessCharger": true,
     "camera360": true,
     "adaptiveCruise": true,
     "connectedApp": null,
@@ -17,7 +17,7 @@
     "digitalAC": null,
     "rearVents": null,
     "leather": true,
-    "powerSeat": null,
+    "powerSeat": true,
     "seatClimate": true,
     "sunroof": true
   },
@@ -55,17 +55,19 @@
     {
       "label": "Canal VE — Avatr 11 chega ao Brasil",
       "url": "https://canalve.com.br/avatr-11-chega-ao-brasil-ia-interpreta-sinais-usuario/"
+    },
+    {
+      "label": "eletricos.app — Avatr 11 4 assentos 2026",
+      "url": "https://www.eletricos.app/veiculo/avatr-11-4-assentos-2026"
     }
   ],
-  "notes": "Tela panorâmica de 15,6\" e painel de 12,3\" (eletricos.app), HarmonyOS 4; câmeras 360°, ACC L2+, AEB, permanência em faixa, ponto cego, alerta de tráfego cruzado traseiro, estacionamento semiautomático e detector de fadiga (Webmotors/eletricos.app); couro semi-anilina, bancos dianteiros com ventilação, aquecimento e massagem, e teto panorâmico (Tribuna PR). Airbags: 6 (Webmotors) ou 8 (eletricos.app), ou seja, pelo menos 6. O ajuste elétrico dos bancos é provável, mas não foi confirmado nas fontes vistas.",
+  "notes": "Tela panorâmica de 15,6\" e painel de 12,3\" (eletricos.app), HarmonyOS 4; câmeras 360°, ACC L2+, AEB, permanência em faixa, ponto cego, alerta de tráfego cruzado traseiro, estacionamento semiautomático e detector de fadiga (Webmotors/eletricos.app); couro semi-anilina, bancos dianteiros com ventilação, aquecimento e massagem, e teto panorâmico (Tribuna PR). Airbags: 6 (Webmotors) ou 8 (eletricos.app), ou seja, pelo menos 6. O ajuste elétrico dos bancos é provável, mas não foi confirmado nas fontes vistas. Atualização: carregador por indução (eletricos.app versão 4 assentos e Ficha Completa) e bancos dianteiros com ajuste elétrico e memória (eletricos.app). Nenhuma fonte cita CarPlay/Android Auto (só espelhamento genérico; HarmonyOS); acesso por cartão NFC segundo uma crítica.",
   "unverified": [
     "tech.wirelessMirroring",
-    "tech.wirelessCharger",
     "tech.connectedApp",
     "tech.keyless",
     "comfort.digitalAC",
     "comfort.rearVents",
-    "comfort.powerSeat",
     "ncap"
   ]
 }

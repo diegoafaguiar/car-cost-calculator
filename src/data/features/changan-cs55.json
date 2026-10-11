@@ -3,30 +3,30 @@
   "version": "Caoa Changan CS55 Infinity 1.5 TGDi 2027",
   "researchedAt": "2026-10",
   "tech": {
-    "screen10": null,
-    "wirelessMirroring": null,
+    "screen10": true,
+    "wirelessMirroring": true,
     "digitalCluster": true,
     "wirelessCharger": true,
     "camera360": true,
-    "adaptiveCruise": null,
-    "connectedApp": null,
+    "adaptiveCruise": true,
+    "connectedApp": true,
     "keyless": true
   },
   "comfort": {
     "automatic": true,
     "digitalAC": true,
     "rearVents": null,
-    "leather": null,
-    "powerSeat": null,
+    "leather": true,
+    "powerSeat": true,
     "seatClimate": true,
     "sunroof": true
   },
   "safety": {
     "airbags6": true,
-    "aeb": null,
+    "aeb": true,
     "laneKeep": true,
     "blindSpot": true,
-    "rearCrossTraffic": null
+    "rearCrossTraffic": true
   },
   "ncap": {
     "stars": null,
@@ -47,18 +47,26 @@
     {
       "label": "Vrum — Caoa Changan lança CS55 a partir de R$ 144 mil (set/2026)",
       "url": "https://www.vrum.com.br/mercado/2026/09/7501381-caoa-changan-lanca-cs55-a-partir-de-rs-144-mil-para-destronar-jeep-compass.html"
+    },
+    {
+      "label": "Webmotors — primeiras impressões CS55 (ADAS da Infinity)",
+      "url": "https://www.webmotors.com.br/wm1/carros/lancamentos/primeiras-impressoes-caoa-changan-cs55"
+    },
+    {
+      "label": "CNN Brasil (Jorge Moraes) — CS55 terceiro SUV, ADAS nível 2+",
+      "url": "https://www.cnnbrasil.com.br/blogs/jorge-moraes/auto/cs-55-e-terceiro-suv-da-changan-no-brasil-e-estreia-com-opcao-hibrida-phev/"
+    },
+    {
+      "label": "Caoa Changan — Conheça o CS55 Infinity",
+      "url": "https://caoachangan.com.br/novos/cs55-infinity"
+    },
+    {
+      "label": "Guru dos Carros — CS55 preços e versões",
+      "url": "https://gurudoscarros.com.br/2026/09/15/caoa-changan-cs55-precos-versoes-hibrido-flex-brasil/"
     }
   ],
-  "notes": "Prime (base) já traz rodas 19\", ar digital, chave presencial, câmeras 540°, carregador sem fio e painel digital 10,3\"; Infinity soma teto panorâmico, bancos dianteiros aquecidos e ventilados, ar automático de duas zonas, som Pioneer de 8 alto-falantes, tampa elétrica e ADAS nível 2+. Segurança citada sem separar versões: 6 airbags, alerta de colisão frontal e traseira, câmera 360°, ponto cego, alerta de abertura de portas e assistente de faixa com centralização.",
+  "notes": "Prime (base) já traz rodas 19\", ar digital, chave presencial, câmeras 540°, carregador sem fio e painel digital 10,3\"; Infinity soma teto panorâmico, bancos dianteiros aquecidos e ventilados, ar automático de duas zonas, som Pioneer de 8 alto-falantes, tampa elétrica e ADAS nível 2+. Segurança citada sem separar versões: 6 airbags, alerta de colisão frontal e traseira, câmera 360°, ponto cego, alerta de abertura de portas e assistente de faixa com centralização. Atualização: central 14,6\" + painel 10,3\" (Smart Cockpit 24,9\"), CarPlay/Android Auto sem fio e app Caoa Changan Connect (CNN Brasil/Guru dos Carros); Infinity com revestimento em couro (AutoPapo), banco do motorista com memória e ajustes elétricos no passageiro; ADAS: ACC stop & go, frenagem autônoma de emergência (com detecção de pedestres e ciclistas, site oficial), ponto cego, alerta de tráfego cruzado traseiro, permanência/centralização em faixa (Webmotors, CNN Brasil). connectedApp = true pela integração ao app Caoa Changan Connect; as funções remotas exatas do CS55 não foram listadas.",
   "unverified": [
-    "tech.screen10",
-    "tech.wirelessMirroring",
-    "tech.adaptiveCruise",
-    "tech.connectedApp",
-    "comfort.rearVents",
-    "comfort.leather",
-    "comfort.powerSeat",
-    "safety.aeb",
-    "safety.rearCrossTraffic"
+    "comfort.rearVents"
   ]
 }
