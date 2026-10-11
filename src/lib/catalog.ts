@@ -55,7 +55,6 @@ const BRAND_DEPRECIATION: Record<string, number> = {
   GAC: 1.3,
   Zeekr: 1.3,
   Denza: 1.3,
-  Avatr: 1.3,
 }
 
 const flex = (city: number, road: number, cityE: number, roadE: number) => ({
@@ -159,7 +158,7 @@ const seeds: Seed[] = [
   // Revisão de lacunas (out/2026): pedidos do usuário e SUVs que faltavam.
   { id: 'gac-gs3', since: 2026, brand: 'GAC', model: 'GS3', version: 'Premium 1.5 Turbo WDCT', category: 'suv-compacto', powertrain: 'gasolina', transmission: 'automatico', seats: 5, trunkL: 341, refPriceNew: 139990, consumption: { cityKmL: 10.2, roadKmL: 11.6 }, estimated: ['manutenção', 'porta-malas (341 L, fonte única)'], fipe: { brand: 'gac', include: ['gs3', 'premium'] } },
   { id: 'geely-ex2', since: 2026, brand: 'Geely', model: 'EX2', version: 'Pro (elétrico)', category: 'hatch', powertrain: 'eletrico', transmission: 'automatico', seats: 5, trunkL: 375, refPriceNew: 124600, consumption: { cityKmL: 0, roadKmL: 0, cityKmKWh: 9.23, roadKmKWh: 9.23 }, estimated: ['manutenção'], fipe: { brand: 'geely', include: ['ex2', 'pro'] } },
-  { id: 'avatr-11', since: 2026, brand: 'Avatr', model: '11', version: 'AWD 5 lugares (elétrico, 116 kWh)', category: 'suv-grande', powertrain: 'eletrico', transmission: 'automatico', seats: 5, trunkL: 470, refPriceNew: 599990, consumption: { cityKmL: 0, roadKmL: 0, cityKmKWh: 6, roadKmKWh: 6 }, estimated: ['porta-malas (470 L de ficha marcada como estimada)', 'manutenção'], fipe: { brand: 'caoa changan', include: ['avatr11'] } },
+  { id: 'avatr-11', since: 2026, brand: 'Caoa Changan', model: 'Avatr 11', version: 'AWD 5 lugares (elétrico, 116 kWh)', category: 'suv-grande', powertrain: 'eletrico', transmission: 'automatico', seats: 5, trunkL: 470, refPriceNew: 599990, consumption: { cityKmL: 0, roadKmL: 0, cityKmKWh: 6, roadKmKWh: 6 }, estimated: ['porta-malas (470 L de ficha marcada como estimada)', 'manutenção'], fipe: { brand: 'caoa changan', include: ['avatr11'] } },
   { id: 'hyundai-kona-hybrid', since: 2026, brand: 'Hyundai', model: 'Kona Hybrid', version: 'Ultimate 1.6 GDI HEV', category: 'suv-compacto', powertrain: 'hibrido', transmission: 'automatico', seats: 5, trunkL: 407, refPriceNew: 219990, consumption: { cityKmL: 18.4, roadKmL: 16.0 }, estimated: ['preço de tabela; promoção a R$ 179.990 até 07/10/2026', 'manutenção'], fipe: { brand: 'hyundai', include: ['kona', 'ultimate'], exclude: ['signature'] } },
   { id: 'kia-niro-hev', since: 2023, brand: 'Kia', model: 'Niro', version: 'EX 1.6 GDI HEV', category: 'suv-compacto', powertrain: 'hibrido', transmission: 'automatico', seats: 5, trunkL: 425, refPriceNew: 194990, consumption: { cityKmL: 18.3, roadKmL: 15.9 }, estimated: ['preço com bônus de R$ 20 mil (tabela R$ 214.990)', 'manutenção', 'since (deduzido da FIPE: SX Prestige desde 2023)'], fipe: { brand: 'kia', include: ['niro', 'ex'], exclude: ['prestige'] } },
   { id: 'chevrolet-captiva-ev', since: 2026, brand: 'Chevrolet', model: 'Captiva EV', version: 'Premier (elétrico, 60 kWh)', category: 'suv-medio', powertrain: 'eletrico', transmission: 'automatico', seats: 5, trunkL: 403, refPriceNew: 219990, consumption: { cityKmL: 0, roadKmL: 0, cityKmKWh: 5.81, roadKmKWh: 5.81 }, estimated: ['manutenção', 'preço: tabela R$ 219.990; praticado/promo R$ 199.990'], fipe: { brand: 'chevrolet', include: ['captiva', 'ev'] } },
