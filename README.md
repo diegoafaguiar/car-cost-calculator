@@ -58,6 +58,7 @@ Stack: React 19, TypeScript, Vite, Tailwind CSS v4. FIPE via [API Parallelum](ht
 | `/` | Painel: seu carro, ranking, comparador |
 | `/carros` | Todos os carros, com busca e filtros (ficam na URL: `?q=song&cat=suv-medio&mot=hibrido`) |
 | `/carro/<id>` | Ficha do modelo; `?ano=2024` destaca o ano na análise |
+| `/comparar` | Comparação detalhada; `?opcoes=id1,id2` abre a mesma seleção (link compartilhável) |
 | `/marcas` | Todas as marcas |
 | `/marca/<marca>` | Modelos de uma marca, por categoria, e a melhor opção para você |
 
