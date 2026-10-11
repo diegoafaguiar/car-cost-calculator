@@ -148,3 +148,9 @@ dialog.sheet[open] {
     animation: none;
   }
 }
+
+@keyframes toast-in {
+  from { transform: translateY(12px); opacity: 0; }
+}
+.toast { animation: toast-in 180ms ease-out; }
+@media (prefers-reduced-motion: reduce) { .toast { animation: none; } }

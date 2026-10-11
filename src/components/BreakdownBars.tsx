@@ -18,9 +18,13 @@ export function BreakdownBars({ breakdown, total }: { breakdown: Breakdown; tota
         const w = (Math.abs(r.value) / span) * 100
         const neg = r.value < 0
         return (
-          <li key={r.key} className="group grid grid-cols-[9.5rem_1fr_5.5rem] items-center gap-2 text-sm" title={`${r.label}: ${money(r.value)}`}>
+          <li
+            key={r.key}
+            className="group grid grid-cols-[1fr_auto] items-center gap-x-2 gap-y-1 text-sm sm:grid-cols-[9.5rem_1fr_5.5rem]"
+            title={`${r.label}: ${money(r.value)}`}
+          >
             <span className="truncate text-ink-2">{r.label}</span>
-            <span className="relative h-3">
+            <span className="relative order-last col-span-2 h-2.5 rounded-sm bg-surface-2 sm:order-none sm:col-span-1 sm:h-3 sm:bg-transparent">
               <span
                 className="absolute top-0 h-3 rounded-sm transition-opacity group-hover:opacity-80"
                 style={{
@@ -33,7 +37,7 @@ export function BreakdownBars({ breakdown, total }: { breakdown: Breakdown; tota
             </span>
             <span className="text-right tabular text-ink">
               {money(r.value)}
-              <span className="block text-[11px] text-muted">{total > 0 ? pct(r.value / total, 0) : ''}</span>
+              <span className="ml-1.5 text-[11px] text-muted sm:ml-0 sm:block">{total > 0 ? pct(r.value / total, 0) : ''}</span>
             </span>
           </li>
         )

@@ -12,6 +12,7 @@ export type Route =
   | { name: 'cars' }
   | { name: 'brand'; slug: string }
   | { name: 'brands' }
+  | { name: 'compare'; ids?: string[] }
   | { name: 'notFound'; path: string }
 
 export const brandSlug = (brand: string) =>
@@ -24,6 +25,7 @@ export const paths = {
   cars: () => '/carros',
   car: (id: string, year?: number) => `/carro/${id}${year ? `?ano=${year}` : ''}`,
   brands: () => '/marcas',
+  compare: (ids?: string[]) => `/comparar${ids?.length ? `?opcoes=${ids.map(encodeURIComponent).join(',')}` : ''}`,
   brand: (brand: string) => `/marca/${brandSlug(brand)}`,
 }
 
@@ -32,6 +34,10 @@ export function parseRoute(pathname: string, search = ''): Route {
   if (p === '/') return { name: 'home' }
   if (p === '/carros') return { name: 'cars' }
   if (p === '/marcas') return { name: 'brands' }
+  if (p === '/comparar') {
+    const ids = new URLSearchParams(search).get('opcoes')?.split(',').filter(Boolean)
+    return ids?.length ? { name: 'compare', ids } : { name: 'compare' }
+  }
   let m = p.match(/^\/carro\/([\w-]+)$/)
   if (m) {
     const year = Number(new URLSearchParams(search).get('ano')) || undefined

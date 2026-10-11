@@ -12,19 +12,35 @@ export interface Series {
 const H = 280
 const PAD = { top: 16, right: 16, bottom: 28, left: 64 }
 
-function niceTicks(min: number, max: number, count = 5) {
+export function niceTicks(min: number, max: number, count = 5) {
   const span = max - min || 1
   const step0 = span / count
   const mag = Math.pow(10, Math.floor(Math.log10(step0)))
   const step = [1, 2, 2.5, 5, 10].map((m) => m * mag).find((s) => s >= step0) ?? step0
   const start = Math.floor(min / step) * step
-  const ticks: number[] = []
-  for (let v = start; v <= max + step * 0.001; v += step) ticks.push(v)
+  const ticks: number[] = [start]
+  // Vai até a primeira marca que cobre o máximo (antes podia parar abaixo e as linhas saíam do gráfico).
+  while (ticks[ticks.length - 1] < max - step * 1e-6) ticks.push(ticks[ticks.length - 1] + step)
   return ticks
 }
 
+/** Marcas do eixo X: trimestres no horizonte de 1 ano, anos nos demais. */
+function xTicks(months: number) {
+  const step = months <= 12 ? 3 : 12
+  const out: number[] = []
+  for (let m = step; m <= months; m += step) out.push(m)
+  return out
+}
+const tickLabel = (m: number, months: number) => (months <= 12 ? `${m} meses` : `${m / 12} ${m === 12 ? 'ano' : 'anos'}`)
+const monthLabel = (m: number) => {
+  if (m === 0) return 'Hoje'
+  const y = Math.floor(m / 12)
+  const r = m % 12
+  return `Mês ${m}${y ? ` (${y}a${r ? ` ${r}m` : ''})` : ''}`
+}
+
 /** Custo acumulado mês a mês, com crosshair e tooltip. */
-export function CostChart({ series }: { series: Series[] }) {
+export function CostChart({ series: full, months: horizonMonths }: { series: Series[]; months?: number }) {
   const ref = useRef<HTMLDivElement>(null)
   const [width, setWidth] = useState(640)
   const [hover, setHover] = useState<number | null>(null)
@@ -37,13 +53,16 @@ export function CostChart({ series }: { series: Series[] }) {
     return () => ro.disconnect()
   }, [])
 
-  const months = series[0]?.values.length ? series[0].values.length - 1 : 60
+  // Mostra só o horizonte escolhido: em 1 ano, a escala fica nos primeiros 12 meses (antes ficava esmagada nos 60).
+  const total = full[0]?.values.length ? full[0].values.length - 1 : 60
+  const months = Math.min(total, horizonMonths ?? total)
+  const series = useMemo(() => full.map((s) => ({ ...s, values: s.values.slice(0, months + 1) })), [full, months])
   const { ticks, y, x } = useMemo(() => {
     const all = series.flatMap((s) => s.values)
     const lowest = Math.min(0, ...all)
     const min = lowest > -1 ? 0 : lowest
     const max = Math.max(1, ...all)
-    const ticks = niceTicks(min, max)
+    const ticks = niceTicks(min, max, width < 480 ? 4 : 6)
     const lo = ticks[0]
     const hi = ticks[ticks.length - 1]
     const innerH = H - PAD.top - PAD.bottom
@@ -74,7 +93,8 @@ export function CostChart({ series }: { series: Series[] }) {
         aria-label="Custo acumulado por mês para cada opção comparada"
         onPointerMove={onMove}
         onPointerLeave={() => setHover(null)}
-        className="block touch-none select-none"
+        className="block touch-pan-y select-none"
+        onPointerDown={onMove}
       >
         {ticks.map((t) => (
           <g key={t}>
@@ -84,11 +104,11 @@ export function CostChart({ series }: { series: Series[] }) {
             </text>
           </g>
         ))}
-        {[12, 36, 60].filter((m) => m <= months).map((m) => (
+        {xTicks(months).map((m) => (
           <g key={m}>
             <line x1={x(m)} x2={x(m)} y1={PAD.top} y2={H - PAD.bottom} stroke="var(--axis)" strokeDasharray="2 3" />
             <text x={x(m)} y={H - 8} textAnchor={m === months ? 'end' : 'middle'} fontSize={11} fill="var(--muted)">
-              {m / 12} {m === 12 ? 'ano' : 'anos'}
+              {tickLabel(m, months)}
             </text>
           </g>
         ))}
@@ -115,10 +135,10 @@ export function CostChart({ series }: { series: Series[] }) {
       </svg>
       {hover !== null && (
         <div
-          className="pointer-events-none absolute top-2 z-10 w-60 rounded-lg border border-line bg-surface p-2.5 text-xs shadow-lg"
-          style={tipLeft ? { right: width - x(hover) + 12 } : { left: x(hover) + 12 }}
+          className="pointer-events-none absolute top-2 z-10 w-[min(15rem,70%)] rounded-lg border border-line bg-surface p-2.5 text-xs shadow-lg"
+          style={tipLeft ? { right: Math.max(0, width - x(hover) + 12) } : { left: Math.min(x(hover) + 12, width * 0.3) }}
         >
-          <div className="mb-1.5 font-semibold text-ink">Mês {hover}</div>
+          <div className="mb-1.5 font-semibold text-ink">{monthLabel(hover)}</div>
           {sorted.map((s) => (
             <div key={s.id} className="flex items-center justify-between gap-2 py-0.5">
               <span className="flex min-w-0 items-center gap-1.5 text-ink-2">

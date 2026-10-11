@@ -36,7 +36,7 @@ export function SettingsDrawer(props: Props) {
     >
       <div className="sticky top-0 z-10 border-b border-line bg-surface/95 px-5 py-4 backdrop-blur">
         <div className="flex items-center justify-between gap-3">
-          <h2 className="text-lg font-semibold tracking-tight">Configurações</h2>
+          <h2 className="text-lg font-semibold tracking-tight">Ajustes</h2>
           <Button variant="ghost" onClick={() => ref.current?.close()}>
             Fechar
           </Button>

@@ -1,7 +1,6 @@
 import { lazy, Suspense, useEffect, useMemo, useRef, useState } from 'react'
 import { BreakdownBars } from './components/BreakdownBars'
 import { CarHero } from './components/CarHero'
-import { Comparator } from './components/Comparator'
 import { CustomCarDialog } from './components/CustomCarDialog'
 import { CostChart, type Series } from './components/CostChart'
 import { DetailDrawer } from './components/DetailDrawer'
@@ -11,6 +10,8 @@ import { FilterBar } from './components/FilterBar'
 import { KIND_LABEL, RankingTable, type SortKey } from './components/RankingTable'
 import { SettingsDrawer, type SettingsTab } from './components/SettingsDrawer'
 import { TradeInCard } from './components/TradeInCard'
+import { Toaster, toast } from './components/Toast'
+import { ComparePreview } from './components/ComparePreview'
 import { Button, Card, Segmented } from './components/ui'
 import { CATALOG } from './lib/catalog'
 import { DEFAULT_ASSUMPTIONS, DEFAULT_CAR, DEFAULT_PREFERENCES } from './lib/defaults'
@@ -27,6 +28,7 @@ const ModelPage = lazy(() => import('./components/ModelPage').then((m) => ({ def
 const CatalogPage = lazy(() => import('./components/CatalogPage').then((m) => ({ default: m.CatalogPage })))
 const BrandsPage = lazy(() => import('./components/BrandPages').then((m) => ({ default: m.BrandsPage })))
 const BrandPage = lazy(() => import('./components/BrandPages').then((m) => ({ default: m.BrandPage })))
+const ComparePage = lazy(() => import('./components/ComparePage').then((m) => ({ default: m.ComparePage })))
 const NotFound = lazy(() => import('./components/BrandPages').then((m) => ({ default: m.NotFound })))
 
 const YEAR = new Date().getFullYear()
@@ -221,9 +223,26 @@ export default function App() {
     return list
   }, [keep, compare, results, colors])
 
+  const nameOf = (id: string) => {
+    const r = results.find((x) => x.scenario.id === id)
+    if (!r) return 'Opção'
+    const s = r.scenario
+    return `${s.label} ${s.kind === 'subscription' ? '(assinatura)' : s.ageAtStart === 0 ? '0 km' : YEAR - s.ageAtStart}`
+  }
+  // Com a comparação cheia, a opção mais antiga sai para a nova entrar (antes o toque não fazia nada).
   const toggleCompare = (id: string) => {
     if (id === 'keep') return
-    setCompare((c) => (c.includes(id) ? c.filter((x) => x !== id) : c.length >= MAX_COMPARE ? c : [...c, id]))
+    if (compare.includes(id)) {
+      setCompare(compare.filter((x) => x !== id))
+      toast(`${nameOf(id)} saiu da comparação`)
+      return
+    }
+    const dropped = compare.length >= MAX_COMPARE ? compare[0] : null
+    setCompare([...compare.filter((x) => x !== dropped), id])
+    toast(dropped ? `${nameOf(id)} entrou no lugar de ${nameOf(dropped)}` : `${nameOf(id)} adicionado à comparação`, {
+      label: 'Ver',
+      href: paths.compare(),
+    })
   }
 
   const resetFilters =
@@ -310,19 +329,19 @@ export default function App() {
             </span>
           </a>
           <nav className="ml-auto flex items-center gap-0.5 whitespace-nowrap sm:gap-1.5">
+            <a href={paths.brands()} className={`hidden rounded-lg px-3 py-1.5 text-sm font-medium hover:bg-surface-2 md:inline-block ${route.name === 'brands' || route.name === 'brand' ? 'text-accent' : 'text-ink-2 hover:text-ink'}`}>
+              Marcas
+            </a>
             <a href={paths.cars()} className={`hidden rounded-lg px-3 py-1.5 text-sm font-medium hover:bg-surface-2 md:inline-block ${route.name === 'cars' || route.name === 'car' ? 'text-accent' : 'text-ink-2 hover:text-ink'}`}>
               Carros
             </a>
-            <a href={paths.brands()} className={`hidden rounded-lg px-3 py-1.5 text-sm font-medium hover:bg-surface-2 md:inline-block ${route.name === 'brands' || route.name === 'brand' ? 'text-accent' : 'text-ink-2 hover:text-ink'}`}>
-              Marcas
+            <a href={paths.compare(compare)} className={`hidden rounded-lg px-3 py-1.5 text-sm font-medium hover:bg-surface-2 md:inline-block ${route.name === 'compare' ? 'text-accent' : 'text-ink-2 hover:text-ink'}`}>
+              Comparar
             </a>
             {!onPage && <ExportMenu ctx={exportCtx} />}
             <span className="hidden md:contents">
               <Button variant="ghost" onClick={() => setSettings('car')}>
-                Meu carro
-              </Button>
-              <Button variant="ghost" onClick={() => setSettings('assumptions')}>
-                Premissas
+                Ajustes
               </Button>
             </span>
             <ThemeToggle />
@@ -352,6 +371,28 @@ export default function App() {
                       setCompare(ids)
                       goToSection('sec-compare')
                     }}
+                  />
+                ) : route.name === 'compare' ? (
+                  <ComparePage
+                    idsFromUrl={route.ids}
+                    results={results}
+                    ranked={ranked}
+                    keep={keep}
+                    compare={compare}
+                    onCompare={setCompare}
+                    onToggle={toggleCompare}
+                    colors={colors}
+                    series={series}
+                    max={MAX_COMPARE}
+                    horizon={horizon}
+                    onHorizon={(v) => setPrefs({ ...prefs, rankHorizon: v })}
+                    assumptions={assumptions}
+                    prefs={prefs}
+                    carCategory={car.category}
+                    carModelId={car.catalogModelId}
+                    carModelYear={car.modelYear}
+                    onOpen={setOpenId}
+                    onEditFilters={() => goToSection('sec-ranking')}
                   />
                 ) : route.name === 'cars' ? (
                   <CatalogPage results={results} keep={keep} horizon={horizon} />
@@ -491,28 +532,20 @@ export default function App() {
             </section>
 
             <section id="sec-compare" className="scroll-mt-32">
-              <ErrorBoundary area="Comparação">
-              <Comparator
+              <ComparePreview
                 keep={keep}
                 results={results}
-                ranked={ranked}
                 compare={compare}
                 colors={colors}
+                horizon={horizon}
                 max={MAX_COMPARE}
                 onToggle={toggleCompare}
-                horizon={horizon}
-                onHorizon={(v) => setPrefs({ ...prefs, rankHorizon: v })}
-                assumptions={assumptions}
-                onOpen={setOpenId}
-                carModelId={car.catalogModelId}
-                carModelYear={car.modelYear}
               />
-              </ErrorBoundary>
             </section>
 
             <div id="sec-chart" className="grid scroll-mt-32 grid-cols-1 gap-6 xl:grid-cols-[minmax(0,1.6fr)_minmax(0,1fr)]">
-              <Card className="min-w-0" title="Custo acumulado" subtitle="Perda de patrimônio mês a mês, já descontando a revenda">
-                <CostChart series={series} />
+              <Card className="min-w-0" title="Custo acumulado" subtitle={`Perda de patrimônio mês a mês em ${horizon} ${horizon === 1 ? 'ano' : 'anos'}, já descontando a revenda`}>
+                <CostChart series={series} months={horizon * 12} />
               </Card>
               {keep && (
                 <Card
@@ -534,7 +567,8 @@ export default function App() {
         </footer>
       </div>
 
-      <BottomNav route={route.name} onSettings={setSettings} />
+      <BottomNav route={route.name} compareCount={compare.length} onSettings={() => setSettings('car')} />
+      <Toaster />
 
       {adding !== null && (
         <CustomCarDialog
@@ -592,7 +626,7 @@ const SECTIONS = [
   ['sec-trade', 'Troca'],
   ['sec-ranking', 'Opções'],
   ['sec-compare', 'Comparar'],
-  ['sec-chart', 'Gráficos'],
+  ['sec-chart', 'Gastos'],
 ] as const
 
 /** Atalhos para as seções do painel. */
@@ -608,8 +642,8 @@ function goToSection(id: string) {
   requestAnimationFrame(tick)
 }
 
-/** Barra de navegação fixa no celular: as ações principais ao alcance do polegar. */
-function BottomNav({ route, onSettings }: { route: string; onSettings: (t: SettingsTab) => void }) {
+/** Barra de navegação fixa no celular: Início, Marcas, Comparar (destaque), Carros e Ajustes. */
+function BottomNav({ route, compareCount, onSettings }: { route: string; compareCount: number; onSettings: () => void }) {
   const item = 'flex flex-1 flex-col items-center justify-center gap-0.5 py-2 text-[11px] font-medium'
   const on = (names: string[]) => (names.includes(route) ? 'text-accent' : 'text-ink-2')
   const icon = (d: string) => (
@@ -619,26 +653,33 @@ function BottomNav({ route, onSettings }: { route: string; onSettings: (t: Setti
   )
   return (
     <nav aria-label="Navegação principal" className="fixed inset-x-0 bottom-0 z-40 border-t border-line bg-surface/95 pb-[env(safe-area-inset-bottom)] backdrop-blur md:hidden">
-      <div className="mx-auto flex max-w-lg">
+      <div className="mx-auto flex max-w-lg items-end">
         <a href={paths.home()} className={`${item} ${on(['home'])}`} aria-current={route === 'home' ? 'page' : undefined}>
           {icon('M4 11l8-6 8 6v8a1 1 0 0 1-1 1h-4v-5H9v5H5a1 1 0 0 1-1-1z')}
           Início
-        </a>
-        <a href={paths.cars()} className={`${item} ${on(['cars', 'car'])}`} aria-current={route === 'cars' ? 'page' : undefined}>
-          {icon('M4 15l1.8-4.6A2.5 2.5 0 0 1 8.1 9h7.8a2.5 2.5 0 0 1 2.3 1.4L20 15v3H4zM7 18v1.5M17 18v1.5M7.5 13.5h.01M16.5 13.5h.01')}
-          Carros
         </a>
         <a href={paths.brands()} className={`${item} ${on(['brands', 'brand'])}`} aria-current={route === 'brands' ? 'page' : undefined}>
           {icon('M5 5h6v6H5zM13 5h6v6h-6zM5 13h6v6H5zM13 13h6v6h-6z')}
           Marcas
         </a>
-        <button type="button" onClick={() => onSettings('car')} className={`${item} text-ink-2`}>
-          {icon('M12 12a4 4 0 1 0 0-8 4 4 0 0 0 0 8zM4 20a8 8 0 0 1 16 0')}
-          Meu carro
-        </button>
-        <button type="button" onClick={() => onSettings('assumptions')} className={`${item} text-ink-2`}>
+        <a href={paths.compare()} className="flex flex-1 flex-col items-center gap-0.5 pb-2 text-[11px] font-semibold text-accent" aria-current={route === 'compare' ? 'page' : undefined}>
+          <span className={`relative -mt-5 grid size-14 place-items-center rounded-full text-accent-ink shadow-lg ring-4 ring-surface transition-transform active:scale-95 ${route === 'compare' ? 'bg-ink' : 'bg-accent'}`}>
+            <svg viewBox="0 0 24 24" className="size-6" aria-hidden>
+              <path d="M7 4v16M17 4v16M3 9h8M13 15h8" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" />
+            </svg>
+            {compareCount > 0 && (
+              <span className="absolute -top-0.5 -right-0.5 grid size-5 place-items-center rounded-full bg-good text-[10px] font-bold text-white ring-2 ring-surface">{compareCount}</span>
+            )}
+          </span>
+          Comparar
+        </a>
+        <a href={paths.cars()} className={`${item} ${on(['cars', 'car'])}`} aria-current={route === 'cars' ? 'page' : undefined}>
+          {icon('M4 15l1.8-4.6A2.5 2.5 0 0 1 8.1 9h7.8a2.5 2.5 0 0 1 2.3 1.4L20 15v3H4zM7 18v1.5M17 18v1.5M7.5 13.5h.01M16.5 13.5h.01')}
+          Carros
+        </a>
+        <button type="button" onClick={onSettings} className={`${item} text-ink-2`}>
           {icon('M4 7h10M18 7h2M4 17h4M12 17h8M14 5v4M8 15v4')}
-          Premissas
+          Ajustes
         </button>
       </div>
     </nav>

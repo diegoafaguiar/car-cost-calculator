@@ -12,6 +12,8 @@ describe('rotas', () => {
     expect(parseRoute('/carro/byd-dolphin', '?ano=2024')).toEqual({ name: 'car', id: 'byd-dolphin', year: 2024 })
     expect(parseRoute('/marca/caoa-changan')).toEqual({ name: 'brand', slug: 'caoa-changan' })
     expect(parseRoute('/xyz').name).toBe('notFound')
+    expect(parseRoute('/comparar', '?opcoes=used%3Afiat-pulse%3A2,new%3Abyd-dolphin%3A0')).toEqual({ name: 'compare', ids: ['used:fiat-pulse:2', 'new:byd-dolphin:0'] })
+    expect(paths.compare(['used:fiat-pulse:2'])).toBe('/comparar?opcoes=used%3Afiat-pulse%3A2')
   })
 
   it('gera slugs de marca sem acento nem espaço', () => {
@@ -30,7 +32,7 @@ describe('rotas', () => {
     const set = new Set(routes.map((r) => r.path))
     for (const m of CATALOG) expect(set.has(paths.car(m.id))).toBe(true)
     for (const b of BRANDS) expect(set.has(paths.brand(b.name))).toBe(true)
-    expect(routes.length).toBe(CATALOG.length + BRANDS.length + 2)
+    expect(routes.length).toBe(CATALOG.length + BRANDS.length + 3)
     for (const r of routes) expect(r.description.length).toBeLessThanOrEqual(220)
   })
 
@@ -39,5 +41,16 @@ describe('rotas', () => {
     const out = withMeta(html, { title: 'A & "B"', description: 'C' })
     expect(out).toContain('<title>A &amp; &quot;B&quot;</title>')
     expect(out).toContain('og:description" content="C"')
+  })
+})
+
+describe('gráfico', () => {
+  it('a escala sempre cobre o maior valor', async () => {
+    const { niceTicks } = await import('../components/CostChart')
+    for (const [min, max, n] of [[0, 145000, 4], [0, 99000, 6], [-3000, 52000, 4], [0, 1, 5]] as const) {
+      const t = niceTicks(min, max, n)
+      expect(t[0]).toBeLessThanOrEqual(min)
+      expect(t[t.length - 1]).toBeGreaterThanOrEqual(max)
+    }
   })
 })

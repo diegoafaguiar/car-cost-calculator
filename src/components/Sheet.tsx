@@ -36,7 +36,7 @@ export function Sheet({
       onClose={onClose}
       onClick={(e) => e.target === ref.current && ref.current?.close()}
       aria-label={title}
-      className="sheet fixed inset-x-0 bottom-0 top-auto m-0 flex max-h-[88dvh] w-full max-w-none flex-col overflow-hidden rounded-t-2xl border-t border-line bg-surface p-0 text-ink shadow-2xl backdrop:bg-black/45 md:inset-y-0 md:right-0 md:left-auto md:h-dvh md:max-h-dvh md:max-w-md md:rounded-none md:border-t-0 md:border-l"
+      className="sheet fixed inset-x-0 bottom-0 top-auto m-0 block max-h-[88dvh] w-full max-w-none overflow-hidden md:flex md:flex-col rounded-t-2xl border-t border-line bg-surface p-0 text-ink shadow-2xl backdrop:bg-black/45 md:inset-y-0 md:right-0 md:left-auto md:h-dvh md:max-h-dvh md:max-w-md md:rounded-none md:border-t-0 md:border-l"
     >
       <div className="mx-auto mt-2 h-1 w-10 shrink-0 rounded-full bg-ink/15 md:hidden" aria-hidden />
       <header className="flex shrink-0 items-start justify-between gap-3 border-b border-line px-5 py-3">
@@ -55,7 +55,11 @@ export function Sheet({
           </svg>
         </button>
       </header>
-      <div className="min-h-0 flex-1 overflow-y-auto overscroll-contain px-5 py-4">{children}</div>
+      {/*
+        No celular a área rolável tem altura máxima explícita (88dvh menos cabeçalho e rodapé): o Safari do iPhone
+        espremia a zero o conteúdo flexível de um diálogo sem altura definida. No computador o painel tem altura fixa e usa flex.
+      */}
+      <div className="max-h-[calc(88dvh-9rem)] overflow-y-auto overscroll-contain px-5 py-4 md:max-h-none md:min-h-0 md:flex-1">{children}</div>
       {footer && <footer className="shrink-0 border-t border-line bg-surface px-5 py-3 pb-[max(0.75rem,env(safe-area-inset-bottom))]">{footer}</footer>}
     </dialog>
   )

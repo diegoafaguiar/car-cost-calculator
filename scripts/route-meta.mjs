@@ -48,6 +48,11 @@ export function routeMeta(root) {
       description: `${cars.length} carros vendidos no Brasil com preço, consumo, equipamentos e custo total de ter em 1, 3 e 5 anos.`,
     },
     {
+      path: '/comparar',
+      title: `Comparação detalhada | ${SITE}`,
+      description: 'Compare lado a lado custo total, parcelas, notas e ficha técnica de até 5 carros com o seu.',
+    },
+    {
       path: '/marcas',
       title: `Marcas de carros no Brasil — modelos e preços | ${SITE}`,
       description: `${brands.length} marcas com os modelos à venda no Brasil, faixa de preço e motorizações.`,
