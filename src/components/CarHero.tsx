@@ -153,7 +153,7 @@ export function CarHero(p: Props) {
               {money(market.summary.min)} a {money(market.summary.max)}). Preço pedido não é preço de venda.
             </p>
           )}
-          <p className="mt-3 text-xs text-muted">Passe o mouse ou toque no custo por mês para ver de onde vem cada real.</p>
+          <p className="mt-3 hidden text-xs text-muted sm:block">Passe o mouse ou toque no custo por mês para ver de onde vem cada real.</p>
         </div>
 
         <div className="min-w-0 p-5 sm:p-6">

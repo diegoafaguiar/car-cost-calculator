@@ -10,14 +10,14 @@ import { ExportMenu } from './components/ExportMenu'
 import { FilterBar } from './components/FilterBar'
 import { KIND_LABEL, RankingTable, type SortKey } from './components/RankingTable'
 import { SettingsDrawer, type SettingsTab } from './components/SettingsDrawer'
-import { TopModels } from './components/TopModels'
 import { TradeInCard } from './components/TradeInCard'
-import { Button, Card } from './components/ui'
+import { Button, Card, Segmented } from './components/ui'
 import { CATALOG } from './lib/catalog'
 import { DEFAULT_ASSUMPTIONS, DEFAULT_CAR, DEFAULT_PREFERENCES } from './lib/defaults'
 import { FipeError, resolveCatalogPrice, setFipeToken, type FipeOverride } from './lib/fipe'
 import { money, normalize } from './lib/format'
 import { buildScenarios, currentCarValue, groupByModel, modelYearOf, tradeInFor, priceKey, runAll, type PriceEntry } from './lib/tco'
+import { HORIZONS } from './lib/types'
 import type { CustomCar, Horizon, Preferences, RankRow, ScenarioResult } from './lib/types'
 import { usePersisted } from './lib/usePersisted'
 import { navigate, paths, useRoute, usePageMeta } from './lib/router'
@@ -295,7 +295,7 @@ export default function App() {
   const hasValue = currentCarValue(car) > 0
 
   return (
-    <div className="min-h-dvh">
+    <div className="min-h-dvh pb-[calc(4.25rem+env(safe-area-inset-bottom))] md:pb-0">
       <header className="sticky top-0 z-30 border-b border-line bg-surface/85 backdrop-blur">
         <div className="mx-auto flex h-14 max-w-[1280px] items-center gap-3 px-4 sm:px-6">
           <a href="/" className="flex shrink-0 items-center gap-2.5" aria-label="Custo de Carro — início">
@@ -317,12 +317,14 @@ export default function App() {
               Marcas
             </a>
             {!onPage && <ExportMenu ctx={exportCtx} />}
-            <Button variant="ghost" onClick={() => setSettings('car')}>
-              Meu carro
-            </Button>
-            <Button variant="ghost" onClick={() => setSettings('assumptions')}>
-              Premissas
-            </Button>
+            <span className="hidden md:contents">
+              <Button variant="ghost" onClick={() => setSettings('car')}>
+                Meu carro
+              </Button>
+              <Button variant="ghost" onClick={() => setSettings('assumptions')}>
+                Premissas
+              </Button>
+            </span>
             <ThemeToggle />
           </nav>
         </div>
@@ -406,7 +408,10 @@ export default function App() {
                 onToggleCompare={toggleCompare}
                 usingPreference={prefs.rankBy === 'ajustado' && hasPreference}
                 tradeIn={tradeInFor(car, assumptions, YEAR)}
-                onEditTrade={() => document.getElementById('sec-trade')?.scrollIntoView({ behavior: 'smooth' })}
+                onEditTrade={() => {
+                  window.dispatchEvent(new Event('trade:open'))
+                  document.getElementById('sec-trade')?.scrollIntoView({ behavior: 'smooth', block: 'start' })
+                }}
               />
               </section>
             )}
@@ -428,23 +433,61 @@ export default function App() {
               </section>
             )}
 
-            <section id="sec-filters" className="scroll-mt-32">
-            <FilterBar
-              prefs={prefs}
-              onPrefs={setPrefs}
-              carCategory={car.category}
-              onlySavings={onlySavings}
-              onOnlySavings={setOnlySavings}
-              resultCount={ranked.length}
-              onAddCustom={(q) => setAdding(q)}
-              onReset={resetFilters}
-            />
-            </section>
-
-            <section id="sec-top" className="scroll-mt-32">
-              <ErrorBoundary area="Top 10">
-              <TopModels ranked={ranked} horizon={horizon} compare={compare} onToggleCompare={toggleCompare} max={MAX_COMPARE} />
-              </ErrorBoundary>
+            <section id="sec-ranking" className="scroll-mt-32">
+            <Card
+              title="Suas opções"
+              subtitle={`${ranked.length} opções · ordenadas pelo ${prefs.rankBy === 'ajustado' && hasPreference ? 'custo ajustado à sua preferência' : 'custo total'} em ${horizon} ${horizon === 1 ? 'ano' : 'anos'}. Toque numa opção para ver o detalhe; use + para comparar.`}
+              actions={
+                <Segmented<Horizon>
+                  label="Horizonte"
+                  value={horizon}
+                  options={HORIZONS.map((y) => ({ value: y, label: `${y} ${y === 1 ? 'ano' : 'anos'}` }))}
+                  onChange={(v) => setPrefs({ ...prefs, rankHorizon: v })}
+                />
+              }
+            >
+              <FilterBar
+                prefs={prefs}
+                onPrefs={setPrefs}
+                carCategory={car.category}
+                onlySavings={onlySavings}
+                onOnlySavings={setOnlySavings}
+                resultCount={ranked.length}
+                onAddCustom={(q) => setAdding(q)}
+                onReset={resetFilters}
+                sort={sort}
+                onSort={setSort}
+              />
+              <div className="mt-4 border-t border-line pt-4">
+                {fetchState?.error && !fetching && <p className="mb-3 text-sm text-bad">{fetchState.error}</p>}
+                {fetchState && !fetching && !fetchState.error && fetchState.failed > 0 && (
+                  <p className="mb-3 text-sm text-ink-2">
+                    {fetchState.failed} preço(s) não encontrados na FIPE para o ano pedido; usando estimativa. Ajuste a versão
+                    no detalhe da opção, se quiser.
+                  </p>
+                )}
+                <RankingTable
+                  rows={rows}
+                  horizon={horizon}
+                  sort={sort}
+                  onSort={onSort}
+                  compare={compare}
+                  colors={colors}
+                  onToggleCompare={toggleCompare}
+                  onOpen={setOpenId}
+                  showAdjusted={hasPreference}
+                  keep={keep}
+                  onResetFilters={resetFilters}
+                />
+              </div>
+              <div className="mt-4 flex flex-wrap items-center gap-2 border-t border-line pt-4">
+                <Button onClick={() => setAdding('')}>+ Adicionar carro pela FIPE</Button>
+                <Button onClick={refreshPrices} disabled={fetching}>
+                  {fetching ? `Consultando FIPE ${fetchState.done}/${fetchState.total}…` : 'Atualizar preços FIPE'}
+                </Button>
+                <span className="text-xs text-muted">{fipeCount} preços FIPE ao vivo</span>
+              </div>
+            </Card>
             </section>
 
             <section id="sec-compare" className="scroll-mt-32">
@@ -482,45 +525,6 @@ export default function App() {
               )}
             </div>
 
-            <section id="sec-ranking" className="scroll-mt-32">
-            <Card
-              title="Ranking completo"
-              subtitle={`Ordenado pelo ${prefs.rankBy === 'ajustado' && hasPreference ? 'custo ajustado à sua preferência' : 'custo total'} em ${horizon} ${horizon === 1 ? 'ano' : 'anos'}. Clique numa linha para ver o detalhe.`}
-              actions={
-                <div className="flex flex-wrap items-center gap-2">
-                  <span className="text-xs text-muted">
-                    {fetching ? `Consultando FIPE ${fetchState.done}/${fetchState.total}…` : `${fipeCount} preços FIPE ao vivo`}
-                  </span>
-                  <Button onClick={() => setAdding('')}>+ Adicionar carro</Button>
-                  <Button variant="primary" onClick={refreshPrices} disabled={fetching}>
-                    Atualizar preços FIPE
-                  </Button>
-                </div>
-              }
-            >
-              {fetchState?.error && !fetching && <p className="mb-3 text-sm text-bad">{fetchState.error}</p>}
-              {fetchState && !fetching && !fetchState.error && fetchState.failed > 0 && (
-                <p className="mb-3 text-sm text-ink-2">
-                  {fetchState.failed} preço(s) não encontrados na FIPE para o ano pedido; usando estimativa. Ajuste a versão
-                  no detalhe da opção, se quiser.
-                </p>
-              )}
-              <RankingTable
-                rows={rows}
-                horizon={horizon}
-                sort={sort}
-                onSort={onSort}
-                compare={compare}
-                colors={colors}
-                onToggleCompare={toggleCompare}
-                onOpen={setOpenId}
-                showAdjusted={hasPreference}
-                keep={keep}
-                onResetFilters={resetFilters}
-              />
-            </Card>
-            </section>
-
             <Methodology inflation={assumptions.inflationYear} />
           </main>
         )}
@@ -529,6 +533,8 @@ export default function App() {
           recomendação financeira.
         </footer>
       </div>
+
+      <BottomNav route={route.name} onSettings={setSettings} />
 
       {adding !== null && (
         <CustomCarDialog
@@ -584,11 +590,9 @@ export default function App() {
 const SECTIONS = [
   ['sec-summary', 'Resumo'],
   ['sec-trade', 'Troca'],
-  ['sec-filters', 'Filtros'],
-  ['sec-top', 'Top 10'],
+  ['sec-ranking', 'Opções'],
   ['sec-compare', 'Comparar'],
-  ['sec-chart', 'Evolução do custo'],
-  ['sec-ranking', 'Ranking'],
+  ['sec-chart', 'Gráficos'],
 ] as const
 
 /** Atalhos para as seções do painel. */
@@ -602,6 +606,43 @@ function goToSection(id: string) {
     else if (tries++ < 20) requestAnimationFrame(tick)
   }
   requestAnimationFrame(tick)
+}
+
+/** Barra de navegação fixa no celular: as ações principais ao alcance do polegar. */
+function BottomNav({ route, onSettings }: { route: string; onSettings: (t: SettingsTab) => void }) {
+  const item = 'flex flex-1 flex-col items-center justify-center gap-0.5 py-2 text-[11px] font-medium'
+  const on = (names: string[]) => (names.includes(route) ? 'text-accent' : 'text-ink-2')
+  const icon = (d: string) => (
+    <svg viewBox="0 0 24 24" className="size-6" aria-hidden>
+      <path d={d} fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" />
+    </svg>
+  )
+  return (
+    <nav aria-label="Navegação principal" className="fixed inset-x-0 bottom-0 z-40 border-t border-line bg-surface/95 pb-[env(safe-area-inset-bottom)] backdrop-blur md:hidden">
+      <div className="mx-auto flex max-w-lg">
+        <a href={paths.home()} className={`${item} ${on(['home'])}`} aria-current={route === 'home' ? 'page' : undefined}>
+          {icon('M4 11l8-6 8 6v8a1 1 0 0 1-1 1h-4v-5H9v5H5a1 1 0 0 1-1-1z')}
+          Início
+        </a>
+        <a href={paths.cars()} className={`${item} ${on(['cars', 'car'])}`} aria-current={route === 'cars' ? 'page' : undefined}>
+          {icon('M4 15l1.8-4.6A2.5 2.5 0 0 1 8.1 9h7.8a2.5 2.5 0 0 1 2.3 1.4L20 15v3H4zM7 18v1.5M17 18v1.5M7.5 13.5h.01M16.5 13.5h.01')}
+          Carros
+        </a>
+        <a href={paths.brands()} className={`${item} ${on(['brands', 'brand'])}`} aria-current={route === 'brands' ? 'page' : undefined}>
+          {icon('M5 5h6v6H5zM13 5h6v6h-6zM5 13h6v6H5zM13 13h6v6h-6z')}
+          Marcas
+        </a>
+        <button type="button" onClick={() => onSettings('car')} className={`${item} text-ink-2`}>
+          {icon('M12 12a4 4 0 1 0 0-8 4 4 0 0 0 0 8zM4 20a8 8 0 0 1 16 0')}
+          Meu carro
+        </button>
+        <button type="button" onClick={() => onSettings('assumptions')} className={`${item} text-ink-2`}>
+          {icon('M4 7h10M18 7h2M4 17h4M12 17h8M14 5v4M8 15v4')}
+          Premissas
+        </button>
+      </div>
+    </nav>
+  )
 }
 
 function HomeMeta() {
@@ -638,16 +679,6 @@ function SectionNav() {
             </button>
           </li>
         ))}
-        <li className="ml-auto pl-2 md:hidden">
-          <a href={paths.cars()} className="block rounded-lg px-3 py-1.5 font-medium whitespace-nowrap text-accent hover:bg-surface">
-            Carros
-          </a>
-        </li>
-        <li className="md:hidden">
-          <a href={paths.brands()} className="block rounded-lg px-3 py-1.5 font-medium whitespace-nowrap text-accent hover:bg-surface">
-            Marcas
-          </a>
-        </li>
       </ul>
     </nav>
   )

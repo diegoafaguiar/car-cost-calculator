@@ -10,6 +10,7 @@ import { CostTooltip } from './CostTooltip'
 import { ScoreBadge } from './ScoreBadge'
 import { Card, Segmented } from './ui'
 import { WikiImage } from './WikiImage'
+import { useMedia } from '../lib/useMedia'
 
 interface Props {
   keep?: ScenarioResult
@@ -37,7 +38,13 @@ const infoFor = (r: ScenarioResult, carModelId?: string): ModelInfoCore | undefi
 export function Comparator({ keep, results, ranked, compare, colors, max, onToggle, horizon, onHorizon, assumptions: a, onOpen, carModelId, carModelYear }: Props) {
   const infoOf = (r: ScenarioResult) => infoFor(r, carModelId)
   const [query, setQuery] = useState('')
-  const columns = [keep, ...compare.map((id) => results.find((r) => r.scenario.id === id))].filter(Boolean) as ScenarioResult[]
+  const all = [keep, ...compare.map((id) => results.find((r) => r.scenario.id === id))].filter(Boolean) as ScenarioResult[]
+  // No celular, compara o seu carro com uma opção por vez (abas), sem rolagem lateral.
+  const narrow = useMedia('(max-width: 639px)')
+  const options = all.filter((r) => r.scenario.kind !== 'keep')
+  const [focusId, setFocusId] = useState<string | null>(null)
+  const focused = options.find((r) => r.scenario.id === focusId) ?? options[0]
+  const columns = narrow && keep && focused ? [keep, focused] : all
   const rankOf = (r: ScenarioResult) => ranked.findIndex((x) => x.scenario.id === r.scenario.id) + 1
 
   const candidates = useMemo(() => {
@@ -55,8 +62,9 @@ export function Comparator({ keep, results, ranked, compare, colors, max, onTogg
   const modelOf = (r: ScenarioResult) => (r.scenario.kind === 'keep' ? carModelId : r.scenario.modelId)
   const featOf = (r: ScenarioResult) => featuresFor(modelOf(r), r.scenario.kind === 'keep' ? carModelYear : undefined)
   const energyOf = (r: ScenarioResult) => energyCostPerKm(r.scenario.powertrain, r.scenario.consumption, a, r.scenario.evShare)
-  const bestMonthly = Math.min(...columns.map((c) => c.horizons[horizon].monthly))
-  const bestEnergy = Math.min(...columns.map(energyOf).filter((v) => v > 0))
+  // Notas relativas consideram todas as opções comparadas, mesmo as que estão em outra aba.
+  const bestMonthly = Math.min(...all.map((c) => c.horizons[horizon].monthly))
+  const bestEnergy = Math.min(...all.map(energyOf).filter((v) => v > 0))
   const scoresOf = (r: ScenarioResult) => {
     const f = featOf(r)
     const cost: Score = { value: relativeScore(r.horizons[horizon].monthly, bestMonthly), items: [], note: `Relativa às opções comparadas: a de menor custo por mês recebe 10 (${money(r.horizons[horizon].monthly)}/mês).` }
@@ -190,16 +198,35 @@ export function Comparator({ keep, results, ranked, compare, colors, max, onTogg
         </p>
       ) : (
         <div className="overflow-x-auto rounded-xl border border-line">
-          <p className="px-3 pt-2 text-[11px] text-muted sm:hidden">Deslize para o lado para ver todas as opções →</p>
-          <table className="w-full border-collapse text-sm">
+          {narrow && options.length > 1 && (
+            <div className="sticky left-0 flex gap-1.5 overflow-x-auto border-b border-line p-2 [scrollbar-width:none]" role="tablist" aria-label="Opção comparada com o seu carro">
+              {options.map((r) => {
+                const on = r === focused
+                return (
+                  <button
+                    key={r.scenario.id}
+                    type="button"
+                    role="tab"
+                    aria-selected={on}
+                    onClick={() => setFocusId(r.scenario.id)}
+                    className={`inline-flex shrink-0 items-center gap-1.5 rounded-full border px-3 py-1.5 text-xs font-medium whitespace-nowrap ${on ? 'border-accent bg-accent-soft text-accent' : 'border-line text-ink-2'}`}
+                  >
+                    <span className="size-2 rounded-full" style={{ background: colors[r.scenario.id] ?? 'var(--muted)' }} aria-hidden />
+                    {shortName(r)}
+                  </button>
+                )
+              })}
+            </div>
+          )}
+          <table className={`w-full border-collapse text-sm ${narrow ? "table-fixed" : ""}`}>
             <thead>
               <tr className="align-top">
-                <th className="sticky left-0 z-10 w-28 bg-surface px-3 py-3 text-left text-xs font-medium text-ink-2 sm:w-44" />
+                <th className={`sticky left-0 z-10 bg-surface px-3 py-3 text-left text-xs font-medium text-ink-2 ${narrow ? "w-[26%]" : "w-28 sm:w-44"}`} />
                 {columns.map((r) => {
                   const info = infoOf(r)
                   const isKeep = r.scenario.kind === 'keep'
                   return (
-                    <th key={r.scenario.id} className={`min-w-36 px-3 py-3 text-left font-normal sm:min-w-44 ${isKeep ? 'bg-warn-soft' : ''}`}>
+                    <th key={r.scenario.id} className={`px-3 py-3 text-left font-normal ${narrow ? 'w-[37%]' : 'min-w-36 sm:min-w-44'} ${isKeep ? 'bg-warn-soft' : ''}`}>
                       <div className="mb-2 w-full">
                         <WikiImage
                           compact

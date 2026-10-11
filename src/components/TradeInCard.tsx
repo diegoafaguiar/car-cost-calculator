@@ -1,8 +1,8 @@
-import { useMemo } from 'react'
+import { useEffect, useMemo, useState } from 'react'
 import { money, pct } from '../lib/format'
 import { breakEvenTradeIn, mileagePenalty, tradeInFor, type SimContext } from '../lib/tco'
 import type { CurrentCar, Horizon, ScenarioResult } from '../lib/types'
-import { Badge, Card, Chip, NumberField, TextField } from './ui'
+import { Chip, NumberField, TextField } from './ui'
 
 interface Props {
   car: CurrentCar
@@ -40,6 +40,13 @@ export function TradeInCard({ car, onCar, ctx, keep, best, horizon, onEditCar, o
   const activePreset = t.manual ? PRESETS.find((p) => presetValue(p.pct) === car.tradeInValue)?.key : undefined
   const setValue = (v: number, note?: string) => onCar({ ...car, tradeInValue: v > 0 ? Math.round(v) : undefined, tradeInNote: note ?? car.tradeInNote })
 
+  const [open, setOpen] = useState(false)
+  // O cartão do topo ("Valor na troca") pede para abrir este painel.
+  useEffect(() => {
+    const on = () => setOpen(true)
+    window.addEventListener('trade:open', on)
+    return () => window.removeEventListener('trade:open', on)
+  }, [])
   const alt = best && best.scenario.kind !== 'keep' ? best : undefined
   const impact = useMemo(() => {
     if (!alt) return null
@@ -51,11 +58,36 @@ export function TradeInCard({ car, onCar, ctx, keep, best, horizon, onEditCar, o
   const friction = t.auto - t.value
 
   return (
-    <Card
-      title="Seu carro na troca"
-      subtitle="Quanto você recebe hoje pelo seu carro. É o valor que mais muda os cenários de troca."
-      actions={t.manual ? <Badge tone="good">Proposta informada</Badge> : <Badge>Estimativa automática</Badge>}
-    >
+    <section className="rounded-2xl border border-line bg-surface shadow-card">
+      <button
+        type="button"
+        aria-expanded={open}
+        onClick={() => setOpen((o) => !o)}
+        className="flex w-full flex-wrap items-center gap-x-4 gap-y-2 p-4 text-left sm:p-5"
+      >
+        <span className="grid size-10 shrink-0 place-items-center rounded-xl bg-accent-soft text-accent" aria-hidden>
+          <svg viewBox="0 0 24 24" className="size-5">
+            <path d="M4 8h13l-3-3M20 16H7l3 3" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" />
+          </svg>
+        </span>
+        <span className="min-w-0 flex-1">
+          <span className="block text-xs font-medium text-ink-2">Seu carro na troca · {t.manual ? 'proposta informada' : 'estimativa automática'}</span>
+          <span className="block text-lg font-semibold tracking-tight tabular">{money(t.value)}</span>
+        </span>
+        {impact?.even != null && impact.even > 0 && alt && (
+          <span className="order-last w-full text-xs text-ink-2 sm:order-none sm:w-auto sm:max-w-xs sm:text-right">
+            A melhor troca empata com manter se a avaliação for <strong className="text-ink tabular">{money(impact.even)}</strong>
+          </span>
+        )}
+        <span className="inline-flex shrink-0 items-center gap-1 rounded-lg border border-line px-3 py-1.5 text-sm font-medium">
+          {open ? 'Fechar' : 'Ajustar'}
+          <svg viewBox="0 0 20 20" className={`size-4 transition-transform ${open ? 'rotate-180' : ''}`} aria-hidden>
+            <path d="M6 8l4 4 4-4" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" />
+          </svg>
+        </span>
+      </button>
+      {open && (
+      <div className="border-t border-line p-4 sm:p-5">
       <div className="grid gap-6 lg:grid-cols-[minmax(0,1fr)_minmax(0,1.1fr)]">
         <div>
           <dl className="divide-y divide-line rounded-xl border border-line text-sm">
@@ -142,7 +174,9 @@ export function TradeInCard({ car, onCar, ctx, keep, best, horizon, onEditCar, o
           </div>
         </div>
       </div>
-    </Card>
+      </div>
+      )}
+    </section>
   )
 }
 

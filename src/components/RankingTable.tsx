@@ -90,7 +90,7 @@ export function RankingTable({ rows, horizon, sort, onSort, compare, colors, onT
   return (
     <div>
       <div className="mb-3 flex flex-wrap items-center justify-between gap-2">
-        <label className="inline-flex items-center gap-2 text-sm text-ink-2">
+        <label className="hidden items-center gap-2 text-sm text-ink-2 md:inline-flex">
           <input type="checkbox" checked={detailed} onChange={(e) => setDetailed(e.target.checked)} className="size-4 accent-[var(--accent)]" />
           Visão detalhada (1, 3 e 5 anos, custo por km)
         </label>
@@ -170,28 +170,52 @@ export function RankingTable({ rows, horizon, sort, onSort, compare, colors, onT
         </table>
       </div>
 
-      <ul className="space-y-2 md:hidden">
+      <ul className="-mx-1 divide-y divide-line md:hidden">
         {rows.slice(0, limit).map(({ result: r, rank, others }) => {
-          const isKeep = r.scenario.kind === 'keep'
+          const s = r.scenario
+          const isKeep = s.kind === 'keep'
+          const checked = compare.includes(s.id)
+          const v = r.horizons[horizon].savingsVsKeep
           return (
-            <li key={r.scenario.id} className={`rounded-xl border border-line p-3 ${isKeep ? 'bg-warn-soft' : 'bg-surface'}`}>
-              <div role="button" tabIndex={0} className="w-full cursor-pointer text-left" onClick={() => onOpen(r.scenario.id)} onKeyDown={(e) => e.key === 'Enter' && onOpen(r.scenario.id)}>
-                <div className="flex items-baseline justify-between gap-3">
-                  <span className="text-xs text-muted tabular">#{rank}</span>
-                  <span className="font-semibold tabular" onClick={(e) => e.stopPropagation()}>
+            <li key={s.id} className={`px-1 py-3 ${isKeep ? 'rounded-xl bg-warn-soft px-3' : ''}`}>
+              <div className="flex items-center gap-3">
+                <span className={`grid size-7 shrink-0 place-items-center rounded-full text-xs font-semibold tabular ${rank <= 3 && !isKeep ? 'bg-accent text-accent-ink' : 'bg-surface-2 text-ink-2'}`}>
+                  {rank}
+                </span>
+                <button type="button" className="min-w-0 flex-1 text-left" onClick={() => onOpen(s.id)}>
+                  <span className="block truncate font-medium text-ink">{isKeep ? `Manter: ${s.label}` : s.label}</span>
+                  <span className="block truncate text-xs text-ink-2">
+                    {s.kind === 'subscription' ? 'Assinatura' : s.ageAtStart === 0 ? '0 km' : `Seminovo ${new Date().getFullYear() - s.ageAtStart}`}
+                    {' · '}
+                    {POWERTRAIN_LABEL[s.powertrain]}
+                    {s.kind !== 'subscription' && !isKeep ? ` · ${money(s.price)}` : ''}
+                  </span>
+                </button>
+                <span className="shrink-0 text-right" onClick={(e) => e.stopPropagation()}>
+                  <span className="block text-sm font-semibold tabular">
                     <CostTooltip result={r} horizon={horizon} keep={keep}>
-                      {money(r.horizons[horizon].monthly)}/mês
+                      {money(r.horizons[horizon].monthly)}
                     </CostTooltip>
                   </span>
-                </div>
-                <OptionCell result={r} />
-                <OtherYears best={r} others={others} horizon={horizon} onOpen={onOpen} />
-                <div className="mt-2 flex items-center justify-between gap-2 border-t border-line pt-2">
-                  <span className="text-xs text-ink-2 tabular">
-                    {r.scenario.kind === 'subscription' ? 'sem compra' : money(r.scenario.price)}
+                  <span className={`block text-[11px] tabular ${isKeep ? 'text-muted' : v > 0 ? 'text-good' : 'text-bad'}`}>
+                    {isKeep ? 'referência' : `${v > 0 ? '▲' : '▼'} ${money(Math.abs(v))}`}
                   </span>
-                  <Savings r={r} horizon={horizon} />
-                </div>
+                </span>
+                {!isKeep && (
+                  <button
+                    type="button"
+                    onClick={() => onToggleCompare(s.id)}
+                    aria-pressed={checked}
+                    aria-label={checked ? `Remover ${s.label} da comparação` : `Comparar ${s.label}`}
+                    className={`grid size-9 shrink-0 place-items-center rounded-lg border text-base ${checked ? 'border-accent/40 bg-accent-soft text-accent' : 'border-line text-ink-2'}`}
+                    style={checked && colors[s.id] ? { color: colors[s.id], borderColor: colors[s.id] } : undefined}
+                  >
+                    {checked ? '✓' : '+'}
+                  </button>
+                )}
+              </div>
+              <div className="pl-10">
+                <OtherYears best={r} others={others} horizon={horizon} onOpen={onOpen} />
               </div>
             </li>
           )
