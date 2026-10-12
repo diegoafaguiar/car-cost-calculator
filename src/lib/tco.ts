@@ -62,7 +62,7 @@ const emptyBreakdown = (): Breakdown => ({
   opportunity: 0,
 })
 
-const monthlyRate = (yearly: number) => Math.pow(1 + yearly, 1 / 12) - 1
+export const monthlyRate = (yearly: number) => Math.pow(1 + yearly, 1 / 12) - 1
 
 /** Custo de energia por km, escolhendo o combustível mais barato em carros flex. */
 export function energyCostPerKm(
@@ -197,13 +197,20 @@ export function mileagePenalty(car: CurrentCar, a: Assumptions, year: number): n
 }
 
 /** Escolhe a condição de financiamento: regra do modelo > regra da marca > padrão. */
-export function financeTermsFor(s: Scenario, a: Assumptions) {
+/**
+ * Escolhe a condição de financiamento: regra do modelo > regra da marca > regra geral (marca vazia) > padrão.
+ * Uma regra com entrada mínima (ex.: taxa zero com 60% de entrada) só vale se o dinheiro disponível
+ * (seu carro + reserva) cobre essa entrada; senão, cai na condição padrão.
+ */
+export function financeTermsFor(s: Scenario, a: Assumptions, eligibility?: { paid: number; budget: number }) {
   const kindOk = (r: FinanceRule) =>
     r.appliesTo === 'all' || (r.appliesTo === 'new' ? s.kind === 'new' : s.kind === 'used')
-  const rules = (a.financeRules ?? []).filter(kindOk)
+  const reachable = (r: FinanceRule) => !eligibility || eligibility.budget + 0.5 >= eligibility.paid * r.downPaymentPct
+  const rules = (a.financeRules ?? []).filter(kindOk).filter(reachable)
   const rule =
     rules.find((r) => r.modelId && r.modelId === s.modelId) ??
-    rules.find((r) => !r.modelId && r.brand && r.brand === s.brand)
+    rules.find((r) => !r.modelId && r.brand && r.brand === s.brand) ??
+    rules.find((r) => !r.modelId && !r.brand)
   return rule
     ? { rateMonth: rule.rateMonth, months: rule.months, downPaymentPct: rule.downPaymentPct, ruleId: rule.id }
     : { rateMonth: a.financeRateMonth, months: a.financeMonths, downPaymentPct: a.downPaymentPct }
@@ -260,7 +267,8 @@ export function simulate(s: Scenario, ctx: SimContext): Omit<ScenarioResult, 'br
   let upfrontCash = 0
   let changeBack = 0
   let financed = 0
-  const terms = financeTermsFor(s, a)
+  const paidPrice = s.kind === 'used' && s.priceSource !== 'anuncios' ? s.price * (1 + a.usedPremiumPct) : s.price
+  const terms = financeTermsFor(s, a, { paid: paidPrice, budget: Math.max(0, curSale - car.loanBalance) + a.savingsAvailable })
 
   if (s.kind === 'keep') {
     loan = { balance: car.loanBalance, payment: car.loanPayment, remaining: car.loanRemaining }
@@ -269,7 +277,7 @@ export function simulate(s: Scenario, ctx: SimContext): Omit<ScenarioResult, 'br
     cash = curSale - car.loanBalance
     if (s.kind !== 'subscription') {
       // Preço de anúncio já é o preço pedido: não soma o ágio sobre a FIPE.
-      const paid = s.kind === 'used' && s.priceSource !== 'anuncios' ? s.price * (1 + a.usedPremiumPct) : s.price
+      const paid = paidPrice
       costBasis = paid
       const available = Math.max(0, cash)
       let down = paid

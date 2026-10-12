@@ -53,6 +53,11 @@ export function routeMeta(root) {
       description: 'Compare lado a lado custo total, parcelas, notas e ficha técnica de até 5 carros com o seu.',
     },
     {
+      path: '/financiamento',
+      title: `Simulador de financiamento de 0 km — taxa zero e taxa baixa | ${SITE}`,
+      description: 'Use seu carro na troca como entrada e veja o percentual a financiar e as parcelas em 24 ou 36 vezes com taxa zero ou taxa baixa.',
+    },
+    {
       path: '/marcas',
       title: `Marcas de carros no Brasil — modelos e preços | ${SITE}`,
       description: `${brands.length} marcas com os modelos à venda no Brasil, faixa de preço e motorizações.`,

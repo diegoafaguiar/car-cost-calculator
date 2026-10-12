@@ -159,12 +159,18 @@ describe('simulate', () => {
   it('usa a regra de financiamento da marca (taxa zero) só no 0 km', () => {
     const rules = [{ id: 'tz', brand: 'Toyota', appliesTo: 'new' as const, rateMonth: 0, months: 24, downPaymentPct: 0.6 }]
     const ra = { ...a, financeRules: rules, paymentMode: 'financiado' as const }
-    const list = buildScenarios({ car, assumptions: ra, usedAges: [2], prices: {}, year: 2026 })
-    const zero = simulate(list.find((s) => s.id === 'new:toyota-corolla:0')!, { ...ctx, assumptions: ra })
+    // Com R$ 62 mil de carro + R$ 20 mil não chega a 60% de um Corolla 0 km: vale a taxa padrão.
+    const poor = buildScenarios({ car, assumptions: ra, usedAges: [2], prices: {}, year: 2026 })
+    const fallback = simulate(poor.find((s) => s.id === 'new:toyota-corolla:0')!, { ...ctx, assumptions: ra })
+    expect(fallback.finance.ruleId).toBeUndefined()
+    // Com o usado avaliado em R$ 120 mil, a entrada passa de 60% e a taxa zero vale.
+    const rich = { ...car, tradeInValue: 120000 }
+    const list = buildScenarios({ car: rich, assumptions: ra, usedAges: [2], prices: {}, year: 2026 })
+    const zero = simulate(list.find((s) => s.id === 'new:toyota-corolla:0')!, { ...ctx, car: rich, assumptions: ra })
     expect(zero.finance.ruleId).toBe('tz')
     expect(zero.horizons[5].breakdown.interest).toBeCloseTo(0)
     expect(zero.installment).toBeCloseTo(zero.financed / 24)
-    const used = simulate(list.find((s) => s.id === 'used:toyota-corolla:2')!, { ...ctx, assumptions: ra })
+    const used = simulate(list.find((s) => s.id === 'used:toyota-corolla:2')!, { ...ctx, car: rich, assumptions: ra })
     expect(used.finance.ruleId).toBeUndefined()
   })
 

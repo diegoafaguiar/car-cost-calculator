@@ -177,6 +177,9 @@ export function ModelPage({ modelId, results, ranked, keep, horizon, onHorizon, 
             >
               Comparar anos lado a lado
             </Button>
+            <a href={paths.finance(model.id)} className="rounded-lg border border-line px-3 py-1.5 text-sm font-medium whitespace-nowrap hover:bg-surface-2">
+              Simular financiamento
+            </a>
           </div>
         )}
         <div className="overflow-x-auto rounded-lg border border-line">

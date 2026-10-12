@@ -12,6 +12,7 @@ import { SettingsDrawer, type SettingsTab } from './components/SettingsDrawer'
 import { TradeInCard } from './components/TradeInCard'
 import { Toaster, toast } from './components/Toast'
 import { ComparePreview } from './components/ComparePreview'
+import { FinanceTeaser } from './components/FinanceTeaser'
 import { Button, Card, Segmented } from './components/ui'
 import { CATALOG } from './lib/catalog'
 import { DEFAULT_ASSUMPTIONS, DEFAULT_CAR, DEFAULT_PREFERENCES } from './lib/defaults'
@@ -22,12 +23,14 @@ import { HORIZONS } from './lib/types'
 import type { CustomCar, Horizon, Preferences, RankRow, ScenarioResult } from './lib/types'
 import { usePersisted } from './lib/usePersisted'
 import { navigate, paths, useRoute, usePageMeta } from './lib/router'
+import { DEFAULT_FINANCE_SIM, type FinanceSim } from './lib/finance'
 
 // Páginas carregadas sob demanda: o painel abre sem baixar o código das fichas e listas.
 const ModelPage = lazy(() => import('./components/ModelPage').then((m) => ({ default: m.ModelPage })))
 const CatalogPage = lazy(() => import('./components/CatalogPage').then((m) => ({ default: m.CatalogPage })))
 const BrandsPage = lazy(() => import('./components/BrandPages').then((m) => ({ default: m.BrandsPage })))
 const BrandPage = lazy(() => import('./components/BrandPages').then((m) => ({ default: m.BrandPage })))
+const FinancePage = lazy(() => import('./components/FinancePage').then((m) => ({ default: m.FinancePage })))
 const ComparePage = lazy(() => import('./components/ComparePage').then((m) => ({ default: m.ComparePage })))
 const NotFound = lazy(() => import('./components/BrandPages').then((m) => ({ default: m.NotFound })))
 
@@ -135,6 +138,7 @@ export default function App() {
   const [token, setToken] = usePersisted('ccc:fipeToken', '')
   const [compare, setCompare] = usePersisted<string[]>('ccc:compare', [])
   const [customCars, setCustomCars] = usePersisted<CustomCar[]>('ccc:customCars', [])
+  const [financeSim, setFinanceSim] = usePersisted<FinanceSim>('ccc:financeSim', DEFAULT_FINANCE_SIM)
   const [adding, setAdding] = useState<string | null>(null)
   const [onlySavings, setOnlySavings] = useState(false)
   const [sort, setSort] = useState<{ key: SortKey; dir: 1 | -1 }>({ key: 'rank', dir: 1 })
@@ -338,6 +342,9 @@ export default function App() {
             <a href={paths.compare(compare)} className={`hidden rounded-lg px-3 py-1.5 text-sm font-medium hover:bg-surface-2 md:inline-block ${route.name === 'compare' ? 'text-accent' : 'text-ink-2 hover:text-ink'}`}>
               Comparar
             </a>
+            <a href={paths.finance()} className={`hidden rounded-lg px-3 py-1.5 text-sm font-medium hover:bg-surface-2 md:inline-block ${route.name === 'finance' ? 'text-accent' : 'text-ink-2 hover:text-ink'}`}>
+              Financiamento
+            </a>
             {!onPage && <ExportMenu ctx={exportCtx} />}
             <span className="hidden md:contents">
               <Button variant="ghost" onClick={() => setSettings('car')}>
@@ -371,6 +378,21 @@ export default function App() {
                       setCompare(ids)
                       goToSection('sec-compare')
                     }}
+                  />
+                ) : route.name === 'finance' ? (
+                  <FinancePage
+                    focusId={route.carId}
+                    ranked={ranked}
+                    car={car}
+                    onCar={setCar}
+                    assumptions={assumptions}
+                    onAssumptions={setAssumptions}
+                    sim={financeSim}
+                    onSim={setFinanceSim}
+                    prefs={prefs}
+                    carCategory={car.category}
+                    year={YEAR}
+                    onEditFilters={() => goToSection('sec-ranking')}
                   />
                 ) : route.name === 'compare' ? (
                   <ComparePage
@@ -472,6 +494,16 @@ export default function App() {
                   />
                 </ErrorBoundary>
               </section>
+            )}
+
+            {keep && (
+              <FinanceTeaser
+                ranked={ranked}
+                tradeValue={tradeInFor(car, assumptions, YEAR).value}
+                budget={Math.max(0, tradeInFor(car, assumptions, YEAR).value - car.loanBalance) + assumptions.savingsAvailable}
+                sim={financeSim}
+                a={assumptions}
+              />
             )}
 
             <section id="sec-ranking" className="scroll-mt-32">
@@ -663,12 +695,12 @@ function BottomNav({ route, compareCount, onSettings }: { route: string; compare
           Marcas
         </a>
         <a href={paths.compare()} className="flex flex-1 flex-col items-center gap-0.5 pb-2 text-[11px] font-semibold text-accent" aria-current={route === 'compare' ? 'page' : undefined}>
-          <span className={`relative -mt-5 grid size-14 place-items-center rounded-full text-accent-ink shadow-lg ring-4 ring-surface transition-transform active:scale-95 ${route === 'compare' ? 'bg-ink' : 'bg-accent'}`}>
-            <svg viewBox="0 0 24 24" className="size-6" aria-hidden>
+          <span className={`relative -mt-2.5 grid size-11 place-items-center rounded-full text-accent-ink shadow-md ring-2 ring-surface transition-transform active:scale-95 ${route === 'compare' ? 'bg-ink' : 'bg-accent'}`}>
+            <svg viewBox="0 0 24 24" className="size-5" aria-hidden>
               <path d="M7 4v16M17 4v16M3 9h8M13 15h8" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" />
             </svg>
             {compareCount > 0 && (
-              <span className="absolute -top-0.5 -right-0.5 grid size-5 place-items-center rounded-full bg-good text-[10px] font-bold text-white ring-2 ring-surface">{compareCount}</span>
+              <span className="absolute -top-1 -right-1 grid size-4 place-items-center rounded-full bg-good text-[9px] font-bold text-white ring-2 ring-surface">{compareCount}</span>
             )}
           </span>
           Comparar

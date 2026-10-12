@@ -32,7 +32,7 @@ describe('rotas', () => {
     const set = new Set(routes.map((r) => r.path))
     for (const m of CATALOG) expect(set.has(paths.car(m.id))).toBe(true)
     for (const b of BRANDS) expect(set.has(paths.brand(b.name))).toBe(true)
-    expect(routes.length).toBe(CATALOG.length + BRANDS.length + 3)
+    expect(routes.length).toBe(CATALOG.length + BRANDS.length + 4)
     for (const r of routes) expect(r.description.length).toBeLessThanOrEqual(220)
   })
 

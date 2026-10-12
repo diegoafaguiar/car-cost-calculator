@@ -13,6 +13,7 @@ export type Route =
   | { name: 'brand'; slug: string }
   | { name: 'brands' }
   | { name: 'compare'; ids?: string[] }
+  | { name: 'finance'; carId?: string }
   | { name: 'notFound'; path: string }
 
 export const brandSlug = (brand: string) =>
@@ -27,6 +28,7 @@ export const paths = {
   brands: () => '/marcas',
   compare: (ids?: string[]) => `/comparar${ids?.length ? `?opcoes=${ids.map(encodeURIComponent).join(',')}` : ''}`,
   brand: (brand: string) => `/marca/${brandSlug(brand)}`,
+  finance: (carId?: string) => `/financiamento${carId ? `?carro=${carId}` : ''}`,
 }
 
 export function parseRoute(pathname: string, search = ''): Route {
@@ -34,6 +36,10 @@ export function parseRoute(pathname: string, search = ''): Route {
   if (p === '/') return { name: 'home' }
   if (p === '/carros') return { name: 'cars' }
   if (p === '/marcas') return { name: 'brands' }
+  if (p === '/financiamento') {
+    const carId = new URLSearchParams(search).get('carro') ?? undefined
+    return carId ? { name: 'finance', carId } : { name: 'finance' }
+  }
   if (p === '/comparar') {
     const ids = new URLSearchParams(search).get('opcoes')?.split(',').filter(Boolean)
     return ids?.length ? { name: 'compare', ids } : { name: 'compare' }
